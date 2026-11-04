@@ -190,6 +190,19 @@ The scripts read the pinned rasters in `data/` and the shared `vendor/gems57` ev
 
 The full JSON run card is in [`docs/data/consensus_run_card.json`](docs/data/consensus_run_card.json). The site displays it on the [validation page](docs/validation.html) and the [executive summary](docs/executive-summary.html).
 
+## Parallel session (same brief, different lane)
+
+A parallel session committed a separate research pipeline and candidate rasters to this repository. Its own README states that its candidate rasters fail the format gate on a geotransform mismatch (origin 250000, 4520000 vs the official sample_submission origin 243350, 4508550). We keep its work for completeness and flag the conflict. It is not a cleared submission.
+
+- Parallel README: [docs/parallel-readme.md](docs/parallel-readme.md)
+- Parallel index: [docs/parallel-index.html](docs/parallel-index.html)
+- Parallel executive summary: [docs/parallel-executive-summary.html](docs/parallel-executive-summary.html)
+- Parallel method: [docs/method.html](docs/method.html)
+- Parallel verification: [docs/verification.html](docs/verification.html)
+- Parallel research log: [docs/research.md](docs/research.md)
+
+The parallel session's candidate rasters are `korea7-k7-offcatalogue-relay-corridor-30000dots-...`, `korea7-sdcc1-scarpdom-conc-uniq65-37654-...`, and `korea7-sdcc1-scarpdom-conc-uniq65-44090-...`. Its own README says they fail the format gate on the transform mismatch. Do not upload them.
+
 ## Sources for manual review
 
 - DrivenData competition overview: <https://www.drivendata.org/competitions/306/competition-doe-gems/>

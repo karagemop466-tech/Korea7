@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Method: calibrated sparse emission</title>
+<style>
+body{font:16px/1.62 system-ui,sans-serif;max-width:1000px;margin:2rem auto;padding:0 1.1rem;color:#12202e}
+h1{font-size:1.7rem}h2{margin-top:2.2rem}h3{margin-top:1.6rem}
+code{background:#eef2f6;padding:.08rem .3rem;border-radius:4px;font-size:.9em}
+pre{background:#0f1c28;color:#e8f0f6;padding:1rem;border-radius:8px;overflow:auto}
+pre code{background:none;color:inherit}
+.card{background:#f6f9fb;border:1px solid #d7e0e8;border-radius:8px;padding:1rem;margin:1rem 0}
+.neg{border-left:6px solid #a15c00;background:#fff8ec}
+.fact{border-left:6px solid #0a7a3d;background:#effaf3}
+table{border-collapse:collapse;width:100%;margin:.7rem 0;font-size:.94rem}
+td,th{border-bottom:1px solid #d7e0e8;padding:.45rem;text-align:left;vertical-align:top}
+th{background:#eef4f8}a{color:#0755a0}small{color:#52657a}
+.math{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#f2f6f9;padding:.7rem;border-radius:6px;overflow:auto}
+</style></head><body>
+<h1>Method: calibrated sparse emission (CSE-1)</h1>
+<p><small>Everything on this page is either exact arithmetic on the metric or a simulation whose
+calibration is shown. Nothing is an organizer score.</small></p>
+
+<h2>1. Hypothesis</h2>
+<div class="card">
+<p>The gap between the 0.24-0.28 cluster of public submissions and the 0.44 leader is produced mainly
+by the <em>emission</em> step - how a probability field becomes a raster - and by the quality of
+per-cell evidence, not by model capacity. The metric is unusual enough that a model which is good by
+AUC can still be worthless: true positives are credited with a maximum over a 300 m kernel, false
+positives are charged as a sum over every positive pixel.</p>
+</div>
+
+<h2>2. Mechanism</h2>
+<div class="math">
+k(d) = max(1 - d/300 m, 0)      TP_w = sum_{g in G} max_x p(x) k(d(x,g))      (MAX)
+                                FP_w = sum_{x: p(x)>0} p(x) (1 - max_g k)      (SUM)
+DTI  = TP_w / (TP_w + 0.2 FP_w + 0.8 FN_w)
+</div>
+<p>Three consequences, each measured rather than asserted:</p>
+<ol>
+<li><strong>Density is a pure cost.</strong> A 1-px band on target scores 1.0000, 3 px scores 0.8333,
+5 px scores 0.6250. (Exact, <code>gems.metric.band_table</code>.)</li>
+<li><strong>A background is fatal.</strong> A uniform 0.02 field over 201x201 cells with one true
+fault cell scores 0.0001. This is why smooth U-Net outputs land at 0.02-0.04 while sparse binary maps
+land at 0.25.</li>
+<li><strong>Misses cost four times what false alarms cost</strong> (beta 0.8 vs alpha 0.2), so the
+optimum is <em>not</em> "be conservative": it is "include every cell whose probability exceeds
+<code>lam*alpha/(1 - lam(1-beta))</code>", which at lam = 0.4 is about 8%.</li>
+</ol>
+
+<h2>3. Pipeline as implemented</h2>
+<ol>
+<li><strong>Independent features</strong> (<code>gems/features.py</code>): for each band, a
+scale-normalised Hessian ridge response at two scales plus a gradient magnitude. A ridge measure
+responds to linear second-derivative structure - scarps, magnetic lineaments, topographic breaks -
+and is invariant to a monotone brightness change of the band.</li>
+<li><strong>Catalogue features</strong>, recomputed inside every fold from the visible faults only:
+proximity, distance, tip extensions, gap closures, wide proximity.</li>
+<li><strong>Model</strong> (<code>gems/model.py</code>): ridge logistic regression by Newton/IRLS,
+class-balanced. The balance is not cosmetic. With unbalanced weights a
+"distance to mapped faults" feature separates the training data almost perfectly and drives the
+intercept to -30 or lower; the model then returns probability 0 for every withheld segment. Measured
+on the demo set: catalogue-inclusive holdout DTI <strong>0.0000</strong>, independent-features
+holdout DTI 0.5232.</li>
+<li><strong>Calibration</strong> (<code>gems/calibrate.py</code>): isotonic (pool-adjacent-violators)
+score to probability, fitted on training folds only. Not cosmetic either: FP is a sum of
+<em>values</em>, so a miscalibrated field is charged for its optimism.</li>
+<li><strong>Emission</strong> (<code>gems/emission.py</code>): Dinkelbach thresholding, emitting a
+binary map. See section 5 for the coverage-aware alternative and why it is not the default.</li>
+<li><strong>Gates</strong>: buffered segment holdout, leakage canary, format validator, registry
+uniqueness, run card.</li>
+</ol>
+
+<h2>4. Holdout design (the part most projects get wrong)</h2>
+<ul>
+<li>Whole connected fault segments are withheld, never pixels.</li>
+<li>A 5 px (500 m) buffer around each withheld segment is removed from training <em>and</em> from
+scoring: a model should not be punished for the experimenter's hole, and must not learn its rim.</li>
+<li>Catalogue features are recomputed per fold, so the model cannot read the answer from the
+catalogue it is being tested against.</li>
+<li>The 95% interval resamples <em>segments</em>, because pixels along one fault are strongly
+correlated and a pixel bootstrap would be far too narrow.</li>
+<li>Each feature is tested alone: AUC above 0.90 is reported as a leakage-canary trip and blocks
+promotion.</li>
+</ul>
+
+<h2>5. Results, including the negative ones</h2>
+<div class="card neg">
+<p><strong>Negative result (E2).</strong> On five calibrated testbed networks with evidence AUC 0.807,
+the best emitter was plain top-<em>k</em> (0.7169 +/- 0.0277), then Dinkelbach threshold (0.6086 +/-
+0.2384), then NMS (0.5464 +/- 0.1804); the coverage-aware greedy that this project set out to
+justify scored 0.4850 +/- 0.0849, i.e. 0.23 <em>worse</em> than top-k, and worse even than top-k at
+the same number of emitted cells (0.3971). The greedy over-emits. The shipped default is therefore
+the measured winner; the coverage emitter ships tested, documented and losing.</p>
+</div>
+<div class="card neg">
+<p><strong>Negative result (implicit in E3).</strong> Catalogue geometry is not a shortcut to a high
+score against <em>unmapped</em> faults: tip extension 0.0133 +/- 0.0057, gap closure 0.0032 +/-
+0.0036, both 0.0146 +/- 0.0059, versus 0.2705 +/- 0.0408 for a weak evidence field. The
+catalogue-anchored family that dominates the public lists works because the real evaluator is
+kinder to catalogue-adjacent placement than our R2 reading, not because geometry finds new faults.</p>
+</div>
+<div class="card fact">
+<p><strong>Positive result.</strong> Two things are worth a weekly slot: (a) removing the dense /
+dilated emission habit, worth +0.15 to +0.17 DTI in E2; and (b) adding genuine per-cell evidence,
+which in E3 moves the score from 0.015 to 0.27 at AUC 0.62-0.65 and whose ceiling is 0.59 when
+placement is perfect. That is where the 0.4413 leader is, and it is where the next increment is.</p>
+</div>
+
+<h2>6. What the numbers are, precisely</h2>
+<table><thead><tr><th>Label used in this repo</th><th>Meaning</th><th>Never means</th></tr></thead><tbody>
+<tr><td>ARITHMETIC</td><td>exact computation on the metric definition, hand-checkable</td><td>a measurement on real data</td></tr>
+<tr><td>SIMULATION</td><td>measured on synthetic networks calibrated to four published statistics</td><td>a leaderboard score, even when it lands in the leaderboard's range</td></tr>
+<tr><td>HOLDOUT-DTI</td><td>our evaluator, withheld segments, with evaluator version, positive count and CI</td><td>a leaderboard score</td></tr>
+<tr><td>ORGANIZER-CONFIRMED</td><td>copied from a submission-page receipt</td><td>-</td></tr>
+</tbody></table>
+
+<h2>7. Commands</h2>
+<pre><code>python scripts/run_experiments.py        # reproduce E1-E3, writes docs/results/*.json
+python scripts/make_demo_data.py         # synthetic competition-format data (700x800)
+python scripts/build_submission.py --data demo --out out/demo.tif
+python -m gems.validate out/demo.tif     # format gate
+python -m gems.registry --candidate out/demo.tif --manifest registry.json
+python -m pytest -q                      # 36 tests
+python scripts/make_report.py            # regenerate the site from the JSON</code></pre>
+<p><small><a href="index.html">executive summary</a> - <a href="verification.html">source audit</a></small></p>
+</body></html>

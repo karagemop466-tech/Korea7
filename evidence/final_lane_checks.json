@@ -1,0 +1,213 @@
+{
+ "calibration": {
+  "a": -0.027129991674169924,
+  "b": 4.7154313301643,
+  "rmse": 0.0022906894700217423
+ },
+ "final_checks": {
+  "v2a": {
+   "rows": [
+    {
+     "registry": "GEMSDOE24_gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif",
+     "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+     "dot_overlap_3px": 0.2826,
+     "spearman": 0.0049
+    },
+    {
+     "registry": "GEMSDOE25_d28.tif",
+     "sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30",
+     "dot_overlap_3px": 0.2675,
+     "spearman": 0.0055
+    },
+    {
+     "registry": "GEMSDOE27_gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif",
+     "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+     "dot_overlap_3px": 0.2861,
+     "spearman": 0.0047
+    },
+    {
+     "registry": "GEMSDOE28_gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif",
+     "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+     "dot_overlap_3px": 0.2599,
+     "spearman": 0.0057
+    },
+    {
+     "registry": "GEMSDOE30_gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif",
+     "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+     "dot_overlap_3px": 0.2675,
+     "spearman": 0.0055
+    },
+    {
+     "registry": "GEMSDOE31_gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif",
+     "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+     "dot_overlap_3px": 0.2629,
+     "spearman": 0.0065
+    },
+    {
+     "registry": "GEMSDOE32_B2.tif",
+     "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+     "dot_overlap_3px": 0.2571,
+     "spearman": 0.0072
+    },
+    {
+     "registry": "GEMSDOE33_GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif",
+     "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+     "dot_overlap_3px": 0.2678,
+     "spearman": 0.0056
+    },
+    {
+     "registry": "GEMSDOE36_gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif",
+     "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+     "dot_overlap_3px": 0.2839,
+     "spearman": 0.0093
+    },
+    {
+     "registry": "gems10-h25-ctx-ridge-20260927T232947704150Z-6452ae1d00.tif",
+     "sha256": "1381e784fb8b8340beffd0e735ac9eea89ad35d1a807f8a9bab5506e3fc8275e",
+     "dot_overlap_3px": 0.3501,
+     "spearman": -0.0
+    },
+    {
+     "registry": "gems10-h28-dotted-ridge-20260928T020256236880Z-6452ae1d00.tif",
+     "sha256": "7637b72d4c6c3e10226bf46bd72a20272d62ccbe29743062632d10b158b49c58",
+     "dot_overlap_3px": 0.3627,
+     "spearman": 0.001
+    },
+    {
+     "registry": "gems16-h16-1-topo-geophys-baseline-ridges-20260930-df20f65e-nan.tif",
+     "sha256": "055309694ed499ca3d87e76b3f5e81c292aef6e39c418d33ff5a817aa1309bea",
+     "dot_overlap_3px": 0.332,
+     "spearman": 0.0106
+    },
+    {
+     "registry": "gems19-h19-4-multiline-corroborated-openness-thermal-pop-20260930-691e4dfa-nan.tif",
+     "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+     "dot_overlap_3px": 0.3191,
+     "spearman": 0.0108
+    },
+    {
+     "registry": "gems19-h19-5-powerlaw-budget-multiline-corroborated-20260930-e27054cf-nan.tif",
+     "sha256": "ec1f9b56b83ce33cad781ceb9f104b18fb4f2ff785263a4e89616af4aabdee8d",
+     "dot_overlap_3px": 0.3072,
+     "spearman": 0.0101
+    },
+    {
+     "registry": "gems24-h25-1-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif",
+     "sha256": "91eae1ca42ec845eaa8c2ba32da49806e24751743459b8a10017c479bbe639b8",
+     "dot_overlap_3px": 0.2675,
+     "spearman": 0.0055
+    },
+    {
+     "registry": "gemsdoe-ens12-adopted-7f00890a.tif",
+     "sha256": "7f00890a62878d612fb5eef67a9a364a2df819433dde74b6762ce4fc0fc4fe15",
+     "dot_overlap_3px": 0.4064,
+     "spearman": 0.0063
+    }
+   ],
+   "max_overlap": 0.4064,
+   "max_abs_spearman": 0.0108
+  },
+  "v2b": {
+   "rows": [
+    {
+     "registry": "GEMSDOE24_gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif",
+     "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+     "dot_overlap_3px": 0.2788,
+     "spearman": 0.0057
+    },
+    {
+     "registry": "GEMSDOE25_d28.tif",
+     "sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30",
+     "dot_overlap_3px": 0.2645,
+     "spearman": 0.0049
+    },
+    {
+     "registry": "GEMSDOE27_gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif",
+     "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+     "dot_overlap_3px": 0.2824,
+     "spearman": 0.0059
+    },
+    {
+     "registry": "GEMSDOE28_gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif",
+     "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+     "dot_overlap_3px": 0.2569,
+     "spearman": 0.0058
+    },
+    {
+     "registry": "GEMSDOE30_gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif",
+     "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+     "dot_overlap_3px": 0.2645,
+     "spearman": 0.0049
+    },
+    {
+     "registry": "GEMSDOE31_gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif",
+     "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+     "dot_overlap_3px": 0.26,
+     "spearman": 0.0059
+    },
+    {
+     "registry": "GEMSDOE32_B2.tif",
+     "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+     "dot_overlap_3px": 0.254,
+     "spearman": 0.0066
+    },
+    {
+     "registry": "GEMSDOE33_GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif",
+     "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+     "dot_overlap_3px": 0.2647,
+     "spearman": 0.005
+    },
+    {
+     "registry": "GEMSDOE36_gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif",
+     "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+     "dot_overlap_3px": 0.278,
+     "spearman": 0.0086
+    },
+    {
+     "registry": "gems10-h25-ctx-ridge-20260927T232947704150Z-6452ae1d00.tif",
+     "sha256": "1381e784fb8b8340beffd0e735ac9eea89ad35d1a807f8a9bab5506e3fc8275e",
+     "dot_overlap_3px": 0.3429,
+     "spearman": 0.0004
+    },
+    {
+     "registry": "gems10-h28-dotted-ridge-20260928T020256236880Z-6452ae1d00.tif",
+     "sha256": "7637b72d4c6c3e10226bf46bd72a20272d62ccbe29743062632d10b158b49c58",
+     "dot_overlap_3px": 0.3557,
+     "spearman": -0.0003
+    },
+    {
+     "registry": "gems16-h16-1-topo-geophys-baseline-ridges-20260930-df20f65e-nan.tif",
+     "sha256": "055309694ed499ca3d87e76b3f5e81c292aef6e39c418d33ff5a817aa1309bea",
+     "dot_overlap_3px": 0.3274,
+     "spearman": 0.0102
+    },
+    {
+     "registry": "gems19-h19-4-multiline-corroborated-openness-thermal-pop-20260930-691e4dfa-nan.tif",
+     "sha256": "89109a3bd2cd3b12e7a0f388113c519843acfc9c4f46825affefc3e63dd99b22",
+     "dot_overlap_3px": 0.3147,
+     "spearman": 0.012
+    },
+    {
+     "registry": "gems19-h19-5-powerlaw-budget-multiline-corroborated-20260930-e27054cf-nan.tif",
+     "sha256": "ec1f9b56b83ce33cad781ceb9f104b18fb4f2ff785263a4e89616af4aabdee8d",
+     "dot_overlap_3px": 0.3027,
+     "spearman": 0.011
+    },
+    {
+     "registry": "gems24-h25-1-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif",
+     "sha256": "91eae1ca42ec845eaa8c2ba32da49806e24751743459b8a10017c479bbe639b8",
+     "dot_overlap_3px": 0.2645,
+     "spearman": 0.0049
+    },
+    {
+     "registry": "gemsdoe-ens12-adopted-7f00890a.tif",
+     "sha256": "7f00890a62878d612fb5eef67a9a364a2df819433dde74b6762ce4fc0fc4fe15",
+     "dot_overlap_3px": 0.3958,
+     "spearman": 0.0078
+    }
+   ],
+   "max_overlap": 0.3958,
+   "max_abs_spearman": 0.012
+  }
+ }
+}

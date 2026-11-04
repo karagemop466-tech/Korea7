@@ -347,6 +347,17 @@ limits = f'''<section class="section" id="limits">
   </div>
 </section>'''
 
+parallel_section = f'''<section class="section" id="parallel">
+  <h2>Parallel session (same brief, different lane).</h2>
+  <p class="sub">A parallel session committed a separate research pipeline and candidate rasters to this repository. Its own README states that its candidate rasters fail the format gate on a geotransform mismatch (origin 250000, 4520000 vs the official sample_submission origin 243350, 4508550). We keep its work for completeness and flag the conflict. It is not a cleared submission.</p>
+  <div class="grid grid-3">
+    <div class="card"><h3>Parallel index</h3><p><a href="parallel-index.html">Parallel executive summary</a> — the parallel session's site.</p></div>
+    <div class="card"><h3>Parallel method</h3><p><a href="method.html">Method and full results</a> — the parallel session's pipeline.</p></div>
+    <div class="card"><h3>Parallel verification</h3><p><a href="verification.html">Source audit and flagged irregularities</a> — the grid origin conflict.</p></div>
+  </div>
+  <p style="color:var(--muted);font-size:13px;margin-top:10px">The parallel session's candidate rasters are <code>korea7-k7-offcatalogue-relay-corridor-30000dots-...</code>, <code>korea7-sdcc1-scarpdom-conc-uniq65-37654-...</code>, and <code>korea7-sdcc1-scarpdom-conc-uniq65-44090-...</code>. Its own README says they fail the format gate on the transform mismatch. Do not upload them. The parallel README is <a href="parallel-readme.md">parallel-readme.md</a>; the parallel executive summary is <a href="parallel-executive-summary.html">parallel-executive-summary.html</a>.</p>
+</section>'''
+
 run_card_section = f'''<section class="section" id="run-card">
   <h2>Run card.</h2>
   <p class="sub">One JSON card with the hypothesis, mechanism, non-fault mimic, holdout DTI + CI, registry correlation/overlap, raster SHA-256, validator output, submission name and note, and verdict.</p>
@@ -354,7 +365,7 @@ run_card_section = f'''<section class="section" id="run-card">
   {run_card()}
 </section>'''
 
-index_body = hero + summary + nine + method + why + val_section + howto + limits + run_card_section
+index_body = hero + summary + nine + method + why + val_section + howto + limits + parallel_section + run_card_section
 exec_body = f'''<section class="hero" style="padding-top:44px">
   <div class="eyebrow">Executive summary</div>
   <h1 style="font-size:clamp(30px,4vw,46px)">The best file to download — and the honest reason it is not cleared.</h1>
@@ -367,6 +378,7 @@ exec_body = f'''<section class="hero" style="padding-top:44px">
 <section class="section"><h2>Nine focus sites</h2>{nine_site_table()}</section>
 <section class="section"><h2>Holdout evidence</h2>{holdout_table()}</section>
 <section class="section"><h2>Validation</h2>{validation_table()}</section>
+<section class="section"><h2>Parallel session</h2><p class="sub">A parallel session committed a separate research pipeline and candidate rasters. Its own README says they fail the format gate on a geotransform mismatch. It is not a cleared submission. <a href="parallel-index.html">Parallel index</a> · <a href="method.html">Parallel method</a> · <a href="verification.html">Parallel verification</a> · <a href="parallel-readme.md">Parallel README</a>.</p></section>
 <section class="section"><h2>Run card</h2><button class="btn btn-ghost btn-sm no-print" data-print>Print this page</button>{run_card()}</section>'''
 
 howto_body = f'''<section class="hero" style="padding-top:44px"><div class="eyebrow">How to submit</div><h1 style="font-size:clamp(30px,4vw,46px)">From download to submission, step by step.</h1><p class="lede">The portal accepts a single-band GeoTIFF or a ZIP containing one GeoTIFF. Our file matches the submission format's CRS, shape, and geotransform. The decision to submit is an owner decision: the file is a research artifact and is not organizer-cleared.</p></section>

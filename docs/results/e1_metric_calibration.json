@@ -1,0 +1,164 @@
+{
+  "experiment": "E1-metric-and-testbed",
+  "label": "ARITHMETIC + SIMULATION",
+  "hand_checks": {
+    "single_pixel_on_target": 1.0,
+    "single_pixel_1px_off": 0.6667,
+    "single_pixel_2px_off": 0.3333,
+    "single_pixel_3px_off": 0.0,
+    "worked_example_3_1.89_2": 0.6027,
+    "empty_prediction": 0.0,
+    "uniform_0.02_background": 0.0001
+  },
+  "band_table": [
+    {
+      "width_px": 1,
+      "offset_px": 0,
+      "dti": 1.0
+    },
+    {
+      "width_px": 1,
+      "offset_px": 1,
+      "dti": 0.6667
+    },
+    {
+      "width_px": 1,
+      "offset_px": 2,
+      "dti": 0.3333
+    },
+    {
+      "width_px": 3,
+      "offset_px": 0,
+      "dti": 0.8333
+    },
+    {
+      "width_px": 3,
+      "offset_px": 1,
+      "dti": 0.5
+    },
+    {
+      "width_px": 3,
+      "offset_px": 2,
+      "dti": 0.2381
+    },
+    {
+      "width_px": 5,
+      "offset_px": 0,
+      "dti": 0.625
+    },
+    {
+      "width_px": 5,
+      "offset_px": 1,
+      "dti": 0.3846
+    },
+    {
+      "width_px": 5,
+      "offset_px": 2,
+      "dti": 0.1852
+    },
+    {
+      "width_px": 7,
+      "offset_px": 0,
+      "dti": 0.5
+    },
+    {
+      "width_px": 7,
+      "offset_px": 1,
+      "dti": 0.3125
+    },
+    {
+      "width_px": 7,
+      "offset_px": 2,
+      "dti": 0.1515
+    }
+  ],
+  "testbed_calibration": {
+    "chosen": {
+      "omission": 0.08,
+      "jitter_px": 0.3
+    },
+    "agreement_dti": 0.7925,
+    "chance_dti": 0.0326,
+    "anchors": {
+      "agreement": 0.796,
+      "chance": 0.045,
+      "density": 0.0139,
+      "coverage_300m": 0.0837
+    },
+    "measured": {
+      "density": 0.0143,
+      "coverage_300m": 0.0778
+    },
+    "search": [
+      {
+        "omission": 0.02,
+        "jitter_px": 0.2,
+        "dti": 0.7537
+      },
+      {
+        "omission": 0.02,
+        "jitter_px": 0.3,
+        "dti": 0.7368
+      },
+      {
+        "omission": 0.02,
+        "jitter_px": 0.5,
+        "dti": 0.6795
+      },
+      {
+        "omission": 0.05,
+        "jitter_px": 0.2,
+        "dti": 0.7314
+      },
+      {
+        "omission": 0.05,
+        "jitter_px": 0.3,
+        "dti": 0.7128
+      },
+      {
+        "omission": 0.05,
+        "jitter_px": 0.5,
+        "dti": 0.6584
+      },
+      {
+        "omission": 0.08,
+        "jitter_px": 0.2,
+        "dti": 0.8236
+      },
+      {
+        "omission": 0.08,
+        "jitter_px": 0.3,
+        "dti": 0.7925
+      },
+      {
+        "omission": 0.08,
+        "jitter_px": 0.5,
+        "dti": 0.7387
+      },
+      {
+        "omission": 0.12,
+        "jitter_px": 0.2,
+        "dti": 0.7868
+      },
+      {
+        "omission": 0.12,
+        "jitter_px": 0.3,
+        "dti": 0.7663
+      },
+      {
+        "omission": 0.12,
+        "jitter_px": 0.5,
+        "dti": 0.7128
+      }
+    ],
+    "shape": [
+      900,
+      900
+    ],
+    "seed": 0
+  },
+  "notes": [
+    "TP_w is a max over the kernel and FP_w is a sum over positives, so a 1-px band scores 1.00 on target while a 5-px band scores 0.625 and a 3-px band one pixel off scores 0.238.",
+    "A uniform 0.02 background over a 201x201 field with one truth cell scores essentially zero: FP_w grows by the number of positives."
+  ]
+}

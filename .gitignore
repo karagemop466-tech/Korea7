@@ -13,3 +13,7 @@ node_modules/
 
 # Local caches (not used by the committed audit)
 .cache/
+
+# Local demo / build outputs
+demo/
+out/
