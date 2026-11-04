@@ -88,3 +88,51 @@ def test_dot_distance_threshold_is_inclusive(tmp_path):
     result = screen(**args)
     assert result['comparisons'][0]['dot_overlap_3px'] == 1.0
     assert result['status'] == 'BLOCKED'
+
+
+def test_surface_screen_before_dots_and_duplicate(tmp_path):
+    from check_surface import screen_surface
+    args = fixtures(tmp_path)
+    args.pop('candidate')
+    assert screen_surface(**args)['status'] == 'SCREENED_NOT_APPROVED'
+    with rasterio.open(args['surface']) as src:
+        data = src.read(1)
+    write(tmp_path / 'rs.tif', data)
+    items = json.loads(args['manifest'].read_text())
+    for item in items:
+        item['surface_sha256'] = sha256(tmp_path / 'rs.tif')
+    args['manifest'].write_text(json.dumps(items))
+    result = screen_surface(**args)
+    assert result['status'] == 'BLOCKED'
+    assert len(result['comparisons']) == 1
+    assert result['comparisons'][0]['duplicate']
+
+
+def test_masked_candidate_blocks(tmp_path):
+    args = fixtures(tmp_path)
+    with rasterio.open(args['candidate'], 'r+') as src:
+        src.nodata = 0
+    assert screen(**args)['status'] == 'BLOCKED'
+
+
+def test_surface_screen_missing_registry_or_masked_surface_blocks(tmp_path):
+    from check_surface import screen_surface
+    args = fixtures(tmp_path)
+    args.pop('candidate')
+    items = json.loads(args['manifest'].read_text())
+    args['manifest'].write_text(json.dumps(items[:-1]))
+    assert screen_surface(**args)['status'] == 'BLOCKED'
+    args['manifest'].write_text(json.dumps(items))
+    with rasterio.open(args['surface'], 'r+') as src:
+        src.nodata = float(src.read(1)[0, 0])
+    assert 'masked' in screen_surface(**args)['errors'][0]
+
+
+def test_masked_footprint_blocks_both_screens(tmp_path):
+    from check_surface import screen_surface
+    args = fixtures(tmp_path)
+    with rasterio.open(args['footprint'], 'r+') as src:
+        src.nodata = 1
+    assert screen(**args)['status'] == 'BLOCKED'
+    args.pop('candidate')
+    assert screen_surface(**args)['status'] == 'BLOCKED'

@@ -23,8 +23,8 @@ def sha256(path):
 
 def read(path, grid=None):
     with rasterio.open(path) as src:
-        if src.count != 1 or src.crs is None:
-            raise ValueError(f'{path}: expected one band and a CRS')
+        if src.driver != 'GTiff' or src.count != 1 or src.crs is None:
+            raise ValueError(f'{path}: expected a single-band GeoTIFF and a CRS')
         spec = (src.crs, src.width, src.height, src.transform)
         if grid is not None and spec != grid:
             raise ValueError(f'{path}: CRS, shape or transform mismatch')
@@ -45,8 +45,14 @@ def screen(candidate, surface, reference, footprint, manifest):
         template, grid = read(reference)
         del template
         pred, _ = read(candidate, grid)
+        with rasterio.open(candidate) as src:
+            if not (src.read_masks(1) != 0).all():
+                raise ValueError('candidate contains masked or nodata pixels')
         surf, _ = read(surface, grid)
         mask, _ = read(footprint, grid)
+        with rasterio.open(footprint) as src:
+            if not (src.read_masks(1) != 0).all():
+                raise ValueError('footprint contains masked pixels')
         if not np.all(np.isfinite(mask)) or not np.all(np.isin(mask, [0, 1])):
             raise ValueError('footprint must be an explicitly supplied finite binary 0/1 raster')
         inside = mask == 1
@@ -59,6 +65,9 @@ def screen(candidate, surface, reference, footprint, manifest):
                             'all_values_in_0_1': bool(np.isfinite(pred).all() and ((pred >= 0) & (pred <= 1)).all())}
         if not all(result['format'].values()):
             raise ValueError('format check failed; all pixels must be finite and in [0,1]')
+        with rasterio.open(surface) as src:
+            if not (src.read_masks(1)[inside] != 0).all():
+                raise ValueError('candidate surface has masked footprint pixels')
         if not np.isfinite(surf[inside]).all():
             raise ValueError('candidate surface has nonfinite footprint pixels')
         # A dot is an explicitly binary positive pixel; arbitrary continuous outputs are rejected.
@@ -78,6 +87,10 @@ def screen(candidate, surface, reference, footprint, manifest):
                 raise ValueError(f"{item['site']}: registry hash mismatch")
             rs, _ = read(sp, grid)
             rd, _ = read(dp, grid)
+            for path in (sp, dp):
+                with rasterio.open(path) as src:
+                    if not (src.read_masks(1)[inside] != 0).all():
+                        raise ValueError(f'{path}: masked footprint pixels')
             if not np.isfinite(rs[inside]).all() or not np.isfinite(rd).all() or not np.isin(rd, [0, 1]).all():
                 raise ValueError(f"{item['site']}: invalid registry surface or dots")
             refdots = (rd == 1) & inside
@@ -89,11 +102,13 @@ def screen(candidate, surface, reference, footprint, manifest):
             result['comparisons'].append({'site': item['site'], 'surface_sha256': item['surface_sha256'],
                                           'dots_sha256': item['dots_sha256'], 'spearman_rho': rho,
                                           'dot_overlap_3px': overlap, 'duplicate': rho > .90 or overlap > .70})
+            if result['comparisons'][-1]['duplicate']:
+                break
         if any(c['duplicate'] for c in result['comparisons']):
             result['errors'].append('Duplicate/lane drift threshold exceeded; stop.')
         else:
             result['status'] = 'SCREENED_NOT_APPROVED'
-    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as e:
+    except (OSError, ValueError, KeyError, TypeError, rasterio.errors.RasterioError) as e:
         result['errors'].append(str(e))
     return result
 
