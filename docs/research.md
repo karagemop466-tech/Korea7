@@ -32,3 +32,13 @@ Potential official sources to investigate, not confirmed downloadable here: [USG
 {"hypothesis":null,"mechanism":null,"named_non_fault_process":null,"holdout_dti":null,"evaluator_version":null,"withheld_positives":null,"ci_95":null,"registry_correlation":null,"registry_overlap":null,"raster_sha256":null,"validator_output":"BLOCKED: no candidate, reference, footprint, or complete registry","submission_name":null,"submission_note":null,"verdict":"negative"}
 ```
 No experiment was run. This is a blocked run, not evidence that any scientific hypothesis failed.
+
+## Follow-up repository review, 2026-11-04
+
+**Pass 1 — inventory and requirement trace.** Read `README.md`, the research and prior-review notes, both site pages, all three validation/screening scripts, and their tests. This checkout remains a documentation-and-preflight repository; no data, cache, holdout evaluator, writer, model, or prediction raster exists. The nine-site table reflects only user-provided result claims and has no downloadable raster or local estimate. No TIFF was created, no experiment was run, and no submission can be recommended.
+
+**Pass 2 — correctness review and repair.** Found that `check_candidate.py` used raster pixel values but did not reject a non-GeoTIFF driver or a TIFF mask/nodata mask. A raster with an in-range nodata value could therefore pass this screening step despite the strict all-pixel preflight described elsewhere. Updated its shared raster reader to require GeoTIFF and reject masked/nodata pixels, and added a regression test for nodata=0. This hardens screening only; it does not make the tool an organizer validator or submission approval.
+
+**Pass 3 — verification against the brief.** Installed declared requirements into the ignored local `.venv` and ran `.venv/bin/pytest -q`: 20 tests passed. `git diff --check` passed. Pytest reported 92 Rasterio `PendingDeprecationWarning`s from the test fixtures' affine helper; no functional failures. Review found no basis to generate a valid unique submission or compute HOLDOUT-DTI. Requested protocol inputs (explicit assigned method, complete registry including pre-placement surfaces, shared cached stack/evaluator/writer, competition rasters, and trusted receipts) remain unavailable. No submission slot should be used.
+
+**Remaining code-quality issue:** `validate_raster.py` and `validate_submission.py` overlap but expose different result schemas and both perform strict format-only checks. Consolidate behind one tested API before adding end-to-end generation so the website and CLI cannot diverge. Also add a validator test for a non-GeoTIFF single-band raster if this preflight is extended to formats beyond the ordinary TIFF input. No such further work changes the negative run-card verdict.

@@ -64,6 +64,17 @@ def test_wrong_transform_and_hash_block(tmp_path):
     assert screen(**args)['status'] == 'BLOCKED'
 
 
+def test_masked_candidate_blocks_even_if_nodata_value_is_in_range(tmp_path):
+    args = fixtures(tmp_path)
+    values = np.zeros((12, 12)); values[0, 0] = 1
+    with rasterio.open(args['candidate'], 'w', driver='GTiff', height=12, width=12,
+                       count=1, dtype='float32', crs='EPSG:32611',
+                       transform=from_origin(0, 100, 1, 1), nodata=0) as dst:
+        dst.write(values.astype('float32'), 1)
+    assert screen(**args)['status'] == 'BLOCKED'
+    assert 'masked or nodata' in screen(**args)['errors'][0]
+
+
 def test_surface_duplicate_and_constant_block(tmp_path):
     args = fixtures(tmp_path)
     with rasterio.open(args['surface']) as src:

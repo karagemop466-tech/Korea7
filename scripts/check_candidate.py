@@ -23,11 +23,15 @@ def sha256(path):
 
 def read(path, grid=None):
     with rasterio.open(path) as src:
+        if src.driver != 'GTiff':
+            raise ValueError(f'{path}: expected a GeoTIFF')
         if src.count != 1 or src.crs is None:
             raise ValueError(f'{path}: expected one band and a CRS')
         spec = (src.crs, src.width, src.height, src.transform)
         if grid is not None and spec != grid:
             raise ValueError(f'{path}: CRS, shape or transform mismatch')
+        if not np.all(src.read_masks(1) != 0):
+            raise ValueError(f'{path}: masked or nodata pixels are not permitted by this strict preflight')
         return src.read(1), spec
 
 
