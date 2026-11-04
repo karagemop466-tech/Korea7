@@ -23,8 +23,10 @@ def sha256(path):
 
 def read(path, grid=None):
     with rasterio.open(path) as src:
-        if src.count != 1 or src.crs is None:
-            raise ValueError(f'{path}: expected one band and a CRS')
+        if src.driver != 'GTiff' or src.count != 1 or src.crs is None:
+            raise ValueError(f'{path}: expected a single-band GeoTIFF with a CRS')
+        if not (src.read_masks(1) != 0).all():
+            raise ValueError(f'{path}: masked or nodata pixels are not allowed')
         spec = (src.crs, src.width, src.height, src.transform)
         if grid is not None and spec != grid:
             raise ValueError(f'{path}: CRS, shape or transform mismatch')
@@ -35,7 +37,10 @@ def rank_correlation(a, b):
     x, y = rankdata(a), rankdata(b)
     if np.ptp(x) == 0 or np.ptp(y) == 0:
         raise ValueError('rank correlation undefined for constant surface')
-    return float(np.corrcoef(x, y)[0, 1])
+    rho = float(np.corrcoef(x, y)[0, 1])
+    if not np.isfinite(rho):
+        raise ValueError('rank correlation is not finite')
+    return rho
 
 
 def screen(candidate, surface, reference, footprint, manifest):
@@ -93,19 +98,57 @@ def screen(candidate, surface, reference, footprint, manifest):
             result['errors'].append('Duplicate/lane drift threshold exceeded; stop.')
         else:
             result['status'] = 'SCREENED_NOT_APPROVED'
-    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as e:
+    except (OSError, ValueError, KeyError, TypeError, rasterio.errors.RasterioError) as e:
+        result['errors'].append(str(e))
+    return result
+
+
+def screen_surface(surface, reference, footprint, manifest):
+    """Screen surfaces before dot placement; not proof of a complete registry."""
+    result = {'status': 'BLOCKED', 'comparisons': [], 'errors': [],
+              'notice': 'Surface screening only; registry completeness is not established.'}
+    try:
+        _, grid = read(reference)
+        values, _ = read(surface, grid)
+        mask, _ = read(footprint, grid)
+        if not np.isfinite(mask).all() or not np.isin(mask, [0, 1]).all() or not (mask == 1).any():
+            raise ValueError('footprint must be a nonempty finite binary raster')
+        inside = mask == 1
+        if not np.isfinite(values[inside]).all():
+            raise ValueError('candidate surface has nonfinite footprint pixels')
+        items = json.loads(Path(manifest).read_text())
+        if not isinstance(items, list) or not SITES.issubset({i['site'] for i in items}):
+            raise ValueError('manifest must include each of the nine requested sites')
+        for item in items:
+            path = Path(manifest).resolve().parent / item['surface']
+            if sha256(path) != item['surface_sha256']:
+                raise ValueError(f"{item['site']}: registry hash mismatch")
+            other, _ = read(path, grid)
+            if not np.isfinite(other[inside]).all():
+                raise ValueError(f"{item['site']}: invalid registry surface")
+            rho = rank_correlation(values[inside], other[inside])
+            result['comparisons'].append({'site': item['site'], 'surface_sha256': item['surface_sha256'],
+                                          'spearman_rho': rho, 'duplicate': rho > .90})
+        if any(item['duplicate'] for item in result['comparisons']):
+            result['errors'].append('Duplicate/lane drift threshold exceeded; stop.')
+        else:
+            result['status'] = 'SURFACE_SCREENED_NOT_APPROVED'
+    except (OSError, ValueError, KeyError, TypeError, rasterio.errors.RasterioError) as e:
         result['errors'].append(str(e))
     return result
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    for name in ('candidate', 'surface', 'reference', 'footprint', 'manifest'):
+    for name in ('surface', 'reference', 'footprint', 'manifest'):
         p.add_argument('--' + name, required=True)
+    p.add_argument('--candidate', help='binary dot raster; omit for pre-placement surface screening')
     args = p.parse_args()
-    r = screen(**vars(args))
+    kwargs = vars(args)
+    candidate = kwargs.pop('candidate')
+    r = screen(candidate=candidate, **kwargs) if candidate else screen_surface(**kwargs)
     print(json.dumps(r, indent=2, allow_nan=False))
-    return 0 if r['status'] == 'SCREENED_NOT_APPROVED' else 1
+    return 0 if r['status'] in ('SCREENED_NOT_APPROVED', 'SURFACE_SCREENED_NOT_APPROVED') else 1
 
 
 if __name__ == '__main__':
