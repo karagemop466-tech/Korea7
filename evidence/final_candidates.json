@@ -1,0 +1,95 @@
+{
+  "label": "MODEL-BASED ESTIMATE - NOT A SCORE",
+  "reference_dilate2_37654": {
+    "dots": 37654,
+    "ext_model_dti_mean": 0.2983838036488664,
+    "ext_model_dti_min": 0.29635531148520533
+  },
+  "candidates": {
+    "K7-HALO-37654-k3-band8": {
+      "dots": 3945,
+      "min_dist_px": 3.1622776601683795,
+      "median_dist_px": 5.385164807134504,
+      "frac_within_2px": 0.0,
+      "frac_within_3px": 0.0,
+      "ext_model_dti_mean": 0.0026900650500363476,
+      "ext_model_dti_min": 0.0021608278459797773,
+      "closest_registry": {
+        "site": "GEMSDOE28",
+        "jaccard": 0.0010586848247154785,
+        "frac_within_3px": 0.22585551330798478,
+        "dot_rank_spearman": -0.9938266065800564
+      },
+      "unique": true,
+      "sha256_lattice_gate": "8c758e870aeab6cd"
+    },
+    "K7-HALO-40199-k3-band8": {
+      "dots": 3945,
+      "min_dist_px": 3.1622776601683795,
+      "median_dist_px": 5.385164807134504,
+      "frac_within_2px": 0.0,
+      "frac_within_3px": 0.0,
+      "ext_model_dti_mean": 0.0026900650500363476,
+      "ext_model_dti_min": 0.0021608278459797773,
+      "closest_registry": {
+        "site": "GEMSDOE28",
+        "jaccard": 0.0010586848247154785,
+        "frac_within_3px": 0.22585551330798478,
+        "dot_rank_spearman": -0.9938266065800564
+      },
+      "unique": true,
+      "sha256_lattice_gate": "8c758e870aeab6cd"
+    },
+    "K7-HALO-32000-k3-band8": {
+      "dots": 3945,
+      "min_dist_px": 3.1622776601683795,
+      "median_dist_px": 5.385164807134504,
+      "frac_within_2px": 0.0,
+      "frac_within_3px": 0.0,
+      "ext_model_dti_mean": 0.0026900650500363476,
+      "ext_model_dti_min": 0.0021608278459797773,
+      "closest_registry": {
+        "site": "GEMSDOE28",
+        "jaccard": 0.0010586848247154785,
+        "frac_within_3px": 0.22585551330798478,
+        "dot_rank_spearman": -0.9938266065800564
+      },
+      "unique": true,
+      "sha256_lattice_gate": "8c758e870aeab6cd"
+    },
+    "K7-UNIFORM-29270-k4": {
+      "dots": 29270,
+      "min_dist_px": 4.123105625617661,
+      "median_dist_px": 26.92582403567252,
+      "frac_within_2px": 0.0,
+      "frac_within_3px": 0.0,
+      "ext_model_dti_mean": 0.00013729362183209095,
+      "ext_model_dti_min": 9.500494157850805e-05,
+      "closest_registry": {
+        "site": "GEMSDOE27",
+        "jaccard": 0.0031890156128889383,
+        "frac_within_3px": 0.1623163648787154,
+        "dot_rank_spearman": -0.9927289257293354
+      },
+      "unique": true,
+      "sha256_lattice_gate": "e829203910146c66"
+    },
+    "K7-HALO-37654-k4-band8": {
+      "dots": 3132,
+      "min_dist_px": 4.123105625617661,
+      "median_dist_px": 6.0,
+      "frac_within_2px": 0.0,
+      "frac_within_3px": 0.0,
+      "ext_model_dti_mean": 0.00023828127339304973,
+      "ext_model_dti_min": 0.00016567977875563963,
+      "closest_registry": {
+        "site": "GEMSDOE28",
+        "jaccard": 0.0008341920604543893,
+        "frac_within_3px": 0.21264367816091953,
+        "dot_rank_spearman": -0.9941082952792591
+      },
+      "unique": true,
+      "sha256_lattice_gate": "494a3f94fe8ee996"
+    }
+  }
+}

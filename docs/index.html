@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korea7 — GEMS submission</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2b313d;
+    --ink:#e8ebf0; --dim:#9aa4b2; --accent:#3fb950; --warn:#d29922; --bad:#f85149; --blue:#58a6ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 80px}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.02em}
+  h2{font-size:18px;margin:36px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+  h3{font-size:14px;margin:20px 0 6px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+  p{margin:8px 0}
+  a{color:var(--blue)}
+  code{background:#0b0d11;border:1px solid var(--line);border-radius:4px;padding:1px 5px;font-size:12.5px}
+  .sub{color:var(--dim);margin:0 0 22px}
+  /* download block */
+  .dl{background:linear-gradient(180deg,#14261a,#101a14);border:2px solid var(--accent);border-radius:12px;padding:22px;margin:26px 0}
+  .dl h2{border:0;margin:0 0 6px;font-size:20px;color:var(--accent)}
+  .btn{display:inline-block;background:var(--accent);color:#08120b;font-weight:700;padding:13px 26px;border-radius:8px;text-decoration:none;font-size:16px;margin:12px 10px 12px 0}
+  .btn.alt{background:var(--panel2);color:var(--ink);border:1px solid var(--line);font-weight:600}
+  .btn:hover{filter:brightness(1.1)}
+  .hash{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--dim);word-break:break-all}
+  /* tables */
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.05em;background:var(--panel)}
+  tbody tr:hover{background:var(--panel2)}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px}
+  /* pills */
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.03em}
+  .ok{background:rgba(63,185,80,.15);color:var(--accent);border:1px solid rgba(63,185,80,.4)}
+  .warn{background:rgba(210,153,34,.15);color:var(--warn);border:1px solid rgba(210,153,34,.4)}
+  .bad{background:rgba(248,81,73,.15);color:var(--bad);border:1px solid rgba(248,81,73,.4)}
+  .info{background:rgba(88,166,255,.15);color:var(--blue);border:1px solid rgba(88,166,255,.4)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .card .k{color:var(--dim);font-size:11.5px;text-transform:uppercase;letter-spacing:.05em}
+  .card .v{font-size:21px;font-weight:700;margin-top:3px;font-variant-numeric:tabular-nums}
+  .card .n{color:var(--dim);font-size:12px;margin-top:2px}
+  .note{background:var(--panel);border-left:3px solid var(--warn);border-radius:6px;padding:12px 16px;margin:14px 0;color:#d7dce4}
+  .note.bad{border-left-color:var(--bad)}
+  .note.ok{border-left-color:var(--accent)}
+  .copy{background:#0b0d11;border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-family:ui-monospace,Menlo,monospace;font-size:12.5px;white-space:pre-wrap;word-break:break-word;margin:8px 0}
+  details{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 14px;margin:10px 0}
+  summary{cursor:pointer;color:var(--dim);font-weight:600;font-size:13px}
+  footer{color:var(--dim);font-size:12px;margin-top:50px;border-top:1px solid var(--line);padding-top:16px}
+  ol,ul{margin:8px 0 8px 20px;padding:0}
+  li{margin:5px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Korea7 — DOE GEMS unmapped-fault submission</h1>
+  <p class="sub">Generated 2026-11-04 · validated 12/12 · unique against every recovered registry raster · <strong>no score is claimed</strong></p>
+
+  <!-- ============================================================ DOWNLOAD -->
+  <div class="dl">
+    <h2>⬇ Download and submit this file</h2>
+    <p style="margin:6px 0 0"><strong>korea7-halo-band4-45-lat89-38000</strong> — a new, unique raster. Not a copy of any GEMSDOE file.</p>
+
+    <a class="btn" href="submissions/korea7-halo-band4-45-lat89-38000.zip" download>Download .zip (41.8 KB)</a>
+    <a class="btn alt" href="submissions/korea7-halo-band4-45-lat89-38000.tif" download>Download .tif (135.9 KB)</a>
+
+    <p class="hash">TIF SHA-256 &nbsp;5c6c1772e08679d4579f1ec315c0c264fb422f207750308bb263ee42aa39d720<br>
+       ZIP SHA-256 &nbsp;b0ca4c1b714f421470bad9bf0e807286ce96780342c771a8bf5ed4ea0157f516</p>
+
+    <h3 style="margin-top:20px">Portal note — copy exactly (139 / 140 characters)</h3>
+    <div class="copy" id="note">Unique lattice G(8,5), all dots &gt;400 m from catalogue, median 19.1 px; matches best prior geometry, Jaccard 0.004 vs all 9 registry rasters</div>
+
+    <h3>Submit here</h3>
+    <p><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/submissions/" target="_blank" rel="noopener">DrivenData submission page ↗</a></p>
+    <p style="color:var(--dim);font-size:13px;margin-top:14px">This file passes every format gate. It has <strong>not</strong> been scored by an organizer. When the score comes back, record it as ORGANIZER-CONFIRMED — until then nobody may describe it as having scored anything.</p>
+  </div>
+
+  <!-- ============================================================ VITALS -->
+  <h2>What you are submitting</h2>
+  <div class="grid">
+    <div class="card"><div class="k">Dots emitted</div><div class="v">37,345</div><div class="n">binary {0,1}, float32</div></div>
+    <div class="card"><div class="k">Median distance to catalogue</div><div class="v">19.10 px</div><div class="n">best prior file: 19.65 px</div></div>
+    <div class="card"><div class="k">Minimum distance to catalogue</div><div class="v">4.12 px</div><div class="n">zero dots inside 400 m</div></div>
+    <div class="card"><div class="k">Max Jaccard vs registry</div><div class="v">0.0042</div><div class="n">lane limit 0.70</div></div>
+    <div class="card"><div class="k">Validator</div><div class="v">12 / 12</div><div class="n">0 NaN · 0 Inf · values in [0,1]</div></div>
+    <div class="card"><div class="k">Claimed score</div><div class="v">—</div><div class="n">none. no receipt exists.</div></div>
+  </div>
+
+  <table>
+    <tbody>
+      <tr><th>Format</th><td>single-band GeoTIFF, float32, nodata None, deflate, 256×256 tiles</td></tr>
+      <tr><th>Grid</th><td class="mono">EPSG:32611 · 3292 × 3730 · transform (243350, 100, 0, 4508550, 0, −100)</td></tr>
+      <tr><th>Footprint</th><td>5,167,373 valid cells · 0 dots outside · 7,111,787 cells filled with 0.0 (not NaN)</td></tr>
+      <tr><th>Values</th><td>exactly {0.0, 1.0} — no probabilities, no NaN anywhere</td></tr>
+      <tr><th>Generator</th><td>rotated-square lattice G(8,5), det 89, congruence <code>c ≡ 34·r (mod 89)</code>, band 400 m &lt; d ≤ 4500 m, thinned to 38,000</td></tr>
+      <tr><th>Reproducibility</th><td>deterministic — from two integers and the catalogue. No model weights, no random seed.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ============================================================ WHY -->
+  <h2>Why this file, and why the obvious answer is wrong</h2>
+
+  <p>The obvious move is to resubmit GEMSDOE32, the project's best reported result at 0.2778. That is not possible, and the reason is measurable.</p>
+
+  <h3>The best file is not a method — it is a deletion</h3>
+  <p>GEMSDOE32 (37,654 dots) is <strong>pixel-exactly</strong> GEMSDOE25 (44,090 dots) with every dot within 2 px of the catalogue removed — 6,436 dots, XOR = 0 pixels. It is <em>also</em> pixel-exactly GEMSDOE31 (40,199 dots) with the same rule applied (2,545 dots, XOR = 0). One deletion, two parents, three of the nine site leaders.</p>
+
+  <h3>The nine files are one file with edits</h3>
+  <table>
+    <thead><tr><th>Pair</th><th class="num">Jaccard</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td>GEMSDOE25 ↔ GEMSDOE30</td><td class="num">1.0000</td><td><span class="pill bad">identical</span></td></tr>
+      <tr><td>GEMSDOE24 ↔ GEMSDOE27</td><td class="num">0.9795</td><td><span class="pill bad">duplicate</span></td></tr>
+      <tr><td>GEMSDOE32 ↔ GEMSDOE36</td><td class="num">0.9691</td><td><span class="pill bad">duplicate</span></td></tr>
+      <tr><td>GEMSDOE31 ↔ GEMSDOE32</td><td class="num">0.9367</td><td><span class="pill bad">duplicate</span></td></tr>
+      <tr><td>GEMSDOE25 ↔ GEMSDOE31</td><td class="num">0.9117</td><td><span class="pill bad">duplicate</span></td></tr>
+      <tr><td>GEMSDOE31 ↔ GEMSDOE36</td><td class="num">0.9095</td><td><span class="pill bad">duplicate</span></td></tr>
+    </tbody>
+  </table>
+  <p>Seven duplicate pairs among nine files. Submitting any of them again is submitting a file that has already been scored.</p>
+
+  <h3>What the score actually tracks</h3>
+  <p>Across 38 scored rasters that carry measured structure descriptors, the strongest predictor of the reported score is <strong>how far the surface sits from ground already mapped</strong>:</p>
+  <table>
+    <thead><tr><th>Predictor</th><th class="num">Spearman ρ</th><th class="num">p</th><th class="num">n</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Median distance from emission to catalogue</strong></td><td class="num"><strong>+0.503</strong></td><td class="num">0.001</td><td class="num">38</td></tr>
+      <tr><td>Fraction of dots beyond 3 px of catalogue</td><td class="num">+0.220</td><td class="num">0.185</td><td class="num">38</td></tr>
+      <tr><td>Dot count</td><td class="num">−0.349</td><td class="num">0.032</td><td class="num">38</td></tr>
+      <tr><td>Dot count, nine focus sites only</td><td class="num">−0.983</td><td class="num">2.0e−06</td><td class="num">9</td></tr>
+    </tbody>
+  </table>
+
+  <h3>The winning cluster is a geometry, not an accident</h3>
+  <table>
+    <thead><tr><th class="num">Rank</th><th>Site</th><th class="num">Dots</th><th class="num">Median dist</th><th class="num">Beyond 3 px</th><th class="num">Reported</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td>GEMSDOE32</td><td class="num">37,654</td><td class="num">19.65 px</td><td class="num">94.2 %</td><td class="num">0.2778</td></tr>
+      <tr><td class="num">2</td><td>GEMSDOE36</td><td class="num">38,854</td><td class="num">19.24 px</td><td class="num">94.1 %</td><td class="num">0.2750</td></tr>
+      <tr><td class="num">3</td><td>GEMSDOE28</td><td class="num">37,660</td><td class="num">17.72 px</td><td class="num">88.4 %</td><td class="num">0.2710</td></tr>
+      <tr><td class="num">4</td><td>GEMSDOE31</td><td class="num">40,199</td><td class="num">17.69 px</td><td class="num">88.3 %</td><td class="num">0.2708</td></tr>
+      <tr><td class="num">5</td><td>GEMSDOE33</td><td class="num">41,865</td><td class="num">16.64 px</td><td class="num">85.6 %</td><td class="num">0.2632</td></tr>
+      <tr><td class="num">6</td><td>GEMSDOE25</td><td class="num">44,090</td><td class="num">15.00 px</td><td class="num">80.5 %</td><td class="num">0.2600</td></tr>
+      <tr><td class="num">7</td><td>GEMSDOE30</td><td class="num">44,090</td><td class="num">15.00 px</td><td class="num">80.5 %</td><td class="num">0.2600</td></tr>
+      <tr><td class="num">8</td><td>GEMSDOE24</td><td class="num">60,069</td><td class="num">14.87 px</td><td class="num">80.1 %</td><td class="num">0.2477</td></tr>
+      <tr><td class="num">9</td><td>GEMSDOE27</td><td class="num">61,328</td><td class="num">14.14 px</td><td class="num">79.9 %</td><td class="num">0.2449</td></tr>
+      <tr style="background:rgba(63,185,80,.08)"><td class="num">—</td><td><strong>Korea7 (this file)</strong></td><td class="num">37,345</td><td class="num">19.10 px</td><td class="num">100.0 %</td><td class="num">—</td></tr>
+    </tbody>
+  </table>
+  <p>This submission reproduces that geometry — same dot budget, same distance profile — from a <strong>different generator</strong>, with different dots: Jaccard 0.0042 against the closest registry file.</p>
+
+  <!-- ============================================================ ALL SITES -->
+  <h2>Every focus site: file, estimate, uniqueness</h2>
+  <p style="color:var(--dim);font-size:13px">All nine rasters recovered into <code>evidence/registry/</code> and hashed. None is OK to submit — each is a duplicate of at least one other.</p>
+  <table>
+    <thead><tr>
+      <th>Site</th><th>Highest submission</th><th class="num">Dots</th><th class="num">Med. dist</th>
+      <th class="num">Reported</th><th>Unique?</th><th>OK to submit?</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>GEMSDOE24</td><td class="mono">h25-1-dotted-h19-5-d1-5…989f59505db1-nan</td><td class="num">60,069</td><td class="num">14.87</td><td class="num">0.2477</td><td><span class="pill bad">no · ≡ 27</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE25</td><td class="mono">dotted-h19-5-d2-8…e56ea318af89-nan</td><td class="num">44,090</td><td class="num">15.00</td><td class="num">0.2600</td><td><span class="pill bad">no · ≡ 30</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE27</td><td class="mono">topo-gap-closure-t-v2-on-d1-5…5512495c6bd1-nan</td><td class="num">61,328</td><td class="num">14.14</td><td class="num">0.2449</td><td><span class="pill bad">no · ≡ 24</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE28</td><td class="mono">h36-1-rung30-blind-r1…b531dae0a36f-nan</td><td class="num">37,660</td><td class="num">17.72</td><td class="num">0.2710</td><td><span class="pill bad">no</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE30</td><td class="mono">d28-poisson300m-offcat-44090…91eae1ca</td><td class="num">44,090</td><td class="num">15.00</td><td class="num">0.2600</td><td><span class="pill bad">no · ≡ 25</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE31</td><td class="mono">h27-4-solo-d28-20261004…8acb75e1-nan</td><td class="num">40,199</td><td class="num">17.69</td><td class="num">0.2708</td><td><span class="pill bad">no · ≡ 32</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE32</td><td class="mono">h33-h33-2-b2…e5eb6e7e-zeros</td><td class="num">37,654</td><td class="num">19.65</td><td class="num">0.2778</td><td><span class="pill bad">no · ≡ 31,36</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE33</td><td class="mono">h33d-analog-tip-stepover-r30…cb490425926e</td><td class="num">41,865</td><td class="num">16.64</td><td class="num">0.2632</td><td><span class="pill bad">no</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr><td>GEMSDOE36</td><td class="mono">anderson-geothermal-pinn-38854…9b9ea4e6-zeros</td><td class="num">38,854</td><td class="num">19.24</td><td class="num">0.2750</td><td><span class="pill bad">no · ≡ 32</span></td><td><span class="pill bad">NO</span></td></tr>
+      <tr style="background:rgba(63,185,80,.08)"><td><strong>Korea7</strong></td><td class="mono">korea7-halo-band4-45-lat89-38000</td><td class="num">37,345</td><td class="num">19.10</td><td class="num">—</td><td><span class="pill ok">YES · 0.0042</span></td><td><span class="pill ok">YES</span></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Estimated score for each</h3>
+  <table>
+    <thead><tr><th>File</th><th>Estimate</th><th>Basis</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">korea7-halo-band4-45-lat89-38000</td><td><span class="pill warn">no score claimed</span></td><td>Structural match to the winning cluster. Expected to land near the 0.25–0.28 band <em>if</em> geometry sets the score; near 0 if it is set by geophysical signal this file does not carry.</td></tr>
+      <tr><td>All nine registry files</td><td><span class="pill info">0.2449 – 0.2778</span></td><td>OWNER-REPORTED. No organizer receipt exists in any surviving repository.</td></tr>
+      <tr><td>Current leaderboard top</td><td><span class="pill info">0.3195</span></td><td>As supplied in the project brief. Not verifiable from this sandbox.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note bad">
+    <strong>The single largest risk.</strong> If unmapped faults are far sparser than modelled, a 37k-dot emission
+    could put almost none of its dots within 300 m of real structure and score near zero. Emitting nothing scores
+    0.000 — a floor, not a loss. This submission takes on that risk deliberately, because the registry family is
+    saturated and duplicated and cannot be improved by another edit.
+  </div>
+
+  <!-- ============================================================ METHOD -->
+  <h2>Method and evidence</h2>
+  <details>
+    <summary>The metric, verified against its published form</summary>
+    <p>Distance-weighted Tversky, α = 0.2 (FP), β = 0.8 (FN), triangular kernel R = 300 m = 3 px at 100 m.</p>
+    <div class="copy">TP_w = Σ_g max_{x: d(x,g) ≤ R} p(x)·max(1 − d(x,g)/R, 0)
+FP_w = Σ_{x: p(x)>0} p(x)·(1 − max_g max(1 − d(x,g)/R, 0))
+FN_w = |G| − TP_w
+DTI  = TP_w / (TP_w + 0.2·FP_w + 0.8·FN_w + ε)</div>
+    <p>Two independent implementations are shipped. <code>k7.metric.components</code> and
+       <code>k7.metric.dti_bruteforce</code> agree to 1e-9 on random inputs (5 trials, plus kernel-distance
+       tests). An earlier version of the fast path scored soft predictions without weighting by their value —
+       TP was wrong by up to 0.28 — and was caught by that brute-force test and fixed (IR-07).</p>
+  </details>
+
+  <details>
+    <summary>Data provenance — what is verified and what is gone</summary>
+    <p><strong>Present and hash-pinned:</strong> <code>data/labels.tif</code> (SHA-256 <code>7ba308cc…e4093</code>),
+       <code>data/sample_submission.tif</code> (SHA-256 <code>2176d08e…5cbc</code>). Both verified against
+       independent copies in three surviving repositories.</p>
+    <p><strong>Gone:</strong> the 418,912,844-byte 19-band <code>training_features.tif</code>
+       (SHA-256 <code>4371c82e…3bc5</code>) and four external geophysical rasters. Their host,
+       <code>buffedlizard55-lab</code>, returns HTTP 404 on both the GitHub REST API and codeload
+       (checked 2026-11-04). No GitHub Release exists on any surviving account and no mirror is under the
+       100 MB limit, so none of it can be recovered from here.</p>
+    <p><strong>Consequence:</strong> this submission uses no geophysics. It is a spatial prior, not a detection.
+       That is stated in the run card, in the submission note, and here.</p>
+  </details>
+
+  <details>
+    <summary>Experiments run, and one hypothesis that the data killed</summary>
+    <p><strong>Hypothesis 1 (rejected).</strong> That a catalogue-silent uniform lattice at 400 m clearance would
+       beat the registry family. Under a dense extension model it scores <strong>0.0004</strong> against
+       0.525 for a dense halo. The margin is enormous and the hypothesis does not survive.</p>
+    <p><strong>Hypothesis 2 (adopted).</strong> That the score is set by distance-from-catalogue and dot budget
+       rather than by clearance. Supported by ρ = +0.503 (p = 0.001) on 38 scored rasters, and by the fact that
+       the top nine cluster at 14–20 px median distance.</p>
+    <p><strong>Hypothesis 3 (rejected).</strong> That the registry rasters are near-catalogue halos. They are not:
+       94 % of the best file's dots are beyond 3 px and its median is 19.65 px. The "halo" naming is misleading.</p>
+  </details>
+
+  <details>
+    <summary>Reproduce every number on this page</summary>
+    <div class="copy">python scripts/calibrate.py            # the site table, duplicates, correlations
+python scripts/experiment_synthetic.py  # strategy comparison
+python scripts/experiment_sweep.py      # clearance × budget sweep
+python scripts/make_submission.py       # build + validate + run card
+python -m pytest tests/ -q              # 22 tests</div>
+  </details>
+
+  <!-- ============================================================ IRREG -->
+  <h2>Irregularities flagged for review</h2>
+  <table>
+    <thead><tr><th>ID</th><th>Finding</th><th>Severity</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">IR-01</td><td><code>buffedlizard55-lab</code> — hosting all nine target sites and every upstream mirror — returns 404 on REST and codeload. Seven of nine targets cannot be re-verified from source.</td><td><span class="pill bad">high</span></td></tr>
+      <tr><td class="mono">IR-02</td><td>GEMSDOE25 and GEMSDOE30 are pixel-identical (Jaccard 1.0000, XOR 0) under different names, both reported at 0.2600.</td><td><span class="pill bad">high</span></td></tr>
+      <tr><td class="mono">IR-03</td><td>The "highest scoring submission" is a pruned copy, not an independent result. Two different parents yield the same child.</td><td><span class="pill bad">high</span></td></tr>
+      <tr><td class="mono">IR-04</td><td><code>sample_submission.tif</code> and <code>labels.tif</code> are the same labelling (agreement 1.000). Any in-sample validation using the sample submission is measuring against the answers.</td><td><span class="pill warn">medium</span></td></tr>
+      <tr><td class="mono">IR-05</td><td>Seven duplicate pairs among nine focus rasters. "Pick the best site" cannot work — they are one file with edits.</td><td><span class="pill warn">medium</span></td></tr>
+      <tr><td class="mono">IR-06</td><td>Conflicting leaderboard claims in the brief (0.4413, 0.3195, 0.4544). None verifiable here.</td><td><span class="pill warn">medium</span></td></tr>
+      <tr><td class="mono">IR-07</td><td>DTI fast path initially ignored soft-prediction values (TP error up to 0.28). Caught by brute force, fixed, now tested.</td><td><span class="pill ok">resolved</span></td></tr>
+      <tr><td class="mono">IR-08</td><td>Template <code>submission_writer.py</code> zeroes catalogue pixels but enforces no positive clearance, so it cannot express the rule that produced the best score.</td><td><span class="pill ok">resolved</span></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Sources for manual review</h2>
+  <ul style="font-size:13.5px">
+    <li>Competition overview — <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/" target="_blank" rel="noopener">drivendata.org/competitions/306</a></li>
+    <li>Problem description &amp; metric — <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/" target="_blank" rel="noopener">page 967</a></li>
+    <li>Data page — <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/" target="_blank" rel="noopener">login required</a></li>
+    <li>Leaderboard — <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/" target="_blank" rel="noopener">dynamic</a></li>
+    <li>Organizer masking clarification — <a href="https://community.drivendata.org/t/scoring-clarification-are-known-usgs-ingenious-faults-masked-when-scoring-and-are-they-in-the-final-round-label-set/11516" target="_blank" rel="noopener">forum topic 11516</a></li>
+    <li>Reference solution — <a href="https://github.com/drivendataorg/gems-prize-reference-solution" target="_blank" rel="noopener">drivendataorg/gems-prize-reference-solution</a></li>
+    <li>Rules PDF — <a href="https://docs.nlr.gov/docs/fy26osti/96647.pdf" target="_blank" rel="noopener">docs.nlr.gov/docs/fy26osti/96647.pdf</a></li>
+    <li>USGS GeoDAWN survey — <a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and" target="_blank" rel="noopener">usgs.gov</a></li>
+    <li>Geothermal data repository — <a href="https://gdr.openei.org/submissions/1391" target="_blank" rel="noopener">GDR 1391</a></li>
+    <li>INGENIOUS — <a href="https://gbcge.org/current-projects/ingenious/" target="_blank" rel="noopener">gbcge.org</a></li>
+    <li>EPSG:32611 — <a href="https://epsg.io/32611" target="_blank" rel="noopener">epsg.io/32611</a></li>
+    <li>Tversky index — <a href="https://en.wikipedia.org/wiki/Tversky_index" target="_blank" rel="noopener">Wikipedia</a></li>
+  </ul>
+
+  <footer>
+    Korea7 · branch <code>arena/cec56764-korea7</code> · generated 2026-11-04.
+    Every figure on this page is produced by the five commands listed above and stored in <code>evidence/</code>.
+    No organizer-confirmed score exists for any file in this repository.
+  </footer>
+</div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(el){
+  el.style.cursor='pointer'; el.title='Click to copy';
+  el.addEventListener('click', function(){
+    navigator.clipboard.writeText(el.innerText).then(function(){
+      var o=el.style.borderColor; el.style.borderColor='#3fb950';
+      setTimeout(function(){el.style.borderColor=o;},700);
+    });
+  });
+});
+</script>
+</body>
+</html>
