@@ -33,6 +33,7 @@ Byte-level forensics on the restored raster (37,654 binary dots, min NN spacing 
 |---|---|---:|---:|---|---|
 | **Korea7** | `korea7-sdcc1-…-44090-…-5631ba53-zeros.tif` | **0.0624** | 0.2672 proj. | **YES** (39.6%) | **YES — primary** |
 | Korea7 | `korea7-sdcc1-…-37654-…-d88f4742-zeros.tif` | 0.0573 | 0.2432 proj. | YES (40.6%) | backup |
+| Korea7 (parallel lane) | `korea7-k7-offcatalogue-relay-corridor-30000dots-…` | not measured | unknown | YES (2.45%) | no — unmeasured |
 | GEMSDOE32 | `h33-h33-2-b2-…-e5eb6e7e-zeros` | 0.0641 | 0.2778 | No (B2 family) | no — prior submission |
 | GEMSDOE36 | `anderson-geothermal-pinn-38854-…-zeros` | 0.0644 | 0.2750 | No | no |
 | GEMSDOE28 | `h36-1-rung30-blind-r1-…-nan` | 0.0630 | 0.2710 | No | no |
