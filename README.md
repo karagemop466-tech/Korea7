@@ -1,6 +1,10 @@
 # Korea7 — GEMS fault-prospectivity submission audit
 
-> **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository currently contains documentation only; it does not contain competition rasters, cached features, validation code, a submission writer, or an existing website.
+> **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository currently contains documentation only; it does not contain competition rasters, cached features, a holdout evaluator, a submission writer, or a trained model. A conservative format preflight and static status site are included; neither generates or approves a submission.
+
+## Core values
+
+Maximize P(Win) by prioritizing evidence and managing risks; own the outcome end to end, documenting failures and following through rather than treating unverified predictions as success.
 
 ## Objective and non-negotiable evidence rules
 
@@ -14,7 +18,23 @@ Build an auditable workflow for predicting unmapped faults relevant to geotherma
 
 ## Current repository state (verified locally 2026-11-04)
 
-The checkout is branch `arena/edf0fdc5-korea7`, based on the initial commit. At review time it contained only this README and no data, scripts, tests, raster assets, cached feature stack, site, or trained model. Consequently no holdout experiment, leakage test, raster uniqueness comparison, submission validation, or TIFF generation can honestly be performed here. Do not invent these results or claim a TIFF is ready. The supplied competition dataset is gated behind DrivenData login according to the project brief; no credentials or data files are present in this checkout.
+At the start of the 2026-11-04 review, the checkout contained only this README and no data, scripts, tests, raster assets, cached feature stack, site, or trained model. This session added a conservative validator and a static status site, but not the missing scientific inputs or workflow. Consequently no holdout experiment, leakage test, raster uniqueness comparison, submission validation, or TIFF generation can honestly be performed here. Do not invent these results or claim a TIFF is ready. The supplied competition dataset is gated behind DrivenData login according to the project brief; no credentials or data files are present in this checkout.
+
+
+## Implemented format preflight and website
+
+The [static executive summary](docs/index.html) and [submission guide](docs/submission.html) explicitly show that no submission is ready. The site is static, not an up-to-date feed; deployment has not been verified. `scripts/validate_submission.py` compares an actual candidate to the actual reference grid and reports a SHA-256. It deliberately rejects masked/nodata, nonfinite, and out-of-range values **everywhere**, a conservative rule that may reject otherwise valid outside-footprint nodata. It does not validate ZIPs, skill, leakage, novelty, or organizer acceptance. Its `ready_to_submit` is always false.
+
+```sh
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/validate_submission.py candidate.tif official_sample.tif
+# To run the synthetic tests:
+.venv/bin/pip install pytest
+.venv/bin/python -m pytest -q
+```
+
+The nine cited GitHub repositories returned HTTP 404 through the GitHub API on 2026-11-04; that does not prove the sites or data do not exist. Their pages and organizer site could not be independently retrieved in this environment because outbound access is restricted. The [official reference README](https://github.com/drivendataorg/gems-prize-reference-solution) was retrieved via GitHub; it says to download competition data separately and provides CPU and GPU environments. Its notebook uses U-Net and random patch splits; this is **not** a substitute for the required segment-buffered holdout. The prompt does not actually identify a single method paragraph as a lane; do not run a competing lane until the shared protocol and lane assignment are available. No experiments or weekly submissions were performed.
 
 ## Prior-reported leaderboard results — unverified reports, not scores measured here
 
@@ -82,8 +102,10 @@ Do not assert any candidate is “new” until comparing against actual reposito
 1. Establish authenticated, permitted access to competition data; place the official sample submission, catalogue/labels, feature raster, and any allowed DEM inputs in documented data paths. Never commit credentials or large protected data.
 2. Recover the shared template cache and the canonical `evaluate_holdout.py` / `submission_writer.py` from the appropriate maintained source; this checkout has none. Verify their metric and exact masking semantics before trusting them.
 3. Download the nine registry rasters and metadata where permitted; calculate hashes, correlation and dot overlap. Confirm leaderboard results from organizer receipts rather than page summaries alone.
-4. Implement automated tests for validator edge cases (NaN, infinity, values just outside bounds, nodata/footprint, band count, CRS, dimensions, transform, ZIP member count) and a report generator that makes “not ready” explicit.
+4. Extend the conservative TIFF preflight to the verified official footprint and ZIP rules after obtaining the sample and authoritative format specification; test additional cases and keep readiness fail-closed.
 5. Run no more than three predeclared experiments or two hours; attach code/version, holdout DTI and CI, canary, uniqueness diagnostics, and run card for each. Only then consider a separate selector/weekly-slot decision.
-6. Build the requested simple public site only once the tested workflow exists; never publish a fabricated download or score.
+6. Deploy the static status site using GitHub Pages if repository settings permit. Add a download only after all gates pass; never publish a fabricated download or score.
 
 **Current run card:** `hypothesis`: none evaluated; `mechanism`: none evaluated; `non-fault mimic`: not applicable; `HOLDOUT-DTI + CI`: unavailable (no evaluator/data); `registry correlation/overlap`: unavailable (no registry rasters); `raster SHA-256`: none (no generated raster); `validator`: not run (no reference raster); `submission name/note`: none; `verdict`: `negative` (no promotable artifact; this is a deliverable status, not a model performance result).
+
+Machine-readable [run card](docs/run-card.json): a negative status for an unrun proposal, not a model result.
