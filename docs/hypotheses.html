@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>Hypotheses register</title>
+<link rel=stylesheet href=style.css></head><body><main>
+<p><a href="index.html">&larr; decision page</a></p>
+<h1>Five hypotheses, ranked, with outcomes</h1>
+
+<p>Each entry names the layer(s), the physical signature, why it should catch a fault
+<i>missing from</i> the catalogue rather than one already in it, and how it differs from what this
+programme has already done. Rank is expected DTI gain per unit implementation cost, assessed
+before any experiment was run. Two were tested this session, one was tested and abandoned, one was
+not run because its inputs are already inside the organisers' 19 bands, and one is blocked on
+data.</p>
+
+<h2>H5 — 1 m lidar scarp detection <span class=mut>(rank 1, BLOCKED)</span></h2>
+<ul>
+<li><b>Layers:</b> USGS 3DEP 1 m lidar DEM tiles, listed for competitors in the organisers'
+<code>1m_DEM_links.csv</code>.</li>
+<li><b>Signature:</b> curvature of the <i>detrended</i> 1 m surface, and the base-of-slope break
+of a free face; the classic scarp morphology operator, run at 1 m and then the sharpest
+response sampled onto the 100 m grid.</li>
+<li><b>Why blind faults:</b> the catalogue's mapped traces are, by construction, the ones someone
+drew. A scarp that is visible in 1 m lidar but absent from the map is precisely the profile of an
+expert-identified new fault. At 100 m posting &mdash; the resolution of
+<code>training_features.tif</code> &mdash; a 2&ndash;4 m scarp is one pixel of smoothing; at 1 m it
+is 200+ pixels of coherent signal. This is the single largest resolution gap available and it is
+free and official.</li>
+<li><b>Differs because:</b> no submission in the programme has used sub-100 m data. Every one of
+the nine focus files is a thresholded version of the same 100 m stack.</li>
+<li><b>Blocker, verified:</b> the DEM tiles are on OpenTopography / 3DEP, tens of GB, and the
+competition's link file is login-walled. Neither is reachable from this sandbox. This is recorded
+as the highest-value next step, not as a result.</li>
+</ul>
+
+<h2>H2 — Coverage-first emission with seismicity modulation <span class=mut>(rank 2, TESTED, ADOPTED)</span></h2>
+<ul>
+<li><b>Layers:</b> none for the geometry; INGENIOUS <i>independent</i> (declustered) earthquake
+rate density, variant <code>ieq_n200a15</code>, 500 m, warped to the competition grid.</li>
+<li><b>Signature:</b> an 11 px lattice (coverage), with nodes dropped where the seismogenic
+lineament field is in its lowest 30%, and every node within 3 px of a catalogue trace removed.</li>
+<li><b>Why blind faults:</b> a lattice asserts nothing about <i>which</i> fault; it maximises the
+chance that some dot lands within 300 m of any structure at all. Because &beta;=0.8 weights missed
+truth four times more heavily than false-positive mass, coverage is the correct objective when a
+ranking surface has little skill. The seismicity only breaks ties.</li>
+<li><b>Differs because:</b> the programme has always optimised concentration (thin a ridge, then
+prune), never coverage. The one coverage attempt that exists &mdash; the 5 px lattice, reported
+0.0904 &mdash; was a bare lattice with no modulation. This is the only file in the programme whose
+dot set is near-orthogonal to all nine focus rasters (max 3 px overlap 16.9%, |&rho;| 0.006).</li>
+<li><b>Outcome:</b> battery 0.0463 on the holdout instrument against 0.0405 for uniform random at
+the same 20,000-dot budget (+14% relative, non-overlapping CIs). Adopted for the generated file.
+MODEL-ESTIMATE 0.0427. It clears uniqueness and format; it fails the score gate.</li>
+</ul>
+
+<h2>H1 — Seismogenic lineament field as a selector <span class=mut>(rank 3, TESTED, NEGATIVE)</span></h2>
+<ul>
+<li><b>Layers:</b> same declustered rate density, plus a 4 px Gaussian and a six-orientation
+Hessian ridge response.</li>
+<li><b>Signature:</b> the ridge response is large where the epicentre density forms a <i>line</i>
+rather than a blob: the classical seismological signature of a fault. Gradients of the rate give
+structure-boundary magnitude; the rate itself gives activity.</li>
+<li><b>Why blind faults:</b> earthquakes occur on active structures whether or not a geologist has
+drawn them, so the signal is not conditioned on the catalogue at all.</li>
+<li><b>Differs because:</b> the organisers' 19-band stack contains one earthquake-density band;
+this uses the declustered variant and a directional operator, not a density.</li>
+<li><b>Outcome: NEGATIVE and useful.</b> Used as a hard selector it scores 0.0144 on the holdout
+instrument against 0.0391 for uniform random at the same budget &mdash; it is <i>worse than
+random</i>. Its single-feature AUC against held-out fault segments is 0.558 and 0.537 across the two
+folds: real but very weak (<i>not</i> leakage; the leakage threshold is 0.90). The general lesson is
+worth more than the hypothesis: concentrating dots on a weak ranking wastes coverage, and coverage is
+what this metric pays for.</li>
+</ul>
+
+<h2>H4 — Radiometric alteration corridors <span class=mut>(rank 4, NOT RUN)</span></h2>
+<ul>
+<li><b>Layers:</b> GeoDAWN K, U, Th, total count and upward-continued TMI at native resolution.</li>
+<li><b>Signature:</b> potassium enrichment and K/Th or U/Th ratios along fault-controlled fluid
+pathways; hydrothermal alteration changes the radiometric spectrum.</li>
+<li><b>Why blind faults:</b> alteration halos extend tens to hundreds of metres beyond a trace and
+survive burial of the scarp, so they can mark a fault that no one mapped.</li>
+<li><b>Differs because:</b> it uses ratios and not the channels.</li>
+<li><b>Not run, with reason:</b> the competition's 19 bands already include K, U, Th and total
+count, so the marginal information is the ratio only. Two programme lanes that built exactly these
+ratio detectors scored 0.0545 and 0.0963 live, well below the family best of 0.2778. Expected gain is
+low and the implementation cost is medium, so it was not worth one of this session's three
+experiments. Recorded as an honest negative-by-prior rather than silently dropped.</li>
+</ul>
+
+<h2>H3 — Structural extrapolation in front of a fault tip <span class=mut>(rank 5, TESTED, NEGATIVE)</span></h2>
+<ul>
+<li><b>Layers:</b> catalogue geometry only &mdash; tip position, strike, and the 3&ndash;10 px
+collar.</li>
+<li><b>Signature:</b> continue the trace along strike, close the gap between two en-echelon
+segments, and populate the relay bridge between overlapping tips.</li>
+<li><b>Why blind faults:</b> mapping is segment-wise, so linkage zones between two mapped segments
+are the most commonly unmapped part of a structure.</li>
+<li><b>Differs because:</b> it is the one hypothesis that needs no new data at all, and it is
+cheap enough to test decisively.</li>
+<li><b>Outcome: NEGATIVE, 13&times; worse than random.</b> The 3&ndash;10 px collar arm scores 0.0031
+against 0.0405 for random at the same budget. This independently reproduces the two live results
+that motivated it and lost: gap closure (GEMSDOE27, 0.2449 against its parent's 0.2477) and tip
+step-over (GEMSDOE33, 0.2632 against the champion's 0.2778). The hypothesis is now closed with
+evidence rather than left open.</li>
+</ul>
+
+<h2>Ranking as it stood before testing</h2>
+<table class=grid>
+<thead><tr><th>Rank</th><th>Hypothesis</th><th>Expected gain</th><th>Cost</th><th>Now</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>H5 1 m lidar scarp</td><td>high — the only route to &gt;0.44</td><td>high</td>
+<td class=warn>blocked on data</td></tr>
+<tr><td>2</td><td>H2 coverage + seismicity</td><td>low</td><td>low</td><td>tested, adopted, below the bar</td></tr>
+<tr><td>3</td><td>H1 lineament selector</td><td>low–medium</td><td>low</td><td class=no>negative</td></tr>
+<tr><td>4</td><td>H4 radiometric ratios</td><td>low</td><td>medium</td><td>not run (prior evidence negative)</td></tr>
+<tr><td>5</td><td>H3 structural extrapolation</td><td>low</td><td>very low</td><td class=no>negative</td></tr>
+</tbody></table>
+<p class=note>Two of the three experiments were run on a pre-registered, matched-budget instrument
+with segment-level CIs, and both produced negative results that are deliverables in their own right:
+H1 kills the lineament-selector idea and H3 closes the structural-extrapolation question with a
+13&times; margin. The third, H2, produced the only artefact that passes the uniqueness and format
+gates.</p>
+</main></body></html>

@@ -1,0 +1,114 @@
+{
+  "G1_format": {
+    "pass": true,
+    "path": "/home/user/Korea7/docs/downloads/k7-oslf-lat11-n27159-20261104T210000Z.tif",
+    "checks": {
+      "geotiff": true,
+      "single_band": true,
+      "crs_match": true,
+      "shape_match": true,
+      "transform_match": true,
+      "footprint_pixels_finite": true,
+      "footprint_pixels_in_0_1": true
+    },
+    "format_pass": true,
+    "ready_to_submit": false,
+    "note": "Format gate only. Promotion also requires the uniqueness and holdout gates.",
+    "sha256": "ebdf0342273688a26dab6a5bbd539b17b8d8cfa98355b63b406c095cc268c7b7",
+    "nonfinite_pixels_inside_footprint": 0
+  },
+  "G2_unique": {
+    "pass": true,
+    "worst_3px_overlap_vs_focus_sites": 0.16915203063441217,
+    "worst_abs_surface_rho": 0.005738775942767191,
+    "threshold": "overlap <= 0.70 and |rho| <= 0.90 (protocol rule 1)",
+    "comparisons": [
+      {
+        "site": "GEMSDOE24",
+        "frac_candidate_within_3px_of_site": 0.1659486726315402,
+        "frac_site_within_3px_of_candidate": 0.13840749804391617,
+        "surface_spearman_rho": 0.005649425689268309
+      },
+      {
+        "site": "GEMSDOE25",
+        "frac_candidate_within_3px_of_site": 0.15781140690010678,
+        "frac_site_within_3px_of_candidate": 0.13887502835110002,
+        "surface_spearman_rho": 0.0050139215172096165
+      },
+      {
+        "site": "GEMSDOE27",
+        "frac_candidate_within_3px_of_site": 0.16915203063441217,
+        "frac_site_within_3px_of_candidate": 0.1379304722149752,
+        "surface_spearman_rho": 0.005738775942767191
+      },
+      {
+        "site": "GEMSDOE28",
+        "frac_candidate_within_3px_of_site": 0.15556537427740344,
+        "frac_site_within_3px_of_candidate": 0.15127456186935742,
+        "surface_spearman_rho": 0.004025335832505354
+      },
+      {
+        "site": "GEMSDOE30",
+        "frac_candidate_within_3px_of_site": 0.15781140690010678,
+        "frac_site_within_3px_of_candidate": 0.13887502835110002,
+        "surface_spearman_rho": 0.0050139215172096165
+      },
+      {
+        "site": "GEMSDOE31",
+        "frac_candidate_within_3px_of_site": 0.15700136234765638,
+        "frac_site_within_3px_of_candidate": 0.1511231622677181,
+        "surface_spearman_rho": 0.004212410880620744
+      },
+      {
+        "site": "GEMSDOE32",
+        "frac_candidate_within_3px_of_site": 0.1553076328288965,
+        "frac_site_within_3px_of_candidate": 0.15902692940989005,
+        "surface_spearman_rho": 0.00366154654102972
+      },
+      {
+        "site": "GEMSDOE33",
+        "frac_candidate_within_3px_of_site": 0.1591737545565006,
+        "frac_site_within_3px_of_candidate": 0.1474740236474382,
+        "surface_spearman_rho": 0.004239047791760678
+      },
+      {
+        "site": "GEMSDOE36",
+        "frac_candidate_within_3px_of_site": 0.158805552487205,
+        "frac_site_within_3px_of_candidate": 0.15867092191280177,
+        "surface_spearman_rho": 0.003523043811783884
+      }
+    ]
+  },
+  "G3_holdout": {
+    "pass": true,
+    "instrument": "K7-HIDE-RECOVER-1.0",
+    "oslf_lattice_dti": 0.04634208715337895,
+    "random_control_dti": 0.04049938154343067,
+    "delta_vs_random": 0.005842705609948283,
+    "note": "Instrument DTI is comparable ACROSS ARMS ONLY at a matched budget on the instrument's truth set (K about 17k px); it is not a leaderboard scale."
+  },
+  "G4_beats_programme_best": {
+    "pass": false,
+    "estimate": {
+      "label": "MODEL-ESTIMATE (not a score)",
+      "dots": 27159,
+      "coverage_range": [
+        0.04967643748241253,
+        0.05663113872995028
+      ],
+      "point_estimate": 0.0434,
+      "interval_95": [
+        0.0205,
+        0.0662
+      ],
+      "model": "DTI = c*K/(0.2N + 0.8K), K = 12773 (calibrated)",
+      "caveats": [
+        "Structure assumption A1 (F = N - T) is approximate along fault traces.",
+        "K is calibrated on one owner-reported lattice score, not on an organiser receipt.",
+        "Model risk +/-0.02 absolute is included; it is an engineering judgement."
+      ]
+    },
+    "programme_best_owner_reported": 0.2778,
+    "leaderboard_high_owner_reported": 0.4413
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "generated_utc": "2026-11-04",
+  "note": "External bytes are fetched from a GitHub mirror of GDR submission 1391 because gdr.openei.org is not reachable from this sandbox. SHA-256 of the fetched file is recorded so a reviewer can verify the same bytes.",
+  "layers": [
+    {
+      "layer": "seis_n200a15",
+      "covers_footprint_fraction": 1.0,
+      "sha256_source_file": "754681d9321ca16ab67c32cc9b9c180ed35c1a40e06841ae1fa1619ba62af9bb",
+      "bytes": 10819031,
+      "upstream": "jklinck/geothermal_research",
+      "upstream_repo_url": "https://github.com/jklinck/geothermal_research",
+      "upstream_file_url": "https://github.com/jklinck/geothermal_research/blob/main/seismicity_INGENIOUS_regional_data/independent_eq/geotiffs/ieq_n200a15.tif",
+      "official_source": "GDR submission 1391 (DOI 10.15121/1881483), CC BY 4.0",
+      "what": "INGENIOUS *independent* (declustered) earthquake rate-density grid, variant ieq_n200a15, 500 m, NAD83 Contiguous USA Albers (CM 117)",
+      "caveat": "The filename token semantics (n200 / a15) are not documented in the mirror; treated as an ordinal seismic-activity density only.",
+      "source": "/home/user/Korea7/.cache/external/ieq_n200a15.tif",
+      "source_crs": "PROJCS[\"NAD_1983_Contiguous_USA_Albers_117\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-117],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "source_shape": [
+        1383,
+        1796
+      ],
+      "source_res": [
+        500.0,
+        500.0
+      ],
+      "source_nodata": -3.4028234663852886e+38,
+      "source_bounds": [
+        -406199.5257588717,
+        1548995.1753636356,
+        491800.4742411283,
+        2240495.1753636356
+      ]
+    },
+    {
+      "layer": "seis_n100a05",
+      "covers_footprint_fraction": 1.0,
+      "sha256_source_file": "730cfce0aadbd31d0abd29230cdb16b5f4f7f1ba04ca22b9dcf750143ef40ef8",
+      "bytes": 10819029,
+      "upstream": "jklinck/geothermal_research",
+      "upstream_repo_url": "https://github.com/jklinck/geothermal_research",
+      "upstream_file_url": "https://github.com/jklinck/geothermal_research/blob/main/seismicity_INGENIOUS_regional_data/independent_eq/geotiffs/ieq_n100a05.tif",
+      "official_source": "GDR submission 1391 (DOI 10.15121/1881483), CC BY 4.0",
+      "what": "INGENIOUS declustered earthquake rate-density grid, variant ieq_n100a05",
+      "caveat": "Same undocumented token semantics as seis_n200a15.",
+      "source": "/home/user/Korea7/.cache/external/ieq_n100a05.tif",
+      "source_crs": "PROJCS[\"NAD_1983_Contiguous_USA_Albers_117\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101004,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Albers_Conic_Equal_Area\"],PARAMETER[\"latitude_of_center\",23],PARAMETER[\"longitude_of_center\",-117],PARAMETER[\"standard_parallel_1\",29.5],PARAMETER[\"standard_parallel_2\",45.5],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "source_shape": [
+        1383,
+        1796
+      ],
+      "source_res": [
+        500.0,
+        500.0
+      ],
+      "source_nodata": -3.4028234663852886e+38,
+      "source_bounds": [
+        -406199.5257588717,
+        1548995.1753636356,
+        491800.4742411283,
+        2240495.1753636356
+      ]
+    }
+  ]
+}

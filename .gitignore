@@ -1,6 +1,11 @@
 .venv/
 __pycache__/
 .pytest_cache/
-data/
-*.tif
+.cache/
+data/*.tif
 *.tiff
+# The submission artefact and the hash-pinned reference / registry rasters are
+# deliverables: they must be downloadable, so they are exempt from the *.tif rule.
+!docs/downloads/*.tif
+!data/reference/*.tif
+!data/registry/*.tif

@@ -1,3 +1,5 @@
+> **HISTORICAL — SUPERSEDED (2026-11-04).** This file describes an earlier checkout that contained documentation only. The current state, the generated submission and the current verdict are in `README.md` and `docs/index.html`.
+
 # Korea7 — GEMS fault-prospectivity submission audit
 
 > **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository currently contains documentation only; it does not contain competition rasters, cached features, validation code, a submission writer, or an existing website.

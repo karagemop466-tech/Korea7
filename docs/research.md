@@ -1,3 +1,5 @@
+> **HISTORICAL — SUPERSEDED (2026-11-04).** This file describes an earlier checkout that contained documentation only. The current state, the generated submission and the current verdict are in `README.md` and `docs/index.html`.
+
 # Research and evidence log
 
 ## Review, 2026-11-04

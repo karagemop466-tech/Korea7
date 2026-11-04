@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>The "values must be in range [0, 1]" rejection</title>
+<link rel=stylesheet href=style.css></head><body><main>
+<p><a href="index.html">&larr; decision page</a></p>
+<h1>Why the portal said &ldquo;Predicted values must be in range [0, 1]&rdquo;</h1>
+
+<p>The submission page accepts a single-band GeoTIFF (or a zip holding one) and enforces that
+predicted values lie in [0,&nbsp;1]. A file can violate this in three ways. All three were
+reproduced and are now impossible in this repo's writer.</p>
+
+<table class=grid>
+<thead><tr><th>Cause</th><th>How it happens</th><th>How this repo prevents it</th></tr></thead>
+<tbody>
+<tr><td>NaN inside the footprint</td>
+<td>The competition's own <code>training_features.tif</code> uses the float32 sentinel
+&minus;3.4028235e+38 as nodata. Carry it through a transform and clip, and NaN or the sentinel
+survives into the predicted area.</td>
+<td><code>grid.write_like</code> writes an explicit float32 array; <code>format_gate</code> counts
+non-finite pixels inside the footprint and fails if the count is not zero. The generated file
+reports <b>0</b>.</td></tr>
+<tr><td>Sentinel values</td>
+<td>&minus;3.4e38 or &minus;9999 written outside the studied area but inside the raster still
+fails a whole-array range check.</td>
+<td>The generated file is <b>0.0</b> outside the footprint, not NaN and not a sentinel, so every
+one of the 12,279,160 cells is finite and inside [0,&nbsp;1] under any reading.</td></tr>
+<tr><td>Unnormalised scores</td>
+<td>A raw z-score, distance in metres, or probability logit written straight to disk.</td>
+<td>The emitter only ever writes 0.0 or 1.0. There is no continuous path to the writer.</td></tr>
+</tbody></table>
+
+<h2>The convention question: NaN outside, or 0 outside?</h2>
+<p>The official <code>sample_submission.tif</code> uses <b>NaN outside</b> the footprint (7,111,787
+cells) and 0/1 inside it. That is the organiser's own convention, so it is accepted. This repo
+uses <b>0 outside</b> instead, because 0 is finite and therefore cannot fail a range check under
+any validator implementation. The cost is nil: outside the footprint the label raster is nodata,
+so those cells are not scored.</p>
+
+<h2>What the generated file contains, measured</h2>
+<ul>
+<li>Driver GTiff, 1 band, float32, EPSG:32611, 3730&times;3292.</li>
+<li>Geotransform identical to <code>sample_submission.tif</code>.</li>
+<li>Non-finite pixels inside the footprint: <b>0</b>.</li>
+<li>Values: exactly two distinct values, 0.0 and 1.0.</li>
+<li>Dots: 27,159.</li>
+</ul>
+<p>These are read from <code>evidence/candidate_gates.json</code>, produced by
+<code>scripts/build_candidate.py</code>.</p>
+
+<p class=note><b>Flagged for review.</b> The exact portal message and the exact file that produced
+it were never captured in this programme, so no root cause is asserted here with certainty. What
+is asserted is narrower and verifiable: the file generated now cannot trigger any of the three
+mechanisms above, because it has no non-finite value anywhere and no value outside [0,&nbsp;1].</p>
+</main></body></html>

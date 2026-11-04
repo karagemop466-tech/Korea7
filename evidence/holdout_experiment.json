@@ -1,0 +1,161 @@
+{
+  "instrument": "K7-HIDE-RECOVER-1.0",
+  "budget": 20000,
+  "buffer_px": 10.0,
+  "n_folds": 2,
+  "surface_definition": {
+    "weights": {
+      "ridge": 0.6,
+      "gradient": 0.25,
+      "intensity": 0.15
+    },
+    "orientations_deg": [
+      0.0,
+      30.0,
+      60.0,
+      90.0,
+      120.0,
+      150.0
+    ],
+    "smooth_sigma_px": 4.0
+  },
+  "folds": [
+    {
+      "fold_id": 0,
+      "n_segments": 3199,
+      "hidden_pixels_in_domain": 17629,
+      "active_pixels": 4451128,
+      "canary_oslf": {
+        "auc": 0.5583233372236979,
+        "positives": 17629,
+        "leakage_suspect": false,
+        "rule": "AUC > 0.90 = leakage until proven otherwise"
+      },
+      "canary_distance_to_visible": {
+        "auc": 0.7182233761323331,
+        "positives": 17629,
+        "leakage_suspect": false,
+        "rule": "AUC > 0.90 = leakage until proven otherwise"
+      },
+      "arms": {
+        "OSLF": {
+          "dots": 20000,
+          "holdout_dti": 0.014429729850944041,
+          "coverage": 0.014762823522568634,
+          "tp": 260.25381587936243,
+          "fp": 19403.471850410824,
+          "n_truth": 17629,
+          "ci95": [
+            0.009368576468873357,
+            0.020242266970347544
+          ],
+          "n_truth_segments": 1096
+        },
+        "random_control": {
+          "dots": 20000,
+          "holdout_dti": 0.039098975841195316,
+          "coverage": 0.04034042422389108,
+          "tp": 711.1613386429758,
+          "fp": 19716.568432110318,
+          "n_truth": 17629,
+          "ci95": [
+            0.03489097629255703,
+            0.04281063354693175
+          ],
+          "n_truth_segments": 1096
+        },
+        "catalogue_proximity": {
+          "dots": 20000,
+          "holdout_dti": 0.0029290131391286754,
+          "coverage": 0.0030077757279234115,
+          "tp": 53.02407830756182,
+          "fp": 19946.237869843768,
+          "n_truth": 17629,
+          "ci95": [
+            0.002581094631505057,
+            0.0033381655585831334
+          ],
+          "n_truth_segments": 1096
+        }
+      }
+    },
+    {
+      "fold_id": 1,
+      "n_segments": 3199,
+      "hidden_pixels_in_domain": 17060,
+      "active_pixels": 4454674,
+      "canary_oslf": {
+        "auc": 0.5366207366415343,
+        "positives": 17060,
+        "leakage_suspect": false,
+        "rule": "AUC > 0.90 = leakage until proven otherwise"
+      },
+      "canary_distance_to_visible": {
+        "auc": 0.6977091559906222,
+        "positives": 17060,
+        "leakage_suspect": false,
+        "rule": "AUC > 0.90 = leakage until proven otherwise"
+      },
+      "arms": {
+        "OSLF": {
+          "dots": 20000,
+          "holdout_dti": 0.011569926817523347,
+          "coverage": 0.011932531491604005,
+          "tp": 203.56898724676432,
+          "fp": 19529.75636622343,
+          "n_truth": 17060,
+          "ci95": [
+            0.007381560747232034,
+            0.018088204084103568
+          ],
+          "n_truth_segments": 1054
+        },
+        "random_control": {
+          "dots": 20000,
+          "holdout_dti": 0.03815770878653284,
+          "coverage": 0.03965684707979853,
+          "tp": 676.545811181363,
+          "fp": 19734.71663308509,
+          "n_truth": 17060,
+          "ci95": [
+            0.03425908088968257,
+            0.04249698625161076
+          ],
+          "n_truth_segments": 1054
+        },
+        "catalogue_proximity": {
+          "dots": 20000,
+          "holdout_dti": 0.0024555884490700137,
+          "coverage": 0.0025401800657126883,
+          "tp": 43.33547192105846,
+          "fp": 19955.13123342318,
+          "n_truth": 17060,
+          "ci95": [
+            0.0020835033862952983,
+            0.002882218707879304
+          ],
+          "n_truth_segments": 1054
+        }
+      }
+    }
+  ],
+  "generated_utc": "2026-11-04",
+  "paired_deltas": {
+    "random_control": {
+      "per_fold": [
+        -0.024669245990251276,
+        -0.02658778196900949
+      ],
+      "mean": -0.025628513979630382
+    },
+    "catalogue_proximity": {
+      "per_fold": [
+        0.011500716711815366,
+        0.009114338368453333
+      ],
+      "mean": 0.01030752754013435
+    }
+  },
+  "oslf_pooled_mean_dti": 0.012999828334233694,
+  "elapsed_s": 83.5
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>Sources — official links for manual review</title>
+<link rel=stylesheet href=style.css></head><body><main>
+<p><a href="index.html">&larr; decision page</a></p>
+<h1>Sources, with reachability checked</h1>
+
+<p>Reachability was tested from this sandbox on <b>2026-11-04</b> with
+<code>curl -o /dev/null -w '%{http_code}'</code>. Documents marked
+<i>read via proxy</i> were retrieved successfully through a page-fetch service but cannot be
+downloaded as binary from here. Nothing in this table is cited from memory.</p>
+
+<h2>Competition</h2>
+<table class=grid>
+<thead><tr><th>Source</th><th>Link</th><th>Used for</th><th>Status 2026-11-04</th></tr></thead>
+<tbody>
+<tr><td>Competition home</td>
+<td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">drivendata.org/competitions/306</a></td>
+<td>rules, timeline, weekly cap</td><td>not reachable by curl; read via proxy</td></tr>
+<tr><td>Problem description + metric</td>
+<td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">page/967</a></td>
+<td>test set = expert-identified faults absent from the USGS database; distance-weighted Tversky
+metric; allowed external datasets; <code>1m_DEM_links.csv</code></td><td>read via proxy</td></tr>
+<tr><td>About / resources</td>
+<td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/968/">page/968</a></td>
+<td>background</td><td>not fetched</td></tr>
+<tr><td>Data tab</td>
+<td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">data</a></td>
+<td>authoritative <code>training_features.tif</code>, <code>labels.tif</code>,
+<code>sample_submission.tif</code></td><td>login-walled</td></tr>
+<tr><td>Leaderboard</td>
+<td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/">leaderboard</a></td>
+<td>current high score — must be re-read before any slot decision</td><td>login-walled</td></tr>
+<tr><td><b>Organiser clarification on masking</b></td>
+<td><a href="https://community.drivendata.org/t/scoring-clarification-are-known-usgs-ingenious-faults-masked-when-scoring-and-are-they-in-the-final-round-label-set/11516">community thread 11516</a></td>
+<td><b>the single most important source in this project</b>: DrivenData staff, 16 Sep —
+&ldquo;Pixels corresponding to known USGS/INGENIOUS faults are masked / excluded from evaluation,
+so they do not count towards penalty terms&rdquo;</td><td><b>read in full via proxy</b></td></tr>
+<tr><td>Reference solution</td>
+<td><a href="https://github.com/drivendataorg/gems-prize-reference-solution">drivendataorg/gems-prize-reference-solution</a></td>
+<td>organisers' baseline; also shows that a scarp product is a sanctioned route</td><td>reachable</td></tr>
+<tr><td>Rules PDF</td>
+<td><a href="https://docs.nlr.gov/docs/fy26osti/96647.pdf">NLR 96647</a></td>
+<td>prize and submission rules</td><td>not fetched</td></tr>
+<tr><td>CRS</td>
+<td><a href="https://epsg.io/32611">EPSG:32611</a></td>
+<td>WGS84 / UTM zone 11N — the submission CRS</td><td>informational</td></tr>
+<tr><td>Tversky index</td>
+<td><a href="https://en.wikipedia.org/wiki/Tversky_index">Wikipedia</a></td>
+<td>metric family background</td><td>informational</td></tr>
+</tbody></table>
+
+<h2>Data used</h2>
+<table class=grid>
+<thead><tr><th>Layer</th><th>Official source</th><th>Mirror actually fetched</th></tr></thead>
+<tbody>
+<tr><td><b>INGENIOUS declustered earthquake rate density</b><br>
+<code>ieq_n200a15.tif</code>, 500 m, NAD83 Albers (CM&nbsp;117)</td>
+<td>Geothermal Data Repository, <a href="https://gdr.openei.org/submissions/1391">submission
+1391</a>, DOI <a href="https://doi.org/10.15121/1881483">10.15121/1881483</a>, CC BY 4.0.
+Not reachable from this sandbox.</td>
+<td><a href="https://github.com/jklinck/geothermal_research">jklinck/geothermal_research</a> —
+its README names GDR 1391 and the USGS GeoDAWN release as the two upstream sources. SHA-256 of
+every fetched file is in <code>evidence/external_layers.json</code> so the bytes can be re-checked.</td></tr>
+<tr><td>GeoDAWN airborne magnetic and radiometric surveys</td>
+<td><a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">USGS data release</a>,
+DOI <a href="https://doi.org/10.5066/P93LGLVQ">10.5066/P93LGLVQ</a>; footprint map
+<a href="https://www.sciencebase.gov/catalog/item/657e1d85d34e23d3533209f7">sciencebase 657e1d85</a></td>
+<td>same mirror; not used for this candidate</td></tr>
+<tr><td>INGENIOUS project context</td>
+<td><a href="https://gbcge.org/current-projects/ingenious/">Great Basin Center for Geothermal
+Energy</a></td><td>—</td></tr>
+<tr><td>USGS 3DEP 1 m DEM <i>(the missing input)</i></td>
+<td><a href="https://www.usgs.gov/3d-elevation-program">USGS 3D Elevation Program</a></td>
+<td><b>none reachable</b>; tens of GB, not on GitHub</td></tr>
+</tbody></table>
+
+<h2>Programme evidence carried in from sister repositories</h2>
+<p>The nine focus rasters, the reference grid and the catalogue were restored from
+<code>karagemop466-tech/GEMSDOEkarage3</code> at
+<code>docs/downloads/</code>. Their SHA-256 values were recomputed here and are recorded in
+<code>data/registry/receipts.json</code>; the champion's hash reproduced the value recorded in that
+repository's own score ledger, which is an independent confirmation that the bytes are the same.</p>
+
+<h2>What could not be reached, and why it matters</h2>
+<ol>
+<li><b><code>training_features.tif</code> (418,912,844 bytes, sha256
+<code>4371c82e&hellip;</code>)</b> — login-walled at DrivenData. The mirror the programme used,
+<code>buffedlizard55-lab/GEMSDOE</code>, now returns <b>HTTP 404</b>; the GitHub user
+<code>buffedlizard55-lab</code> does not exist and a repository search for <code>GEMSDOE32</code>
+returns 0 results. Without this file no magnetic, radiometric, gravity or strain surface can be
+rebuilt from official data.</li>
+<li><b>The 1 m DEM</b> — listed for competitors but login-walled, and the tiles are far too large
+for any route available here.</li>
+<li><b>The GEMSDOE documentation sites</b> —
+<code>buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html</code> returns a GitHub Pages
+&ldquo;site not found&rdquo; page. The score 0.2778 is therefore cited from the owner's brief only.</li>
+</ol>
+</main></body></html>
