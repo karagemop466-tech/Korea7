@@ -1,1 +1,17 @@
-:root{font-family:system-ui,sans-serif;color:#172b34;background:#f3f7f6;line-height:1.55}*{box-sizing:border-box}body{margin:0}header{background:#103e3d;color:white;padding:1.8rem max(1.2rem,calc((100% - 1080px)/2))}header a{color:#ddf6ed}main{max-width:1080px;margin:auto;padding:1.2rem}section{background:white;border:1px solid #d7e4e0;border-radius:12px;padding:1.4rem;margin:1rem 0}.alert{border-left:6px solid #c14232;background:#fff2ee}.tag{font-weight:800;color:#9d2b1f}.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{text-align:left;border-bottom:1px solid #dce6e2;padding:.65rem;vertical-align:top}a{color:#086e63}code{overflow-wrap:anywhere}nav{display:flex;gap:1.5rem;flex-wrap:wrap}footer{padding:2rem;color:#536965}h1,h2{line-height:1.2}small{color:#536965}
+body{font:16px/1.55 system-ui,-apple-system,sans-serif;max-width:1080px;margin:2rem auto;padding:0 1rem;color:#172638}
+h1,h2,h3{line-height:1.2}
+a{color:#0755a0} small, .muted{color:#4d5f70}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+td,th{border-bottom:1px solid #d9e2eb;padding:.5rem;text-align:left;vertical-align:top}
+th{background:#eef4f9}
+.scroll{overflow-x:auto}
+.go{background:#e9f7ee;border:2px solid #137333;border-radius:10px;padding:1rem 1.2rem;margin:1rem 0}
+.warn{background:#fff8e6;border-left:5px solid #b7791f;padding:.8rem 1rem;margin:1rem 0}
+.card{background:#f3f7fa;border-radius:8px;padding:1rem;margin:1rem 0}
+.dl{display:inline-block;background:#137333;color:#fff!important;font-weight:700;padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;margin:.3rem .3rem .3rem 0}
+.dl2{display:inline-block;background:#34506b;color:#fff!important;padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;margin:.3rem .3rem .3rem 0}
+code, .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85em;word-break:break-all}
+img.fig{max-width:100%;border:1px solid #d9e2eb;border-radius:8px}
+.best{background:#e9f7ee;font-weight:600}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:.1rem .45rem;border-radius:99px;background:#dbe7f3;color:#17406b}
+.tag.gold{background:#f7e08a;color:#5b4300}.tag.red{background:#f5c6c0;color:#7a1408}.tag.green{background:#b9e4c5;color:#0a4d20}

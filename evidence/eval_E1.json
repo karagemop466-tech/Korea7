@@ -1,0 +1,126 @@
+{
+  "candidate_id": "KOREA7-E1",
+  "path": "work/E1_mask.npy",
+  "emitted_pixels": 37654,
+  "mode": "static_binary_diagnostic",
+  "promotion_eligible": false,
+  "provenance_warning": "Static predictions cannot establish fold-local catalogue features or leakage-free training.",
+  "hide_and_recover": {
+    "candidate_id": "KOREA7-E1",
+    "evaluator_version": "GEMSDOE32-HIDE-RECOVER-v3.0",
+    "score_label": "HOLDOUT-DTI",
+    "b_visible_px": 0.0,
+    "n_withheld_positives": 22232,
+    "n_spatial_clusters": 140,
+    "n_bootstrap_reps": 1000,
+    "pooled_dti": 0.004783661342154749,
+    "ci95_cluster_bootstrap": [
+      0.003845257355226018,
+      0.005806608088500177
+    ],
+    "fold_mean_dti": 0.004769874285556967,
+    "per_quadrant_dti": {
+      "NW": 0.006251119968815529,
+      "NE": 0.002645239210268319,
+      "SW": 0.004695720787036895,
+      "SE": 0.0054874171761071225
+    },
+    "folds": {
+      "draw20_fold0": {
+        "dti": 0.006547983231815001,
+        "coverage": 0.009355370880502185,
+        "tp": 17.878113752639674,
+        "fp": 5989.7403462446455,
+        "fn": 1893.1218862473604,
+        "n_truth": 1911,
+        "emitted": 6002
+      },
+      "draw20_fold1": {
+        "dti": 0.002951767843842926,
+        "coverage": 0.004257775284545226,
+        "tp": 10.010029693965826,
+        "fp": 7541.98079262914,
+        "fn": 2340.989970306034,
+        "n_truth": 2351,
+        "emitted": 7550
+      },
+      "draw20_fold2": {
+        "dti": 0.0038978179929799353,
+        "coverage": 0.00511543013453042,
+        "tp": 18.850360045744598,
+        "fp": 9421.806714879958,
+        "fn": 3666.1496399542552,
+        "n_truth": 3685,
+        "emitted": 9436
+      },
+      "draw20_fold3": {
+        "dti": 0.006173433213174795,
+        "coverage": 0.00958063311618945,
+        "tp": 30.89754179971098,
+        "fp": 12093.704436376851,
+        "fn": 3194.102458200289,
+        "n_truth": 3225,
+        "emitted": 12116
+      },
+      "draw21_fold0": {
+        "dti": 0.005954256705816058,
+        "coverage": 0.008151640968218047,
+        "tp": 17.2081140839083,
+        "fp": 5989.05405474363,
+        "fn": 2093.791885916092,
+        "n_truth": 2111,
+        "emitted": 6002
+      },
+      "draw21_fold1": {
+        "dti": 0.002338710576693712,
+        "coverage": 0.0034304609157270825,
+        "tp": 7.769993974121842,
+        "fp": 7543.934873556893,
+        "fn": 2257.230006025878,
+        "n_truth": 2265,
+        "emitted": 7550
+      },
+      "draw21_fold2": {
+        "dti": 0.005493623581093856,
+        "coverage": 0.007289644240282378,
+        "tp": 26.126084957172043,
+        "fp": 9416.427879937868,
+        "fn": 3557.873915042828,
+        "n_truth": 3584,
+        "emitted": 9436
+      },
+      "draw21_fold3": {
+        "dti": 0.0048014011390394495,
+        "coverage": 0.007596236805671526,
+        "tp": 23.54833409758173,
+        "fp": 12098.808177748375,
+        "fn": 3076.4516659024184,
+        "n_truth": 3100,
+        "emitted": 12116
+      }
+    }
+  },
+  "sgmc_off_catalogue": {
+    "candidate_id": "KOREA7-E1",
+    "evaluator_version": "GEMSDOE32-SGMC-CAL-v3.0",
+    "score_label": "HOLDOUT-DTI",
+    "n_withheld_positives": 62703,
+    "n_spatial_clusters": 140,
+    "n_bootstrap_reps": 1000,
+    "sgmc_raw_pooled_dti": 0.14388570916924776,
+    "sgmc_raw_ci95": [
+      0.11879646258753641,
+      0.16767500298350882
+    ],
+    "sgmc_prevalence_calibrated_dti": 0.09678162685986513,
+    "sgmc_calibrated_ci95": [
+      0.08032648438547907,
+      0.1116771086065636
+    ]
+  },
+  "legacy_summary": {
+    "catalogue_hidden_mean": 0.004769874285556967,
+    "sgmc_prevalence_calibrated_dti": 0.09678162685986498,
+    "drift_corrected_holdout_mean": 0.054070281165319534
+  }
+}

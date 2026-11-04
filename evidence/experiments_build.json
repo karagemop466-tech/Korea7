@@ -1,0 +1,24 @@
+{
+  "budget": 37654,
+  "cat_min_dist_px_exclusive": 2.0,
+  "eligible_px": 3652442,
+  "experiments": {
+    "E1": {
+      "dots": 37654,
+      "surface_tif": "work/E1_surface.tif",
+      "surface_sha256": "b46edc50d7549eb14595776d9cbe275550f188715c727b59cb6e2235883fa908",
+      "mask_npy": "work/E1_mask.npy",
+      "mask_sha256": "890f1cdf104f4a9d143d12c9d79271023b059db3c2224e356c3f372ed6267861",
+      "min_dist_to_catalogue_px": 2.23606797749979
+    },
+    "E2": {
+      "dots": 37654,
+      "surface_tif": "work/E2_surface.tif",
+      "surface_sha256": "3f8cfd4163bbe79e42a3d3cb94ca885b6cb675ce378fdc1c13e4418173a670f0",
+      "mask_npy": "work/E2_mask.npy",
+      "mask_sha256": "b70a8386bb4df0f44032dc3a1eeca1aaaa68743dec90194e37dbc3362a6039e1",
+      "min_dist_to_catalogue_px": 2.23606797749979
+    }
+  },
+  "seconds": 21.4
+}

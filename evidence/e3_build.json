@@ -1,0 +1,11 @@
+{
+  "dots": 37654,
+  "road_min_m": 100.0,
+  "e1_dots_within_100m_of_road": 1656,
+  "mask_sha256": "26ea475ec40d1aa830e204bb0d13119fa20bcd75eb7ae00d84797f1f6e35fadf",
+  "road_band_stats_m": {
+    "min": 0.0,
+    "median": 640.3124389648438,
+    "max": 13083.1953125
+  }
+}

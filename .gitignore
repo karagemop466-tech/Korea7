@@ -2,5 +2,9 @@
 __pycache__/
 .pytest_cache/
 data/
+work/
 *.tif
 *.tiff
+!docs/downloads/*.tif
+!docs/downloads/*.zip
+registry/*.tif

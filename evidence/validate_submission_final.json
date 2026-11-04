@@ -1,0 +1,21 @@
+{
+  "candidate": "docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif",
+  "reference": "data/sample_submission.tif",
+  "format_pass": true,
+  "ready_to_submit": false,
+  "errors": [],
+  "checks": {
+    "reference_geotiff": true,
+    "reference_single_band": true,
+    "geotiff": true,
+    "single_band": true,
+    "crs_match": true,
+    "shape_match": true,
+    "transform_match": true,
+    "all_pixels_finite": true,
+    "all_pixels_in_range": true,
+    "no_masked_or_nodata_pixels": true
+  },
+  "sha256": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d",
+  "limitations": "Strict all-pixel preflight only; no official footprint, holdout, leakage, registry uniqueness, or organizer acceptance checked."
+}

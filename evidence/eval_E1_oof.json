@@ -1,0 +1,102 @@
+{
+  "candidate_id": "KOREA7-E1-OOF",
+  "path": "work/E1_oof.npz",
+  "mode": "per_cell_oof_npz",
+  "promotion_eligible": false,
+  "provenance_warning": "Fold-local feature derivation is not established by an NPZ container; audit the generator.",
+  "hide_and_recover": {
+    "candidate_id": "KOREA7-E1-OOF",
+    "evaluator_version": "GEMSDOE32-HIDE-RECOVER-v3.0",
+    "score_label": "HOLDOUT-DTI",
+    "b_visible_px": 0.0,
+    "n_withheld_positives": 22232,
+    "n_spatial_clusters": 140,
+    "n_bootstrap_reps": 1000,
+    "pooled_dti": 0.004865707003838143,
+    "ci95_cluster_bootstrap": [
+      0.003996038564348637,
+      0.005788083570380415
+    ],
+    "fold_mean_dti": 0.0049620592626948715,
+    "per_quadrant_dti": {
+      "NW": 0.006923306517074941,
+      "NE": 0.003854379421044203,
+      "SW": 0.004841437764880785,
+      "SE": 0.0042291133477795565
+    },
+    "folds": {
+      "draw20_fold0": {
+        "dti": 0.0072498451006823015,
+        "coverage": 0.011832982312835012,
+        "tp": 22.612829199827708,
+        "fp": 7928.774993430719,
+        "fn": 1888.3871708001723,
+        "n_truth": 1911,
+        "emitted": 7945
+      },
+      "draw20_fold1": {
+        "dti": 0.004621373821921317,
+        "coverage": 0.007571447567483924,
+        "tp": 17.800473231154704,
+        "fp": 9837.05405474363,
+        "fn": 2333.1995267688453,
+        "n_truth": 2351,
+        "emitted": 9850
+      },
+      "draw20_fold2": {
+        "dti": 0.004009596489275715,
+        "coverage": 0.005315715575146943,
+        "tp": 19.588411894416485,
+        "fp": 9667.323307038787,
+        "fn": 3665.4115881055836,
+        "n_truth": 3685,
+        "emitted": 9682
+      },
+      "draw20_fold3": {
+        "dti": 0.004874114394906963,
+        "coverage": 0.006257603423771435,
+        "tp": 20.18077104166288,
+        "fp": 7781.806714879958,
+        "fn": 3204.819228958337,
+        "n_truth": 3225,
+        "emitted": 7796
+      },
+      "draw21_fold0": {
+        "dti": 0.00659676793346758,
+        "coverage": 0.01024679988876283,
+        "tp": 21.630994565178334,
+        "fp": 7929.514918812458,
+        "fn": 2089.3690054348217,
+        "n_truth": 2111,
+        "emitted": 7946
+      },
+      "draw21_fold1": {
+        "dti": 0.003087385020167089,
+        "coverage": 0.005155918688578563,
+        "tp": 11.678155829630445,
+        "fp": 9841.019407557556,
+        "fn": 2253.3218441703693,
+        "n_truth": 2265,
+        "emitted": 9850
+      },
+      "draw21_fold2": {
+        "dti": 0.005673279040485855,
+        "coverage": 0.007605759738841573,
+        "tp": 27.259042904008197,
+        "fp": 9660.80421000603,
+        "fn": 3556.7409570959917,
+        "n_truth": 3584,
+        "emitted": 9681
+      },
+      "draw21_fold3": {
+        "dti": 0.0035841123006521507,
+        "coverage": 0.004670722552300392,
+        "tp": 14.479239912131213,
+        "fp": 7784.720307346229,
+        "fn": 3085.520760087869,
+        "n_truth": 3100,
+        "emitted": 7795
+      }
+    }
+  }
+}

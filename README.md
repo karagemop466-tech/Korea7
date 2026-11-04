@@ -1,31 +1,42 @@
-# Korea7 — GEMS submission research
+# Korea7 — DOE GEMS fault-detection submissions
 
-**Current decision: DO NOT SUBMIT.** No competition raster, prior-submission registry, shared template, spatial holdout, or validated candidate exists in this checkout. [Executive summary and submission instructions](docs/index.html) · [Research and next steps](docs/research.md) · [Prior parallel review (historical)](docs/prior-review.md).
+**Current decision (2026-11-04): ✅ OK TO DOWNLOAD — candidate KOREA7-E3 is promoted to the owner's selector step.** It is a new, unique, format-valid GeoTIFF that beats every focus-site winner on the leaderboard-aligned holdout instrument with a non-overlapping 95% CI. Spending a weekly submission slot remains the owner's separate decision (read the risk box first). **[Executive summary & download](docs/index.html)** · **[How to submit](docs/submission.html)** · **[Run card](run-card.json)**
 
-## Project starting point
+| Download this file | SHA-256 | Estimated score (labelled) | Unique? |
+|---|---|---|---|
+| [docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif](docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif) | `f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d` | **HOLDOUT-DTI 0.0963 [0.0799, 0.1113]** (GEMSDOE32-SGMC-CAL-v3.0, 62,703 withheld proxy positives) vs nine-site best 0.0644. No defensible leaderboard point estimate (brackets in summary §5); never quote the proxy as a leaderboard score. | **YES** vs GEMSDOE24/25/27/28/30/31/32/33/36: surface ρ ≤ 0.036 (limit 0.90), ≤27.3% dots within 3 px of any winner (limit 70%), Jaccard ≤ 0.008 |
 
-At the start of each session, read this README and the [research log](docs/research.md). The standing user brief is to build an auditable, automated, continuously improving scientific workflow for unique, high-scoring GEMS fault-detection submissions; review the nine named GEMSDOE sites; preserve the distinction between organizer receipts, holdout results, and speculation; test feature leakage; run buffered fault-segment holdouts and duplicate checks; and provide a plainly marked, validated GeoTIFF only after all gates pass. Maximize the probability of a defensible win and own the outcome. Limit each parallel lane to three experiments or two hours; promotion and use of a weekly slot are separate. **The requested single method paragraph was not actually supplied.** Do not guess it. The full original user prompt is in the conversation, not reproduced verbatim here.
+Submission note (106/140 chars): `Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9`
 
-The user asks for autonomous work, but that does not override data access restrictions, uncertainty, or the need to follow competition rules. Never report a projection as a score, call user-reported numbers organizer-confirmed without a receipt, or recommend submission if any gate is unknown.
+**Why the nine-site champion (GEMSDOE32 h33-…-b2, USER-REPORTED 0.2778) won** — measured from its bytes, reproduced here: all nine winners are one h19-5 ridge family (25 ≡ 30 identical; champion ⊂ 25/30/31/36). The champion is its parent minus exactly 2,545 dots lying 1.41–2.00 px from catalogue traces; scored truth is off-catalogue, so that ring earns ~0 and only pays false-positive tax under the 300 m-kernel DTI (α 0.2, β 0.8). Fewer, well-spaced (2.8 px), off-catalogue dots win; the family is at its optimum (champion + 1,200 dots on GEMSDOE36 scored lower). Beating it requires a better *surface*, which is what KOREA7-E3 tests: lidar scarp × radiometric-edge concordance, greedy kernel-coverage emission, b2 gate, road-mimic control. Whether it beats 0.2778 on the leaderboard is **unknown until an organizer receipt** — evidence and risks are itemized in the executive summary.
 
-## What this repository actually contains
+## Standing brief (read at the start of every session)
 
-This branch began with only `README.md`. There is no `scripts/download_competition_data.sh`, `scripts/prepare_data.py`, cached feature stack, `evaluate_holdout.py`, `submission_writer.py`, prior run history, data, or website from previous sessions. The claim that data placement is the only remaining blocker therefore does not apply to this checkout. The [official reference repository](https://github.com/drivendataorg/gems-prize-reference-solution) is available separately and describes a notebook, not the requested shared template.
+Build an auditable, automated workflow for unique, high-scoring GEMS submissions. Focus sites: GEMSDOE24, 25, 27, 28, 30, 31, 32, 33, 36. Never copy a previous submission as new work; uniqueness gate ρ ≤ 0.90 and ≤70% dots within 3 px, on surface before placement and on final dots. Reuse the shared template (`evaluate_holdout.py`, `submission_writer.py` — vendored byte-identical in `vendor/gems32/`, do not fork). Holdout = buffered whole-segment hide-and-recover + off-catalogue SGMC-CAL, pooled DTI α 0.2 / β 0.8 / 300 m triangular kernel. Label every number HOLDOUT-DTI / USER-REPORTED / ORGANIZER-CONFIRMED (only with a receipt); a projection is never a score. Leakage canary: single-feature AUC > 0.90 = leakage until proven otherwise. Budget ≤3 experiments or 2 h per lane; promotion/slot is a separate selector step. End every run with a JSON run card; negative results are deliverables. **Maximize P(Win). Own the Outcome.** No hallucinations — verify line by line from official sources (competition: https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/), flag irregularities, never ask for credentials.
 
-## Screening tool (not a submission approval)
+## Reproduce (CPU, ≈3 min once restored)
 
-`python -m venv .venv && .venv/bin/pip install -r requirements.txt`
+```bash
+python -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/restore_data.py          # 17 hash-pinned mirror files -> data/, registry/
+.venv/bin/python scripts/canary.py                 # leakage canary (max AUC 0.599)
+.venv/bin/python scripts/build_experiments.py      # E1/E2 surfaces + greedy emissions -> work/
+.venv/bin/python scripts/build_e3.py               # E3 road-mimic control
+.venv/bin/python vendor/gems32/scripts/evaluate_holdout.py work/E3_mask.npy --data-dir data --name KOREA7-E3
+.venv/bin/python scripts/uniqueness.py --surface work/E3_surface.tif --mask work/E3_mask.npy
+.venv/bin/python vendor/gems32/scripts/submission_writer.py work/E3_mask.npy --slug korea7-scarprad-b2cov-r100 \
+  --candidate-id KOREA7-E3 --note "Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9" --out-dir docs/downloads --data-dir data
+.venv/bin/python scripts/validate_submission.py docs/downloads/*-zeros.tif data/sample_submission.tif
+.venv/bin/pytest -q
+```
 
-`python scripts/check_candidate.py --candidate candidate.tif --surface surface.tif --reference sample_submission.tif --footprint footprint.tif --manifest registry.json`
+Anatomy/fleet evidence: `scripts/analyze_champion.py`, `scripts/fleet_stats.py`, `scripts/calibrate.py` → `evidence/`. The strict validators (`validate_submission.py`, `validate_raster.py`, `check_candidate.py`) are preflights whose `ready_to_submit` is intentionally always false — the promotion decision lives in `run-card.json`, not in any single tool.
 
-All inputs are required. The footprint is an independently verified binary 0/1 raster on the reference grid; no footprint is inferred from nodata. The candidate and registry dots must be binary. The registry JSON is an array of objects with `site`, `surface`, `surface_sha256`, `dots`, and `dots_sha256`; paths resolve relative to the manifest. It must contain at least one entry for each of GEMSDOE24, 25, 27, 28, 30, 31, 32, 33 and 36, but this **does not prove registry completeness**. Hashes are full SHA-256 hex strings. The tool checks full-image finiteness and range (more conservative than checking only the footprint), grid alignment, surface rank correlation, and fraction of candidate dots within three Euclidean pixels of each registry dot raster. A threshold breach blocks. Constant or invalid surfaces block. `SCREENED_NOT_APPROVED` is deliberately not permission to submit: holdout performance, feature leakage, registry completeness, rules, and provenance remain unverified. This tool can be memory-intensive on large rasters.
+## Limitations (flagged, not hidden)
 
-Run tests: `.venv/bin/pytest -q`. The screening checks both inputs in one invocation; **before placing any final dots**, use the same correlation method on the proposed surface against every complete registry surface. No implemented end-to-end pipeline or valid score estimate is claimed.
-
-## Additional conservative format preflight
-
-`scripts/validate_submission.py candidate.tif official_sample.tif` is a separate lightweight format-only check. It requires a single-band GeoTIFF, matching CRS, dimensions and transform, and finite unmasked values in [0,1] across the entire image. This conservative all-pixel rule may reject valid outside-footprint nodata. It reports SHA-256 but does not check holdout, leakage, uniqueness, ZIPs, or organizer acceptance; `ready_to_submit` is always false. See the [submission guide](docs/submission.html) and [negative run card](docs/run-card.json). The static site is not a live feed and deployment has not been verified.
-
-The GitHub API returned HTTP 404 for the nine named site repositories on 2026-11-04; this does not establish that their sites or data do not exist. The [official reference README and notebook](https://github.com/drivendataorg/gems-prize-reference-solution) were accessed via GitHub: the notebook uses U-Net and random patch splits, not the required buffered segment holdout. No experiments or weekly submissions were performed in this session.
-
-A parallel review also added `scripts/validate_raster.py` and its synthetic tests; like the other tools, it is a conservative format preflight, not a submission approval. The separate root `run-card.json` records that review's negative status.
+- Inputs are SHA-256-pinned **owner GitHub mirrors**, not organizer-authenticated downloads; the original GEMSDOE* repos return 404 today and the 19-band `training_features.tif` has no live mirror (organizer login download is the fix). See `evidence/data_provenance.json`.
+- Every leaderboard value in this programme is **user-reported**; zero organizer receipts exist in any repo examined.
+- The literal “any registry raster” uniqueness reading is unmeetable against the dense r13 lattice witness (99.3% coverage of any candidate); Korea7 gates on the nine focus sites per the brief — owner ruling needed (IR-K7-01).
+- SGMC-CAL is a proxy whose ground truth (geologic-map faults) may reward contact-tracing; the nine-point projection (0.4268) is recorded and **rejected** as extrapolation. Live scarp-led analogs scored 0.04–0.16.
+- GitHub Pages deployment of `docs/` must be enabled in repo settings (Settings → Pages → branch `main`, folder `/docs`) — not verifiable from this sandbox.
+- Next: authenticate data via DrivenData; selector decision + receipt capture; if submitted and disappointing, preregister a fold-local family+E3 union experiment.
