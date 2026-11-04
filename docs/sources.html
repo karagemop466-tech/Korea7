@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources — Korea7 GEMS · Korea7 GEMS</title>
+<meta name="description" content="Korea7 GEMS fault-prospectivity submission audit: a unique, format-valid GeoTIFF with measured validation and a clearly labelled research-artifact status.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">K7</span> Korea7 <span style="color:var(--muted);font-weight:600">/ GEMS</span></a>
+    <nav aria-label="Primary"><a href="index.html">Overview</a><a href="executive-summary.html">Executive summary</a><a href="how-to-submit.html">How to submit</a><a href="validation.html">Validation</a><a href="sources.html" aria-current="page">Sources</a></nav>
+    <a class="btn btn-primary btn-sm" href="downloads/korea7-consensus-offcat-20k-20261104-zeros.tif">Download TIF</a>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero" style="padding-top:44px"><div class="eyebrow">Sources</div><h1 style="font-size:clamp(30px,4vw,46px)">Official links and pinned hashes.</h1><p class="lede">Every number on this site is computed from the files in the repository. The links below are for manual review. The competition data are a SHA-pinned third-party mirror, not an organizer-authenticated download.</p></section>
+<section class="section"><section class="section" id="sources">
+  <h2>Sources and provenance.</h2>
+  <p class="sub">Official competition pages, the reference solution, and the pinned data mirrors used here. Every number on this site is computed from the files in the repository; no score is typed in by hand.</p>
+  <div class="grid grid-2">
+    <div class="card"><h3>Official competition</h3><p><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/" target="_blank" rel="noopener">Competition overview</a><br><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/" target="_blank" rel="noopener">Problem description</a><br><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/968/" target="_blank" rel="noopener">About page</a><br><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/" target="_blank" rel="noopener">Data (login may be required)</a><br><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/" target="_blank" rel="noopener">Leaderboard</a></p></div>
+    <div class="card"><h3>Reference and data</h3><p><a href="https://github.com/drivendataorg/gems-prize-reference-solution" target="_blank" rel="noopener">DrivenData reference solution</a><br><a href="https://docs.nlr.gov/docs/fy26osti/96647.pdf" target="_blank" rel="noopener">DOE/NLR GEMS solicitation PDF</a><br><a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and" target="_blank" rel="noopener">USGS GeoDawn survey</a><br><a href="https://gbcge.org/current-projects/ingenious/" target="_blank" rel="noopener">GBC/INGENIOUS</a><br><a href="https://epsg.io/32611" target="_blank" rel="noopener">EPSG:32611</a><br><a href="https://en.wikipedia.org/wiki/Tversky_index" target="_blank" rel="noopener">Tversky index</a></p></div>
+  </div>
+  <div class="card" style="margin-top:16px"><h3>Pinned data hashes</h3><dl class="kv">
+    <dt>labels.tif</dt><dd><code>7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093</code> — mirror catalogue, not organizer hidden labels</dd>
+    <dt>sample_submission.tif</dt><dd><code>2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc</code> — grid/footprint template</dd>
+    <dt>Candidate TIF</dt><dd><code>9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c</code></dd>
+    <dt>Candidate ZIP</dt><dd><code>7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5</code></dd>
+  </dl></div>
+</section></section>
+<section class="section"><h2>Reproduce</h2><div class="card"><h3>Commands</h3><pre>python3 scripts/analyze_focus.py
+python3 scripts/analyze_sites.py
+python3 scripts/build_consensus.py
+python3 scripts/build_site.py
+pytest -q</pre><p style="margin-top:10px">The scripts read the pinned rasters in <code>data/</code> and the shared <code>vendor/gems57</code> evaluator/writer. They do not call the DrivenData portal and do not spend a submission slot.</p></div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div><strong>Korea7</strong> · GEMS fault-prospectivity submission audit · generated 2026-11-04</div>
+    <div>Research artifact. No organizer receipt. <a href="sources.html">Sources &amp; hashes</a></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

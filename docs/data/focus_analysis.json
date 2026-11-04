@@ -1,0 +1,318 @@
+{
+  "schema": "korea7-focus-analysis-v1",
+  "date_utc": "2026-11-04",
+  "grid": {
+    "crs": "EPSG:32611",
+    "height": 3730,
+    "width": 3292,
+    "footprint_cells": 5167373,
+    "catalogue_cells": 60988
+  },
+  "evidence_labels": {
+    "USER-REPORTED": "score copied from the user's supplied site list; no organizer receipt",
+    "MEASURED": "geometry computed here from the pinned rasters",
+    "PROJECTED": "OLS extrapolation from the nine USER-REPORTED scores; not a score"
+  },
+  "focus": {
+    "GEMSDOE24": {
+      "dots": 60069,
+      "far_fraction": 0.4955301403386106,
+      "near2_fraction": 0.14598212056135446,
+      "median_distance_px": 14.866068747318506,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE24.tif",
+      "bytes": 1632732,
+      "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+      "user_reported_score": 0.2477,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE25": {
+      "dots": 44090,
+      "far_fraction": 0.4987298707189839,
+      "near2_fraction": 0.1459741437967793,
+      "median_distance_px": 15.0,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE25.tif",
+      "bytes": 836982,
+      "sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30",
+      "user_reported_score": 0.26,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE27": {
+      "dots": 61328,
+      "far_fraction": 0.48583028959039914,
+      "near2_fraction": 0.14471367075397862,
+      "median_distance_px": 14.142135623730951,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE27.tif",
+      "bytes": 1635084,
+      "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+      "user_reported_score": 0.2449,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE28": {
+      "dots": 37660,
+      "far_fraction": 0.5485130111524164,
+      "near2_fraction": 0.06248008497079129,
+      "median_distance_px": 17.72004514666935,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE28.tif",
+      "bytes": 1590848,
+      "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+      "user_reported_score": 0.271,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE30": {
+      "dots": 44090,
+      "far_fraction": 0.4987298707189839,
+      "near2_fraction": 0.1459741437967793,
+      "median_distance_px": 15.0,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE30.tif",
+      "bytes": 806758,
+      "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+      "user_reported_score": 0.26,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE31": {
+      "dots": 40199,
+      "far_fraction": 0.5470036568073833,
+      "near2_fraction": 0.06331003258787532,
+      "median_distance_px": 17.69180601295413,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE31.tif",
+      "bytes": 199214,
+      "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+      "user_reported_score": 0.2708,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE32": {
+      "dots": 37654,
+      "far_fraction": 0.5839751420831785,
+      "near2_fraction": 0.0,
+      "median_distance_px": 19.6468827043885,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE32.tif",
+      "bytes": 219065,
+      "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+      "user_reported_score": 0.2778,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE33": {
+      "dots": 41865,
+      "far_fraction": 0.5291054580198257,
+      "near2_fraction": 0.09301325689716948,
+      "median_distance_px": 16.64331697709324,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE33.tif",
+      "bytes": 917544,
+      "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+      "user_reported_score": 0.2632,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    },
+    "GEMSDOE36": {
+      "dots": 38854,
+      "far_fraction": 0.580866834817522,
+      "near2_fraction": 0.0,
+      "median_distance_px": 19.235384061671343,
+      "on_catalogue": 0,
+      "file": "data/focus/GEMSDOE36.tif",
+      "bytes": 318190,
+      "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+      "user_reported_score": 0.275,
+      "score_evidence_class": "USER-REPORTED \u2014 no organizer receipt"
+    }
+  },
+  "projection_model": {
+    "model": "OLS of USER-REPORTED score on [log(dots), fraction of dots > 15 px from catalogue]",
+    "coefficients": {
+      "intercept": 0.2633777777777777,
+      "log_dots": -0.03690566921123878,
+      "far_fraction": 0.13878924282001184
+    },
+    "n_observations": 9,
+    "loo_rmse": 0.0013716098488147836,
+    "loo_interval_halfwidth": 0.002688355303676976,
+    "fitted_B2": 0.27693721057316234,
+    "caveats": [
+      "PROJECTED, not a score and not a measurement.",
+      "n = 9 associational fit to unverified USER-REPORTED scores.",
+      "The model cannot see surface quality; a candidate on the wrong terrain scores lower.",
+      "Fewer dots always increases the projection, so the model is an extrapolation at low dot counts."
+    ]
+  },
+  "reference_candidates": {
+    "offcat_geophys_edge_37654": {
+      "file": "data/reference/offcat_geophys_edge_37654.tif",
+      "bytes": 132339,
+      "sha256": "9b29f8e14de2ffa7bd23f62a36b9717e9ce73e9c9eb338b80920d0716f15ed6d",
+      "dots": 37654,
+      "far_fraction": 0.7254209380145535,
+      "near2_fraction": 0.0,
+      "median_distance_px": 26.92582403567252,
+      "on_catalogue": 0,
+      "projection": {
+        "evidence_class": "PROJECTED \u2014 not a score, not a measurement",
+        "projected_value": 0.2965683654905518,
+        "bootstrap_95_interval": [
+          0.27987245907204544,
+          0.3059271989142965
+        ],
+        "loo_interval": [
+          0.2938800101868748,
+          0.2992567207942288
+        ],
+        "delta_vs_B2_projection": 0.01963115491738948,
+        "candidate_position": {
+          "log_dots": 10.536194469284657,
+          "far_fraction": 0.7254209380145535
+        }
+      }
+    },
+    "geothermal_conduit_20000": {
+      "file": "data/reference/geothermal_conduit_20000.tif",
+      "bytes": 97516,
+      "sha256": "50b0e7b0c7d56b8bb1207b52c118ef86cf59c94c34a6908c05bf707077c299ed",
+      "dots": 20000,
+      "far_fraction": 0.7254,
+      "near2_fraction": 0.0,
+      "median_distance_px": 27.730849247724095,
+      "on_catalogue": 0,
+      "projection": {
+        "evidence_class": "PROJECTED \u2014 not a score, not a measurement",
+        "projected_value": 0.31991593169654986,
+        "bootstrap_95_interval": [
+          0.31179839490890787,
+          0.3434911103134247
+        ],
+        "loo_interval": [
+          0.3172275763928729,
+          0.3226042870002268
+        ],
+        "delta_vs_B2_projection": 0.04297872112338752,
+        "candidate_position": {
+          "log_dots": 9.903487552536127,
+          "far_fraction": 0.7254
+        }
+      }
+    },
+    "geo_habitat_dti_40561": {
+      "file": "data/reference/geo_habitat_dti_40561.tif",
+      "bytes": 79838,
+      "sha256": "ff22311cb19c83926b1b3d3f66a0f960c863fb9d3c3d603a682a0b7870d0402f",
+      "dots": 40561,
+      "far_fraction": 0.9298587312936072,
+      "near2_fraction": 0.0,
+      "median_distance_px": 35.4682957019364,
+      "on_catalogue": 0,
+      "projection": {
+        "evidence_class": "PROJECTED \u2014 not a score, not a measurement",
+        "projected_value": 0.3221975377291691,
+        "bootstrap_95_interval": [
+          0.2809237401323412,
+          0.3456257034022036
+        ],
+        "loo_interval": [
+          0.3195091824254921,
+          0.3248858930328461
+        ],
+        "delta_vs_B2_projection": 0.04526032715600675,
+        "candidate_position": {
+          "log_dots": 10.610562292793487,
+          "far_fraction": 0.9298587312936072
+        }
+      }
+    },
+    "offcat_corridor_prior_15000": {
+      "file": "data/reference/offcat_corridor_prior_15000.tif",
+      "bytes": 127534,
+      "sha256": "6432d93d31eb1a1344ccb1c613f4637b0c30f64dc960c182222551694106a6aa",
+      "dots": 15000,
+      "far_fraction": 0.9408666666666666,
+      "near2_fraction": 0.0,
+      "median_distance_px": 39.319206502675,
+      "on_catalogue": 0,
+      "projection": {
+        "evidence_class": "PROJECTED \u2014 not a score, not a measurement",
+        "projected_value": 0.36043748662007735,
+        "bootstrap_95_interval": [
+          0.34771995921562693,
+          0.3824991047785505
+        ],
+        "loo_interval": [
+          0.3577491313164004,
+          0.3631258419237543
+        ],
+        "delta_vs_B2_projection": 0.08350027604691501,
+        "candidate_position": {
+          "log_dots": 9.615805480084347,
+          "far_fraction": 0.9408666666666666
+        }
+      }
+    },
+    "kp1_far_conduit_32000": {
+      "file": "data/reference/kp1_far_conduit_32000.tif",
+      "bytes": 128570,
+      "sha256": "30a5fc28ff060ad38681d9b721024aea5aec3b070f407537dd28354efbe0ff0d",
+      "dots": 32000,
+      "far_fraction": 0.555,
+      "near2_fraction": 0.0,
+      "median_distance_px": 17.46424919657298,
+      "on_catalogue": 0,
+      "projection": {
+        "evidence_class": "PROJECTED \u2014 not a score, not a measurement",
+        "projected_value": 0.27892044625099494,
+        "bootstrap_95_interval": [
+          0.27521758944925073,
+          0.2919958438338027
+        ],
+        "loo_interval": [
+          0.27623209094731793,
+          0.28160880155467194
+        ],
+        "delta_vs_B2_projection": 0.0019832356778325955,
+        "candidate_position": {
+          "log_dots": 10.373491181781864,
+          "far_fraction": 0.555
+        }
+      }
+    },
+    "HV31_40000": {
+      "file": "data/reference/HV31.tif",
+      "bytes": 282359,
+      "sha256": "4221236752e703ec035b4d4245d23dbb0cf2b1126f8cb6040e810316be1d738a",
+      "dots": 40000,
+      "far_fraction": 0.007975,
+      "near2_fraction": 0.369725,
+      "median_distance_px": 3.1622776601683795,
+      "on_catalogue": 0,
+      "projection": {
+        "evidence_class": "PROJECTED \u2014 not a score, not a measurement",
+        "projected_value": 0.19476399860595464,
+        "bootstrap_95_interval": [
+          0.16166675722196747,
+          0.2503082990806166
+        ],
+        "loo_interval": [
+          0.19207564330227767,
+          0.19745235390963162
+        ],
+        "delta_vs_B2_projection": -0.0821732119672077,
+        "candidate_position": {
+          "log_dots": 10.596634733096073,
+          "far_fraction": 0.007975
+        }
+      }
+    }
+  },
+  "data_provenance": {
+    "labels.tif": {
+      "sha256": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+      "note": "byte-identical to existing_faults.tif; mirror catalogue, not organizer hidden labels"
+    },
+    "sample_submission.tif": {
+      "sha256": "2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc",
+      "note": "grid/footprint template; mirror, not organizer-authenticated"
+    }
+  }
+}

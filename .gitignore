@@ -1,11 +1,19 @@
-.venv/
+# Python & build artifacts
 __pycache__/
+*.py[cod]
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+.node_modules/
+node_modules/
+.DS_Store
+
+# Local caches (not used by the committed audit)
 .cache/
-data/
+
+# Local demo / build outputs
 demo/
 out/
-*.tif
-*.tiff
-# exception: published submission candidates and the format probe
-!docs/downloads/*.tif
