@@ -20,7 +20,7 @@ This branch began with only `README.md`. There is no `scripts/download_competiti
 
 All inputs are required. The footprint is an independently verified binary 0/1 raster on the reference grid; no footprint is inferred from nodata. The candidate and registry dots must be binary. The registry JSON is an array of objects with `site`, `surface`, `surface_sha256`, `dots`, and `dots_sha256`; paths resolve relative to the manifest. It must contain at least one entry for each of GEMSDOE24, 25, 27, 28, 30, 31, 32, 33 and 36, but this **does not prove registry completeness**. Hashes are full SHA-256 hex strings. The tool checks full-image finiteness and range (more conservative than checking only the footprint), grid alignment, surface rank correlation, and fraction of candidate dots within three Euclidean pixels of each registry dot raster. A threshold breach blocks. Constant or invalid surfaces block. `SCREENED_NOT_APPROVED` is deliberately not permission to submit: holdout performance, feature leakage, registry completeness, rules, and provenance remain unverified. This tool can be memory-intensive on large rasters.
 
-Run tests: `.venv/bin/pytest -q`. Before placing any final dots, run `python scripts/check_surface.py --surface surface.tif --reference sample_submission.tif --footprint footprint.tif --manifest registry.json`. This uses the same correlation method and stops on a threshold breach without requiring candidate dots. Passing either screen does not establish registry completeness or permission to submit. After placement run the final screening command above. No implemented end-to-end pipeline or valid score estimate is claimed.
+Run tests: `.venv/bin/pytest -q`. Before placing dots, run `python scripts/check_candidate.py --surface surface.tif --reference sample_submission.tif --footprint footprint.tif --manifest registry.json` (omit `--candidate`). After placement run the full command above. Both statuses are screening only, not approval. All input rasters must be single-band GeoTIFFs without masked or nodata pixels; this conservative constraint can reject valid data outside the footprint. No implemented end-to-end pipeline or valid score estimate is claimed.
 
 ## Additional conservative format preflight
 
@@ -30,6 +30,6 @@ The GitHub API returned HTTP 404 for the nine named site repositories on 2026-11
 
 A parallel review also added `scripts/validate_raster.py` and its synthetic tests; like the other tools, it is a conservative format preflight, not a submission approval. The separate root `run-card.json` records that review's negative status.
 
-## Latest review (2026-11-04)
+## Latest review
 
-Added a pre-placement surface-only screen and blocked masked/nodata candidate and footprint pixels in the final screen. Synthetic tests are not competition validation. No data, lane, canonical evaluator/writer or registry became available; no model experiment, unique raster, estimated DTI or submission was produced. The original full prompt is not reproduced here; the project starting point above is a summary. See [research](docs/research.md) for unverified claims and required access.
+The screening tool now has a separate pre-placement surface mode and rejects masked pixels, including masks hiding in-range values. See [review and remaining blockers](docs/review-2026-11-04.md). These are synthetic-test-backed safeguards, not a generated submission or validation against competition data.
