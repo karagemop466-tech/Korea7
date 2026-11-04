@@ -1,0 +1,17 @@
+{
+  "hypothesis": "Multi-scale magnetic-gradient discontinuity coherence (proposed only; lane assignment not supplied)",
+  "mechanism": "Coherent magnetic edges at multiple scales may indicate an unmapped basement discontinuity.",
+  "non_fault_mimic": "Lithologic contact or magnetic survey-line artifact",
+  "holdout_dti": null,
+  "holdout_evaluator_version": null,
+  "withheld_positives": null,
+  "holdout_95_percent_ci": null,
+  "registry_rank_correlation": null,
+  "registry_dot_overlap_within_3_pixels": null,
+  "raster_sha256": null,
+  "validator_output": "Not run: candidate and official reference absent; finite footprint, range, CRS, shape and transform unknown.",
+  "submission_name": null,
+  "submission_note": null,
+  "verdict": "negative",
+  "reason": "No experiment or raster generated; shared tools, input data, registry and explicit lane are unavailable."
+}
