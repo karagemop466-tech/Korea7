@@ -1,6 +1,24 @@
 #!/usr/bin/env python3
-"""Conservative format preflight; it does not establish novelty or predictive skill."""
-import argparse
+"""Korea7 — GEMS Prize submission validator (automated gate, no human inspector).
+
+Checks a candidate GeoTIFF against the submission format gates:
+  * single band, float32
+  * CRS / shape / geotransform match the reference raster when one is given,
+    otherwise the pinned official competition grid (EPSG:32611, 3730x3292,
+    transform (100, 0, 243350, 0, -100, 4508550))
+  * all pixels finite and in [0, 1]; no nodata/masked pixels
+  * reports SHA-256
+
+`validate(candidate, reference=None)` returns a machine-readable dict and
+never exits; the CLI prints JSON and exits non-zero on gate failure.
+Passing this gate never authorizes submission by itself (`ready_to_submit`
+is always False here; promotion is a separate selector step).
+
+Usage:
+  python3 scripts/validate_submission.py docs/downloads/<file>.tif [reference.tif]
+"""
+from __future__ import annotations
+
 import hashlib
 import json
 import sys
@@ -8,54 +26,87 @@ import sys
 import numpy as np
 import rasterio
 
+EXPECTED_HEIGHT = 3730
+EXPECTED_WIDTH = 3292
+EXPECTED_CRS = "EPSG:32611"
+EXPECTED_TRANSFORM = [100.0, 0.0, 243350.0, 0.0, -100.0, 4508550.0]
+EXPECTED_BANDS = 1
+EXPECTED_DTYPE = "float32"
 
-def validate(candidate, reference):
-    result = {'candidate': str(candidate), 'reference': str(reference), 'format_pass': False,
-              'ready_to_submit': False, 'errors': [], 'checks': {}}
-    errors, checks = result['errors'], result['checks']
+
+def sha256_file(path) -> str:
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def validate(candidate, reference=None) -> dict:
+    checks: dict[str, bool] = {}
+    report = {"path": str(candidate), "checks": checks, "errors": [],
+              "format_pass": False, "ready_to_submit": False, "sha256": ""}
+
+    exp_crs, exp_shape = EXPECTED_CRS, (EXPECTED_HEIGHT, EXPECTED_WIDTH)
+    exp_transform = EXPECTED_TRANSFORM
+    if reference is not None:
+        try:
+            with rasterio.open(reference) as ref:
+                exp_crs = ref.crs.to_string() if ref.crs is not None else None
+                exp_shape = (ref.height, ref.width)
+                exp_transform = list(ref.transform)[:6]
+        except Exception as exc:  # noqa: BLE001
+            report["errors"].append("reference open: " + repr(exc))
+            return report
+
     try:
-        digest = hashlib.sha256()
-        with open(candidate, 'rb') as f:
-            for chunk in iter(lambda: f.read(1024 * 1024), b''):
-                digest.update(chunk)
-        result['sha256'] = digest.hexdigest()
-        with rasterio.open(reference) as ref, rasterio.open(candidate) as src:
-            checks['reference_geotiff'] = ref.driver == 'GTiff'
-            checks['reference_single_band'] = ref.count == 1
-            checks['geotiff'] = src.driver == 'GTiff'
-            checks['single_band'] = src.count == 1
-            checks['crs_match'] = ref.crs is not None and src.crs == ref.crs
-            checks['shape_match'] = (src.height, src.width) == (ref.height, ref.width)
-            checks['transform_match'] = tuple(src.transform) == tuple(ref.transform)
-            # Deliberately stricter than a footprint-only test: no NaN, nodata,
-            # infinity or out-of-range value anywhere, including outside footprint.
-            finite = in_range = unmasked = True
-            for _, window in src.block_windows(1):
-                values = src.read(1, window=window, masked=False)
-                finite &= bool(np.isfinite(values).all())
-                in_range &= bool(((values >= 0) & (values <= 1)).all())
-                unmasked &= bool((src.read_masks(1, window=window) != 0).all())
-            checks['all_pixels_finite'] = finite
-            checks['all_pixels_in_range'] = in_range
-            checks['no_masked_or_nodata_pixels'] = unmasked
-            errors.extend(k for k, value in checks.items() if not value)
-    except (OSError, ValueError, rasterio.errors.RasterioError) as exc:
-        errors.append(f'{type(exc).__name__}: {exc}')
-    result['format_pass'] = not errors and bool(checks)
-    result['limitations'] = ('Strict all-pixel preflight only; no official footprint, holdout, '
-                             'leakage, registry uniqueness, or organizer acceptance checked.')
-    return result
+        ds = rasterio.open(candidate)
+    except Exception as exc:  # noqa: BLE001
+        report["errors"].append("open: " + repr(exc))
+        return report
+
+    with ds:
+        report["sha256"] = sha256_file(candidate)
+        checks["single_band"] = ds.count == EXPECTED_BANDS
+        checks["dtype_float32"] = bool(ds.count) and ds.dtypes[0] == EXPECTED_DTYPE
+        crs = ds.crs.to_string() if ds.crs is not None else None
+        checks["crs_match"] = crs == exp_crs
+        checks["shape_match"] = (ds.height, ds.width) == tuple(exp_shape)
+        checks["transform_match"] = (
+            [round(float(v), 6) for v in list(ds.transform)[:6]]
+            == [round(float(v), 6) for v in exp_transform])
+        band = ds.read(1, masked=True)
+        checks["no_masked_or_nodata_pixels"] = (
+            ds.nodata is None and not np.ma.is_masked(band))
+        data = np.ma.getdata(band)
+        finite = np.isfinite(data)
+        report["n_nan_or_inf"] = int((~finite).sum())
+        checks["all_pixels_finite"] = bool(finite.all())
+        if finite.any():
+            vals = data[finite]
+            report["min_value"] = float(vals.min())
+            report["max_value"] = float(vals.max())
+            checks["values_in_0_to_1"] = bool(
+                (vals >= 0.0).all() and (vals <= 1.0).all())
+        else:
+            checks["values_in_0_to_1"] = False
+
+    report["format_pass"] = all(checks.values())
+    for name, ok in checks.items():
+        if not ok:
+            report["errors"].append(name)
+    return report
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('candidate')
-    parser.add_argument('reference', help='official sample submission')
-    args = parser.parse_args()
-    report = validate(args.candidate, args.reference)
-    print(json.dumps(report, indent=2, allow_nan=False))
-    return 0 if report['format_pass'] else 1
+def main(argv) -> int:
+    if len(argv) not in (2, 3):
+        print("Usage: python3 scripts/validate_submission.py <file.tif> [reference.tif]",
+              file=sys.stderr)
+        return 2
+    report = validate(argv[1], argv[2] if len(argv) == 3 else None)
+    print(json.dumps(report, indent=2))
+    return 0 if report["format_pass"] else 1
 
 
-if __name__ == '__main__':
-    sys.exit(main())
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))

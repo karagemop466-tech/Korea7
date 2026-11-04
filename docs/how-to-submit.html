@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to submit — Korea7 GEMS · Korea7 GEMS</title>
+<meta name="description" content="Korea7 GEMS fault-prospectivity submission audit: a unique, format-valid GeoTIFF with measured validation and a clearly labelled research-artifact status.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">K7</span> Korea7 <span style="color:var(--muted);font-weight:600">/ GEMS</span></a>
+    <nav aria-label="Primary"><a href="index.html">Overview</a><a href="executive-summary.html">Executive summary</a><a href="how-to-submit.html" aria-current="page">How to submit</a><a href="validation.html">Validation</a><a href="sources.html">Sources</a></nav>
+    <a class="btn btn-primary btn-sm" href="downloads/korea7-consensus-offcat-20k-20261104-zeros.tif">Download TIF</a>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero" style="padding-top:44px"><div class="eyebrow">How to submit</div><h1 style="font-size:clamp(30px,4vw,46px)">From download to submission, step by step.</h1><p class="lede">The portal accepts a single-band GeoTIFF or a ZIP containing one GeoTIFF. Our file matches the submission format's CRS, shape, and geotransform. The decision to submit is an owner decision: the file is a research artifact and is not organizer-cleared.</p></section>
+<section class="section"><div class="callout"><div class="icon">⚠️</div><p><strong>NOT CLEARED — do not submit without an owner decision.</strong> The file passes the format gate and the nine-focus uniqueness gate, but fails the catalogue holdout gate (0.0000 below random) and the literal 13GEMS lattice probe. Submitting it spends a weekly slot on a research artifact.</p></div>
+<h2>Submission packet</h2><dl class="kv">
+<dt>File</dt><dd><a href="downloads/korea7-consensus-offcat-20k-20261104-zeros.tif">TIF</a> · <a href="downloads/korea7-consensus-offcat-20k-20261104-zeros.zip">ZIP</a></dd>
+<dt>Submission name</dt><dd><code>korea7-consensus-offcat-20k-20261104-zeros</code></dd>
+<dt>Note (117 chars)</dt><dd><code id="note-text">Korea7 4-method off-catalogue consensus, 20k dots, 85% far from catalogue; unique vs nine focus sites; research only.</code> <button class="btn btn-ghost btn-sm no-print" data-copy-target="#note-text">Copy note</button></dd>
+<dt>SHA-256</dt><dd><code>9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c</code></dd>
+<dt>Bytes</dt><dd>102,331</dd>
+<dt>Grid</dt><dd>EPSG:32611 · 3730 × 3292 · 100 m · transform matches sample</dd>
+<dt>Values</dt><dd>min 0.0 · max 1.0 · no NaN · no inf</dd>
+</dl></section>
+<section class="section"><h2>Steps</h2><div class="steps">
+<div class="step"><div><h3>Download</h3><p>Click the TIF or ZIP link above. The ZIP contains exactly one TIF with identical bytes.</p></div></div>
+<div class="step"><div><h3>Verify the hash</h3><p>Compare the SHA-256 to <code>9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c</code>. Do not rename or re-encode the file.</p></div></div>
+<div class="step"><div><h3>Open the competition submission page</h3><p>Go to <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/" target="_blank" rel="noopener">drivendata.org/competitions/306/competition-doe-gems</a> and click “New submission”.</p></div></div>
+<div class="step"><div><h3>Upload the file</h3><p>Choose the TIF or ZIP. The portal will check the CRS, shape, and geotransform. If it returns “Predicted values must be in range [0, 1]”, the file has been altered; re-download it.</p></div></div>
+<div class="step"><div><h3>Enter the note</h3><p>Paste the note exactly: <code>Korea7 4-method off-catalogue consensus, 20k dots, 85% far from catalogue; unique vs nine focus sites; research only.</code></p></div></div>
+<div class="step"><div><h3>Submit</h3><p>Only after an owner decision. The file is not organizer-cleared. The holdout gate fails. The 13GEMS lattice probe fails. No organizer receipt exists.</p></div></div>
+</div></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div><strong>Korea7</strong> · GEMS fault-prospectivity submission audit · generated 2026-11-04</div>
+    <div>Research artifact. No organizer receipt. <a href="sources.html">Sources &amp; hashes</a></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

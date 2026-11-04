@@ -1,0 +1,86 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>How to submit</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;max-width:980px;margin:2rem auto;padding:0 1.1rem;color:#12202e}
+h1{font-size:1.7rem}h2{margin-top:2rem}code{background:#eef2f6;padding:.08rem .3rem;border-radius:4px}
+pre{background:#0f1c28;color:#e8f0f6;padding:1rem;border-radius:8px;overflow:auto}
+pre code{background:none;color:inherit}.alert{border-left:6px solid #b42318;background:#fff1f0;padding:1rem;border-radius:6px}
+.ok{border-left-color:#0a7a3d;background:#effaf3}.card{background:#f6f9fb;border:1px solid #d7e0e8;border-radius:8px;padding:1rem}
+table{border-collapse:collapse;width:100%;margin:.6rem 0}td,th{border-bottom:1px solid #d7e0e8;padding:.45rem;text-align:left}
+a{color:#0755a0}small{color:#52657a}
+</style></head><body>
+<h1>How to make a submission, start to finish</h1>
+
+<div class="alert"><strong>Read this first.</strong> Steps 1-2 cannot be done from this repository:
+the competition rasters require a DrivenData login. Everything after that is one command.</div>
+
+<h2>Step 1 - get the three files you actually need</h2>
+<p>Sign in at the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">competition data page</a>
+and download into <code>data/</code>:</p>
+<table><thead><tr><th>File</th><th>Why it matters</th><th>If it is missing</th></tr></thead><tbody>
+<tr><td><code>numeric_features.tif</code> (or <code>training_features.tif</code>)</td>
+<td>the multi-band evidence stack; every independent feature is derived from it</td>
+<td>no model, no submission</td></tr>
+<tr><td><code>labels.tif</code></td><td>the mapped faults: the training target and the source of the catalogue features</td>
+<td>no holdout, no emission, no submission</td></tr>
+<tr><td><code>sample_submission.tif</code></td><td>defines the required CRS, shape and geotransform; the validator compares against it</td>
+<td>the validator falls back to the recorded grid and says so</td></tr>
+</tbody></table>
+<p><small>Recorded grid, verified in <code>gems/grid.py</code>: EPSG:32611, 100 m pixels,
+3292 columns x 3730 rows, transform <code>(100, 0, 250000, 0, -100, 4520000)</code>,
+i.e. 119.83-116.10 W, 37.44-40.83 N. Confirm it against your own <code>sample_submission.tif</code>
+before trusting it.</small></p>
+
+<h2>Step 2 - install and build</h2>
+<pre><code>python -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/build_submission.py --data data --out out/submission.tif</code></pre>
+<p>Useful flags: <code>--emit topk|threshold|coverage|nms</code> (default <code>threshold</code>, the
+measured winner), <code>--top-k</code>, <code>--folds</code>, <code>--buffer-px</code>,
+<code>--registry path/to/registry.json</code>, <code>--no-write</code> to rehearse.</p>
+
+<h2>Step 3 - read the run card, not the console</h2>
+<p>The run card (<code>out/submission.run.json</code>) is the only thing that authorises a slot:</p>
+<table><thead><tr><th>Field</th><th>Must show</th></tr></thead><tbody>
+<tr><td><code>status</code></td><td><code>READY_FOR_SELECTOR</code>. Anything else - including <code>NOT_READY</code> - means do not submit.</td></tr>
+<tr><td><code>gates.format_valid</code></td><td><code>true</code> (single band, CRS/shape/transform match, finite, inside [0,1])</td></tr>
+<tr><td><code>gates.no_leakage_canary_trip</code></td><td><code>true</code> (no catalogue feature with AUC &gt; 0.90 on withheld segments)</td></tr>
+<tr><td><code>gates.uniqueness_pass</code></td><td><code>true</code>, which requires a complete nine-site registry manifest</td></tr>
+<tr><td><code>holdout.mean</code> + <code>ci95</code></td><td>HOLDOUT-DTI, segment-blocked, with the CI. Not a leaderboard score.</td></tr>
+<tr><td><code>file.sha256</code></td><td>the hash of the exact bytes you will upload</td></tr>
+</tbody></table>
+
+<h2>Step 4 - screen for uniqueness</h2>
+<pre><code># manifest: JSON array of {site, surface, dots, surface_sha256, dots_sha256}
+.venv/bin/python -m gems.registry --candidate out/submission.tif --manifest registry.json</code></pre>
+<p>Blocked if the rank correlation with any registry surface exceeds 0.90, or if more than 70% of
+your positive cells lie within 3 px of one registry raster's positives. Without a manifest the
+verdict is <code>UNKNOWN</code>, which is a block, not a pass.</p>
+
+<h2>Step 5 - upload</h2>
+<ol>
+<li>Open the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">competition page</a>
+and check the current rules, the weekly cap and the submission page's own wording.</li>
+<li>Choose <code>out/submission.tif</code> (or a <code>.zip</code> holding exactly that one file) as
+"File to submit".</li>
+<li><strong>Note field (max 140 characters)</b>, for example:<br>
+<code>CSE-1: Hessian lineaments + balanced logistic + isotonic calibration + Dinkelbach sparse emission; holdout DTI 0.xx (CI 0.xx-0.xx)</code></li>
+<li>If the form answers <em>"Predicted values must be in range [0, 1]"</em>, the file has a NaN or an
+out-of-range value: run <code>python -m gems.validate out/submission.tif</code>. The writer in this repo
+cannot produce such a file; the validator will name the failing check.</li>
+<li>Record the organizer's receipt separately. Until a receipt exists, the score is unknown, and the
+holdout number stays labelled HOLDOUT-DTI.</li>
+</ol>
+
+<h2>What not to do</h2>
+<div class="card ok">
+<ul>
+<li>Do not upload the format probe in <code>docs/downloads/</code>. Its score is exactly 0.0000.</li>
+<li>Do not upload anything whose run card says <code>NOT_READY</code> because of a uniqueness gap:
+an unverifiable duplicate is a rules risk and a zero-information submission.</li>
+<li>Do not report a holdout DTI as a leaderboard score, and do not promote a candidate on a
+projection.</li>
+</ul>
+</div>
+<p><small><a href="index.html">back to the executive summary</a></small></p>
+</body></html>

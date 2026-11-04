@@ -1,0 +1,55 @@
+{
+  "session_date": "2026-11-04",
+  "branch": "arena/6a22835c-korea7",
+  "candidate_id": "KOREA7-E3",
+  "hypothesis": "Scarp x radiometric concordance: a coherent lidar topographic step AND-gated with a GeoDAWN radiometric-ratio edge, emitted >2 px from the catalogue by greedy 300 m triangular-kernel coverage, traces blind faults missing from the USGS/INGENIOUS catalogue better than the nine-site h19-5 ridge family.",
+  "mechanism": "Surface = sqrt(rank-geomean(lidar step_max, cross_max, max(downface,upface)) x rank-mean Sobel gradient of ThK/UK/UTh); lazy-greedy submodular coverage under the exact official DTI credit kernel (R=3 px); budget 37,654 (= champion); catalogue distance >2 px (champion's measured b2 geometry); E3 additionally excludes <100 m from TIGER roads and refills budget.",
+  "named_non_fault_mimic": "Lithologic contacts with erosional scarps; roads/terraces mimicking steps (road-proximity controlled in E3; lithologic contacts are also a component of the SGMC proxy ground truth - see risk)",
+  "experiments_run": 3,
+  "holdout_dti": {
+    "label": "HOLDOUT-DTI",
+    "primary_instrument": "GEMSDOE32-SGMC-CAL-v3.0 (shared evaluate_holdout.py, vendored byte-identical, unmodified)",
+    "withheld_positives": 62703,
+    "candidate_E3": 0.0962663283552931,
+    "candidate_E3_ci95": [0.07992975637523518, 0.11128727675031252],
+    "candidate_E3_raw_pooled": 0.14313347575934113,
+    "candidate_E1_no_road_control": 0.09678162685986513,
+    "candidate_E2_plus_tmi": 0.06691568598176673,
+    "best_of_nine_GEMSDOE36_reproduced": 0.06444361006575842,
+    "champion_GEMSDOE32_reproduced": 0.0641209376417646,
+    "secondary_instrument": "GEMSDOE32-HIDE-RECOVER-v3.0, 22232 withheld positives, whole segments + 1.5 km collar",
+    "candidate_E1_fold_local_OOF_pooled": 0.004865707003838143,
+    "candidate_E1_fold_local_OOF_ci95": [0.003996038564348637, 0.005788083570380415],
+    "champion_static_same_instrument": 0.00451537871535044,
+    "interpretation_warning": "Hide-recover rewards catalogue-anatomy surfaces and ranks AGAINST user-reported leaderboard order within the nine (measured); SGMC-CAL ranks WITH it (Spearman 0.9496, n=9, reproduced). Neither instrument is the organizer score."
+  },
+  "leakage_canary": {"max_single_band_auc": 0.599, "threshold": 0.90, "verdict": "PASS", "evidence": "evidence/canary.json"},
+  "registry_correlation_overlap": {
+    "scope": "nine focus winners (GEMSDOE24/25/27/28/30/31/32/33/36), hash-pinned mirrors",
+    "max_surface_spearman_rho": 0.036,
+    "max_dots_within_3px_frac": 0.273,
+    "exact_dot_jaccard_max": 0.008,
+    "thresholds": {"rho": 0.90, "overlap": 0.70},
+    "verdict": "UNIQUE vs focus-9 (evidence/uniqueness.json, evidence/check_candidate_final.json)",
+    "known_limit": "vs the dense synthetic r13 lattice witness (not a focus site) overlap is 0.993 - it covers ~99% of the footprint within 3 px, so the literal any-registry-raster rule is unmeetable by any dense candidate (IR-K7-01, owner decision; sisters flagged identically). Registry surfaces were never published; surface gate computed vs registry dot rasters."
+  },
+  "raster_sha256": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d",
+  "validator_output": {
+    "shared_submission_writer_checks": "all 13 passed (evidence/writer_bundle.json)",
+    "korea7_validate_submission.py_strict_all_pixel": "format_pass=true (evidence/validate_submission_final.json)",
+    "korea7_validate_raster.py": "format_preflight_passed=true (evidence/validate_raster_final.json)",
+    "korea7_check_candidate.py": "SCREENED_NOT_APPROVED = its maximum status; format+uniqueness screens pass (evidence/check_candidate_final.json)",
+    "facts": "single-band float32 GeoTIFF, EPSG:32611, 3730x3292, transform == sample_submission, all 12,279,160 px finite in [0,1] (zeros outside footprint, nodata=None), 37,654 dots, 0 on-catalogue"
+  },
+  "submission_name": "gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif",
+  "submission_note": "Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9",
+  "organizer_confirmed_score": null,
+  "score_estimate": {
+    "label": "PROJECTION - rejected as evidence",
+    "nine_point_family_fit_projection": 0.4268,
+    "why_rejected": "x=0.0963 is 49% above the largest fit point (0.0644) and all nine fit points are one surface family; evidence/calibration.json",
+    "honest_brackets": "If SGMC-proxy transfer held across surface families, >0.2778 is possible; live fleet analogs led by lidar/scarp (n=10 user-reported) median 0.104 max 0.159. No defensible point estimate exists. Only an organizer receipt settles it."
+  },
+  "verdict": "promote",
+  "verdict_scope": "Promote to the owner's selector step: OK TO DOWNLOAD. Spending a weekly submission slot remains the separate owner/selector decision required by the parallel-run protocol; this card does not use a slot and uploads nothing. Promote rests on: beats holdout best on the leaderboard-aligned SGMC-CAL instrument with disjoint 95% CI, canary pass, focus-9 uniqueness pass, strict format pass. It does NOT claim the candidate will beat 0.2778 on the leaderboard."
+}

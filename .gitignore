@@ -1,10 +1,24 @@
-.venv/
+# Python & build artifacts
 __pycache__/
+*.py[cod]
 .pytest_cache/
-data/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+.node_modules/
+node_modules/
+.DS_Store
+
+# Local caches (not used by the committed audit)
+.cache/
+
+# Local demo / build outputs
+demo/
+out/
+
+# Korea7-E3 lane local work areas (restorable via scripts/restore_data.py)
 work/
-*.tif
-*.tiff
-!docs/downloads/*.tif
-!docs/downloads/*.zip
+data/external/
 registry/*.tif

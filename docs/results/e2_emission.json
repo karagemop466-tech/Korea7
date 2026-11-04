@@ -1,0 +1,195 @@
+{
+  "experiment": "E2-emission-layer",
+  "label": "SIMULATION (not a leaderboard score)",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "shape": [
+    900,
+    900
+  ],
+  "evidence_auc_mean": 0.807,
+  "methods": {
+    "threshold": {
+      "mean_dti": 0.6086,
+      "ci95_halfwidth": 0.2384,
+      "per_seed": [
+        0.729,
+        0.7229,
+        0.7238,
+        0.5842,
+        0.283
+      ]
+    },
+    "nms": {
+      "mean_dti": 0.5464,
+      "ci95_halfwidth": 0.1804,
+      "per_seed": [
+        0.637,
+        0.6379,
+        0.6359,
+        0.5175,
+        0.3034
+      ]
+    },
+    "topk": {
+      "mean_dti": 0.7169,
+      "ci95_halfwidth": 0.0277,
+      "per_seed": [
+        0.7322,
+        0.7339,
+        0.7316,
+        0.7023,
+        0.6846
+      ]
+    },
+    "coverage": {
+      "mean_dti": 0.485,
+      "ci95_halfwidth": 0.0849,
+      "per_seed": [
+        0.4379,
+        0.4713,
+        0.4216,
+        0.4993,
+        0.595
+      ]
+    },
+    "topk_matched": {
+      "mean_dti": 0.3971,
+      "ci95_halfwidth": 0.1397,
+      "per_seed": [
+        0.335,
+        0.3468,
+        0.3081,
+        0.4081,
+        0.5874
+      ]
+    }
+  },
+  "coverage_emission_gain_over_best_baseline": -0.2319,
+  "hyperparameters": {
+    "0": {
+      "lam_threshold": 0.5,
+      "lam_nms": 0.5,
+      "topk": 16000,
+      "evidence": {
+        "auc": 0.8329,
+        "noise": 0.5
+      },
+      "calibration": {
+        "kind": "isotonic-pav",
+        "n_bins": 256,
+        "n_samples": 810000,
+        "n_positive": 11581,
+        "prior": 0.01429753086419753
+      },
+      "calib_dti": {
+        "threshold": 0.7182,
+        "nms": 0.6334,
+        "topk": 0.7294
+      },
+      "coverage_emitted": 1729,
+      "topk_emitted": 16000
+    },
+    "1": {
+      "lam_threshold": 0.5,
+      "lam_nms": 0.5,
+      "topk": 16000,
+      "evidence": {
+        "auc": 0.8371,
+        "noise": 0.5
+      },
+      "calibration": {
+        "kind": "isotonic-pav",
+        "n_bins": 256,
+        "n_samples": 810000,
+        "n_positive": 10755,
+        "prior": 0.013277777777777777
+      },
+      "calib_dti": {
+        "threshold": 0.7215,
+        "nms": 0.6383,
+        "topk": 0.7287
+      },
+      "coverage_emitted": 1954,
+      "topk_emitted": 16000
+    },
+    "2": {
+      "lam_threshold": 0.5,
+      "lam_nms": 0.5,
+      "topk": 16000,
+      "evidence": {
+        "auc": 0.8337,
+        "noise": 0.5
+      },
+      "calibration": {
+        "kind": "isotonic-pav",
+        "n_bins": 256,
+        "n_samples": 810000,
+        "n_positive": 11117,
+        "prior": 0.013724691358024692
+      },
+      "calib_dti": {
+        "threshold": 0.7123,
+        "nms": 0.6287,
+        "topk": 0.7246
+      },
+      "coverage_emitted": 1870,
+      "topk_emitted": 16000
+    },
+    "3": {
+      "lam_threshold": 0.5,
+      "lam_nms": 0.5,
+      "topk": 16000,
+      "evidence": {
+        "auc": 0.7684,
+        "noise": 0.7
+      },
+      "calibration": {
+        "kind": "isotonic-pav",
+        "n_bins": 256,
+        "n_samples": 810000,
+        "n_positive": 13170,
+        "prior": 0.016259259259259258
+      },
+      "calib_dti": {
+        "threshold": 0.701,
+        "nms": 0.6236,
+        "topk": 0.7016
+      },
+      "coverage_emitted": 2483,
+      "topk_emitted": 16000
+    },
+    "4": {
+      "lam_threshold": 0.5,
+      "lam_nms": 0.5,
+      "topk": 16000,
+      "evidence": {
+        "auc": 0.7629,
+        "noise": 0.7
+      },
+      "calibration": {
+        "kind": "isotonic-pav",
+        "n_bins": 256,
+        "n_samples": 810000,
+        "n_positive": 13692,
+        "prior": 0.016903703703703702
+      },
+      "calib_dti": {
+        "threshold": 0.7261,
+        "nms": 0.6374,
+        "topk": 0.7328
+      },
+      "coverage_emitted": 4354,
+      "topk_emitted": 16000
+    }
+  },
+  "notes": [
+    "The score->probability calibration and every hyper-parameter are fitted on an independent network (seed 100+seed) and applied unchanged to the evaluated network; the evaluated labels are only used to score.",
+    "coverage_emission optimises expected DTI directly with a Dinkelbach outer loop and a coverage-aware greedy inner loop."
+  ]
+}

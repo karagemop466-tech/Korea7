@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to submit — Korea7 GEMS</title><link rel="stylesheet" href="style.css"></head><body>
+<p><a href="executive-korea7-e3.html">← KOREA7-E3 executive summary</a> · <a href="index.html">Korea7 hub</a></p>
+<h1>How to submit KOREA7-E3 to the DOE GEMS competition</h1>
+
+<div class="go"><h2 style="margin-top:0">The file</h2>
+<p><a class="dl" href="downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif" download>⬇ gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif</a></p>
+<p>SHA-256 (verify after download): <code>f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d</code><br>
+Note to paste (106/140 chars): <code>Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9</code></p>
+<p class="muted">Upload the <b>-zeros.tif</b> (or the <a href="downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.zip">ZIP containing only it</a>). The writer's <code>-nan.tif</code> twin was removed from downloads so it cannot be picked by mistake.</p></div>
+
+<h2>Step by step</h2>
+<ol>
+<li><b>Download</b> the file above. Optionally verify the hash: <code>sha256sum gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif</code> must print the SHA-256 above.</li>
+<li>Open the competition: <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">drivendata.org/competitions/306/competition-doe-gems</a> and sign in. Check your remaining weekly submission slots on the submission page — <b>spending a slot is your decision</b>; nothing on this site submits for you.</li>
+<li>Re-read the current <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/rules/">rules</a> and the format section of the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">problem description</a> (single-band float32 GeoTIFF, EPSG:32611, 100 m, values in [0,1] — this file satisfies all of these on every pixel).</li>
+<li>Click <b>Submit</b> / “New submission”. Under <b>File to submit</b>, choose the downloaded <code>-zeros.tif</code>.</li>
+<li>In <b>Note (optional)</b>, paste exactly: <code>Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9</code></li>
+<li>Submit once. If the portal errors, <b>screenshot the full message + filename and stop</b> — do not retry with any renamed or regenerated copy; bring the error back to this project (IR-K7-03 is still open).</li>
+<li><b>Record the receipt</b>: submission id, timestamp, and the public score when it appears. Add them to <code>run-card.json</code> (<code>organizer_confirmed_score</code>) — until then every number for this candidate stays labelled HOLDOUT-DTI / PROJECTION.</li>
+<li>Remember the prize structure: you must eventually select <b>one</b> submission for both prize rounds before the deadline, without knowing private-set performance. Keep this candidate's receipt with the others you are choosing among.</li>
+</ol>
+
+<h2>Why this file cannot produce “Predicted values must be in range [0, 1]”</h2>
+<p>That error is a whole-raster range check. This file was written by the shared <code>submission_writer.py</code> in its zeros mode and re-read byte-by-byte by two further validators in this repo: single band, float32, EPSG:32611, 3730×3292 with the sample transform, <b>all 12,279,160 pixels finite with min 0.0 and max 1.0</b>, nodata=None (evidence: <code>evidence/writer_bundle.json</code>, <code>evidence/validate_submission_final.json</code>). There is no NaN, infinity, sentinel, or &gt;1 value anywhere in the file for the portal to object to. (Local validation still cannot <i>guarantee</i> portal acceptance — step 6 covers that case.)</p>
+
+<h2>What this candidate is (one line)</h2>
+<p>37,654 binary dots where a lidar topographic step and a radiometric-ratio edge coincide, &gt;200 m from known catalogue traces and ≥100 m from roads, placed by greedy 300 m-kernel coverage; HOLDOUT-DTI (SGMC-CAL v3.0) 0.0963 [0.0799, 0.1113] vs nine-site best 0.0644; unique vs all nine focus winners. Full evidence and risks: <a href="executive-korea7-e3.html">executive summary</a>.</p>
+</body></html>

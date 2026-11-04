@@ -1,55 +1,66 @@
 {
-  "session_date": "2026-11-04",
-  "branch": "arena/6a22835c-korea7",
-  "candidate_id": "KOREA7-E3",
-  "hypothesis": "Scarp x radiometric concordance: a coherent lidar topographic step AND-gated with a GeoDAWN radiometric-ratio edge, emitted >2 px from the catalogue by greedy 300 m triangular-kernel coverage, traces blind faults missing from the USGS/INGENIOUS catalogue better than the nine-site h19-5 ridge family.",
-  "mechanism": "Surface = sqrt(rank-geomean(lidar step_max, cross_max, max(downface,upface)) x rank-mean Sobel gradient of ThK/UK/UTh); lazy-greedy submodular coverage under the exact official DTI credit kernel (R=3 px); budget 37,654 (= champion); catalogue distance >2 px (champion's measured b2 geometry); E3 additionally excludes <100 m from TIGER roads and refills budget.",
-  "named_non_fault_mimic": "Lithologic contacts with erosional scarps; roads/terraces mimicking steps (road-proximity controlled in E3; lithologic contacts are also a component of the SGMC proxy ground truth - see risk)",
-  "experiments_run": 3,
+  "hypothesis": "SDCC-1: a scarp-dominant concordance fusion (LiDAR scarp percentile x coherence, upward-continued-TMI-150m horizontal-gradient percentile, Th/K alteration-low percentile, 2 km wellspring conduit prior, road suppression, 2-px catalogue collar) emitted as 2.8-px Poisson dots with a hard per-registry uniqueness cap can approach the B2 family's off-catalogue holdout level while remaining unique (<=70% dot overlap vs every registry raster).",
+  "mechanism": "Hidden leaderboard faults are predominantly off-catalogue; within the champion family the SGMC-CAL off-catalogue holdout tracks owner-reported leaderboard scores almost linearly (fit LB ~= -0.0271 + 4.715 x SGMC-CAL, RMSE 0.0023 over 9 family points). Scarp evidence is the strongest clean single feature (canary AUC 0.58); magnetic-gradient, alteration and conduit lines add corroboration where scarps are buried.",
+  "non_fault_mimic": "Road cuts and canal/terrace edges (LiDAR scarp false positives; mitigated by TIGER road suppression at 200 m), lithologic contacts and survey-line artifacts (magnetic gradient), soil-moisture/surficial-deposit contrasts (Th/K low).",
   "holdout_dti": {
-    "label": "HOLDOUT-DTI",
-    "primary_instrument": "GEMSDOE32-SGMC-CAL-v3.0 (shared evaluate_holdout.py, vendored byte-identical, unmodified)",
-    "withheld_positives": 62703,
-    "candidate_E3": 0.0962663283552931,
-    "candidate_E3_ci95": [0.07992975637523518, 0.11128727675031252],
-    "candidate_E3_raw_pooled": 0.14313347575934113,
-    "candidate_E1_no_road_control": 0.09678162685986513,
-    "candidate_E2_plus_tmi": 0.06691568598176673,
-    "best_of_nine_GEMSDOE36_reproduced": 0.06444361006575842,
-    "champion_GEMSDOE32_reproduced": 0.0641209376417646,
-    "secondary_instrument": "GEMSDOE32-HIDE-RECOVER-v3.0, 22232 withheld positives, whole segments + 1.5 km collar",
-    "candidate_E1_fold_local_OOF_pooled": 0.004865707003838143,
-    "candidate_E1_fold_local_OOF_ci95": [0.003996038564348637, 0.005788083570380415],
-    "champion_static_same_instrument": 0.00451537871535044,
-    "interpretation_warning": "Hide-recover rewards catalogue-anatomy surfaces and ranks AGAINST user-reported leaderboard order within the nine (measured); SGMC-CAL ranks WITH it (Spearman 0.9496, n=9, reproduced). Neither instrument is the organizer score."
+    "primary_candidate": "korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif",
+    "hide_and_recover": {
+      "label": "HOLDOUT-DTI",
+      "evaluator_version": "GEMSDOE32-HIDE-RECOVER-v3.0 (shared template GEMSDOEkarage3 @ 6b0d7cd64b06c7b694eeae70032afc761f869171)",
+      "pooled_dti": 0.004501,
+      "ci95": [0.0034, 0.0056],
+      "n_withheld_positives": 22232,
+      "note": "Low by construction: the 2-px catalogue collar removes on-catalogue dots, exactly as for the GEMSDOE32 B2 champion (0.004515 on the same evaluator)."
+    },
+    "sgmc_off_catalogue": {
+      "label": "HOLDOUT-DTI",
+      "evaluator_version": "GEMSDOE32-SGMC-CAL-v3.0 (same pinned template)",
+      "prevalence_calibrated_dti": 0.062423,
+      "ci95": [0.0511, 0.0745],
+      "n_withheld_positives": 62703
+    },
+    "calibrated_projection_not_a_score": {
+      "value": 0.2672,
+      "ci_range": [0.2138, 0.3242],
+      "method": "linear fit of SGMC-CAL to owner-reported leaderboard results over the 9 focus-site family rasters; a projection is never written as a score"
+    }
   },
-  "leakage_canary": {"max_single_band_auc": 0.599, "threshold": 0.90, "verdict": "PASS", "evidence": "evidence/canary.json"},
   "registry_correlation_overlap": {
-    "scope": "nine focus winners (GEMSDOE24/25/27/28/30/31/32/33/36), hash-pinned mirrors",
-    "max_surface_spearman_rho": 0.036,
-    "max_dots_within_3px_frac": 0.273,
-    "exact_dot_jaccard_max": 0.008,
-    "thresholds": {"rho": 0.90, "overlap": 0.70},
-    "verdict": "UNIQUE vs focus-9 (evidence/uniqueness.json, evidence/check_candidate_final.json)",
-    "known_limit": "vs the dense synthetic r13 lattice witness (not a focus site) overlap is 0.993 - it covers ~99% of the footprint within 3 px, so the literal any-registry-raster rule is unmeetable by any dense candidate (IR-K7-01, owner decision; sisters flagged identically). Registry surfaces were never published; surface gate computed vs registry dot rasters."
+    "n_registry_rasters_compared": 16,
+    "pre_placement_surface_max_abs_spearman": 0.0343,
+    "final_dots_max_abs_spearman": 0.012,
+    "final_dots_max_overlap_within_3px": 0.3958,
+    "limits": {"spearman": 0.90, "overlap": 0.70},
+    "verdict": "PASS - in lane, not a duplicate",
+    "detail": "evidence/final_lane_checks.json"
   },
-  "raster_sha256": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d",
+  "raster_sha256": {
+    "primary_44090": "5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c",
+    "alternate_37654": "d88f4742d9fd01f2e450622282a83b1d7d14390673caf8ce42b3841fdc953031"
+  },
   "validator_output": {
-    "shared_submission_writer_checks": "all 13 passed (evidence/writer_bundle.json)",
-    "korea7_validate_submission.py_strict_all_pixel": "format_pass=true (evidence/validate_submission_final.json)",
-    "korea7_validate_raster.py": "format_preflight_passed=true (evidence/validate_raster_final.json)",
-    "korea7_check_candidate.py": "SCREENED_NOT_APPROVED = its maximum status; format+uniqueness screens pass (evidence/check_candidate_final.json)",
-    "facts": "single-band float32 GeoTIFF, EPSG:32611, 3730x3292, transform == sample_submission, all 12,279,160 px finite in [0,1] (zeros outside footprint, nodata=None), 37,654 dots, 0 on-catalogue"
+    "single_band": true,
+    "crs_shape_transform_match_sample_submission": true,
+    "all_pixels_finite": true,
+    "all_pixels_in_0_1": true,
+    "no_nan_inside_footprint": true,
+    "background": "zeros (all-finite variant; avoids the organizer form error 'Predicted values must be in range [0, 1]')"
   },
-  "submission_name": "gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif",
-  "submission_note": "Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9",
-  "organizer_confirmed_score": null,
-  "score_estimate": {
-    "label": "PROJECTION - rejected as evidence",
-    "nine_point_family_fit_projection": 0.4268,
-    "why_rejected": "x=0.0963 is 49% above the largest fit point (0.0644) and all nine fit points are one surface family; evidence/calibration.json",
-    "honest_brackets": "If SGMC-proxy transfer held across surface families, >0.2778 is possible; live fleet analogs led by lidar/scarp (n=10 user-reported) median 0.104 max 0.159. No defensible point estimate exists. Only an organizer receipt settles it."
-  },
+  "submission_name": "korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros",
+  "submission_note": "Korea7 SDCC-1: scarp-dom concordance fusion (LiDAR scarp, TMI-up150 grad, ThK alt, wellspring), D2.8 Poisson, collar B2, uniq cap 65%",
   "verdict": "promote",
-  "verdict_scope": "Promote to the owner's selector step: OK TO DOWNLOAD. Spending a weekly submission slot remains the separate owner/selector decision required by the parallel-run protocol; this card does not use a slot and uploads nothing. Promote rests on: beats holdout best on the leaderboard-aligned SGMC-CAL instrument with disjoint 95% CI, canary pass, focus-9 uniqueness pass, strict format pass. It does NOT claim the candidate will beat 0.2778 on the leaderboard."
+  "verdict_basis": "All validation gates pass and the unique candidate's SGMC-CAL holdout (0.0624) sits within CI of the best family rasters (0.0630-0.0644); promotion to a weekly slot remains a separate selector decision. Beating 0.2778 is NOT demonstrated: the calibrated projection 0.2672 [0.2138, 0.3242] straddles it.",
+  "experiments_used": 3,
+  "experiment_log": [
+    "EXP-1 leakage canary: all single-feature AUC 0.48-0.58 (<0.90, clean); evidence/exp1_canary.json",
+    "EXP-2 candidate A (balanced weights, 37654 dots): SGMC-CAL 0.0481 [0.0374,0.0602]; evidence/holdout_expA_full.json",
+    "EXP-3 scarp-dominant surface, two emissions: 37654 -> 0.0573 [0.0465,0.0692]; 44090 -> 0.0624 [0.0511,0.0745]; evidence/holdout_v2a_full.json, evidence/holdout_v2b_full.json"
+  ],
+  "reproduction": "python scripts/generate_submission.py --budget 44090 (restores SHA-256-pinned mirrors; evaluator: GEMSDOEkarage3 scripts/evaluate_holdout.py, reproduction check GEMSDOE25 = 0.09674330401596999 matched exactly)",
+  "irregularities": [
+    "IR-K7-1: buffedlizard55-lab GitHub account is 404 (API+codeload, 2026-11-04); the original data bridge and all GEMSDOE site repos are unreachable; data restored instead from SHA-256-pinned mirrors in sassnarep3-star/GEMSDOESASS2 and kanlerxz87-cyber/KANLERGEMSDOE1 (pins match GEMSDOEkarage3 registry/data_manifest.json).",
+    "IR-K7-2: training_features.tif (419 MB, 19-band) is NOT restorable this session (bridge gone); not needed for the SDCC-1 pipeline or the holdout evaluator, but blocks any training_features-based model.",
+    "IR-K7-3: all nine focus-site scores remain OWNER-REPORTED/UNVERIFIED (no organizer receipts); the brief's leaderboard highs (0.4413 and 0.3195) conflict and could not be checked (drivendata.org unreachable from this sandbox).",
+    "IR-K7-4: no method-paragraph lane was supplied with the parallel-run protocol; the SDCC-1 lane above is self-declared and logged here."
+  ]
 }

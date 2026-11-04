@@ -1,0 +1,30 @@
+{
+  "consensus-20k": {
+    "file": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+    "dots": 20000,
+    "e3_dots_within_3px": 0.062012004036755726,
+    "surface_vs_dots_rho": -0.00856115566669513,
+    "jaccard": 0.002259926291634796
+  },
+  "sdcc1-37654": {
+    "file": "docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-37654-20261104T201224Z-d88f4742-zeros.tif",
+    "dots": 37654,
+    "e3_dots_within_3px": 0.3912200563021193,
+    "surface_vs_dots_rho": 0.09274134390321154,
+    "jaccard": 0.01818476805970553
+  },
+  "sdcc1-44090": {
+    "file": "docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif",
+    "dots": 44090,
+    "e3_dots_within_3px": 0.44529133690975725,
+    "surface_vs_dots_rho": 0.09995347517841557,
+    "jaccard": 0.019442539128265886
+  },
+  "relay-30k": {
+    "file": "docs/downloads/korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif",
+    "dots": 4529,
+    "e3_dots_within_3px": 0.015137833961863282,
+    "surface_vs_dots_rho": -0.005944657886736701,
+    "jaccard": 0.0008541533205210335
+  }
+}

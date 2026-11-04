@@ -1,0 +1,119 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Korea7 — GEMS executive summary &amp; submission download</title><link rel="stylesheet" href="style.css"></head><body>
+
+<h1>Korea7 — DOE GEMS fault-detection: executive summary</h1>
+<p><a href="index.html">← Korea7 hub (all parallel lanes)</a></p><p class="muted">Parallel lane KOREA7-E3 · Session 2026-11-04 · branch <code>arena/6a22835c-korea7</code> · Core values: <b>Maximize P(Win)</b> · <b>Own the Outcome</b>. Every number below is labelled <span class="tag">HOLDOUT-DTI</span> (local evaluator), <span class="tag gold">USER-REPORTED</span> (owner ledger, no organizer receipt), or <span class="tag">PROJECTION</span>. No number on this page is organizer-confirmed; no organizer receipt exists in this repo.</p>
+
+<div class="go">
+<h2 style="margin-top:0">✅ OK TO DOWNLOAD — new unique submission candidate (KOREA7-E3)</h2>
+<p><b>File to submit (use this exact file — the <code>-zeros.tif</code>):</b><br>
+<a class="dl" href="downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif" download>⬇ Download the submission GeoTIFF</a>
+<a class="dl2" href="downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.zip" download>⬇ Or the single-TIF ZIP</a>
+<a class="dl2" href="submission-korea7-e3.html">Step-by-step: how to submit →</a></p>
+<p style="margin:.2rem 0"><b>Filename:</b> <code>gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif</code><br>
+<b>SHA-256:</b> <code>f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d</code> · 37,654 dots · float32, EPSG:32611, 3730×3292, all 12,279,160 pixels finite in [0,1] (cannot trigger the portal's <i>“Predicted values must be in range [0, 1]”</i> error — see §6).<br>
+<b>Paste this Note on the submission page (106/140 chars):</b><br>
+<code>Korea7 E3 scarpXrad concordance b2 greedy kernel-cover 37654 roadctl zeros SGMCcal 0.0963 unique-vs-focus9</code></p>
+<p style="margin:.2rem 0"><b>Estimated score:</b> <span class="tag">HOLDOUT-DTI</span> <b>0.0963 [0.0799, 0.1113]</b> on the leaderboard-aligned SGMC-CAL proxy (62,703 withheld proxy faults) — the highest value ever measured on that instrument in this programme, above the nine-site best 0.0644 with a non-overlapping CI. <b>A leaderboard point estimate is not defensible</b> (see brackets in §5); do not quote 0.0963 as an expected leaderboard score.<br>
+<b>Unique?</b> <b>YES vs all nine focus sites</b> — max surface Spearman ρ = 0.036 (limit 0.90), max 27.3% of dots within 3&nbsp;px of any single winner (limit 70%), exact-dot Jaccard ≤ 0.008. It is not a copy, subset, or re-emission of any listed submission.</p>
+<p style="margin:.2rem 0" class="muted">Slot decision remains yours (the protocol's separate selector step): this page clears the file for download; spending a weekly slot is the owner's call after reading the risk box in §5. The writer also produced a <code>-nan.tif</code> twin; it has been <b>removed from downloads</b> so it cannot be uploaded by mistake.</p>
+</div>
+
+<h2>1 · The decision table — what to download, estimated score, unique?</h2>
+<div class="scroll"><table>
+<thead><tr><th>Site / candidate</th><th>File (best of site)</th><th>Dots</th><th>USER-REPORTED leaderboard</th><th>HOLDOUT-DTI SGMC-CAL v3.0 [95% CI] (reproduced here)</th><th>Unique?</th><th>Download &amp; submit?</th></tr></thead><tbody>
+<tr class="best"><td><b>Korea7 (this repo) — NEW</b></td><td><code>gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif</code></td><td>37,654</td><td>unsubmitted</td><td><b>0.0963 [0.0799, 0.1113]</b></td><td><b>YES</b> (ρ≤0.036, overlap≤27.3%)</td><td><b>✅ YES — button above</b></td></tr>
+<tr><td>GEMSDOE32</td><td><code>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</code></td><td>37,654</td><td><b>0.2778</b> (best reported of nine)</td><td>0.0641 [0.0567, 0.0716]</td><td>NO — exact subset of 25/30/31/36</td><td>Already submitted; do not resubmit a copy</td></tr>
+<tr><td>GEMSDOE36</td><td><code>anderson-geothermal-pinn-38854-…-zeros</code></td><td>38,854</td><td>0.2750</td><td>0.0644 [0.0571, 0.0720] (best proxy of nine)</td><td>NO — champion + 1,200 dots</td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE28</td><td><code>h36-1-rung30-blind-r1-…-nan</code></td><td>37,660</td><td>0.2710</td><td>0.0630 [0.0557, 0.0704]</td><td>NO — same family selection</td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE31</td><td><code>h27-4-solo-d28-…-nan</code></td><td>40,199</td><td>0.2708</td><td>0.0630 [0.0558, 0.0704]</td><td>NO — superset of champion</td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE33</td><td><code>h33d-analog-tip-stepover-r30-…</code></td><td>41,865</td><td>0.2632</td><td>0.0626 [0.0553, 0.0700]</td><td>NO — 75.5% champion dots</td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE25</td><td><code>dotted-h19-5-d2-8-…-nan</code></td><td>44,090</td><td>0.2600</td><td>0.0606 [0.0536, 0.0679]</td><td>NO — <b>identical dot set to GEMSDOE30</b></td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE30</td><td><code>d28-poisson300m-offcat-44090-…</code></td><td>44,090</td><td>0.2600</td><td>0.0606 [0.0536, 0.0679]</td><td>NO — <b>identical dot set to GEMSDOE25</b></td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE24</td><td><code>h25-1-dotted-h19-5-d1-5-…-nan</code></td><td>60,069</td><td>0.2477</td><td>0.0579 [0.0511, 0.0652]</td><td>NO — subset of GEMSDOE27</td><td>Already submitted</td></tr>
+<tr><td>GEMSDOE27</td><td><code>topo-gap-closure-t-v2-on-d1-5-…-nan</code></td><td>61,328</td><td>0.2449</td><td>0.0583 [0.0515, 0.0655]</td><td>NO — GEMSDOE24 + 1,259 dots</td><td>Already submitted</td></tr>
+</tbody></table></div>
+<p class="muted">HOLDOUT-DTI: shared <code>GEMSDOE32-SGMC-CAL-v3.0</code> (off-catalogue USGS SGMC faults &gt;300&nbsp;m from the catalogue as blind-fault proxy GT; 62,703 positives; 256-block spatial bootstrap), re-run in this repo on hash-pinned mirror bytes — all nine values reproduce GEMSDOEkarage3's 2026-10-31 table exactly. USER-REPORTED values: owner ledger (<code>registry/owner_score_ledger.csv</code>, 160 rows), never backed by a receipt in any repo examined.</p>
+<img class="fig" src="assets/korea7-e3-vs-nine.png" alt="KOREA7-E3 dots vs champion dots, and SGMC-CAL HOLDOUT-DTI bars with CI">
+
+<h2>2 · Executive summary per focus site</h2>
+<ul>
+<li><b>GEMSDOE24</b> — the dense sibling (d=1.5 thinning, 60,069 dots). Its role in hindsight: the density control proving sparser wins at fixed surface. 0.2477 reported; proxy 0.0579 (lowest). Not unique (⊂ GEMSDOE27).</li>
+<li><b>GEMSDOE25</b> — the family pivot: d=2.8&nbsp;px Poisson thinning of the h19-5 ridge (44,090 dots, 0.2600). Its dot set is <b>byte-for-byte the same placement as GEMSDOE30's best</b> (measured symmetric difference 0).</li>
+<li><b>GEMSDOE27</b> — GEMSDOE24 + 1,259 gap-closure dots; scored <i>lower</i> (0.2449): on this surface, marginal additions pay more false-positive tax than true-positive credit. Newer hydro/piedmont files (0.2190/0.2250 reported) stay below the family best.</li>
+<li><b>GEMSDOE28</b> — hosts the lineage middle (“solo” = d2.8 minus the ≤1&nbsp;px catalogue ring) and rung30 (37,660 dots, 0.2710), the only focus best that is a slightly different selection rather than a pure ring-prune.</li>
+<li><b>GEMSDOE30</b> — “Poisson 300&nbsp;m off-catalogue” best is the identical 44,090-dot placement as GEMSDOE25 (0.2600 both): same submission, two sites, two names.</li>
+<li><b>GEMSDOE31</b> — best ≡ solo control (40,199 dots, 0.2708); the direct parent of the champion. (One extended-audit raster on this site has non-finite values <i>inside</i> the footprint per GEMSDOEkarage3 forensics — never submit that file.)</li>
+<li><b>GEMSDOE32</b> — the champion (0.2778) and home of the shared template (metric/holdout/writer vendored byte-identical in this repo). Mechanism dissected in §3.</li>
+<li><b>GEMSDOE33</b> — analog tip-stepover additions on champion-like support (41,865 dots, 0.2632): more dots, lower score — consistent with marginal-dot economics.</li>
+<li><b>GEMSDOE36</b> — “PINN” best = champion + 1,200 dots (38,854; 0.2750 &lt; 0.2778): the cleanest proof the champion sits at a local optimum of its family — yet it has the nine's best SGMC proxy (0.0644), inside CI of the champion.</li>
+</ul>
+
+<h2>3 · Why did GEMSDOE32's h33-…-b2 get 0.2778, the highest of the nine?</h2>
+<p><b>Measured answer (reproduced from the actual bytes in this repo, <code>evidence/champion_anatomy.json</code>): it is not a different geological idea — it is the most aggressively pruned member of a single one-parameter family.</b></p>
+<ol>
+<li><b>One family.</b> All nine winners emit dots on the same h19-5 multiline ridge surface. Exact dot-set algebra (reproduced): 25&nbsp;≡&nbsp;30; 24&nbsp;⊂&nbsp;27; 31&nbsp;⊂&nbsp;25/30; <b>32&nbsp;⊂&nbsp;25/30/31/36</b>. Pairwise ≤3&nbsp;px overlap 97.6–100%.</li>
+<li><b>Dotting beats ridges under this metric.</b> The official DTI (α=0.2 FP, β=0.8 FN, 300&nbsp;m triangular kernel) credits each truth pixel by the <i>maximum</i> kernel-weighted prediction within 3&nbsp;px. A continuous ridge therefore pays FP tax on redundant pixels that add no TP credit; thinning the ridge to ~2.8&nbsp;px-spaced dots kept the credit at ~36% of the pixel mass (parent 121,131 px → 0.1922 reported; dotted 44,090 → 0.2600).</li>
+<li><b>The “b2” prune is the winning move.</b> Scored truth = expert faults <i>not</i> in the USGS catalogue, and catalogue pixels are masked. Dots in the 0–2&nbsp;px ring around known traces (detector “flank shadow” of the scarp/trace offset) earn ≈0. Champion = solo(31) <b>minus exactly 2,545 dots, every one 1.41–2.00&nbsp;px from a catalogue trace</b>; its measured minimum catalogue distance is 2.24&nbsp;px. Ladder: 44,090 dots/0.2600 → remove ≤1&nbsp;px ring → 40,199/0.2708 → remove ≤2&nbsp;px ring → <b>37,654/0.2778</b>. On our SGMC proxy those removed dots were also the worse dots (9.2% within 3&nbsp;px of a proxy fault vs 13.3% kept).</li>
+<li><b>Dot-count economics.</b> Within the family, reported score is almost perfectly anti-monotone in dot count (61,328→0.2449 … 37,654→0.2778; sister-repo OLS ≈ −0.00119 per 1,000 dots). At s=0.2778 a marginal dot must hit truth ≳7.7% of the time to pay for its FP tax; the family's marginal dots fall below that bar, so deleting them raises the score — until B3, which already declines on the sister live-mirror. The family is at its optimum; the remaining gap to the leaderboard top is <i>surface recall of truly blind faults</i>, which no emission trick creates.</li>
+</ol>
+<p class="muted">Why causality stops there: all nine values are USER-REPORTED without receipts; the prune→score ladder could in principle hide other differences, but every competing difference has been eliminated by direct byte comparison (same dots except the ring), which is as close to a controlled experiment as this fleet gets.</p>
+
+<h2>4 · Can we beat 0.2778? What was tried here (3 predeclared experiments)</h2>
+<p>Hypotheses were ranked before code (<a href="hypotheses.md">hypotheses.md</a>). Lane: <b>scarp × radiometric-concordance</b> — lidar topographic step AND-gated with radiometric-ratio edges, greedy 300&nbsp;m-kernel coverage emission, b2 gate, champion budget. Leakage canary first: max single-band AUC 0.599 &lt; 0.90 ✅.</p>
+<div class="scroll"><table><thead><tr><th>Experiment</th><th>Surface</th><th>HOLDOUT-DTI SGMC-CAL v3.0 [CI]</th><th>HOLDOUT-DTI hide-recover v3.0</th><th>Outcome</th></tr></thead><tbody>
+<tr><td>E1</td><td>lidar step × radiometric edge</td><td><b>0.0968 [0.0803, 0.1117]</b></td><td>static 0.0048; <b>fold-local OOF 0.0049 [0.0040, 0.0058]</b> (22,232 withheld)</td><td>Beats proxy best (0.0644), disjoint CI</td></tr>
+<tr><td>E2</td><td>E1 × TMI_up150 magnetic edge</td><td>0.0669 [0.0543, 0.0792]</td><td>static 0.0054</td><td>Above champion proxy, dilutes E1 — rejected</td></tr>
+<tr class="best"><td><b>E3 ★ shipped</b></td><td>E1 + road-mimic control (&lt;100&nbsp;m to TIGER road excluded, budget refilled)</td><td><b>0.0963 [0.0799, 0.1113]</b></td><td>static 0.0048</td><td>Statistically tied with E1; removes the named mimic class → selected</td></tr>
+</tbody></table></div>
+
+<h2>5 · Risk box — read before spending a slot</h2>
+<div class="warn">
+<ul style="margin:.2rem 0">
+<li><b>The proxy is not the leaderboard.</b> SGMC-CAL ground truth is the USGS State Geologic Map Compilation fault set (off-catalogue subset). Geologic-map faults often follow lithologic contacts — and our surface contains a radiometric <i>contact</i> edge term, so part of the proxy advantage may be proxy-specific. The organizers' truth is expert-mapped from GeoDAWN interpretation; transfer is plausible but unproven.</li>
+<li><b>The nine-point projection (0.4268) is rejected.</b> Fitting reported score vs SGMC-CAL on the nine (Spearman 0.9496, LOO-RMSE 0.0030) and extrapolating to E3 gives 0.4268 — shown in <code>evidence/calibration.json</code> only to be rejected: E3's x is 49% outside the fit range and all fit points are one family.</li>
+<li><b>Live analogs urge caution:</b> past lidar/scarp-led submissions (n=10, user-reported) median 0.104, max 0.159; the closest scarp+radiometric fusion scored 0.1589. Those lacked the b2 gate, kernel-coverage emission, and budget discipline applied here — but they are the only live evidence for scarp-led surfaces.</li>
+<li><b>Hide-recover disagrees (as it does for the champion).</b> Catalogue-segment recovery rewards catalogue-anatomy surfaces and ranks <i>against</i> the reported leaderboard within the nine (dense ring-keeping members score ~0.09–0.10 static; b2 members ~0.005). E1 fold-local OOF = 0.0049, like the champion's static 0.0045 — expected for a catalogue-free off-catalogue emitter, and the reason SGMC-CAL is the primary instrument.</li>
+<li><b>Corroboration:</b> GEMSDOEkarage3 independently found “corrected scarp-pair fusion SGMC 0.0892 vs champion 0.0641” and judged it real-but-insufficient alone. E3 (0.0963) extends that signal with a different fusion + emission and passes every other gate their candidate failed (uniqueness scope §7, format, budget) — that, not the proxy number alone, is the promotion basis.</li>
+<li><b>Bottom line:</b> only an organizer receipt settles whether E3 beats 0.2778. It is the best-measured, genuinely independent candidate this programme has produced; it is not a guaranteed improvement.</li>
+</ul></div>
+
+<h2>6 · The “[0, 1]” portal error — fixed by construction</h2>
+<p>The official format: single-band float32, EPSG:32611, 100&nbsp;m, same bounds as training data, “data outside the bounds is null or nan” (<a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">problem description, fetched 2026-11-04</a>). The portal nevertheless rejected a past file with <i>Predicted values must be in range [0, 1]</i>. Two candidate causes are documented in the fleet: NaN-outside files whose in-footprint data were fine but which a strict all-pixel reader rejects, and at least one raster with non-finite values <i>inside</i> the footprint. The champion that scored 0.2778 was a <code>-zeros</code> file, and a same-dots nan/zeros pair once scored identically (0.0437/0.0437), so NaN-outside alone is not proven guilty — flagged, unresolved (IR-K7-03). <b>KOREA7-E3 sidesteps the whole question:</b> every one of its 12,279,160 pixels is finite and in [0,1] (0.0 outside the footprint, nodata=None), verified on the saved bytes by three independent validators. Upload the <code>-zeros.tif</code>.</p>
+
+<h2>7 · Validation gates (all run without human inspection)</h2>
+<div class="scroll"><table><thead><tr><th>Gate</th><th>Tool (unmodified)</th><th>Result</th><th>Evidence</th></tr></thead><tbody>
+<tr><td>Leakage canary (single-feature AUC ≤ 0.90)</td><td><code>scripts/canary.py</code></td><td>✅ max 0.599 (20 bands)</td><td>evidence/canary.json</td></tr>
+<tr><td>Beats holdout best (SGMC-CAL, CI reported)</td><td>shared <code>evaluate_holdout.py</code></td><td>✅ 0.0963 [0.0799,0.1113] vs best 0.0644 [0.0571,0.0720]</td><td>evidence/eval_E3.json</td></tr>
+<tr><td>Fold-local (leak-free) emission sanity</td><td>shared evaluator OOF mode</td><td>✅ E1 OOF hide-recover 0.0049 ≈ static (no catalogue leakage to remove)</td><td>evidence/eval_E1_oof.json</td></tr>
+<tr><td>Surface gate before placement (ρ ≤ 0.90)</td><td><code>scripts/uniqueness.py</code> + repo <code>check_candidate.py</code></td><td>✅ max ρ 0.036 vs nine (registry surfaces unpublished — computed vs registry dot rasters; disclosed)</td><td>evidence/uniqueness.json</td></tr>
+<tr><td>Final-dot gate (≤70% within 3&nbsp;px)</td><td>same, two implementations agree</td><td>✅ max 27.3%; Jaccard ≤ 0.008; <code>SCREENED_NOT_APPROVED</code> (that tool's ceiling by design)</td><td>evidence/check_candidate_final.json</td></tr>
+<tr><td>Format: CRS/shape/transform, finite [0,1], single band float32</td><td>shared <code>submission_writer.py</code> 13 checks + 2 repo validators</td><td>✅ all pass on saved bytes; ZIP contains exactly one TIF</td><td>evidence/writer_bundle.json, validate_*.json</td></tr>
+<tr><td>Not an exact duplicate</td><td>SHA-256 + dot-set algebra</td><td>✅ new hash; not a subset/superset of any winner</td><td>run-card.json</td></tr>
+<tr><td>Literal any-registry-raster uniqueness</td><td>—</td><td>⚠️ <b>Unmeetable as written</b>: the dense r13 lattice witness covers 99.3% of <i>any</i> candidate's dots (measured) — IR-K7-01 needs an owner ruling (see §8). Focus-9 uniqueness (the brief's scope) passes.</td><td>evidence/uniqueness.json</td></tr>
+</tbody></table></div>
+
+<h2>8 · Irregularities flagged for review (not silently fixed)</h2>
+<ul>
+<li><b>IR-K7-01 — uniqueness scope.</b> Literal “any registry raster” reading fails every dense candidate (lattice witness). The nine winners themselves fail it mutually (97.6–100%). Korea7 gates on the nine focus sites named in the brief; owner ruling still required for the literal rule.</li>
+<li><b>IR-K7-02 — data provenance.</b> All inputs are owner's GitHub <i>mirrors</i>, SHA-256-pinned and cross-verified across three repos, but not organizer-authenticated. The original buffedlizard55-lab repos (incl. the 419&nbsp;MB 19-band features and all nine GEMSDOE* sites) return <b>HTTP 404 on 2026-11-04</b> — the nine site URLs in the brief are dead today; their content survives only in sister-repo mirrors. Re-download from DrivenData (login) to authenticate.</li>
+<li><b>IR-K7-03 — portal “[0,1]” error cause unresolved</b> (see §6); mitigated by all-finite zeros encoding.</li>
+<li><b>IR-K7-04 — conflicting “current high score” claims resolved as dated snapshots:</b> 0.3195 was rank 1 on 2026-10-03; 0.4413 rank 1 on 2026-10-25; sister-repo snapshot 2026-10-31 shows 0.4544 (#1) with 0.3195 at rank 50 (owner ledger + GEMSDOEkarage3 evidence). Today's live leaderboard could not be read from this sandbox (page is JS-rendered) — verify before submitting.</li>
+<li><b>IR-K7-05 — ledger vs prompt drift:</b> GEMSDOE28's best is 0.2710 (h36-1) in the prompt and ledger alike; GEMSDOE25's registry bytes are a zeros-encoding of the “-nan”-named file (same dots). Encodings, not placements, differ.</li>
+<li><b>IR-K7-06 — no organizer receipts anywhere</b> in any repo examined: every leaderboard number in this programme is user-reported.</li>
+<li><b>IR-K7-07 — parallel Korea7 lanes merged the same day.</b> This repo also hosts a consensus lane (verdict negative) and an SDCC1 scarp-concordance lane. Measured after merge: E3 dots within 3 px = 6.2% (consensus), 39.1%/44.5% (SDCC1 37,654/44,090), 1.5% (relay); surface ρ ≤ 0.10 — inside lane limits, but SDCC1 is a conceptually adjacent scarp-concordance method arrived at independently. Instruments differ between lanes (theirs: gems57 hide-recover; E3 primary: SGMC-CAL v3.0) — compare only via the labelled numbers (<code>evidence/uniqueness_vs_parallel_lanes.json</code>).</li>
+</ul>
+
+<h2>9 · Method in one paragraph; reproducibility</h2>
+<p>Surface = √(lidar-step rank-geomean(step_max, cross_max, max(downface_max, upface_max)) × mean Sobel-gradient ranks of Th/K, U/K, U/Th ratio bands); eligible = in-footprint, jointly valid, catalogue distance &gt;2&nbsp;px, road distance ≥100&nbsp;m (E3); emission = lazy-greedy maximization of surface-weighted coverage under the exact 300&nbsp;m triangular DTI kernel, 37,654 dots; written by the shared <code>submission_writer.py</code> (vendored byte-identical, catalogue masked to 0, zeros outside). Reproduce: <code>python scripts/restore_data.py</code> → <code>scripts/canary.py</code> → <code>scripts/build_experiments.py</code> → <code>scripts/build_e3.py</code> → vendor evaluator/writer CLIs (exact commands in README). Runtime ≈ 3&nbsp;min CPU total.</p>
+
+<h2>10 · Official sources (for manual review)</h2>
+<ul>
+<li>Problem description &amp; metric (fetched 2026-11-04): <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">drivendata.org/competitions/306/…/page/967</a></li>
+<li>About / data / leaderboard: <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/968/">page 968</a> · <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">data (login)</a> · <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/">leaderboard</a></li>
+<li>Reference solution (U-Net + Tversky α=0.2/β=0.8): <a href="https://github.com/drivendataorg/gems-prize-reference-solution">github.com/drivendataorg/gems-prize-reference-solution</a></li>
+<li>Competition PDF: <a href="https://docs.nlr.gov/docs/fy26osti/96647.pdf">docs.nlr.gov/docs/fy26osti/96647.pdf</a> · USGS GeoDAWN: <a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">usgs.gov GeoDAWN</a> · INGENIOUS: <a href="https://gbcge.org/current-projects/ingenious/">gbcge.org/ingenious</a> · EPSG:32611: <a href="https://epsg.io/32611">epsg.io/32611</a> · GDR 1391: <a href="https://gdr.openei.org/submissions/1391">gdr.openei.org/submissions/1391</a></li>
+<li>Mirror repos used (owner's own, live 2026-11-04): <a href="https://github.com/karagemop466-tech/GEMSDOEkarage3">GEMSDOEkarage3</a> · <a href="https://github.com/karagemop466-tech/GEMSDOEkarage1">GEMSDOEkarage1</a> · <a href="https://github.com/kanlerxz87-cyber/KANLERGEMSDOE1">KANLERGEMSDOE1</a></li>
+</ul>
+<p><small>Static page generated 2026-11-04 from evidence/*.json in this repo (not a live feed). Run card: <a href="run-card-korea7-e3.json">run-card-korea7-e3.json</a> · Research log: <a href="research.md">research.md</a> · Prior (blocked) review preserved: <a href="prior-review.md">prior-review.md</a>.</small></p>
+</body></html>
