@@ -1,6 +1,6 @@
 # Korea7 — GEMS submission research
 
-**Current decision: DO NOT SUBMIT.** No competition raster, prior-submission registry, shared template, spatial holdout, or validated candidate exists in this checkout. [Executive summary and submission instructions](docs/index.html) · [Research and next steps](docs/research.md).
+**Current decision: DO NOT SUBMIT.** No competition raster, prior-submission registry, shared template, spatial holdout, or validated candidate exists in this checkout. [Executive summary and submission instructions](docs/index.html) · [Research and next steps](docs/research.md) · [Prior parallel review (historical)](docs/prior-review.md).
 
 ## Project starting point
 
