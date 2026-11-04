@@ -104,7 +104,8 @@ def test_preplacement_surface_and_duplicate(tmp_path):
     args['manifest'].write_text(json.dumps(items))
     result = screen_surface(**args)
     assert result['status'] == 'BLOCKED'
-    assert any(c['duplicate'] for c in result['comparisons'])
+    assert len(result['comparisons']) == 1
+    assert result['comparisons'][0]['duplicate']
 
 
 def test_masked_candidate_is_blocked_even_if_raw_values_in_range(tmp_path):
@@ -116,3 +117,16 @@ def test_masked_candidate_is_blocked_even_if_raw_values_in_range(tmp_path):
     result = screen(**args)
     assert result['status'] == 'BLOCKED'
     assert 'masked or nodata' in result['errors'][0]
+
+
+def test_surface_screen_incomplete_registry_and_masked_footprint(tmp_path):
+    from check_candidate import screen_surface
+    args = fixtures(tmp_path)
+    args.pop('candidate')
+    items = json.loads(args['manifest'].read_text())
+    args['manifest'].write_text(json.dumps(items[:-1]))
+    assert screen_surface(**args)['status'] == 'BLOCKED'
+    args['manifest'].write_text(json.dumps(items))
+    with rasterio.open(args['footprint'], 'r+') as src:
+        src.nodata = 1
+    assert screen_surface(**args)['status'] == 'BLOCKED'

@@ -94,6 +94,8 @@ def screen(candidate, surface, reference, footprint, manifest):
             result['comparisons'].append({'site': item['site'], 'surface_sha256': item['surface_sha256'],
                                           'dots_sha256': item['dots_sha256'], 'spearman_rho': rho,
                                           'dot_overlap_3px': overlap, 'duplicate': rho > .90 or overlap > .70})
+            if result['comparisons'][-1]['duplicate']:
+                break
         if any(c['duplicate'] for c in result['comparisons']):
             result['errors'].append('Duplicate/lane drift threshold exceeded; stop.')
         else:
@@ -129,6 +131,8 @@ def screen_surface(surface, reference, footprint, manifest):
             rho = rank_correlation(values[inside], other[inside])
             result['comparisons'].append({'site': item['site'], 'surface_sha256': item['surface_sha256'],
                                           'spearman_rho': rho, 'duplicate': rho > .90})
+            if rho > .90:
+                break
         if any(item['duplicate'] for item in result['comparisons']):
             result['errors'].append('Duplicate/lane drift threshold exceeded; stop.')
         else:
