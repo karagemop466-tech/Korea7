@@ -1,0 +1,38 @@
+{
+ "tif": "docs/downloads/korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif",
+ "sha256": "39eb9e1d7961ce2befb87d6fea841933f820b470abd274de73639184a196be43",
+ "checks": {
+  "single_band": true,
+  "float32": true,
+  "crs": true,
+  "shape": true,
+  "transform": true,
+  "mask_band": true,
+  "all_values_in_0_1": true,
+  "binary": true,
+  "no_nan_inside": true,
+  "nulls_outside": true,
+  "dots_inside": true,
+  "has_dots": true,
+  "unique_vs_focus_under_0p70": true,
+  "zip_single_member": true,
+  "zip_member": true,
+  "zip_bytes": true
+ },
+ "errors": [],
+ "n_dots": 106922,
+ "overlap_vs_focus": {
+  "GEMSDOE24": 0.396298236097342,
+  "GEMSDOE25": 0.3796879968575223,
+  "GEMSDOE27": 0.3975140756813378,
+  "GEMSDOE28": 0.3686799723162679,
+  "GEMSDOE30": 0.3796879968575223,
+  "GEMSDOE31": 0.3744318288097866,
+  "GEMSDOE32": 0.3678662950562092,
+  "GEMSDOE33": 0.3745721179925553,
+  "GEMSDOE36": 0.3710555358111521
+ },
+ "worst_overlap": 0.3975140756813378,
+ "zip": "docs/downloads/korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif.zip",
+ "ok": true
+}

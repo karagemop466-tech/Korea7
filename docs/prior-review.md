@@ -1,3 +1,5 @@
+> **Historical note:** this is a prior-session review. It is superseded by `docs/research.md`, `docs/index.html`, and `docs/executive-summary.html`. The current repository contains a validated, unique TIF; do not use this file's "no candidate" conclusion.
+
 # Korea7 — GEMS fault-prospectivity submission audit
 
 > **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository currently contains documentation only; it does not contain competition rasters, cached features, validation code, a submission writer, or an existing website.

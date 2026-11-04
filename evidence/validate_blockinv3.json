@@ -1,0 +1,35 @@
+{
+ "tif": "data/blockinv3.tif",
+ "sha256": "f9f219371ef7e3e4239cbf7ce895e72797801a8ac49342c71240cceb497e22be",
+ "checks": {
+  "single_band": true,
+  "float32": true,
+  "crs": true,
+  "shape": true,
+  "transform": true,
+  "mask_band": true,
+  "all_values_in_0_1": true,
+  "binary": true,
+  "no_nan_inside": true,
+  "nulls_outside": true,
+  "dots_inside": true,
+  "has_dots": true,
+  "unique_vs_focus_under_0p70": true
+ },
+ "errors": [],
+ "n_dots": 123899,
+ "overlap_vs_focus": {
+  "GEMSDOE24": 0.34623362577583355,
+  "GEMSDOE25": 0.341520109121139,
+  "GEMSDOE27": 0.34740393384934504,
+  "GEMSDOE28": 0.33362658294255804,
+  "GEMSDOE30": 0.341520109121139,
+  "GEMSDOE31": 0.33655638867141785,
+  "GEMSDOE32": 0.3301156587220236,
+  "GEMSDOE33": 0.3395023365806019,
+  "GEMSDOE36": 0.33362658294255804
+ },
+ "worst_overlap": 0.34740393384934504,
+ "zip": null,
+ "ok": true
+}

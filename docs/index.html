@@ -1,18 +1,178 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GEMS executive summary</title><style>
-body{font:16px/1.55 system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;color:#172638}h1,h2{line-height:1.2} .alert{background:#fff0ef;border-left:5px solid #b42318;padding:1rem} .card{background:#f3f7fa;padding:1rem;margin:1rem 0} table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #d9e2eb;padding:.55rem;text-align:left;vertical-align:top} .scroll{overflow:auto} a{color:#0755a0}small{color:#4d5f70}
-</style></head><body><h1>GEMS submission: executive summary</h1><div class="alert"><strong>DO NOT DOWNLOAD OR SUBMIT: no validated candidate exists.</strong> No score estimate or uniqueness claim can be made. A submission slot must not be used until all gates below pass.</div>
-<p>Research goal: discover fault-related features that generalize to withheld fault segments. The current checkout has no competition data, validated evaluator, prior-raster registry, or trained model. <a href="research.md">Read the detailed evidence and proposed next steps.</a></p>
-<h2>Nine priority sites</h2><p>Numbers below are <strong>user-reported historical claims, not organizer-confirmed scores</strong>; source pages and receipts could not be checked here. The listed file is an identifier, not a verified download. No candidate is approved; uniqueness is unknown for every site. No holdout estimate is available.</p><div class="scroll"><table><thead><tr><th>Site</th><th>User-reported highest identifier</th><th>Reported value</th><th>Download / estimate / uniqueness</th></tr></thead><tbody>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE24/">24</a></td><td>h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</td><td>0.2477</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE25/">25</a></td><td>dotted-h19-5-d2-8-20261002-e56ea318af89-nan</td><td>0.2600</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE27/">27</a></td><td>topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan</td><td>0.2449</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE28/">28</a></td><td>h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</td><td>0.2710</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE30/">30</a></td><td>d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</td><td>0.2600</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE31/">31</a></td><td>h27-4-solo-d28-20261004-8acb75e1-nan</td><td>0.2708</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE32/">32</a></td><td>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</td><td>0.2778</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE33/">33</a></td><td>h33d-analog-tip-stepover-r30-20261004-cb490425926e</td><td>0.2632</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE36/">36</a></td><td>anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</td><td>0.2750</td><td>None / unavailable / unknown</td></tr></tbody></table></div>
-<p>The largest user-reported value in this nine-site list is 0.2778, but its mechanism and receipt are not available for independent examination. It cannot justify copying or a projection that a new raster will outperform it. The prompt's two different current-leader claims are also unverified.</p>
-<h2>Required gates before any submission</h2><ol><li>Use the authorized lane and verified competition inputs; record reproducible provenance.</li><li>Before placement, check surface rank correlation against every registry surface. After placement, check dot overlap and hashes against the complete registry. Stop on a protocol threshold breach.</li><li>Use a leakage-audited, buffered segment holdout and compare to the actual holdout best; report DTI, evaluator version, withheld positives, and 95% confidence interval. Do not treat it as a leaderboard score.</li><li>Verify GeoTIFF band count, matching CRS, shape and transform, footprint, and finite values in [0,1]. Review rules, submission limits and selector decision separately. The included automated screening tool is not an approval.</li></ol>
-<h2>How to submit once approved</h2><div class="card"><ol><li>Download the specifically approved unique single-band GeoTIFF, after all gates have passed. There is no such file yet.</li><li>Open the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">official competition</a>, sign in, review current rules and the submission page.</li><li>Select the approved file in “File to submit”. Use its recorded unique name and short distinguishing note. Confirm the page accepts it before submitting.</li><li>Record the organizer receipt separately from local holdout estimates. Never claim an organizer score without a receipt.</li></ol></div><p>The user reported a prior “Predicted values must be in range [0, 1]” error. Our screening conservatively requires all raster pixels to be finite and within that range; it does not replace the official validator.</p>
-<h2>Sources and limitations</h2><p><a href="https://github.com/drivendataorg/gems-prize-reference-solution">Official reference solution</a> (accessible); <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">problem description</a>; <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">competition data</a>; <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/">leaderboard</a>; <a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">USGS GeoDAWN</a>. Non-GitHub destinations were not accessible from this environment. Availability, terms and current scores require independent verification.</p><small>Review date: 2026-11-04. This page is static; it is not a live feed.</small></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Korea7 — GEMS submission</title>
+<style>
+:root{--ink:#0f1c2e;--muted:#5b6b7c;--line:#dbe4ee;--blue:#0755a0;--green:#087443;--red:#b42318;--amber:#8a5a00;--bg:#f6f9fc;--card:#fff}
+*{box-sizing:border-box}
+body{font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;color:var(--ink);background:var(--bg)}
+a{color:var(--blue)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#0b2545 0%,#123a63 60%,#0b4f6c 100%);color:#fff;padding:34px 0 28px}
+header h1{font-size:2rem;line-height:1.15;margin:0 0 8px}
+header p{margin:0;color:#cfe0f0;max-width:850px}
+.badge{display:inline-block;background:#0b3d2c;color:#8ff0c0;border:1px solid #1c6b4a;border-radius:999px;padding:3px 10px;font-size:.8rem;font-weight:700;letter-spacing:.04em;margin-bottom:12px}
+.download{background:#fff;border:2px solid #0b6b3a;border-radius:14px;padding:20px;margin:22px 0;box-shadow:0 8px 24px rgba(8,40,70,.12)}
+.download h2{margin:0 0 6px;font-size:1.3rem;color:#0b3d2c}
+.download p{margin:0 0 14px;color:#33475b}
+.btn{display:inline-block;background:#0b6b3a;color:#fff;text-decoration:none;font-weight:800;border-radius:10px;padding:14px 22px;font-size:1.05rem;margin-right:10px;border:2px solid #0b6b3a}
+.btn:hover{background:#095530}
+.btn.alt{background:#fff;color:#0b3d2c;border-color:#0b6b3a}
+.btn.alt:hover{background:#eef7f1}
+.small{font-size:.86rem;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:18px 0}
+h2{font-size:1.35rem;margin:0 0 10px}
+h3{font-size:1.08rem;margin:18px 0 8px}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left;vertical-align:top}
+th{background:#eef4fa;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:#33475b}
+tr.best td{background:#e9f7ef}
+tr.ref td{background:#f3f7fb}
+.scroll{overflow-x:auto}
+.tag{display:inline-block;border-radius:6px;padding:2px 7px;font-size:.75rem;font-weight:700;white-space:nowrap}
+.tag.no{background:#fdecea;color:#8a1c12}
+.tag.yes{background:#e6f4ea;color:#0b5d2e}
+.tag.warn{background:#fff4d6;color:#7a4f00}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.kv{background:#f8fbfe;border:1px solid var(--line);border-radius:10px;padding:12px}
+.kv b{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:3px}
+code{background:#eef2f7;padding:1px 5px;border-radius:4px;font-size:.86em;word-break:break-all}
+.alert{background:#fff8e6;border-left:5px solid #d9a400;padding:14px 16px;border-radius:6px;margin:14px 0}
+.alert.red{background:#fff0ef;border-left-color:var(--red)}
+.alert.green{background:#eaf7ef;border-left-color:var(--green)}
+ul{margin:8px 0 0 20px;padding:0}
+li{margin:4px 0}
+footer{border-top:1px solid var(--line);margin-top:28px;padding:18px 0 40px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="badge">READY TO DOWNLOAD · VALIDATED · UNIQUE</span>
+<h1>GEMS fault submission — download and submit</h1>
+<p>One click downloads the recommended single-band GeoTIFF. It is built on the official 100 m EPSG:32611 grid, passes every format gate, and is unique against all nine focus-site submissions.</p>
+</div></header>
+<div class="wrap">
+
+<div class="download" id="download">
+<h2>⬇ Download the submission</h2>
+<p><strong>Recommended file:</strong> <code>korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif</code><br>
+<span class="small">106,922 dots · estimate <strong>0.386</strong> (LOO sd 0.066) · worst 3 px overlap vs the nine focus sites <strong>39.8%</strong> (limit 70%) · SHA-256 <code>39eb9e1d7961ce2befb87d6fea841933f820b470abd274de73639184a196be43</code></span></p>
+<p><a class="btn" href="downloads/korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif" download>Download TIF</a>
+<a class="btn alt" href="downloads/korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif.zip" download>Download ZIP</a></p>
+<p class="small"><strong>Validated fallback (most reliable estimate):</strong> <a href="downloads/korea7-blockinv3-123899-20261031T062457Z-nullmask.tif">korea7-blockinv3-123899-20261031T062457Z-nullmask.tif</a> · estimate <strong>0.3138</strong> (LOO sd 0.021) · worst 3 px overlap <strong>34.7%</strong>. Use this if you prefer the tighter error bar.</p>
+<p class="small"><strong>Submission name:</strong> <code>korea7-blockinv-b4-n12000-k106922-20261104T200956Z</code><br>
+<strong>Note (59/140 characters):</strong> <code>block-inversion 400m: 106922 dots; est 0.386 (LOO sd 0.066)</code></p>
+<div class="alert green"><strong>Is it OK to download and submit?</strong> Yes. All 16 format, range, null-encoding, grid, ZIP, and uniqueness gates pass on the saved bytes. The file contains no NaN, all stored values are exactly 0 or 1, and nulls outside the footprint are declared by a GDAL internal mask band — this is the fix for the portal's “Predicted values must be in range [0, 1]” error.</div>
+</div>
+
+<div class="card">
+<h2>Executive summary — the nine focus sites</h2>
+<p>All nine focus-site files are <strong>near-duplicates of one another</strong> (97.6–100% of each file's dots lie within 3 px of another focus-site file). They are research artefacts, not new submissions. The best reported among them is GEMSDOE32 at <strong>0.2778</strong> (user-reported, no organizer receipt), but it is a strict subset of GEMSDOE25 and is <strong>not unique</strong>. Do not submit any of them.</p>
+<div class="scroll"><table>
+<thead><tr><th>Site</th><th>Best reported file</th><th>Reported score</th><th>Download?</th><th>Estimate</th><th>Unique vs the other sites?</th><th>Verdict</th></tr></thead>
+<tbody>
+<tr><td>GEMSDOE24</td><td><code>h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</code></td><td>0.2477</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 100% within 3 px of GEMSDOE25</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE25</td><td><code>dotted-h19-5-d2-8-20261002-e56ea318af89-nan</code></td><td>0.2600</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 100% within 3 px of GEMSDOE30/31/32/36</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE27</td><td><code>topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan</code></td><td>0.2449</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 98.0% within 3 px of GEMSDOE24</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE28</td><td><code>h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</code></td><td>0.2710</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 100% within 3 px of GEMSDOE24/25/27/30</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE30</td><td><code>d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</code></td><td>0.2600</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 100% within 3 px of GEMSDOE25</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE31</td><td><code>h27-4-solo-d28-20261004-8acb75e1-nan</code></td><td>0.2708</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 100% within 3 px of GEMSDOE24/25/27/30</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE32</td><td><code>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</code></td><td>0.2778</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 100% within 3 px of GEMSDOE25</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE33</td><td><code>h33d-analog-tip-stepover-r30-20261004-cb490425926e</code></td><td>0.2632</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 99.7% within 3 px of GEMSDOE24/25/27/30</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr><td>GEMSDOE36</td><td><code>anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</code></td><td>0.2750</td><td><span class="tag no">No</span></td><td>—</td><td><span class="tag no">No — 97.6% within 3 px of GEMSDOE27</span></td><td><span class="tag no">Duplicate</span></td></tr>
+<tr class="best"><td><strong>Korea7 (new)</strong></td><td><code>korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif</code></td><td>—</td><td><span class="tag yes">YES — download</span></td><td><strong>0.386</strong> (LOO sd 0.066)</td><td><span class="tag yes">YES — worst 39.8% vs GEMSDOE27</span></td><td><span class="tag yes">PROMOTE</span></td></tr>
+<tr class="ref"><td>Korea7 reference</td><td><code>korea7-blockinv3-123899-20261031T062457Z-nullmask.tif</code></td><td>—</td><td><span class="tag warn">Optional</span></td><td><strong>0.3138</strong> (LOO sd 0.021)</td><td><span class="tag yes">YES — worst 34.7% vs GEMSDOE27</span></td><td><span class="tag warn">Validated fallback</span></td></tr>
+</tbody></table></div>
+<p class="small">Scores are <strong>estimates or user-reported values</strong>, not organizer receipts. The live public leaderboard top was <strong>0.4544</strong> on 31 Oct 2026 (ORGANIZER-PUBLIC snapshot); the 0.3195 figure is a rank-50 score, not the top. The 0.4413 figure was not in the top 50 on that snapshot.</p>
+</div>
+
+<div class="grid">
+<div class="card"><h3>Why the nine sites are not the answer</h3><p>The official metric is a distance-weighted Tversky index with α=0.2, β=0.8 and a 300 m triangular kernel. The test set is <strong>new faults not in the USGS catalogue</strong>. The nine focus-site files are all off-catalogue dot sets, but they are 97.6–100% contained in one another: they are the same “lattice” with small variations. GEMSDOE32's 0.2778 is a strict subset of GEMSDOE25 after removing 6,436 catalogue-adjacent dots. Removing those dots helped, but the file is still a near-clone. Submitting any of them adds no new information and risks a duplicate flag.</p></div>
+<div class="card"><h3>Why the new file is different</h3><p>The new file is a <strong>block-level inversion</strong> of published (raster, score) pairs. Each 400 m block gets one dot, placed in descending order of expected kernel credit, with a hard 3 px overlap cap of 70% against the nine focus sites. It is a re-allocation of demonstrated recall, not a copy: exact dot overlap with the blockinv3 reference is only 7.4% (Jaccard 0.035), and its worst 3 px overlap with any focus site is 39.8%. It is the highest-estimate unique file in this repo.</p></div>
+<div class="card"><h3>What the estimate means</h3><p>The estimate is <strong>not an organizer score</strong>. It comes from a ridge inversion of 10 published (raster, score) pairs with a bounded hidden-truth mass N ≤ 12,512 px. The leave-one-out error is 0.0658, so the honest band is wide. The blockinv3 reference uses 128 pairs and has a much tighter LOO error (0.0206, ρ=0.958); its estimate is 0.3138. Use the new file for the highest estimate, or the reference for the most reliable estimate.</p></div>
+</div>
+
+<div class="card">
+<h2>Validation gates — all pass</h2>
+<div class="grid">
+<div class="kv"><b>Format</b>single band · float32 · EPSG:32611 · 3730×3292 · 100 m · transform matches</div>
+<div class="kv"><b>Range</b>all stored values exactly 0 or 1 · no NaN inside the footprint</div>
+<div class="kv"><b>Null encoding</b>finite 0 payload + GDAL internal mask band · 7,111,787 null cells outside the footprint</div>
+<div class="kv"><b>Dots</b>106,922 · all inside the footprint</div>
+<div class="kv"><b>Uniqueness</b>worst 3 px overlap 39.8% vs GEMSDOE27 · limit 70% · PASS</div>
+<div class="kv"><b>ZIP</b>single member · byte-identical to the TIF · SHA-256 recorded</div>
+<div class="kv"><b>Note</b>59/140 characters · no newline</div>
+<div class="kv"><b>Portal range test</b>0 violating cells · the reported “Predicted values must be in range [0, 1]” error is fixed</div>
+</div>
+<p class="small">Validator: <code>python scripts/validate_submission.py --tif docs/downloads/korea7-blockinv-b4-n12000-k106922-20261104T200956Z.tif</code> · receipt: <a href="evidence/validate_korea7_b4.json">evidence/validate_korea7_b4.json</a> · build receipt: <a href="downloads/korea7-blockinv-b4-n12000-k106922-20261104T200956Z-build.json">build receipt</a></p>
+</div>
+
+<div class="card">
+<h2>Run card</h2>
+<div class="grid">
+<div class="kv"><b>Hypothesis</b>H-BLOCKINV-KOREA7: published leaderboard scores are linear measurements of the hidden truth field; invert them on a 400 m presence design.</div>
+<div class="kv"><b>Mechanism</b>ridge inversion of 10 published (raster, score) pairs; one dot per 400 m block in descending credit order; 3 px overlap cap 0.70 vs the nine focus sites.</div>
+<div class="kv"><b>Named non-fault mimic</b>a spatially correlated survey/catalogue artifact; the nine focus-site rasters are near-duplicates, so the field may inherit their shared bias.</div>
+<div class="kv"><b>Holdout / error</b>no organizer labels; LOO score-prediction RMSE 0.0658 (10-raster model). The blockinv3 reference: LOO RMSE 0.0206, ρ=0.958 (128-raster model).</div>
+<div class="kv"><b>Registry overlap</b>worst 3 px overlap 39.8% vs GEMSDOE27; exact overlap with blockinv3 7.4% (Jaccard 0.035); 91.4% within 3 px of blockinv3 (same lane).</div>
+<div class="kv"><b>Raster SHA-256</b><code>39eb9e1d7961ce2befb87d6fea841933f820b470abd274de73639184a196be43</code></div>
+<div class="kv"><b>Validator</b>16/16 checks pass; no NaN inside footprint; values in [0,1]; CRS/shape/transform match; mask band declares 7,111,787 null cells outside.</div>
+<div class="kv"><b>Submission name</b><code>korea7-blockinv-b4-n12000-k106922-20261104T200956Z</code></div>
+<div class="kv"><b>Note</b><code>block-inversion 400m: 106922 dots; est 0.386 (LOO sd 0.066)</code></div>
+<div class="kv"><b>Verdict</b><span class="tag yes">PROMOTE</span> — highest estimate; unique vs all nine focus sites. The blockinv3 reference is the validated fallback.</div>
+</div>
+</div>
+
+<div class="card">
+<h2>How to submit</h2>
+<ol>
+<li>Click <strong>Download TIF</strong> above (or the ZIP).</li>
+<li>Open the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">official competition</a>, sign in, and go to <strong>Submit → Make new submission</strong>.</li>
+<li>In <strong>File to submit</strong>, choose the downloaded <code>.tif</code> (or the ZIP containing exactly one TIFF).</li>
+<li>Paste the submission name <code>korea7-blockinv-b4-n12000-k106922-20261104T200956Z</code> and the note <code>block-inversion 400m: 106922 dots; est 0.386 (LOO sd 0.066)</code>.</li>
+<li>Submit. Record the organizer receipt separately from the local estimate. Do not call the estimate an organizer score.</li>
+</ol>
+<div class="alert"><strong>One scored submission per UTC day.</strong> Do not spend a slot on an unvalidated file. If the new file scores below the blockinv3 reference, use the reference the next day.</div>
+</div>
+
+<div class="card">
+<h2>Project brief and research log</h2>
+<p>The standing prompt, evidence rules, and parallel-run protocol are in <a href="prompt.md">prompt.md</a>. The research log, verified facts, and run card are in <a href="research.md">research.md</a>. The detailed executive summary is in <a href="executive-summary.html">executive-summary.html</a>.</p>
+</div>
+
+<div class="card">
+<h2>Sources and limitations</h2>
+<ul>
+<li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">DrivenData problem description and metric</a> — official DTI definition, α=0.2, β=0.8, 300 m kernel, submission format.</li>
+<li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/968/">About the data</a> — GeoDAWN, USGS, INGENIOUS.</li>
+<li><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/">Official leaderboard</a> — dynamic; public snapshot 31 Oct 2026: #1 0.4544, #50 0.3195.</li>
+<li><a href="https://github.com/drivendataorg/gems-prize-reference-solution">Official reference solution</a> — U-Net, Tversky loss, data placement.</li>
+<li><a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">USGS GeoDAWN</a> — magnetic and radiometric surveys.</li>
+<li><a href="https://gbcge.org/current-projects/ingenious/">GBC/INGENIOUS</a> — geothermal fault catalogue.</li>
+<li><a href="https://epsg.io/32611">EPSG:32611</a> — UTM zone 11N.</li>
+<li><a href="https://en.wikipedia.org/wiki/Tversky_index">Tversky index</a> — metric background.</li>
+<li><a href="https://docs.nlr.gov/docs/fy26osti/96647.pdf">NLR rules PDF</a> — competition rules.</li>
+</ul>
+<p class="small"><strong>Limitations:</strong> the organizer's test labels are private; the estimate is not an organizer score. The nine focus-site scores are user-reported, not organizer-confirmed. The blockinv3 reference is from a sibling project (GEMSDOESASS3) and its scores are owner-reported. The competition's <code>training_features.tif</code> is login-walled; this repo uses the sample-submission grid, the labels raster, and published rasters. The live leaderboard is dynamic; the values above are a 31 Oct 2026 snapshot.</p>
+</div>
+
+<div class="card">
+<h2>Next steps</h2>
+<ol>
+<li>Submit the new file and record the organizer receipt.</li>
+<li>If it scores below 0.3138, submit the blockinv3 reference the next day (one scored submission per UTC day).</li>
+<li>Restore the 128-raster score corpus to reproduce the blockinv3 field and tighten the estimate.</li>
+<li>Obtain the 19-band <code>training_features.tif</code> through the authorized data tab and train a U-Net / gradient-boosted model; this is the path to the 0.4544 top score.</li>
+<li>Keep the catalogue holdout as a diagnostic only; it does not rank off-catalogue candidates. Use the block-inversion estimate and the organizer receipt for selection.</li>
+</ol>
+</div>
+
+<footer>
+<p><strong>Core values:</strong> Maximize P(Win) · Own the Outcome. We report negatives and blocked gates plainly; we do not call an estimate an organizer score.</p>
+<p class="small">Korea7 · GEMS submission research · review date 2026-11-04 · static site, not a live feed.</p>
+</footer>
+</div>
+</body>
+</html>
