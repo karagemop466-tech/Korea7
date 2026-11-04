@@ -104,3 +104,27 @@ reach them and a hypothesis that cannot be validated is not a hypothesis we shou
   "verdict": "negative for the novel emitter (coverage greedy -0.2319 vs top-k); positive for the engineering path; no promotion"
 }
 ```
+
+
+---
+
+# ADDENDUM — Session 2026-11-04 (arena/6a22835c-korea7): data found, nine reproduced, KOREA7-E3 generated
+
+This addendum supersedes the "blocked / DO NOT SUBMIT" status above (preserved verbatim for audit). What changed: the owner's sister repositories — not accessible to the earlier session's checks of *this* checkout — contain hash-pinned mirrors of the competition grid, labels, nine focus winners, the shared template (evaluate_holdout.py / submission_writer.py), and external feature stacks. All were restored and SHA-256-verified here (`scripts/restore_data.py`, `evidence/data_provenance.json`); provenance is owner-mirror, not organizer-authenticated (IR-K7-02). The original buffedlizard55-lab repos return 404 today.
+
+## Verified line by line this session
+- Official metric fetched from DrivenData page 967 (alpha 0.2, beta 0.8, R=300 m triangular, worked example) and the vendored implementation cross-checked against a literal transcription (`tests/test_metric_official.py`).
+- Nine-site HOLDOUT-DTI (SGMC-CAL-v3.0, 62,703 withheld) reproduced exactly vs GEMSDOEkarage3 2026-10-31 (e.g. champion 0.0641209376417646, CI identical).
+- Champion anatomy reproduced from bytes: B2 = solo − 2,545 dots at 1.41–2.00 px from catalogue; 25 ≡ 30 exact; subset chain as tabled (`evidence/champion_anatomy.json`).
+- Fleet statistics over the 160-row owner ledger (`evidence/fleet_stats.json`); leaderboard snapshots in-ledger resolve the prompt's 0.3195 (2026-10-03 #1) vs 0.4413 (2026-10-25 #1) conflict; sister snapshot 2026-10-31: #1 0.4544. Today's live board unreadable from sandbox (JS).
+- Canary: max single-band AUC 0.599 (PASS). Hypotheses ranked pre-code (`docs/hypotheses.md`). Experiments E1 SGMC-CAL 0.0968, E2 0.0669, E3 (road control) 0.0963 [0.0799, 0.1113] vs nine-best 0.0644 — disjoint CIs. Fold-local OOF hide-recover E1 0.0049 [0.0040, 0.0058] (22,232 withheld) confirms no catalogue-feature leakage (surface has none).
+- Final candidate KOREA7-E3 written by shared writer, validated on saved bytes by 3 tools; uniqueness vs nine: rho <= 0.036, overlap <= 27.3%, Jaccard <= 0.008. Full gate table + risk box: docs/index.html §5/§7. Run card: run-card.json (verdict promote-to-selector; slot decision = owner).
+- Nine-point SGMC->reported projection = 0.4268, recorded and explicitly REJECTED as out-of-family extrapolation (`evidence/calibration.json`).
+
+## Open irregularities
+IR-K7-01 lattice-witness literal uniqueness unmeetable; IR-K7-02 mirror provenance / 404 originals / 19-band features unavailable; IR-K7-03 portal [0,1] error cause unresolved (mitigated); IR-K7-04 live leaderboard unverified today; IR-K7-06 zero organizer receipts in programme.
+
+## Next steps (owner)
+1. Optionally re-download data from DrivenData (login) and re-hash against `evidence/data_provenance.json` to authenticate provenance; restore 19-band features if obtainable.
+2. Selector decision on KOREA7-E3 slot; if submitted, record organizer receipt into run-card.json.
+3. If the receipt disappoints, the informative follow-up is a fold-local catalogue-anatomy + E3-surface union at fixed budget (tests whether SGMC or hide-recover is the transferable instrument) — preregister before running.

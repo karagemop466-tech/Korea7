@@ -1,0 +1,68 @@
+{
+  "label": "PROJECTION (not a score, not organizer-confirmed)",
+  "fit_points": [
+    {
+      "site": "GEMSDOE24",
+      "sgmc_cal_holdout_dti": 0.057932246070648355,
+      "user_reported": 0.2477
+    },
+    {
+      "site": "GEMSDOE25",
+      "sgmc_cal_holdout_dti": 0.060592489973569044,
+      "user_reported": 0.26
+    },
+    {
+      "site": "GEMSDOE27",
+      "sgmc_cal_holdout_dti": 0.05826237030075181,
+      "user_reported": 0.2449
+    },
+    {
+      "site": "GEMSDOE28",
+      "sgmc_cal_holdout_dti": 0.06296746868114517,
+      "user_reported": 0.271
+    },
+    {
+      "site": "GEMSDOE30",
+      "sgmc_cal_holdout_dti": 0.060592489973569044,
+      "user_reported": 0.26
+    },
+    {
+      "site": "GEMSDOE31",
+      "sgmc_cal_holdout_dti": 0.06300952965550723,
+      "user_reported": 0.2708
+    },
+    {
+      "site": "GEMSDOE32",
+      "sgmc_cal_holdout_dti": 0.0641209376417646,
+      "user_reported": 0.2778
+    },
+    {
+      "site": "GEMSDOE33",
+      "sgmc_cal_holdout_dti": 0.06255070275978937,
+      "user_reported": 0.2632
+    },
+    {
+      "site": "GEMSDOE36",
+      "sgmc_cal_holdout_dti": 0.06444361006575842,
+      "user_reported": 0.275
+    }
+  ],
+  "ols": {
+    "slope": 4.715978074729361,
+    "intercept": -0.027164118294717755
+  },
+  "spearman_rho": 0.9495798319327733,
+  "loo_rmse": 0.0029740529396845143,
+  "candidate_sgmc": 0.0962663283552931,
+  "candidate_projection": 0.4268257755635419,
+  "candidate_projection_interval_pm_loo_rmse": [
+    0.4238517226238574,
+    0.4297998285032264
+  ],
+  "extrapolation": true,
+  "warnings": [
+    "All nine fit points are one surface family (exact subset chain); the fit does not transfer automatically to a different surface.",
+    "y values are user-reported without organizer receipts.",
+    "If extrapolation is true, the numeric projection is shown only to be rejected as evidence; use the qualitative proxy-relative statement in the executive summary."
+  ]
+}

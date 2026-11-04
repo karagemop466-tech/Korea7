@@ -1,0 +1,128 @@
+{
+  "seed": 20261104,
+  "n_pos_neg_each": 20000,
+  "rule": "single-feature AUC > 0.90 => leakage until proven otherwise",
+  "max_auc": 0.59870075125,
+  "bands": [
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "ex_max",
+      "auc_sgmc_offcat": 0.5580732425,
+      "auc_catalogue": 0.5672104175
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "ex_mean",
+      "auc_sgmc_offcat": 0.55950513125,
+      "auc_catalogue": 0.5584523025
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "step_max",
+      "auc_sgmc_offcat": 0.56864666875,
+      "auc_catalogue": 0.56795019
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "lapneg_max",
+      "auc_sgmc_offcat": 0.5654740075,
+      "auc_catalogue": 0.57121997375
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "lappos_max",
+      "auc_sgmc_offcat": 0.56878600875,
+      "auc_catalogue": 0.57363848
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "downface_max",
+      "auc_sgmc_offcat": 0.59432824,
+      "auc_catalogue": 0.579759995
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "upface_max",
+      "auc_sgmc_offcat": 0.588746,
+      "auc_catalogue": 0.5836724025
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "cross_max",
+      "auc_sgmc_offcat": 0.59870075125,
+      "auc_catalogue": 0.5755488425
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "relief",
+      "auc_sgmc_offcat": 0.578524805,
+      "auc_catalogue": 0.56875464125
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "coh100",
+      "auc_sgmc_offcat": 0.43909444375,
+      "auc_catalogue": 0.5113857175
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "strike",
+      "auc_sgmc_offcat": 0.4413532625,
+      "auc_catalogue": 0.52468590875
+    },
+    {
+      "file": "lidar_scarp_features_u8",
+      "band": "valid",
+      "auc_sgmc_offcat": 0.44395860125,
+      "auc_catalogue": 0.52273305
+    },
+    {
+      "file": "geodawn_rad_u8",
+      "band": "K",
+      "auc_sgmc_offcat": 0.34994022125,
+      "auc_catalogue": 0.4390210825
+    },
+    {
+      "file": "geodawn_rad_u8",
+      "band": "Th",
+      "auc_sgmc_offcat": 0.441945115,
+      "auc_catalogue": 0.45102584875
+    },
+    {
+      "file": "geodawn_rad_u8",
+      "band": "U",
+      "auc_sgmc_offcat": 0.3994394025,
+      "auc_catalogue": 0.47680431875
+    },
+    {
+      "file": "geodawn_rad_u8",
+      "band": "TC",
+      "auc_sgmc_offcat": 0.378173005,
+      "auc_catalogue": 0.44740377
+    },
+    {
+      "file": "geodawn_extensions_u8",
+      "band": "ThK",
+      "auc_sgmc_offcat": 0.54792465875,
+      "auc_catalogue": 0.48629610625
+    },
+    {
+      "file": "geodawn_extensions_u8",
+      "band": "UK",
+      "auc_sgmc_offcat": 0.55615495625,
+      "auc_catalogue": 0.53552140625
+    },
+    {
+      "file": "geodawn_extensions_u8",
+      "band": "UTh",
+      "auc_sgmc_offcat": 0.5032828175,
+      "auc_catalogue": 0.54045
+    },
+    {
+      "file": "geodawn_extensions_u8",
+      "band": "TMI_up150",
+      "auc_sgmc_offcat": 0.55155845875,
+      "auc_catalogue": 0.4918049475
+    }
+  ]
+}

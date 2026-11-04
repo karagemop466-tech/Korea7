@@ -1,0 +1,103 @@
+{
+  "candidate_dots": 37654,
+  "surface": "work/E1_surface.tif",
+  "mask": "work/E1_mask.npy",
+  "thresholds": {
+    "rho_max": 0.9,
+    "overlap3px_max": 0.7
+  },
+  "focus9_pass": true,
+  "rows": [
+    {
+      "site": "GEMSDOE24",
+      "registry_sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+      "registry_dots": 60069,
+      "surface_vs_registry_dots_spearman": 0.020245253715069165,
+      "candidate_dots_within_3px_frac": 0.27078132469325966,
+      "exact_dot_jaccard": 0.007765288233474271,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE25",
+      "registry_sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30",
+      "registry_dots": 44090,
+      "surface_vs_registry_dots_spearman": 0.01816182018646844,
+      "candidate_dots_within_3px_frac": 0.25851171190311784,
+      "exact_dot_jaccard": 0.006835901415216347,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE27",
+      "registry_sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+      "registry_dots": 61328,
+      "surface_vs_registry_dots_spearman": 0.01975198265329971,
+      "candidate_dots_within_3px_frac": 0.2733839698305625,
+      "exact_dot_jaccard": 0.00772731437646987,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE28",
+      "registry_sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+      "registry_dots": 37660,
+      "surface_vs_registry_dots_spearman": 0.028534078938096515,
+      "candidate_dots_within_3px_frac": 0.24926966590534871,
+      "exact_dot_jaccard": 0.006858197082926699,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE30",
+      "registry_sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+      "registry_dots": 44090,
+      "surface_vs_registry_dots_spearman": 0.01816182018646844,
+      "candidate_dots_within_3px_frac": 0.25851171190311784,
+      "exact_dot_jaccard": 0.006835901415216347,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE31",
+      "registry_sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+      "registry_dots": 40199,
+      "surface_vs_registry_dots_spearman": 0.029640761838661787,
+      "candidate_dots_within_3px_frac": 0.25261592393902377,
+      "exact_dot_jaccard": 0.007180004657300319,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE32",
+      "registry_sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+      "registry_dots": 37654,
+      "surface_vs_registry_dots_spearman": 0.03779892881839106,
+      "candidate_dots_within_3px_frac": 0.24594996547511552,
+      "exact_dot_jaccard": 0.007424451192594277,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE33",
+      "registry_sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+      "registry_dots": 41865,
+      "surface_vs_registry_dots_spearman": 0.025498625988018126,
+      "candidate_dots_within_3px_frac": 0.25569660593828014,
+      "exact_dot_jaccard": 0.007079533941236069,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "GEMSDOE36",
+      "registry_sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+      "registry_dots": 38854,
+      "surface_vs_registry_dots_spearman": 0.039011141323955556,
+      "candidate_dots_within_3px_frac": 0.2508896797153025,
+      "exact_dot_jaccard": 0.007439790369092609,
+      "duplicate_by_protocol": false
+    },
+    {
+      "site": "LATTICE_WITNESS_r13 (dense, non-focus)",
+      "registry_sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2",
+      "registry_dots": 206895,
+      "surface_vs_registry_dots_spearman": 0.0006290396010146379,
+      "candidate_dots_within_3px_frac": 0.9933605991395337,
+      "exact_dot_jaccard": 0.006270959777800638,
+      "duplicate_by_protocol": true
+    }
+  ],
+  "note": "Surface gate uses registry dot rasters (registry surfaces unavailable in mirrors). Lattice witness row is disclosed separately: a dense synthetic lattice covers most of the footprint within 3 px, so the literal full-registry rule is unmeetable by any dense candidate (flagged IR-K7-01)."
+}

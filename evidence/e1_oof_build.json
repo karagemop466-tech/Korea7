@@ -1,0 +1,42 @@
+{
+  "draw20_fold0": {
+    "domain_px": 1090250,
+    "budget": 7945,
+    "dots": 7945
+  },
+  "draw20_fold1": {
+    "domain_px": 1351789,
+    "budget": 9850,
+    "dots": 9850
+  },
+  "draw20_fold2": {
+    "domain_px": 1328689,
+    "budget": 9682,
+    "dots": 9682
+  },
+  "draw20_fold3": {
+    "domain_px": 1069921,
+    "budget": 7796,
+    "dots": 7796
+  },
+  "draw21_fold0": {
+    "domain_px": 1090450,
+    "budget": 7946,
+    "dots": 7946
+  },
+  "draw21_fold1": {
+    "domain_px": 1351703,
+    "budget": 9850,
+    "dots": 9850
+  },
+  "draw21_fold2": {
+    "domain_px": 1328588,
+    "budget": 9681,
+    "dots": 9681
+  },
+  "draw21_fold3": {
+    "domain_px": 1069796,
+    "budget": 7795,
+    "dots": 7795
+  }
+}

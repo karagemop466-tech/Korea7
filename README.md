@@ -45,6 +45,10 @@ Build an auditable workflow for predicting unmapped faults relevant to geotherma
 
 **Download: OK. Submit: NOT CLEARED.** The file passes the format gate and the nine-focus uniqueness gate, but fails the catalogue hide-and-recover holdout gate (0.0000 below random) and the literal 13GEMS covering-lattice probe. No organizer receipt exists. Do not spend a weekly slot without an owner decision.
 
+## Parallel lane KOREA7-E3 (merged 2026-11-04, PR #19) — OK TO DOWNLOAD, promote-to-selector
+
+A second lane in this repo generated **KOREA7-E3** (`docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif`, SHA-256 `f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d`, 37,654 dots): lidar scarp × radiometric-ratio-edge concordance, greedy 300 m-kernel coverage, >2 px catalogue gate, ≥100 m road-mimic control. **HOLDOUT-DTI 0.0963 [0.0799, 0.1113]** on `GEMSDOE32-SGMC-CAL-v3.0` (62,703 withheld proxy positives; all nine winners reproduced on the same instrument, best 0.0644) — disjoint-CI above the holdout best; canary max AUC 0.599; unique vs all nine focus winners (ρ ≤ 0.036, ≤27.3% within 3 px) and vs the consensus/SDCC1/relay lanes above (≤44.5%); strict all-pixel [0,1] format pass on saved bytes. Full evidence, per-site summaries, risk box (SGMC proxy-transfer and live-analog cautions; nine-point projection 0.4268 recorded and rejected), and step-by-step submission guide: [docs/executive-korea7-e3.html](docs/executive-korea7-e3.html), [docs/submission-korea7-e3.html](docs/submission-korea7-e3.html), run card [run-card-korea7-e3.json](run-card-korea7-e3.json). Instruments differ between lanes (hub lane above: gems57 hide-recover; E3 primary: SGMC-CAL) — neither is an organizer score. Slot decision remains the owner's separate selector step.
+
 ## Executive summary — nine focus sites
 
 All geometry and HOLDOUT-DTI values are measured from the pinned rasters. Scores are USER-REPORTED (no organizer receipt). The nine focus-site rasters are one dotted-ridge family: every pair has forward 3-px overlap > 0.70. They are not nine independent submissions.

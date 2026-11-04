@@ -17,3 +17,8 @@ node_modules/
 # Local demo / build outputs
 demo/
 out/
+
+# Korea7-E3 lane local work areas (restorable via scripts/restore_data.py)
+work/
+data/external/
+registry/*.tif

@@ -1,0 +1,86 @@
+{
+  "status": "SCREENED_NOT_APPROVED",
+  "format": {
+    "single_band_crs_shape_transform_match": true,
+    "finite_inside": true,
+    "finite_all": true,
+    "all_values_in_0_1": true
+  },
+  "comparisons": [
+    {
+      "site": "GEMSDOE24",
+      "surface_sha256": "5505fb0ad508b133dcf4a709eebb535a0e9672f33765a5495cf54aff699ec1f1",
+      "dots_sha256": "5505fb0ad508b133dcf4a709eebb535a0e9672f33765a5495cf54aff699ec1f1",
+      "spearman_rho": 0.018818965823083792,
+      "dot_overlap_3px": 0.27048919105539915,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE25",
+      "surface_sha256": "dc63aa4844d91a52562cc31eefa8158d9dcf3ddfc1263e073ef5779022b22970",
+      "dots_sha256": "dc63aa4844d91a52562cc31eefa8158d9dcf3ddfc1263e073ef5779022b22970",
+      "spearman_rho": 0.016745704357759038,
+      "dot_overlap_3px": 0.2582726934721411,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE27",
+      "surface_sha256": "1d369d355f1a4569f1f67c9c510caa5781e049d54e4f35a72a3d52b295b82033",
+      "dots_sha256": "1d369d355f1a4569f1f67c9c510caa5781e049d54e4f35a72a3d52b295b82033",
+      "spearman_rho": 0.01829670159491148,
+      "dot_overlap_3px": 0.2731449513995857,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE28",
+      "surface_sha256": "e7856a2e452cd5a98854b364cf9e3468acaba90931f51064c85ad28e1258a047",
+      "dots_sha256": "e7856a2e452cd5a98854b364cf9e3468acaba90931f51064c85ad28e1258a047",
+      "spearman_rho": 0.026466456917868083,
+      "dot_overlap_3px": 0.24900408987093003,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE30",
+      "surface_sha256": "dc63aa4844d91a52562cc31eefa8158d9dcf3ddfc1263e073ef5779022b22970",
+      "dots_sha256": "dc63aa4844d91a52562cc31eefa8158d9dcf3ddfc1263e073ef5779022b22970",
+      "spearman_rho": 0.016745704357759038,
+      "dot_overlap_3px": 0.2582726934721411,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE31",
+      "surface_sha256": "82fe4c01c9866ec54ec5e98e9884a4ae52e3a09881a09ded1ae06b917c899951",
+      "dots_sha256": "82fe4c01c9866ec54ec5e98e9884a4ae52e3a09881a09ded1ae06b917c899951",
+      "spearman_rho": 0.02746295529776336,
+      "dot_overlap_3px": 0.25250969352525626,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE32",
+      "surface_sha256": "2c7dbc903c44629869b3c79ffbf8193fd02a73a064998e5f27b3385ce110f1f8",
+      "dots_sha256": "2c7dbc903c44629869b3c79ffbf8193fd02a73a064998e5f27b3385ce110f1f8",
+      "spearman_rho": 0.03507950674548158,
+      "dot_overlap_3px": 0.24579061985446432,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE33",
+      "surface_sha256": "642fd713ae71d00b8e1925e14d4be7906093ee42ae235cc7f5a80a472e9e68e6",
+      "dots_sha256": "642fd713ae71d00b8e1925e14d4be7906093ee42ae235cc7f5a80a472e9e68e6",
+      "spearman_rho": 0.02359937423538805,
+      "dot_overlap_3px": 0.2555638179210708,
+      "duplicate": false
+    },
+    {
+      "site": "GEMSDOE36",
+      "surface_sha256": "4e9b43f8fb18f0168df3d6dea8592a6634855a44d645f7e38ace7553267154a3",
+      "dots_sha256": "4e9b43f8fb18f0168df3d6dea8592a6634855a44d645f7e38ace7553267154a3",
+      "spearman_rho": 0.03636069720366206,
+      "dot_overlap_3px": 0.2508896797153025,
+      "duplicate": false
+    }
+  ],
+  "errors": [],
+  "notice": "Screening only: neither registry completeness nor holdout performance is established.",
+  "sha256": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d"
+}
