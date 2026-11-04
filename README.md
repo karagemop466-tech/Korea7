@@ -1,6 +1,6 @@
 # Korea7 — GEMS fault-prospectivity submission audit
 
-> **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository currently contains documentation only; it does not contain competition rasters, cached features, validation code, a submission writer, or an existing website.
+> **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository contains a static audit site and a conservative format preflight, but no competition rasters, cached features, holdout evaluator, submission writer, or trained model.
 
 ## Objective and non-negotiable evidence rules
 
@@ -14,7 +14,7 @@ Build an auditable workflow for predicting unmapped faults relevant to geotherma
 
 ## Current repository state (verified locally 2026-11-04)
 
-The checkout is branch `arena/edf0fdc5-korea7`, based on the initial commit. At review time it contained only this README and no data, scripts, tests, raster assets, cached feature stack, site, or trained model. Consequently no holdout experiment, leakage test, raster uniqueness comparison, submission validation, or TIFF generation can honestly be performed here. Do not invent these results or claim a TIFF is ready. The supplied competition dataset is gated behind DrivenData login according to the project brief; no credentials or data files are present in this checkout.
+At the start of this session the checkout contained only this README. It still has no data, raster assets, cached feature stack, shared evaluator, shared writer, or trained model. A static audit site and conservative raster format preflight have since been added. Consequently no holdout experiment, leakage test, raster uniqueness comparison, submission validation, or TIFF generation can honestly be performed here. Do not invent these results or claim a TIFF is ready. The project brief reports that the competition dataset requires a DrivenData login; that access condition could not be independently checked here. No credentials or data files are present in this checkout.
 
 ## Prior-reported leaderboard results — unverified reports, not scores measured here
 
@@ -82,8 +82,19 @@ Do not assert any candidate is “new” until comparing against actual reposito
 1. Establish authenticated, permitted access to competition data; place the official sample submission, catalogue/labels, feature raster, and any allowed DEM inputs in documented data paths. Never commit credentials or large protected data.
 2. Recover the shared template cache and the canonical `evaluate_holdout.py` / `submission_writer.py` from the appropriate maintained source; this checkout has none. Verify their metric and exact masking semantics before trusting them.
 3. Download the nine registry rasters and metadata where permitted; calculate hashes, correlation and dot overlap. Confirm leaderboard results from organizer receipts rather than page summaries alone.
-4. Implement automated tests for validator edge cases (NaN, infinity, values just outside bounds, nodata/footprint, band count, CRS, dimensions, transform, ZIP member count) and a report generator that makes “not ready” explicit.
+4. Extend the conservative TIFF preflight to verified organizer footprint semantics and ZIP handling; its current tests cover NaN, infinity, range, nodata, band count, CRS, dimensions and transform. It is not an organizer validator and never authorizes submission.
 5. Run no more than three predeclared experiments or two hours; attach code/version, holdout DTI and CI, canary, uniqueness diagnostics, and run card for each. Only then consider a separate selector/weekly-slot decision.
-6. Build the requested simple public site only once the tested workflow exists; never publish a fabricated download or score.
+6. Publish the static audit site using GitHub Pages if configured; it intentionally has no fabricated download or score. Add a current feed only with an authorized, reliable source and explicit timestamps.
 
 **Current run card:** `hypothesis`: none evaluated; `mechanism`: none evaluated; `non-fault mimic`: not applicable; `HOLDOUT-DTI + CI`: unavailable (no evaluator/data); `registry correlation/overlap`: unavailable (no registry rasters); `raster SHA-256`: none (no generated raster); `validator`: not run (no reference raster); `submission name/note`: none; `verdict`: `negative` (no promotable artifact; this is a deliverable status, not a model performance result).
+
+
+## This session: audit site and conservative preflight
+
+The static GitHub Pages source is [`docs/index.html`](docs/index.html), with a separate [`submission guide`](docs/submission.html). It is not a live feed. Set GitHub Pages to deploy from the `docs/` directory on the appropriate branch through repository settings; publication has not been verified here. No training pipeline or TIFF generator exists.
+
+Install and test locally: `python -m venv .venv`, `.venv/bin/pip install -r requirements.txt`, `.venv/bin/pytest -q`. Check a candidate with `.venv/bin/python scripts/validate_raster.py CANDIDATE.tif OFFICIAL_SAMPLE.tif`. The preflight requires all pixels, including outside the footprint, to be finite, unmasked and in range; this intentionally conservative choice may reject a valid organizer file. It checks metadata against the reference, not its authenticity, and cannot establish scientific validity, uniqueness or submission readiness. It supports TIFF only, not ZIP.
+
+On 2026-11-04 the [official reference repository](https://github.com/drivendataorg/gems-prize-reference-solution/tree/aebe92f7c8a990f0e3443451b7a825d9afd6336b) was accessible: its README instructs users to download competition data and run a notebook, and its `data` folder contains only `.gitkeep`. The target GEMSDOE repository API requests returned 404, which does not prove the pages or rasters do not exist. Direct connections to DrivenData, GitHub Pages, Dropbox and USGS failed under this environment's host restrictions, so access or login behavior could not be verified here. The user-supplied site results and overall leaderboard figures are not organizer-confirmed. The alleged single remaining blocker, completed pipeline, GPU requirement, and earlier test claims are not supported by this checkout.
+
+No distinct method paragraph specifying this parallel lane or location of the shared template was supplied. The magnetic-edge hypothesis above is a research proposal, not authorization to substitute an unverified private evaluator. No experiment was run. See [`run-card.json`](run-card.json). Maximize P(Win) and Own the Outcome mean reporting these blockers rather than risking a misleading submission.
