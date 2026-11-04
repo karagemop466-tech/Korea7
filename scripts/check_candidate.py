@@ -23,6 +23,8 @@ def sha256(path):
 
 def read(path, grid=None):
     with rasterio.open(path) as src:
+        if src.driver != 'GTiff':
+            raise ValueError(f'{path}: expected a GeoTIFF')
         if src.count != 1 or src.crs is None:
             raise ValueError(f'{path}: expected one band and a CRS')
         spec = (src.crs, src.width, src.height, src.transform)
@@ -45,6 +47,12 @@ def screen(candidate, surface, reference, footprint, manifest):
         template, grid = read(reference)
         del template
         pred, _ = read(candidate, grid)
+        # A nodata tag or internal mask can silently turn an otherwise in-range
+        # array into an invalid submission. Require every candidate pixel to be
+        # explicitly valid; this remains stricter than the footprint-only rule.
+        with rasterio.open(candidate) as src:
+            if not (src.read_masks(1) != 0).all():
+                raise ValueError('candidate contains masked or nodata pixels')
         surf, _ = read(surface, grid)
         mask, _ = read(footprint, grid)
         if not np.all(np.isfinite(mask)) or not np.all(np.isin(mask, [0, 1])):

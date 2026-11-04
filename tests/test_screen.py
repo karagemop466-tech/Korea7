@@ -44,6 +44,19 @@ def test_out_of_range_and_nan_block(tmp_path):
         assert screen(**args)['status'] == 'BLOCKED'
 
 
+def test_candidate_nodata_mask_blocks(tmp_path):
+    args = fixtures(tmp_path)
+    with rasterio.open(args['candidate']) as src:
+        values = src.read(1)
+        profile = src.profile
+    profile['nodata'] = 0
+    with rasterio.open(args['candidate'], 'w', **profile) as dst:
+        dst.write(values, 1)
+    result = screen(**args)
+    assert result['status'] == 'BLOCKED'
+    assert 'masked or nodata' in result['errors'][0]
+
+
 def test_duplicate_and_missing_registry_block(tmp_path):
     args = fixtures(tmp_path)
     write(tmp_path / 'rd.tif', rasterio.open(args['candidate']).read(1))
