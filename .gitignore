@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Data (competition data is login-gated; do not commit)
+data/
+*.log
+
+# OS
+.DS_Store

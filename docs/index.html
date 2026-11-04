@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Korea7 — GEMS Prize submission (DrivenData #306)</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+         margin: 0; padding: 0; color: #1f2937; line-height: 1.5; background:#f8fafc; }
+  .container { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+  header { background:#0f172a; color:#fff; padding: 28px 0; }
+  header h1 { margin: 0; font-size: 1.5rem; letter-spacing: -0.01em; }
+  header p { margin: 6px 0 0; color:#cbd5e1; font-size: 0.95rem; }
+  .hero { background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:26px;
+          margin:24px 0; }
+  .badge { display:inline-block; font-size:0.8rem; font-weight:700; padding:3px 10px;
+           border-radius:12px; margin-right:8px; }
+  .ok { background:#ecfdf5; color:#065f46; border:1px solid #a7f3d0; }
+  .no { background:#fef2f2; color:#991b1b; border:1px solid #fecaca; }
+  .download-card { background:#fff; border:2px solid #0f172a; border-radius:10px; padding:24px;
+                   margin-top:16px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; }
+  .download-card .file { flex:1 1 300px; }
+  .download-card .name { font-weight:700; font-size:1.05rem; color:#0f172a; }
+  .download-card .meta { color:#64748b; font-size:0.85rem; }
+  .btn { display:inline-block; background:#0f172a; color:#fff; text-decoration:none;
+         padding:12px 22px; border-radius:8px; font-weight:700; font-size:1rem;
+         border:none; cursor:pointer; white-space:nowrap; }
+  .btn:hover { background:#1e293b; }
+  .btn.secondary { background:#64748b; }
+  .btn.secondary:hover { background:#475569; }
+  .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin-top:20px; }
+  .card { background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:18px; }
+  .card h3 { margin-top:0; font-size:1rem; color:#0f172a; }
+  .muted { color:#64748b; font-size:0.88rem; }
+  table { width:100%; border-collapse:collapse; margin-top:12px; font-size:0.85rem; }
+  th,td { border:1px solid #e2e8f0; padding:7px 10px; text-align:left; vertical-align:top; }
+  th { background:#f1f5f9; font-weight:700; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size:0.8rem; }
+  a { color:#0f51b3; text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  h2 { font-size:1.15rem; margin:26px 0 10px; color:#0f172a; }
+  .note { background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:14px;
+          margin:16px 0; font-size:0.9rem; }
+  .flag { background:#fef2f2; border:1px solid #fecaca; border-radius:8px; padding:14px;
+          margin:16px 0; font-size:0.9rem; }
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Korea7 &middot; GEMS Prize (DrivenData #306)</h1>
+    <p>Unique fault-prediction GeoTIFF submission &bull; single-band float32 &bull; EPSG:32611 &bull; 100 m &bull; 3730&#215;3292</p>
+  </div>
+</header>
+
+<div class="container">
+  <section class="hero">
+    <h2 style="margin-top:0">&#9200; Ready-to-download submission</h2>
+    <p><strong>Status:</strong>
+       <span class="badge ok">OK TO DOWNLOAD</span>
+       <span class="badge no">NOT YET CLEARED TO SUBMIT</span></p>
+    <p class="muted">Structurally validated: single band, float32, CRS EPSG:32611, 3730&#215;3292,
+       transform match, values in [0,1], no NaN inside the footprint. Holdout DTI cannot be
+       measured yet (competition data tab is DrivenData-login-gated), so the file is NOT cleared
+       for submission until it is conformed to sample_submission.tif and validated on the holdout.</p>
+
+    <div class="download-card">
+      <div class="file">
+        <div class="name">korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif</div>
+        <div class="meta mono">SHA-256: ef8ef331f3f70c82d3448bac5f91e8e5903e7a97292f1731608dc6c01643cca0</div>
+        <div class="meta">230 KB &bull; 10,944 off-catalogue dots &bull; values in [0,1] &bull; float32</div>
+      </div>
+      <div style="flex:0 0 auto;">
+        <a class="btn" href="downloads/korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif" download>Download GeoTIFF</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="note">
+    <strong>How to submit:</strong> Go to the GEMS Prize on DrivenData &rarr; New submission &rarr;
+    choose this single .tif file &rarr; Note (&lt;=140 chars): "K7 off-catalogue relay-corridor
+    binary dots; unique vs all GEMSDOE sites; holdout-validated score pending data access." &rarr;
+    Submit. (Up to 3 feedback submissions per week; pick one final submission.)
+  </div>
+
+  <div class="flag">
+    <strong>Blocker (flagged for review):</strong> The competition data tab
+    (training_features.tif, existing_faults.tif, labels.tif, sample_submission.tif) requires a
+    DrivenData login and redirects to login when fetched anonymously. Until access is obtained, the
+    raster cannot be byte-conformed to sample_submission.tif and its holdout DTI cannot be measured.
+    Per protocol this is a <strong>negative</strong> result: do not spend a submission slot on an
+    unvalidated idea.
+  </div>
+
+  <h2>Executive summary</h2>
+  <p class="muted">Per-site best submissions, estimated scores, uniqueness, and the full
+     download/submit guide.</p>
+  <a class="btn secondary" href="executive-summary.html">Open executive summary</a>
+
+  <h2>Validator report (automated — no human inspector)</h2>
+  <div class="card">
+    <table>
+      <tr><th>Gate</th><th>Result</th><th>Detail</th></tr>
+      <tr><td>Single band</td><td><span class="badge ok">PASS</span></td><td>count = 1</td></tr>
+      <tr><td>Dtype float32</td><td><span class="badge ok">PASS</span></td><td>float32</td></tr>
+      <tr><td>CRS EPSG:32611</td><td><span class="badge ok">PASS</span></td><td>EPSG:32611</td></tr>
+      <tr><td>Shape 3730&#215;3292</td><td><span class="badge ok">PASS</span></td><td>(3730, 3292)</td></tr>
+      <tr><td>Transform match</td><td><span class="badge ok">PASS</span></td><td>(100, 0, 243350, 0, -100, 4508550)</td></tr>
+      <tr><td>No NaN inside footprint</td><td><span class="badge ok">PASS</span></td><td>n_nan = 0</td></tr>
+      <tr><td>Values in [0,1]</td><td><span class="badge ok">PASS</span></td><td>range [0.0, 1.0], out-of-range = 0</td></tr>
+    </table>
+  </div>
+  <p class="muted">Run: <code>python3 scripts/validate_submission.py docs/downloads/&lt;file&gt;.tif</code></p>
+
+  <h2>Project brief</h2>
+  <p class="muted">See <a>README.md</a> for the standing brief, official sources, the parallel-run
+     protocol, and the data-access blocker. Hypotheses: <a>hypotheses.md</a>. Run card:
+     <a>run_card.json</a>.</p>
+</div>
+</body>
+</html>
