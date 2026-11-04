@@ -1,0 +1,71 @@
+{
+  "schema": "korea7-consensus-validation-v1",
+  "file": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+  "sha256": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c",
+  "bytes": 102331,
+  "zip_sha256": "7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5",
+  "validator": {
+    "file": "/home/user/Korea7/docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+    "bytes": 102331,
+    "sha256": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c",
+    "meta": {
+      "crs": "EPSG:32611",
+      "shape": [
+        3730,
+        3292
+      ],
+      "dtype": "float32",
+      "count": 1,
+      "nodata": null,
+      "transform": [
+        100.0,
+        0.0,
+        243350.0,
+        0.0,
+        -100.0,
+        4508550.0
+      ],
+      "profile_compress": "deflate"
+    },
+    "band_description": [
+      null
+    ],
+    "n_finite": 12279160,
+    "n_nan": 0,
+    "n_infinite": 0,
+    "min": 0.0,
+    "max": 1.0,
+    "mean": 0.0016287759644910693,
+    "emitted_positive_pixels": 20000,
+    "checks": {
+      "single_band": true,
+      "dtype_float32": true,
+      "dimensions_3730x3292": true,
+      "crs_epsg_32611": true,
+      "transform_matches_sample_submission": true,
+      "no_nan_anywhere": true,
+      "no_inf_anywhere": true,
+      "no_sentinel_values": true,
+      "range_0_1_guaranteed": true,
+      "min_ge_0": true,
+      "max_le_1": true,
+      "in_footprint_all_finite": true,
+      "in_footprint_range_0_1": true,
+      "outside_footprint_zero": true,
+      "zero_dots_on_mapped_catalogue": true
+    },
+    "all_checks_passed": true,
+    "validation_class": "local format/range preflight; not organizer acceptance or uniqueness clearance",
+    "on_catalogue_positive_pixels": 0,
+    "in_footprint_positive_pixels": 20000,
+    "footprint_fraction": 0.0038704386155208846
+  },
+  "zip_check": {
+    "member_names": [
+      "korea7-consensus-offcat-20k-20261104-zeros.tif"
+    ],
+    "single_tiff": true,
+    "bytes_match": true
+  },
+  "all_checks_passed": true
+}

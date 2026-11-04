@@ -1,0 +1,1973 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validation report — Korea7 GEMS · Korea7 GEMS</title>
+<meta name="description" content="Korea7 GEMS fault-prospectivity submission audit: a unique, format-valid GeoTIFF with measured validation and a clearly labelled research-artifact status.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">K7</span> Korea7 <span style="color:var(--muted);font-weight:600">/ GEMS</span></a>
+    <nav aria-label="Primary"><a href="index.html">Overview</a><a href="executive-summary.html">Executive summary</a><a href="how-to-submit.html">How to submit</a><a href="validation.html" aria-current="page">Validation</a><a href="sources.html">Sources</a></nav>
+    <a class="btn btn-primary btn-sm" href="downloads/korea7-consensus-offcat-20k-20261104-zeros.tif">Download TIF</a>
+  </div>
+</header>
+<main id="main" class="wrap">
+<section class="hero" style="padding-top:44px"><div class="eyebrow">Validation report</div><h1 style="font-size:clamp(30px,4vw,46px)">Every check, from the saved bytes.</h1><p class="lede">The validator re-reads the on-disk TIFF and the ZIP. It checks CRS, shape, transform, dtype, range, NaN/inf, footprint, catalogue, and the ZIP member. The format gate passes. The holdout gate fails. The 13GEMS lattice probe fails.</p></section>
+<section class="section"><div class="grid grid-2">
+  <div class="card"><h3>Format preflight</h3><div class="table-wrap"><table><thead><tr><th>Check</th><th>Result</th></tr></thead><tbody><tr><td>single_band</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>dtype_float32</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>dimensions_3730x3292</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>crs_epsg_32611</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>transform_matches_sample_submission</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>no_nan_anywhere</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>no_inf_anywhere</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>no_sentinel_values</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>range_0_1_guaranteed</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>min_ge_0</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>max_le_1</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>in_footprint_all_finite</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>in_footprint_range_0_1</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>outside_footprint_zero</td><td><span class="pill pill-yes">PASS</span></td></tr><tr><td>zero_dots_on_mapped_catalogue</td><td><span class="pill pill-yes">PASS</span></td></tr></tbody></table></div></div>
+  <div class="card"><h3>File identity</h3><dl class="kv">
+    <dt>File</dt><dd><code>docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif</code></dd>
+    <dt>SHA-256</dt><dd><code id="sha-text">9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c</code> <button class="btn btn-ghost btn-sm no-print" data-copy-target="#sha-text">Copy</button></dd>
+    <dt>Bytes</dt><dd>102,331</dd>
+    <dt>ZIP SHA-256</dt><dd><code>7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5</code></dd>
+    <dt>ZIP members</dt><dd>[&#x27;korea7-consensus-offcat-20k-20261104-zeros.tif&#x27;] — single TIF: <span class="pill pill-yes">YES</span></dd>
+    <dt>Grid</dt><dd>EPSG:32611 · 3730 × 3292 · 100 m · transform matches sample</dd>
+    <dt>Values</dt><dd>min 0.0 · max 1.0 · 20,000 positive cells</dd>
+    <dt>NaN / inf</dt><dd>0 / 0</dd>
+    <dt>On catalogue</dt><dd>0 positive cells</dd>
+  </dl></div>
+</div></section>
+<section class="section"><h2>HOLDOUT-DTI table</h2><div class="table-wrap"><table>
+<thead><tr><th>Arm</th><th>HOLDOUT-DTI</th><th>95% CI</th><th>Withheld positives</th></tr></thead>
+<tbody><tr><td>GEMSDOE24</td><td class='num-cell'>0.0975</td><td class='num-cell'>[0.0870, 0.1077]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE25</td><td class='num-cell'>0.1023</td><td class='num-cell'>[0.0909, 0.1133]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE27</td><td class='num-cell'>0.0972</td><td class='num-cell'>[0.0867, 0.1073]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE28</td><td class='num-cell'>0.0315</td><td class='num-cell'>[0.0282, 0.0347]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE30</td><td class='num-cell'>0.1023</td><td class='num-cell'>[0.0909, 0.1133]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE31</td><td class='num-cell'>0.0327</td><td class='num-cell'>[0.0296, 0.0359]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE32</td><td class='num-cell'>0.0047</td><td class='num-cell'>[0.0043, 0.0052]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE33</td><td class='num-cell'>0.0553</td><td class='num-cell'>[0.0504, 0.0602]</td><td class='num-cell'>45,260</td></tr><tr><td>GEMSDOE36</td><td class='num-cell'>0.0049</td><td class='num-cell'>[0.0045, 0.0053]</td><td class='num-cell'>45,260</td></tr><tr><td><strong>Korea7 consensus (new)</strong></td><td class='num-cell'><strong>0.0000</strong></td><td class='num-cell'>[0.0000, 0.0000]</td><td class='num-cell'>45,260</td></tr><tr><td>Random control (20k dots)</td><td class='num-cell'>0.0320</td><td class='num-cell'>[0.0296, 0.0346]</td><td class='num-cell'>45,260</td></tr></tbody></table></div>
+<p style="color:var(--muted);font-size:13px;margin-top:10px">Evaluator: gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel). The holdout truth is the mirror catalogue, not the organizer's hidden new-fault labels. The consensus candidate is off-catalogue by design, so its holdout DTI is 0.000 — below the random control. This is a negative result under the holdout gate, not a leaderboard estimate.</p></section>
+<section class="section"><h2>Uniqueness vs the nine focus sites</h2><div class="table-wrap"><table><thead><tr><th>Focus site</th><th>Forward 3-px overlap</th><th>Reverse 3-px overlap</th><th>Surface Spearman</th><th>Exact mask equal</th></tr></thead><tbody><tr><td>GEMSDOE24</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0068</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE25</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0058</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE27</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0068</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE28</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0053</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE30</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0058</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE31</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0055</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE32</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0053</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE33</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0056</td><td><span class="pill pill-yes">NO</span></td></tr><tr><td>GEMSDOE36</td><td class='num-cell'>0.0000</td><td class='num-cell'>0.0000</td><td class='num-cell'>-0.0054</td><td><span class="pill pill-yes">NO</span></td></tr></tbody></table></div><p style="color:var(--muted);font-size:13px;margin-top:10px">The candidate has 0% forward 3-px overlap with every focus-site raster by construction. The 13GEMS covering-lattice probe has 0.9996 forward overlap; the literal 70% rule fails. This is a saturated covering-grid rule, flagged for an owner decision.</p></section>
+<section class="section"><button class="btn btn-ghost btn-sm no-print" data-print>Print this page</button><details><summary>Run card (JSON)</summary><pre>{
+  &quot;schema&quot;: &quot;korea7-consensus-run-card-v1&quot;,
+  &quot;date_utc&quot;: &quot;2026-11-04T20:25:38Z&quot;,
+  &quot;session&quot;: &quot;arena/e868a66c-korea7&quot;,
+  &quot;lane&quot;: &quot;density-weighted multi-method off-catalogue consensus (new lane; not an exact copy of any prior submission)&quot;,
+  &quot;hypothesis&quot;: &quot;Blind geothermal faults missing from the USGS/INGENIOUS catalogue are co-detected by independent off-catalogue geophysical, geothermal-conduit, habitat-suitability and corridor-prior methods; a density-weighted consensus of their local support concentrates the highest-confidence off-catalogue structures while avoiding the mapped catalogue and the nine focus-site halos.&quot;,
+  &quot;mechanism&quot;: &quot;Each of four reference rasters is converted to a 3-px local-density surface; the densities are weighted by each method&#x27;s measured far-catalogue fraction and summed. The surface is masked to &gt;5 px from the catalogue and outside the closed 3-px halo of every focus-site raster, then the top 20,000 cells are selected by greedy 3-px NMS. The candidate is written with the shared gems57.submission_writer and validated on disk.&quot;,
+  &quot;named_non_fault_mimic&quot;: &quot;Pluvial shoreline berms, road/rail embankments, conductive playas, alluvial-fan toes and basin-margin gravity steps can produce linear conductivity/curvature/gravity anomalies in novel territory; the consensus requires agreement across independent methods, but does not prove a fault.&quot;,
+  &quot;holdout&quot;: {
+    &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+    &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+    &quot;pooled_dti&quot;: 0.0,
+    &quot;pooled_coverage&quot;: 0.0,
+    &quot;ci95&quot;: [
+      0.0,
+      0.0
+    ],
+    &quot;withheld_positive_pixels&quot;: 45260,
+    &quot;n_cells&quot;: 16,
+    &quot;folds&quot;: {
+      &quot;draw20_foldNW_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 7687.0,
+        &quot;fn&quot;: 1925.0,
+        &quot;n_truth&quot;: 1925.0,
+        &quot;n_emitted&quot;: 7687.0
+      },
+      &quot;draw20_foldNW_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 7687.0,
+        &quot;fn&quot;: 1919.0,
+        &quot;n_truth&quot;: 1919.0,
+        &quot;n_emitted&quot;: 7687.0
+      },
+      &quot;draw20_foldNE_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 2526.0,
+        &quot;fn&quot;: 2360.0,
+        &quot;n_truth&quot;: 2360.0,
+        &quot;n_emitted&quot;: 2526.0
+      },
+      &quot;draw20_foldNE_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 2526.0,
+        &quot;fn&quot;: 2361.0,
+        &quot;n_truth&quot;: 2361.0,
+        &quot;n_emitted&quot;: 2526.0
+      },
+      &quot;draw20_foldSW_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 5546.0,
+        &quot;fn&quot;: 3780.0,
+        &quot;n_truth&quot;: 3780.0,
+        &quot;n_emitted&quot;: 5546.0
+      },
+      &quot;draw20_foldSW_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 5546.0,
+        &quot;fn&quot;: 3778.0,
+        &quot;n_truth&quot;: 3778.0,
+        &quot;n_emitted&quot;: 5546.0
+      },
+      &quot;draw20_foldSE_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 3265.0,
+        &quot;fn&quot;: 3253.0,
+        &quot;n_truth&quot;: 3253.0,
+        &quot;n_emitted&quot;: 3265.0
+      },
+      &quot;draw20_foldSE_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 3265.0,
+        &quot;fn&quot;: 3249.0,
+        &quot;n_truth&quot;: 3249.0,
+        &quot;n_emitted&quot;: 3265.0
+      },
+      &quot;draw21_foldNW_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 7687.0,
+        &quot;fn&quot;: 1919.0,
+        &quot;n_truth&quot;: 1919.0,
+        &quot;n_emitted&quot;: 7687.0
+      },
+      &quot;draw21_foldNW_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 7687.0,
+        &quot;fn&quot;: 1924.0,
+        &quot;n_truth&quot;: 1924.0,
+        &quot;n_emitted&quot;: 7687.0
+      },
+      &quot;draw21_foldNE_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 2526.0,
+        &quot;fn&quot;: 2365.0,
+        &quot;n_truth&quot;: 2365.0,
+        &quot;n_emitted&quot;: 2526.0
+      },
+      &quot;draw21_foldNE_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 2526.0,
+        &quot;fn&quot;: 2358.0,
+        &quot;n_truth&quot;: 2358.0,
+        &quot;n_emitted&quot;: 2526.0
+      },
+      &quot;draw21_foldSW_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 5546.0,
+        &quot;fn&quot;: 3786.0,
+        &quot;n_truth&quot;: 3786.0,
+        &quot;n_emitted&quot;: 5546.0
+      },
+      &quot;draw21_foldSW_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 5546.0,
+        &quot;fn&quot;: 3781.0,
+        &quot;n_truth&quot;: 3781.0,
+        &quot;n_emitted&quot;: 5546.0
+      },
+      &quot;draw21_foldSE_all&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 3265.0,
+        &quot;fn&quot;: 3253.0,
+        &quot;n_truth&quot;: 3253.0,
+        &quot;n_emitted&quot;: 3265.0
+      },
+      &quot;draw21_foldSE_detached&quot;: {
+        &quot;dti&quot;: 0.0,
+        &quot;coverage&quot;: 0.0,
+        &quot;tp&quot;: 0.0,
+        &quot;fp&quot;: 3265.0,
+        &quot;fn&quot;: 3249.0,
+        &quot;n_truth&quot;: 3249.0,
+        &quot;n_emitted&quot;: 3265.0
+      }
+    }
+  },
+  &quot;random_control_holdout&quot;: {
+    &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+    &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+    &quot;pooled_dti&quot;: 0.03195774890885529,
+    &quot;pooled_coverage&quot;: 0.03629625355722053,
+    &quot;ci95&quot;: [
+      0.029612533040742177,
+      0.034560317447077896
+    ],
+    &quot;withheld_positive_pixels&quot;: 45260,
+    &quot;n_cells&quot;: 16,
+    &quot;folds&quot;: {
+      &quot;draw20_foldNW_all&quot;: {
+        &quot;dti&quot;: 0.03869823872195799,
+        &quot;coverage&quot;: 0.04825932366544738,
+        &quot;tp&quot;: 92.8991980559862,
+        &quot;fp&quot;: 4210.12744140625,
+        &quot;fn&quot;: 1832.1008019440137,
+        &quot;n_truth&quot;: 1925.0,
+        &quot;n_emitted&quot;: 4251.0
+      },
+      &quot;draw20_foldNW_detached&quot;: {
+        &quot;dti&quot;: 0.034175237533199086,
+        &quot;coverage&quot;: 0.04264978084157545,
+        &quot;tp&quot;: 81.8449294349833,
+        &quot;fp&quot;: 4216.4580078125,
+        &quot;fn&quot;: 1837.1550705650168,
+        &quot;n_truth&quot;: 1919.0,
+        &quot;n_emitted&quot;: 4253.0
+      },
+      &quot;draw20_foldNE_all&quot;: {
+        &quot;dti&quot;: 0.024925003875740606,
+        &quot;coverage&quot;: 0.030929023588760825,
+        &quot;tp&quot;: 72.99249566947555,
+        &quot;fp&quot;: 5129.431640625,
+        &quot;fn&quot;: 2287.0075043305246,
+        &quot;n_truth&quot;: 2360.0,
+        &quot;n_emitted&quot;: 5160.0
+      },
+      &quot;draw20_foldNE_detached&quot;: {
+        &quot;dti&quot;: 0.025163110231490895,
+        &quot;coverage&quot;: 0.031214643737882564,
+        &quot;tp&quot;: 73.69777386514073,
+        &quot;fp&quot;: 5126.3134765625,
+        &quot;fn&quot;: 2287.302226134859,
+        &quot;n_truth&quot;: 2361.0,
+        &quot;n_emitted&quot;: 5158.0
+      },
+      &quot;draw20_foldSW_all&quot;: {
+        &quot;dti&quot;: 0.02808318451385806,
+        &quot;coverage&quot;: 0.030289518372301438,
+        &quot;tp&quot;: 114.49437944729944,
+        &quot;fp&quot;: 5150.36962890625,
+        &quot;fn&quot;: 3665.5056205527007,
+        &quot;n_truth&quot;: 3780.0,
+        &quot;n_emitted&quot;: 5201.0
+      },
+      &quot;draw20_foldSW_detached&quot;: {
+        &quot;dti&quot;: 0.029280636530249923,
+        &quot;coverage&quot;: 0.03159516446311956,
+        &quot;tp&quot;: 119.36653134166569,
+        &quot;fp&quot;: 5151.8193359375,
+        &quot;fn&quot;: 3658.633468658334,
+        &quot;n_truth&quot;: 3778.0,
+        &quot;n_emitted&quot;: 5202.0
+      },
+      &quot;draw20_foldSE_all&quot;: {
+        &quot;dti&quot;: 0.03267701416508892,
+        &quot;coverage&quot;: 0.034603678029297466,
+        &quot;tp&quot;: 112.56576462930465,
+        &quot;fp&quot;: 4099.43212890625,
+        &quot;fn&quot;: 3140.434235370695,
+        &quot;n_truth&quot;: 3253.0,
+        &quot;n_emitted&quot;: 4151.0
+      },
+      &quot;draw20_foldSE_detached&quot;: {
+        &quot;dti&quot;: 0.03544168025636149,
+        &quot;coverage&quot;: 0.03756739815768068,
+        &quot;tp&quot;: 122.05647661430453,
+        &quot;fp&quot;: 4101.28466796875,
+        &quot;fn&quot;: 3126.9435233856957,
+        &quot;n_truth&quot;: 3249.0,
+        &quot;n_emitted&quot;: 4153.0
+      },
+      &quot;draw21_foldNW_all&quot;: {
+        &quot;dti&quot;: 0.029006117973488774,
+        &quot;coverage&quot;: 0.03616740477480495,
+        &quot;tp&quot;: 69.4052497628507,
+        &quot;fp&quot;: 4218.4931640625,
+        &quot;fn&quot;: 1849.5947502371494,
+        &quot;n_truth&quot;: 1919.0,
+        &quot;n_emitted&quot;: 4248.0
+      },
+      &quot;draw21_foldNW_detached&quot;: {
+        &quot;dti&quot;: 0.03504256270103209,
+        &quot;coverage&quot;: 0.043682590863555346,
+        &quot;tp&quot;: 84.04530482148049,
+        &quot;fp&quot;: 4211.84375,
+        &quot;fn&quot;: 1839.9546951785196,
+        &quot;n_truth&quot;: 1924.0,
+        &quot;n_emitted&quot;: 4249.0
+      },
+      &quot;draw21_foldNE_all&quot;: {
+        &quot;dti&quot;: 0.028187977658418347,
+        &quot;coverage&quot;: 0.03495592033507577,
+        &quot;tp&quot;: 82.6707515924542,
+        &quot;fp&quot;: 5121.515625,
+        &quot;fn&quot;: 2282.329248407546,
+        &quot;n_truth&quot;: 2365.0,
+        &quot;n_emitted&quot;: 5157.0
+      },
+      &quot;draw21_foldNE_detached&quot;: {
+        &quot;dti&quot;: 0.02692191273149145,
+        &quot;coverage&quot;: 0.03341556281684312,
+        &quot;tp&quot;: 78.79389712211606,
+        &quot;fp&quot;: 5122.9912109375,
+        &quot;fn&quot;: 2279.206102877884,
+        &quot;n_truth&quot;: 2358.0,
+        &quot;n_emitted&quot;: 5158.0
+      },
+      &quot;draw21_foldSW_all&quot;: {
+        &quot;dti&quot;: 0.03132672666189227,
+        &quot;coverage&quot;: 0.0337837444818248,
+        &quot;tp&quot;: 127.9052566081887,
+        &quot;fp&quot;: 5142.8125,
+        &quot;fn&quot;: 3658.0947433918113,
+        &quot;n_truth&quot;: 3786.0,
+        &quot;n_emitted&quot;: 5198.0
+      },
+      &quot;draw21_foldSW_detached&quot;: {
+        &quot;dti&quot;: 0.03084646366244737,
+        &quot;coverage&quot;: 0.033278538275135314,
+        &quot;tp&quot;: 125.82615321828662,
+        &quot;fp&quot;: 5145.7294921875,
+        &quot;fn&quot;: 3655.1738467817136,
+        &quot;n_truth&quot;: 3781.0,
+        &quot;n_emitted&quot;: 5199.0
+      },
+      &quot;draw21_foldSE_all&quot;: {
+        &quot;dti&quot;: 0.039542283439141554,
+        &quot;coverage&quot;: 0.04192155439721784,
+        &quot;tp&quot;: 136.37081645414963,
+        &quot;fp&quot;: 4095.299072265625,
+        &quot;fn&quot;: 3116.6291835458505,
+        &quot;n_truth&quot;: 3253.0,
+        &quot;n_emitted&quot;: 4155.0
+      },
+      &quot;draw21_foldSE_detached&quot;: {
+        &quot;dti&quot;: 0.04287744556639141,
+        &quot;coverage&quot;: 0.04550121802465826,
+        &quot;tp&quot;: 147.83345736211467,
+        &quot;fp&quot;: 4095.236572265625,
+        &quot;fn&quot;: 3101.1665426378854,
+        &quot;n_truth&quot;: 3249.0,
+        &quot;n_emitted&quot;: 4159.0
+      }
+    }
+  },
+  &quot;focus_holdout&quot;: {
+    &quot;GEMSDOE24&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.09750418428986357,
+      &quot;pooled_coverage&quot;: 0.17608877861568148,
+      &quot;ci95&quot;: [
+        0.08696517873964764,
+        0.10772321122291265
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.08437883373624601,
+          &quot;coverage&quot;: 0.18364348613009956,
+          &quot;tp&quot;: 353.5137108004417,
+          &quot;fp&quot;: 12894.4951171875,
+          &quot;fn&quot;: 1571.4862891995583,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 13112.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.09108579071219135,
+          &quot;coverage&quot;: 0.19870451628702704,
+          &quot;tp&quot;: 381.3139667548049,
+          &quot;fp&quot;: 12874.26953125,
+          &quot;fn&quot;: 1537.6860332451952,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 13112.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.11422960957191232,
+          &quot;coverage&quot;: 0.24351130099139737,
+          &quot;tp&quot;: 574.6866703396978,
+          &quot;fp&quot;: 15140.2041015625,
+          &quot;fn&quot;: 1785.3133296603023,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 15489.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.10419061642673015,
+          &quot;coverage&quot;: 0.2218589018036254,
+          &quot;tp&quot;: 523.8088671583596,
+          &quot;fp&quot;: 15169.2373046875,
+          &quot;fn&quot;: 1837.1911328416404,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 15489.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07529596019046828,
+          &quot;coverage&quot;: 0.12308173478707457,
+          &quot;tp&quot;: 465.2489574951419,
+          &quot;fp&quot;: 15309.43359375,
+          &quot;fn&quot;: 3314.751042504858,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 15584.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07147406997224873,
+          &quot;coverage&quot;: 0.11680868785514177,
+          &quot;tp&quot;: 441.3032227167256,
+          &quot;fp&quot;: 15318.2578125,
+          &quot;fn&quot;: 3336.6967772832745,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 15584.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.12404620034264012,
+          &quot;coverage&quot;: 0.19217431574219027,
+          &quot;tp&quot;: 625.1430491093449,
+          &quot;fp&quot;: 11560.849609375,
+          &quot;fn&quot;: 2627.856950890655,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 11944.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.13097595573085072,
+          &quot;coverage&quot;: 0.20318085443761782,
+          &quot;tp&quot;: 660.1345960678203,
+          &quot;fp&quot;: 11544.4677734375,
+          &quot;fn&quot;: 2588.8654039321796,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 11944.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.08994611857187458,
+          &quot;coverage&quot;: 0.19629760088216247,
+          &quot;tp&quot;: 376.6950960928698,
+          &quot;fp&quot;: 12887.3466796875,
+          &quot;fn&quot;: 1542.3049039071302,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 13112.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.0786280689744093,
+          &quot;coverage&quot;: 0.17109942813174897,
+          &quot;tp&quot;: 329.19529972548503,
+          &quot;fp&quot;: 12908.505859375,
+          &quot;fn&quot;: 1594.804700274515,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 13112.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.10274127580983666,
+          &quot;coverage&quot;: 0.21848438458556882,
+          &quot;tp&quot;: 516.7155695448703,
+          &quot;fp&quot;: 15169.7294921875,
+          &quot;fn&quot;: 1848.2844304551297,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 15489.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.11334159157954475,
+          &quot;coverage&quot;: 0.2416910497409932,
+          &quot;tp&quot;: 569.907495289262,
+          &quot;fp&quot;: 15139.23828125,
+          &quot;fn&quot;: 1788.092504710738,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 15489.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07075554392821778,
+          &quot;coverage&quot;: 0.11551187643716718,
+          &quot;tp&quot;: 437.3279641911149,
+          &quot;fp&quot;: 15322.8203125,
+          &quot;fn&quot;: 3348.672035808885,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 15584.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07600501155213892,
+          &quot;coverage&quot;: 0.12418510795473396,
+          &quot;tp&quot;: 469.5438931768491,
+          &quot;fp&quot;: 15295.46484375,
+          &quot;fn&quot;: 3311.456106823151,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 15584.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.1191397108324257,
+          &quot;coverage&quot;: 0.1845488049341753,
+          &quot;tp&quot;: 600.3372624508722,
+          &quot;fp&quot;: 11582.337890625,
+          &quot;fn&quot;: 2652.662737549128,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 11944.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.12793908985219254,
+          &quot;coverage&quot;: 0.19849261287537207,
+          &quot;tp&quot;: 644.9024992320839,
+          &quot;fp&quot;: 11562.5947265625,
+          &quot;fn&quot;: 2604.0975007679162,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 11944.0
+        }
+      }
+    },
+    &quot;GEMSDOE25&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.10226689004897589,
+      &quot;pooled_coverage&quot;: 0.15790587663450967,
+      &quot;ci95&quot;: [
+        0.09093150254145185,
+        0.11327390531714962
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.0889482474631701,
+          &quot;coverage&quot;: 0.1618330543685191,
+          &quot;tp&quot;: 311.52862965939926,
+          &quot;fp&quot;: 9500.2626953125,
+          &quot;fn&quot;: 1613.4713703406007,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.10032826281191845,
+          &quot;coverage&quot;: 0.18301497659411178,
+          &quot;tp&quot;: 351.2057400841005,
+          &quot;fp&quot;: 9475.6259765625,
+          &quot;fn&quot;: 1567.7942599158996,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.12281886118868907,
+          &quot;coverage&quot;: 0.21823203880903488,
+          &quot;tp&quot;: 515.0276115893223,
+          &quot;fp&quot;: 11011.931640625,
+          &quot;fn&quot;: 1844.9723884106777,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.11167923029964794,
+          &quot;coverage&quot;: 0.19810985814661916,
+          &quot;tp&quot;: 467.73737508416787,
+          &quot;fp&quot;: 11029.37109375,
+          &quot;fn&quot;: 1893.262624915832,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07689800003328057,
+          &quot;coverage&quot;: 0.10919982853780076,
+          &quot;tp&quot;: 412.77535187288686,
+          &quot;fp&quot;: 11306.3720703125,
+          &quot;fn&quot;: 3367.224648127113,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07241230494894021,
+          &quot;coverage&quot;: 0.1027864538270643,
+          &quot;tp&quot;: 388.32722255864894,
+          &quot;fp&quot;: 11313.2939453125,
+          &quot;fn&quot;: 3389.672777441351,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.12705192585475872,
+          &quot;coverage&quot;: 0.1723236525452728,
+          &quot;tp&quot;: 560.5688417297724,
+          &quot;fp&quot;: 8488.05078125,
+          &quot;fn&quot;: 2692.4311582702276,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 8771.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.13548205867379007,
+          &quot;coverage&quot;: 0.18406327076878912,
+          &quot;tp&quot;: 598.0215667277959,
+          &quot;fp&quot;: 8476.1171875,
+          &quot;fn&quot;: 2650.9784332722043,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 8771.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.09516442277797395,
+          &quot;coverage&quot;: 0.17356716545281856,
+          &quot;tp&quot;: 333.07539050395883,
+          &quot;fp&quot;: 9490.919921875,
+          &quot;fn&quot;: 1585.9246094960413,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.08439323193485096,
+          &quot;coverage&quot;: 0.15349983445127036,
+          &quot;tp&quot;: 295.33368148424415,
+          &quot;fp&quot;: 9506.140625,
+          &quot;fn&quot;: 1628.6663185157558,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.11125174150980213,
+          &quot;coverage&quot;: 0.19709808894667438,
+          &quot;tp&quot;: 466.1369803588849,
+          &quot;fp&quot;: 11023.51171875,
+          &quot;fn&quot;: 1898.863019641115,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.12130433936471481,
+          &quot;coverage&quot;: 0.2155390722625354,
+          &quot;tp&quot;: 508.2411323950585,
+          &quot;fp&quot;: 11008.767578125,
+          &quot;fn&quot;: 1849.7588676049415,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07153545040061975,
+          &quot;coverage&quot;: 0.10144037889232942,
+          &quot;tp&quot;: 384.05327448635916,
+          &quot;fp&quot;: 11315.509765625,
+          &quot;fn&quot;: 3401.946725513641,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07783388901821672,
+          &quot;coverage&quot;: 0.11049332234317341,
+          &quot;tp&quot;: 417.7752517795387,
+          &quot;fp&quot;: 11295.84375,
+          &quot;fn&quot;: 3363.224748220461,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.12439624914749467,
+          &quot;coverage&quot;: 0.1687373457509239,
+          &quot;tp&quot;: 548.9025857277554,
+          &quot;fp&quot;: 8501.763671875,
+          &quot;fn&quot;: 2704.0974142722444,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 8771.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.13321411171699157,
+          &quot;coverage&quot;: 0.18101241626223885,
+          &quot;tp&quot;: 588.109340436014,
+          &quot;fp&quot;: 8489.728515625,
+          &quot;fn&quot;: 2660.890659563986,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 8771.0
+        }
+      }
+    },
+    &quot;GEMSDOE27&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.09719107195151397,
+      &quot;pooled_coverage&quot;: 0.17755366328786862,
+      &quot;ci95&quot;: [
+        0.08670182110635657,
+        0.10730083482964382
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.08413555165621614,
+          &quot;coverage&quot;: 0.18431379085659447,
+          &quot;tp&quot;: 354.80404739894436,
+          &quot;fp&quot;: 13030.458984375,
+          &quot;fn&quot;: 1570.1959526010555,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 13249.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.09071323998484583,
+          &quot;coverage&quot;: 0.19918461564823953,
+          &quot;tp&quot;: 382.23527742897164,
+          &quot;fp&quot;: 13010.09375,
+          &quot;fn&quot;: 1536.7647225710284,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 13249.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.11421537465284642,
+          &quot;coverage&quot;: 0.24648943168935272,
+          &quot;tp&quot;: 581.7150587868724,
+          &quot;fp&quot;: 15443.9921875,
+          &quot;fn&quot;: 1778.2849412131277,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 15798.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.10420927303928203,
+          &quot;coverage&quot;: 0.22463102404250843,
+          &quot;tp&quot;: 530.3538477643624,
+          &quot;fp&quot;: 15472.22265625,
+          &quot;fn&quot;: 1830.6461522356376,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 15798.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07469317648049563,
+          &quot;coverage&quot;: 0.12380039972920594,
+          &quot;tp&quot;: 467.96551097639843,
+          &quot;fp&quot;: 15737.888671875,
+          &quot;fn&quot;: 3312.0344890236015,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 16015.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07183467228409872,
+          &quot;coverage&quot;: 0.11904394272881942,
+          &quot;tp&quot;: 449.74801562947977,
+          &quot;fp&quot;: 15742.634765625,
+          &quot;fn&quot;: 3328.2519843705204,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 16015.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.12371353790923559,
+          &quot;coverage&quot;: 0.19396881562159754,
+          &quot;tp&quot;: 630.9805572170568,
+          &quot;fp&quot;: 11858.697265625,
+          &quot;fn&quot;: 2622.0194427829433,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 12246.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.1298955410760974,
+          &quot;coverage&quot;: 0.20392166989423374,
+          &quot;tp&quot;: 662.5415054863654,
+          &quot;fp&quot;: 11844.31640625,
+          &quot;fn&quot;: 2586.458494513635,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 12246.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.08936255274720065,
+          &quot;coverage&quot;: 0.19629760088216247,
+          &quot;tp&quot;: 376.6950960928698,
+          &quot;fp&quot;: 13024.091796875,
+          &quot;fn&quot;: 1542.3049039071302,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 13249.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.07817820827022705,
+          &quot;coverage&quot;: 0.17123177948699853,
+          &quot;tp&quot;: 329.44994373298516,
+          &quot;fp&quot;: 13044.99609375,
+          &quot;fn&quot;: 1594.550056267015,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 13249.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.10214174640309368,
+          &quot;coverage&quot;: 0.21987564741791668,
+          &quot;tp&quot;: 520.005906143373,
+          &quot;fp&quot;: 15475.10546875,
+          &quot;fn&quot;: 1844.994093856627,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 15798.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.11321849640457167,
+          &quot;coverage&quot;: 0.24440504688887998,
+          &quot;tp&quot;: 576.307100563979,
+          &quot;fp&quot;: 15442.794921875,
+          &quot;fn&quot;: 1781.692899436021,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 15798.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07049275148599866,
+          &quot;coverage&quot;: 0.11669156245939893,
+          &quot;tp&quot;: 441.7942554712844,
+          &quot;fp&quot;: 15750.353515625,
+          &quot;fn&quot;: 3344.2057445287155,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 16015.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07579083767581911,
+          &quot;coverage&quot;: 0.12556666061092286,
+          &quot;tp&quot;: 474.7675437698993,
+          &quot;fp&quot;: 15722.138671875,
+          &quot;fn&quot;: 3306.2324562301005,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 16015.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.11920935058772489,
+          &quot;coverage&quot;: 0.18688487908941834,
+          &quot;tp&quot;: 607.9365116778779,
+          &quot;fp&quot;: 11878.755859375,
+          &quot;fn&quot;: 2645.063488322122,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 12246.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.12717822274241175,
+          &quot;coverage&quot;: 0.19968563320043503,
+          &quot;tp&quot;: 648.7786222682134,
+          &quot;fp&quot;: 11861.892578125,
+          &quot;fn&quot;: 2600.2213777317866,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 12246.0
+        }
+      }
+    },
+    &quot;GEMSDOE28&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.03153527520816375,
+      &quot;pooled_coverage&quot;: 0.0450537909912627,
+      &quot;ci95&quot;: [
+        0.028246829013356536,
+        0.034722489803931694
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.027112981774524814,
+          &quot;coverage&quot;: 0.04550513381079303,
+          &quot;tp&quot;: 87.59738258577659,
+          &quot;fp&quot;: 8366.54296875,
+          &quot;fn&quot;: 1837.4026174142234,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 8413.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.0348763868309147,
+          &quot;coverage&quot;: 0.05867247869825252,
+          &quot;tp&quot;: 112.59248662194658,
+          &quot;fp&quot;: 8353.0576171875,
+          &quot;fn&quot;: 1806.4075133780534,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8413.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.0348161155300985,
+          &quot;coverage&quot;: 0.056513413082010196,
+          &quot;tp&quot;: 133.37165487354406,
+          &quot;fp&quot;: 9580.3525390625,
+          &quot;fn&quot;: 2226.6283451264558,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 9654.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.037084498064641945,
+          &quot;coverage&quot;: 0.060198826027316216,
+          &quot;tp&quot;: 142.1294282504936,
+          &quot;fp&quot;: 9576.787109375,
+          &quot;fn&quot;: 2218.8705717495063,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 9654.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.021902482307251184,
+          &quot;coverage&quot;: 0.0292342454358085,
+          &quot;tp&quot;: 110.50544774735613,
+          &quot;fp&quot;: 9996.189453125,
+          &quot;fn&quot;: 3669.494552252644,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 10057.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.023805468894934442,
+          &quot;coverage&quot;: 0.031789086730987674,
+          &quot;tp&quot;: 120.09916966967143,
+          &quot;fp&quot;: 9993.0224609375,
+          &quot;fn&quot;: 3657.9008303303285,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 10057.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.03796766360956578,
+          &quot;coverage&quot;: 0.04737012042441771,
+          &quot;tp&quot;: 154.0950017406308,
+          &quot;fp&quot;: 7126.83154296875,
+          &quot;fn&quot;: 3098.904998259369,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7207.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.04108605852308797,
+          &quot;coverage&quot;: 0.05129736155335002,
+          &quot;tp&quot;: 166.6651276868342,
+          &quot;fp&quot;: 7119.77783203125,
+          &quot;fn&quot;: 3082.3348723131658,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7207.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.02828148801079263,
+          &quot;coverage&quot;: 0.04754480971765181,
+          &quot;tp&quot;: 91.23848984817383,
+          &quot;fp&quot;: 8363.1875,
+          &quot;fn&quot;: 1827.761510151826,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8413.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.02639848014011466,
+          &quot;coverage&quot;: 0.04430616380372878,
+          &quot;tp&quot;: 85.24505915837418,
+          &quot;fp&quot;: 8364.58203125,
+          &quot;fn&quot;: 1838.7549408416257,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 8413.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.03469224044981949,
+          &quot;coverage&quot;: 0.05625281643786937,
+          &quot;tp&quot;: 133.03791087556107,
+          &quot;fp&quot;: 9580.9775390625,
+          &quot;fn&quot;: 2231.962089124439,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 9654.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.03561433412489003,
+          &quot;coverage&quot;: 0.05783392125010714,
+          &quot;tp&quot;: 136.37238630775263,
+          &quot;fp&quot;: 9577.34375,
+          &quot;fn&quot;: 2221.6276136922475,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 9654.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.023121745881435597,
+          &quot;coverage&quot;: 0.03084464951297887,
+          &quot;tp&quot;: 116.777843056138,
+          &quot;fp&quot;: 9992.0390625,
+          &quot;fn&quot;: 3669.222156943862,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 10057.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.026320835331053605,
+          &quot;coverage&quot;: 0.03514254327290556,
+          &quot;tp&quot;: 132.8739561148559,
+          &quot;fp&quot;: 9984.337890625,
+          &quot;fn&quot;: 3648.126043885144,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 10057.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.037253554981413986,
+          &quot;coverage&quot;: 0.04648420760042454,
+          &quot;tp&quot;: 151.21312732418104,
+          &quot;fp&quot;: 7131.9140625,
+          &quot;fn&quot;: 3101.786872675819,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7207.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.04074866660849402,
+          &quot;coverage&quot;: 0.05088338208779927,
+          &quot;tp&quot;: 165.32010840325984,
+          &quot;fp&quot;: 7124.01953125,
+          &quot;fn&quot;: 3083.67989159674,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7207.0
+        }
+      }
+    },
+    &quot;GEMSDOE30&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.10226689004897589,
+      &quot;pooled_coverage&quot;: 0.15790587663450967,
+      &quot;ci95&quot;: [
+        0.09093150254145185,
+        0.11327390531714962
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.0889482474631701,
+          &quot;coverage&quot;: 0.1618330543685191,
+          &quot;tp&quot;: 311.52862965939926,
+          &quot;fp&quot;: 9500.2626953125,
+          &quot;fn&quot;: 1613.4713703406007,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.10032826281191845,
+          &quot;coverage&quot;: 0.18301497659411178,
+          &quot;tp&quot;: 351.2057400841005,
+          &quot;fp&quot;: 9475.6259765625,
+          &quot;fn&quot;: 1567.7942599158996,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.12281886118868907,
+          &quot;coverage&quot;: 0.21823203880903488,
+          &quot;tp&quot;: 515.0276115893223,
+          &quot;fp&quot;: 11011.931640625,
+          &quot;fn&quot;: 1844.9723884106777,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.11167923029964794,
+          &quot;coverage&quot;: 0.19810985814661916,
+          &quot;tp&quot;: 467.73737508416787,
+          &quot;fp&quot;: 11029.37109375,
+          &quot;fn&quot;: 1893.262624915832,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07689800003328057,
+          &quot;coverage&quot;: 0.10919982853780076,
+          &quot;tp&quot;: 412.77535187288686,
+          &quot;fp&quot;: 11306.3720703125,
+          &quot;fn&quot;: 3367.224648127113,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07241230494894021,
+          &quot;coverage&quot;: 0.1027864538270643,
+          &quot;tp&quot;: 388.32722255864894,
+          &quot;fp&quot;: 11313.2939453125,
+          &quot;fn&quot;: 3389.672777441351,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.12705192585475872,
+          &quot;coverage&quot;: 0.1723236525452728,
+          &quot;tp&quot;: 560.5688417297724,
+          &quot;fp&quot;: 8488.05078125,
+          &quot;fn&quot;: 2692.4311582702276,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 8771.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.13548205867379007,
+          &quot;coverage&quot;: 0.18406327076878912,
+          &quot;tp&quot;: 598.0215667277959,
+          &quot;fp&quot;: 8476.1171875,
+          &quot;fn&quot;: 2650.9784332722043,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 8771.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.09516442277797395,
+          &quot;coverage&quot;: 0.17356716545281856,
+          &quot;tp&quot;: 333.07539050395883,
+          &quot;fp&quot;: 9490.919921875,
+          &quot;fn&quot;: 1585.9246094960413,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.08439323193485096,
+          &quot;coverage&quot;: 0.15349983445127036,
+          &quot;tp&quot;: 295.33368148424415,
+          &quot;fp&quot;: 9506.140625,
+          &quot;fn&quot;: 1628.6663185157558,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 9655.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.11125174150980213,
+          &quot;coverage&quot;: 0.19709808894667438,
+          &quot;tp&quot;: 466.1369803588849,
+          &quot;fp&quot;: 11023.51171875,
+          &quot;fn&quot;: 1898.863019641115,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.12130433936471481,
+          &quot;coverage&quot;: 0.2155390722625354,
+          &quot;tp&quot;: 508.2411323950585,
+          &quot;fp&quot;: 11008.767578125,
+          &quot;fn&quot;: 1849.7588676049415,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 11261.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.07153545040061975,
+          &quot;coverage&quot;: 0.10144037889232942,
+          &quot;tp&quot;: 384.05327448635916,
+          &quot;fp&quot;: 11315.509765625,
+          &quot;fn&quot;: 3401.946725513641,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.07783388901821672,
+          &quot;coverage&quot;: 0.11049332234317341,
+          &quot;tp&quot;: 417.7752517795387,
+          &quot;fp&quot;: 11295.84375,
+          &quot;fn&quot;: 3363.224748220461,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 11507.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.12439624914749467,
+          &quot;coverage&quot;: 0.1687373457509239,
+          &quot;tp&quot;: 548.9025857277554,
+          &quot;fp&quot;: 8501.763671875,
+          &quot;fn&quot;: 2704.0974142722444,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 8771.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.13321411171699157,
+          &quot;coverage&quot;: 0.18101241626223885,
+          &quot;tp&quot;: 588.109340436014,
+          &quot;fp&quot;: 8489.728515625,
+          &quot;fn&quot;: 2660.890659563986,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 8771.0
+        }
+      }
+    },
+    &quot;GEMSDOE31&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.03273307810048334,
+      &quot;pooled_coverage&quot;: 0.04813685189059694,
+      &quot;ci95&quot;: [
+        0.02957482267862288,
+        0.03586370319043169
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.028043791808403735,
+          &quot;coverage&quot;: 0.04860060399484863,
+          &quot;tp&quot;: 93.55616269008362,
+          &quot;fp&quot;: 8886.8134765625,
+          &quot;fn&quot;: 1831.4438373099165,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 8938.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.033786336934554156,
+          &quot;coverage&quot;: 0.05868384698254385,
+          &quot;tp&quot;: 112.61430235950165,
+          &quot;fp&quot;: 8877.04296875,
+          &quot;fn&quot;: 1806.3856976404984,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8938.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.03401169316631823,
+          &quot;coverage&quot;: 0.05706029891642684,
+          &quot;tp&quot;: 134.66230544276735,
+          &quot;fp&quot;: 10221.8095703125,
+          &quot;fn&quot;: 2225.3376945572327,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 10295.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.03787876886756651,
+          &quot;coverage&quot;: 0.06355725303233745,
+          &quot;tp&quot;: 150.05867440934873,
+          &quot;fp&quot;: 10213.6962890625,
+          &quot;fn&quot;: 2210.941325590651,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 10295.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.022275854138322365,
+          &quot;coverage&quot;: 0.030550535355319205,
+          &quot;tp&quot;: 115.4810236431066,
+          &quot;fp&quot;: 10685.19140625,
+          &quot;fn&quot;: 3664.5189763568933,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 10748.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.026285543139116553,
+          &quot;coverage&quot;: 0.036074654105425034,
+          &quot;tp&quot;: 136.29004321029578,
+          &quot;fp&quot;: 10676.615234375,
+          &quot;fn&quot;: 3641.7099567897044,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 10748.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.040065589994997916,
+          &quot;coverage&quot;: 0.051233835910801176,
+          &quot;tp&quot;: 166.66366821783623,
+          &quot;fp&quot;: 7620.18994140625,
+          &quot;fn&quot;: 3086.3363317821636,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7706.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.04269817420782068,
+          &quot;coverage&quot;: 0.054634901335825437,
+          &quot;tp&quot;: 177.50879444009684,
+          &quot;fp&quot;: 7612.953125,
+          &quot;fn&quot;: 3071.4912055599034,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7706.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.029138197407019353,
+          &quot;coverage&quot;: 0.050586762874354214,
+          &quot;tp&quot;: 97.07599795588574,
+          &quot;fp&quot;: 8884.783203125,
+          &quot;fn&quot;: 1821.9240020441143,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8938.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.027285042672463213,
+          &quot;coverage&quot;: 0.04728813907112137,
+          &quot;tp&quot;: 90.98237957283752,
+          &quot;fp&quot;: 8885.591796875,
+          &quot;fn&quot;: 1833.0176204271625,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 8938.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.037873964183133144,
+          &quot;coverage&quot;: 0.06348792938329555,
+          &quot;tp&quot;: 150.14895299149396,
+          &quot;fp&quot;: 10212.037109375,
+          &quot;fn&quot;: 2214.851047008506,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 10295.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.037909275478992636,
+          &quot;coverage&quot;: 0.06364599111108137,
+          &quot;tp&quot;: 150.07724703992986,
+          &quot;fp&quot;: 10212.1875,
+          &quot;fn&quot;: 2207.9227529600703,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 10295.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.02426327500882346,
+          &quot;coverage&quot;: 0.033257331503579755,
+          &quot;tp&quot;: 125.91225707255296,
+          &quot;fp&quot;: 10677.173828125,
+          &quot;fn&quot;: 3660.087742927447,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 10748.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.02885870736201061,
+          &quot;coverage&quot;: 0.03959631095645469,
+          &quot;tp&quot;: 149.71365172635518,
+          &quot;fp&quot;: 10665.3642578125,
+          &quot;fn&quot;: 3631.2863482736448,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 10748.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.037841564658878106,
+          &quot;coverage&quot;: 0.04837748707188611,
+          &quot;tp&quot;: 157.37196544484553,
+          &quot;fp&quot;: 7624.1611328125,
+          &quot;fn&quot;: 3095.6280345551545,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7706.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.04102637952291722,
+          &quot;coverage&quot;: 0.05249507243812872,
+          &quot;tp&quot;: 170.5564903514802,
+          &quot;fp&quot;: 7619.6416015625,
+          &quot;fn&quot;: 3078.44350964852,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7706.0
+        }
+      }
+    },
+    &quot;GEMSDOE32&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.004729038412082699,
+      &quot;pooled_coverage&quot;: 0.006739156493901159,
+      &quot;ci95&quot;: [
+        0.004318925433915449,
+        0.005168440926990719
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.005119234300348168,
+          &quot;coverage&quot;: 0.00859620922427085,
+          &quot;tp&quot;: 16.54770275672139,
+          &quot;fp&quot;: 8445.7353515625,
+          &quot;fn&quot;: 1908.4522972432785,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 8458.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.005014688193299874,
+          &quot;coverage&quot;: 0.008433615134521486,
+          &quot;tp&quot;: 16.184107443146733,
+          &quot;fp&quot;: 8444.51953125,
+          &quot;fn&quot;: 1902.8158925568532,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8458.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.005721849025628992,
+          &quot;coverage&quot;: 0.0092493422094324,
+          &quot;tp&quot;: 21.82844761426046,
+          &quot;fp&quot;: 9612.81640625,
+          &quot;fn&quot;: 2338.1715523857397,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 9629.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.004978923243562035,
+          &quot;coverage&quot;: 0.0080457656701271,
+          &quot;tp&quot;: 18.996052747170083,
+          &quot;fp&quot;: 9613.470703125,
+          &quot;fn&quot;: 2342.00394725283,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 9629.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.0036614968254688987,
+          &quot;coverage&quot;: 0.00490293504472627,
+          &quot;tp&quot;: 18.5330944690653,
+          &quot;fp&quot;: 10169.5517578125,
+          &quot;fn&quot;: 3761.4669055309346,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 10184.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.004205780460762832,
+          &quot;coverage&quot;: 0.0056332499216276925,
+          &quot;tp&quot;: 21.282418203909423,
+          &quot;fp&quot;: 10168.107421875,
+          &quot;fn&quot;: 3756.7175817960906,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 10184.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.0034797123829621137,
+          &quot;coverage&quot;: 0.0042978214321099445,
+          &quot;tp&quot;: 13.98081311865365,
+          &quot;fp&quot;: 7063.0546875,
+          &quot;fn&quot;: 3239.0191868813463,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7074.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.005083238459760853,
+          &quot;coverage&quot;: 0.00628178974310084,
+          &quot;tp&quot;: 20.40953487533463,
+          &quot;fp&quot;: 7058.91748046875,
+          &quot;fn&quot;: 3228.5904651246656,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7074.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.0031000233064623294,
+          &quot;coverage&quot;: 0.0052134440245985075,
+          &quot;tp&quot;: 10.004599083204536,
+          &quot;fp&quot;: 8450.32421875,
+          &quot;fn&quot;: 1908.9954009167955,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8458.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.005410020062761232,
+          &quot;coverage&quot;: 0.009086906265319859,
+          &quot;tp&quot;: 17.483207654475407,
+          &quot;fp&quot;: 8444.689453125,
+          &quot;fn&quot;: 1906.5167923455247,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 8458.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.0058060526566376,
+          &quot;coverage&quot;: 0.009374880915335343,
+          &quot;tp&quot;: 22.171593364768086,
+          &quot;fp&quot;: 9611.345703125,
+          &quot;fn&quot;: 2342.828406635232,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 9629.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.006190248529220478,
+          &quot;coverage&quot;: 0.010010824875317926,
+          &quot;tp&quot;: 23.605525055999667,
+          &quot;fp&quot;: 9611.0966796875,
+          &quot;fn&quot;: 2334.394474944,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 9629.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.004172962032270323,
+          &quot;coverage&quot;: 0.005584299026213742,
+          &quot;tp&quot;: 21.14215611324523,
+          &quot;fp&quot;: 10167.1708984375,
+          &quot;fn&quot;: 3764.857843886755,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 10184.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.005495714256245373,
+          &quot;coverage&quot;: 0.0073593022685602425,
+          &quot;tp&quot;: 27.825521877426276,
+          &quot;fp&quot;: 10163.830078125,
+          &quot;fn&quot;: 3753.174478122574,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 10184.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.004289063617143429,
+          &quot;coverage&quot;: 0.005297877115812058,
+          &quot;tp&quot;: 17.233994257736626,
+          &quot;fp&quot;: 7061.3916015625,
+          &quot;fn&quot;: 3235.7660057422636,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7074.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.004430084565265658,
+          &quot;coverage&quot;: 0.00547413181866696,
+          &quot;tp&quot;: 17.785454278848952,
+          &quot;fp&quot;: 7059.70751953125,
+          &quot;fn&quot;: 3231.214545721151,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7074.0
+        }
+      }
+    },
+    &quot;GEMSDOE33&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.05534030951426988,
+      &quot;pooled_coverage&quot;: 0.08306250239400044,
+      &quot;ci95&quot;: [
+        0.050436013269554575,
+        0.0601929105665239
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.056609966253549235,
+          &quot;coverage&quot;: 0.10078346132609703,
+          &quot;tp&quot;: 194.0081630527368,
+          &quot;fp&quot;: 9241.5048828125,
+          &quot;fn&quot;: 1730.9918369472632,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 9343.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.06294407217800989,
+          &quot;coverage&quot;: 0.11232022048641357,
+          &quot;tp&quot;: 215.54250311342764,
+          &quot;fp&quot;: 9230.205078125,
+          &quot;fn&quot;: 1703.4574968865722,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 9343.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.05991638225647834,
+          &quot;coverage&quot;: 0.10276831294251965,
+          &quot;tp&quot;: 242.53321854434637,
+          &quot;fp&quot;: 10556.7744140625,
+          &quot;fn&quot;: 2117.4667814556537,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 10685.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.05563680289529395,
+          &quot;coverage&quot;: 0.09536323734167658,
+          &quot;tp&quot;: 225.1526033636984,
+          &quot;fp&quot;: 10564.990234375,
+          &quot;fn&quot;: 2135.8473966363017,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 10685.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.041491499453608804,
+          &quot;coverage&quot;: 0.05777613528588837,
+          &quot;tp&quot;: 218.39379138065803,
+          &quot;fp&quot;: 10979.501953125,
+          &quot;fn&quot;: 3561.606208619342,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 11093.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.042253867776999396,
+          &quot;coverage&quot;: 0.05885487299746006,
+          &quot;tp&quot;: 222.35371018440412,
+          &quot;fp&quot;: 10977.2861328125,
+          &quot;fn&quot;: 3555.646289815596,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 11093.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.06644996046892039,
+          &quot;coverage&quot;: 0.08676496533190897,
+          &quot;tp&quot;: 282.2464322246999,
+          &quot;fp&quot;: 7943.2705078125,
+          &quot;fn&quot;: 2970.7535677753003,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 8092.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.06996061275429466,
+          &quot;coverage&quot;: 0.09141805408629686,
+          &quot;tp&quot;: 297.0172577263785,
+          &quot;fp&quot;: 7934.4453125,
+          &quot;fn&quot;: 2951.9827422736216,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 8092.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.05198741862995496,
+          &quot;coverage&quot;: 0.09266464031174777,
+          &quot;tp&quot;: 177.82344475824397,
+          &quot;fp&quot;: 9248.72265625,
+          &quot;fn&quot;: 1741.176555241756,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 9343.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.05130039247927934,
+          &quot;coverage&quot;: 0.09129401298325554,
+          &quot;tp&quot;: 175.64968097978365,
+          &quot;fp&quot;: 9248.0712890625,
+          &quot;fn&quot;: 1748.3503190202164,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 9343.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.06210502226756952,
+          &quot;coverage&quot;: 0.10641907211348729,
+          &quot;tp&quot;: 251.68110554839745,
+          &quot;fp&quot;: 10550.859375,
+          &quot;fn&quot;: 2113.3188944516023,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 10685.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.05808651084399496,
+          &quot;coverage&quot;: 0.09963830141500411,
+          &quot;tp&quot;: 234.9471147365797,
+          &quot;fp&quot;: 10556.94921875,
+          &quot;fn&quot;: 2123.05288526342,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 10685.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.04121161654994534,
+          &quot;coverage&quot;: 0.057336616246711485,
+          &quot;tp&quot;: 217.07642911004967,
+          &quot;fp&quot;: 10975.724609375,
+          &quot;fn&quot;: 3568.9235708899505,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 11093.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.045509549476016875,
+          &quot;coverage&quot;: 0.06337494617376503,
+          &quot;tp&quot;: 239.6206714830056,
+          &quot;fp&quot;: 10962.7958984375,
+          &quot;fn&quot;: 3541.3793285169945,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 11093.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.06355714562453772,
+          &quot;coverage&quot;: 0.08296945468859142,
+          &quot;tp&quot;: 269.8996361019879,
+          &quot;fp&quot;: 7950.93212890625,
+          &quot;fn&quot;: 2983.100363898012,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 8092.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.06957698892549523,
+          &quot;coverage&quot;: 0.09093970330688267,
+          &quot;tp&quot;: 295.4630960440618,
+          &quot;fp&quot;: 7941.35400390625,
+          &quot;fn&quot;: 2953.536903955938,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 8092.0
+        }
+      }
+    },
+    &quot;GEMSDOE36&quot;: {
+      &quot;evidence_class&quot;: &quot;HOLDOUT-DTI&quot;,
+      &quot;evaluator_version&quot;: &quot;gems57-holdout-v1 (shared hide-and-recover; alpha=0.2, beta=0.8, 3 px triangular kernel)&quot;,
+      &quot;pooled_dti&quot;: 0.004871196530481981,
+      &quot;pooled_coverage&quot;: 0.007039091222115184,
+      &quot;ci95&quot;: [
+        0.004470203528666086,
+        0.005303463315415316
+      ],
+      &quot;withheld_positive_pixels&quot;: 45260,
+      &quot;n_cells&quot;: 16,
+      &quot;folds&quot;: {
+        &quot;draw20_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.005245474377186883,
+          &quot;coverage&quot;: 0.008890484015656864,
+          &quot;tp&quot;: 17.114181730139464,
+          &quot;fp&quot;: 8596.1689453125,
+          &quot;fn&quot;: 1907.8858182698605,
+          &quot;n_truth&quot;: 1925.0,
+          &quot;n_emitted&quot;: 8609.0
+        },
+        &quot;draw20_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.0051420778715181754,
+          &quot;coverage&quot;: 0.008728810013843047,
+          &quot;tp&quot;: 16.750586416564808,
+          &quot;fp&quot;: 8595.009765625,
+          &quot;fn&quot;: 1902.2494135834352,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8609.0
+        },
+        &quot;draw20_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.0057149579912320015,
+          &quot;coverage&quot;: 0.0092493422094324,
+          &quot;tp&quot;: 21.82844761426046,
+          &quot;fp&quot;: 9635.81640625,
+          &quot;fn&quot;: 2338.1715523857397,
+          &quot;n_truth&quot;: 2360.0,
+          &quot;n_emitted&quot;: 9652.0
+        },
+        &quot;draw20_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.004972927514148975,
+          &quot;coverage&quot;: 0.0080457656701271,
+          &quot;tp&quot;: 18.996052747170083,
+          &quot;fp&quot;: 9636.470703125,
+          &quot;fn&quot;: 2342.00394725283,
+          &quot;n_truth&quot;: 2361.0,
+          &quot;n_emitted&quot;: 9652.0
+        },
+        &quot;draw20_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.0038464995120444483,
+          &quot;coverage&quot;: 0.005330545041553776,
+          &quot;tp&quot;: 20.149460257073272,
+          &quot;fp&quot;: 11051.794921875,
+          &quot;fn&quot;: 3759.8505397429267,
+          &quot;n_truth&quot;: 3780.0,
+          &quot;n_emitted&quot;: 11068.0
+        },
+        &quot;draw20_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.0047344493355413,
+          &quot;coverage&quot;: 0.006563174685350385,
+          &quot;tp&quot;: 24.795673961253755,
+          &quot;fp&quot;: 11049.6435546875,
+          &quot;fn&quot;: 3753.2043260387463,
+          &quot;n_truth&quot;: 3778.0,
+          &quot;n_emitted&quot;: 11068.0
+        },
+        &quot;draw20_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.003530438030907228,
+          &quot;coverage&quot;: 0.004376101176192352,
+          &quot;tp&quot;: 14.23545712615372,
+          &quot;fp&quot;: 7134.7998046875,
+          &quot;fn&quot;: 3238.7645428738465,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7146.0
+        },
+        &quot;draw20_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.0051282680355614315,
+          &quot;coverage&quot;: 0.00636016586113718,
+          &quot;tp&quot;: 20.664178882834698,
+          &quot;fp&quot;: 7130.6630859375,
+          &quot;fn&quot;: 3228.3358211171653,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7146.0
+        },
+        &quot;draw21_foldNW_all&quot;: {
+          &quot;dti&quot;: 0.0032627301157620477,
+          &quot;coverage&quot;: 0.00553844138355422,
+          &quot;tp&quot;: 10.62826901504055,
+          &quot;fp&quot;: 8600.7578125,
+          &quot;fn&quot;: 1908.3717309849594,
+          &quot;n_truth&quot;: 1919.0,
+          &quot;n_emitted&quot;: 8609.0
+        },
+        &quot;draw21_foldNW_detached&quot;: {
+          &quot;dti&quot;: 0.005473045732736709,
+          &quot;coverage&quot;: 0.00927870768129488,
+          &quot;tp&quot;: 17.85223357881135,
+          &quot;fp&quot;: 8595.37890625,
+          &quot;fn&quot;: 1906.1477664211886,
+          &quot;n_truth&quot;: 1924.0,
+          &quot;n_emitted&quot;: 8609.0
+        },
+        &quot;draw21_foldNE_all&quot;: {
+          &quot;dti&quot;: 0.005799067115859878,
+          &quot;coverage&quot;: 0.009374880915335343,
+          &quot;tp&quot;: 22.171593364768086,
+          &quot;fp&quot;: 9634.345703125,
+          &quot;fn&quot;: 2342.828406635232,
+          &quot;n_truth&quot;: 2365.0,
+          &quot;n_emitted&quot;: 9652.0
+        },
+        &quot;draw21_foldNE_detached&quot;: {
+          &quot;dti&quot;: 0.0061827902821171435,
+          &quot;coverage&quot;: 0.010010824875317926,
+          &quot;tp&quot;: 23.605525055999667,
+          &quot;fp&quot;: 9634.0966796875,
+          &quot;fn&quot;: 2334.394474944,
+          &quot;n_truth&quot;: 2358.0,
+          &quot;n_emitted&quot;: 9652.0
+        },
+        &quot;draw21_foldSW_all&quot;: {
+          &quot;dti&quot;: 0.004432674231494943,
+          &quot;coverage&quot;: 0.006138914353519548,
+          &quot;tp&quot;: 23.24192974242501,
+          &quot;fp&quot;: 11049.3583984375,
+          &quot;fn&quot;: 3762.758070257575,
+          &quot;n_truth&quot;: 3786.0,
+          &quot;n_emitted&quot;: 11068.0
+        },
+        &quot;draw21_foldSW_detached&quot;: {
+          &quot;dti&quot;: 0.005969562777644659,
+          &quot;coverage&quot;: 0.008273363310328663,
+          &quot;tp&quot;: 31.28158667635267,
+          &quot;fp&quot;: 11045.62109375,
+          &quot;fn&quot;: 3749.7184133236474,
+          &quot;n_truth&quot;: 3781.0,
+          &quot;n_emitted&quot;: 11068.0
+        },
+        &quot;draw21_foldSE_all&quot;: {
+          &quot;dti&quot;: 0.00427374752753165,
+          &quot;coverage&quot;: 0.005297877115812058,
+          &quot;tp&quot;: 17.233994257736626,
+          &quot;fp&quot;: 7133.3916015625,
+          &quot;fn&quot;: 3235.7660057422636,
+          &quot;n_truth&quot;: 3253.0,
+          &quot;n_emitted&quot;: 7146.0
+        },
+        &quot;draw21_foldSE_detached&quot;: {
+          &quot;dti&quot;: 0.004477452620890986,
+          &quot;coverage&quot;: 0.0055525079367033,
+          &quot;tp&quot;: 18.04009828634902,
+          &quot;fp&quot;: 7131.453125,
+          &quot;fn&quot;: 3230.959901713651,
+          &quot;n_truth&quot;: 3249.0,
+          &quot;n_emitted&quot;: 7146.0
+        }
+      }
+    }
+  },
+  &quot;projection&quot;: {
+    &quot;evidence_class&quot;: &quot;PROJECTED \u2014 not a score, not a measurement&quot;,
+    &quot;projected_value&quot;: 0.3381805960516634,
+    &quot;bootstrap_95_interval&quot;: [
+      0.32770294049755905,
+      0.3525366710930341
+    ],
+    &quot;loo_interval&quot;: [
+      0.33549224074798645,
+      0.34086895135534034
+    ],
+    &quot;delta_vs_B2_projection&quot;: 0.061243385478501056,
+    &quot;candidate_position&quot;: {
+      &quot;log_dots&quot;: 9.903487552536127,
+      &quot;far_fraction&quot;: 0.857
+    }
+  },
+  &quot;geometry&quot;: {
+    &quot;dots&quot;: 20000,
+    &quot;far_fraction&quot;: 0.857,
+    &quot;near2_fraction&quot;: 0.0,
+    &quot;median_distance_px&quot;: 34.058772731852805,
+    &quot;on_catalogue&quot;: 0
+  },
+  &quot;uniqueness_vs_focus&quot;: {
+    &quot;GEMSDOE24&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.006760075156218131
+    },
+    &quot;GEMSDOE25&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005782532123991141
+    },
+    &quot;GEMSDOE27&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.00683139283241379
+    },
+    &quot;GEMSDOE28&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005340916666160865
+    },
+    &quot;GEMSDOE30&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005782532123991141
+    },
+    &quot;GEMSDOE31&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005519386086007269
+    },
+    &quot;GEMSDOE32&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005340488067901635
+    },
+    &quot;GEMSDOE33&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005633512569643698
+    },
+    &quot;GEMSDOE36&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.0,
+      &quot;reverse_3px_overlap&quot;: 0.0,
+      &quot;exact_mask_equal&quot;: false,
+      &quot;surface_spearman&quot;: -0.005425553636824374
+    },
+    &quot;13GEMSDOE_lattice&quot;: {
+      &quot;forward_3px_overlap&quot;: 0.9996,
+      &quot;reverse_3px_overlap&quot;: 0.0763382392034607,
+      &quot;surface_spearman&quot;: -0.0003143608750861239,
+      &quot;note&quot;: &quot;covering-grid probe; every dotted raster on this grid exceeds the literal 70% rule&quot;
+    }
+  },
+  &quot;raster&quot;: {
+    &quot;file&quot;: &quot;docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif&quot;,
+    &quot;sha256&quot;: &quot;9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c&quot;,
+    &quot;bytes&quot;: 102331,
+    &quot;zip&quot;: &quot;korea7-consensus-offcat-20k-20261104-zeros.zip&quot;,
+    &quot;zip_sha256&quot;: &quot;7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5&quot;,
+    &quot;dots&quot;: 20000,
+    &quot;encoding&quot;: &quot;zeros (float32, 0.0 off-dot, 1.0 on-dot; single band; tiled deflate; sample grid)&quot;
+  },
+  &quot;validator_output&quot;: {
+    &quot;file&quot;: &quot;/home/user/Korea7/docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif&quot;,
+    &quot;bytes&quot;: 102331,
+    &quot;sha256&quot;: &quot;9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c&quot;,
+    &quot;meta&quot;: {
+      &quot;crs&quot;: &quot;EPSG:32611&quot;,
+      &quot;shape&quot;: [
+        3730,
+        3292
+      ],
+      &quot;dtype&quot;: &quot;float32&quot;,
+      &quot;count&quot;: 1,
+      &quot;nodata&quot;: null,
+      &quot;transform&quot;: [
+        100.0,
+        0.0,
+        243350.0,
+        0.0,
+        -100.0,
+        4508550.0
+      ],
+      &quot;profile_compress&quot;: &quot;deflate&quot;
+    },
+    &quot;band_description&quot;: [
+      null
+    ],
+    &quot;n_finite&quot;: 12279160,
+    &quot;n_nan&quot;: 0,
+    &quot;n_infinite&quot;: 0,
+    &quot;min&quot;: 0.0,
+    &quot;max&quot;: 1.0,
+    &quot;mean&quot;: 0.0016287759644910693,
+    &quot;emitted_positive_pixels&quot;: 20000,
+    &quot;checks&quot;: {
+      &quot;single_band&quot;: true,
+      &quot;dtype_float32&quot;: true,
+      &quot;dimensions_3730x3292&quot;: true,
+      &quot;crs_epsg_32611&quot;: true,
+      &quot;transform_matches_sample_submission&quot;: true,
+      &quot;no_nan_anywhere&quot;: true,
+      &quot;no_inf_anywhere&quot;: true,
+      &quot;no_sentinel_values&quot;: true,
+      &quot;range_0_1_guaranteed&quot;: true,
+      &quot;min_ge_0&quot;: true,
+      &quot;max_le_1&quot;: true,
+      &quot;in_footprint_all_finite&quot;: true,
+      &quot;in_footprint_range_0_1&quot;: true,
+      &quot;outside_footprint_zero&quot;: true,
+      &quot;zero_dots_on_mapped_catalogue&quot;: true
+    },
+    &quot;all_checks_passed&quot;: true,
+    &quot;validation_class&quot;: &quot;local format/range preflight; not organizer acceptance or uniqueness clearance&quot;,
+    &quot;on_catalogue_positive_pixels&quot;: 0,
+    &quot;in_footprint_positive_pixels&quot;: 20000,
+    &quot;footprint_fraction&quot;: 0.0038704386155208846
+  },
+  &quot;zip_check&quot;: {
+    &quot;member_names&quot;: [
+      &quot;korea7-consensus-offcat-20k-20261104-zeros.tif&quot;
+    ],
+    &quot;single_tiff&quot;: true,
+    &quot;bytes_match&quot;: true
+  },
+  &quot;name&quot;: &quot;korea7-consensus-offcat-20k-20261104-zeros&quot;,
+  &quot;note&quot;: &quot;Korea7 4-method off-catalogue consensus, 20k dots, 85% far from catalogue; unique vs nine focus sites; research only.&quot;,
+  &quot;note_chars&quot;: 117,
+  &quot;ok_to_submit&quot;: false,
+  &quot;download_available&quot;: &quot;research artifact; NOT CLEARED for a weekly slot&quot;,
+  &quot;slot_selected_or_spent&quot;: false,
+  &quot;experiments_used&quot;: 1,
+  &quot;experiments_budget&quot;: 3,
+  &quot;verdict&quot;: &quot;negative&quot;,
+  &quot;verdict_reason&quot;: &quot;The candidate is format-valid and unique by construction versus the nine focus-site rasters (0% forward 3-px overlap), and its PROJECTED leaderboard value is above the B2 projection. However, its HOLDOUT-DTI is 0.000 (below the random control) because the method is off-catalogue by design, and it fails the literal 13GEMS covering-lattice probe. Under the parallel-run protocol a candidate that has not beaten the holdout best is not promoted to a weekly slot. This is a research artifact, not an organizer-cleared submission.&quot;,
+  &quot;owner_decision_required&quot;: &quot;Decide whether the off-catalogue projection or the catalogue hide-and-recover holdout governs promotion. The two instruments disagree by construction: the organizer masks known faults, while the holdout truth is the catalogue.&quot;,
+  &quot;known_deviations&quot;: [
+    &quot;The shared gems57.holdout evaluator (gems57-holdout-v1) is used for the holdout; the prior nine-site table used gems57-pooled-hide-v2. The two evaluators are not interchangeable.&quot;,
+    &quot;The projection is an OLS extrapolation from nine USER-REPORTED scores; it is not a score and cannot see surface quality.&quot;,
+    &quot;The 13GEMS lattice probe is a covering grid; the literal 70% rule is saturated and every dotted raster on this grid fails it. This is flagged as an owner decision, not waived.&quot;,
+    &quot;The reference candidates are research artifacts from the same project family, not organizer-cleared submissions. The consensus is a new method, not an exact copy.&quot;
+  ]
+}</pre></details></section>
+</main>
+<footer>
+  <div class="wrap">
+    <div><strong>Korea7</strong> · GEMS fault-prospectivity submission audit · generated 2026-11-04</div>
+    <div>Research artifact. No organizer receipt. <a href="sources.html">Sources &amp; hashes</a></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "schema": "korea7-site-manifest-v1",
+  "generated_utc": "2026-11-04",
+  "candidate": {
+    "name": "korea7-consensus-offcat-20k-20261104-zeros",
+    "tif": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+    "zip": "korea7-consensus-offcat-20k-20261104-zeros.zip",
+    "sha256": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c",
+    "zip_sha256": "7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5",
+    "bytes": 102331,
+    "dots": 20000,
+    "projected": 0.3381805960516634,
+    "projected_interval": [
+      0.32770294049755905,
+      0.3525366710930341
+    ],
+    "holdout_dti": 0.0,
+    "holdout_ci": [
+      0.0,
+      0.0
+    ],
+    "random_dti": 0.03195774890885529,
+    "nine_focus_gate_passes": true,
+    "lattice_overlap": 0.9996,
+    "verdict": "negative",
+    "ok_to_submit": false
+  },
+  "pages": [
+    "index.html",
+    "executive-summary.html",
+    "how-to-submit.html",
+    "validation.html",
+    "sources.html",
+    "site-GEMSDOE24.html",
+    "site-GEMSDOE25.html",
+    "site-GEMSDOE27.html",
+    "site-GEMSDOE28.html",
+    "site-GEMSDOE30.html",
+    "site-GEMSDOE31.html",
+    "site-GEMSDOE32.html",
+    "site-GEMSDOE33.html",
+    "site-GEMSDOE36.html"
+  ],
+  "downloads": [
+    "downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+    "downloads/korea7-consensus-offcat-20k-20261104-zeros.zip",
+    "downloads/korea7-consensus-offcat-20k-20261104-zeros.json"
+  ]
+}

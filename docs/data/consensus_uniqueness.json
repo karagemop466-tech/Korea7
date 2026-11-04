@@ -1,0 +1,76 @@
+{
+  "schema": "korea7-consensus-uniqueness-v1",
+  "candidate": {
+    "file": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+    "sha256": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c"
+  },
+  "rule": {
+    "rho_limit": 0.9,
+    "overlap_limit": 0.7,
+    "dot_radius_px": 3
+  },
+  "focus": {
+    "GEMSDOE24": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.006760075156218131
+    },
+    "GEMSDOE25": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005782532123991141
+    },
+    "GEMSDOE27": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.00683139283241379
+    },
+    "GEMSDOE28": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005340916666160865
+    },
+    "GEMSDOE30": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005782532123991141
+    },
+    "GEMSDOE31": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005519386086007269
+    },
+    "GEMSDOE32": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005340488067901635
+    },
+    "GEMSDOE33": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005633512569643698
+    },
+    "GEMSDOE36": {
+      "forward_3px_overlap": 0.0,
+      "reverse_3px_overlap": 0.0,
+      "exact_mask_equal": false,
+      "surface_spearman": -0.005425553636824374
+    },
+    "13GEMSDOE_lattice": {
+      "forward_3px_overlap": 0.9996,
+      "reverse_3px_overlap": 0.0763382392034607,
+      "surface_spearman": -0.0003143608750861239,
+      "note": "covering-grid probe; every dotted raster on this grid exceeds the literal 70% rule"
+    }
+  },
+  "nine_focus_gate_passes": true,
+  "max_abs_surface_spearman_focus": 0.00683139283241379
+}
