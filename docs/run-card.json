@@ -1,17 +1,17 @@
 {
-  "hypothesis": "Multi-scale magnetic-gradient discontinuity coherence (proposed only; lane assignment not supplied)",
-  "mechanism": "Coherent magnetic edges at multiple scales may indicate an unmapped basement discontinuity.",
-  "non_fault_mimic": "Lithologic contact or magnetic survey-line artifact",
+  "hypothesis": null,
+  "mechanism": null,
+  "non_fault_mimic": null,
   "holdout_dti": null,
   "holdout_evaluator_version": null,
   "withheld_positives": null,
   "holdout_95_percent_ci": null,
-  "registry_rank_correlation": null,
-  "registry_dot_overlap_within_3_pixels": null,
+  "registry_surface_rank_correlation": null,
+  "registry_dot_overlap_within_3px": null,
   "raster_sha256": null,
-  "validator_output": "Not run: candidate and official reference absent; finite footprint, range, CRS, shape and transform unknown.",
+  "validator_output": "BLOCKED: no candidate raster, official reference/footprint, or complete registry; finite values, [0,1], CRS, shape, and transform are unverified.",
   "submission_name": null,
   "submission_note": null,
   "verdict": "negative",
-  "reason": "No experiment or raster generated; shared tools, input data, registry and explicit lane are unavailable."
+  "reason": "No explicit method lane, competition data, shared holdout evaluator/writer, candidate, or complete registry is available in this checkout. No experiment was run and no submission slot was used."
 }
