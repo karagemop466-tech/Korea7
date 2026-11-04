@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Source audit</title>
+<style>
+body{font:16px/1.62 system-ui,sans-serif;max-width:1020px;margin:2rem auto;padding:0 1.1rem;color:#12202e}
+h1{font-size:1.7rem}h2{margin-top:2.2rem}code{background:#eef2f6;padding:.08rem .3rem;border-radius:4px;font-size:.9em}
+table{border-collapse:collapse;width:100%;margin:.7rem 0;font-size:.93rem}
+td,th{border-bottom:1px solid #d7e0e8;padding:.5rem;text-align:left;vertical-align:top}
+th{background:#eef4f8}a{color:#0755a0}.flag{border-left:6px solid #b42318;background:#fff1f0;padding:.8rem;border-radius:6px;margin:1rem 0}
+.ok{border-left:6px solid #0a7a3d;background:#effaf3;padding:.8rem;border-radius:6px;margin:1rem 0}
+small{color:#52657a}
+</style></head><body>
+<h1>Source audit: every claim, where it came from, and what is uncertain</h1>
+<p><small>Audited 2026-11-04 inside a sandbox whose outbound allowlist is
+<code>github.com</code>, <code>api.github.com</code>, <code>codeload.github.com</code>,
+<code>pypi.org</code>, <code>files.pythonhosted.org</code>. Anything else is reported as unreachable
+rather than assumed.</small></p>
+
+<h2>A. Claims that were checked directly</h2>
+<table><thead><tr><th>#</th><th>Claim</th><th>How it was checked</th><th>Link</th></tr></thead><tbody>
+<tr><td>1</td><td>Grid is EPSG:32611 at 100 m</td>
+<td>read from the official reference notebook, cell 7, whose figure title is "Various numeric features (EPSG:32611, 100m resolution)"</td>
+<td><a href="https://github.com/drivendataorg/gems-prize-reference-solution">drivendataorg/gems-prize-reference-solution</a></td></tr>
+<tr><td>2</td><td>Grid is 3292 x 3730 with transform (100, 0, 250000, 0, -100, 4520000)</td>
+<td>read with <code>rasterio</code> from a GeoTIFF published as being in submission format; then cross-checked by projecting the corners to WGS84, which gives 119.83-116.10 W, 37.44-40.83 N - western Nevada / eastern California, the GeoDAWN area</td>
+<td><a href="https://github.com/kevin9327/DOEGEMSChallenge">kevin9327/DOEGEMSChallenge</a> (third party: the transform is <em>consistent</em> with the official statement above, it is not itself official)</td></tr>
+<tr><td>3</td><td>The reference solution trains a U-Net with Tversky alpha 0.2, beta 0.8</td>
+<td>read in the notebook, cell 16</td><td>same as #1</td></tr>
+<tr><td>4</td><td>The metric is a 300 m triangular kernel with alpha 0.2 / beta 0.8</td>
+<td>two independent public implementations agree on the formula, and the published worked example reproduces: tp 3, fp 1.89, fn 2 gives 0.6027 in our code, described as 0.60</td>
+<td><a href="https://github.com/munimtechnologies/gems-fault-mapping">munimtechnologies/gems-fault-mapping</a> (<code>gems_metric.py</code>, Apache-2.0)</td></tr>
+<tr><td>5</td><td>Two independent real fault catalogues agree at DTI 0.796; a 14-21 km displaced map scores 0.045; fault cells are 1.39% of the footprint and 8.37% lie within 300 m</td>
+<td>copied as-is from a CC BY 4.0 results document produced by running the metric on the real USGS Nevada release; used here only as calibration anchors for a synthetic testbed</td>
+<td><a href="https://github.com/munimtechnologies/gems-fault-mapping/blob/main/docs/agreement-2026-10.md">docs/agreement-2026-10.md</a></td></tr>
+<tr><td>6</td><td><code>buffedlizard55-lab</code> is not publicly visible</td>
+<td><code>GET api.github.com/users/buffedlizard55-lab</code> returns HTTP 404 and <code>*.github.io</code> does not resolve from this sandbox</td><td>-</td></tr>
+<tr><td>7</td><td>The 36 unit tests pass</td><td><code>python -m pytest -q</code> in this checkout</td><td>-</td></tr>
+</tbody></table>
+
+<h2>B. Irregularities flagged for review</h2>
+<div class="flag"><strong>F1 - Conflicting leader scores in the brief.</strong> The same brief states the
+current leader is 0.4413 and later 0.3195. Both are unverified here; they cannot both be current.
+No design decision in this repository depends on either number.</div>
+<div class="flag"><strong>F2 - The nine sites cannot be inspected.</strong> Their GitHub Pages hosts are
+unreachable and the owning account returns 404. Every "reported" score in this repo is therefore a
+<em>user-reported</em> value, and no uniqueness judgement about them is possible until their rasters
+are supplied as a registry manifest.</div>
+<div class="flag"><strong>F3 - The metric is transcribed, not organisers' code.</strong> The problem
+description page is unreachable from the sandbox. The implementation here follows two independent
+public versions and passes hand-worked checks, but the official epsilon, edge handling and truth
+threshold could differ. Treat absolute values as replicable, not certified.</div>
+<div class="flag"><strong>F4 - "nan" and "zeros" suffixes mean two different fill conventions.</strong>
+Several reported submissions are named <code>-nan</code>, others <code>-zeros</code>. A NaN fill may be
+rejected by the form ("Predicted values must be in range [0, 1]"). Our writer never emits NaN and the
+validator fails closed.</div>
+<div class="flag"><strong>F5 - A public third-party raster in submission format contains NaN.</strong>
+The GeoTIFF at kevin9327/DOEGEMSChallenge contains 7.19% NaN and a maximum of 0.94. Whether the
+organizer tolerates that is unknown; our validator rejects it. This is not an accusation, it is the
+reason the validator is strict.</div>
+<div class="flag"><strong>F6 - An unreproducible claim was found and not reused.</strong> That same
+repository claims its emitter takes a local score from 0.2728 to 0.8590 (+214.8%). Nothing in the
+reachable material supports a leaderboard score of 0.86, and the live leader is reported below 0.45,
+so the number is a local-benchmark figure at best. Nothing in this repository depends on it.</div>
+<div class="flag"><strong>F7 - No competition data means no scientific claim.</strong> The features,
+the labels and the sample grid are behind a login. Every model number here was produced on synthetic
+data of the same format. It proves code paths; it says nothing about the real geology.</div>
+
+<div class="flag"><strong>F8 - Two different grid origins exist inside this repository.</strong>
+Candidates committed by other sessions use origin <code>(243350.0, 4508550.0)</code>; the grid in
+<code>gems/grid.py</code> uses <code>(250000.0, 4520000.0)</code>. Same CRS, same 100 m pixels, same
+3292 x 3730 shape, but 6.65 km apart in easting and 11.45 km in northing. Both sit inside the GeoDAWN
+area, so geography cannot discriminate them. <code>sample_submission.tif</code> can, and only it can.
+Our validator therefore demands a reference and emits an explicit warning when it has to fall back to
+the recorded constants. <em>Do not upload a candidate until this is settled.</em></div>
+<div class="flag"><strong>F9 - The parallel candidates fail this lane's format gate on that basis.</strong>
+<code>gems.validate</code> returns <code>FAIL (transform_match)</code> for all three
+<code>docs/downloads/korea7-*.tif</code> files when compared with the recorded grid. That is a
+statement about geometry, not about anyone's method, and it is re-computed every time the summary page
+is rebuilt.</div>
+<div class="flag"><strong>F10 - Producer receipts are not organizer receipts.</strong> The
+<code>*.receipt.json</code> files next to the candidates record what the producer did (seed, dot count,
+sha256, CRS). They do not record a score, and several say so explicitly ("score not
+measurable (login-gated data)"). They are useful provenance; they are not leaderboard evidence.</div>
+
+<h2>C. What is deliberately not claimed</h2>
+<ul>
+<li>No leaderboard score is claimed, for any submission, ours or the nine sites'.</li>
+<li>No duplicate check against the nine sites was possible; the registry gate therefore returns
+<code>UNKNOWN</code> (a block) rather than a pass.</li>
+<li>No "unique method" claim is made in the sense of novelty search; the claim made is narrower and
+checkable: no site in the supplied lists names calibrated sparse emission with a Dinkelbach threshold
+and a per-fold feature-set contest, and the coverage-aware variant that was our novel part is reported
+as a <em>loss</em>.</li>
+</ul>
+
+<h2>D. Reproduce everything</h2>
+<pre><code>python scripts/run_experiments.py   # ~90 s, writes docs/results/*.json
+python scripts/make_demo_data.py &amp;&amp; python scripts/build_submission.py --data demo --out out/demo.tif
+python -m pytest -q                 # 36 tests
+python scripts/make_report.py       # rebuilds this site from the JSON</code></pre>
+<p><small><a href="index.html">executive summary</a> - <a href="method.html">method</a></small></p>
+</body></html>

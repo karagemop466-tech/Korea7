@@ -1,8 +1,11 @@
 .venv/
 __pycache__/
 .pytest_cache/
-data/
 .cache/
+data/
+demo/
+out/
 *.tif
 *.tiff
+# exception: published submission candidates and the format probe
 !docs/downloads/*.tif

@@ -1,0 +1,694 @@
+{
+  "e1": {
+    "experiment": "E1-metric-and-testbed",
+    "label": "ARITHMETIC + SIMULATION",
+    "hand_checks": {
+      "single_pixel_on_target": 1.0,
+      "single_pixel_1px_off": 0.6667,
+      "single_pixel_2px_off": 0.3333,
+      "single_pixel_3px_off": 0.0,
+      "worked_example_3_1.89_2": 0.6027,
+      "empty_prediction": 0.0,
+      "uniform_0.02_background": 0.0001
+    },
+    "band_table": [
+      {
+        "width_px": 1,
+        "offset_px": 0,
+        "dti": 1.0
+      },
+      {
+        "width_px": 1,
+        "offset_px": 1,
+        "dti": 0.6667
+      },
+      {
+        "width_px": 1,
+        "offset_px": 2,
+        "dti": 0.3333
+      },
+      {
+        "width_px": 3,
+        "offset_px": 0,
+        "dti": 0.8333
+      },
+      {
+        "width_px": 3,
+        "offset_px": 1,
+        "dti": 0.5
+      },
+      {
+        "width_px": 3,
+        "offset_px": 2,
+        "dti": 0.2381
+      },
+      {
+        "width_px": 5,
+        "offset_px": 0,
+        "dti": 0.625
+      },
+      {
+        "width_px": 5,
+        "offset_px": 1,
+        "dti": 0.3846
+      },
+      {
+        "width_px": 5,
+        "offset_px": 2,
+        "dti": 0.1852
+      },
+      {
+        "width_px": 7,
+        "offset_px": 0,
+        "dti": 0.5
+      },
+      {
+        "width_px": 7,
+        "offset_px": 1,
+        "dti": 0.3125
+      },
+      {
+        "width_px": 7,
+        "offset_px": 2,
+        "dti": 0.1515
+      }
+    ],
+    "testbed_calibration": {
+      "chosen": {
+        "omission": 0.08,
+        "jitter_px": 0.3
+      },
+      "agreement_dti": 0.7925,
+      "chance_dti": 0.0326,
+      "anchors": {
+        "agreement": 0.796,
+        "chance": 0.045,
+        "density": 0.0139,
+        "coverage_300m": 0.0837
+      },
+      "measured": {
+        "density": 0.0143,
+        "coverage_300m": 0.0778
+      },
+      "search": [
+        {
+          "omission": 0.02,
+          "jitter_px": 0.2,
+          "dti": 0.7537
+        },
+        {
+          "omission": 0.02,
+          "jitter_px": 0.3,
+          "dti": 0.7368
+        },
+        {
+          "omission": 0.02,
+          "jitter_px": 0.5,
+          "dti": 0.6795
+        },
+        {
+          "omission": 0.05,
+          "jitter_px": 0.2,
+          "dti": 0.7314
+        },
+        {
+          "omission": 0.05,
+          "jitter_px": 0.3,
+          "dti": 0.7128
+        },
+        {
+          "omission": 0.05,
+          "jitter_px": 0.5,
+          "dti": 0.6584
+        },
+        {
+          "omission": 0.08,
+          "jitter_px": 0.2,
+          "dti": 0.8236
+        },
+        {
+          "omission": 0.08,
+          "jitter_px": 0.3,
+          "dti": 0.7925
+        },
+        {
+          "omission": 0.08,
+          "jitter_px": 0.5,
+          "dti": 0.7387
+        },
+        {
+          "omission": 0.12,
+          "jitter_px": 0.2,
+          "dti": 0.7868
+        },
+        {
+          "omission": 0.12,
+          "jitter_px": 0.3,
+          "dti": 0.7663
+        },
+        {
+          "omission": 0.12,
+          "jitter_px": 0.5,
+          "dti": 0.7128
+        }
+      ],
+      "shape": [
+        900,
+        900
+      ],
+      "seed": 0
+    },
+    "notes": [
+      "TP_w is a max over the kernel and FP_w is a sum over positives, so a 1-px band scores 1.00 on target while a 5-px band scores 0.625 and a 3-px band one pixel off scores 0.238.",
+      "A uniform 0.02 background over a 201x201 field with one truth cell scores essentially zero: FP_w grows by the number of positives."
+    ]
+  },
+  "e2": {
+    "experiment": "E2-emission-layer",
+    "label": "SIMULATION (not a leaderboard score)",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "shape": [
+      900,
+      900
+    ],
+    "evidence_auc_mean": 0.807,
+    "methods": {
+      "threshold": {
+        "mean_dti": 0.6086,
+        "ci95_halfwidth": 0.2384,
+        "per_seed": [
+          0.729,
+          0.7229,
+          0.7238,
+          0.5842,
+          0.283
+        ]
+      },
+      "nms": {
+        "mean_dti": 0.5464,
+        "ci95_halfwidth": 0.1804,
+        "per_seed": [
+          0.637,
+          0.6379,
+          0.6359,
+          0.5175,
+          0.3034
+        ]
+      },
+      "topk": {
+        "mean_dti": 0.7169,
+        "ci95_halfwidth": 0.0277,
+        "per_seed": [
+          0.7322,
+          0.7339,
+          0.7316,
+          0.7023,
+          0.6846
+        ]
+      },
+      "coverage": {
+        "mean_dti": 0.485,
+        "ci95_halfwidth": 0.0849,
+        "per_seed": [
+          0.4379,
+          0.4713,
+          0.4216,
+          0.4993,
+          0.595
+        ]
+      },
+      "topk_matched": {
+        "mean_dti": 0.3971,
+        "ci95_halfwidth": 0.1397,
+        "per_seed": [
+          0.335,
+          0.3468,
+          0.3081,
+          0.4081,
+          0.5874
+        ]
+      }
+    },
+    "coverage_emission_gain_over_best_baseline": -0.2319,
+    "hyperparameters": {
+      "0": {
+        "lam_threshold": 0.5,
+        "lam_nms": 0.5,
+        "topk": 16000,
+        "evidence": {
+          "auc": 0.8329,
+          "noise": 0.5
+        },
+        "calibration": {
+          "kind": "isotonic-pav",
+          "n_bins": 256,
+          "n_samples": 810000,
+          "n_positive": 11581,
+          "prior": 0.01429753086419753
+        },
+        "calib_dti": {
+          "threshold": 0.7182,
+          "nms": 0.6334,
+          "topk": 0.7294
+        },
+        "coverage_emitted": 1729,
+        "topk_emitted": 16000
+      },
+      "1": {
+        "lam_threshold": 0.5,
+        "lam_nms": 0.5,
+        "topk": 16000,
+        "evidence": {
+          "auc": 0.8371,
+          "noise": 0.5
+        },
+        "calibration": {
+          "kind": "isotonic-pav",
+          "n_bins": 256,
+          "n_samples": 810000,
+          "n_positive": 10755,
+          "prior": 0.013277777777777777
+        },
+        "calib_dti": {
+          "threshold": 0.7215,
+          "nms": 0.6383,
+          "topk": 0.7287
+        },
+        "coverage_emitted": 1954,
+        "topk_emitted": 16000
+      },
+      "2": {
+        "lam_threshold": 0.5,
+        "lam_nms": 0.5,
+        "topk": 16000,
+        "evidence": {
+          "auc": 0.8337,
+          "noise": 0.5
+        },
+        "calibration": {
+          "kind": "isotonic-pav",
+          "n_bins": 256,
+          "n_samples": 810000,
+          "n_positive": 11117,
+          "prior": 0.013724691358024692
+        },
+        "calib_dti": {
+          "threshold": 0.7123,
+          "nms": 0.6287,
+          "topk": 0.7246
+        },
+        "coverage_emitted": 1870,
+        "topk_emitted": 16000
+      },
+      "3": {
+        "lam_threshold": 0.5,
+        "lam_nms": 0.5,
+        "topk": 16000,
+        "evidence": {
+          "auc": 0.7684,
+          "noise": 0.7
+        },
+        "calibration": {
+          "kind": "isotonic-pav",
+          "n_bins": 256,
+          "n_samples": 810000,
+          "n_positive": 13170,
+          "prior": 0.016259259259259258
+        },
+        "calib_dti": {
+          "threshold": 0.701,
+          "nms": 0.6236,
+          "topk": 0.7016
+        },
+        "coverage_emitted": 2483,
+        "topk_emitted": 16000
+      },
+      "4": {
+        "lam_threshold": 0.5,
+        "lam_nms": 0.5,
+        "topk": 16000,
+        "evidence": {
+          "auc": 0.7629,
+          "noise": 0.7
+        },
+        "calibration": {
+          "kind": "isotonic-pav",
+          "n_bins": 256,
+          "n_samples": 810000,
+          "n_positive": 13692,
+          "prior": 0.016903703703703702
+        },
+        "calib_dti": {
+          "threshold": 0.7261,
+          "nms": 0.6374,
+          "topk": 0.7328
+        },
+        "coverage_emitted": 4354,
+        "topk_emitted": 16000
+      }
+    },
+    "notes": [
+      "The score->probability calibration and every hyper-parameter are fitted on an independent network (seed 100+seed) and applied unchanged to the evaluated network; the evaluated labels are only used to score.",
+      "coverage_emission optimises expected DTI directly with a Dinkelbach outer loop and a coverage-aware greedy inner loop."
+    ]
+  },
+  "e3": {
+    "experiment": "E3-regime-sensitivity",
+    "label": "SIMULATION (not a leaderboard score)",
+    "regimes": {
+      "R1_full_network": "truth = every cell of the synthetic network (the catalogue itself already covers ~74% of it)",
+      "R2_unmapped_only": "truth = network cells more than 300 m from any catalogue cell (the 'newly identified faults' reading)",
+      "R3_near_miss_only": "truth = unmapped cells that lie within 12 px (1.2 km) of a catalogue cell (expert-plausible extensions)"
+    },
+    "methods": {
+      "R1_full_network": {
+        "oracle": {
+          "mean_dti": 1.0,
+          "ci95_halfwidth": 0.0,
+          "n_seeds": 5,
+          "per_seed": [
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "catalogue_dilate3": {
+          "mean_dti": 0.4642,
+          "ci95_halfwidth": 0.038,
+          "n_seeds": 5,
+          "per_seed": [
+            0.4672,
+            0.4807,
+            0.4198,
+            0.5009,
+            0.4522
+          ]
+        },
+        "tip_extension": {
+          "mean_dti": 0.0186,
+          "ci95_halfwidth": 0.0029,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0193,
+            0.0211,
+            0.0148,
+            0.0198,
+            0.018
+          ]
+        },
+        "gap_closure": {
+          "mean_dti": 0.0023,
+          "ci95_halfwidth": 0.0026,
+          "n_seeds": 5,
+          "per_seed": [
+            0.002,
+            0.0009,
+            0.0054,
+            0.0033,
+            0.0
+          ]
+        },
+        "tips_plus_gaps": {
+          "mean_dti": 0.0193,
+          "ci95_halfwidth": 0.0025,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0199,
+            0.0213,
+            0.0166,
+            0.0209,
+            0.018
+          ]
+        },
+        "weak_evidence": {
+          "mean_dti": 0.0964,
+          "ci95_halfwidth": 0.0371,
+          "n_seeds": 5,
+          "per_seed": [
+            0.079,
+            0.0839,
+            0.1446,
+            0.0695,
+            0.1052
+          ]
+        },
+        "evidence_plus_geometry": {
+          "mean_dti": 0.0967,
+          "ci95_halfwidth": 0.0372,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0793,
+            0.0842,
+            0.145,
+            0.0697,
+            0.1054
+          ]
+        }
+      },
+      "R2_unmapped_only": {
+        "oracle": {
+          "mean_dti": 0.5869,
+          "ci95_halfwidth": 0.1361,
+          "n_seeds": 5,
+          "per_seed": [
+            0.5617,
+            0.5426,
+            0.7418,
+            0.4499,
+            0.6387
+          ]
+        },
+        "catalogue_dilate3": {
+          "mean_dti": 0.0059,
+          "ci95_halfwidth": 0.003,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0062,
+            0.0072,
+            0.0031,
+            0.0039,
+            0.0091
+          ]
+        },
+        "tip_extension": {
+          "mean_dti": 0.0133,
+          "ci95_halfwidth": 0.0057,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0153,
+            0.0163,
+            0.0055,
+            0.0164,
+            0.0132
+          ]
+        },
+        "gap_closure": {
+          "mean_dti": 0.0032,
+          "ci95_halfwidth": 0.0036,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0038,
+            0.0006,
+            0.0045,
+            0.0069,
+            0.0
+          ]
+        },
+        "tips_plus_gaps": {
+          "mean_dti": 0.0146,
+          "ci95_halfwidth": 0.0059,
+          "n_seeds": 5,
+          "per_seed": [
+            0.017,
+            0.0165,
+            0.0071,
+            0.0193,
+            0.0132
+          ]
+        },
+        "weak_evidence": {
+          "mean_dti": 0.2705,
+          "ci95_halfwidth": 0.0408,
+          "n_seeds": 5,
+          "per_seed": [
+            0.2363,
+            0.2627,
+            0.3173,
+            0.2472,
+            0.2892
+          ]
+        },
+        "evidence_plus_geometry": {
+          "mean_dti": 0.2701,
+          "ci95_halfwidth": 0.041,
+          "n_seeds": 5,
+          "per_seed": [
+            0.2357,
+            0.262,
+            0.3172,
+            0.2467,
+            0.2887
+          ]
+        }
+      },
+      "R3_near_miss_only": {
+        "oracle": {
+          "mean_dti": 0.1237,
+          "ci95_halfwidth": 0.0371,
+          "n_seeds": 5,
+          "per_seed": [
+            0.146,
+            0.1484,
+            0.0967,
+            0.0861,
+            0.1414
+          ]
+        },
+        "catalogue_dilate3": {
+          "mean_dti": 0.0067,
+          "ci95_halfwidth": 0.0034,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0069,
+            0.0079,
+            0.0039,
+            0.0042,
+            0.0105
+          ]
+        },
+        "tip_extension": {
+          "mean_dti": 0.083,
+          "ci95_halfwidth": 0.0093,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0785,
+            0.0794,
+            0.0752,
+            0.0924,
+            0.0897
+          ]
+        },
+        "gap_closure": {
+          "mean_dti": 0.0306,
+          "ci95_halfwidth": 0.0401,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0233,
+            0.0031,
+            0.0752,
+            0.0515,
+            0.0
+          ]
+        },
+        "tips_plus_gaps": {
+          "mean_dti": 0.0923,
+          "ci95_halfwidth": 0.0131,
+          "n_seeds": 5,
+          "per_seed": [
+            0.0869,
+            0.0801,
+            0.097,
+            0.1078,
+            0.0897
+          ]
+        },
+        "weak_evidence": {
+          "mean_dti": 0.2154,
+          "ci95_halfwidth": 0.0262,
+          "n_seeds": 5,
+          "per_seed": [
+            0.2399,
+            0.2299,
+            0.1867,
+            0.2033,
+            0.2174
+          ]
+        },
+        "evidence_plus_geometry": {
+          "mean_dti": 0.2139,
+          "ci95_halfwidth": 0.0248,
+          "n_seeds": 5,
+          "per_seed": [
+            0.2373,
+            0.2277,
+            0.187,
+            0.2022,
+            0.2153
+          ]
+        }
+      }
+    },
+    "per_seed_diagnostics": [
+      {
+        "seed": 0,
+        "truth_cells": 11595,
+        "catalogue_cells": 9312,
+        "unmapped_cells": 2357,
+        "unmapped_frac_of_truth": 0.203,
+        "near_miss_cells": 381,
+        "evidence_auc": 0.6319,
+        "evidence_emitted": 1105
+      },
+      {
+        "seed": 1,
+        "truth_cells": 11854,
+        "catalogue_cells": 9625,
+        "unmapped_cells": 2264,
+        "unmapped_frac_of_truth": 0.191,
+        "near_miss_cells": 397,
+        "evidence_auc": 0.6417,
+        "evidence_emitted": 1019
+      },
+      {
+        "seed": 2,
+        "truth_cells": 12941,
+        "catalogue_cells": 8304,
+        "unmapped_cells": 4712,
+        "unmapped_frac_of_truth": 0.364,
+        "near_miss_cells": 270,
+        "evidence_auc": 0.6362,
+        "evidence_emitted": 1299
+      },
+      {
+        "seed": 3,
+        "truth_cells": 12426,
+        "catalogue_cells": 10693,
+        "unmapped_cells": 1743,
+        "unmapped_frac_of_truth": 0.14,
+        "near_miss_cells": 229,
+        "evidence_auc": 0.6388,
+        "evidence_emitted": 1100
+      },
+      {
+        "seed": 4,
+        "truth_cells": 10739,
+        "catalogue_cells": 7936,
+        "unmapped_cells": 2790,
+        "unmapped_frac_of_truth": 0.26,
+        "near_miss_cells": 340,
+        "evidence_auc": 0.6416,
+        "evidence_emitted": 1039
+      }
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "notes": [
+      "'oracle' is the withheld truth emitted perfectly; it is the ceiling for any method under that regime and is not a submission.",
+      "The three regimes are mutually exclusive readings of the evaluator's cell set; the leaderboard's actual rule is not reachable from this sandbox."
+    ]
+  },
+  "wall_seconds": 90.5
+}
