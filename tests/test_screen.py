@@ -9,11 +9,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from check_candidate import SITES, screen, sha256
 
 
-def write(path, data, transform=None):
+def write(path, data, transform=None, dtype='float32'):
     with rasterio.open(path, 'w', driver='GTiff', height=data.shape[0], width=data.shape[1],
-                       count=1, dtype='float32', crs='EPSG:32611',
+                       count=1, dtype=dtype, crs='EPSG:32611',
                        transform=transform or from_origin(0, 100, 1, 1)) as dst:
-        dst.write(data.astype('float32'), 1)
+        dst.write(data.astype(dtype), 1)
 
 
 def fixtures(tmp_path):
@@ -34,6 +34,17 @@ def fixtures(tmp_path):
 def test_screen_is_not_approval(tmp_path):
     args = fixtures(tmp_path)
     assert screen(**args)['status'] == 'SCREENED_NOT_APPROVED'
+
+
+def test_non_float32_candidate_blocks(tmp_path):
+    args = fixtures(tmp_path)
+    with rasterio.open(args['candidate']) as src:
+        data = src.read(1)
+        transform = src.transform
+    write(args['candidate'], data, transform, dtype='float64')
+    result = screen(**args)
+    assert result['status'] == 'BLOCKED'
+    assert result['format']['float32'] is False
 
 
 def test_out_of_range_and_nan_block(tmp_path):

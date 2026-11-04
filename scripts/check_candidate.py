@@ -53,7 +53,10 @@ def screen(candidate, surface, reference, footprint, manifest):
         if not inside.any():
             raise ValueError('empty footprint')
         result['sha256'] = sha256(candidate)
+        with rasterio.open(candidate) as candidate_ds:
+            float32 = candidate_ds.dtypes[0] == 'float32'
         result['format'] = {'single_band_crs_shape_transform_match': True,
+                            'float32': float32,
                             'finite_inside': bool(np.isfinite(pred[inside]).all()),
                             'finite_all': bool(np.isfinite(pred).all()),
                             'all_values_in_0_1': bool(np.isfinite(pred).all() and ((pred >= 0) & (pred <= 1)).all())}

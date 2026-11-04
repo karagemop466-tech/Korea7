@@ -27,6 +27,7 @@ def validate(candidate, reference):
             checks = {
                 'geotiff': src.driver == 'GTiff',
                 'single_band': src.count == 1,
+                'float32': src.count == 1 and src.dtypes[0] == 'float32',
                 'reference_has_crs': ref.crs is not None,
                 'crs_match': src.crs is not None and src.crs == ref.crs,
                 'shape_match': (src.height, src.width) == (ref.height, ref.width),

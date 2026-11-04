@@ -37,7 +37,7 @@ def test_bad_values(tmp_path, value):
     assert not v.validate(candidate, ref)['format_preflight_passed']
 
 
-@pytest.mark.parametrize('options', [dict(count=2), dict(crs='EPSG:4326'),
+@pytest.mark.parametrize('options', [dict(count=2), dict(dtype='float64'), dict(crs='EPSG:4326'),
                                       dict(transform=from_origin(101, 200, 10, 10)),
                                       dict(nodata=0)])
 def test_bad_metadata_or_mask(tmp_path, options):

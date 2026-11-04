@@ -24,6 +24,7 @@ def validate(candidate, reference):
             checks['reference_single_band'] = ref.count == 1
             checks['geotiff'] = src.driver == 'GTiff'
             checks['single_band'] = src.count == 1
+            checks['float32'] = src.count == 1 and src.dtypes[0] == 'float32'
             checks['crs_match'] = ref.crs is not None and src.crs == ref.crs
             checks['shape_match'] = (src.height, src.width) == (ref.height, ref.width)
             checks['transform_match'] = tuple(src.transform) == tuple(ref.transform)
