@@ -1,0 +1,17 @@
+{
+  "hypothesis": "Multi-scale magnetic-gradient discontinuity coherence; untested",
+  "mechanism": "Coherent multi-scale magnetic edges may indicate structural boundaries absent from the fault catalogue.",
+  "non_fault_mimic": "Lithologic contacts or survey-line artifacts",
+  "holdout_dti": null,
+  "holdout_evaluator_version": null,
+  "withheld_positives": null,
+  "holdout_95_percent_ci": null,
+  "registry_surface_correlation": null,
+  "registry_dot_overlap": null,
+  "raster_sha256": null,
+  "validator_output": "Not run: no candidate or reference raster. No claims of finite pixels, range, CRS, shape or transform match.",
+  "submission_name": null,
+  "submission_note": null,
+  "verdict": "negative",
+  "reason": "Inputs, shared evaluator and registry comparisons unavailable; no experiment or artifact."
+}
