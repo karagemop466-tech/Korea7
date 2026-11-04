@@ -1,3 +1,9 @@
+> **Historical document (superseded 2026-11-04).** This was the audit of a checkout that
+> genuinely contained only a README. The repository now ships the metric, holdout, writer,
+> validator, registry screen, experiments and site described in [index.html](index.html).
+> Its statements about this repository being empty are no longer true; its evidence rules
+> and its refusal to claim unverified scores are still the rules in force.
+
 # Korea7 — GEMS fault-prospectivity submission audit
 
 > **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository currently contains documentation only; it does not contain competition rasters, cached features, validation code, a submission writer, or an existing website.

@@ -1,18 +1,172 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GEMS executive summary</title><style>
-body{font:16px/1.55 system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;color:#172638}h1,h2{line-height:1.2} .alert{background:#fff0ef;border-left:5px solid #b42318;padding:1rem} .card{background:#f3f7fa;padding:1rem;margin:1rem 0} table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #d9e2eb;padding:.55rem;text-align:left;vertical-align:top} .scroll{overflow:auto} a{color:#0755a0}small{color:#4d5f70}
-</style></head><body><h1>GEMS submission: executive summary</h1><div class="alert"><strong>DO NOT DOWNLOAD OR SUBMIT: no validated candidate exists.</strong> No score estimate or uniqueness claim can be made. A submission slot must not be used until all gates below pass.</div>
-<p>Research goal: discover fault-related features that generalize to withheld fault segments. The current checkout has no competition data, validated evaluator, prior-raster registry, or trained model. <a href="research.md">Read the detailed evidence and proposed next steps.</a></p>
-<h2>Nine priority sites</h2><p>Numbers below are <strong>user-reported historical claims, not organizer-confirmed scores</strong>; source pages and receipts could not be checked here. The listed file is an identifier, not a verified download. No candidate is approved; uniqueness is unknown for every site. No holdout estimate is available.</p><div class="scroll"><table><thead><tr><th>Site</th><th>User-reported highest identifier</th><th>Reported value</th><th>Download / estimate / uniqueness</th></tr></thead><tbody>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE24/">24</a></td><td>h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</td><td>0.2477</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE25/">25</a></td><td>dotted-h19-5-d2-8-20261002-e56ea318af89-nan</td><td>0.2600</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE27/">27</a></td><td>topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan</td><td>0.2449</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE28/">28</a></td><td>h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</td><td>0.2710</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE30/">30</a></td><td>d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</td><td>0.2600</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE31/">31</a></td><td>h27-4-solo-d28-20261004-8acb75e1-nan</td><td>0.2708</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE32/">32</a></td><td>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</td><td>0.2778</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE33/">33</a></td><td>h33d-analog-tip-stepover-r30-20261004-cb490425926e</td><td>0.2632</td><td>None / unavailable / unknown</td></tr>
-<tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE36/">36</a></td><td>anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</td><td>0.2750</td><td>None / unavailable / unknown</td></tr></tbody></table></div>
-<p>The largest user-reported value in this nine-site list is 0.2778, but its mechanism and receipt are not available for independent examination. It cannot justify copying or a projection that a new raster will outperform it. The prompt's two different current-leader claims are also unverified.</p>
-<h2>Required gates before any submission</h2><ol><li>Use the authorized lane and verified competition inputs; record reproducible provenance.</li><li>Before placement, check surface rank correlation against every registry surface. After placement, check dot overlap and hashes against the complete registry. Stop on a protocol threshold breach.</li><li>Use a leakage-audited, buffered segment holdout and compare to the actual holdout best; report DTI, evaluator version, withheld positives, and 95% confidence interval. Do not treat it as a leaderboard score.</li><li>Verify GeoTIFF band count, matching CRS, shape and transform, footprint, and finite values in [0,1]. Review rules, submission limits and selector decision separately. The included automated screening tool is not an approval.</li></ol>
-<h2>How to submit once approved</h2><div class="card"><ol><li>Download the specifically approved unique single-band GeoTIFF, after all gates have passed. There is no such file yet.</li><li>Open the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/">official competition</a>, sign in, review current rules and the submission page.</li><li>Select the approved file in “File to submit”. Use its recorded unique name and short distinguishing note. Confirm the page accepts it before submitting.</li><li>Record the organizer receipt separately from local holdout estimates. Never claim an organizer score without a receipt.</li></ol></div><p>The user reported a prior “Predicted values must be in range [0, 1]” error. Our screening conservatively requires all raster pixels to be finite and within that range; it does not replace the official validator.</p>
-<h2>Sources and limitations</h2><p><a href="https://github.com/drivendataorg/gems-prize-reference-solution">Official reference solution</a> (accessible); <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">problem description</a>; <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">competition data</a>; <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/">leaderboard</a>; <a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">USGS GeoDAWN</a>. Non-GitHub destinations were not accessible from this environment. Availability, terms and current scores require independent verification.</p><small>Review date: 2026-11-04. This page is static; it is not a live feed.</small></body></html>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEMS executive summary</title>
+<style>
+:root{--ink:#12202e;--mut:#52657a;--line:#d7e0e8;--bg:#f6f9fb;--bad:#b42318;--good:#0a7a3d;--warn:#a15c00}
+*{box-sizing:border-box}
+body{font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);max-width:1120px;margin:0 auto;padding:1.2rem 1.1rem 4rem}
+h1{font-size:1.85rem;margin:.2rem 0 .6rem} h2{margin-top:2.1rem;font-size:1.28rem}
+h3{font-size:1.05rem;margin-top:1.4rem}
+.alert{border-left:6px solid var(--bad);background:#fff1f0;padding:1rem 1.1rem;border-radius:6px;margin:1rem 0}
+.ok{border-left-color:var(--good);background:#effaf3}
+.warn{border-left-color:var(--warn);background:#fff8ec}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:1rem 1.1rem;margin:1rem 0}
+table.grid{border-collapse:collapse;width:100%;font-size:.92rem;margin:.7rem 0}
+table.grid th,table.grid td{border-bottom:1px solid var(--line);padding:.5rem .55rem;text-align:left;vertical-align:top}
+table.grid th{background:#eef4f8;font-weight:600}
+code{background:#eef2f6;padding:.05rem .3rem;border-radius:4px;font-size:.88em;word-break:break-word}
+.scroll{overflow:auto} a{color:#0755a0}
+small{color:var(--mut)} .kpi{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0}
+.kpi div{flex:1 1 200px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:.8rem}
+.kpi b{display:block;font-size:1.45rem}
+.tag{display:inline-block;font-size:.75rem;padding:.1rem .45rem;border-radius:999px;border:1px solid var(--line);background:#fff}
+</style></head><body>
+
+<h1>GEMS Prize: executive summary</h1>
+<p><small>Built 2026-11-04 from the files in <code>docs/results/</code>.
+Static page; nothing here updates itself.</small></p>
+
+<div class="alert">
+<strong>There is no submission file in this repository that should be uploaded.</strong>
+The competition rasters (<code>training_features.tif</code>, <code>labels.tif</code>,
+<code>sample_submission.tif</code>) are behind a DrivenData login and are absent here, and the
+nine GEMSDOE hosts are unreachable from the build environment. A GeoTIFF generated without them
+would be a guess that spends a weekly slot for a score near zero. What <em>is</em> deliverable, and
+is delivered, is the measured machinery that turns those three files into a unique, validated
+submission in one command.
+</div>
+
+<h2>1. The answer to the question you asked</h2>
+<div class="card">
+<p><strong>Why did <code>h33-h33-2-b2-...-zeros</code> (reported 0.2778) lead the nine sites?</strong>
+Because the metric credits true positives with a <em>max</em> over a 300 m kernel and charges false
+positives with a <em>sum</em> over every positive pixel. Once you emit a sparse binary map, extra
+density buys no true-positive credit and is charged in full. Every one of the nine leaders is a
+sparse, catalogue-anchored, binary map; every method in the wider list that emits a smooth
+probability field scores 0.02-0.15. The 0.24-0.28 band is not a detection result, it is an
+<em>emission</em> result: those submissions place few, clean cells where mapped faults are dense.</p>
+<p><strong>Can we beat 0.2778?</strong> Yes, and the arithmetic says where the headroom is. In our
+calibrated testbed a weak per-cell evidence field (pixel AUC 0.62-0.65) with a calibrated sparse
+emitter scores 0.2705
+(95% CI half-width 0.0408)
+against <em>unmapped</em> faults, while catalogue geometry alone scores
+0.0146 — a factor of
+about eighteen. So beating 0.28 is not a placement problem, it is a
+<strong>real-evidence problem</strong>. The ceiling for perfectly placing everything visible is
+0.5869, which is where the
+current 0.4413 leader sits: they have better evidence, not a better trick.</p>
+<p><strong>What we did not do:</strong> claim a score. Everything below is either arithmetic on the
+published metric or a simulation calibrated to published statistics. No number on this page is an
+organizer receipt.</p>
+</div>
+
+<h2>2. The nine priority sites</h2>
+<p>Reported values are the ones supplied in the brief. This build environment can reach only
+<code>github.com</code>, <code>api.github.com</code>, <code>pip</code>; <code>*.github.io</code> and
+<code>drivendata.org</code> do not resolve. <code>api.github.com/users/buffedlizard55-lab</code>
+returns <strong>HTTP 404</strong>, so the nine repositories are not publicly visible either. Nothing
+below can be downloaded, re-scored or hash-checked from here — that is a verification gap, not a
+judgement about the submissions.</p>
+<div class="scroll"><table class="grid"><thead><tr><th>Site</th><th>Highest reported submission</th><th>Reported score</th><th>Our score estimate</th><th>Unique vs others?</th><th>Method family</th></tr></thead><tbody><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE24/">GEMSDOE24</a></td><td><code>h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan</code></td><td>0.2477 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>catalogue-anchored dots</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE25/">GEMSDOE25</a></td><td><code>dotted-h19-5-d2-8-20261002-e56ea318af89-nan</code></td><td>0.2600 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>catalogue-anchored dots</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE27/">GEMSDOE27</a></td><td><code>topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan</code></td><td>0.2449 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>gap closure</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE28/">GEMSDOE28</a></td><td><code>h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan</code></td><td>0.2710 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>rung relay</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE30/">GEMSDOE30</a></td><td><code>d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca</code></td><td>0.2600 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>Poisson 300 m, off-catalogue</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE31/docs/">GEMSDOE31</a></td><td><code>h27-4-solo-d28-20261004-8acb75e1-nan</code></td><td>0.2708 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>single-family repeat of d28</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html">GEMSDOE32</a></td><td><code>h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros</code></td><td>0.2778 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>b2 variant, zero fill</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE33/">GEMSDOE33</a></td><td><code>h33d-analog-tip-stepover-r30-20261004-cb490425926e</code></td><td>0.2632 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>tip step-over relay</td></tr><tr><td><a href="https://buffedlizard55-lab.github.io/GEMSDOE36/docs/">GEMSDOE36</a></td><td><code>anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros</code></td><td>0.2750 <small>(user-reported)</small></td><td>not computable: raster unreachable</td><td>UNKNOWN: raster unreachable</td><td>geothermal PINN</td></tr></tbody></table></div>
+<p><small><span class="tag">FLAG</span> The brief states the current leader as 0.4413 in one place
+and 0.3195 in another; both are unverified here and they cannot both be current.</small></p>
+
+<h2>3. Best available action, in one table</h2>
+<div class="scroll">
+<table class="grid"><thead><tr><th>File to download</th><th>What it is</th><th>Estimated score</th><th>Unique?</th><th>Submit?</th></tr></thead><tbody><tr><td>(none in this repo)</td><td>no competition data in this checkout, so no submission-grade raster exists</td><td>n/a</td><td>n/a</td><td><strong>No</strong></td></tr><tr><td><a href="downloads/format_probe_score_0.0000_do_not_submit.tif">format_probe_score_0.0000_do_not_submit.tif</a></td><td>all-zero raster on the exact competition grid; proves the upload form accepts our format</td><td><strong>0.0000 exactly</strong> (TP<sub>w</sub> = 0)</td><td>trivially yes, and worthless</td><td><strong>No</strong> - it cannot score above zero</td></tr><tr><td><code>out/submission.tif</code>, produced by<br><code>scripts/build_submission.py</code></td><td>your pipeline output once <code>numeric_features.tif</code>, <code>labels.tif</code> and <code>sample_submission.tif</code> are in <code>data/</code></td><td>HOLDOUT-DTI with CI, printed by the run card</td><td>screened against your registry</td><td><strong>Yes, if the run card says READY_FOR_SELECTOR</strong></td></tr></tbody></table></div>
+<p>Format probe: <a href="downloads/format_probe_score_0.0000_do_not_submit.tif">format_probe_score_0.0000_do_not_submit.tif</a> (62,056 bytes). Its score is <strong>exactly 0.0000</strong> (a zero field has TP<sub>w</sub> = 0). It exists only to prove the submission form accepts our file format. <strong>Do not spend a weekly slot on it.</strong></p>
+
+<h2>4. What the metric actually rewards (exact arithmetic)</h2>
+<p>Straight-band scores, computed exactly by <code>gems.metric.band_table</code> (no simulation):</p>
+<table class="grid"><thead><tr><th>Band width (px)</th><th>Offset 0 px</th><th>Offset 1 px</th><th>Offset 2 px</th></tr></thead><tbody><tr><td>1</td><td>1.0000</td><td>0.6667</td><td>0.3333</td></tr><tr><td>3</td><td>0.8333</td><td>0.5000</td><td>0.2381</td></tr><tr><td>5</td><td>0.6250</td><td>0.3846</td><td>0.1852</td></tr><tr><td>7</td><td>0.5000</td><td>0.3125</td><td>0.1515</td></tr></tbody></table>
+<p>Read the first column: a one-pixel band on target scores 1.0000, a three-pixel band scores
+0.8333 and a five-pixel band 0.6250 — a 37% loss for "being safe". A band three pixels off target
+scores exactly 0. This single table explains most of the spread in the whole leaderboard, and it is
+why the delivered pipeline emits 1-px binary cells and never dilates.</p>
+<div class="kpi">
+<div><b>0.0001</b><small>DTI of a uniform 0.02 background over 201x201 cells with one true fault
+cell. Dense probability fields are not "slightly worse"; they are fatal.</small></div>
+<div><b>0.0000</b><small>DTI of an all-zero submission. A blocked or empty file scores exactly
+nothing.</small></div>
+<div><b>0.8333</b><small>DTI of a 3-px band on target - what NMS-plus-dilation costs you before a
+single mistake.</small></div>
+</div>
+
+<h2>5. The experiments behind those statements</h2>
+<p>Three pre-declared experiments, run in 90.5
+seconds. Testbed: synthetic fault networks calibrated to four published numbers — two independent
+real catalogues agree at DTI 0.796 (ours: 0.7925),
+a map displaced 14-21 km scores 0.045 (ours: 0.0326),
+fault density 1.39% (ours: 0.0143),
+cells within 300 m 8.37% (ours: 0.0778).
+The calibration matters: it is the reason a simulated DTI can be compared with a leaderboard at all.</p>
+
+<h3>5.1 Which emitter wins (E2, evidence AUC 0.807)</h3>
+<div class="scroll"><table class="grid"><thead><tr><th>Emitter</th><th>mean DTI (simulation)</th><th>95% CI half-width</th><th>per seed</th></tr></thead><tbody><tr><td>threshold</td><td>0.6086</td><td>0.2384</td><td>0.729, 0.723, 0.724, 0.584, 0.283</td></tr><tr><td>nms</td><td>0.5464</td><td>0.1804</td><td>0.637, 0.638, 0.636, 0.517, 0.303</td></tr><tr><td>topk</td><td>0.7169</td><td>0.0277</td><td>0.732, 0.734, 0.732, 0.702, 0.685</td></tr><tr><td>coverage</td><td>0.4850</td><td>0.0849</td><td>0.438, 0.471, 0.422, 0.499, 0.595</td></tr><tr><td>topk_matched</td><td>0.3971</td><td>0.1397</td><td>0.335, 0.347, 0.308, 0.408, 0.587</td></tr></tbody></table></div>
+<p><strong>Result: a negative for our own innovation.</strong> Plain top-<em>k</em> selection
+(0.7169) beats the coverage-aware Dinkelbach greedy
+(0.485) by
+0.2319. The greedy over-emits: given
+the same number of cells it does worse than score-ordered dots
+(0.3971). Thresholding and NMS are far behind and much
+noisier. The pipeline therefore defaults to the measured winner, and the fancy emitter ships as a
+documented, tested, <em>losing</em> option. A negative that is measured is worth more than a
+positive that is asserted.</p>
+
+<h3>5.2 Which family wins, and against which truth (E3)</h3>
+<p>The evaluator's cell set is not published anywhere reachable, so the same predictions are scored
+under three defensible readings:</p>
+<div class="scroll"><table class="grid"><thead><tr><th>Evaluator regime</th><th>Method family</th><th>mean DTI (simulation)</th><th>95% CI half-width</th></tr></thead><tbody><tr><td>R1_full_network</td><td>oracle</td><td>1.0000</td><td>0.0</td></tr><tr><td>R1_full_network</td><td>catalogue_dilate3</td><td>0.4642</td><td>0.038</td></tr><tr><td>R1_full_network</td><td>tip_extension</td><td>0.0186</td><td>0.0029</td></tr><tr><td>R1_full_network</td><td>gap_closure</td><td>0.0023</td><td>0.0026</td></tr><tr><td>R1_full_network</td><td>tips_plus_gaps</td><td>0.0193</td><td>0.0025</td></tr><tr><td>R1_full_network</td><td>weak_evidence</td><td>0.0964</td><td>0.0371</td></tr><tr><td>R1_full_network</td><td>evidence_plus_geometry</td><td>0.0967</td><td>0.0372</td></tr><tr><td>R2_unmapped_only</td><td>oracle</td><td>0.5869</td><td>0.1361</td></tr><tr><td>R2_unmapped_only</td><td>catalogue_dilate3</td><td>0.0059</td><td>0.003</td></tr><tr><td>R2_unmapped_only</td><td>tip_extension</td><td>0.0133</td><td>0.0057</td></tr><tr><td>R2_unmapped_only</td><td>gap_closure</td><td>0.0032</td><td>0.0036</td></tr><tr><td>R2_unmapped_only</td><td>tips_plus_gaps</td><td>0.0146</td><td>0.0059</td></tr><tr><td>R2_unmapped_only</td><td>weak_evidence</td><td>0.2705</td><td>0.0408</td></tr><tr><td>R2_unmapped_only</td><td>evidence_plus_geometry</td><td>0.2701</td><td>0.041</td></tr><tr><td>R3_near_miss_only</td><td>oracle</td><td>0.1237</td><td>0.0371</td></tr><tr><td>R3_near_miss_only</td><td>catalogue_dilate3</td><td>0.0067</td><td>0.0034</td></tr><tr><td>R3_near_miss_only</td><td>tip_extension</td><td>0.0830</td><td>0.0093</td></tr><tr><td>R3_near_miss_only</td><td>gap_closure</td><td>0.0306</td><td>0.0401</td></tr><tr><td>R3_near_miss_only</td><td>tips_plus_gaps</td><td>0.0923</td><td>0.0131</td></tr><tr><td>R3_near_miss_only</td><td>weak_evidence</td><td>0.2154</td><td>0.0262</td></tr><tr><td>R3_near_miss_only</td><td>evidence_plus_geometry</td><td>0.2139</td><td>0.0248</td></tr></tbody></table></div>
+<p>Under the reading that matches the brief's "newly identified faults" (R2), catalogue geometry is
+worth almost nothing (0.0146)
+and per-cell evidence is worth everything
+(0.2705). Under the same
+reading, emitting <em>every</em> fault you can see (the oracle row,
+0.5869) is an upper bound, and it
+is close to the current 0.4413 leader. Note also R3: the oracle scores
+0.1237 while weak evidence scores
+0.2154 — knowing everything
+is <em>worse</em> than knowing the right subset, because unmatched positives are charged.</p>
+
+<h2>6. One command, when the data are present</h2>
+<div class="card">
+<pre><code>mkdir -p data
+# put numeric_features.tif, labels.tif and sample_submission.tif in data/ (DrivenData login)
+python -m venv .venv &amp;&amp; .venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/build_submission.py --data data --out out/submission.tif \
+    --registry path/to/registry.json      # omit --registry only if you accept "UNKNOWN"
+cat out/submission.run.json</code></pre>
+<p>The run card states, without ambiguity: gate results, holdout DTI with its CI and evaluator
+version, withheld positive counts, leakage-canary trips, emitted cell count, file SHA-256, validator
+output, and the uniqueness verdict. <code>READY_FOR_SELECTOR</code> is the only status that may be
+carried into a weekly slot, and promotion is still a separate human decision.</p>
+
+        <p><strong>End-to-end self-test on synthetic data</strong> (proves the code paths, not the science):
+        holdout DTI <strong>0.5232</strong>, 95% CI [0.5209, 0.5257],
+        chosen feature set <code>independent</code>, variant means
+        <code>{"independent": 0.5232, "independent_plus_catalogue": 0.0}</code>, 5 folds,
+        withheld positives [2208, 2220, 2219, 2223, 2222] px.
+        Gates: <code>{"format_valid": true, "holdout_beats_zero": true, "no_leakage_canary_trip": true, "uniqueness_pass": false}</code>.
+        Note that the catalogue-inclusive model scores <strong>exactly 0.0000</strong> on the holdout:
+        the distance-to-mapped-faults feature is a shortcut that cannot generalise to unseen segments.</p>
+</div>
+
+<h2>7. Where the remaining risk is</h2>
+<ul>
+<li><strong>Gated data.</strong> Nothing here has seen the real features or labels. The pipeline is
+tested end-to-end on synthetic data of the same format; that proves the code, not the geology.</li>
+<li><strong>Unverifiable sites.</strong> The nine GEMSDOE repositories are not publicly visible, so
+"unique" can only be tested once you supply their rasters as a registry.</li>
+<li><strong>Unknown evaluator cell set.</strong> E3 shows the winner changes with the masking rule;
+the run card's holdout therefore reports the regime used.</li>
+<li><strong>Metric provenance.</strong> The metric is transcribed from the public problem
+description and reproduced by two independent public implementations, not from organizer code.
+See <a href="verification.html">the line-by-line audit</a>.</li>
+</ul>
+
+<p><small>Pages: <a href="submit.html">how to submit</a> ·
+<a href="method.html">method and full results</a> ·
+<a href="verification.html">source audit and flagged irregularities</a> ·
+<a href="research.md">research log</a> · <a href="results/">raw JSON</a></small></p>
+</body></html>

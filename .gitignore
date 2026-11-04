@@ -2,5 +2,9 @@
 __pycache__/
 .pytest_cache/
 data/
+demo/
+out/
 *.tif
 *.tiff
+# exception: the format probe is deliberately published (all-zero, scores 0.0000)
+!docs/downloads/*.tif
