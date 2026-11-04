@@ -12,6 +12,7 @@ The strongest result supplied for the nine requested sites is the user-reported 
 - [Submission instructions and safety gates](docs/submission.html)
 - [Evidence log, candidate hypotheses, limitations, and next steps](docs/research.md)
 - [Historical parallel review](docs/prior-review.md)
+- [Latest review and remaining blockers](docs/review-2026-11-04.md)
 - [Current negative run card](docs/run-card.json)
 
 ## Standing evidence and experiment rules
@@ -40,22 +41,33 @@ python -m venv .venv
 .venv/bin/pytest -q
 ```
 
+Pre-placement screening (no candidate dots yet):
+
+```bash
+.venv/bin/python scripts/check_candidate.py \
+  --surface candidate_preplacement_surface.tif \
+  --reference official_sample_submission.tif \
+  --footprint official_footprint.tif --manifest complete_registry.json
+```
+
+Post-placement screening:
+
+```bash
+.venv/bin/python scripts/check_candidate.py \
+  --candidate candidate.tif --surface candidate_preplacement_surface.tif \
+  --reference official_sample_submission.tif \
+  --footprint official_footprint.tif --manifest complete_registry.json
+```
+
+The manifest is a JSON array of entries with `site`, `surface`, `surface_sha256`, `dots`, and `dots_sha256`; paths resolve relative to the manifest. It must have an entry for each of GEMSDOE24, 25, 27, 28, 30, 31, 32, 33, and 36. This checks only the supplied manifest—it cannot prove the registry is complete. The screen requires all inputs to be single-band GeoTIFFs with CRS and no masked/nodata pixels, and checks candidate format/range, grid alignment, hashes, surface rank correlation and dot proximity. Its statuses `SURFACE_SCREENED_NOT_APPROVED` and `SCREENED_NOT_APPROVED` are **not approval**. These strict checks may reject valid nodata outside the footprint. The tool does not implement the holdout or create a candidate raster; large-raster checks can be memory-intensive.
+
 Format-only preflight (does **not** approve predictive skill, holdout performance, or uniqueness):
 
 ```bash
 .venv/bin/python scripts/validate_submission.py candidate.tif official_sample_submission.tif
 ```
 
-Registry comparison (all inputs required; output `SCREENED_NOT_APPROVED` is intentionally not approval):
-
-```bash
-.venv/bin/python scripts/check_candidate.py \
-  --candidate candidate.tif --surface candidate_preplacement_surface.tif \
-  --reference official_sample_submission.tif --footprint official_footprint.tif \
-  --manifest complete_registry.json
-```
-
-The manifest is a JSON array of entries with `site`, `surface`, `surface_sha256`, `dots`, and `dots_sha256`; paths resolve relative to the manifest. It must have an entry for each of GEMSDOE24, 25, 27, 28, 30, 31, 32, 33, and 36. This checks only the supplied manifest—it cannot prove the registry is complete. The screening utility also requires an explicitly supplied finite binary footprint and checks candidate raster format/range, hashes, rank correlation and dot proximity. These utilities do not implement the holdout or create a candidate raster. Large-raster screening can be memory-intensive.
+This requires a single-band GeoTIFF matching the reference grid and finite unmasked values in `[0,1]` across the entire image. The conservative all-pixel rule may reject valid outside-footprint nodata. `ready_to_submit` is always false: this is not an organizer validator.
 
 ## Research sources
 

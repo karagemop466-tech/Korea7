@@ -87,3 +87,9 @@ Do not assert any candidate is “new” until comparing against actual reposito
 6. Build the requested simple public site only once the tested workflow exists; never publish a fabricated download or score.
 
 **Current run card:** `hypothesis`: none evaluated; `mechanism`: none evaluated; `non-fault mimic`: not applicable; `HOLDOUT-DTI + CI`: unavailable (no evaluator/data); `registry correlation/overlap`: unavailable (no registry rasters); `raster SHA-256`: none (no generated raster); `validator`: not run (no reference raster); `submission name/note`: none; `verdict`: `negative` (no promotable artifact; this is a deliverable status, not a model performance result).
+
+## Follow-up review (2026-11-04)
+
+A prior review recorded that requests to the user-linked GEMSDOE32 `docs/index.html` and GEMSDOE36 `docs/` pages returned GitHub Pages 404. That time-specific result was not independently reproduced in this review, and is not evidence that the submissions or rasters do not exist. The official reference-solution GitHub repository is accessible; its README describes a notebook-centered benchmark, not this repository's shared cached feature stack / holdout evaluator / submission writer.
+
+The user-reported GEMSDOE32 entry `h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros: 0.2778` is the top listed number among the nine requested sites in the supplied notes, but the score is not independently confirmed here. The filename and scalar score do not establish what mechanism caused the result. Causal explanation and an attempt to outperform it require the exact prediction raster, method/configuration, organizer receipt, matching metric implementation, and spatially blocked holdout comparisons; none were available in this review. Therefore no projection or new TIFF is offered, and no claim that a higher score is achievable is made. User-provided overall-high-score values 0.3195 and 0.4413 conflict and remain unverified.
