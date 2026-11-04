@@ -16,6 +16,16 @@ The constants are NOT taken on trust by the validator: `validate.py` always
 compares a candidate against a user-supplied reference raster (the official
 `sample_submission.tif`) when one is available and only falls back to these
 constants for reporting.
+
+OPEN DISCREPANCY (flagged for review, 2026-11-04). Three GeoTIFFs committed to
+this repository by other sessions use the origin (243350.0, 4508550.0) with the
+same 100 m pixel size and the same 3292 x 3730 shape. Both origins land inside
+the GeoDAWN area, but they cannot both be the organiser's grid: a 6.65 km shift
+in easting and 11.45 km in northing would move every prediction by that much.
+The origin recorded above comes from a public raster published as being in the
+competition submission format; the other origin's provenance is not stated.
+Only the official `sample_submission.tif` settles it, which is why the validator
+demands one and says so when it does not get one.
 """
 
 #: CRS of the competition grid.

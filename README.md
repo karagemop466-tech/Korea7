@@ -1,3 +1,4 @@
+
 # Korea7 - DOE GEMS Prize: submission engineering and research
 
 **Status, first line, no hedging: there is no submission file in this repository that should be
@@ -110,3 +111,20 @@ python -m venv .venv && .venv/bin/pip install -r requirements.txt
   from here.
 * The evaluator's scored cell set is not published anywhere reachable, and the winner changes with it
   (E3); the run card therefore always names the regime it used.
+
+---
+
+## Parallel lanes in this same repository (not produced by this lane, not verified by it)
+
+Other sessions working from the same brief committed candidate rasters under `docs/downloads/`.
+They are listed here so nothing is hidden and nobody mistakes them for this lane's output:
+
+| File | Producer's claim | What this lane's tools say |
+|---|---|---|
+| `korea7-k7-offcatalogue-relay-corridor-30000dots-...-zeros.tif` | 10,944 dots, own receipt JSON, "score not measurable" | **FAIL** format gate: geotransform origin `(243350, 4508550)` differs from the recorded grid `(250000, 4520000)`; uniqueness UNKNOWN |
+| `korea7-sdcc1-scarpdom-conc-uniq65-37654-...-d88f4742-zeros.tif` | SDCC-1 candidate, own receipt | **FAIL** on the same transform mismatch |
+| `korea7-sdcc1-scarpdom-conc-uniq65-44090-...-5631ba53-zeros.tif` | SDCC-1 candidate, own receipt | **FAIL** on the same transform mismatch |
+
+Two different grid origins now exist in one repository, and only the official
+`sample_submission.tif` can settle which is right (see irregularity **F8** in
+`docs/verification.html`). Until it does, none of these files should be uploaded.

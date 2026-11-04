@@ -10,6 +10,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 ROOT = Path(__file__).resolve().parents[1]
 R = ROOT / "docs" / "results"
 DOCS = ROOT / "docs"
@@ -116,6 +119,29 @@ def build_index():
                   f'form accepts our file format. <strong>Do not spend a weekly slot on it.</strong></p>'
                   if probe.exists() else "")
 
+    # live validation of every candidate raster in docs/downloads (parallel lanes included)
+    from gems import validate as V
+    cand_rows = []
+    for f in sorted((DOCS / "downloads").glob("*.tif")):
+        if f.name.startswith("format_probe"):
+            continue
+        rep = V.validate(f)
+        receipt = f.with_suffix(f.suffix + ".receipt.json")
+        note = "no receipt"
+        if receipt.exists():
+            rj = json.loads(receipt.read_text())
+            note = f"producer receipt: {rj.get('note', '')[:90]}"
+        cand_rows.append([
+            f'<a href="downloads/{f.name}">{f.name}</a><br><small>{esc(note)}</small>',
+            f'<strong>{rep["status"]}</strong>' + (f' <small>({", ".join(rep["errors"])})</small>'
+                                                   if rep["errors"] else ""),
+            "unmeasured by its producer", "UNKNOWN (no registry)",
+            "<strong>No</strong>: grid origin unresolved (F8)" if "transform_match" in rep.get("errors", [])
+            else "<strong>No</strong>"])
+    cand_tbl = (table(["File in docs/downloads/", "This lane's format gate",
+                       "Estimated score", "Unique?", "Submit?"], cand_rows)
+                if cand_rows else "<p>No candidate rasters are present.</p>")
+
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -207,6 +233,16 @@ and 0.3195 in another; both are unverified here and they cannot both be current.
   "<strong>Yes, if the run card says READY_FOR_SELECTOR</strong>"],
 ], )}</div>
 {probe_html}
+
+<h3>3.1 Candidate rasters that exist in this repository right now</h3>
+<p>Later sessions committed candidate GeoTIFFs. Each is re-validated by
+<code>gems.validate</code> every time this page is rebuilt, so the column cannot drift from the file:</p>
+<div class="scroll">{cand_tbl}</div>
+<div class="alert warn"><strong>Grid conflict, unresolved.</strong> These candidates use the origin
+(243350, 4508550); the grid recorded in <code>gems/grid.py</code>, read from a public raster published
+as being in submission format, is (250000, 4520000). Both are inside the GeoDAWN area, but they differ
+by 6.65 km east and 11.45 km north, which would shift every prediction. Only the official
+<code>sample_submission.tif</code> decides it. Until then: <strong>do not upload any of them.</strong></div>
 
 <h2>4. What the metric actually rewards (exact arithmetic)</h2>
 <p>Straight-band scores, computed exactly by <code>gems.metric.band_table</code> (no simulation):</p>

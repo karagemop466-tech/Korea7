@@ -1,10 +1,11 @@
 .venv/
 __pycache__/
 .pytest_cache/
+.cache/
 data/
 demo/
 out/
 *.tif
 *.tiff
-# exception: the format probe is deliberately published (all-zero, scores 0.0000)
+# exception: published submission candidates and the format probe
 !docs/downloads/*.tif

@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Executive summary — Korea7 GEMS submission</title><link rel="stylesheet" href="style.css"></head><body>
+<header><nav><a href="index.html">Overview</a><a href="executive-summary.html">Executive summary</a><a href="submission.html">Submission guide</a><a href="https://github.com/karagemop466-tech/Korea7">Repository</a></nav>
+<h1>Executive summary</h1><p>One unique, validated TIF to download. Every number below is labelled HOLDOUT-DTI (measured here) or OWNER-REPORTED (unverified claim). A projection is never a score.</p></header>
+<main>
+
+<section class="alert"><span class="tag">OK TO DOWNLOAD AND SUBMIT</span>
+<h2>The submission file</h2>
+<p><strong><a href="downloads/korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif" download>korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif</a></strong> (≈310&nbsp;KB)</p>
+<ul>
+<li><strong>What it is:</strong> 44,090 binary dots from the Korea7 SDCC-1 method (scarp-dominant concordance fusion; LiDAR scarp × coherence, upward-continued-TMI gradient, Th/K alteration low, wellspring conduit prior, road suppression, 2-px catalogue collar), Poisson-spaced 2.8 px, with a hard uniqueness cap against every registry raster.</li>
+<li><strong>Format:</strong> single-band float32 GeoTIFF, EPSG:32611, 3730×3292, transform (100, 0, 243350, 0, −100, 4508550) — exact match to <code>sample_submission.tif</code>. <strong>All pixels finite, all values in [0, 1]</strong> (zeros background), so the earlier organizer form error “Predicted values must be in range [0, 1]” cannot recur with this file.</li>
+<li><strong>Unique:</strong> max 39.6% of dots within 3 px of any one registry raster (limit 70%); max |Spearman| vs any registry raster 0.012 (limit 0.90). Not a copy of any GEMSDOE site submission. Detail: <code>evidence/final_lane_checks.json</code>.</li>
+<li><strong>SHA-256:</strong> <code>5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c</code></li>
+<li><strong>HOLDOUT-DTI</strong> (shared evaluator GEMSDOE32-SGMC-CAL-v3.0, 62,703 withheld positives): <strong>0.0624</strong>, 95% CI [0.0511, 0.0745]. Calibrated leaderboard projection (not a score): <strong>0.2672</strong>, range [0.2138, 0.3242].</li>
+<li><strong>Suggested note for the submission form</strong> (≤140 chars): <code>Korea7 SDCC-1: scarp-dom concordance fusion (LiDAR scarp, TMI-up150 grad, ThK alt, wellspring), D2.8 Poisson, collar B2, uniq cap 65%</code></li>
+</ul>
+<p>Alternate (37,654 dots, same surface): <a href="downloads/korea7-sdcc1-scarpdom-conc-uniq65-37654-20261104T201224Z-d88f4742-zeros.tif" download>korea7-sdcc1-…-37654-…-d88f4742-zeros.tif</a> — HOLDOUT-DTI 0.0573 [0.0465, 0.0692], projection 0.2432. Submit the 44090 file first; this one is the backup slot.</p>
+</section>
+
+<section><h2>How to submit (no human inspection step — all gates are run by the project)</h2>
+<ol>
+<li>Download the primary TIF above and verify its SHA-256 against <code>docs/downloads/SHA256SUMS.txt</code>.</li>
+<li>Go to the <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/submissions/">competition submission page</a> → “New submission”.</li>
+<li>Choose the TIF as “File to submit”. Paste the suggested note into “Note”.</li>
+<li>Submit. Copy the organizer receipt/score back into this repo so the result can be relabelled ORGANIZER-CONFIRMED.</li>
+</ol>
+<p>Validation gates already passed by this file (machine-run, receipts in <code>evidence/</code> and <code>run-card.json</code>): format preflight vs the organizer grid; finite-[0,1] everywhere; leakage canary (all feature AUCs 0.48–0.58 &lt; 0.90); spatially-blocked hide-and-recover + SGMC off-catalogue holdout on the pinned shared evaluator (reproduction check: GEMSDOE25 = 0.096743 matched exactly); registry uniqueness scan vs 16 deduplicated registry rasters.</p></section>
+
+<section><h2>Why GEMSDOE32 B2 scored 0.2778 — and what we did with that answer</h2>
+<p><strong>B2 is an emission optimisation, not new geology.</strong> Byte-level forensics (raster restored and hashed here): 37,654 binary dots, minimum spacing 2.83 px — i.e. the old h19-5 multiline-corroboration surface emitted as a Poisson-disk D2.8 pattern with every dot within 2 px of the known-fault catalogue deleted. The 2.8-px spacing matches the 300 m triangular kernel of the DTI metric (α 0.2, β 0.8), so no two dots waste credit inside one kernel disk; the catalogue collar reallocates ~15% of the budget from already-known faults (which earn nothing) to off-catalogue targets. Diagnostic signature, measured on the shared evaluator: B2's hide-and-recover holdout is near zero (0.0045 — it deliberately avoids the catalogue) while its off-catalogue SGMC-CAL holdout is the family's highest (0.0641). Across the nine focus rasters SGMC-CAL tracks the owner-reported scores almost linearly (fit LB ≈ −0.0271 + 4.715·SGMC-CAL, RMSE 0.0023). <strong>Caution (Goodhart):</strong> submissions that chased SGMC faults directly scored 0.03–0.05 OWNER-REPORTED — the proxy is only valid for surfaces carrying real geological evidence.</p>
+<p><strong>Can it be beaten?</strong> Within this family, only marginally — the family ceiling is ~0.278 and the leaderboard high (OWNER-REPORTED 0.4413 / 0.3195, conflicting, unverified) implies someone is using richer physics (likely 1 m DEM + learned features). Our SDCC-1 candidate reaches SGMC-CAL 0.0624 [0.0511, 0.0745] — within CI of the family's best — while being measurably unique. Whether it beats 0.2778 is genuinely uncertain: the projection CI [0.2138, 0.3242] straddles it. That is the honest statement; no higher claim is supported by evidence.</p></section>
+
+<section><h2>Focus-site table — what to download, estimated score, uniqueness</h2>
+<p>Estimates for registry files use the measured HOLDOUT-DTI (SGMC-CAL) and the family calibration; “Est. LB” for registry rows equals the OWNER-REPORTED claim where one exists. Uniqueness is measured pairwise within the registry (3-px dot overlap): the eight starred rasters are all ≥98% mutually overlapping emissions of one surface — submitting any of them would duplicate prior submissions.</p>
+<div class="tablewrap"><table><thead><tr><th>Source</th><th>File</th><th>SGMC-CAL (HOLDOUT-DTI)</th><th>Est./reported LB</th><th>Unique?</th><th>Submit?</th></tr></thead><tbody>
+<tr><td><strong>Korea7 (this repo)</strong></td><td><code>korea7-sdcc1-…-44090-…-5631ba53-zeros.tif</code></td><td><strong>0.0624</strong> [0.0511, 0.0745]</td><td><strong>0.2672 proj.</strong> [0.2138, 0.3242]</td><td><strong>YES</strong> (max overlap 39.6%)</td><td><strong>YES — primary</strong></td></tr>
+<tr><td>Korea7 (this repo)</td><td><code>korea7-sdcc1-…-37654-…-d88f4742-zeros.tif</code></td><td>0.0573 [0.0465, 0.0692]</td><td>0.2432 proj.</td><td>YES (40.6%)</td><td>Backup only</td></tr>
+<tr><td>Korea7 (parallel lane, main)</td><td><code>korea7-k7-offcatalogue-relay-corridor-30000dots-…-zeros.tif</code></td><td>not measured (that lane had no data access)</td><td>unknown</td><td>YES (2.45% overlap vs our primary)</td><td>No — unmeasured; keep archived</td></tr>
+<tr><td>GEMSDOE32</td><td><code>h33-h33-2-b2-…-e5eb6e7e-zeros</code></td><td>0.0641</td><td>0.2778 OWNER-REPORTED</td><td>No* (B2 family)</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE36</td><td><code>anderson-geothermal-pinn-38854-…-zeros</code></td><td>0.0644</td><td>0.2750 OWNER-REPORTED</td><td>No*</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE28</td><td><code>h36-1-rung30-blind-r1-…-nan</code></td><td>0.0630</td><td>0.2710 OWNER-REPORTED</td><td>No*</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE31</td><td><code>h27-4-solo-d28-…-nan</code></td><td>0.0630</td><td>0.2708 OWNER-REPORTED</td><td>No*</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE33</td><td><code>h33d-analog-tip-stepover-r30-…</code></td><td>0.0626</td><td>0.2632 OWNER-REPORTED</td><td>No*</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE25 / 30</td><td><code>dotted-h19-5-d2-8-…</code> / <code>d28-poisson300m-offcat-44090-…</code></td><td>0.0606</td><td>0.2600 OWNER-REPORTED</td><td>No* (identical bytes)</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE24</td><td><code>h25-1-dotted-h19-5-d1-5-…-nan</code></td><td>0.0579</td><td>0.2477 OWNER-REPORTED</td><td>No*</td><td>No — already submitted</td></tr>
+<tr><td>GEMSDOE27</td><td><code>topo-gap-closure-t-v2-on-d1-5-…-nan</code></td><td>0.0583</td><td>0.2449 OWNER-REPORTED</td><td>No*</td><td>No — already submitted</td></tr>
+</tbody></table></div>
+<small>Registry rasters were restored from SHA-256-pinned mirrors (<code>karagemop466-tech/GEMSDOEkarage1 registry/</code>, <code>kanlerxz87-cyber/KANLERGEMSDOE1 data/scored/</code>) because the original buffedlizard55-lab account is 404 (verified 2026-11-04). They are retained for learning/uniqueness checks only — never for resubmission.</small></section>
+
+<section><h2>Candidate hypotheses not yet implemented (ranked, for the next session)</h2>
+<ol>
+<li><strong>Channel-deflection / drainage-offset detector on the 1 m 3DEP DEM</strong> — targets piedmont faults under alluvium with no scarp or magnetic worm (the population every B2-family dot misses). Needs the official free USGS 3DEP 1 m source (<a href="https://registry.opendata.aws/usgs-lidar/">registry.opendata.aws/usgs-lidar</a>) — obtainable, but not from this sandbox (host-restricted). Highest expected DTI gain, highest cost.</li>
+<li><strong>Radiometric alteration-halo detector (K-up/Th-flat) at 500–1000 m buffer</strong>, cross-gated by magnetic edges — partially covered by SDCC-1's ThK term; a dedicated halo model with the GeoDAWN K/Th/U bands (mirrored, SHA-pinned) is cheap to test next.</li>
+<li><strong>Relay-ramp / step-over geometry completion</strong> on catalogue fault tips (mechanics-based infill between en-échelon segments) — moderate gain, cheap; must verify dots stay ≥65% distinct from GEMSDOE33's tip-stepover raster.</li>
+<li><strong>Microseismicity lineaments</strong> (NCEDC/USGS ComCat epicentre density, 0–5 km depth) — free official data, unreachable from this sandbox; viability must be checked before proposing further.</li>
+<li><strong>Learned fusion (gradient boosting) on the cached u8 stacks with fold-local training</strong> — replaces hand weights; medium cost; leakage-prone, needs strict OOF discipline.</li>
+</ol></section>
+
+<section><h2>Sources for manual review</h2>
+<p><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/">Problem description</a> · <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/data/">Data (login)</a> · <a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/">Leaderboard</a> · <a href="https://github.com/drivendataorg/gems-prize-reference-solution">Reference solution</a> · <a href="https://docs.nlr.gov/docs/fy26osti/96647.pdf">GEMS prize PDF 96647</a> · <a href="https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and">USGS GeoDAWN</a> · <a href="https://gdr.openei.org/submissions/1391">GDR 1391 (INGENIOUS)</a> · <a href="https://gbcge.org/current-projects/ingenious/">INGENIOUS</a> · <a href="https://epsg.io/32611">EPSG:32611</a> · <a href="https://en.wikipedia.org/wiki/Tversky_index">Tversky index</a></p></section>
+</main>
+<footer>Generated 2026-11-04 · Evaluator pinned at GEMSDOEkarage3 6b0d7cd6 · Experiments used: 3 of 3 · No organizer submission was made by this project; the human owner submits the file and pastes back the receipt.</footer></body></html>

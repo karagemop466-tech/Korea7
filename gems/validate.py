@@ -90,6 +90,12 @@ def validate(candidate, reference=None, footprint=None, allow_grid_fallback=True
                     checks["positives_inside_footprint"] = bool(
                         ((a > 0) & ~fp).sum() == 0 or True)  # reported, not gated
                     rep["stats"]["positives_outside_footprint"] = int(((a > 0) & ~fp).sum())
+        if reference is None:
+            rep["warning"] = (
+                "No reference raster was supplied. The comparison used the grid "
+                "constants recorded in gems/grid.py, whose provenance is not the "
+                "organiser's own file (see the OPEN DISCREPANCY note there). "
+                "Re-run with --reference sample_submission.tif before upload.")
         rep["status"] = "PASS" if all(checks.values()) else "FAIL"
         if rep["status"] == "FAIL":
             rep["errors"] = [k for k, v in checks.items() if not v]

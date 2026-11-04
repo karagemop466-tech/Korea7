@@ -64,6 +64,23 @@ so the number is a local-benchmark figure at best. Nothing in this repository de
 the labels and the sample grid are behind a login. Every model number here was produced on synthetic
 data of the same format. It proves code paths; it says nothing about the real geology.</div>
 
+<div class="flag"><strong>F8 - Two different grid origins exist inside this repository.</strong>
+Candidates committed by other sessions use origin <code>(243350.0, 4508550.0)</code>; the grid in
+<code>gems/grid.py</code> uses <code>(250000.0, 4520000.0)</code>. Same CRS, same 100 m pixels, same
+3292 x 3730 shape, but 6.65 km apart in easting and 11.45 km in northing. Both sit inside the GeoDAWN
+area, so geography cannot discriminate them. <code>sample_submission.tif</code> can, and only it can.
+Our validator therefore demands a reference and emits an explicit warning when it has to fall back to
+the recorded constants. <em>Do not upload a candidate until this is settled.</em></div>
+<div class="flag"><strong>F9 - The parallel candidates fail this lane's format gate on that basis.</strong>
+<code>gems.validate</code> returns <code>FAIL (transform_match)</code> for all three
+<code>docs/downloads/korea7-*.tif</code> files when compared with the recorded grid. That is a
+statement about geometry, not about anyone's method, and it is re-computed every time the summary page
+is rebuilt.</div>
+<div class="flag"><strong>F10 - Producer receipts are not organizer receipts.</strong> The
+<code>*.receipt.json</code> files next to the candidates record what the producer did (seed, dot count,
+sha256, CRS). They do not record a score, and several say so explicitly ("score not
+measurable (login-gated data)"). They are useful provenance; they are not leaderboard evidence.</div>
+
 <h2>C. What is deliberately not claimed</h2>
 <ul>
 <li>No leaderboard score is claimed, for any submission, ours or the nine sites'.</li>
