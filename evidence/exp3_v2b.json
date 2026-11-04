@@ -1,0 +1,21 @@
+{
+ "placed": 44090,
+ "overlap": {
+  "GEMSDOE24_gems24-h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan.tif": 0.278838738943071,
+  "GEMSDOE25_d28.tif": 0.26454978453163985,
+  "GEMSDOE27_gems27-topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan.tif": 0.28242231798593787,
+  "GEMSDOE28_gems28-h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan.tif": 0.25686096620548876,
+  "GEMSDOE30_gemsdoe30-d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca.tif": 0.26454978453163985,
+  "GEMSDOE31_gemsdoe31-h27-4-solo-d28-20261004-8acb75e1-nan.tif": 0.26003628940802903,
+  "GEMSDOE32_B2.tif": 0.2540258562032207,
+  "GEMSDOE33_GEMSDOE33-h33d-analog-tip-stepover-r30-20261004-cb490425926e.tif": 0.2646858698117487,
+  "GEMSDOE36_gemsdoe36-anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros.tif": 0.27802222726241776,
+  "gems10-h25-ctx-ridge-20260927T232947704150Z-6452ae1d00.tif": 0.3429122249943298,
+  "gems10-h28-dotted-ridge-20260928T020256236880Z-6452ae1d00.tif": 0.3557269222045815,
+  "gems16-h16-1-topo-geophys-baseline-ridges-20260930-df20f65e-nan.tif": 0.32735314130188253,
+  "gems19-h19-4-multiline-corroborated-openness-thermal-pop-20260930-691e4dfa-nan.tif": 0.31465184849172145,
+  "gems19-h19-5-powerlaw-budget-multiline-corroborated-20260930-e27054cf-nan.tif": 0.3026763438421411,
+  "gems24-h25-1-dotted-h19-5-d2-8-20261002-e56ea318af89-nan.tif": 0.26454978453163985,
+  "gemsdoe-ens12-adopted-7f00890a.tif": 0.39580403719664325
+ }
+}

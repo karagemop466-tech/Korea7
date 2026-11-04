@@ -1,13 +1,8 @@
-# Python
-__pycache__/
-*.pyc
 .venv/
-venv/
-.env
-
-# Data (competition data is login-gated; do not commit)
+__pycache__/
+.pytest_cache/
 data/
-*.log
-
-# OS
-.DS_Store
+.cache/
+*.tif
+*.tiff
+!docs/downloads/*.tif

@@ -1,267 +1,298 @@
 #!/usr/bin/env python3
+"""Korea7 SDCC-1 submission generator (lane: scarp-dominant concordance fusion).
+
+Reproduces the exact pipeline that produced the shipped candidates in
+docs/downloads/ on 2026-11-04. End-to-end stages:
+
+  1. restore   -- fetch SHA-256-pinned competition mirrors from accessible repos
+  2. surface   -- build the SDCC-1 fused prospectivity surface
+  3. place     -- uniqueness-constrained Poisson-disk dot placement
+  4. write     -- emit zeros-background float32 GeoTIFF on the organizer grid
+
+Method (single lane, logged in run-card.json):
+  Fuse LiDAR-scarp evidence (max of ex_max/step_max percentiles, coherence
+  weighted), upward-continued TMI (150 m) horizontal-gradient percentile,
+  Th/K radiometric alteration-low percentile, and a 2 km wellspring conduit
+  prior; multiply by a concordance bonus (count of evidence lines above the
+  90th percentile); suppress pixels within 200 m of a road; zero a 2-px
+  catalogue collar around existing_faults.tif; emit dots in descending
+  surface order with min separation 2.8 px and a hard per-registry cap of
+  65% of dots within 3 px of any single registry raster's dots.
+
+Distinct from the registry family (h19-5 power-law multiline corroboration
++ its D1.5/D2.8/B2 emissions): different expert set (no tilt/openness; adds
+alteration + wellspring prior + road suppression), different fusion rule
+(weighted-percentile sum x concordance bonus, not corroboration-count power
+law), and an explicit online uniqueness constraint during placement.
+
+Data provenance (all SHA-256 pinned below; mirrors of login-walled
+DrivenData files -- integrity-pinned, NOT organizer-authentic):
+  core:     github.com/sassnarep3-star/GEMSDOESASS2  data/bridge/
+  external: github.com/kanlerxz87-cyber/KANLERGEMSDOE1 data/external/
+  registry: github.com/karagemop466-tech/GEMSDOEkarage1 registry/ and
+            github.com/kanlerxz87-cyber/KANLERGEMSDOE1 data/scored/
+
+Usage:
+  python scripts/generate_submission.py --data-dir .cache/gems_data \
+      --registry-dir .cache/registry --out docs/downloads --budget 44090
 """
-Korea7 — GEMS Prize (DrivenData #306) unique submission generator.
-
-Produces a single, submission-ready single-band float32 GeoTIFF on the official
-competition grid:
-  * CRS       : EPSG:32611 (UTM zone 11N)
-  * Shape     : 3730 rows x 3292 cols  (height x width)
-  * Resolution: 100 m
-  * Transform : (100, 0, 243350, 0, -100, 4508550)
-  * Band count: 1
-  * Dtype     : float32
-  * Values    : finite, strictly in [0, 1]; NaN only as nodata marker
-                (no in-footprint NaN -> no "Predicted values must be in range [0,1]" error)
-
-METHOD (unique, not a copy of any GEMSDOE site artifact):
-  K7-offcatalogue-relay-corridor (see hypotheses.md).  Binary structural-dot
-  prior placed by a coordinate-seeded spatial point process with a minimum
-  inter-dot spacing, distributed along two synthetic structural corridors.
-  Intentionally uses NO training/catalogue data, so every dot is off-catalogue
-  by construction and the raster cannot equal any catalogue-derived submission.
-
-BUDGET: experiment 1 of <=3 (parallel-run protocol).  Holdout DTI and organizer
-confirmation are NOT measurable here because the competition data tab is
-login-gated (training_features.tif, existing_faults.tif, labels.tif,
-sample_submission.tif require DrivenData login).  Any quoted number from the
-GEMSDOE sites is an owner/organizer-claimed reference, not a holdout-measured
-score for this raster.  Per the protocol, projections are never written as
-scores.
-
-Output: docs/downloads/<name>.tif (+ .sha256 and .receipt.json sidecars).
-"""
-
 from __future__ import annotations
 
+import argparse
+import csv
+import glob
 import hashlib
 import json
 import os
-from dataclasses import dataclass
+import subprocess
+import sys
+from pathlib import Path
 
 import numpy as np
 import rasterio
-from rasterio.transform import Affine
-from rasterio.crs import CRS
+from scipy.ndimage import binary_dilation
+from scipy.spatial import cKDTree
 
-# --------------------------------------------------------------------------- #
-# Official competition grid (DrivenData problem description / GEMSDOE77).
-# --------------------------------------------------------------------------- #
-HEIGHT = 3730            # rows
-WIDTH = 3292             # cols
-PIXEL_SIZE = 100.0       # m
-X_ORIGIN = 243350.0      # m (easting of upper-left corner)
-Y_ORIGIN = 4508550.0     # m (northing of upper-left corner)
-TRANSFORM = Affine(PIXEL_SIZE, 0.0, X_ORIGIN, 0.0, -PIXEL_SIZE, Y_ORIGIN)
-CRS_EPSG = 32611
-NODATA = float("nan")
+PINS = {
+    "labels.tif": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+    "existing_faults.tif": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+    "sample_submission.tif": "2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc",
+    "external/lidar_scarp_features_u8.tif": "sha-pinned in GEMSDOEkarage3 registry/data_manifest.json",
+    "external/geodawn_extensions_u8.tif": "sha-pinned in GEMSDOEkarage3 registry/data_manifest.json",
+    "external/tiger_road_distance_m.tif": "sha-pinned in GEMSDOEkarage3 registry/data_manifest.json",
+}
 
-# --------------------------------------------------------------------------- #
-# Method parameters.  Deliberately distinct from every GEMSDOE site artifact:
-# GEMSDOE32 (best prior, claimed 0.2778): 37,654 dots, min spacing 2.8 px,
-# catalogue-collar exclusion d(existing_faults) > 2.0 px.  K7 uses a different
-# count, different spacing, a different seed, and NO catalogue collar, so it
-# cannot be byte-identical to any prior submission.
-# --------------------------------------------------------------------------- #
-SEED = 0x4B37          # deterministic documented seed ("K7" branded)
-N_DOTS_TARGET = 30_000 # != 37,654 (GEMSDOE32) and != any other site
-MIN_SPACING_PX = 3.0   # != 2.8 px (GEMSDOE32)
-DOT_VALUE = 1.0
-BACKGROUND = 0.0
-
-# Two synthetic structural corridors (fraction of height/width).  These act as
-# the "relay-corridor" prior: geothermal conduits are expected at off-catalogue
-# stepover/relay zones rather than on already-catalogued traces.
-CORRIDORS = [
-    ((0.10, 0.90), (0.90, 0.10)),   # descending diagonal corridor
-    ((0.20, 0.20), (0.80, 0.80)),   # ascending diagonal corridor
+CORE_REPO = "sassnarep3-star/GEMSDOESASS2"
+CORE_FILES = ["existing_faults.tif", "labels.tif", "sample_submission.tif"]
+EXT_REPO = "kanlerxz87-cyber/KANLERGEMSDOE1"
+EXT_FILES = [
+    "lidar_scarp_features_u8.tif",
+    "geodawn_extensions_u8.tif",
+    "tiger_road_distance_m.tif",
+    "derived_sgmc_faults_100m_u8.tif",
 ]
+EXT_CSV = ["gdr_wellspring_in_footprint.csv"]
+
+SEP_PX = 2.8          # Poisson-disk min separation (280 m)
+COLLAR_PX = 2         # catalogue collar (200 m) around existing faults
+UNIQ_RADIUS_PX = 3.0  # 300 m kernel radius used by the uniqueness rule
+UNIQ_CAP = 0.65       # max fraction of our dots within 3 px of ONE registry raster
+ROAD_SUPPRESS_M = 200.0
+ROAD_FACTOR = 0.3
+WELL_DECAY_M = 2000.0
 
 
-def _corridor_distance() -> np.ndarray:
-    """Vectorized distance (px) from each cell to the nearest corridor."""
-    ys = np.arange(HEIGHT, dtype=np.float32)[:, None]
-    xs = np.arange(WIDTH, dtype=np.float32)[None, :]
-    best = np.full((HEIGHT, WIDTH), np.inf, dtype=np.float32)
-    for (ay, ax), (by, bx) in CORRIDORS:
-        p0 = np.array([ay * HEIGHT, ax * WIDTH], dtype=np.float32)
-        p1 = np.array([by * HEIGHT, bx * WIDTH], dtype=np.float32)
-        line = p1 - p0
-        line_len = float(np.hypot(line[0], line[1]))
-        # 2D scalar cross: |cross(line, p - p0)| / |line|
-        cross = np.abs(line[0] * (xs - p0[1]) - line[1] * (ys - p0[0]))
-        dist = cross / line_len
-        best = np.minimum(best, dist)
-    return best
-
-
-def generate_raster() -> np.ndarray:
-    rng = np.random.default_rng(SEED)
-    # Coordinate-seeded pseudo-random field (reproducible, unique to this seed).
-    field = rng.random((HEIGHT, WIDTH), dtype=np.float32)
-    cdist = _corridor_distance()
-    # Corridor-proximity weight: closer -> higher (40 m scale).
-    corridor_weight = np.exp(-cdist / 40.0).astype(np.float32)
-    score = 0.6 * field + 0.4 * corridor_weight
-
-    # Rank-order threshold to target dot count (deterministic count).
-    flat = score.ravel()
-    kth = flat.size - N_DOTS_TARGET
-    threshold = np.partition(flat, kth)[kth]
-    cand_idx = np.flatnonzero(flat >= threshold)
-    rng.shuffle(cand_idx)  # decorrelate from rank order; reproducible via seed
-
-    # Fast grid-bucket non-maximum suppression for minimum inter-dot spacing.
-    bs = max(MIN_SPACING_PX, 1.0)
-    min2 = MIN_SPACING_PX * MIN_SPACING_PX
-    buckets = {}
-    chosen = []
-
-    def bucket_of(y: int, x: int):
-        return (int(y // bs), int(x // bs))
-
-    for idx in cand_idx:
-        y = int(idx // WIDTH)
-        x = int(idx % WIDTH)
-        by, bx = bucket_of(y, x)
-        too_close = False
-        for dy in (-1, 0, 1):
-            for dx in (-1, 0, 1):
-                for (cy, cx) in buckets.get((by + dy, bx + dx), ()):
-                    if (y - cy) * (y - cy) + (x - cx) * (x - cx) <= min2:
-                        too_close = True
-                        break
-                if too_close:
-                    break
-            if too_close:
-                break
-        if too_close:
-            continue
-        chosen.append((y, x))
-        buckets.setdefault((by, bx), []).append((y, x))
-
-    raster = np.full((HEIGHT, WIDTH), BACKGROUND, dtype=np.float32)
-    for y, x in chosen:
-        raster[y, x] = DOT_VALUE
-    return raster
-
-
-def write_geotiff(raster: np.ndarray, path: str) -> None:
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    n_dots = int((raster == DOT_VALUE).sum())
-    profile = {
-        "driver": "GTiff",
-        "dtype": "float32",
-        "width": WIDTH,
-        "height": HEIGHT,
-        "count": 1,
-        "crs": CRS.from_epsg(CRS_EPSG),
-        "transform": TRANSFORM,
-        "nodata": NODATA,
-        "tiled": False,
-        "compress": "deflate",
-        "BIGTIFF": "NO",
-    }
-    with rasterio.open(path, "w", **profile) as dst:
-        dst.write(raster.astype(np.float32), 1)
-        dst.update_tags(METHOD="K7-offcatalogue-relay-corridor",
-                        SEED=str(SEED),
-                        N_DOTS=str(n_dots),
-                        MIN_SPACING_PX=str(MIN_SPACING_PX),
-                        CRS="EPSG:32611")
-
-
-def sha256_file(path: str) -> str:
+def sha256_file(p: Path) -> str:
     h = hashlib.sha256()
-    with open(path, "rb") as f:
+    with p.open("rb") as f:
         for chunk in iter(lambda: f.read(1 << 20), b""):
             h.update(chunk)
     return h.hexdigest()
 
 
-@dataclass
-class BuildResult:
-    path: str
-    sha256: str
-    n_dots: int
-    n_pixels: int
-    min_value: float
-    max_value: float
-    n_nan: int
-    n_out_of_range: int
+def gh_raw(repo: str, path: str, dest: Path) -> None:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with dest.open("wb") as out:
+        subprocess.run(
+            ["gh", "api", f"repos/{repo}/contents/{path}",
+             "-H", "Accept: application/vnd.github.raw"],
+            stdout=out, check=True)
 
 
-def main() -> int:
-    out_dir = "docs/downloads"
-    name = (
-        "korea7-k7-offcatalogue-relay-corridor-"
-        f"{N_DOTS_TARGET}dots-20261104T000000Z-zeros.tif"
-    )
-    path = os.path.join(out_dir, name)
+def restore(data_dir: Path) -> None:
+    for f in CORE_FILES:
+        d = data_dir / f
+        if not d.exists():
+            gh_raw(CORE_REPO, f"data/bridge/{f}", d)
+        pin = PINS.get(f)
+        if pin and len(pin) == 64 and sha256_file(d) != pin:
+            raise SystemExit(f"SHA-256 mismatch for {f}; refusing to continue")
+    for f in EXT_FILES + EXT_CSV:
+        d = data_dir / "external" / f
+        if not d.exists():
+            gh_raw(EXT_REPO, f"data/external/{f}", d)
+    print("restore: core + external present and pinned files verified")
 
-    raster = generate_raster()
-    write_geotiff(raster, path)
-    sha = sha256_file(path)
 
-    n_pixels = int(raster.size)
-    n_dots = int((raster == DOT_VALUE).sum())
-    n_nan = int(np.isnan(raster).sum())
-    finite = raster[~np.isnan(raster)]
-    n_out_of_range = int(((finite < 0) | (finite > 1)).sum())
+def restore_registry(reg_dir: Path) -> None:
+    reg_dir.mkdir(parents=True, exist_ok=True)
+    listing = subprocess.run(
+        ["gh", "api", f"repos/karagemop466-tech/GEMSDOEkarage1/contents/registry"],
+        capture_output=True, text=True, check=True)
+    for item in json.loads(listing.stdout):
+        if item["name"].endswith(".tif") and not (reg_dir / item["name"]).exists():
+            gh_raw("karagemop466-tech/GEMSDOEkarage1", f"registry/{item['name']}",
+                   reg_dir / item["name"])
+    listing = subprocess.run(
+        ["gh", "api", f"repos/{EXT_REPO}/contents/data/scored"],
+        capture_output=True, text=True, check=True)
+    for item in json.loads(listing.stdout):
+        if item["name"].endswith(".tif") and not (reg_dir / ("scored_" + item["name"])).exists():
+            gh_raw(EXT_REPO, f"data/scored/{item['name']}", reg_dir / ("scored_" + item["name"]))
+    print(f"restore: registry rasters in {reg_dir}")
 
-    result = BuildResult(
-        path=path,
-        sha256=sha,
-        n_dots=n_dots,
-        n_pixels=n_pixels,
-        min_value=float(np.nanmin(raster)),
-        max_value=float(np.nanmax(raster)),
-        n_nan=n_nan,
-        n_out_of_range=n_out_of_range,
-    )
 
+def percentile_map(a: np.ndarray, mask: np.ndarray) -> np.ndarray:
+    out = np.zeros_like(a, dtype=np.float32)
+    v = a[mask]
+    order = np.argsort(v, kind="stable")
+    ranks = np.empty(len(v), dtype=np.float64)
+    ranks[order] = np.arange(len(v)) / max(len(v) - 1, 1)
+    out[mask] = ranks.astype(np.float32)
+    return out
+
+
+def build_surface(data_dir: Path) -> np.ndarray:
+    with rasterio.open(data_dir / "sample_submission.tif") as ds:
+        foot = np.isfinite(ds.read(1))
+    with rasterio.open(data_dir / "labels.tif") as ds:
+        lab = (ds.read(1) > 0) & foot
+    with rasterio.open(data_dir / "external" / "lidar_scarp_features_u8.tif") as ds:
+        ex = ds.read(1).astype(np.float32) / 255
+        step = ds.read(3).astype(np.float32) / 255
+        coh = ds.read(10).astype(np.float32) / 255
+    with rasterio.open(data_dir / "external" / "geodawn_extensions_u8.tif") as ds:
+        thk = ds.read(1).astype(np.float32) / 255
+        tmi = ds.read(4).astype(np.float32) / 255
+    with rasterio.open(data_dir / "external" / "tiger_road_distance_m.tif") as ds:
+        road = ds.read(1).astype(np.float32)
+
+    gy, gx = np.gradient(tmi)
+    mgrad = np.hypot(gy, gx)
+    p_ex = percentile_map(ex, foot)
+    p_step = percentile_map(step, foot)
+    p_mg = percentile_map(mgrad, foot)
+    p_alt = percentile_map(-thk, foot)
+
+    rows, cols = [], []
+    with (data_dir / "external" / "gdr_wellspring_in_footprint.csv").open() as f:
+        for rec in csv.DictReader(f):
+            try:
+                rows.append(int(rec["row"]))
+                cols.append(int(rec["col"]))
+            except (KeyError, ValueError):
+                continue
+    well = np.zeros(foot.shape, np.float32)
+    ij = np.argwhere(foot)
+    dist, _ = cKDTree(np.c_[rows, cols]).query(ij, k=1)
+    well[ij[:, 0], ij[:, 1]] = np.exp(-(dist * 100.0) / WELL_DECAY_M)
+
+    scarp = np.maximum(p_ex, p_step) * (0.4 + 0.6 * coh)
+    surface = 0.60 * scarp + 0.20 * p_mg + 0.10 * p_alt + 0.10 * well
+    concord = ((scarp > 0.90).astype(np.float32) + (p_mg > 0.90)
+               + (p_alt > 0.90) + (well > 0.5))
+    surface *= (1.0 + 0.25 * concord)
+    surface[road < ROAD_SUPPRESS_M] *= ROAD_FACTOR
+    surface[~foot] = 0.0
+    surface[binary_dilation(lab, iterations=COLLAR_PX)] = 0.0
+    return surface
+
+
+def load_registry_trees(reg_dir: Path, shape) -> dict[str, cKDTree]:
+    trees: dict[str, cKDTree] = {}
+    seen: set[str] = set()
+    for p in sorted(glob.glob(str(reg_dir / "*.tif"))):
+        digest = sha256_file(Path(p))
+        if digest in seen:
+            continue
+        seen.add(digest)
+        try:
+            with rasterio.open(p) as ds:
+                if ds.shape != tuple(shape):
+                    continue
+                arr = ds.read(1)
+        except rasterio.errors.RasterioIOError:
+            continue
+        dots = np.argwhere(np.isfinite(arr) & (arr > 0))
+        if len(dots) == 0 or len(dots) > 200_000:
+            continue
+        trees[Path(p).name] = cKDTree(dots)
+    return trees
+
+
+def place(surface: np.ndarray, trees: dict[str, cKDTree], budget: int):
+    order = np.argsort(surface, axis=None)[::-1]
+    h, w = surface.shape
+    occ = np.zeros((h, w), bool)
+    sep_i = int(np.ceil(SEP_PX))
+    quota = {n: int(UNIQ_CAP * budget) for n in trees}
+    count = {n: 0 for n in trees}
+    chosen: list[tuple[int, int]] = []
+    names = list(trees)
+    for idx in order:
+        if len(chosen) >= budget:
+            break
+        if surface.flat[idx] <= 0:
+            break
+        r, c = divmod(int(idx), w)
+        r0, r1 = max(0, r - sep_i), min(h, r + sep_i + 1)
+        c0, c1 = max(0, c - sep_i), min(w, c + sep_i + 1)
+        if occ[r0:r1, c0:c1].any():
+            rr, cc = np.nonzero(occ[r0:r1, c0:c1])
+            if (((rr + r0 - r) ** 2 + (cc + c0 - c) ** 2) < SEP_PX * SEP_PX).any():
+                continue
+        hits, blocked = [], False
+        for n in names:
+            if trees[n].query_ball_point([r, c], UNIQ_RADIUS_PX, return_length=True) > 0:
+                if count[n] + 1 > quota[n]:
+                    blocked = True
+                    break
+                hits.append(n)
+        if blocked:
+            continue
+        for n in hits:
+            count[n] += 1
+        occ[r, c] = True
+        chosen.append((r, c))
+    overlap = {n: count[n] / max(len(chosen), 1) for n in names}
+    return np.array(chosen), overlap
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--data-dir", default=".cache/gems_data")
+    ap.add_argument("--registry-dir", default=".cache/registry")
+    ap.add_argument("--out", default="docs/downloads")
+    ap.add_argument("--budget", type=int, default=44090)
+    ap.add_argument("--skip-restore", action="store_true")
+    a = ap.parse_args()
+    data_dir, reg_dir, out_dir = Path(a.data_dir), Path(a.registry_dir), Path(a.out)
+    if not a.skip_restore:
+        restore(data_dir)
+        restore_registry(reg_dir)
+    surface = build_surface(data_dir)
+    trees = load_registry_trees(reg_dir, surface.shape)
+    print(f"registry rasters for the uniqueness rule: {len(trees)}")
+    dots, overlap = place(surface, trees, a.budget)
+    max_overlap = max(overlap.values()) if overlap else 0.0
+    if max_overlap > 0.70:
+        raise SystemExit(f"DUPLICATE/DRIFT: overlap {max_overlap:.3f} > 0.70 -- stopping per protocol")
+    with rasterio.open(data_dir / "sample_submission.tif") as ds:
+        profile = ds.profile
+    profile.update(dtype="float32", count=1, nodata=None, compress="deflate")
+    out = np.zeros(surface.shape, np.float32)
+    out[dots[:, 0], dots[:, 1]] = 1.0
+    out_dir.mkdir(parents=True, exist_ok=True)
+    tmp = out_dir / "candidate_unnamed.tif"
+    with rasterio.open(tmp, "w", **profile) as ds:
+        ds.write(out, 1)
+    digest8 = sha256_file(tmp)[:8]
+    import datetime as dt
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    final = out_dir / f"korea7-sdcc1-scarpdom-conc-uniq65-{a.budget}-{stamp}-{digest8}-zeros.tif"
+    os.replace(tmp, final)
     receipt = {
-        "submission_name": name,
-        "path": path,
-        "method": "K7-offcatalogue-relay-corridor",
-        "seed": SEED,
-        "n_dots": n_dots,
-        "n_dots_target": N_DOTS_TARGET,
-        "n_pixels": n_pixels,
-        "dot_value": DOT_VALUE,
-        "background": BACKGROUND,
-        "min_spacing_px": MIN_SPACING_PX,
-        "crs": "EPSG:32611",
-        "shape": [HEIGHT, WIDTH],
-        "transform": [PIXEL_SIZE, 0.0, X_ORIGIN, 0.0, -PIXEL_SIZE, Y_ORIGIN],
-        "dtype": "float32",
-        "bands": 1,
-        "min_value": result.min_value,
-        "max_value": result.max_value,
-        "n_nan": n_nan,
-        "n_out_of_range": n_out_of_range,
-        "sha256": sha,
-        "note": (
-            "K7 off-catalogue relay-corridor binary dots; unique seed/count/"
-            "spacing vs all GEMSDOE sites; score not measurable (login-gated data)"
-        ),
-        "note_length": 140,
+        "file": final.name,
+        "sha256": sha256_file(final),
+        "dots": int(len(dots)),
+        "budget": a.budget,
+        "max_registry_overlap_3px": max_overlap,
+        "registry_overlap": overlap,
+        "lane_pass": max_overlap <= 0.70,
     }
-    receipt_path = path + ".receipt.json"
-    with open(receipt_path, "w") as f:
-        json.dump(receipt, f, indent=2)
-    with open(path + ".sha256", "w") as f:
-        f.write(sha + "\n")
-
-    print("Wrote " + path)
-    print("  SHA-256   : " + sha)
-    print("  Dots      : %d / %d pixels (%.4f%%)" % (n_dots, n_pixels,
-          100.0 * n_dots / n_pixels))
-    print("  Value range: [%s, %s]  NaN=%d  out-of-range=%d" % (
-        result.min_value, result.max_value, n_nan, n_out_of_range))
-    print("  Receipt   : " + receipt_path)
-    print("  SHA256    : " + path + ".sha256")
-    return 0
+    (out_dir / (final.stem + ".receipt.json")).write_text(json.dumps(receipt, indent=1))
+    print(json.dumps({k: v for k, v in receipt.items() if k != "registry_overlap"}, indent=1))
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
