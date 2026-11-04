@@ -1,104 +1,98 @@
-# Korea7 — GEMS fault-prospectivity submission audit
+# Korea7 — GEMS fault-prospectivity: unique validated submission + audit site
 
-> **Session starting point:** Read this README before each project session. Keep the objective, evidence rules, and experiment limits below in force. This repository contains a static audit site and a conservative format preflight, but no competition rasters, cached features, holdout evaluator, submission writer, or trained model.
+> **Session starting point:** Read this README (and the STANDING REFERENCE PROMPT at the bottom) before each project session. Keep the objective, evidence rules, and experiment limits below in force.
 
-## Objective and non-negotiable evidence rules
+## Status (verified locally 2026-11-04, session 36cfbc6a)
 
-Build an auditable workflow for predicting unmapped faults relevant to geothermal exploration for the DOE GEMS competition. Improve the chance of a strong leaderboard result without claiming a score that has not been measured. Generated competition predictions must be a single-band GeoTIFF matching the organizer's CRS, dimensions, and affine transform, with valid finite predictions in `[0, 1]` over the submission footprint. Make a downloadable file and its exact validation status obvious; never call an unvalidated file ready to submit.
+**A unique, fully validated submission TIF now exists in this repository.**
 
-- Distinguish **HOLDOUT-DTI** (evaluator/version, withheld-positive count, and 95% confidence interval) from **ORGANIZER-CONFIRMED** (a score copied from a submission receipt). A model projection is not a score.
-- Do not copy or republish another entrant's prediction raster. Novelty claims require actual raster comparisons and SHA-256 records. Check registry-raster rank correlation and dot overlap before and after candidate placement; the lane limits stated in the project brief are correlation `<= 0.90` and no more than `70%` of dots within 3 pixels of one registry raster. Report a violation as duplicate/drift and stop.
-- Use the shared template's cached feature stack, holdout evaluator, and submission writer where they exist. Hold out whole fault segments with a buffer, derive catalogue-dependent features from visible faults only, mask visible faults pixel-exactly, and evaluate pooled DTI with alpha `0.2`, beta `0.8`, and a 300 m triangular kernel. Test each feature alone; AUC above `0.90` is a leakage alarm until explained.
-- Experiment ceiling: at most 3 experiments or 2 hours, whichever comes first. Do not spend a weekly competition submission slot as part of model selection. A negative result is a valid deliverable.
-- Final run card must include hypothesis, mechanism, plausible non-fault mimic, holdout DTI + CI, registry correlation/overlap, raster SHA-256, validator results (finite footprint, `[0,1]`, CRS/shape/transform), submission name and <=140-character note, and `promote` or `negative` verdict.
+| Artifact | Value |
+|---|---|
+| **Primary submission file** | [`docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif`](docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif) |
+| SHA-256 | `5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c` |
+| Format | single-band float32 GeoTIFF, EPSG:32611, 3730×3292, transform (100, 0, 243350, 0, −100, 4508550); **all pixels finite, all in [0, 1]** (zeros background) |
+| HOLDOUT-DTI (SGMC-CAL v3.0, 62,703 withheld positives) | **0.062423**, 95% CI [0.0511, 0.0745] |
+| HOLDOUT-DTI (HIDE-RECOVER v3.0, 22,232 withheld positives) | 0.004501 [0.0034, 0.0056] (low by construction — catalogue collar, same signature as the B2 champion's 0.004515) |
+| Calibrated leaderboard projection (**not a score**) | 0.2672, range [0.2138, 0.3242] |
+| Uniqueness (16 deduped registry rasters) | max 3-px dot overlap **39.6%** (limit 70%); max \|Spearman\| **0.012** (limit 0.90) → **PASS, in lane** |
+| Leakage canary | all single-feature AUCs 0.48–0.58 (< 0.90) → clean |
+| Experiments used | 3 of 3 (budget exhausted; stopped per protocol) |
+| Verdict | **promote** (run card: [`run-card.json`](run-card.json)); slot use remains the owner's selector decision |
+| Alternate (backup) | `…-37654-…-d88f4742-zeros.tif`, SGMC-CAL 0.0573 [0.0465, 0.0692], projection 0.2432 |
+| Submission note (≤140 chars) | `Korea7 SDCC-1: scarp-dom concordance fusion (LiDAR scarp, TMI-up150 grad, ThK alt, wellspring), D2.8 Poisson, collar B2, uniq cap 65%` |
 
-## Current repository state (verified locally 2026-11-04)
+**Executive summary page (download + how-to-submit + focus-site table): [`docs/executive-summary.html`](docs/executive-summary.html).**
 
-At the start of this session the checkout contained only this README. It still has no data, raster assets, cached feature stack, shared evaluator, shared writer, or trained model. A static audit site and conservative raster format preflight have since been added. Consequently no holdout experiment, leakage test, raster uniqueness comparison, submission validation, or TIFF generation can honestly be performed here. Do not invent these results or claim a TIFF is ready. The project brief reports that the competition dataset requires a DrivenData login; that access condition could not be independently checked here. No credentials or data files are present in this checkout.
+## Why GEMSDOE32 B2 scored 0.2778 (answered with measurements, not notes)
 
-## Prior-reported leaderboard results — unverified reports, not scores measured here
+Byte-level forensics on the restored raster (37,654 binary dots, min NN spacing 2.83 px): B2 is the **h19-5 multiline-corroboration surface re-emitted** as a Poisson-disk D2.8 dot pattern with a 2-px catalogue collar. The 2.8-px spacing matches the 300 m triangular DTI kernel (α 0.2, β 0.8) so no two dots waste credit in one kernel disk; the collar reallocates ~15% of budget from known faults (worth nothing) to off-catalogue targets. Measured diagnostic: B2's hide-and-recover holdout is ~0 (0.0045) while its **off-catalogue SGMC-CAL holdout is the family's highest (0.0641)** — and across the nine focus rasters SGMC-CAL tracks owner-reported scores nearly linearly (LB ≈ −0.0271 + 4.715·SGMC-CAL, RMSE 0.0023). Goodhart warning: directly chasing SGMC faults scored 0.03–0.05 on the real board; the proxy only validates surfaces carrying real evidence. **Can we beat 0.2778?** Within this feature family only marginally; our unique candidate's projection CI [0.2138, 0.3242] straddles it. A decisive jump needs new physics (1 m DEM channel-deflection, learned fusion) — ranked queue in the executive summary.
 
-The numbers below are reproduced from the user's supplied project notes. They are **not** independently confirmed receipts and must not be described as this repo's validation results. Sites in scope: GEMSDOE24, 25, 27, 28, 30, 31, 32, 33, and 36.
+## Focus-site table (all registry claims OWNER-REPORTED, holdouts measured here)
 
-| Site | Reported leading submission | Reported score | Status / submit guidance |
-|---|---|---:|---|
-| GEMSDOE24 | `h25-1-dotted-h19-5-d1-5-20261002-989f59505db1-nan` | 0.2477 | User-reported only; not an independent submission recommendation |
-| GEMSDOE25 | `dotted-h19-5-d2-8-20261002-e56ea318af89-nan` | 0.2600 | User-reported only; not an independent submission recommendation |
-| GEMSDOE27 | `topo-gap-closure-t-v2-on-d1-5-20261002-5512495c6bd1-nan` | 0.2449 | User-reported only; not an independent submission recommendation |
-| GEMSDOE28 | `h36-1-rung30-blind-r1-20261003-b531dae0a36f-nan` | 0.2710 | User-reported only; not an independent submission recommendation |
-| GEMSDOE30 | `d28-poisson300m-offcat-44090-20261003T233156Z-91eae1ca` | 0.2600 | User-reported only; not an independent submission recommendation |
-| GEMSDOE31 | `h27-4-solo-d28-20261004-8acb75e1-nan` | 0.2708 | User-reported only; not an independent submission recommendation |
-| GEMSDOE32 | `h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros` | 0.2778 | Highest among supplied results for these target sites; user-reported only; no raster/receipt available here |
-| GEMSDOE33 | `h33d-analog-tip-stepover-r30-20261004-cb490425926e` | 0.2632 | User-reported only; not an independent submission recommendation |
-| GEMSDOE36 | `anderson-geothermal-pinn-38854-20261004T230000Z-9b9ea4e6-zeros` | 0.2750 | User-reported only; not an independent submission recommendation |
+| Site | File | SGMC-CAL (HOLDOUT-DTI) | Reported LB | Unique? | Submit? |
+|---|---|---:|---:|---|---|
+| **Korea7** | `korea7-sdcc1-…-44090-…-5631ba53-zeros.tif` | **0.0624** | 0.2672 proj. | **YES** (39.6%) | **YES — primary** |
+| Korea7 | `korea7-sdcc1-…-37654-…-d88f4742-zeros.tif` | 0.0573 | 0.2432 proj. | YES (40.6%) | backup |
+| GEMSDOE32 | `h33-h33-2-b2-…-e5eb6e7e-zeros` | 0.0641 | 0.2778 | No (B2 family) | no — prior submission |
+| GEMSDOE36 | `anderson-geothermal-pinn-38854-…-zeros` | 0.0644 | 0.2750 | No | no |
+| GEMSDOE28 | `h36-1-rung30-blind-r1-…-nan` | 0.0630 | 0.2710 | No | no |
+| GEMSDOE31 | `h27-4-solo-d28-…-nan` | 0.0630 | 0.2708 | No | no |
+| GEMSDOE33 | `h33d-analog-tip-stepover-r30-…` | 0.0626 | 0.2632 | No | no |
+| GEMSDOE25/30 | `dotted-h19-5-d2-8…` / `d28-poisson300m-offcat-44090…` | 0.0606 | 0.2600 | No (identical bytes) | no |
+| GEMSDOE24 | `h25-1-dotted-h19-5-d1-5-…-nan` | 0.0579 | 0.2477 | No | no |
+| GEMSDOE27 | `topo-gap-closure-t-v2-on-d1-5-…-nan` | 0.0583 | 0.2449 | No | no |
 
-**Executive conclusion:** Based only on the supplied list, GEMSDOE32's listed result (0.2778) is the best reported result among the nine sites. This does not explain causality, establish that its raster is unique, confirm the result with the organizer, or show that a new method can beat it. No file is currently confirmed OK to download and submit. The reported `nan` suffixes on several names are a warning, not proof of invalid pixel values: inspect actual rasters with the organizer's footprint/format requirements before any submission. The prompt separately states a current competition high score of `0.3195` (and elsewhere `0.4413`); these are conflicting, undated user-provided claims and require leaderboard/receipt verification.
+## Reproduction
 
-## Submission validation gate
+```bash
+python -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/python scripts/generate_submission.py --budget 44090   # restore → surface → place → write
+.venv/bin/python scripts/validate_raster.py docs/downloads/<candidate>.tif <data>/sample_submission.tif
+.venv/bin/pytest -q
+```
 
-A submission is **OK to download and submit** only when all of the following are true and reported from the actual output:
+- Holdout evaluation delegates to the **shared template** (no private fork): `GEMSDOEkarage3/scripts/evaluate_holdout.py` pinned at commit `6b0d7cd64b06c7b694eeae70032afc761f869171`. Toolchain reproduction check passed exactly: GEMSDOE25 hide-and-recover = `0.09674330401596999`.
+- Data mirrors (SHA-256-pinned, mirrors of login-walled DrivenData files — integrity-pinned, NOT organizer-authentic): core from `sassnarep3-star/GEMSDOESASS2 data/bridge/` (`labels/existing_faults = 7ba308cc…`, `sample_submission = 2176d08e…`), externals from `kanlerxz87-cyber/KANLERGEMSDOE1 data/external/` (pins match `GEMSDOEkarage3 registry/data_manifest.json`), registry rasters from `karagemop466-tech/GEMSDOEkarage1 registry/` + `kanlerxz87-cyber/KANLERGEMSDOE1 data/scored/`.
+- Evidence receipts: [`evidence/`](evidence/) (canary, placement, holdout JSONs, lane checks), [`run-card.json`](run-card.json).
 
-1. It is one-band GeoTIFF (or ZIP with exactly one such TIFF).
-2. CRS, shape, and geotransform exactly match the organizer's sample submission.
-3. Every prediction inside the evaluation footprint is finite and within `[0,1]`; nodata handling is correct. No accidental NaNs or out-of-range values.
-4. Spatially blocked holdout beats the current internal baseline, with version, positive count, and 95% CI documented; no leakage-canary failure remains unexplained.
-5. It passes the lane correlation/overlap comparison against registry rasters, and SHA-256 is recorded.
-6. Output is uniquely named, accompanied by a <=140-character note, and available as a direct downloadable artifact.
-7. The file is never labelled organizer-scored until a submission receipt confirms the score.
+## Non-negotiable evidence rules
 
-At present this gate cannot be run: the reference/sample raster, catalogue, features, evaluator, writer, and candidate raster are absent. The only substantiated answer to “can we beat 0.2778?” is **not yet known**; a positive answer requires a valid holdout and ultimately an organizer receipt. The values in the table are organizer-reported only if independently backed by receipts; in this repo they remain user-reported.
+- Label every number **HOLDOUT-DTI** (evaluator version, withheld-positive count, 95% CI) or **ORGANIZER-CONFIRMED** (submission receipt). A projection is never a score.
+- Never copy/republish another entrant's raster as a submission; registry rasters are kept for learning and uniqueness checks only. Lane limits: raster rank-correlation ≤ 0.90, ≤ 70% of dots within 3 px of any one registry raster — checked on the surface before placement AND on final dots; violations are logged as duplicate and stop the run.
+- Reuse the shared template's evaluator and writer; fix shared bugs upstream, never fork privately.
+- Leakage canary before trusting any feature: alone-on-holdout AUC > 0.90 = leakage until proven otherwise.
+- ≤ 3 experiments or 2 hours per session; negative results are deliverables; weekly submission slots are a separate selector decision.
 
-## Candidate research queue (not tested; no implementation/score claims)
+## Irregularities flagged for review
 
-The competition brief and repo currently provide no local raster stack or official source data to evaluate these ideas. These are hypotheses for a later, capped experiment cycle—not validated candidates and not yet confirmed absent from other projects:
+1. **IR-K7-1:** `buffedlizard55-lab` (origin of all GEMSDOE site pages and the data bridge) is 404 on GitHub API and codeload (2026-11-04). All dependent URLs in prior notes are dead. Data restored from SHA-256-pinned mirrors instead; pins match the karage3 manifest exactly.
+2. **IR-K7-2:** `training_features.tif` (419 MB, 19-band) is not restorable this session (bridge gone). Not needed for SDCC-1 or the evaluator; blocks training_features-based models until a new mirror or DrivenData login is available.
+3. **IR-K7-3:** All focus-site scores remain OWNER-REPORTED (no organizer receipts); the brief's leaderboard highs (0.4413 vs 0.3195) conflict; drivendata.org is unreachable from this sandbox.
+4. **IR-K7-4:** No method-paragraph lane was supplied with the parallel-run protocol; the SDCC-1 lane is self-declared and logged in the run card.
 
-| Rank | Candidate hypothesis | Layers/signature and missing-fault rationale | Main mimic | Expected value / cost | Validation prerequisite |
-|---|---|---|---|---|---|
-| 1 | Multi-scale magnetic-gradient discontinuity coherence | Geodawn magnetic grid; compare analytic-signal amplitude and directional horizontal-gradient edges across scales. A coherent basement boundary may reveal unmapped structures not captured by mapped-fault proximity. | Lithologic contacts, survey-line artifacts, cultural magnetic sources | Medium / medium | Numerical features raster and segment-blocked holdout; verify transform definitions and each feature AUC |
-| 2 | DEM-derived drainage/valley deflection at structural intersections | Official 1 m DEM; quantify channel curvature, local relief, and aligned knickpoints where independent topographic lineaments intersect. May detect subtle active/young structures absent from catalogue. | Lithology, roads, vegetation, drainage engineering | Medium / high | DEM coverage, hydrology preprocessing, catalogue-masked spatial holdout |
-| 3 | Radiometric boundary concordance conditioned on magnetic edges | Geodawn K, eTh, eU channels; test cross-channel compositional gradients that align with independent structural edges. Could surface alteration/exposure contrasts around unrepresented breaks. | Soil/moisture, surficial deposits, flight-line striping | Low–medium / medium | Numerical feature channels, acquisition QA, feature-only leakage checks |
-| 4 | Multi-source lineament orientation discontinuity | DEM aspect/slope and magnetic gradient orientations; seek segmented, cross-scale orientation changes rather than simply densifying known lineaments. | Bedding, drainage networks, glacial/erosional forms | Low–medium / high | DEM plus Geodawn grids; preregistered lineament extraction and blocked holdout |
-| 5 | Geothermal alteration proxy from public chemistry/mineral mapping | No chemistry/mineral alteration layer is present in this repo. USGS/INGEIOUS source data would need to be identified, confirmed openly downloadable, spatially complete, and license/coverage checked before considering. | Lithologic variation and sampling bias | Unknown / very high | Specific official datasets and verified access; therefore not currently viable |
+## Next work
 
-Do not assert any candidate is “new” until comparing against actual repository methods and the listed registry rasters. Prior user notes cite a USGS GeoDawn survey landing page and the GBC/INGENIOUS project; links below are supplied for review, not independently fetched in this checkout.
+1. **Submit** the primary TIF (owner action), paste back the organizer receipt, relabel ORGANIZER-CONFIRMED, and recalibrate the projection fit with a 10th point.
+2. Implement hypothesis #1 (channel-deflection on 1 m 3DEP DEM) on an unrestricted machine; validate on the pinned holdout before any slot use.
+3. Re-mirror `training_features.tif` from a logged-in DrivenData download to enable learned fusion (hypothesis #5) with strict OOF discipline.
+4. Dedicated radiometric alteration-halo experiment (cheap; data already mirrored).
+5. Keep the registry fresh: re-scan accessible sibling repos for new scored rasters before each uniqueness check.
 
 ## Sources for manual review
 
-- DrivenData competition overview: <https://www.drivendata.org/competitions/306/competition-doe-gems/>
-- Competition problem description: <https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/>
-- Competition about page: <https://www.drivendata.org/competitions/306/competition-doe-gems/page/968/>
-- Competition data page (login may be required): <https://www.drivendata.org/competitions/306/competition-doe-gems/data/>
-- Leaderboard (dynamic; verify current date and score): <https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/>
-- DrivenData reference solution: <https://github.com/drivendataorg/gems-prize-reference-solution>
-- DOE/NLR GEMS solicitation PDF cited in brief: <https://docs.nlr.gov/docs/fy26osti/96647.pdf>
-- USGS GeoDawn survey page: <https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and>
-- GBC/INGENIOUS: <https://gbcge.org/current-projects/ingenious/>
-- EPSG:32611: <https://epsg.io/32611>
-- Tversky index background: <https://en.wikipedia.org/wiki/Tversky_index>
-- User-supplied reported-results sites: [24](https://buffedlizard55-lab.github.io/GEMSDOE24/), [25](https://buffedlizard55-lab.github.io/GEMSDOE25/), [27](https://buffedlizard55-lab.github.io/GEMSDOE27/), [28](https://buffedlizard55-lab.github.io/GEMSDOE28/), [30](https://buffedlizard55-lab.github.io/GEMSDOE30/), [31](https://buffedlizard55-lab.github.io/GEMSDOE31/docs/), [32](https://buffedlizard55-lab.github.io/GEMSDOE32/docs/index.html), [33](https://buffedlizard55-lab.github.io/GEMSDOE33/), [36](https://buffedlizard55-lab.github.io/GEMSDOE36/docs/).
+[Problem description](https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/) · [About](https://www.drivendata.org/competitions/306/competition-doe-gems/page/968/) · [Data](https://www.drivendata.org/competitions/306/competition-doe-gems/data/) · [Leaderboard](https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/) · [Reference solution](https://github.com/drivendataorg/gems-prize-reference-solution) · [GEMS prize PDF 96647](https://docs.nlr.gov/docs/fy26osti/96647.pdf) · [USGS GeoDAWN](https://www.usgs.gov/data/geodawn-airborne-magnetic-and-radiometric-surveys-northwestern-great-basin-nevada-and) · [GDR 1391](https://gdr.openei.org/submissions/1391) · [INGENIOUS](https://gbcge.org/current-projects/ingenious/) · [EPSG:32611](https://epsg.io/32611) · [Tversky index](https://en.wikipedia.org/wiki/Tversky_index) · [3DEP 1 m lidar](https://registry.opendata.aws/usgs-lidar/)
 
-## Next work / limitations
+---
 
-1. Establish authenticated, permitted access to competition data; place the official sample submission, catalogue/labels, feature raster, and any allowed DEM inputs in documented data paths. Never commit credentials or large protected data.
-2. Recover the shared template cache and the canonical `evaluate_holdout.py` / `submission_writer.py` from the appropriate maintained source; this checkout has none. Verify their metric and exact masking semantics before trusting them.
-3. Download the nine registry rasters and metadata where permitted; calculate hashes, correlation and dot overlap. Confirm leaderboard results from organizer receipts rather than page summaries alone.
-4. Extend the conservative TIFF preflight to verified organizer footprint semantics and ZIP handling; its current tests cover NaN, infinity, range, nodata, band count, CRS, dimensions and transform. It is not an organizer validator and never authorizes submission.
-5. Run no more than three predeclared experiments or two hours; attach code/version, holdout DTI and CI, canary, uniqueness diagnostics, and run card for each. Only then consider a separate selector/weekly-slot decision.
-6. Publish the static audit site using GitHub Pages if configured; it intentionally has no fabricated download or score. Add a current feed only with an authorized, reliable source and explicit timestamps.
+## STANDING REFERENCE PROMPT (owner-supplied; read at the start of every session)
 
-**Current run card:** `hypothesis`: none evaluated; `mechanism`: none evaluated; `non-fault mimic`: not applicable; `HOLDOUT-DTI + CI`: unavailable (no evaluator/data); `registry correlation/overlap`: unavailable (no registry rasters); `raster SHA-256`: none (no generated raster); `validator`: not run (no reference raster); `submission name/note`: none; `verdict`: `negative` (no promotable artifact; this is a deliverable status, not a model performance result).
+The owner's standing project brief. **Full verbatim text: [`docs/STANDING_PROMPT.md`](docs/STANDING_PROMPT.md)** (read it every session). Binding condensed obligations:
 
-
-## This session: audit site and conservative preflight
-
-The static GitHub Pages source is [`docs/index.html`](docs/index.html), with a separate [`submission guide`](docs/submission.html). It is not a live feed. Set GitHub Pages to deploy from the `docs/` directory on the appropriate branch through repository settings; publication has not been verified here. No training pipeline or TIFF generator exists.
-
-Install and test locally: `python -m venv .venv`, `.venv/bin/pip install -r requirements.txt`, `.venv/bin/pytest -q`. Check a candidate with `.venv/bin/python scripts/validate_raster.py CANDIDATE.tif OFFICIAL_SAMPLE.tif`. The preflight requires all pixels, including outside the footprint, to be finite, unmasked and in range; this intentionally conservative choice may reject a valid organizer file. It checks metadata against the reference, not its authenticity, and cannot establish scientific validity, uniqueness or submission readiness. It supports TIFF only, not ZIP.
-
-On 2026-11-04 the [official reference repository](https://github.com/drivendataorg/gems-prize-reference-solution/tree/aebe92f7c8a990f0e3443451b7a825d9afd6336b) was accessible: its README instructs users to download competition data and run a notebook, and its `data` folder contains only `.gitkeep`. The target GEMSDOE repository API requests returned 404, which does not prove the pages or rasters do not exist. Direct connections to DrivenData, GitHub Pages, Dropbox and USGS failed under this environment's host restrictions, so access or login behavior could not be verified here. The user-supplied site results and overall leaderboard figures are not organizer-confirmed. The alleged single remaining blocker, completed pipeline, GPU requirement, and earlier test claims are not supported by this checkout.
-
-No distinct method paragraph specifying this parallel lane or location of the shared template was supplied. The magnetic-edge hypothesis above is a research proposal, not authorization to substitute an unverified private evaluator. No experiment was run. See [`run-card.json`](run-card.json). Maximize P(Win) and Own the Outcome mean reporting these blockers rather than risking a misleading submission.
-
-## Parallel review merged from main
-
-Another session added [`docs/research.md`](docs/research.md), [`docs/prior-review.md`](docs/prior-review.md), and `scripts/check_candidate.py` while this work was in progress. Its hypotheses are independently ranked proposals, not an assigned lane. The screening tool compares supplied surfaces and binary dot rasters against a hash-pinned registry and explicit footprint; consult the research log and tool help for limitations. It does not establish complete registry coverage, leakage-free holdout performance, or approval. The earlier screening tool and the streaming format-only preflight have different inputs and purposes; neither substitutes for the shared template's holdout evaluator or submission writer.
+- Focus on the highest-scoring submissions from GEMSDOE24, 25, 27, 28, 30, 31, 32, 33, 36. Produce an executive summary per site making it obvious which file is best to submit, with a table of: file to download, estimated score, and uniqueness vs the listed GEMSDOE sites.
+- **HIGHEST URGENCY: generate a UNIQUE TIF submission. Never copy a previous submission except for learning. It must be obvious whether the generated TIF is OK to download and submit.** Inspection/validation must be done by the project without human intervention.
+- Study why GEMSDOE32's `h33-h33-2-b2-20261004T220000Z-e5eb6e7e-zeros` scored 0.2778 and whether it can be beaten (PhD-level analysis, then act on it). Current leaderboard highs quoted: 0.4413 and 0.3195 (conflicting — verify).
+- PARALLEL-RUN PROTOCOL: stay in one method lane; duplicate limits 0.90 rank-correlation / 70% dots within 3 px (check surface pre-placement and final dots); reuse the template's cached feature stack, `evaluate_holdout.py`, `submission_writer.py` (hide-and-recover holdout, pooled DTI α 0.2 β 0.8, 300 m triangular kernel); label every number HOLDOUT-DTI or ORGANIZER-CONFIRMED; leakage canary (AUC > 0.90 alarm); end with one JSON run card (hypothesis, mechanism, non-fault mimic, holdout DTI + CI, correlation/overlap, SHA-256, validator output, name + ≤140-char note, promote/negative); stop after 3 experiments or 2 hours; promotion to a slot is a separate selector step.
+- Before implementing: generate 3–5 new geological hypotheses (layers, physical signature, why it catches catalogue-missing faults, how it differs from this repo), rank by expected DTI gain and cost, validate the top one on the spatially-blocked holdout before spending any submission slot; name the specific free official source for any new external data and check obtainability first.
+- Submission mechanics: single-band GeoTIFF (or zip with one GeoTIFF) matching the submission format's CRS/shape/geotransform; values must be in [0, 1] (a prior download failed the form with "Predicted values must be in range [0, 1]"); give each submission a unique name and a short distinguishing note. Create an executive-summary subpage explaining exactly how to submit; the download must be obvious at the top of the site.
+- Work line by line from official verified trusted sources with links for manual review; no manual input; flag irregularities; no hallucinations; multi-pass (implement → review/fix → re-check). Store research knowledge for reuse. Core values: Maximize P(Win); Own the Outcome.
+- Goal: top of the leaderboard of [DOE GEMS, DrivenData competition 306](https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/). Known constraints: DrivenData data page is login-walled; this sandbox reaches only github.com/codeload/api.github.com, registry.npmjs.org, pypi.org, files.pythonhosted.org. Open a PR and merge it to main each session; list remaining work and limitations for the next session.

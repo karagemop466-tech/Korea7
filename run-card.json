@@ -1,17 +1,66 @@
 {
-  "hypothesis": "Multi-scale magnetic-gradient discontinuity coherence; untested",
-  "mechanism": "Coherent multi-scale magnetic edges may indicate structural boundaries absent from the fault catalogue.",
-  "non_fault_mimic": "Lithologic contacts or survey-line artifacts",
-  "holdout_dti": null,
-  "holdout_evaluator_version": null,
-  "withheld_positives": null,
-  "holdout_95_percent_ci": null,
-  "registry_surface_correlation": null,
-  "registry_dot_overlap": null,
-  "raster_sha256": null,
-  "validator_output": "Not run: no candidate or reference raster. No claims of finite pixels, range, CRS, shape or transform match.",
-  "submission_name": null,
-  "submission_note": null,
-  "verdict": "negative",
-  "reason": "Inputs, shared evaluator and registry comparisons unavailable; no experiment or artifact."
+  "hypothesis": "SDCC-1: a scarp-dominant concordance fusion (LiDAR scarp percentile x coherence, upward-continued-TMI-150m horizontal-gradient percentile, Th/K alteration-low percentile, 2 km wellspring conduit prior, road suppression, 2-px catalogue collar) emitted as 2.8-px Poisson dots with a hard per-registry uniqueness cap can approach the B2 family's off-catalogue holdout level while remaining unique (<=70% dot overlap vs every registry raster).",
+  "mechanism": "Hidden leaderboard faults are predominantly off-catalogue; within the champion family the SGMC-CAL off-catalogue holdout tracks owner-reported leaderboard scores almost linearly (fit LB ~= -0.0271 + 4.715 x SGMC-CAL, RMSE 0.0023 over 9 family points). Scarp evidence is the strongest clean single feature (canary AUC 0.58); magnetic-gradient, alteration and conduit lines add corroboration where scarps are buried.",
+  "non_fault_mimic": "Road cuts and canal/terrace edges (LiDAR scarp false positives; mitigated by TIGER road suppression at 200 m), lithologic contacts and survey-line artifacts (magnetic gradient), soil-moisture/surficial-deposit contrasts (Th/K low).",
+  "holdout_dti": {
+    "primary_candidate": "korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif",
+    "hide_and_recover": {
+      "label": "HOLDOUT-DTI",
+      "evaluator_version": "GEMSDOE32-HIDE-RECOVER-v3.0 (shared template GEMSDOEkarage3 @ 6b0d7cd64b06c7b694eeae70032afc761f869171)",
+      "pooled_dti": 0.004501,
+      "ci95": [0.0034, 0.0056],
+      "n_withheld_positives": 22232,
+      "note": "Low by construction: the 2-px catalogue collar removes on-catalogue dots, exactly as for the GEMSDOE32 B2 champion (0.004515 on the same evaluator)."
+    },
+    "sgmc_off_catalogue": {
+      "label": "HOLDOUT-DTI",
+      "evaluator_version": "GEMSDOE32-SGMC-CAL-v3.0 (same pinned template)",
+      "prevalence_calibrated_dti": 0.062423,
+      "ci95": [0.0511, 0.0745],
+      "n_withheld_positives": 62703
+    },
+    "calibrated_projection_not_a_score": {
+      "value": 0.2672,
+      "ci_range": [0.2138, 0.3242],
+      "method": "linear fit of SGMC-CAL to owner-reported leaderboard results over the 9 focus-site family rasters; a projection is never written as a score"
+    }
+  },
+  "registry_correlation_overlap": {
+    "n_registry_rasters_compared": 16,
+    "pre_placement_surface_max_abs_spearman": 0.0343,
+    "final_dots_max_abs_spearman": 0.012,
+    "final_dots_max_overlap_within_3px": 0.3958,
+    "limits": {"spearman": 0.90, "overlap": 0.70},
+    "verdict": "PASS - in lane, not a duplicate",
+    "detail": "evidence/final_lane_checks.json"
+  },
+  "raster_sha256": {
+    "primary_44090": "5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c",
+    "alternate_37654": "d88f4742d9fd01f2e450622282a83b1d7d14390673caf8ce42b3841fdc953031"
+  },
+  "validator_output": {
+    "single_band": true,
+    "crs_shape_transform_match_sample_submission": true,
+    "all_pixels_finite": true,
+    "all_pixels_in_0_1": true,
+    "no_nan_inside_footprint": true,
+    "background": "zeros (all-finite variant; avoids the organizer form error 'Predicted values must be in range [0, 1]')"
+  },
+  "submission_name": "korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros",
+  "submission_note": "Korea7 SDCC-1: scarp-dom concordance fusion (LiDAR scarp, TMI-up150 grad, ThK alt, wellspring), D2.8 Poisson, collar B2, uniq cap 65%",
+  "verdict": "promote",
+  "verdict_basis": "All validation gates pass and the unique candidate's SGMC-CAL holdout (0.0624) sits within CI of the best family rasters (0.0630-0.0644); promotion to a weekly slot remains a separate selector decision. Beating 0.2778 is NOT demonstrated: the calibrated projection 0.2672 [0.2138, 0.3242] straddles it.",
+  "experiments_used": 3,
+  "experiment_log": [
+    "EXP-1 leakage canary: all single-feature AUC 0.48-0.58 (<0.90, clean); evidence/exp1_canary.json",
+    "EXP-2 candidate A (balanced weights, 37654 dots): SGMC-CAL 0.0481 [0.0374,0.0602]; evidence/holdout_expA_full.json",
+    "EXP-3 scarp-dominant surface, two emissions: 37654 -> 0.0573 [0.0465,0.0692]; 44090 -> 0.0624 [0.0511,0.0745]; evidence/holdout_v2a_full.json, evidence/holdout_v2b_full.json"
+  ],
+  "reproduction": "python scripts/generate_submission.py --budget 44090 (restores SHA-256-pinned mirrors; evaluator: GEMSDOEkarage3 scripts/evaluate_holdout.py, reproduction check GEMSDOE25 = 0.09674330401596999 matched exactly)",
+  "irregularities": [
+    "IR-K7-1: buffedlizard55-lab GitHub account is 404 (API+codeload, 2026-11-04); the original data bridge and all GEMSDOE site repos are unreachable; data restored instead from SHA-256-pinned mirrors in sassnarep3-star/GEMSDOESASS2 and kanlerxz87-cyber/KANLERGEMSDOE1 (pins match GEMSDOEkarage3 registry/data_manifest.json).",
+    "IR-K7-2: training_features.tif (419 MB, 19-band) is NOT restorable this session (bridge gone); not needed for the SDCC-1 pipeline or the holdout evaluator, but blocks any training_features-based model.",
+    "IR-K7-3: all nine focus-site scores remain OWNER-REPORTED/UNVERIFIED (no organizer receipts); the brief's leaderboard highs (0.4413 and 0.3195) conflict and could not be checked (drivendata.org unreachable from this sandbox).",
+    "IR-K7-4: no method-paragraph lane was supplied with the parallel-run protocol; the SDCC-1 lane above is self-declared and logged here."
+  ]
 }
