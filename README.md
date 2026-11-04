@@ -20,7 +20,7 @@ This branch began with only `README.md`. There is no `scripts/download_competiti
 
 All inputs are required. The footprint is an independently verified binary 0/1 raster on the reference grid; no footprint is inferred from nodata. The candidate and registry dots must be binary. The registry JSON is an array of objects with `site`, `surface`, `surface_sha256`, `dots`, and `dots_sha256`; paths resolve relative to the manifest. It must contain at least one entry for each of GEMSDOE24, 25, 27, 28, 30, 31, 32, 33 and 36, but this **does not prove registry completeness**. Hashes are full SHA-256 hex strings. The tool requires single-band GeoTIFF inputs with CRS, rejects any masked/nodata pixels, checks full-image finiteness and range (more conservative than checking only the footprint), grid alignment, surface rank correlation, and fraction of candidate dots within three Euclidean pixels of each registry dot raster. A threshold breach blocks. Constant or invalid surfaces block. `SCREENED_NOT_APPROVED` is deliberately not permission to submit: holdout performance, feature leakage, registry completeness, rules, and provenance remain unverified. This tool can be memory-intensive on large rasters.
 
-Run tests: `.venv/bin/pytest -q`. The screening checks both inputs in one invocation; **before placing any final dots**, use the same correlation method on the proposed surface against every complete registry surface. No implemented end-to-end pipeline or valid score estimate is claimed.
+Run tests: `.venv/bin/pytest -q`. Before placing dots, run `python scripts/check_candidate.py --surface surface.tif --reference sample_submission.tif --footprint footprint.tif --manifest registry.json` (omit `--candidate`). After placement run the full command above. Both statuses are screening only, not approval. All input rasters must be single-band GeoTIFFs without masked or nodata pixels; this conservative constraint can reject valid data outside the footprint. No implemented end-to-end pipeline or valid score estimate is claimed.
 
 ## Additional conservative format preflight
 
@@ -29,3 +29,7 @@ Run tests: `.venv/bin/pytest -q`. The screening checks both inputs in one invoca
 The GitHub API returned HTTP 404 for the nine named site repositories on 2026-11-04; this does not establish that their sites or data do not exist. The [official reference README and notebook](https://github.com/drivendataorg/gems-prize-reference-solution) were accessed via GitHub: the notebook uses U-Net and random patch splits, not the required buffered segment holdout. No experiments or weekly submissions were performed in this session.
 
 A parallel review also added `scripts/validate_raster.py` and its synthetic tests; like the other tools, it is a conservative format preflight, not a submission approval. The separate root `run-card.json` records that review's negative status.
+
+## Latest review
+
+The screening tool now has a separate pre-placement surface mode and rejects masked pixels, including masks hiding in-range values. See [review and remaining blockers](docs/review-2026-11-04.md). These are synthetic-test-backed safeguards, not a generated submission or validation against competition data.

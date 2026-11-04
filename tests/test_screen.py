@@ -99,3 +99,45 @@ def test_dot_distance_threshold_is_inclusive(tmp_path):
     result = screen(**args)
     assert result['comparisons'][0]['dot_overlap_3px'] == 1.0
     assert result['status'] == 'BLOCKED'
+
+
+def test_preplacement_surface_and_duplicate(tmp_path):
+    from check_candidate import screen_surface
+    args = fixtures(tmp_path)
+    args.pop('candidate')
+    assert screen_surface(**args)['status'] == 'SURFACE_SCREENED_NOT_APPROVED'
+    with rasterio.open(args['surface']) as src:
+        a = src.read(1)
+    write(tmp_path / 'rs.tif', a)
+    items = json.loads(args['manifest'].read_text())
+    for item in items:
+        item['surface_sha256'] = sha256(tmp_path / 'rs.tif')
+    args['manifest'].write_text(json.dumps(items))
+    result = screen_surface(**args)
+    assert result['status'] == 'BLOCKED'
+    assert len(result['comparisons']) == 1
+    assert result['comparisons'][0]['duplicate']
+
+
+def test_masked_candidate_is_blocked_even_if_raw_values_in_range(tmp_path):
+    args = fixtures(tmp_path)
+    with rasterio.open(args['candidate'], 'r+') as dst:
+        mask = np.full((12, 12), 255, dtype='uint8')
+        mask[1, 1] = 0
+        dst.write_mask(mask)
+    result = screen(**args)
+    assert result['status'] == 'BLOCKED'
+    assert 'masked or nodata' in result['errors'][0]
+
+
+def test_surface_screen_incomplete_registry_and_masked_footprint(tmp_path):
+    from check_candidate import screen_surface
+    args = fixtures(tmp_path)
+    args.pop('candidate')
+    items = json.loads(args['manifest'].read_text())
+    args['manifest'].write_text(json.dumps(items[:-1]))
+    assert screen_surface(**args)['status'] == 'BLOCKED'
+    args['manifest'].write_text(json.dumps(items))
+    with rasterio.open(args['footprint'], 'r+') as src:
+        src.nodata = 1
+    assert screen_surface(**args)['status'] == 'BLOCKED'
