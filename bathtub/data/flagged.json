@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-11-06T15:20:00Z",
+  "session_id": "arena-e6f84d88",
+  "purpose": "Everything on this page is here because it could NOT be confirmed from an official source, or because it is a discrepancy found while verifying. Nothing on this page blocks the project. It exists so the owner can see exactly which cells on the other pages are blank and why.",
+  "rules_applied": [
+    "If a value could not be confirmed from an official site, the value is left blank in the data and the field is listed here.",
+    "No value was inferred from a similar job, an average, a directory listing, or a model's expectation.",
+    "Owner-supplied numbers are labelled owner_reported and are never presented as verified.",
+    "Third-party review sites are never used as a source of truth."
+  ],
+  "items": [
+    {
+      "id": "FR-01",
+      "page": "Vendors",
+      "field": "Yelp rating and review count for every contractor",
+      "value": "",
+      "why": "yelp.com returned HTTP 403 to every automated request in this session (search and firm pages). No review text or star rating could be read, so none is reproduced.",
+      "severity": "medium",
+      "owner_action": "Open the prepared Yelp search link on the Vendors page and read the reviews yourself before calling.",
+      "source_url": "",
+      "url_is_search_entry_point": "Yelp search URL is a review entry point, not a source of verified fact."
+    },
+    {
+      "id": "FR-02",
+      "page": "Vendors",
+      "field": "Whether any contractor will do this job without a plumbing permit",
+      "value": "",
+      "why": "No official source publishes this, and it cannot be asked in writing without creating a record. CSLB does not track it.",
+      "severity": "high",
+      "owner_action": "Phone question only. Better: read the Compliance page first, because SF Plumbing Code 104.2 does not exempt waste-and-overflow work, so the premise may be wrong.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
+    },
+    {
+      "id": "FR-03",
+      "page": "Vendors",
+      "field": "Service area / whether each firm will travel to this address",
+      "value": "",
+      "why": "CSLB publishes address of record, not service area. A San Rafael or South San Francisco address of record does not prevent a firm from working in the City, and a San Francisco address does not guarantee it will.",
+      "severity": "medium",
+      "owner_action": "Ask on the phone, or check the firm's own site service-area page.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "FR-04",
+      "page": "Vendors",
+      "field": "Price for this job from any CSLB-verified firm",
+      "value": "",
+      "why": "No verified firm has quoted. The only three prices in the project are the owner-reported 2026-08-30 numbers, and those firms' licence numbers were never supplied, so they could not be verified either.",
+      "severity": "high",
+      "owner_action": "Send the written scope on the Ask page to the contractors and collect bids on identical line items.",
+      "source_url": ""
+    },
+    {
+      "id": "FR-05",
+      "page": "Estimates",
+      "field": "Whether the three 2026-08-30 quotes include drywall, permit, disposal or tenant protection",
+      "value": "",
+      "why": "Not stated in any of the three numbers as reported. Left blank rather than assumed.",
+      "severity": "high",
+      "owner_action": "Re-quote using the line items listed on the Estimates page.",
+      "source_url": ""
+    },
+    {
+      "id": "FR-06",
+      "page": "Estimates",
+      "field": "Whether the three quoting firms hold a current CSLB licence",
+      "value": "",
+      "why": "No licence number was supplied for Expert Plumbing Solutions, Bay Area Plumbing or Fast Response, so the official check could not be run. Note that these are generic-sounding names and CSLB name search returns up to 50 records per name, so a name match alone would not be proof.",
+      "severity": "high",
+      "owner_action": "Ask each firm for its licence number and check it on the CSLB site before signing anything.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    },
+    {
+      "id": "FR-07",
+      "page": "Compliance",
+      "field": "Building year of the unit",
+      "value": "",
+      "why": "Determines whether the federal lead-safe RRP rule applies at all (pre-1978). Not knowable from this session.",
+      "severity": "high",
+      "owner_action": "Read the build year off the property record, then re-read Compliance item P05.",
+      "source_url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.83"
+    },
+    {
+      "id": "FR-08",
+      "page": "Compliance",
+      "field": "Whether cutting a ceiling access hatch counts as 'demolition of painted surface areas' under 40 CFR 745.83",
+      "value": "",
+      "why": "This is a judgement call on regulated text, not a number. The eCFR definition excludes jobs involving 'demolition of painted surface areas' from the minor-repair exemption but does not define how large an opening becomes demolition. Resolving it requires the certifying firm or EPA guidance, not inference.",
+      "severity": "medium",
+      "owner_action": "Ask the contractor for its EPA firm certification number and put the question to them in writing.",
+      "source_url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-R/part-745/subpart-E/section-745.83"
+    },
+    {
+      "id": "FR-09",
+      "page": "Compliance",
+      "field": "Whether an adjust-only scope that cuts no piping is permit-exempt under SF Plumbing Code 104.2",
+      "value": "",
+      "why": "104.2 exempts 'unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping' and repair/maintenance of certain named fittings. It does not name tub waste-and-overflow, and this session did not find a DBI administrative bulletin resolving the question either way.",
+      "severity": "high",
+      "owner_action": "Ask DBI Permit Services directly (628-652-4900, permitsf@sfgov.org) and keep the answer with the job file.",
+      "source_url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "id": "FR-10",
+      "page": "Compliance",
+      "field": "Plumbing permit fee dollar amount",
+      "value": "",
+      "why": "The fee is set by SF Building Code Section 110A Table 1A-C. The table page was too large to read reliably in this session and its line items were not transcribed, so no fee number is asserted.",
+      "severity": "low",
+      "owner_action": "If a permit is needed, the contractor's bid will state the fee. Otherwise read Table 1A-C directly.",
+      "source_url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-92624"
+    },
+    {
+      "id": "FR-11",
+      "page": "Technical",
+      "field": "The actual failure mode inside this specific tub",
+      "value": "",
+      "why": "Seizure by corrosion, mineral scale and mis-adjusted linkage are all physically plausible. Only an on-site attempt distinguishes them. The patent source documents the linkage geometry and the too-short/too-long failure modes; it says nothing about this tub.",
+      "severity": "medium",
+      "owner_action": "Any licensed C-36 plumber can diagnose on site. Do not accept a diagnosis given over the phone.",
+      "source_url": "https://patents.google.com/patent/US4352213A/en"
+    },
+    {
+      "id": "FR-12",
+      "page": "Repo Audit",
+      "field": "Whether the three 'parallel lane' rasters actually fail the format gate, and if so why",
+      "value": "",
+      "why": "The repo's own page states the fail reason as a transform-origin mismatch, but the measured origin of those files equals the repo's recorded grid constant, and the only file at the other origin is an unrelated probe. The verdict and its reason cannot both be right, and this session could not determine which.",
+      "severity": "high",
+      "owner_action": "Re-run `vendor/gems57/validate.py` against each file and restate the verdict with the actual failing check.",
+      "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/docs/parallel-readme.md"
+    },
+    {
+      "id": "FR-13",
+      "page": "Repo Audit",
+      "field": "Meaning of '30000dots' in the relay-corridor raster name",
+      "value": "",
+      "why": "Measured content is 10,944 dots. The raster's own receipt says n_dots 10944 and n_dots_target 30000, so the target was not reached. The filename does not say so.",
+      "severity": "medium",
+      "owner_action": "Rename the file, or annotate every citation of it.",
+      "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/README.md"
+    },
+    {
+      "id": "FR-14",
+      "page": "Repo Audit",
+      "field": "The 13GEMS covering-lattice probe result (99.96% / 99.92% / 99.75%)",
+      "value": "",
+      "why": "The 13GEMS registry raster is excluded from the checkout by `.gitignore` (`registry/*.tif`), so the overlap percentage cannot be recomputed from committed bytes. It is transcribed as the repo's claim only.",
+      "severity": "low",
+      "owner_action": "Restore `registry/13GEMSDOE_lattice.tif` via `scripts/restore_data.py` and re-run the probe if the number matters.",
+      "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/README.md"
+    },
+    {
+      "id": "FR-15",
+      "page": "Repo Audit",
+      "field": "Every holdout DTI figure and every USER-REPORTED leaderboard score",
+      "value": "",
+      "why": "Holdout figures are internal-evaluator outputs requiring withheld labels; leaderboard scores have no organizer receipt in the repo. The repo itself labels them as unconfirmed. They are not re-asserted as true anywhere on this site.",
+      "severity": "medium",
+      "owner_action": "None for the bathtub project. For GEMS, obtain an organizer receipt before quoting a score.",
+      "source_url": "https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/"
+    },
+    {
+      "id": "FR-16",
+      "page": "Vendors",
+      "field": "Heises Plumbing address: website says 260 Ocean Ave, CSLB says 1610 Evans Ave",
+      "value": "",
+      "why": "Both can be true (shop vs. mailing). It is listed as an observation, not an inconsistency finding, because CSLB records the address of record rather than every business location.",
+      "severity": "low",
+      "owner_action": "Confirm the service address when calling.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    },
+    {
+      "id": "FR-17",
+      "page": "Repo Audit",
+      "field": "GitHub Pages is serving the repository root, not `docs/`",
+      "value": "",
+      "why": "Pages API reports `source.path: /` with `build_type: legacy`, so the repo's landing URL renders README.md and the designed site sits at `/docs/`. `docs/.nojekyll` therefore has no effect on that URL.",
+      "severity": "low",
+      "owner_action": "If the designed page should be the front door, change Pages source to `/docs`. This session did not change publishing settings.",
+      "source_url": "https://api.github.com/repos/karagemop466-tech/Korea7/pages"
+    }
+  ],
+  "summary": {
+    "total": 17,
+    "by_severity": {
+      "high": 6,
+      "medium": 6,
+      "low": 5
+    },
+    "by_page": {
+      "Vendors": 4,
+      "Estimates": 2,
+      "Compliance": 4,
+      "Technical": 1,
+      "Repo Audit": 6
+    }
+  }
+}

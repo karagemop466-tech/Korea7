@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-11-06T15:05:00Z",
+  "session_id": "arena-e6f84d88",
+  "purpose": "Explain, from a primary technical source, why 'just pull it out from the overflow' stops working, so the owner can judge whether a contractor's proposed approach is credible.",
+  "primary_source": {
+    "id": "S17",
+    "citation": "US 4,352,213 A - Linkage adjustment arrangement for a bathtub drain assembly (Robert R. Watts; assigned to Woodford Manufacturing, later WCM Industries). Filed 1980-11-07, granted 1982-10-05, legal status: expired.",
+    "url": "https://patents.google.com/patent/US4352213A/en"
+  },
+  "assembly": [
+    {
+      "part": "Overflow plate and trip lever",
+      "what_it_is": "The visible chrome plate on the tub wall with the lever. Two screws hold it to the overflow fitting.",
+      "relevance": "This is the only part that is meant to come off from inside the tub. Everything downstream of it is behind the tub wall."
+    },
+    {
+      "part": "Adjustable linkage (two brass rods plus a clevis)",
+      "what_it_is": "The patent describes 'an adjustable linkage, usually consisting of two connected brass rods and a brass clevis' connecting the drop cylinder to the trip lever.",
+      "relevance": "A long, thin, jointed metal assembly that has to slide out through the overflow opening. Brass and steel fasteners in a permanently wet drain are exactly where corrosion welds parts together."
+    },
+    {
+      "part": "Drop cylinder (plunger) inside the tee",
+      "what_it_is": "'A hollow cylinder known as a drop cylinder serves as a valve ... located within the vertical portion of the tee.'",
+      "relevance": "The plunger sits down inside the tee, below the overflow. If it seizes in the bore, the linkage cannot be withdrawn because the plunger is the thing being pulled, and it is the thing that is stuck."
+    },
+    {
+      "part": "Tee, overflow tube and drain shoe",
+      "what_it_is": "The drain tube from the tub drain connects to a tee; the vertical overflow tube connects the overflow port to the top of the tee.",
+      "relevance": "All of this is behind the tub apron or under the floor. This is the hidden plumbing the plumbers declined to force."
+    }
+  ],
+  "why_it_gets_stuck": [
+    {
+      "mechanism": "Linkage length adjustment gone wrong",
+      "from_source": "The patent states the failure mode explicitly: 'If the linkage is too short, the drop cylinder cannot seat inside the tee and close off the tube drainage. If the linkage is too long, the drop cylinder cannot clear the port inside the tee through which the tub drainage passes and may reduce the drainage rate.'",
+      "consequence": "A linkage that has been over-extended sits with the cylinder jammed against the tee port. Pulling harder does not free it; it loads the tee and the tub waste arm.",
+      "verified": true
+    },
+    {
+      "mechanism": "Corrosion of brass/steel in a wet drain",
+      "from_source": "Not stated in the patent. This is the universal reason plumbers decline to force a seized assembly, and it is why they recommend access from behind or below.",
+      "consequence": "The linkage can shear or the overflow fitting can break away from the tub. Either outcome turns a clog-class job into an open-wall job, which is exactly the concern reported by the 5+ plumbers.",
+      "verified": false,
+      "flag": "Recorded as a mechanism explanation, not as a sourced fact about this specific tub."
+    },
+    {
+      "mechanism": "Mineral scale reducing the bore",
+      "from_source": "Not stated in the patent.",
+      "consequence": "Hard-water scale narrows the bore of the tee so the drop cylinder no longer has clearance to come out.",
+      "verified": false,
+      "flag": "Generic mechanism; unverified for this tub."
+    }
+  ],
+  "consequence_for_this_project": [
+    "The owner's description is technically coherent. If the plunger is seized inside the tee, there is no path that removes it from above without either destroying the linkage or breaking the overflow fitting.",
+    "The patent confirms the assembly is behind the tub wall by design, so an access panel or a ceiling opening is not a shortcut, it is the standard second route to a waste-and-overflow assembly that will not come out the front.",
+    "This is why the work splits into two very different prices: an adjust/repair attempt done entirely from the overflow opening, and a replacement that probably needs the assembly reached from behind or below.",
+    "It also means the owner should ask each contractor one specific question: 'if the linkage shears, what is your plan and who pays for the opening?' A firm that has not thought about that has not done this job often."
+  ],
+  "questions_that_separate_a_good_bid_from_a_bad_one": [
+    "Will you attempt the overflow-only route first, and what is the price if it works?",
+    "What is the price if it fails and you must open the ceiling, and does that price include patching and finishing?",
+    "If the linkage shears during removal, is that covered in your price or is it a change order?",
+    "Do you hold C-36 and B on one licence, or will you sub-contract the drywall?",
+    "If a plumbing permit turns out to be required for your scope, will you pull it, and what does it add?",
+    "How will you contain dust in an occupied unit, and will you provide the EPA Renovate Right pamphlet to the tenant?",
+    "Can you give me two references from occupied San Francisco units where you replaced a waste-and-overflow?",
+    "Is your price a fixed bid or an hourly estimate, and what is the hourly rate and trip charge?"
+  ]
+}

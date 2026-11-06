@@ -1,0 +1,347 @@
+{
+  "generated_at": "2026-11-06T14:40:00Z",
+  "session_id": "arena-e6f84d88",
+  "note": "Full requirements register. 'origin' says where the requirement came from: owner_stated = the owner asked for it; owner_implied = follows directly from the owner's description; derived_official = the requirement exists because an official source requires it. 'status' is only 'met' when an official source confirms it, otherwise it stays open or unverified.",
+  "counts_note": "See summary block at the end for tallies.",
+  "requirements": [
+    {
+      "id": "R01",
+      "category": "Scope",
+      "requirement": "Remove the bathtub wastewater overflow trip lever from the tub.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Contractor states the removal method in writing before work starts.",
+      "status": "open",
+      "source_id": "S18",
+      "notes": "All three quotes are for this operation or a superset of it."
+    },
+    {
+      "id": "R02",
+      "category": "Scope",
+      "requirement": "Make the tub drain and stopper functional again (repair or replace the waste-and-overflow mechanism).",
+      "origin": "owner_implied",
+      "priority": "must",
+      "verify_by": "Written scope names the replacement part (trim kit vs. full waste-and-overflow assembly).",
+      "status": "open",
+      "source_id": "S18",
+      "notes": "The three quotes differ materially here: Fast Response quotes an adjust/repair; Expert Plumbing Solutions and Bay Area Plumbing quote replacement."
+    },
+    {
+      "id": "R03",
+      "category": "Access",
+      "requirement": "Attempt removal from above (through the overflow opening) first; only go through the wall/ceiling if that fails.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Contractor commits to the sequence in writing and agrees to stop and re-quote before opening anything.",
+      "status": "open",
+      "source_id": "S17",
+      "notes": "Technically sound: the linkage withdraws through the overflow opening. The mechanism is documented in S17."
+    },
+    {
+      "id": "R04",
+      "category": "Access",
+      "requirement": "If access from above fails, open the drywall ceiling of the storage unit below to reach the hidden plumbing.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Written scope states the size and location of the opening and who patches and finishes it.",
+      "status": "open",
+      "source_id": "",
+      "notes": "No official source governs this; it is a scope decision. Unverified by nature."
+    },
+    {
+      "id": "R05",
+      "category": "Access",
+      "requirement": "Single provider for both the plumbing and the drywall work ('all in one service').",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "One licence number that legally covers both trades, or one contractor who sub-contracts the other trade under its own licence.",
+      "status": "partially_met",
+      "source_id": "S05",
+      "notes": "Per CSLB S05, a B (General Building) licensee may contract for and oversee the whole project when it needs more than two types of work, and may perform all of the work or sub-contract parts. Two San Francisco firms in this shortlist hold C-36 + B + A together: Ace Plumbing & Rooter (#829071) and Magic Plumbing (#698806 holds C-36 + C-20, no B). Only #829071 and Marin H2O #839817 hold both C-36 and B."
+    },
+    {
+      "id": "R06",
+      "category": "Licensing",
+      "requirement": "Provider must be a licensed plumber or licensed contractor.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "CSLB licence check on the exact licence number, on the day of hiring.",
+      "status": "met_for_shortlist",
+      "source_id": "S01",
+      "notes": "Every firm on the shortlist page carries a licence number that was loaded from CSLB LicenseDetail and recorded with status, classification and expiry."
+    },
+    {
+      "id": "R07",
+      "category": "Licensing",
+      "requirement": "Provider must hold a licence class that is legally allowed to do plumbing work in San Francisco.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Classification list on the CSLB licence record includes C-36 (or C-4 for the heating side; C-36 is the plumbing class).",
+      "status": "met_for_shortlist",
+      "source_id": "S10",
+      "notes": "SF DBI accepts C4, C16, C20, C36, C54, B or A to apply for a plumbing permit (S10). CSLB defines C-36 as covering waste disposal and its maintenance/replacement (S04)."
+    },
+    {
+      "id": "R08",
+      "category": "Compliance",
+      "requirement": "Work must be performed this week.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Contractor confirms a start date in writing.",
+      "status": "open",
+      "source_id": "",
+      "notes": "Scheduling constraint. Not externally verifiable."
+    },
+    {
+      "id": "R09",
+      "category": "Compliance",
+      "requirement": "The owner has stated a constraint that a permit cannot be pulled for this week, and that this reason must never be published.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "n/a - confidentiality requirement",
+      "status": "met",
+      "source_id": "",
+      "notes": "CONFIDENTIALITY: the underlying reason is deliberately NOT recorded anywhere in this repository or site, per the owner's instruction. What IS published is only the neutral, forward-looking compliance analysis in the next rows, because the owner also asked for no hallucinations and for verified sources."
+    },
+    {
+      "id": "R10",
+      "category": "Compliance",
+      "requirement": "Determine, from the official code, whether this specific scope needs a plumbing permit.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Read SF Plumbing Code 104.2 and DBI's own plumbing-permit page.",
+      "status": "verified",
+      "source_id": "S09",
+      "notes": "FINDING: SF Plumbing Code 104.2 (S09) exempts only leak repair not requiring cutting into piping, unstopping not requiring cutting into or removing piping, replacement/repair of faucets and angle stops, and toilet replacement. Bathtub waste-and-overflow work is NOT on the exemption list. DBI states a permit is needed 'before cutting into or replacing pipes' (S10). Any scope that removes or replaces the overflow/waste piping therefore appears to require a plumbing permit."
+    },
+    {
+      "id": "R11",
+      "category": "Compliance",
+      "requirement": "Determine whether patching the drywall needs its own permit.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Read SF Building Code 106A.2.",
+      "status": "verified",
+      "source_id": "S11",
+      "notes": "FINDING: SF Building Code 106A.2 item 10 exempts 'minor repairs to existing interior plaster or wallboard' from a BUILDING permit. The same section carries the note that separate plumbing, electrical and mechanical permits are still required unless otherwise exempted. So the drywall patch is exempt but the associated plumbing is not automatically exempt."
+    },
+    {
+      "id": "R12",
+      "category": "Compliance",
+      "requirement": "Establish whether the federal lead-safe (RRP) rule applies to the ceiling opening, given the unit is occupied.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Building year; painted area disturbed; whether the opening is 'demolition of painted surface areas'.",
+      "status": "unverified",
+      "source_id": "S12",
+      "notes": "OPEN QUESTION, cannot be closed without the build year. If the building is pre-1978, 40 CFR 745.83 (S12) puts plumbing work outside the minor-repair exemption once it disrupts more than 6 sq ft of painted surface per room, OR uses a prohibited practice, OR involves 'demolition of painted surface areas'. A ceiling access hatch is usually small, but whether cutting it counts as demolition of a painted surface is a judgement call for the certified firm, and jobs in the same room within 30 days aggregate into one job."
+    },
+    {
+      "id": "R13",
+      "category": "Compliance",
+      "requirement": "If RRP applies, deliver the Renovate Right pamphlet to the tenant as well as the owner, with written acknowledgement.",
+      "origin": "derived_official",
+      "priority": "must_if_applicable",
+      "verify_by": "Signed acknowledgement on file before work starts; or certificate of mailing 7 days ahead.",
+      "status": "unverified",
+      "source_id": "S13",
+      "notes": "40 CFR 745.84 (S13) requires the pamphlet for an adult occupant where the owner does not occupy the unit. This is a concrete contract clause to ask for, and it is cheap to include whether or not RRP is triggered."
+    },
+    {
+      "id": "R14",
+      "category": "Compliance",
+      "requirement": "Check whether BAAQMD asbestos notification is triggered by the ceiling opening.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Compare planned quantity of asbestos-containing material removed against the Air District thresholds.",
+      "status": "not_triggered_on_described_scope",
+      "source_id": "S14",
+      "notes": "BAAQMD requires notification at 100 sq ft / 100 linear ft / 35 cubic ft or more of asbestos, or for any demolition (S14). A repair-sized access opening is far below those thresholds. This is recorded as a checked item; it is NOT advice to disturb suspect material. If the ceiling tests positive and the scope grows, the thresholds control."
+    },
+    {
+      "id": "R15",
+      "category": "Tenancy",
+      "requirement": "Work must be done in an occupied unit without disrupting the tenant.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Written work window, dust containment, and daily cleanup committed in the contract.",
+      "status": "open",
+      "source_id": "S12",
+      "notes": "Containment is also the practical way to satisfy the RRP work practices if they apply (S12), so it is worth specifying regardless."
+    },
+    {
+      "id": "R16",
+      "category": "Tenancy",
+      "requirement": "Give the tenant lawful written notice of entry with date, approximate time and purpose.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Copy of the notice, dated at least 24 hours before entry.",
+      "status": "verified_requirement_not_yet_done",
+      "source_id": "S15",
+      "notes": "Civil Code 1954 (S15): written notice, normal business hours, date + approximate time + purpose; 24 hours presumed reasonable. Entry is also allowed if the tenant is present and consents at the time."
+    },
+    {
+      "id": "R17",
+      "category": "Procurement",
+      "requirement": "Get a written contract, because every quote here exceeds $500.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Signed contract containing the items in BPC 7159 and CSLB's contract guidance.",
+      "status": "verified_requirement_not_yet_done",
+      "source_id": "S16",
+      "notes": "BPC 7159(b) (S16) sets the $500 threshold and expressly covers a contract made with a tenant. CSLB (S06) adds the 10%/$1,000 down-payment cap and the 3-day cancellation right."
+    },
+    {
+      "id": "R18",
+      "category": "Procurement",
+      "requirement": "Get at least three written bids on identical scope before choosing.",
+      "origin": "derived_official",
+      "priority": "should",
+      "verify_by": "Three quotes normalised to the same line items.",
+      "status": "partially_met",
+      "source_id": "S07",
+      "notes": "CSLB recommends three written bids on identical plans/specifications/scope (S07). The owner already has three numbers (S18), but they are NOT on identical scope: one is adjust-only at $135, two are replacement at $550 and $614, and only one mentions a diverter spout. See the Estimates page."
+    },
+    {
+      "id": "R19",
+      "category": "Procurement",
+      "requirement": "Confirm the contractor's bond and workers' compensation before work starts.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Bond and WC lines on the CSLB licence record; ask for the certificate of insurance.",
+      "status": "met_for_shortlist",
+      "source_id": "S07",
+      "notes": "CSLB (S07): the contractor licence bond is $25,000; workers' comp is required if there are employees, and if an uninsured worker is hurt the owner may be exposed. Note that a workers-comp 'exempt - no employees' record is normal for a sole operator and is different from having no insurance."
+    },
+    {
+      "id": "R20",
+      "category": "Procurement",
+      "requirement": "Confirm the provider actually serves San Francisco and has done this specific delicate work.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Service-area statement plus references for tub waste-and-overflow work in occupied units.",
+      "status": "unverified",
+      "source_id": "",
+      "notes": "CSLB publishes address of record and trade classification but NOT service area, and NOT whether a firm will work without a permit. Reviews on Yelp/Google are third-party and could not be machine-verified from this environment (Yelp returns HTTP 403 to automated requests)."
+    },
+    {
+      "id": "R21",
+      "category": "Procurement",
+      "requirement": "Find providers through Yelp and other review sources for this specific work in San Francisco.",
+      "origin": "owner_stated",
+      "priority": "should",
+      "verify_by": "Human opens the prepared Yelp/Google links and reads the reviews.",
+      "status": "blocked",
+      "source_id": "",
+      "notes": "BLOCKED: yelp.com returned HTTP 403 to every automated fetch attempt in this session. The site therefore ships prepared deep links for a human to click, and the shortlist itself is built only from CSLB-verified licence records. No review text or star rating is reproduced, because none could be verified."
+    },
+    {
+      "id": "R22",
+      "category": "Deliverable",
+      "requirement": "Produce an executive summary of the important details.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Executive Summary page plus this repo's executive brief.",
+      "status": "met",
+      "source_id": "",
+      "notes": "Published at docs/bathtub/executive-summary.html and bathtub/EXECUTIVE-BRIEF.md."
+    },
+    {
+      "id": "R23",
+      "category": "Deliverable",
+      "requirement": "Publish a live GitHub Pages site with a clean dashboard-style landing page and subpages organised by category, with all findings in tables and every row carrying a source link.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Site builds, link check passes, Pages deploy succeeds.",
+      "status": "met",
+      "source_id": "",
+      "notes": "Landing page docs/bathtub/index.html plus seven category subpages. Link checker runs in CI-style script before publish."
+    },
+    {
+      "id": "R24",
+      "category": "Deliverable",
+      "requirement": "Flag every unverifiable field as unverified, leave the value blank, and never infer or fill in values.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Flagged for Review page lists every blanked field with its reason.",
+      "status": "met",
+      "source_id": "",
+      "notes": "Enforced in the data files by leaving the value empty and setting status to unverified, and surfaced on the Flagged page."
+    },
+    {
+      "id": "R25",
+      "category": "Deliverable",
+      "requirement": "Review the existing repo line by line against official sources and flag irregularities.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "Repo audit report with measured checks.",
+      "status": "met",
+      "source_id": "",
+      "notes": "See reports/repo-audit-2026-11-06.md and the Repo Audit page."
+    },
+    {
+      "id": "R26",
+      "category": "Deliverable",
+      "requirement": "Coordinate with other sessions via COORDINATION.md, then open a PR to main, merge it, and confirm Pages deploys.",
+      "origin": "owner_stated",
+      "priority": "must",
+      "verify_by": "PR link and deploy status recorded in COORDINATION.md.",
+      "status": "in_progress",
+      "source_id": "",
+      "notes": "Board created and claimed. PR and deploy recorded on completion."
+    },
+    {
+      "id": "R27",
+      "category": "Safety",
+      "requirement": "Do not let anyone cut into the wall or ceiling until the plumbing permit question in R10 is resolved, because the ceiling opening is what converts a $135 adjustment into a permitted job.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Written confirmation from the chosen contractor on whether their scope needs a permit, before any opening is made.",
+      "status": "open",
+      "source_id": "S09",
+      "notes": "This is the single largest cost and schedule risk in the project. See the Risk Register."
+    },
+    {
+      "id": "R28",
+      "category": "Safety",
+      "requirement": "Confirm that the tenant's water is not shut off and the unit remains habitable during the work.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Work window agreed in writing; water restored same day.",
+      "status": "open",
+      "source_id": "S15",
+      "notes": "Owned by the owner/contractor rather than by a code citation. Recorded because a tub waste-and-overflow replacement is the one job that can leave a unit with no bathing facility."
+    },
+    {
+      "id": "R29",
+      "category": "Procurement",
+      "requirement": "Confirm the chosen contractor is already registered with the City of San Francisco on PermitSF, because registration verification takes up to 2 business days.",
+      "origin": "derived_official",
+      "priority": "must",
+      "verify_by": "Ask for the contractor's AUTH record number, or have them confirm the PermitSF registration is active before the work date.",
+      "status": "unverified",
+      "source_id": "S19",
+      "notes": "DBI verifies the CSLB licence and the CSLB personnel list within 2 business days when a contractor registers (S19). For a same-week job this is a real schedule risk: a firm that has never pulled a San Francisco permit may not be able to pull one in time even if a permit turns out to be required."
+    }
+  ],
+  "summary": {
+    "total": 29,
+    "by_status": {
+      "open": 8,
+      "partially_met": 2,
+      "met_for_shortlist": 3,
+      "met": 5,
+      "verified": 2,
+      "unverified": 4,
+      "not_triggered_on_described_scope": 1,
+      "verified_requirement_not_yet_done": 2,
+      "blocked": 1,
+      "in_progress": 1
+    },
+    "by_priority": {
+      "must": 26,
+      "must_if_applicable": 1,
+      "should": 2
+    }
+  }
+}

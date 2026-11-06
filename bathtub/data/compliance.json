@@ -1,0 +1,124 @@
+{
+  "generated_at": "2026-11-06T15:00:00Z",
+  "session_id": "arena-e6f84d88",
+  "framing": "This matrix states what the official sources actually say about the job as described. It is not legal advice and it does not tell the owner to skip a permit. Its purpose is to put the permit question in front of the owner BEFORE the ceiling is opened, because that is the point where a repair turns into a permitted construction project.",
+  "items": [
+    {
+      "id": "P01",
+      "topic": "Plumbing permit trigger",
+      "question": "Does removing or replacing the bathtub waste-and-overflow mechanism need a San Francisco plumbing permit?",
+      "official_answer": "DBI states a permit is needed 'before cutting into or replacing pipes, particularly pipes that will be covered by a wall'. SF Plumbing Code 104.2's exemption list covers only: leak repair not requiring cutting into piping; unstopping not requiring cutting into or removing piping; replacement/repair/maintenance of faucets, angle stops, hose bibbs, roof drains; toilet replacement; furnace filters; removal of piping already disconnected under permit; display set-up; water conservation devices; state/federal owned buildings.",
+      "does_bathtub_waste_overflow_appear_on_exemption_list": "NO - it is not named.",
+      "conclusion": "Any scope that cuts into or removes the overflow/waste piping appears to require a plumbing permit. An adjust-only scope that does not cut into piping would be closer to the 104.2(2)/(3) language, but even that is only clearly exempt if no piping is cut or removed.",
+      "verification": "verified",
+      "source_id": "S09",
+      "also": "S10"
+    },
+    {
+      "id": "P02",
+      "topic": "Drywall permit trigger",
+      "question": "Does patching the ceiling need a building permit?",
+      "official_answer": "SF Building Code 106A.2 lists 'Minor repairs to existing interior plaster or wallboard, except when part of a fire-resistive assembly' as work exempt from a building permit.",
+      "conclusion": "Patching the hole is exempt from a BUILDING permit. The drywall repair itself is not the permit problem.",
+      "verification": "verified",
+      "source_id": "S11",
+      "also": ""
+    },
+    {
+      "id": "P03",
+      "topic": "The exemption that does not travel",
+      "question": "If the drywall patch is exempt, does that make the whole job exempt?",
+      "official_answer": "SF Building Code 106A.2 carries its own note: 'Unless otherwise exempted, separate plumbing, electrical and mechanical permits shall be required for the above-exempted items.'",
+      "conclusion": "NO. The building-code exemption for wallboard repair does not exempt the plumbing work. This is the most commonly misunderstood point in this kind of job, and it is the reason the drywall exemption must not be treated as a green light.",
+      "verification": "verified",
+      "source_id": "S11",
+      "also": ""
+    },
+    {
+      "id": "P04",
+      "topic": "Service shut-off",
+      "question": "Can individual plumbing fixtures be repaired or the water shut off without a separate permit?",
+      "official_answer": "The excerpt of SF Plumbing Code 104.2 read in this session lists nine exemptions and does not include a general 'service and repair' or 'shut-off' exemption.",
+      "conclusion": "Cannot be confirmed from the portion of the code read. Flagged rather than asserted.",
+      "verification": "unverified",
+      "source_id": "S09",
+      "also": ""
+    },
+    {
+      "id": "P05",
+      "topic": "Lead-safe (RRP) - does it apply",
+      "question": "Does the federal Renovation, Repair and Painting rule apply to opening the ceiling in an occupied rental?",
+      "official_answer": "40 CFR 745.83 exempts 'minor repair and maintenance activities', defined by quantity and method: 6 sq ft or less of painted surface per room interior, no prohibited work practices under 745.85(a)(3), and no window replacement or demolition of painted surface areas. Jobs in the same room within 30 days are aggregated into one job.",
+      "conclusion": "CANNOT BE RESOLVED WITHOUT THE BUILD YEAR. If the building is 1978 or later, RRP does not apply at all. If it is pre-1978, the answer depends on the size of the painted surface disturbed and on whether cutting an access hatch counts as 'demolition of painted surface areas'. Because two of the three criteria are judgement calls, the safe move is to require an EPA lead-safe certified firm rather than to rely on the 6 sq ft number.",
+      "verification": "unverified",
+      "source_id": "S12",
+      "also": ""
+    },
+    {
+      "id": "P06",
+      "topic": "Lead-safe (RRP) - tenant notification",
+      "question": "If RRP applies, who must receive the pamphlet?",
+      "official_answer": "40 CFR 745.84(a)(2): where the owner does not occupy the unit, the firm must provide the pamphlet to an adult occupant and either obtain a written acknowledgement or certify delivery in writing; alternatively obtain a certificate of mailing at least 7 days before the renovation.",
+      "conclusion": "A tenant-occupied unit creates an extra, checkable deliverable: pamphlet to the tenant, with a signed acknowledgement, before work starts. This belongs in the contract regardless of whether the 6 sq ft trigger is met.",
+      "verification": "verified",
+      "source_id": "S13",
+      "also": ""
+    },
+    {
+      "id": "P07",
+      "topic": "Asbestos notification",
+      "question": "Does the Bay Area Air District asbestos notification apply to a ceiling access opening?",
+      "official_answer": "BAAQMD requires notification at least 10 business days before any renovation involving removal of 100 sq ft or more, 100 linear ft or more, or 35 cubic ft or more of asbestos, and before every demolition regardless of asbestos content. Residential buildings of four or fewer units may notify 72 hours ahead with an extra fee.",
+      "conclusion": "On the described scope (a repair-sized access opening, not a demolition) the thresholds are not met. Recorded as a checked, not-triggered item. If the opening grows into demolition, or if suspect ceiling material is disturbed, the notification requirement is back in play.",
+      "verification": "not_triggered_on_described_scope",
+      "source_id": "S14",
+      "also": ""
+    },
+    {
+      "id": "P08",
+      "topic": "Tenant right of entry",
+      "question": "How must the tenant be notified?",
+      "official_answer": "Civil Code 1954: the landlord may enter to make necessary or agreed repairs, must give reasonable written notice of intent to enter with the date, approximate time and purpose, and enter only during normal business hours. 24 hours is presumed reasonable absent evidence to the contrary. No notice is required in an emergency, or if the tenant is present and consents at the time of entry.",
+      "conclusion": "Serve a written notice with date, time window and purpose at least 24 hours ahead, and keep a copy. The 'tenant present and consents' route is also available if the tenant agrees in person.",
+      "verification": "verified",
+      "source_id": "S15",
+      "also": ""
+    },
+    {
+      "id": "P09",
+      "topic": "Written contract",
+      "question": "Is a written contract required at these prices?",
+      "official_answer": "BPC 7159(b): a home improvement contract is required where the aggregate price exceeds $500, and the definition expressly covers an agreement between a contractor and a tenant. CSLB adds that the contract must identify the contractor, address and licence number, and that the down payment may not exceed 10% of the contract price or $1,000, whichever is less.",
+      "conclusion": "Yes - all three quotes exceed $500. But note the trap: if the work is correctly scoped as an adjust-only repair at $135, the $500 threshold is not met. The paperwork obligation therefore follows the scope decision, which is another reason to settle the scope first.",
+      "verification": "verified",
+      "source_id": "S16",
+      "also": "S06"
+    },
+    {
+      "id": "P10",
+      "topic": "Licence class that may pull the permit",
+      "question": "Which licence classes may pull a plumbing permit in San Francisco?",
+      "official_answer": "SF DBI: contractors must hold a C4, C16, C20, C36, C54, B, or A licence to apply for a plumbing or mechanical permit in general, and the permit scope may be further limited by licence type.",
+      "conclusion": "A C-36 plumbing licence and a B general building licence are both accepted. A firm holding C-36 + B in one licence is the cleanest 'all in one' answer for this job.",
+      "verification": "verified",
+      "source_id": "S10",
+      "also": "S05"
+    },
+    {
+      "id": "P11",
+      "topic": "Owner acting as owner-builder",
+      "question": "Can the owner pull the permit instead of the contractor?",
+      "official_answer": "SF DBI: only property owners of stand-alone single-family dwellings (R-3 occupancy) may apply for a plumbing or mechanical permit to do the work themselves. Separately, any contractor applying online must first register with the City and register CSLB details and the San Francisco Business Account Number on PermitSF; DBI verifies the licence and the CSLB personnel list within 2 business days.",
+      "conclusion": "The owner-builder route is not available here: the described property has a storage unit below and an occupied tenant unit, so it is not a stand-alone single-family dwelling. That also means the permit, if one is required, must be pulled by the licensed contractor - and because contractor registration on PermitSF takes up to 2 business days to verify, a firm that has never registered in San Francisco is a schedule risk for a same-week job.",
+      "verification": "verified",
+      "source_id": "S10",
+      "also": "S19"
+    }
+  ],
+  "summary": {
+    "verified": 7,
+    "unverified": 1,
+    "not_triggered_on_described_scope": 1,
+    "headline": "The drywall patch is exempt from a building permit, but the plumbing work it exposes is not exempt, and the plumbing code's exemption list does not name bathtub waste-and-overflow work. That combination is the whole compliance story of this job."
+  }
+}

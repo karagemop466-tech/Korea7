@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-11-06T14:55:00Z",
+  "session_id": "arena-e6f84d88",
+  "date_received": "2026-08-30",
+  "source_id": "S18",
+  "critical_warning": "These three numbers are NOT comparable. Two are replacement prices for the waste-and-overflow assembly; one is an adjust/repair price for the plunger handle. Quoting the $135 against the $550 and $614 would be comparing different jobs. No written scope, licence number or line item was supplied for any of the three, and none of the three firms' licence numbers were supplied, so none has been CSLB-verified in this session.",
+  "estimates": [
+    {
+      "id": "E01",
+      "provider_as_given": "Expert plumbing solutions",
+      "quoted_scope": "Replacing waste and overflow",
+      "amount_usd": 614,
+      "scope_class": "replacement_full_waste_overflow",
+      "includes_labor": "not stated",
+      "includes_materials": "not stated",
+      "licence_number_supplied": false,
+      "licence_verified": false,
+      "written_scope_supplied": false,
+      "drywall_included": "not stated",
+      "permit_addressed": "not stated",
+      "tenant_handling_addressed": "not stated",
+      "source_id": "S18",
+      "flag": "Unverified - provider name was given in lower case with no licence number, no address and no written quote."
+    },
+    {
+      "id": "E02",
+      "provider_as_given": "Bay Area plumbing",
+      "quoted_scope": "Replace lever for the bathtub plug and spout with diverter; includes labour and materials",
+      "amount_usd": 550,
+      "scope_class": "replacement_lever_and_spout_with_diverter",
+      "includes_labor": true,
+      "includes_materials": true,
+      "licence_number_supplied": false,
+      "licence_verified": false,
+      "written_scope_supplied": false,
+      "drywall_included": "not stated",
+      "permit_addressed": "not stated",
+      "tenant_handling_addressed": "not stated",
+      "source_id": "S18",
+      "flag": "Unverified. Also note this scope ADDS a spout with diverter, which the other two quotes do not mention. A spout/diverter swap changes the scope, so this price is not like for like."
+    },
+    {
+      "id": "E03",
+      "provider_as_given": "Fast response",
+      "quoted_scope": "Repair or adjust bath tub wastewater plunger handle",
+      "amount_usd": 135,
+      "scope_class": "adjust_or_repair_only",
+      "includes_labor": "not stated",
+      "includes_materials": "not stated",
+      "licence_number_supplied": false,
+      "licence_verified": false,
+      "written_scope_supplied": false,
+      "drywall_included": "not stated",
+      "permit_addressed": "not stated",
+      "tenant_handling_addressed": "not stated",
+      "source_id": "S18",
+      "flag": "Unverified. This is the only adjust/repair quote. Given that 5+ licensed plumbers have already failed to free the trip lever from above, an adjust-only scope is the least likely of the three to resolve the problem."
+    }
+  ],
+  "normalised_comparison": {
+    "note": "Only the two replacement quotes can be placed side by side, and even then E02 includes a spout/diverter that E01 does not.",
+    "replacement_quotes_usd": {"E01": 614, "E02": 550},
+    "replacement_spread_usd": 64,
+    "replacement_spread_pct": 11.6,
+    "adjust_only_quote_usd": 135,
+    "gap_adjust_to_cheapest_replacement_usd": 415,
+    "gap_adjust_to_cheapest_replacement_pct": 307.4
+  },
+  "what_is_missing_from_all_three": [
+    "CSLB licence number (legally required on a bid per CSLB S07).",
+    "Whether the price includes opening and patching the ceiling.",
+    "Whether the price includes a plumbing permit if one turns out to be required (SF Plumbing Code 104.2, S09).",
+    "Whether the price includes waste disposal of the old assembly.",
+    "Whether the firm has previously freed a seized trip lever in an occupied San Francisco unit.",
+    "Whether the price is a fixed bid or an hourly estimate.",
+    "Whether the price includes the tenant notification and containment measures required for an occupied unit."
+  ],
+  "market_anchors": {
+    "note": "No official source publishes a price for this job. The only official pricing anchors that exist are permit FEES, which are a separate cost from the contractor's price. They are listed so the owner can see what the permit would add if R10 concludes a permit is required.",
+    "permit_fee_source_id": "S11",
+    "permit_fee_note": "SF Building Code Section 110A, Table 1A-C is the plumbing/mechanical permit issuance and inspection fee table. This session did not transcribe its line items, so no permit fee number is asserted here.",
+    "labour_rate_anchor": "None published. Do not infer an hourly rate from these three totals."
+  },
+  "analysis": [
+    "The two replacement quotes are 11.6% apart ($614 vs $550). That is a normal spread for the same trade on different days, and it is far too small a gap to justify choosing on price alone.",
+    "The $135 adjust quote is 307% below the cheaper replacement quote. That is not a discount, it is a different job. It is only correct if the plunger handle is merely mis-adjusted and can be reached and moved from above.",
+    "The evidence in the owner's own description argues against the adjust-only scope. Five or more licensed plumbers have already tried to remove the trip lever from above and declined. If reaching and adjusting the linkage were the whole job, that would already be done.",
+    "All three quotes pre-date the specific finding that removal may require the ceiling below to be opened, so none of them can be assumed to include drywall. That is the single line item most likely to move the final price, and it is missing from all three.",
+    "None of the three quotes states a licence number. CSLB considers the licence number a required element of a bid and of advertising, so asking for it is both a compliance step and a free way to screen out unlicensed operators.",
+    "Therefore the correct next action is not to pick the cheapest of the three. It is to send all three the same written scope (see the Ask page) plus the two single-provider firms, and re-quote on identical line items including the ceiling contingency."
+  ]
+}

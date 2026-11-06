@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo audit - Korea7</title>
+<meta name="description" content="Line-by-line verification of the Korea7 GEMS repository against its own claims, with measurements.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">BT</span>
+      <div><strong>Trip-Lever</strong><span>SF overflow project</span></div>
+    </div>
+    <nav aria-label="Sections"><a href="index.html"><span class="nav-dot"></span>Dashboard</a><a href="executive-summary.html"><span class="nav-dot"></span>Executive summary</a><a href="estimates.html"><span class="nav-dot"></span>Estimates</a><a href="vendors.html"><span class="nav-dot"></span>Vendors</a><a href="compliance.html"><span class="nav-dot"></span>Compliance</a><a href="technical.html"><span class="nav-dot"></span>Technical</a><a href="requirements.html"><span class="nav-dot"></span>Requirements</a><a href="sources.html"><span class="nav-dot"></span>Sources</a><a href="flagged.html"><span class="nav-dot"></span>Flagged for review</a><a href="repo-audit.html" aria-current="page"><span class="nav-dot"></span>Repo audit</a></nav>
+    <div class="side-foot">
+      <p><strong>Internal use only.</strong> Built 2026-11-06 13:40 UTC.</p>
+      <p>Every verified cell links to an official source. Unverified cells are blank and listed on <a href="flagged.html">Flagged for review</a>.</p>
+    </div>
+  </aside>
+  <main id="main">
+
+    <header class="page-head">
+      <div class="eyebrow">Category &middot; Repo audit</div>
+      <h1>This repository, checked against its own claims</h1>
+      <p class="lede">The repo is not about bathtubs. It is a DOE GEMS geothermal fault-prospectivity audit.
+      This page records 14 checks that passed and 5 irregularities, each measured in
+      this session rather than asserted.</p>
+    </header>
+
+    <section class="callout callout-quiet">
+      <p><strong>What this repository is.</strong> A Python research and audit package for the DOE GEMS
+      competition (DrivenData #306): single-band GeoTIFFs of &ldquo;fault dots&rdquo; on a 100 m grid in EPSG:32611,
+      with an internal holdout evaluator, a submission validator, a pytest suite, and a static GitHub Pages
+      site under <code>docs/</code>. The bathtub project in this session is unrelated to its contents, so all
+      new work was placed in new paths and nothing existing was restructured.</p>
+    </section>
+
+    <section>
+      <h2>Checks that passed</h2>
+      <div class="table-wrap"><table class="tbl"><thead><tr><th>Check</th><th>Method</th><th>Result</th><th>Verify</th></tr></thead><tbody><tr><td>Test suite</td><td><code>`pytest -q`</code></td><td><span class='chip chip-ok'>84 passed</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/tests" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Committed JSON parses</td><td><code>json.load over all commits</code></td><td><span class='chip chip-ok'>0 invalid</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/evidence" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Internal site links</td><td><code>href scan over docs/**/*.html</code></td><td><span class='chip chip-ok'>0 broken</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/docs" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Candidate SHA-256</td><td><code>sha256sum vs README</code></td><td><span class='chip chip-ok'>matches 9e345463…</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Candidate ZIP SHA-256</td><td><code>sha256sum vs README</code></td><td><span class='chip chip-ok'>matches 7460b2dd…</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>E3 SHA-256</td><td><code>sha256sum vs README</code></td><td><span class='chip chip-ok'>matches f013b9c4…</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>ZIP inner payload</td><td><code>zipfile + sha256</code></td><td><span class='chip chip-ok'>byte-identical to loose TIF</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/docs/downloads" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>SHA256SUMS.txt</td><td><code>3 listed rasters</code></td><td><span class='chip chip-ok'>all 3 match</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/downloads/SHA256SUMS.txt" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Grid constants</td><td><code>sha256 vs vendor/gems57/grid.py docstring</code></td><td><span class='chip chip-ok'>both match</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/vendor/gems57/grid.py" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>labels.tif identity</td><td><code>sha256 vs bridge/existing_faults.tif</code></td><td><span class='chip chip-ok'>identical (7ba308cc…)</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/data" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>NaN / finite counts</td><td><code>rasterio read</code></td><td><span class='chip chip-ok'>7,111,787 / 5,167,373 — matches docstring</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/blob/main/vendor/gems57/grid.py" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Shared grid across rasters</td><td><code>transform read</code></td><td><span class='chip chip-ok'>all origin (243350, 4508550), 100 m</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/docs/downloads" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Dot counts vs names</td><td><code>non-zero count</code></td><td><span class='chip chip-ok'>20,000 / 37,654 / 37,654 / 44,090 correct</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/docs/downloads" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr>
+<tr><td>Catalogue collisions</td><td><code>overlap with labels.tif</code></td><td><span class='chip chip-ok'>0 for both promoted candidates</span></td><td><a class="srclink" href="https://github.com/karagemop466-tech/Korea7/tree/main/data" target="_blank" rel="noopener noreferrer">open&nbsp;&#8599;</a></td></tr></tbody></table></div>
+    </section>
+
+    <section>
+      <h2>Irregularities</h2>
+      <div class="cards">
+        <div class="card static"><h3>F-01 &middot; <span class="chip chip-mid">MEDIUM</span></h3><p><strong>A file named <code>…-30000dots-…</code> contains <strong>10,944</strong> dots.</strong></p><p class="muted">The raster's own receipt discloses <code>n_dots: 10944, n_dots_target: 30000</code>. The filename does not. Any citation of the name asserts 2.7× the real count.</p></div><div class="card static"><h3>F-02 &middot; <span class="chip chip-bad">HIGH</span></h3><p><strong>The parallel lane's stated FAIL reason is measurably inverted.</strong></p><p class="muted">Three rasters are said to fail because their origin <code>(243350, 4508550)</code> &ldquo;differs from the recorded grid <code>(250000, 4520000)</code>&rdquo;. Measured: those rasters are at <code>(243350, 4508550)</code>, which is exactly the repo's own <code>grid.py TRANSFORM</code>. The only file at <code>(250000, 4520000)</code> is an unrelated zero probe.</p></div><div class="card static"><h3>F-03 &middot; <span class="chip chip-mid">MEDIUM</span></h3><p><strong>The &ldquo;off-catalogue&rdquo; relay lane puts <strong>72</strong> dots on the mapped catalogue.</strong></p><p class="muted">72 of 10,944 non-zero cells coincide with <code>data/labels.tif</code> (0.66%). The two promoted candidates score 0 on the same test.</p></div><div class="card static"><h3>F-04 &middot; <span class="chip chip-neutral">LOW</span></h3><p><strong>GitHub Pages serves the repo root, not <code>docs/</code>.</strong></p><p class="muted">Pages API reports <code>source.path: /</code>, so the landing URL renders <code>README.md</code> and the designed site is one level down at <code>/docs/</code>.</p></div><div class="card static"><h3>F-05 &middot; <span class="chip chip-neutral">LOW</span></h3><p><strong><code>format_probe_score_0.0000_do_not_submit.tif</code> is served publicly.</strong></p><p class="muted">It is all zeros and named as a warning, but it is still a live, submission-shaped download next to real candidates.</p></div>
+      </div>
+      <p class="note">None of these were fixed in this session: the GEMS files are outside this session's
+      file scope, and F-02 is a substantive research question rather than a typo. All five are logged in
+      <code>COORDINATION.md</code> and on <a href="flagged.html">Flagged for review</a>.</p>
+    </section>
+
+    <section>
+      <h2>What could not be verified in the repo</h2>
+      <div class="table-wrap"><table class="tbl"><thead><tr><th>Item</th><th>Why</th></tr></thead><tbody><tr><td>Holdout DTI figures</td><td>Internal-evaluator outputs requiring withheld proxy labels. Not independently checkable; transcribed as the repo's claim only.</td></tr>
+<tr><td>USER-REPORTED leaderboard scores</td><td>No organizer receipt exists in the repo, and the repo says so.</td></tr>
+<tr><td>13GEMS covering-lattice probe</td><td>The registry raster is excluded by <code>.gitignore</code> (<code>registry/*.tif</code>), so the percentage cannot be recomputed from committed bytes.</td></tr>
+<tr><td>Nine-focus-site pairwise overlaps</td><td>The nine focus rasters are present, so this is re-runnable, but it was not re-run in this session. Marked not measured, not false.</td></tr></tbody></table></div>
+    </section>
+
+    <section>
+      <h2>Bottom line</h2>
+      <p>The measured engineering is solid: tests pass, hashes match, ZIPs are byte-identical, the grid is
+      consistent, and the catalogue discipline is real. The weak point is prose that outran the data in two
+      places &mdash; a filename that overstates a dot count by 2.7×, and a FAIL verdict whose stated reason is
+      measurably backwards. In a repository whose entire value is auditability, F-02 should be corrected
+      before the next session builds on it.</p>
+      <p><a href="https://github.com/karagemop466-tech/Korea7" target="_blank" rel="noopener noreferrer">Repository&nbsp;&#8599;</a>
+      &nbsp;·&nbsp; <a href="../index.html">Existing GEMS site&nbsp;&rarr;</a></p>
+    </section>
+    
+    <footer class="foot">
+      <p>No value on this site is inferred. Where an official source could not confirm a value, the cell is blank and carries an <span class="chip chip-warn">unverified</span> chip.</p>
+      <p>Compliance notes summarise published code text for internal planning. They are not legal advice.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
