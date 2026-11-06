@@ -44,62 +44,70 @@
           <tr><th>#</th><th>Item</th><th>Why it is flagged</th><th>Where it appears</th><th>How to resolve</th></tr>
         </thead>
         <tbody>
-          <tr>
+          <tr id="f-1">
             <td>F-1</td>
             <td>Estimate amounts: $614 (EST-1), $550 (EST-2), $135 (EST-3)</td>
             <td>Amounts are user-provided from an internal estimate sheet (S23). A quoted price is a private transaction record and cannot be confirmed from a public official source.</td>
             <td><a href="estimates.html">Estimates</a> (rows labeled <span class="badge unverified">UNVERIFIED (user-provided)</span>)</td>
             <td>Keep the signed estimate PDFs with the internal file; amounts will never be externally confirmable. Company identities <i>were</i> independently verified (S13–S16).</td>
           </tr>
-          <tr>
+          <tr id="f-2">
             <td>F-2</td>
             <td>CSLB license #1024971 (Fast Response Plumbing &amp; Rooter)</td>
             <td>The number is published by the company itself (S16). It was not independently confirmed against the CSLB database in this session (the official lookup is an interactive form).</td>
             <td><a href="providers.html">Providers</a> P-03</td>
             <td>Run the number on the official <a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">CSLB Check a License</a> page before hiring (status + complaints).</td>
           </tr>
-          <tr>
+          <tr id="f-3">
             <td>F-3</td>
             <td>CSLB license numbers for Expert Plumbing Solutions, Bay Area Plumbing, Handyman Heroes, General SF</td>
             <td>Not shown on the linked Yelp listings (only "Verified License" badges). Left blank per policy.</td>
             <td><a href="providers.html">Providers</a> P-01, P-02, P-04, P-05</td>
             <td>Ask each company for its CSLB number and verify at <a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">CSLB</a>; then fill the blank cells with the confirmed number and source.</td>
           </tr>
-          <tr>
+          <tr id="f-4">
             <td>F-4</td>
             <td>Yelp "Verified License" badges</td>
             <td>A badge means Yelp confirmed a business or employee license at listing time — it is a third-party attestation, not a state record, and the underlying number is not exposed on the listing.</td>
             <td><a href="providers.html">Providers</a> license column</td>
             <td>Treat as a lead, not proof; confirm via CSLB (REQ-12 checklist).</td>
           </tr>
-          <tr>
+          <tr id="f-5">
             <td>F-5</td>
             <td>Yelp ratings and review counts</td>
             <td>Snapshots retrieved 2026-11-06; they change continuously. Counts vary even between Yelp pages of the same business (e.g., General SF: 302 on the business page vs 318–335 in search listings).</td>
             <td>All provider tables</td>
             <td>Re-check the linked listing at decision time; treat the recorded value as "as of 2026-11-06".</td>
           </tr>
-          <tr>
+          <tr id="f-6">
             <td>F-6</td>
             <td>Dany's Remodeling &amp; Handyman Service (P-07) — service area</td>
             <td>Listing is based in Albany, CA and states an Albany-area service area; service to San Francisco is NOT confirmed. Included because its review evidence (ceiling drywall replacement after water damage) matches the fallback scope exactly.</td>
             <td><a href="providers.html">Providers</a> P-07</td>
             <td>Confirm SF coverage by phone before adding to a bid list — otherwise keep as East Bay reference only.</td>
           </tr>
-          <tr>
+          <tr id="f-7">
             <td>F-7</td>
             <td>Mike's Water Damage (P-06) — phone/website</td>
             <td>Not shown on the retrieved listing data; left blank per policy.</td>
             <td><a href="providers.html">Providers</a> P-06</td>
             <td>Take from the linked Yelp page at contact time.</td>
           </tr>
-          <tr>
+          <tr id="f-8">
             <td>F-8</td>
             <td>Scope blanks in the three estimates</td>
             <td>None of the three quotes as provided states: drywall ceiling open/finish, dust containment, or the above-vs-below access path. Blank cells on the scope table mean "not stated", not "not included".</td>
             <td><a href="estimates.html">Estimates</a> scope comparison</td>
             <td>Request written clarification from each company before comparing totals (this is the highest-value next action per the <a href="analysis.html">Analysis</a>).</td>
           </tr>
+          <tr id="f-9">
+            <td>F-9</td>
+            <td>Owner-stated requirement items (REQ-01, REQ-08, REQ-09, REQ-10, REQ-11)</td>
+            <td>These requirements are the client's own statements (site conditions, tenant occupancy, scope preferences, record-keeping policy). There is no public official source that can confirm them — they are recorded as user-provided, exactly like the estimate amounts (F-1), and are never presented as externally verified.</td>
+            <td><a href="requirements.html">Requirements</a> rows labeled <span class="badge user">User brief</span> / internal policy</td>
+            <td>Nothing to resolve externally: if any statement changes, update the requirement row and this entry together.</td>
+          </tr>
+
         </tbody>
       </table>
     </div>

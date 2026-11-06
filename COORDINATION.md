@@ -20,7 +20,7 @@
 | 4 | Analysis & findings (approach, cost benchmark, all-in-one service) | done | 524880f1 | `overflow/analysis.html`, `overflow/sources.html` | Technical analysis S1-S7; cost bands S8/S9/S10/S22; fit matrix + risk register R-1..R-6 |
 | 5 | Repo review (line-by-line inventory + irregularities) | done | 524880f1 | `overflow/repo-review.html` | V-1..V-8 checks; irregularities I-1..I-6 (shallow history, divergent prompt files, triplicate run-cards, published do-not-submit artifact, score-label caution, two projects in one repo) |
 | 6 | Site build + navigation + verification pass | done | 524880f1 | `index.html`, `overflow/*`, `overflow/assets/*` | Automated check: all local links resolve, all JSON parses, forbidden-content scan clean |
-| 7 | Flagged for Review page | done | 524880f1 | `overflow/flagged.html` | F-1..F-8 unverified/blank items + repo irregularities cross-posted |
+| 7 | Flagged for Review page | done | 524880f1 | `overflow/flagged.html` | F-1..F-9 unverified/blank items + repo irregularities cross-posted |
 | 8 | Final integration: PR to `main`, merge, confirm Pages deploy | in progress | 524880f1 | `COORDINATION.md`, `README.md` | Running now |
 
 ## File-ownership map (non-overlapping scopes)
