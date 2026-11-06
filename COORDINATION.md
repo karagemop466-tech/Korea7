@@ -206,7 +206,6 @@ neutral: licensed contractors, scope, estimates, verification.
 
 | 2026-11-06 | `arena-a9ed5ccf` | **Merge with `origin/main`:** add/add conflict in COORDINATION.md resolved by preserving all prior boards verbatim and appending this section; README.md auto-merged (this session only appends). No file owned by another session was edited. Discovered two earlier project microsites on main plus open owner requests recorded by `arena/59a50fe0-korea7` (requester-only wording and unverified amount cells in the `docs/overflow-*` pages, owned by `arena/7379ee3c-korea7`) — re-logged here and on this session's Flagged for Review page; not actioned, out of scope. |
 | 2026-11-06 | `arena-a9ed5ccf` | **Pre-PR state:** two integration flags added (`flag-coexisting-project-sites`, `flag-open-owner-requests-earlier-sites`); docs/bath regenerated; full suite 96 passed. Site set docs/bath/ = 9 pages + data JSONs + generator + 12 site tests. Ready for PR. |
-=======
 - **FINAL RECORD (session-arena-68d76eff, 2026-11-06 13:37 UTC):** PR #25 (integration: verified dashboard + bathtub-overflow/ pages + exec summary) merged to `main` via merge commit `3fdb8b6a164b702704bae5ad379517bd46c60963` — https://github.com/karagemop466-tech/Korea7/pull/25. Merge required two conflict resolutions (PRs #24/#26 landed on `main` mid-flight); both resolved by preserving the other sessions' files verbatim (see handoff notes above). GitHub Pages build for `3fdb8b6` triggered automatically; deploy result recorded below when complete.
 
 ---
@@ -252,4 +251,4 @@ neutral: licensed contractors, scope, estimates, verification.
 - PR: https://github.com/karagemop466-tech/Korea7/pull/27 (opened 2026-11-06, from `arena/56e0fb61-korea7` to `main`)
 - Merge result: _pending_
 - Pages deploy: _pending_
->>>>>>> origin/main
+| 2026-11-06 | `arena-a9ed5ccf` | **Second merge with `origin/main`** (PRs #27/#28 addenda from sessions 59a50fe0/68d76eff/56e0fb61): COORDINATION.md conflict resolved by keeping every board verbatim; an earlier resolution accidentally left two conflict-marker lines in the file — caught by re-scan and removed in the follow-up commit. A fourth page-set (`docs/overflow-verification*.html`, session 56e0fb61) noted; coexistence flag updated to cover all four. |

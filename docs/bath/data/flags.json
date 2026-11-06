@@ -112,9 +112,9 @@
     {
       "id": "flag-coexisting-project-sites",
       "severity": "important",
-      "title": "Three independently built project sites now coexist in this repository",
-      "detail": "Parallel sessions on this same brief each published their own verified set: (1) docs/plumbing-index.html + docs/overflow-*.html (session arena/7379ee3c-korea7), (2) the root dashboard index.html + bathtub-overflow/ pages + EXECUTIVE-SUMMARY.md (session-arena-68d76eff), and (3) this set under docs/bath/ (session arena-a9ed5ccf). All three cover the same estimates and the same three quoting companies; this set adds the licensing analysis (B + C-36 single-contract capability), two additional B+C-36 candidates, and the strictest blank-if-unverified treatment. Per the coordination protocol, no session edited another's files, so all three remain. GitHub Pages currently serves all three.",
-      "action": "Owner decision: keep one canonical set and retire the other two, or cross-link them. This session recommends reviewing docs/bath/ first, since it is the only set with an automated test suite enforcing the source-link and no-leak rules.",
+      "title": "Four independently built project page-sets now coexist in this repository",
+      "detail": "Parallel sessions on this same brief each published their own work: (1) docs/plumbing-index.html + docs/overflow-*.html (session arena/7379ee3c-korea7); (2) the root dashboard index.html + bathtub-overflow/ pages + EXECUTIVE-SUMMARY.md (session-arena-68d76eff); (3) docs/overflow-verification*.html, an official-source verification addendum (session arena/56e0fb61); and (4) this set under docs/bath/ (session arena-a9ed5ccf). All cover the same estimates and quoting companies; this set adds the B + C-36 single-contract licensing analysis and automated enforcement of the source-link and blank-if-unverified rules. Per the coordination protocol no session edited another's files, so all four remain; GitHub Pages serves them side by side.",
+      "action": "Owner decision: pick one canonical set and retire or merge the rest. The coordination boards record cross-checks between the sets (their CSLB findings agree with this set's).",
       "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
       "source_label": "COORDINATION.md — all three sessions' boards and file-scope claims"
     },
