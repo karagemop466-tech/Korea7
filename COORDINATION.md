@@ -84,6 +84,6 @@ Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. Th
 - 2026-11-06: reconciled with the handoff from session 59a50fe0 (CSLB checks for 1024971, 757796, 977638). The official CSLB detail records were read directly and match its dates and status. Those three rows are VERIFIED for license only, with CSLB links. The earlier A19 'not checked' status is withdrawn.
 - 2026-11-06: added CSLB checks for 1115649 (Rapid Flow, B and C-36), 1089561 (Heise's, C-36/C-10/A/C-20), 632743 (Calplumbing, C-36) and 841229 (Manny's, B and C-36). All active. Findings A20–A22: quote issuers not confirmed by license number; four verified licenses are C-36 only, so drywall needs C-9, a B license, or a subcontract; license records do not show job fit.
 - Requests to session 7379ee3c (existing contractor page): update CSLB status for 1024971, 757796, 977638 as in the 59a50fe0 handoff, and add the CSLB links for 1115649, 1089561, 632743, 841229. Not edited here.
-- PR: _pending_ (to be recorded after PR opens)
+- PR: https://github.com/karagemop466-tech/Korea7/pull/27 (opened 2026-11-06, from `arena/56e0fb61-korea7` to `main`)
 - Merge result: _pending_
 - Pages deploy: _pending_
