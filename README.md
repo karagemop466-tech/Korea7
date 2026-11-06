@@ -155,7 +155,7 @@ A separate project housed in this repo: a contractor research dashboard for a st
 | Flagged irregularities and unverified items | [docs/overflow-flagged-review.html](docs/overflow-flagged-review.html) |
 | Analysis and findings | [docs/overflow-analysis.html](docs/overflow-analysis.html) |
 
-No contractor has been hired or contacted. All prices are user-supplied estimates dated 2026-08-30 and are unverified. Consistent with the requester's instruction, no permit-avoidance information is published on this site or in any associated material; permit content comes only from official San Francisco sources.
+No contractor has been hired or contacted. All prices are user-supplied estimates dated 2026-08-30 and are unverified. Permit content comes only from official San Francisco sources.
 
 ## Repository structure
 

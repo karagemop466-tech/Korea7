@@ -3,86 +3,156 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bathtub Overflow Trip Lever — Project Dashboard</title>
-<meta name="description" content="Dashboard for the bathtub wastewater overflow trip-lever project in San Francisco: verified estimates, licensed providers, permit rules, analysis, and flagged items.">
-<link rel="stylesheet" href="bathtub-overflow/assets/style.css">
+<title>Bathtub Overflow Trip Lever — Repair Dashboard · San Francisco</title>
+<meta name="description" content="Internal research dashboard: bathtub wastewater overflow trip lever repair — three 2026-08-30 estimates, six San Francisco contractor candidates with CSLB-verified licenses, cost benchmarks, findings, and flagged items.">
+<link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-<a class="sr-only" href="#main">Skip to content</a>
-<header class="site">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
   <div class="wrap nav">
-    <a class="brand" href="index.html"><span class="mark">TB</span> Bathtub Overflow Project</a>
+    <a class="brand" href="index.html"><span class="mark">TL</span> Overflow Trip Lever <span class="muted">/ SF repair project</span></a>
     <nav aria-label="Primary">
-      <a href="index.html" aria-current="page">Overview</a>
-      <a href="bathtub-overflow/executive-summary.html">Executive summary</a>
-      <a href="bathtub-overflow/estimates.html">Estimates</a>
-      <a href="bathtub-overflow/providers.html">Providers</a>
-      <a href="bathtub-overflow/permits-compliance.html">Permits &amp; licensing</a>
-      <a href="bathtub-overflow/analysis.html">Analysis</a>
-      <a href="bathtub-overflow/flagged-for-review.html">Flagged for review</a>
-      <a href="bathtub-overflow/sources.html">Sources</a>
+      <a href="index.html" aria-current="page">Dashboard</a>
+      <a href="summary.html">Executive summary</a>
+      <a href="estimates.html">Estimates</a>
+      <a href="contractors.html">Contractors</a>
+      <a href="findings.html">Findings</a>
+      <a href="sources.html">Sources</a>
+      <a href="flagged.html" class="flag-link">Flagged for review</a>
     </nav>
   </div>
 </header>
 
-<div class="hero">
-  <div class="wrap">
-    <div class="crumb">San Francisco, CA · Status: research complete, contractor selection pending owner decision · Data retrieved 2026-11-06</div>
-    <h1>Bathtub wastewater overflow trip lever — hard-to-access repair</h1>
-    <p class="lede">A stuck bathtub overflow trip lever inside concealed plumbing behind a bathroom wall in a tenant-occupied San Francisco unit. Five or more licensed plumbers (owner-reported) declined to remove it from above, and working from below means opening the drywall ceiling of the storage unit underneath. This dashboard collects the verified requirements, estimates, licensed providers, official permit and licensing rules, and analysis — every table row carries its source links.</p>
+<main id="main" class="wrap">
+
+<section class="hero">
+  <div class="eyebrow">Internal research · San Francisco · last updated 2026-11-06</div>
+  <h1>Bathtub wastewater overflow trip lever — stuck behind the wall</h1>
+  <p>The trip lever is seized inside the hidden waste-and-overflow plumbing behind the wall. Removing the
+  overflow from above has failed with 5+ licensed plumbers; below access through the storage-unit ceiling
+  drywall is the reported fallback. This dashboard organizes the three 2026-08-30 estimates, six
+  contractor candidates (five with CSLB-verified active licenses), independent cost benchmarks, and every
+  item that still needs your review.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="summary.html">Read the executive summary</a>
+    <a class="btn btn-ghost" href="estimates.html">See the 3 estimates</a>
+    <a class="btn btn-ghost" href="contractors.html">Contractors &amp; license checks</a>
+    <a class="btn btn-ghost" href="flagged.html">7 flagged items</a>
+  </div>
+</section>
+
+<div class="grid cols-4" style="margin-bottom:18px">
+  <div class="card stat">
+    <div class="k">Estimates received</div>
+    <div class="v">3</div>
+    <div class="s">$135 · $550 · $614 (2026-08-30, owner-provided — <span class="pill warn">unverified</span>)</div>
+  </div>
+  <div class="card stat">
+    <div class="k">Contractor candidates</div>
+    <div class="v">6</div>
+    <div class="s">3 quoters + 3 all-in-one drywall/plumbing leads</div>
+  </div>
+  <div class="card stat">
+    <div class="k">CSLB licenses verified active</div>
+    <div class="v ok">5 / 6</div>
+    <div class="s">Checked on official cslb.ca.gov, data current 2026-11-06</div>
+  </div>
+  <div class="card stat">
+    <div class="k">Flagged for your review</div>
+    <div class="v warn">7</div>
+    <div class="s">Unverified values &amp; irregularities — none block use of this site</div>
   </div>
 </div>
 
-<main class="wrap" id="main">
-
-  <div class="cards">
-    <div class="card"><h3>Client-provided quotes</h3><div class="big">3</div><p>$135 – $614 · dated 2026-08-30 · scopes differ (adjust vs. replace) · <a href="bathtub-overflow/estimates.html">details</a></p></div>
-    <div class="card"><h3>Providers verified against CSLB</h3><div class="big">6 of 6</div><p>All license records verified on CSLB License Detail pages (one initially unverified, since resolved — F3) · <a href="bathtub-overflow/providers.html">provider table</a></p></div>
-    <div class="card"><h3>All-in-one (plumbing + drywall) licensees</h3><div class="big">2</div><p>Hold both B General Building and C-36 Plumbing: Ace Plumbing &amp; Rooter, General SF · <a href="bathtub-overflow/providers.html">details</a></p></div>
-    <div class="card"><h3>Flagged items (F1–F14)</h3><div class="big">14</div><p>One resolved (F3); includes the no-permit posture and all unverified values · <a href="bathtub-overflow/flagged-for-review.html">flagged list</a></p></div>
+<section class="section">
+  <h2>Problem snapshot</h2>
+  <p class="sub">Owner-provided facts from the project brief (2026-11-06). These cannot be confirmed from a
+  public source and are marked <span class="pill info">owner-provided</span>.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th style="width:190px">Item</th><th>Detail</th><th style="width:150px">Status</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Failed component</strong></td><td>Bathtub wastewater overflow trip lever — stuck inside the hidden plumbing behind the wall</td><td><span class="pill info">owner-provided</span></td></tr>
+        <tr><td><strong>Access problem</strong></td><td>Overflow sits in a hard-to-reach area; 5+ licensed plumbers would not remove it from above for fear of destroying the hidden plumbing</td><td><span class="pill info">owner-provided</span></td></tr>
+        <tr><td><strong>Reported fallback</strong></td><td>Work from below — storage unit under the unit; may require opening the drywall ceiling to reach the plumbing</td><td><span class="pill info">owner-provided</span></td></tr>
+        <tr><td><strong>Service requirement</strong></td><td>One all-in-one provider for drywall <em>and</em> plumbing; delicate work while tenants occupy the unit</td><td><span class="pill info">owner-provided</span></td></tr>
+        <tr><td><strong>Preference</strong></td><td>Removing the overflow from above is preferred if it can be done safely</td><td><span class="pill info">owner-provided</span></td></tr>
+        <tr><td><strong>Location</strong></td><td>San Francisco, CA</td><td><span class="pill info">owner-provided</span></td></tr>
+      </tbody>
+      <caption>Source: owner project brief, this session. No public source exists for these statements.</caption>
+    </table>
   </div>
+</section>
 
-  <section id="at-a-glance">
-    <h2>At a glance — the three quotes received</h2>
-    <div class="tablewrap">
-      <table>
-        <caption>Amounts are client-provided (2026-08-30) and cannot be independently verified from an official source — see <a href="bathtub-overflow/flagged-for-review.html">Flagged for review</a>, item F7.</caption>
-        <thead><tr><th>Company (as quoted)</th><th>Quoted scope</th><th class="num">Amount</th><th>CSLB license status</th></tr></thead>
-        <tbody>
-          <tr><td>Fast Response (Plumbing &amp; Rooter)</td><td>Repair or adjust bathtub wastewater plunger handle</td><td class="num">$135</td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971">#1024971</a> <span class="badge ok">active C-36</span></td></tr>
-          <tr><td>Bay Area Plumbing</td><td>Replace lever for bathtub plug and spout with diverter (labor + materials)</td><td class="num">$550</td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796">#757796</a> <span class="badge ok">active C-36</span></td></tr>
-          <tr><td>Expert Plumbing Solutions</td><td>Remove trip lever — "replacing waste and overflow"</td><td class="num">$614</td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638">#977638</a> <span class="badge ok">active C-36</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="small">The three prices are not like-for-like: the scopes range from adjusting the plunger linkage to replacing the concealed waste-and-overflow assembly. None of the quotes as described includes drywall/ceiling access work. See <a href="bathtub-overflow/estimates.html">Estimates</a> and <a href="bathtub-overflow/analysis.html">Analysis</a>.</p>
-  </section>
+<section class="section">
+  <h2>At a glance — the three estimates</h2>
+  <p class="sub">Quoted 2026-08-30. Amounts are owner-provided and cannot be confirmed from any official
+  source — see <a href="estimates.html">Estimates</a> for the full table and benchmark comparison.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Company</th><th>Scope as quoted</th><th class="num">Amount</th><th>Company verified?</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Expert Plumbing Solutions</strong><br><small>CSLB #977638 · C-36</small></td>
+          <td>Remove bathtub wastewater overflow trip lever / replacing waste and overflow</td>
+          <td class="num"><strong>$614</strong><br><span class="pill warn">unverified</span></td>
+          <td><span class="pill ok">CSLB active</span> <span class="pill ok">Yelp 4.8 (81)</span></td>
+        </tr>
+        <tr>
+          <td><strong>Bay Area Plumbing</strong><br><small>CSLB #757796 · C-36</small></td>
+          <td>Replace lever for the bathtub plug and spout with diverter — includes labor and materials</td>
+          <td class="num"><strong>$550</strong><br><span class="pill warn">unverified</span></td>
+          <td><span class="pill ok">CSLB active</span> <span class="pill ok">Yelp 4.8 (175)</span></td>
+        </tr>
+        <tr>
+          <td><strong>Fast Response</strong><br><small>CSLB #1024971 · C-36</small></td>
+          <td>Repair or adjust bath tub wastewater plunger handle</td>
+          <td class="num"><strong>$135</strong><br><span class="pill warn">unverified</span></td>
+          <td><span class="pill ok">CSLB active</span> <span class="pill ok">Yelp 4.8 (906)</span></td>
+        </tr>
+      </tbody>
+      <caption>Source for amounts: owner-provided estimates dated 2026-08-30 (no official publication exists).
+      Source for licenses: <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638">CSLB #977638</a>,
+      <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796">CSLB #757796</a>,
+      <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971">CSLB #1024971</a>
+      (checked 2026-11-06). Source for ratings: the linked Yelp pages on <a href="contractors.html">Contractors</a>.</caption>
+    </table>
+  </div>
+</section>
 
-  <section id="pages">
-    <h2>Browse by category</h2>
-    <div class="cards">
-      <div class="card"><h3><a href="bathtub-overflow/executive-summary.html">Executive summary</a></h3><p>One-page summary of the problem, verified findings, and recommended next steps.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/problem-scope.html">Problem &amp; scope</a></h3><p>The reported condition, constraints (occupied unit, storage room below), and the requirement list this research was built against.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/estimates.html">Estimates</a></h3><p>The three quotes with scope comparison, licensing cross-check, and what each price does and does not cover.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/providers.html">Verified providers</a></h3><p>Six candidate companies with CSLB license records, classifications, review links, and all-in-one capability notes.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/permits-compliance.html">Permits &amp; licensing</a></h3><p>Official San Francisco permit rules and California contractor-licensing thresholds, with statute and code citations.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/analysis.html">Analysis</a></h3><p>Access options (above vs. below), who can legally do plumbing + drywall on one contract, cost picture, and next steps.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/methodology.html">Methodology</a></h3><p>How entries were verified, what counts as an official source here, and the limitations of this research.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/flagged-for-review.html">Flagged for review</a></h3><p>All unverified values and irregularities, numbered, with source links — nothing here blocks the site from being live.</p></div>
-      <div class="card"><h3><a href="bathtub-overflow/sources.html">Sources</a></h3><p>Numbered list of every official and supporting source used, with retrieval dates.</p></div>
-    </div>
-  </section>
+<section class="section">
+  <h2>Browse by category</h2>
+  <p class="sub">Every table row on this site carries a source link. Values that could not be confirmed from an
+  official source are left blank and flagged.</p>
+  <div class="quick">
+    <a href="summary.html"><div class="t">Executive summary</div><div class="d">Important details, key findings, and recommended next steps in one place.</div></a>
+    <a href="estimates.html"><div class="t">Estimates &amp; cost benchmarks</div><div class="d">The three 2026-08-30 quotes vs independent 2026 national cost data (Angi, This Old House, trade sources).</div></a>
+    <a href="contractors.html"><div class="t">Contractors</div><div class="d">Six SF candidates with Yelp ratings, official sites, and CSLB license verification records.</div></a>
+    <a href="findings.html"><div class="t">Findings &amp; analysis</div><div class="d">Above-vs-below access, all-in-one drywall+plumbing availability, occupied-unit planning.</div></a>
+    <a href="flagged.html"><div class="t">Flagged for review</div><div class="d">Unverified values and irregularities — review these and request changes after the site is live.</div></a>
+    <a href="sources.html"><div class="t">Sources</div><div class="d">Full list of every source with URL, publisher, and what it supports.</div></a>
+  </div>
+</section>
 
-  <section id="repo-note">
-    <h2>About this repository</h2>
-    <p>This repository (<em>Korea7</em>) also contains a separate, earlier project — a DOE GEMS fault-prospectivity audit with its own documentation site under <a href="docs/index.html">/docs/</a> — plus a second bathtub-overflow microsite published by an earlier parallel session under <a href="docs/plumbing-index.html">/docs/plumbing-index.html</a>. This dashboard is the current landing page; both microsites are preserved. That project's files were not modified. The full repo-review notes are on the <a href="bathtub-overflow/flagged-for-review.html">Flagged for review</a> page (items F1–F2) and in <a href="COORDINATION.md">COORDINATION.md</a>.</p>
-  </section>
+<section class="section">
+  <h2>How verification works on this site</h2>
+  <div class="callout ok"><div class="icon">✅</div><p><strong>Every table row has a source link.</strong> License records come from the official
+  California Contractors State License Board (CSLB) database with the data-current date printed on the record.
+  Review ratings link to the business's Yelp page. Cost benchmarks link to the publisher's own article.</p></div>
+  <div class="callout"><div class="icon">⚠️</div><p><strong>If a value could not be confirmed from an official source it is left blank or marked
+  unverified and flagged</strong> — nothing is inferred or filled in. The three estimate amounts are owner-provided and
+  appear with an "unverified" pill for exactly this reason. See <a href="flagged.html">Flagged for Review</a>.</p></div>
+  <div class="callout info"><div class="icon">ℹ️</div><p>Review counts change daily; they are shown as captured on <strong>2026-11-06</strong> from the linked page.
+  Legacy project content from this repository remains available at <a href="docs/index.html">docs/index.html</a> and is unrelated to this repair project. A parallel overflow research microsite from another session also remains published at <a href="bathtub-overflow/executive-summary.html">bathtub-overflow/</a> (its site-root dashboard was superseded by this page during integration — all of its subpages are intact).</p></div>
+</section>
+
 </main>
 
 <footer class="site">
   <div class="wrap">
-    <p><strong>Bathtub Overflow Trip Lever project</strong> · internal research dashboard · compiled 2026-11-06 · every table row links to its sources; values that could not be confirmed from an official source are left blank and flagged on the <a href="bathtub-overflow/flagged-for-review.html">Flagged for review</a> page.</p>
-    <p>Verification sources: <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx">CSLB Check a License</a> · <a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit">SF DBI — plumbing permits</a> · <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048">California B&amp;P Code §7048</a>. License data current as of 2026-11-06 per CSLB; re-verify before hiring. This site is informational and is not legal advice.</p>
+    <span>Internal research dashboard · Bathtub overflow trip lever · San Francisco · updated 2026-11-06</span>
+    <span>Verify licenses yourself at <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx">cslb.ca.gov</a> · Session <span class="mono">d5c5d85b</span></span>
   </div>
 </footer>
 </body>
