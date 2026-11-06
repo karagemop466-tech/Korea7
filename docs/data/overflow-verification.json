@@ -761,6 +761,14 @@
       "detail": "A CSLB record shows status, classifications, bond and workers comp. It does not show repair experience, insurance adequacy, references, or whether the company has done this kind of concealed-plumbing work. Those points are not verified by this addendum.",
       "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/",
       "owner_action": "Ask for references for similar concealed-plumbing and drywall work in occupied buildings."
+    },
+    {
+      "id": "A23",
+      "type": "Overlap",
+      "title": "Overlap with the bathtub-overflow microsite on main",
+      "detail": "Session 68d76eff added bathtub-overflow/ (providers, estimates, permits, flagged review) and a root index.html on main. Its license claims were checked against the CSLB records here: 959843 GENERALSF (B, C-10, C-36; exp 04/30/2027), 829071 Ace Plumbing & Rooter (C-36, A, C-4, C-16, B, C-10; exp 06/30/2027), and 1009195 Advanced Plumbing and Drain (C-36; exp 11/30/2027; 'may be suspended' status) all match the CSLB records read on 2026-11-06. The 1024971, 757796 and 977638 records also match. This addendum does not repeat that microsite's provider pages. Four licenses here (1115649, 1089561, 632743, 841229) are not on that microsite.",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "owner_action": "Keep one provider table. Consolidating the two microsites is a decision for the owners of both sessions, not this addendum."
     }
   ],
   "repo_review": [
@@ -1013,6 +1021,14 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "used_for": "License status, classification, bond, workers comp for C02, C06, C09, C10, C11, C12",
       "how_checked": "Each fetched on 2026-11-06 (data current 5:24-5:35 AM UTC). Links per row."
+    },
+    {
+      "id": "S22",
+      "name": "CSLB license detail records: 959843, 829071, 1009195 (cross-check of bathtub-overflow/providers.html)",
+      "kind": "Official",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "used_for": "Cross-check only (A23). Not added to the contractor table.",
+      "how_checked": "Each fetched on 2026-11-06 (data current 5:38 AM UTC). Links to 959843 and 829071 are the same pattern at their LicNum."
     }
   ]
 }
