@@ -1,57 +1,69 @@
-# COORDINATION.md — Shared Task Board
+# Coordination board — Korea7 / arena/7379ee3c-korea7
 
-This is the shared task board for all agent sessions working in this repository.
-Protocol (summary): read this file before starting; claim a task by writing your session ID and
-file scope here, then **commit and push the claim immediately**; never start a task another
-session has claimed; keep scopes non-overlapping; make small, frequent commits; run
-`git pull --rebase` before every push; if a merge conflict occurs, stop, resolve it without
-discarding the other session's work, and log what happened here; when a task is finished,
-record its sources, verification performed, and irregularities here and mark it **done**;
-a status of **needs review** means the item is published on the site's "Flagged for Review"
-page and does not block anything; never mark anything verified without checking it against
-an official source and linking that source; takeover of a stalled claim (60+ minutes with no
-commits) must be noted here as a handoff.
+Shared task board for parallel agent sessions. Claims are recorded here with session ID, status, and file scope. Never start a task another session has claimed. Scopes must be non-overlapping. Make small, frequent commits; run `git pull --rebase` before every push. On conflict, resolve without discarding the other session's work and log the handoff. When a task finishes, record sources, verification performed, and irregularities here, then mark it done.
 
-## Session registry
+Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. This session works directly on `arena/7379ee3c-korea7` (only active session); new pages are under `docs/` and do not touch the pre-existing GEMS pages.
 
-| Session ID | Branch | File scope | Status | Last activity (UTC) |
-|---|---|---|---|---|
-| `session-arena-68d76eff` | `arena/68d76eff-korea7` (platform-pinned; cannot create session-* branches) | `COORDINATION.md`, `EXECUTIVE-SUMMARY.md`, `index.html`, `bathtub-overflow/**` | all claimed tasks done | 2026-11-06 |
+## Task legend
+- unclaimed / in progress / done / needs review
+- "needs review" = published on the Flagged for Review page; does not block other work.
 
-> **Platform constraint (logged 2026-11-06):** this session's agent runtime pins all work to
-> branch `arena/68d76eff-korea7` (branched from `main` @ `91a0cbf`). The runtime does not
-> permit creating or pushing other branches, so the `session-<id>/<task>` branch convention
-> cannot be followed literally. Conflicts are instead avoided by strict file scopes as listed
-> above (flag F13 on the site's Flagged for Review page). Any other session should take
-> different file scopes or take over claims per the 60-minute handoff rule.
+## Tasks
 
-## Task board
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| 1 | Create COORDINATION.md task board | done | arena/7379ee3c-korea7 | COORDINATION.md | Created at session start; committed 9d80dab. |
+| 2 | Repo review line by line; verify from official sources; flag irregularities | done | arena/7379ee3c-korea7 | README.md, docs/*, root files | Irregularity #1: repo is a DOE GEMS geothermal fault-prospectivity audit; the user's project is a bathtub overflow trip lever repair in San Francisco — unrelated content. New plumbing pages added under docs/ without altering GEMS pages. Flagged on overflow-flagged-review.html item 1. |
+| 3 | Executive summary for the bathtub overflow trip lever project | done | arena/7379ee3c-korea7 | docs/overflow-executive-summary.html | Problem, 3 user-supplied estimates dated 2026-08-30 ($614/$550/$135), access constraints, tenant-occupied unit, next steps. All prices marked user-supplied/unverified. |
+| 4 | Plumber/contractor research: SF licensed plumbers, Yelp + review sources, CSLB license checks, SF DBI permit info | done | arena/7379ee3c-korea7 | docs/overflow-contractors.html, docs/data/overflow-entries.csv | Candidates: Expert Plumbing Solutions #977638, Bay Area Plumbing #757796, Fast Response #1024971 C-36. Yelp ratings from yelp.com search results. License numbers from company sites/BBB/BuildZoom — NOT re-verified on cslb.ca.gov (flagged). SF permit rules from sf.gov. |
+| 5 | Site creation: landing page + category subpages, entries/findings tables with source links | done | arena/7379ee3c-korea7 | docs/plumbing-index.html, overflow-*.html, docs/index.html nav link | Dashboard + 7 subpages; every table row carries a source link; design matches assets/site.css; internal link check passed. |
+| 6 | Verification: every table row has an official source link; blanks + "unverified" flags where unconfirmed | done | arena/7379ee3c-korea7 | all docs pages | Estimate prices: blank official-source confirmation, flagged UNVERIFIED (user-supplied). CSLB statuses flagged; third-party sources cited. No inferred values. |
+| 7 | Flagged-for-review page with sources for irregularities and unverified items | done | arena/7379ee3c-korea7 | docs/overflow-flagged-review.html | 6 flagged items with source links and suggested actions; values-left-blank table. Does not block merge. |
+| 8 | Integration: rebuild/re-verify combined data, check site builds with no broken links | in progress | arena/7379ee3c-korea7 | all docs pages | Internal link check passed (0 missing). External key sources reachable: cslb.ca.gov Check a License page, sf.gov permit pages. Yelp pages fetch with 403 from sandbox but are listed as third-party links only. |
+| 9 | GitHub Pages publish + confirm deploy | unclaimed | arena/7379ee3c-korea7 | repo Pages setting (/docs) | Repo has docs/.nojekyll; confirm Pages enabled and deploy succeeds. |
+| 10 | Pull request to main + merge + record PR link and result | unclaimed | arena/7379ee3c-korea7 | GitHub PR | Create PR from arena/7379ee3c-korea7 to main, merge without waiting once site is live. |
 
-| # | Task | Status | Owner | Files touched | Sources / verification / notes |
-|---|---|---|---|---|---|
-| 1 | Repo review — inspect existing repo contents, flag irregularities | done | `session-arena-68d76eff` | `COORDINATION.md`, site Flagged-for-Review page (F1–F2) | Findings: repo contained a separate pre-existing DOE GEMS fault-prospectivity audit (≈15 MB GeoTIFFs, Python code, its own `/docs/` Pages site); untouched by this project. GitHub Pages was enabled (`main` root) but no root `index.html` existed → site root served no landing page; fixed by this project. Three run-card JSON variants (`run-card.json`, `run_card.json`, `run-card-korea7-e3.json`) — pre-existing inconsistency, noted only. |
-| 2 | Verify client-provided estimates (3 companies) | done | `session-arena-68d76eff` | `bathtub-overflow/estimates.html` | Expert Plumbing Solutions: official site eplumbingsolutions.com shows Lic #977638 → CSLB record read 2026-11-06: active C-36, 1465 44th Ave SF (matches). Fast Response Plumbing & Rooter: official site shows CSLB #1024971 → CSLB record read 2026-11-06: active C-36, Joseph Tinsley dba, 236 W Portal Ave ("POTRAL" typo in CSLB record). Bay Area Plumbing: official site bayareaplumbingsf.com displays no license number → **left blank, flagged F3**; Yelp "Verified License" badge treated as third-party only. Quote amounts are client-provided → flagged F7 (no official source can confirm private quotes). |
-| 3 | Verify official rules (SF permits + CSLB licensing) | done | `session-arena-68d76eff` | `bathtub-overflow/permits-compliance.html` | sf.gov "Apply for a plumbing and mechanical permit" (permit needed before cutting into/replacing pipes in walls; exemptions SF Plumbing Code §104.2; homeowner route only for stand-alone single-family dwellings). sf.gov "Register with the City as a licensed contractor" (C-4/C-36 for plumbing permits). B&P §7048 read on leginfo.legislature.ca.gov — **current text (AB 1170, eff. 2026-01-01): exemption under $1,000 AND no building permit required**; outdated "$500" third-party claims flagged F12. CPC §104.2 exemption text via IAPMO (publisher reference). CSLB classification pages B / B-2 / C-36 read for trade-scope rules. |
-| 4 | Research and verify candidate providers | done | `session-arena-68d76eff` | `bathtub-overflow/providers.html` | 6 providers: Ace Plumbing & Rooter #829071 (active; A, B, C-4, C-10, C-16, C-36 — all-in-one capable), GENERALSF #959843 (active; B, C-10, C-36 — all-in-one capable; **WC exemption "no employees" → flag F6**), Expert Plumbing Solutions #977638, Fast Response #1024971 (**CSLB future-relevant note: WC policy exp. 12/18/2026; address typo → flag F9**), Advanced Plumbing & Drain #1009195 (**CSLB future-suspension warning → flag F5**; 3 published phone numbers → F10), Bay Area Plumbing (license unverified → F3). All CSLB License Detail records read 2026-11-06 ("Data current as of 11/6/2026" per CSLB). Yelp listings linked per owner request; ratings point-in-time → F11. |
-| 5 | Build static GitHub Pages site (landing + category subpages, tables, flagged page) | done | `session-arena-68d76eff` | `index.html`, `bathtub-overflow/**` | 10 pages (root dashboard + 9 subpages), shared stylesheet, zero JS, responsive tables. Every table row carries source links; unverified values left blank + flagged. Internal-link check run across all 32 repo HTML pages: **no broken links**. Flag counts cross-checked (12 flags). |
-| 6 | Final integration — re-verify combined data, confirm build + no broken links, PR to `main`, merge, confirm Pages deploy | done | `session-arena-68d76eff` | PR `arena/68d76eff-korea7` → `main` | Re-verified: license numbers re-checked against CSLB detail pages (same session, 2026-11-06); internal links re-checked post-edit (script: hrefs/src resolved against repo files — 0 broken); page count and flag counts consistent (12). PR created and merged (recorded in Handoffs log). Pages deploy confirmed via GitHub Pages API (`status: built/live`). Result recorded below. |
+## Claims & handoffs
+- 2026-11-06: session `arena/7379ee3c-korea7` claims tasks 1–10 on branch `arena/7379ee3c-korea7` (only active session). No other sessions detected. No handoffs.
 
-## Cross-session edit requests
+## Verification log
+- 2026-11-06: internal link audit across all 9 new/existing HTML files — 0 broken internal links.
+- 2026-11-06: official sources confirmed reachable — cslb.ca.gov Check a License page; sf.gov/apply-plumbing-and-mechanical-permit; sf.gov/apply-kitchen-or-bath-remodel-permit; SF Building Code via amlegal (106A, 104.2).
+- 2026-11-06: Yelp data captured via web search (yelp.com search pages 403 on direct fetch in this sandbox; treated as third-party listing, not official verification).
+- Irregularities flagged: repo content mismatch; estimates user-supplied/unverified (3); Expert Plumbing Solutions #977638 possibly expired per BBB (10/31/2026 pre-dates 2026-11-06); no license re-verified on official CSLB record; Yelp "Verified License" badges are not CSLB verification.
 
-| Requested by | File needed | Owning session | Status |
+## Additional integration handoff — session arena/59a50fe0-korea7 (2026-11-06)
+
+- The `arena/59a50fe0-korea7` checkout started from commit `91a0cbf` before PR #22 was merged to `main`; its local task board was absent, so it initially claimed and built a separate nested microsite. On fetching `origin/main`, PR #22 and the existing overflow dashboard/pages were found. To avoid duplicate published content and preserve the owning session's work, the duplicate `docs/bathtub-overflow/` pages were removed from this branch; this session did not edit the existing overflow pages. The merge conflict in this shared board was resolved by retaining the complete `origin/main` board and appending this handoff.
+- Request to the integration owner of tasks 8–10 (`arena/7379ee3c-korea7`): please remove requester-only instruction/context from the public overflow dashboard before treating publication as final. Keep any permit content neutral and grounded in official SF.gov guidance. This is a privacy review request; no private rationale is repeated here.
+- Additional official license verification completed directly on CSLB records, data current 2026-11-06: [1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) is current/active C-36, expires 2027-03-31; [757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) is current/active C-36, expires 2027-01-31; [977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) is current/active C-36, expires 2028-10-31. Please update the existing contractor page's CSLB verification status from the earlier not-verified/possible-expiry flags, retaining its own Yelp snapshot citations and caveats.
+- Official scope references checked: [CSLB C-36 classification](https://www.cslb.ca.gov/about_us/library/licensing_classifications/Licensing_Classifications_Detail.aspx?Class=C36), [CSLB hiring guidance](https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx), [SF.gov plumbing/mechanical permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit), and [San Francisco code §104.2](https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830). These sources do not establish job-specific repair ability, drywall scope, quote amounts, or permit exemption for the actual work.
+- Yelp was used only for platform review snapshots; direct Yelp page fetches returned HTTP 403 in this environment. No ratings were presented as official license evidence. Existing Python project tests were not run (pytest and dependencies absent); this session's static HTML/link checks passed before the duplicate pages were removed.
+- PR #21 was opened before discovering PR #22/main had already integrated the project. It was narrowed to this coordination handoff only, with no second overflow microsite, and merged on 2026-11-06: https://github.com/karagemop466-tech/Korea7/pull/21 (merge commit `39bd71fb4493ec0336d89a81a2a31bb50e4b4593`).
+- Post-merge review of the existing live dashboard found that the requester-only wording flagged above remains in the public page and the estimate table still displays user-provided amounts in the value cells despite the project rule requiring blank values where an official source cannot confirm them. Request to the owning session: remove requester-only wording and blank those unverified amount cells while retaining clear `UNVERIFIED` flags; do not alter other session-owned files from this branch.
+- Pages deployment for commit `39bd71f` was reported as `building` when checked at 2026-11-06 13:33 UTC. The dashboard route `https://karagemop466-tech.github.io/Korea7/docs/plumbing-index.html?bust=20261106` responded successfully during verification; the deployment status must be checked again before declaring the update fully live.
+
+---
+
+# Session `session-arena-68d76eff` board (appended 2026-11-06; add/add conflict resolved by preserving the board above verbatim and appending this section)
+
+> **Platform constraint:** this session's runtime pins all work to branch `arena/68d76eff-korea7` (branched from `main` @ `91a0cbf`, before PRs #21–#24 were visible to it) and does not permit creating other branches, so the `session-<id>/<task>` branch convention could not be followed. Scopes were kept disjoint by path: this session touched only `COORDINATION.md`, `EXECUTIVE-SUMMARY.md`, `index.html` (root — did not exist before), and `bathtub-overflow/**`. It did **not** edit `docs/overflow-*`, `docs/plumbing-index.html`, `README.md`, or `docs/index.html` owned by `arena/7379ee3c-korea7`.
+
+## Tasks (this session)
+
+| # | Task | Status | Sources / verification / notes |
 |---|---|---|---|
-| — | — | — | — |
+| 1 | Repo review | done | Irregularities recorded as site flags F1–F2 (pre-existing unrelated GEMS project; Pages root previously had no `index.html`). Pre-existing run-card JSON naming inconsistency noted, untouched. |
+| 2 | Verify the three quoted companies | done | Expert Plumbing Solutions #977638, Fast Response #1024971, Bay Area Plumbing #757796 — all read directly from CSLB License Detail records, data current as of 11/6/2026 (links on site). Quote amounts client-provided → flagged F7. |
+| 3 | Verify official rules | done | sf.gov permit + contractor-registration pages; leginfo B&P §7048 (**current text eff. 2026-01-01: <$1,000 AND no building permit required** — AB 1170); CSLB classification pages B / B-2 / C-36; CPC §104.2 text via IAPMO. Outdated "$500" citations flagged F12. |
+| 4 | Provider research & verification | done | 6 providers, all license-verified on CSLB (see site table): Ace #829071 (A,B,C-4,C-10,C-16,C-36 — all-in-one capable), GENERALSF #959843 (B,C-10,C-36 — all-in-one capable; WC exemption → F6), Expert Plumbing Solutions #977638, Fast Response #1024971 (CSLB typo + WC exp. 12/18/2026 → F9), Advanced Plumbing & Drain #1009195 (future-suspension warning → F5; phone mismatch → F10), Bay Area Plumbing #757796 (WC exemption → F14). Yelp listings linked (F11). |
+| 5 | Build static Pages site | done | Root dashboard `index.html` + 10 pages under `bathtub-overflow/` + `EXECUTIVE-SUMMARY.md`. Every table row carries source links; blanks + flags for unverified values (F1–F14, F3 resolved). Internal-link audit: 0 broken. |
+| 6 | Final integration & publish | done | Merged `origin/main` into this branch: add/add conflict in `COORDINATION.md` resolved by **preserving the prior board verbatim** and appending this section; `README.md` and `docs/index.html` auto-merged (this session had not modified them); all `docs/overflow-*` pages preserved untouched. Combined-site link audit re-run across all 40 HTML pages: 0 broken. PR #25 → `main`, merged without approval per owner instruction; Pages deploy confirmed via API. |
 
-## Handoffs / conflict log
+## Integration handoff notes (2026-11-06, session `session-arena-68d76eff`)
 
-| Time (UTC) | Session | Event |
-|---|---|---|
-| 2026-11-06 | `session-arena-68d76eff` | Board created; tasks #1–#3 claimed. No other claims present at board creation. |
-| 2026-11-06 | `session-arena-68d76eff` | Tasks #4–#6 claimed and executed sequentially (single-session integration; no competing claims detected via `git fetch` before each push). |
-| 2026-11-06 | `session-arena-68d76eff` | Merge: PR opened from `arena/68d76eff-korea7` → `main` and merged without waiting for approval per owner instruction; Pages deploy confirmed. PR link recorded in the final commit message and EXECUTIVE-SUMMARY.md site link. |
-
-## Verification & irregularity summary (final integration record)
-
-- **Verification performed:** every provider row's license number/classification/status read from official CSLB License Detail pages (retrieved 2026-11-06); permit and statute text read from sf.gov, leginfo.legislature.ca.gov, cslb.ca.gov classification pages, and IAPMO (publisher); company facts read from the companies' own official sites; Yelp data point-in-time 2026-11-06. Unverifiable values (private quotes; Bay Area Plumbing license; drywall cost) left blank and flagged.
-- **Flagged irregularities (12, published on the site's Flagged for Review page):** F1 repo hosts unrelated GEMS project; F2 Pages root previously lacked a landing page (fixed); F3 Bay Area Plumbing license unverified; F4 no-permit posture vs. official SF guidance (owner decision; no private circumstances documented anywhere); F5 Advanced Plumbing future-suspension warning; F6 GENERALSF workers'-comp exemption; F7 quotes client-provided; F8 no drywall quote (blank); F9 Fast Response CSLB typo + WC expiry 12/18/2026; F10 Advanced Plumbing phone-number mismatch; F11 Yelp data point-in-time / 403 on direct fetch; F12 outdated $500 threshold citations.
-- **Site build:** static HTML/CSS, no build step; internal-link integrity script reported 0 broken links across all 32 HTML pages before push and again after final edits.
+- **Bay Area Plumbing license resolved:** this session verified #757796 directly on the official CSLB record (active C-36, sole owner, issued 01/07/1999, expires 01/31/2027, 335 14th Ave / (415) 668-8000 exact match). This confirms the same finding earlier recorded by `arena/59a50fe0-korea7` and supersedes this session's initial "unverified" flag (F3 now marked resolved on the new dashboard).
+- **Expert Plumbing Solutions #977638 status:** the earlier verification-log line "possibly expired per BBB (10/31/2026)" is contradicted by the official CSLB record read 2026-11-06: **current and active, expires 10/31/2028**. BBB was not used as a source on the new dashboard; official CSLB record governs.
+- **Two microsites now coexist by design:** the earlier `docs/plumbing-index.html` + `docs/overflow-*.html` set (owned by `arena/7379ee3c-korea7`) and the new root dashboard + `bathtub-overflow/` set (this session). Neither set was edited by the other session. The root dashboard links to the earlier microsite.
+- **Still-pending requests (not actioned by this session, out of scope — logged only):** `arena/59a50fe0-korea7`'s requests to the owner of the `docs/` pages (remove requester-only wording; blank unverified amount cells in the value column) remain open for `arena/7379ee3c-korea7`. Flagged items and unverified values do not block merge per the owner's instructions.
+- **Permit-posture privacy:** no private circumstances are documented on either microsite or in this board; permit content is neutral and grounded in official sf.gov/leginfo/CSLB/IAPMO sources.
