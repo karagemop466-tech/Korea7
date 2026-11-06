@@ -1,0 +1,103 @@
+{
+  "project": "bathtub-wastewater-overflow-trip-lever",
+  "data_as_of": "2026-11-06",
+  "note": "Requirements collected from the owner's brief (2026-11-06) and organized by category. Technical requirements are backed by manufacturer/industry sources; owner-stated requirements are labeled USER-BRIEF.",
+  "requirements": [
+    {
+      "id": "REQ-01",
+      "category": "Scope of work",
+      "requirement": "Remove and/or replace the bathtub wastewater overflow trip lever (the stuck lever is inside the hidden plumbing behind the wall) and restore stopper open/close function.",
+      "source": "USER-BRIEF (2026-11-06)",
+      "source_url": "",
+      "status": "Confirmed (owner-stated)"
+    },
+    {
+      "id": "REQ-02",
+      "category": "Scope of work",
+      "requirement": "If the plunger/linkage can be freed by repair or adjustment (rather than full replacement), that lower-impact fix is acceptable; one estimate covers adjust/repair only ($135, EST-3).",
+      "source": "USER-BRIEF (2026-11-06); assembly anatomy S1, S3",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-03",
+      "category": "Access & method",
+      "requirement": "Removal from above (through the overflow plate) is the preferred method if it can be done safely.",
+      "source": "USER-BRIEF (2026-11-06); standard above-removal procedure S6, S7",
+      "source_url": "https://trustlowery.com/remove-trip-lever-drain-stopper/",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-04",
+      "category": "Access & method",
+      "requirement": "5+ licensed plumbers have already been unable to remove the assembly from above without concern over destroying the hidden plumbing behind the wall; forceful above-removal is excluded (documented risk of breaking the plunger rod off inside the piping).",
+      "source": "USER-BRIEF (2026-11-06) + documented breakage risk S6",
+      "source_url": "https://trustlowery.com/remove-trip-lever-drain-stopper/",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-05",
+      "category": "Access & method",
+      "requirement": "Fallback: work from below. The waste-and-overflow working joints (drain shoe, tee, overflow elbow) are reached from below/behind the tub; this may require opening the drywall ceiling (a storage unit is directly below).",
+      "source": "USER-BRIEF (2026-11-06) + assembly location S1, S4; access-from-below practice S9, S10",
+      "source_url": "https://www.homedepot.com/c/ah/how-to-remove-and-replace-a-bathtub/9ba683603be9fa5395fab906b201b19",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-06",
+      "category": "Service capability",
+      "requirement": "All-in-one service: the hired outfit must cover plumbing AND drywall/ceiling patch, texture and paint (single point of contact; drywall repair is a separate trade/cost in industry guidance).",
+      "source": "USER-BRIEF (2026-11-06) + S8 (drywall access raises cost; plumbers may bring a separate contractor), S9 (drywall/ceiling repair is a separate cost)",
+      "source_url": "https://www.angi.com/articles/plumber-cost.htm",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-07",
+      "category": "Service capability",
+      "requirement": "Provider must be a licensed plumber or licensed contractor (verify license on the official CSLB lookup before hiring).",
+      "source": "USER-BRIEF (2026-11-06) + S11 (CSLB Check a License), S12 (SF DBI directs owners to licensed professionals)",
+      "source_url": "https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-08",
+      "category": "Service capability",
+      "requirement": "Provider must service the San Francisco location of the unit.",
+      "source": "USER-BRIEF (2026-11-06)",
+      "source_url": "",
+      "status": "Confirmed (owner-stated)"
+    },
+    {
+      "id": "REQ-09",
+      "category": "Site conditions",
+      "requirement": "Tenants occupy the unit where the trip lever is stuck. Work must be performed as delicate work in a sensitive, occupied environment: dust/debris containment, water shutoff coordination, cleanup, and reasonable scheduling.",
+      "source": "USER-BRIEF (2026-11-06)",
+      "source_url": "",
+      "status": "Confirmed (owner-stated)"
+    },
+    {
+      "id": "REQ-10",
+      "category": "Site conditions",
+      "requirement": "A storage unit lies directly below the bathtub; any ceiling opening must be planned around stored contents, and the ceiling must be closed and finished after the plumbing work.",
+      "source": "USER-BRIEF (2026-11-06)",
+      "source_url": "",
+      "status": "Confirmed (owner-stated)"
+    },
+    {
+      "id": "REQ-11",
+      "category": "Evidence & record-keeping",
+      "requirement": "Every entry published on this site carries a source link to an official site. Values that cannot be confirmed from an official source are left blank and flagged UNVERIFIED. No value is ever inferred or filled in.",
+      "source": "Project policy (2026-11-06)",
+      "source_url": "",
+      "status": "Confirmed"
+    },
+    {
+      "id": "REQ-12",
+      "category": "Evidence & record-keeping",
+      "requirement": "Before hiring: confirm CSLB license status, ask for a written itemized quote that separates plumbing scope from drywall/finish scope, and confirm the provider has executed below-access waste-and-overflow work in occupied units.",
+      "source": "Derived from REQ-05..REQ-09 + S11",
+      "source_url": "https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx",
+      "status": "Confirmed"
+    }
+  ]
+}

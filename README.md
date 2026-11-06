@@ -260,3 +260,21 @@ The parallel session's candidate rasters are `korea7-k7-offcatalogue-relay-corri
 `submission name + note`: `korea7-consensus-offcat-20k-20261104-zeros`; `Korea7 4-method off-catalogue consensus, 20k dots, 85% far from catalogue; unique vs nine focus sites; research only.` (117 characters).
 
 `verdict`: **negative** — research artifact, not cleared for a weekly slot.
+
+## Project: Bathtub wastewater overflow trip lever (added 2026-11-06)
+
+A second, unrelated project now lives in this repository: an internal research dashboard for a stuck
+bathtub wastewater overflow trip lever in a San Francisco rental building. It collects the
+requirements, three owner-provided estimates (2026-08-30), verified San Francisco service providers,
+and supporting analysis. Every table row is source-linked; unconfirmed values are left blank and
+flagged. The pre-existing GEMS audit site is preserved unchanged under [`docs/`](docs/).
+
+- Dashboard / executive summary: [index.html](index.html)
+- Requirements: [overflow/requirements.html](overflow/requirements.html)
+- Estimates: [overflow/estimates.html](overflow/estimates.html)
+- Service providers (San Francisco): [overflow/providers.html](overflow/providers.html)
+- Analysis & findings: [overflow/analysis.html](overflow/analysis.html)
+- Repo review & irregularities: [overflow/repo-review.html](overflow/repo-review.html)
+- Source registry: [overflow/sources.html](overflow/sources.html)
+- Flagged for review: [overflow/flagged.html](overflow/flagged.html)
+- Shared task board: [COORDINATION.md](COORDINATION.md)

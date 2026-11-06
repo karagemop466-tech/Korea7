@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis &amp; Findings — Bathtub Overflow Trip Lever</title>
+<meta name="description" content="Technical analysis of the stuck trip-lever waste-and-overflow assembly, cost benchmarking of the three estimates, provider fit analysis, and risks.">
+<link rel="stylesheet" href="assets/overflow.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="../index.html"><span class="dot">T</span> Bathtub Overflow Trip Lever</a>
+    <nav class="main">
+      <a href="../index.html">Dashboard</a>
+      <a href="requirements.html">Requirements</a>
+      <a href="estimates.html">Estimates</a>
+      <a href="providers.html">Providers</a>
+      <a class="active" href="analysis.html">Analysis</a>
+      <a href="repo-review.html">Repo Review</a>
+      <a href="sources.html">Sources</a>
+      <a href="flagged.html">Flagged for Review</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Dashboard</a> › Analysis &amp; Findings</p>
+
+  <section class="panel" style="margin-top:18px">
+    <h2>1. Technical analysis — what is stuck, and why</h2>
+    <p><b>The assembly.</b> A trip-lever bath waste is a two-opening system: the visible trip lever on the
+      overflow plate is connected by a brass linkage to a hollow cylindrical plunger (drop cylinder) that
+      slides inside the overflow pipe and seats/unseats the drain opening below. Official component names
+      (Watco installation sheet): overflow plate, linkage, drop cylinder, overflow elbow + gasket, drain
+      elbow, strainer body, tee (<a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf">S1</a>).
+      Moen's guide confirms the pattern: "the lever on the overflow plate opens and closes the drain",
+      with replacement units 90410/90480 and tubing not sold separately
+      (<a href="https://solutions.moen.com/Article_Library/Tub_and_Shower_Drains">S3</a>).</p>
+    <p><b>Why it gets stuck.</b> The linkage and plunger live in a wet, mineral-rich environment; deposits
+      and corrosion freeze the plunger to the overflow tube wall and the plate screws to the elbow.
+      Manufacturer-adjacent and licensed-plumber guidance (Lowery Plumbing
+      <a href="https://trustlowery.com/remove-trip-lever-drain-stopper/">S6</a>, Mr. Rooter
+      <a href="https://www.mrrooter.com/about/blog/how-to-remove-a-bathtub-drain-stopper/">S7</a>) describe the
+      standard fix from above: remove the overflow plate screws, detach the clip, pull the assembly
+      straight up with lubricant (not at an angle). Family Handyman calls the lever-style linkage
+      "complicated" and documents the common professional conversion to a simpler lift-and-turn stopper
+      with a blank overflow plate (<a href="https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/">S5</a>).</p>
+    <p><b>Why force is excluded here.</b> The same sources carry an explicit warning: if the assembly
+      will not come free, pulling harder can snap the plunger rod off inside the piping, leaving the
+      plunger unreachable and converting a repair into a full assembly replacement
+      (<a href="https://trustlowery.com/remove-trip-lever-drain-stopper/">S6</a>, "significant risk that the
+      plunger rod breaks off"; <a href="https://www.mrrooter.com/about/blog/how-to-remove-a-bathtub-drain-stopper/">S7</a>,
+      "you could break the assembly, which may require professional help to fix"). This matches the
+      field report on this unit: 5+ licensed plumbers have already assessed the assembly as too stuck
+      to extract from above without risking the hidden plumbing (owner report, REQ-04).</p>
+    <p><b>Where the working joints actually are.</b> The waste-and-overflow is fastened under and behind
+      the tub: the drain shoe screws into the underside of the tub, the overflow elbow and gasket sit
+      behind the tub wall, and a tee joins overflow pipe to drain pipe
+      (<a href="https://www.homedepot.com/c/ah/how-to-remove-and-replace-a-bathtub/9ba683603be9fa5395fab906b201b19">S4</a>,
+      <a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf">S1</a>).
+      Industry guides state plainly that replacing the full assembly "usually requires access from
+      behind or below the tub" (<a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a>) and that
+      with clear access "via an access panel or from a ceiling below" the full replacement takes
+      roughly 2–4 hours (<a href="https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/">S10</a>).
+      With a storage unit directly below and no access panel described, the practical below-access
+      route is a drywall ceiling opening — exactly the fallback the owner's brief anticipates.</p>
+    <div class="callout ok">
+      <p><b>Technical conclusion.</b> The situation is consistent with published practice: a frozen
+      trip-lever assembly that cannot be withdrawn from above is resolved by replacing (or freeing) the
+      waste-and-overflow from below/behind, which in this building means opening the ceiling below the
+      tub. The "all-in-one plumbing + drywall" requirement is technically justified, not a preference:
+      the ceiling repair is a documented separate cost line
+      (<a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a>) and plumbers commonly bring a
+      separate contractor for access-related repairs (<a href="https://www.angi.com/articles/plumber-cost.htm">S8</a>).</p>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>2. Cost analysis — do the three estimates make sense?</h2>
+    <p>The three 2026-08-30 estimates span $135–$614, but the scopes differ (see
+      <a href="estimates.html">Estimates</a>). Benchmarked against published 2026 figures:</p>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Estimate vs. published band — full tables and sources on the Estimates page.</caption>
+        <thead><tr><th>Estimate</th><th>Scope</th><th>Published band</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr><td>EST-3 · $135 · Fast Response</td><td>Repair/adjust plunger handle</td><td>Flat rates $100–$400 · service call $100–$250 (<a href="https://www.angi.com/articles/plumber-cost.htm">S8</a>) · basic service $80–$200 (<a href="https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/">S10</a>)</td><td><span class="badge ok">Inside band</span></td></tr>
+          <tr><td>EST-2 · $550 · Bay Area Plumbing</td><td>Replace lever + spout with diverter; labor &amp; materials</td><td>Fixture replacement $150–$600 (<a href="https://www.angi.com/articles/plumber-cost.htm">S8</a>); two fixtures bundled</td><td><span class="badge ok">Inside band</span></td></tr>
+          <tr><td>EST-1 · $614 · Expert Plumbing Solutions</td><td>Replace waste and overflow</td><td>Full W&amp;O $300–$600 (<a href="https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/">S10</a>); "low-to-mid hundreds or higher, depending on access" (<a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a>); SF market premium plausible</td><td><span class="badge warn">Near top of band</span> — plausible</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Findings</h3>
+    <ul>
+      <li><b>No price contradiction.</b> All three sit inside or next to published bands for their own
+        scope. The gap between $135 and $614 is scope, not disagreement.</li>
+      <li><b>Missing line item in all three:</b> none of the quotes as provided states the drywall
+        ceiling open/patch/texture/paint scope, even though the below-access plan makes it likely.
+        Published guidance treats it as a separate cost that "can rival the plumbing bill"
+        (<a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a>). <b>Action:</b> request the
+        drywall line in writing from every bidder before comparing totals.</li>
+      <li><b>Access premium is real:</b> Angi's 2026 data explicitly notes fees rise when a plumber must
+        cut through drywall to reach pipes (<a href="https://www.angi.com/articles/plumber-cost.htm">S8</a>).
+        A below-access quote at or slightly above EST-1's level would still be consistent with the
+        market.</li>
+      <li><b>Repair-first sequencing is cheap to test:</b> EST-3's adjust/repair scope ($135) is the only
+        quote that attempts the lowest-impact fix. If the plunger can be freed from below without
+        replacing the assembly, this is the least invasive path for an occupied unit.</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>3. Provider analysis — who fits this specific job</h2>
+    <p>The job splits into two scopes: (A) the plumbing act on the hidden assembly, and (B) the ceiling
+      open/finish in an occupied unit above a storage area. The requirement set
+      (<a href="requirements.html">REQ-06</a>) asks for one outfit to cover both.</p>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Fit assessment against the requirement register. Evidence is from linked official listings only.</caption>
+        <thead><tr><th>Rank</th><th>Provider</th><th>Why it fits</th><th>Gaps to confirm</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://www.yelp.com/biz/general-sf-san-francisco-2">General SF</a> (P-05)</td>
+            <td>Only candidate whose listing categories are <b>General Contractors + Plumbing</b> — literally the two required trades. Verified License badge; 30+ years (est. 1991); reviews document combined finish work (bead board) + drain-leak repair in one job and plumbing work at a rental apartment (occupied unit).</td>
+            <td>License number not shown on listing (verify at <a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">CSLB</a>); confirm below-access W&amp;O experience.</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://www.yelp.com/biz/handyman-heroes-san-francisco-5">Handyman Heroes</a> (P-04)</td>
+            <td>Categories <b>Handyman + Plumbing</b>; a review literally describes plumbing repair followed by wall repair behind it by the same crew — the exact sequence this job needs. Verified License badge; employees (not a referral service) per listing.</td>
+            <td>License number not published (verify at <a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">CSLB</a>); confirm they take on waste-and-overflow plumbing (not just fixture swaps).</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3">Fast Response Plumbing &amp; Rooter</a> (P-03)</td>
+            <td>Strongest license transparency (CSLB #1024971 C-36 published on their site); 25+ years in SF; serves apartments/HOAs (occupied-unit work); holds the $135 adjust quote — the repair-first option.</td>
+            <td>Plumbing only — ceiling finish would need a partner (confirm who).</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco">Expert Plumbing Solutions</a> (P-01)</td>
+            <td>Directly relevant review: removing a <b>stuck bathroom tub drain stopper</b>. Holds the full W&amp;O replacement quote (EST-1) matching the likely below-access scope.</td>
+            <td>License number not shown on listing; plumbing only — ceiling finish partner needed.</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://www.yelp.com/biz/bay-area-plumbing-san-francisco">Bay Area Plumbing</a> (P-02)</td>
+            <td>25+ years (est. 1995); Verified License badge; documented broken-drain-pipe replacement; serves SF + northern suburbs.</td>
+            <td>Scope of EST-2 (lever + spout) may not cover the below-access assembly; confirm. Plumbing only.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h3>Contingency for hidden damage</h3>
+    <p>If the ceiling opening reveals water damage or mold (a documented risk when leaks run unnoticed
+      — <a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a> notes hidden damage "can add
+      substantially"), restoration specialists with documented ceiling/drywall water-damage work are on
+      the <a href="providers.html">Providers page</a>: Mike's Water Damage
+      (<a href="https://www.yelp.com/biz/mike-handyman-san-francisco">S19</a>) and Dany's Remodeling
+      (<a href="https://www.yelp.com/biz/danys-remodeling-and-handyman-service-albany">S20</a>, confirm SF coverage).</p>
+    <div class="callout">
+      <p><b>Recommended pairing for on-site evaluations:</b> one all-in-one (General SF or Handyman
+      Heroes) + one plumbing specialist (Fast Response or Expert Plumbing Solutions). That gives two
+      comparable written bids for the full scope and one repair-first bid (EST-3 path) to weigh against
+      the replacement path.</p>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>4. Risks and mitigations</h2>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Risk register — each risk is tied to its source.</caption>
+        <thead><tr><th>#</th><th>Risk</th><th>Evidence</th><th>Mitigation</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>R-1</td>
+            <td>Forcing the stuck assembly snaps the plunger rod inside the piping, converting a repair into a full replacement and possibly damaging hidden plumbing.</td>
+            <td><a href="https://trustlowery.com/remove-trip-lever-drain-stopper/">S6</a>, <a href="https://www.mrrooter.com/about/blog/how-to-remove-a-bathtub-drain-stopper/">S7</a></td>
+            <td>Do not attempt above-removal beyond gentle lubricated pulls (REQ-04). Contract for the below-access path.</td>
+          </tr>
+          <tr>
+            <td>R-2</td>
+            <td>Ceiling opening in a storage area: dust on stored contents; unfinished patch left behind.</td>
+            <td>Owner brief (REQ-10); ceiling repair is a separate cost line (<a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a>)</td>
+            <td>Require written finish scope (patch/texture/paint), dust containment, and storage protection in the contract.</td>
+          </tr>
+          <tr>
+            <td>R-3</td>
+            <td>Hidden water damage/mold behind the ceiling adds substantial cost.</td>
+            <td><a href="https://inspectandtest.net/guides/bathtub-overflow-drain/">S9</a></td>
+            <td>Agree on a discovery protocol: photo documentation before closing the ceiling; restoration contingency contacts ready (P-06, P-07).</td>
+          </tr>
+          <tr>
+            <td>R-4</td>
+            <td>Scope creep on comparison: bidding different scopes against each other (already visible in EST-1/2/3).</td>
+            <td>Estimate register (S23); band comparison</td>
+            <td>Issue a single written scope statement to every bidder (REQ-12) with plumbing and drywall lines separated.</td>
+          </tr>
+          <tr>
+            <td>R-5</td>
+            <td>Unlicensed or under-insured work in an occupied building.</td>
+            <td><a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">S11</a> recommends license check + Hiring a Contractor guide before signing</td>
+            <td>CSLB lookup for every finalist; collect certificate of insurance; verify "Verified License" badges against the state record.</td>
+          </tr>
+          <tr>
+            <td>R-6</td>
+            <td>Tenant disruption: water shutoffs, noise, access windows.</td>
+            <td>Owner brief (REQ-09)</td>
+            <td>Contract for scheduling windows and daily cleanup; pick a bidder whose listing shows occupied-unit work (P-03, P-05 evidence).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>5. Findings summary</h2>
+    <ol>
+      <li>The stuck condition and the recommended below-access fallback match published manufacturer and
+        industry practice; the top-side attempts already made were correctly stopped before damage
+        (<a href="https://trustlowery.com/remove-trip-lever-drain-stopper/">S6</a>, <a href="https://www.mrrooter.com/about/blog/how-to-remove-a-bathtub-drain-stopper/">S7</a>).</li>
+      <li>All three estimate companies are real, established San Francisco businesses on official
+        listings (P-01…P-03). The amounts are user-provided and remain flagged UNVERIFIED for external
+        confirmation — no contradiction with published price bands was found.</li>
+      <li>The price spread is scope-driven. The missing universal line item is drywall/ceiling finish;
+        adding it to every quote is the single highest-value next action.</li>
+      <li>Two verified candidates combine the required trades in one outfit (P-04, P-05); two more carry
+        the deepest plumbing credentials/evidence (P-03 with published CSLB number; P-01 with a stuck
+        tub-drain review).</li>
+      <li>Every provider row is source-linked to an official listing; unconfirmable fields are blank and
+        listed on the <a href="flagged.html">Flagged for Review</a> page.</li>
+    </ol>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div><b>Bathtub Overflow Trip Lever — internal project dashboard</b><br>Analysis page · Data as of 2026-11-06</div>
+    <div><a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for Review</a> · <a href="../index.html">Dashboard</a></div>
+  </div>
+</footer>
+
+<script src="assets/overflow.js"></script>
+</body>
+</html>

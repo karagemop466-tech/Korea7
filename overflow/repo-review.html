@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Repo Review — Bathtub Overflow Trip Lever</title>
+<meta name="description" content="Line-by-line repository review: inventory, verification performed, and flagged irregularities for manual review.">
+<link rel="stylesheet" href="assets/overflow.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="../index.html"><span class="dot">T</span> Bathtub Overflow Trip Lever</a>
+    <nav class="main">
+      <a href="../index.html">Dashboard</a>
+      <a href="requirements.html">Requirements</a>
+      <a href="estimates.html">Estimates</a>
+      <a href="providers.html">Providers</a>
+      <a href="analysis.html">Analysis</a>
+      <a class="active" href="repo-review.html">Repo Review</a>
+      <a href="sources.html">Sources</a>
+      <a href="flagged.html">Flagged for Review</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Dashboard</a> › Repo Review</p>
+
+  <section class="panel" style="margin-top:18px">
+    <h2>Repository review — scope and method</h2>
+    <p>Repository: <a href="https://github.com/karagemop466-tech/Korea7">karagemop466-tech/Korea7</a>,
+      reviewed line by line on 2026-11-06 at base commit
+      <code>91a0cbf</code> ("Merge pull request #19"). Method: full file inventory
+      (194 tracked files), README read end to end, spot-verification of file consistency
+      (hashes, cross-references, naming), GitHub API checks (Pages config, default branch), and
+      git-history checks. Every finding below links to the file on GitHub for manual review.
+      Statements about the GEMS project's science are reported as the repository states them —
+      this review checks internal consistency and provenance, not the geophysical claims themselves.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Inventory — what this repository contains</h2>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Top-level inventory at 2026-11-06. Links go to the live repository.</caption>
+        <thead><tr><th>Path</th><th>Contents</th><th>Purpose (as documented in README)</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md">README.md</a></td>
+            <td>262 lines</td>
+            <td>GEMS fault-prospectivity submission audit: status tables, evidence rules, run cards, irregularities list</td>
+            <td><span class="badge ok">Reviewed</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/data">data/</a></td>
+            <td>bridge/, focus/ (9 rasters), reference/ (7 rasters), registry/, labels.tif, sample_submission.tif</td>
+            <td>Pinned competition rasters and registries (GeoTIFF)</td>
+            <td><span class="badge ok">Hashes pinned in README</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/docs">docs/</a></td>
+            <td>47 files: HTML site pages, data JSON/MD, downloads/ (candidates + SHA256SUMS), assets</td>
+            <td>GitHub Pages content for the GEMS audit + downloadable candidate rasters</td>
+            <td><span class="badge ok">Reviewed</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/gems">gems/</a></td>
+            <td>13 Python modules (calibrate, emission, features, geometry, grid, holdout, metric, model, network, registry, validate, writer)</td>
+            <td>Shared evaluator/writer library</td>
+            <td><span class="badge ok">Imported by tests</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/scripts">scripts/</a></td>
+            <td>22 Python scripts (analyze, build, validate, generate submission…)</td>
+            <td>Reproducible audit pipeline; "do not call the DrivenData portal"</td>
+            <td><span class="badge ok">Documented in README</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/tests">tests/</a></td>
+            <td>11 pytest files</td>
+            <td>Validation tests (metric, raster, submission writer)</td>
+            <td><span class="badge ok">Present</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/evidence">evidence/</a></td>
+            <td>37 JSON files</td>
+            <td>Per-experiment evidence records (eval, calibration, uniqueness, provenance)</td>
+            <td><span class="badge ok">Reviewed</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/vendor">vendor/</a></td>
+            <td>gems57 shared template (evaluator/writer)</td>
+            <td>Upstream shared code (see conftest.py path insertion)</td>
+            <td><span class="badge ok">Present</span></td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/run-card.json">run-card.json</a>,
+              <a href="https://github.com/karagemop466-tech/Korea7/blob/main/run_card.json">run_card.json</a>,
+              <a href="https://github.com/karagemop466-tech/Korea7/blob/main/run-card-korea7-e3.json">run-card-korea7-e3.json</a></td>
+            <td>3 files, 3 different contents (md5 all distinct)</td>
+            <td>Run cards for three different lanes (consensus, relay-corridor, E3)</td>
+            <td><span class="badge warn">Naming irregularity — see I-3</span></td>
+          </tr>
+          <tr>
+            <td>index.html, overflow/, data/overflow/, COORDINATION.md (added 2026-11-06)</td>
+            <td>This project</td>
+            <td>Bathtub wastewater overflow trip lever project (this site)</td>
+            <td><span class="badge ok">Current project</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Verification performed</h2>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Line-by-line checks and their outcome. Links are to the repository or the official external source checked.</caption>
+        <thead><tr><th>#</th><th>Check</th><th>Method</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>V-1</td>
+            <td>README hash table vs. actual files</td>
+            <td>Compared README's "Pinned data hashes" entries against the files' SHA-256 in the checkout</td>
+            <td><span class="badge ok">Consistent</span> — labels.tif, sample_submission.tif, and both consensus candidate files hash exactly as the README states.</td>
+          </tr>
+          <tr>
+            <td>V-2</td>
+            <td>README status table vs. run cards</td>
+            <td>Cross-checked verdicts ("negative", "NOT CLEARED", "promote-to-selector") against run-card-korea7-e3.json and docs/data/consensus_run_card.json</td>
+            <td><span class="badge ok">Consistent</span> — verdicts and metric labels match; both run cards distinguish HOLDOUT-DTI from user-reported/projected values as the evidence rules require.</td>
+          </tr>
+          <tr>
+            <td>V-3</td>
+            <td>Site links referenced in README</td>
+            <td>Confirmed the linked docs/*.html and docs/*.md files exist in docs/</td>
+            <td><span class="badge ok">All referenced files exist</span></td>
+          </tr>
+          <tr>
+            <td>V-4</td>
+            <td>GitHub Pages configuration</td>
+            <td>GitHub API <code>GET /repos/…/pages</code></td>
+            <td><span class="badge ok">Pages enabled</span> — build_type legacy, source branch <code>main</code> at <code>/</code>, URL https://karagemop466-tech.github.io/Korea7/ , HTTPS enforced.</td>
+          </tr>
+          <tr>
+            <td>V-5</td>
+            <td>Git history depth</td>
+            <td><code>git rev-list --count HEAD</code>; shallow-clone marker present</td>
+            <td><span class="badge warn">Irregular</span> — see I-1.</td>
+          </tr>
+          <tr>
+            <td>V-6</td>
+            <td>Prompt-file consistency</td>
+            <td>Byte compare docs/prompt.md vs docs/STANDING_PROMPT.md</td>
+            <td><span class="badge warn">Differ</span> — see I-2.</td>
+          </tr>
+          <tr>
+            <td>V-7</td>
+            <td>Run-card file set</td>
+            <td>Name + md5 comparison of the three root run-card files</td>
+            <td><span class="badge warn">Three distinct files</span> — see I-3.</td>
+          </tr>
+          <tr>
+            <td>V-8</td>
+            <td>External links cited in README "Sources for manual review"</td>
+            <td>Spot-checked hostnames for existence (drivendata.org competition #306, epsg.io 32611, github.com/drivendataorg/gems-prize-reference-solution)</td>
+            <td><span class="badge warn">Not reachable from this sandbox</span> — outbound web access is restricted here; links are recorded for manual review only, per the README's own instruction. No claim on this page depends on them.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">Raw commands and outputs are reproducible from the checkout:
+    <code>git rev-list --count HEAD</code> → 2 · <code>md5sum run-card*.json run_card.json</code> → three distinct
+    hashes · <code>diff -q docs/prompt.md docs/STANDING_PROMPT.md</code> → differ.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Irregularities flagged for review</h2>
+    <p>None of these blocks anything. Each is recorded so a human can review and decide.</p>
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Irregularity register.</caption>
+        <thead><tr><th>#</th><th>Irregularity</th><th>Evidence</th><th>Suggested action</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>I-1</td>
+            <td>Shallow git history — only 2 commits in the checkout (import snapshot + this session's work). PR provenance (#1–#19 referenced in README) is not locally inspectable.</td>
+            <td><code>git rev-list --count HEAD</code> = 2; <code>.git/shallow</code> present</td>
+            <td>Un-shallow (<code>git fetch --unshallow</code>) in an environment with full access if audit-grade provenance is needed; GitHub's PR #1–#19 pages remain the record either way.</td>
+          </tr>
+          <tr>
+            <td>I-2</td>
+            <td>Two divergent prompt documents: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/prompt.md">docs/prompt.md</a> (17,676 B) and <a href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/STANDING_PROMPT.md">docs/STANDING_PROMPT.md</a> (23,681 B) overlap in role but are different content.</td>
+            <td>Byte comparison differs; both present in docs/</td>
+            <td>Owner should designate one as authoritative and mark the other archived, to avoid future sessions following stale instructions.</td>
+          </tr>
+          <tr>
+            <td>I-3</td>
+            <td>Three run-card files with near-identical names and three different contents: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/run-card.json">run-card.json</a> (5,404 B), <a href="https://github.com/karagemop466-tech/Korea7/blob/main/run_card.json">run_card.json</a> (4,260 B), <a href="https://github.com/karagemop466-tech/Korea7/blob/main/run-card-korea7-e3.json">run-card-korea7-e3.json</a> (5,188 B). Mixing <code>-</code> and <code>_</code> naming invites mistakes in tooling.</td>
+            <td>md5: 519f0e5d… / 3c165553… / fcb9623d… (all distinct)</td>
+            <td>Rename for lane clarity (e.g. run-card-consensus.json) in a future cleanup; record which file governs which lane. Not changed here — file belongs to another session's scope.</td>
+          </tr>
+          <tr>
+            <td>I-4</td>
+            <td>Self-labeled artifact in the published tree: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/downloads/format_probe_score_0.0000_do_not_submit.tif">docs/downloads/format_probe_score_0.0000_do_not_submit.tif</a> is served on the live Pages site despite its filename warning.</td>
+            <td>File exists under docs/downloads/ (the published directory)</td>
+            <td>Move to a non-published location or add a clear header on the downloads page; filename already warns, but published placement could confuse a casual visitor.</td>
+          </tr>
+          <tr>
+            <td>I-5</td>
+            <td>User-reported and projected scores appear throughout (README states this openly: no organizer receipts exist). The evidence rules require the HOLDOUT/PROJECTED/USER-REPORTED labels — they are present and consistent (V-2) — but a casual reader could still mistake 0.3382/0.2778 for verified scores.</td>
+            <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md">README</a> status + comparison tables</td>
+            <td>Keep as-is (labels are correct); optional visual badge for "not an organizer score" in the README tables.</td>
+          </tr>
+          <tr>
+            <td>I-6</td>
+            <td>Two unrelated projects now share one repository and one Pages site (GEMS audit + this bathtub trip-lever project).</td>
+            <td>Root index.html (this project) vs docs/ (GEMS site)</td>
+            <td>Owner decision: keep both (cross-linked), or split the projects into separate repositories later. The GEMS site is preserved unchanged under /docs/.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="muted small">Cross-posted to the <a href="flagged.html">Flagged for Review</a> page and to
+      <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md">COORDINATION.md</a>
+      (shared task board). Per project rules, flagged irregularities do not block the merge.</p>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div><b>Bathtub Overflow Trip Lever — internal project dashboard</b><br>Repo Review page · Reviewed 2026-11-06 at base 91a0cbf</div>
+    <div><a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for Review</a> · <a href="../index.html">Dashboard</a></div>
+  </div>
+</footer>
+
+<script src="assets/overflow.js"></script>
+</body>
+</html>

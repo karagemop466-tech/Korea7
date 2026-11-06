@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flagged for Review — Bathtub Overflow Trip Lever</title>
+<meta name="description" content="Unverified values and irregularities flagged for owner review. Nothing here blocks the project.">
+<link rel="stylesheet" href="assets/overflow.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="../index.html"><span class="dot">T</span> Bathtub Overflow Trip Lever</a>
+    <nav class="main">
+      <a href="../index.html">Dashboard</a>
+      <a href="requirements.html">Requirements</a>
+      <a href="estimates.html">Estimates</a>
+      <a href="providers.html">Providers</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="repo-review.html">Repo Review</a>
+      <a href="sources.html">Sources</a>
+      <a class="active" href="flagged.html">Flagged for Review</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Dashboard</a> › Flagged for Review</p>
+
+  <section class="panel" style="margin-top:18px">
+    <h2>Flagged for Review</h2>
+    <div class="callout flag">
+      <p><b>Policy:</b> a value that could not be confirmed from an official source is left
+      <b>blank</b> on the data tables and listed here with its context and source links. Nothing on
+      this page blocks the project; these items are published so they can be reviewed after the site is
+      live and changed on request. No value has been inferred or filled in anywhere on this site.</p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="data">
+        <caption>Flagged items — data as of 2026-11-06.</caption>
+        <thead>
+          <tr><th>#</th><th>Item</th><th>Why it is flagged</th><th>Where it appears</th><th>How to resolve</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>F-1</td>
+            <td>Estimate amounts: $614 (EST-1), $550 (EST-2), $135 (EST-3)</td>
+            <td>Amounts are user-provided from an internal estimate sheet (S23). A quoted price is a private transaction record and cannot be confirmed from a public official source.</td>
+            <td><a href="estimates.html">Estimates</a> (rows labeled <span class="badge unverified">UNVERIFIED (user-provided)</span>)</td>
+            <td>Keep the signed estimate PDFs with the internal file; amounts will never be externally confirmable. Company identities <i>were</i> independently verified (S13–S16).</td>
+          </tr>
+          <tr>
+            <td>F-2</td>
+            <td>CSLB license #1024971 (Fast Response Plumbing &amp; Rooter)</td>
+            <td>The number is published by the company itself (S16). It was not independently confirmed against the CSLB database in this session (the official lookup is an interactive form).</td>
+            <td><a href="providers.html">Providers</a> P-03</td>
+            <td>Run the number on the official <a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">CSLB Check a License</a> page before hiring (status + complaints).</td>
+          </tr>
+          <tr>
+            <td>F-3</td>
+            <td>CSLB license numbers for Expert Plumbing Solutions, Bay Area Plumbing, Handyman Heroes, General SF</td>
+            <td>Not shown on the linked Yelp listings (only "Verified License" badges). Left blank per policy.</td>
+            <td><a href="providers.html">Providers</a> P-01, P-02, P-04, P-05</td>
+            <td>Ask each company for its CSLB number and verify at <a href="https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx">CSLB</a>; then fill the blank cells with the confirmed number and source.</td>
+          </tr>
+          <tr>
+            <td>F-4</td>
+            <td>Yelp "Verified License" badges</td>
+            <td>A badge means Yelp confirmed a business or employee license at listing time — it is a third-party attestation, not a state record, and the underlying number is not exposed on the listing.</td>
+            <td><a href="providers.html">Providers</a> license column</td>
+            <td>Treat as a lead, not proof; confirm via CSLB (REQ-12 checklist).</td>
+          </tr>
+          <tr>
+            <td>F-5</td>
+            <td>Yelp ratings and review counts</td>
+            <td>Snapshots retrieved 2026-11-06; they change continuously. Counts vary even between Yelp pages of the same business (e.g., General SF: 302 on the business page vs 318–335 in search listings).</td>
+            <td>All provider tables</td>
+            <td>Re-check the linked listing at decision time; treat the recorded value as "as of 2026-11-06".</td>
+          </tr>
+          <tr>
+            <td>F-6</td>
+            <td>Dany's Remodeling &amp; Handyman Service (P-07) — service area</td>
+            <td>Listing is based in Albany, CA and states an Albany-area service area; service to San Francisco is NOT confirmed. Included because its review evidence (ceiling drywall replacement after water damage) matches the fallback scope exactly.</td>
+            <td><a href="providers.html">Providers</a> P-07</td>
+            <td>Confirm SF coverage by phone before adding to a bid list — otherwise keep as East Bay reference only.</td>
+          </tr>
+          <tr>
+            <td>F-7</td>
+            <td>Mike's Water Damage (P-06) — phone/website</td>
+            <td>Not shown on the retrieved listing data; left blank per policy.</td>
+            <td><a href="providers.html">Providers</a> P-06</td>
+            <td>Take from the linked Yelp page at contact time.</td>
+          </tr>
+          <tr>
+            <td>F-8</td>
+            <td>Scope blanks in the three estimates</td>
+            <td>None of the three quotes as provided states: drywall ceiling open/finish, dust containment, or the above-vs-below access path. Blank cells on the scope table mean "not stated", not "not included".</td>
+            <td><a href="estimates.html">Estimates</a> scope comparison</td>
+            <td>Request written clarification from each company before comparing totals (this is the highest-value next action per the <a href="analysis.html">Analysis</a>).</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Also flagged — repository irregularities</h2>
+    <p>Found during the line-by-line repo review (details and evidence on the
+      <a href="repo-review.html">Repo Review</a> page). These concern the pre-existing repository
+      content and do not block this project's site.</p>
+    <ul>
+      <li><b>Shallow git history:</b> only 2 commits are present locally; earlier PR provenance (#1–#19) is not inspectable in this checkout.</li>
+      <li><b>Two divergent prompt files:</b> <code>docs/prompt.md</code> (17.7 KB) and <code>docs/STANDING_PROMPT.md</code> (23.7 KB) are different documents with overlapping roles.</li>
+      <li><b>Three run-card files</b> with near-identical names and different contents: <code>run-card.json</code>, <code>run_card.json</code>, <code>run-card-korea7-e3.json</code>.</li>
+      <li><b>Self-labeled artifact in published tree:</b> <code>docs/downloads/format_probe_score_0.0000_do_not_submit.tif</code>.</li>
+      <li><b>Two unrelated projects now share one repository and one Pages site</b> (the GEMS audit and this project) — structural note for the owner.</li>
+    </ul>
+    <p class="muted small">Per the project rules, flagged irregularities and unverified items do not block
+      anything. Request changes any time and the entries will be updated with new sources.</p>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap cols">
+    <div><b>Bathtub Overflow Trip Lever — internal project dashboard</b><br>Flagged for Review · Data as of 2026-11-06</div>
+    <div><a href="sources.html">Sources</a> · <a href="repo-review.html">Repo Review</a> · <a href="../index.html">Dashboard</a></div>
+  </div>
+</footer>
+
+<script src="assets/overflow.js"></script>
+</body>
+</html>

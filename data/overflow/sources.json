@@ -1,0 +1,214 @@
+{
+  "project": "bathtub-wastewater-overflow-trip-lever",
+  "data_as_of": "2026-11-06",
+  "verification_policy": "Every value must map to an official source link. Unconfirmed values are left blank and flagged UNVERIFIED on the Flagged for Review page.",
+  "sources": [
+    {
+      "id": "S1",
+      "publisher": "Watco Manufacturing Company",
+      "title": "Trip Lever Installation Instructions (Model 500/550/600/650 bath wastes)",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "type": "Manufacturer",
+      "supports": "Official anatomy of a trip-lever bath waste: overflow plate, linkage, drop-cylinder (plunger), overflow elbow, drain elbow, tee; assembly is fastened under/behind the tub.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S2",
+      "publisher": "Watco Manufacturing Company",
+      "title": "Product index (trip lever bath wastes)",
+      "url": "https://www.watcomfg.com/watco/",
+      "type": "Manufacturer",
+      "supports": "Trip lever product family names (500-TL, 550-TL, 600-TL, 650-TL, slip-lock and quick-adjust variants).",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S3",
+      "publisher": "Moen (Solutions)",
+      "title": "Tub and Shower Drains — trip lever identification",
+      "url": "https://solutions.moen.com/Article_Library/Tub_and_Shower_Drains",
+      "type": "Manufacturer",
+      "supports": "Trip lever drain definition (lever on overflow plate opens/closes the drain); Moen replacement units 90410 (14-16 in. tubs) and 90480 (16-24 in. tubs); tubing not sold separately.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S4",
+      "publisher": "The Home Depot",
+      "title": "How to Remove and Replace a Bathtub",
+      "url": "https://www.homedepot.com/c/ah/how-to-remove-and-replace-a-bathtub/9ba683603be9fa5395fab906b201b19",
+      "type": "Retailer how-to (official)",
+      "supports": "Waste-and-overflow assembly sits under/behind the tub: drain shoe on the underside of the tub, overflow elbow and gasket behind the tub wall, tee joining overflow pipe and drain pipe.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S5",
+      "publisher": "Family Handyman",
+      "title": "How to Replace a Bathtub Drain Stopper With a Lift-and-Turn Drain",
+      "url": "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
+      "type": "Publisher how-to",
+      "supports": "Lever-style (trip lever) drains use a complicated internal linkage that catches hair; common professional conversion is to a simpler lift-and-turn stopper with blank overflow plate.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S6",
+      "publisher": "Lowery Plumbing (trustlowery.com)",
+      "title": "How to Remove a Trip-Lever Drain Stopper",
+      "url": "https://trustlowery.com/remove-trip-lever-drain-stopper/",
+      "type": "Licensed plumbing company (official site)",
+      "supports": "Standard removal from above (clip, cover plate, pull plunger); documented risk: plunger rod can break off and stay stuck in the piping; lubricant + straight pull, do not force at an angle.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S7",
+      "publisher": "Mr. Rooter Plumbing",
+      "title": "How to Remove a Bathtub Drain by Type",
+      "url": "https://www.mrrooter.com/about/blog/how-to-remove-a-bathtub-drain-stopper/",
+      "type": "Licensed plumbing franchise (official site)",
+      "supports": "Trip lever removal steps from above; if the assembly is stuck, lubricant first; forcing it can break the assembly and may require professional help to fix.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S8",
+      "publisher": "Angi",
+      "title": "How Much Does Plumbing Repair Cost? [2026 Data]",
+      "url": "https://www.angi.com/articles/plumber-cost.htm",
+      "type": "Industry cost data",
+      "supports": "2026 national averages: plumbing repair $341 avg ($182-$501 typical, up to $993); service call $100-$250; hourly $45-$200; flat rates $100-$400; fixture replacement $150-$600; cutting drywall to reach pipes raises cost and plumbers may bring in a separate contractor for structural repairs.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S9",
+      "publisher": "InspectandTest",
+      "title": "Bathtub Overflow Drains: Gasket Leaks and Waste Kits",
+      "url": "https://inspectandtest.net/guides/bathtub-overflow-drain/",
+      "type": "Industry guide",
+      "supports": "Replacing the full waste-and-overflow usually requires access from behind or below the tub; drywall and ceiling repair below is a separate cost that can rival the plumbing bill; hidden water damage adds substantially.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S10",
+      "publisher": "The Overall Plumber",
+      "title": "Bathtub Drain Drama: Why You Need a Licensed and Insured Plumber Fast",
+      "url": "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
+      "type": "Licensed plumbing company (official site)",
+      "supports": "Complete waste-and-overflow replacement priced $300-$600; with clear access via panel or ceiling below the job takes 2-4 hours; cracked/leaking waste-and-overflow pipes require full assembly replacement.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S11",
+      "publisher": "Contractors State License Board (CSLB), State of California",
+      "title": "Check a Contractor License",
+      "url": "https://www.cslb.ca.gov/onlineservices/checklicenseii/checklicense.aspx",
+      "type": "Government (official)",
+      "supports": "Official license lookup to verify any plumber/contractor before hiring; CSLB recommends reading its Hiring a Contractor page before signing a contract.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S12",
+      "publisher": "San Francisco DBI (sf.gov)",
+      "title": "Housing Inspection Services",
+      "url": "https://www.sf.gov/housing-inspection-services",
+      "type": "Government (official)",
+      "supports": "SF context: property owners are directed to licensed professionals/contractors for building condition assessments on residential buildings.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S13",
+      "publisher": "Yelp",
+      "title": "Expert Plumbing Solutions (San)",
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "type": "Review platform listing (official page)",
+      "supports": "Company identity, address (1465 44th Ave, SF 94122), phone ((415) 531-5340), website (eplumbingsolutions.com), rating 4.8 (81 reviews, page updated Oct 2026), est. 2012; review record of removing a stuck bathroom tub drain stopper.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S14",
+      "publisher": "Yelp",
+      "title": "Bay Area Plumbing (San Francisco)",
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "type": "Review platform listing (official page)",
+      "supports": "Company identity, address (335 14th Ave, SF 94118), phone ((415) 668-8000), website (bayareaplumbingsf.com), rating 4.8 (~168-175 reviews), est. 1995, Yelp Verified License badge; service area SF, Daly City, South SF, San Bruno.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S15",
+      "publisher": "Yelp",
+      "title": "Fast Response Plumbing & Rooter (San Francisco)",
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "type": "Review platform listing (official page)",
+      "supports": "Company identity, rating 4.8 (~877-906 reviews), Yelp Verified License badge, est. 1996, family-owned; Yelp record of ~10-minute response times.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S16",
+      "publisher": "Fast Response Plumbing & Rooter (official site)",
+      "title": "fastresponseplumbingsf.com",
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "type": "Company official site",
+      "supports": "CSLB #1024971 (C-36 plumbing license) as published by the company; bonded & insured; 25+ years serving SF; serves houses, apartments, and HOAs; 7 days/week; free estimates; phone (415) 596-6115.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S17",
+      "publisher": "Yelp",
+      "title": "Handyman Heroes (San Francisco)",
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "type": "Review platform listing (official page)",
+      "supports": "4.7 (410 reviews, page updated Nov 2026); categories Handyman, Electricians, Plumbing; 1525 Waller St, SF 94117; (844) 382-4376; handymanhero.es; Yelp Verified License badge; reviews document plumbing repair followed by wall repair by the same outfit; 'fully licensed, bonded and insured' is self-reported in the business description.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S18",
+      "publisher": "Yelp",
+      "title": "General SF (San Francisco)",
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "type": "Review platform listing (official page)",
+      "supports": "4.8 (302 reviews on the biz page JSON-LD, 318-335 in 2025-2026 search listings); categories General Contractors, Electricians, Plumbing; 3624 Irving St Ste A, SF 94122; (650) 303-1515; generalsf.com; est. 1991; Yelp Verified License badge ('Yelp confirmed a business or employee license'); reviews document combined finish-carpentry + drain-leak repair.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S19",
+      "publisher": "Yelp",
+      "title": "Mike's Water Damage (San Francisco)",
+      "url": "https://www.yelp.com/biz/mike-handyman-san-francisco",
+      "type": "Review platform listing (official page)",
+      "supports": "4.9 (72-77 reviews); damage restoration + handyman; reviews document drywall repair after water damage and mold-damaged ceiling restoration; 10 years in business.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S20",
+      "publisher": "Yelp",
+      "title": "Dany's Remodeling & Handyman Service (Albany)",
+      "url": "https://www.yelp.com/biz/danys-remodeling-and-handyman-service-albany",
+      "type": "Review platform listing (official page)",
+      "supports": "4.6 (40 reviews); review explicitly documents ceiling drywall replacement due to water damage; located Albany, CA 94706, (510) 426-5703; est. 2003; SF service area NOT confirmed on listing.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S21",
+      "publisher": "Yelp (search listings)",
+      "title": "Plumbing category search — San Francisco, CA",
+      "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA%2C+US",
+      "type": "Review platform (official)",
+      "supports": "Category-level ratings and Verified License badges for SF plumbers (Ace Plumbing & Rooter 4.7/1.5k, Discount Plumbing Rooter Services 4.5/1.3k, Citywide Plumbing 4.8/~190, Kenneth Asire Plumbing 4.8/~148, Advanced Plumbing & Drain 4.8/~206-210, Answer Plumbing 4.9/~57, 24-7 Rooter & Plumbing ~823 reviews).",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S22",
+      "publisher": "Bathify",
+      "title": "Bathtub Drain Types: How to Identify Yours & What to Replace It With",
+      "url": "https://bathify.com/blogs/inspo/bathtub-drain-types-replacement-guide",
+      "type": "Industry blog",
+      "supports": "Parts cost bands: stopper $10-$25, full drain-and-overflow kit $25-$80; plumber labor for straightforward replacement ~$75-$200, more if the old drain is seized or the waste-and-overflow needs work.",
+      "accessed": "2026-11-06"
+    },
+    {
+      "id": "S23",
+      "publisher": "User-provided estimate sheet",
+      "title": "Three contractor estimates dated 2026-08-30 (internal)",
+      "url": "",
+      "type": "User-provided (internal)",
+      "supports": "Estimate amounts and scopes for Expert Plumbing Solutions ($614), Bay Area Plumbing ($550), Fast Response ($135). Not publicly confirmable; amounts flagged UNVERIFIED for external confirmation.",
+      "accessed": "2026-11-06"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "project": "bathtub-wastewater-overflow-trip-lever",
+  "data_as_of": "2026-11-06",
+  "note": "Estimates were provided by the owner, dated 2026-08-30. Amounts are user-provided and cannot be confirmed from a public official source; company identities were independently verified where the verification_source field is non-empty. Scopes differ across the three estimates - they are NOT like-for-like.",
+  "estimates": [
+    {
+      "id": "EST-1",
+      "date": "2026-08-30",
+      "company": "Expert Plumbing Solutions",
+      "scope_quoted": "Remove / replace bathtub wastewater overflow (waste and overflow replacement)",
+      "amount_usd": 614,
+      "amount_source": "S23",
+      "amount_status": "UNVERIFIED (user-provided)",
+      "company_verification": "VERIFIED - real SF company (1465 44th Ave, San Francisco, CA 94122; (415) 531-5340; eplumbingsolutions.com; est. 2012)",
+      "verification_source": "S13",
+      "notes": "Widest scope of the three: full waste-and-overflow replacement. Yelp record includes removing a stuck bathroom tub drain stopper."
+    },
+    {
+      "id": "EST-2",
+      "date": "2026-08-30",
+      "company": "Bay Area Plumbing",
+      "scope_quoted": "Replace lever for the bathtub plug and spout with diverter; includes labor and materials",
+      "amount_usd": 550,
+      "amount_source": "S23",
+      "amount_status": "UNVERIFIED (user-provided)",
+      "company_verification": "VERIFIED - real SF company (335 14th Ave, San Francisco, CA 94118; (415) 668-8000; bayareaplumbingsf.com; est. 1995)",
+      "verification_source": "S14",
+      "notes": "Scope includes tub spout with diverter, which the other two quotes do not. Labor and materials included."
+    },
+    {
+      "id": "EST-3",
+      "date": "2026-08-30",
+      "company": "Fast Response (Fast Response Plumbing & Rooter)",
+      "scope_quoted": "Repair or adjust bathtub wastewater plunger handle",
+      "amount_usd": 135,
+      "amount_source": "S23",
+      "amount_status": "UNVERIFIED (user-provided)",
+      "company_verification": "VERIFIED - real SF company (CSLB #1024971 C-36 per company site; fastresponseplumbingsf.com; (415) 596-6115; est. 1996)",
+      "verification_source": "S15, S16",
+      "notes": "Narrowest scope: adjust/repair only, no replacement of the assembly. Consistent with a service-call or flat-rate repair."
+    }
+  ]
+}
