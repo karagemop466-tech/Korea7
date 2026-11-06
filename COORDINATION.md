@@ -45,3 +45,28 @@ Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. Th
 - PR #22 (site implementation) merged to `main` as `aa52254` on 2026-11-06; its GitHub Pages deployment succeeded at 13:31 UTC and the dashboard route was fetched successfully: https://github.com/karagemop466-tech/Korea7/pull/22.
 - PR #24 (this session's coordination follow-up) merged as `a187005` on 2026-11-06: https://github.com/karagemop466-tech/Korea7/pull/24. PR #21 (source/privacy handoff) merged as `39bd71f` as noted above.
 - The follow-up request remains unresolved in the published page at last content check: requester-only wording and unverified amount values are still visible. The owning session has been asked to address them in its files; this session did not edit those files to avoid scope collision.
+
+---
+
+# Session `session-arena-68d76eff` board (appended 2026-11-06; add/add conflict resolved by preserving the board above verbatim and appending this section)
+
+> **Platform constraint:** this session's runtime pins all work to branch `arena/68d76eff-korea7` (branched from `main` @ `91a0cbf`, before PRs #21–#24 were visible to it) and does not permit creating other branches, so the `session-<id>/<task>` branch convention could not be followed. Scopes were kept disjoint by path: this session touched only `COORDINATION.md`, `EXECUTIVE-SUMMARY.md`, `index.html` (root — did not exist before), and `bathtub-overflow/**`. It did **not** edit `docs/overflow-*`, `docs/plumbing-index.html`, `README.md`, or `docs/index.html` owned by `arena/7379ee3c-korea7`.
+
+## Tasks (this session)
+
+| # | Task | Status | Sources / verification / notes |
+|---|---|---|---|
+| 1 | Repo review | done | Irregularities recorded as site flags F1–F2 (pre-existing unrelated GEMS project; Pages root previously had no `index.html`). Pre-existing run-card JSON naming inconsistency noted, untouched. |
+| 2 | Verify the three quoted companies | done | Expert Plumbing Solutions #977638, Fast Response #1024971, Bay Area Plumbing #757796 — all read directly from CSLB License Detail records, data current as of 11/6/2026 (links on site). Quote amounts client-provided → flagged F7. |
+| 3 | Verify official rules | done | sf.gov permit + contractor-registration pages; leginfo B&P §7048 (**current text eff. 2026-01-01: <$1,000 AND no building permit required** — AB 1170); CSLB classification pages B / B-2 / C-36; CPC §104.2 text via IAPMO. Outdated "$500" citations flagged F12. |
+| 4 | Provider research & verification | done | 6 providers, all license-verified on CSLB (see site table): Ace #829071 (A,B,C-4,C-10,C-16,C-36 — all-in-one capable), GENERALSF #959843 (B,C-10,C-36 — all-in-one capable; WC exemption → F6), Expert Plumbing Solutions #977638, Fast Response #1024971 (CSLB typo + WC exp. 12/18/2026 → F9), Advanced Plumbing & Drain #1009195 (future-suspension warning → F5; phone mismatch → F10), Bay Area Plumbing #757796 (WC exemption → F14). Yelp listings linked (F11). |
+| 5 | Build static Pages site | done | Root dashboard `index.html` + 10 pages under `bathtub-overflow/` + `EXECUTIVE-SUMMARY.md`. Every table row carries source links; blanks + flags for unverified values (F1–F14, F3 resolved). Internal-link audit: 0 broken. |
+| 6 | Final integration & publish | done | Merged `origin/main` into this branch: add/add conflict in `COORDINATION.md` resolved by **preserving the prior board verbatim** and appending this section; `README.md` and `docs/index.html` auto-merged (this session had not modified them); all `docs/overflow-*` pages preserved untouched. Combined-site link audit re-run across all 40 HTML pages: 0 broken. PR #25 → `main`, merged without approval per owner instruction; Pages deploy confirmed via API. |
+
+## Integration handoff notes (2026-11-06, session `session-arena-68d76eff`)
+
+- **Bay Area Plumbing license resolved:** this session verified #757796 directly on the official CSLB record (active C-36, sole owner, issued 01/07/1999, expires 01/31/2027, 335 14th Ave / (415) 668-8000 exact match). This confirms the same finding earlier recorded by `arena/59a50fe0-korea7` and supersedes this session's initial "unverified" flag (F3 now marked resolved on the new dashboard).
+- **Expert Plumbing Solutions #977638 status:** the earlier verification-log line "possibly expired per BBB (10/31/2026)" is contradicted by the official CSLB record read 2026-11-06: **current and active, expires 10/31/2028**. BBB was not used as a source on the new dashboard; official CSLB record governs.
+- **Two microsites now coexist by design:** the earlier `docs/plumbing-index.html` + `docs/overflow-*.html` set (owned by `arena/7379ee3c-korea7`) and the new root dashboard + `bathtub-overflow/` set (this session). Neither set was edited by the other session. The root dashboard links to the earlier microsite.
+- **Still-pending requests (not actioned by this session, out of scope — logged only):** `arena/59a50fe0-korea7`'s requests to the owner of the `docs/` pages (remove requester-only wording; blank unverified amount cells in the value column) remain open for `arena/7379ee3c-korea7`. Flagged items and unverified values do not block merge per the owner's instructions.
+- **Permit-posture privacy:** no private circumstances are documented on either microsite or in this board; permit content is neutral and grounded in official sf.gov/leginfo/CSLB/IAPMO sources.
