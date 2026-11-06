@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korea7 repo review | Overflow verification addendum</title>
+<link rel="stylesheet" href="assets/verification.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><a href="plumbing-index.html">Overflow project dashboard</a> / <a href="overflow-verification.html">Verification addendum</a></div>
+  <nav class="nav"><a href="overflow-verification.html">Summary</a><a href="overflow-verification-permits.html">Permits and licensing</a><a href="overflow-verification-contractors.html">Contractors and quotes</a><a class="active" href="overflow-verification-repo-review.html">Repo review</a><a href="overflow-verification-flags.html">Flagged for Review</a><a href="overflow-verification-sources.html">Sources</a></nav>
+</header>
+<main class="wrap">
+  <h1>Korea7 repo review</h1>
+  <p class="subtitle">Checks on the existing repository, with pass and flag status.</p>
+  
+<section class="panel"><h2>Repository checks</h2>
+  <p class="small">Checks on the existing Korea7 repository (a DOE GEMS submission project). They were run on branch arena/56e0fb61-korea7. No GEMS file was edited.</p>
+  <div class="tablewrap"><table class="tbl" id="repo"><thead><tr><th>ID</th><th>Check</th><th>Result</th><th>Evidence</th><th>Source</th><th>Status</th></tr></thead><tbody><tr><td>RR1</td><td>Repository purpose</td><td>DOE GEMS geothermal fault-prediction submission audit, with a GeoTIFF candidate, validators and a GitHub Pages site.</td><td>README.md first lines</td><td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" rel="noopener" target="_blank">Source</a></td><td><span class="pill muted">INFO</span></td></tr><tr><td>RR2</td><td>SHA-256 of consensus candidate</td><td>Computed 9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c, which matches the README value.</td><td>sha256sum on docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif</td><td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" rel="noopener" target="_blank">Source</a></td><td><span class="pill ok">PASS</span></td></tr><tr><td>RR3</td><td>SHA-256 of KOREA7-E3 candidate</td><td>Computed f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d, which matches the README value.</td><td>sha256sum on docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif</td><td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" rel="noopener" target="_blank">Source</a></td><td><span class="pill ok">PASS</span></td></tr><tr><td>RR4</td><td>Run-card consistency</td><td>Three JSON files, three different schemas (keys differ). See A12.</td><td>python json key listing</td><td><a href="https://github.com/karagemop466-tech/Korea7/tree/main" rel="noopener" target="_blank">Source</a></td><td><span class="pill bad">FLAG</span></td></tr><tr><td>RR5</td><td>Competition leaderboard figure</td><td>Repo states 0.4413. Live leaderboard shows #1 at 0.4720 (see A11).</td><td>DrivenData leaderboard page, fetched 2026-11-06</td><td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/" rel="noopener" target="_blank">Source</a></td><td><span class="pill bad">FLAG</span></td></tr><tr><td>RR6</td><td>Competition metric parameters</td><td>The DrivenData problem page describes a distance-weighted Tversky index. The alpha, beta and 300 m values in the repo were not confirmed, because the page continues beyond the first chunk read.</td><td>DrivenData problem description, chunk 1 of 2</td><td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/page/967/" rel="noopener" target="_blank">Source</a></td><td><span class="pill warn">NOT CHECKED</span></td></tr><tr><td>RR7</td><td>GitHub Pages configuration</td><td>Legacy build from main at /. The root README is the homepage. This branch does not change it. Latest build status: built.</td><td>gh api repos/karagemop466-tech/Korea7/pages</td><td><a href="https://karagemop466-tech.github.io/Korea7/" rel="noopener" target="_blank">Source</a></td><td><span class="pill muted">INFO</span></td></tr><tr><td>RR8</td><td>Coordination board</td><td>COORDINATION.md exists on main, created by session 7379ee3c. This session appends its own section and does not edit that session&#x27;s entries.</td><td>git cat-file on origin/* branches</td><td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" rel="noopener" target="_blank">Source</a></td><td><span class="pill muted">INFO</span></td></tr><tr><td>RR9</td><td>Test suite</td><td>84 passed, 34 warnings (PendingDeprecationWarning from rasterio/affine), 0 failed. Run on the branch with requirements.txt in a venv outside the repo (python 3.11).</td><td>python -m pytest -q in a /tmp venv with requirements.txt (log not committed)</td><td><a href="https://github.com/karagemop466-tech/Korea7/tree/main/tests" rel="noopener" target="_blank">Source</a></td><td><span class="pill ok">PASS</span></td></tr><tr><td>RR10</td><td>Repo activity</td><td>Other arena/*-korea7 branches exist on origin. Branch arena/7379ee3c-korea7 was merged to main via PR #22 and covers the overflow dashboard. This session (56e0fb61) claims only the addendum tasks.</td><td>git ls-remote --heads origin</td><td><a href="https://github.com/karagemop466-tech/Korea7/branches" rel="noopener" target="_blank">Source</a></td><td><span class="pill muted">INFO</span></td></tr></tbody></table></div></section>
+
+</main>
+<footer class="foot">
+  <p>Research only. Information as of 2026-11-06 (UTC). Open items are on the
+  <a href="overflow-verification-flags.html">Flagged for Review (addendum)</a> page. Every row links to its source.</p>
+</footer>
+<script src="assets/verification-filter.js"></script>
+</body>
+</html>
