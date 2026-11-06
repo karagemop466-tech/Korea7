@@ -144,14 +144,14 @@
       <tbody>
         <tr>
           <td><span class="badge warn">F1</span></td>
-          <td><strong>Repository mixes two unrelated projects</strong></td>
-          <td>This repo (<em>Korea7</em>) previously contained a DOE GEMS fault-prospectivity audit (≈15 MB of GeoTIFF data, Python analysis code, and its own <a href="../docs/index.html">documentation site under /docs/</a>). The bathtub project was added alongside it without modifying any pre-existing file.</td>
-          <td>Informational. If separation is wanted later, the GEMS material could move to its own repository.</td>
+          <td><strong>Repository mixes multiple unrelated projects</strong></td>
+          <td>This repo (<em>Korea7</em>) previously contained a DOE GEMS fault-prospectivity audit (≈15 MB of GeoTIFF data, Python analysis code, and its own <a href="../docs/index.html">documentation site under /docs/</a>). During 2026-11-06, parallel sessions additionally published bathtub-overflow microsites under <a href="../docs/plumbing-index.html">/docs/plumbing-index.html</a> and <a href="../docs/bath/contractors.html">/docs/bath/</a>. The bathtub project dashboard at the site root was added alongside all of them without modifying any pre-existing file.</td>
+          <td>Informational. If separation is wanted later, the GEMS material could move to its own repository and the duplicate microsites consolidated by the owner.</td>
         </tr>
         <tr>
           <td><span class="badge warn">F2</span></td>
-          <td><strong>GitHub Pages root previously had no landing page</strong></td>
-          <td>Pages was enabled for the <code>main</code> branch root, but the repo root had no <code>index.html</code>, so the site root did not serve a page. This project added the dashboard landing page at the root; the pre-existing GEMS pages remain under <a href="../docs/index.html">/docs/</a>.</td>
+          <td><strong>GitHub Pages root previously had no project landing page</strong></td>
+          <td>Pages builds from the <code>main</code> branch root, but the repo root had no <code>index.html</code>, so the site root served only a Jekyll-rendered copy of the GEMS README instead of a project landing page. This project added the dashboard landing page at the root; the pre-existing GEMS pages remain under <a href="../docs/index.html">/docs/</a>.</td>
           <td>Fixed by this project.</td>
         </tr>
       </tbody>
