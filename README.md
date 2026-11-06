@@ -277,3 +277,19 @@ The parallel session's candidate rasters are `korea7-k7-offcatalogue-relay-corri
 `submission name + note`: `korea7-consensus-offcat-20k-20261104-zeros`; `Korea7 4-method off-catalogue consensus, 20k dots, 85% far from catalogue; unique vs nine focus sites; research only.` (117 characters).
 
 `verdict`: **negative** — research artifact, not cleared for a weekly slot.
+
+---
+
+## Active project (2026-11-06): Bathtub wastewater overflow trip lever — San Francisco
+
+A second work package lives in this repository: a verified research and hiring brief for a stuck
+bathtub waste-and-overflow **trip lever** in a tenant-occupied San Francisco unit (access may require
+opening the ceiling below). It does not touch the GEMS project above.
+
+- Site (dashboard + subpages): [`docs/bath/index.html`](docs/bath/index.html) — published at
+  `https://karagemop466-tech.github.io/Korea7/docs/bath/` once this branch merges to `main`.
+- Executive summary: [`docs/bath/executive-summary.md`](docs/bath/executive-summary.md)
+- Verified data (all rows source-linked): [`docs/bath/data/`](docs/bath/data)
+- Flagged for Review: [`docs/bath/flagged-for-review.html`](docs/bath/flagged-for-review.html)
+- Coordination: [`COORDINATION.md`](COORDINATION.md)
+- Build &amp; verify: `python3 scripts/build_bath_site.py && python3 -m pytest tests/test_bath_site.py -q`

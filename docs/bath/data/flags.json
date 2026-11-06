@@ -1,0 +1,131 @@
+{
+  "retrieved": "2026-11-06",
+  "flags": [
+    {
+      "id": "flag-quotes-unverifiable",
+      "severity": "expected-limitation",
+      "title": "All three estimate amounts are client-provided and cannot be verified from an official source",
+      "detail": "The amounts $614 (Expert Plumbing Solutions), $550 (Bay Area Plumbing), and $135 (Fast Response) exist only in the client's brief. No official public source publishes them, so per this project's verification rules the amounts are labeled client-provided and are not presented as verified. The companies' identities, licenses, addresses, and phone numbers behind each quote ARE verified against the CSLB.",
+      "action": "Treat amounts as planning inputs only; request itemized written quotes before hiring.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "The CSLB license records that WERE verified for the companies behind these quotes"
+    },
+    {
+      "id": "flag-scope-mismatch",
+      "severity": "important",
+      "title": "The three quotes describe different scopes and are not directly comparable",
+      "detail": "$135 is for repair/adjustment of the plunger handle (trim/linkage work from above). $550 is for replacing the trip lever and spout with diverter (trim replacement). $614 is for replacing the complete waste-and-overflow assembly. Given the stated on-site condition - the trip lever is stuck inside hidden plumbing and removal from above has failed for 5+ licensed plumbers (client-stated, not independently verifiable) - the lower-priced approaches may not apply to the actual required work.",
+      "action": "Confirm the required scope (adjust vs. trim replacement vs. full waste-and-overflow replacement, plus any access opening) with each bidder before comparing prices.",
+      "source_url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "What a full waste-and-overflow replacement physically involves (manufacturer instructions)"
+    },
+    {
+      "id": "flag-date-ambiguity",
+      "severity": "minor",
+      "title": "Estimate dating is ambiguous",
+      "detail": "The brief's date heading '8/30/26' appears once, above the first estimate only. Whether it applies to all three estimates is not stated.",
+      "action": "Client to confirm the date each estimate was issued.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_label": "CSLB record of the company whose quote carries the 8/30/26 heading (identity verified; the date itself is client-provided)"
+    },
+    {
+      "id": "flag-name-mapping",
+      "severity": "important",
+      "title": "Shorthand company names were matched to specific CSLB-registered entities",
+      "detail": "The brief names 'Expert plumbing solutions', 'Bay Area plumbing', and 'Fast response'. Each was matched to a San Francisco company by name plus exact address/phone/license agreement with official records: Expert Plumbing Solutions (CSLB 977638, 1465 44th Ave, (415) 531-5340), Bay Area Plumbing (CSLB 757796, 335 14th Ave, (415) 668-8000), Fast Response Plumbing & Rooter (CSLB 1024971, Joseph Tinsley dba, San Francisco, C-36). Similar names exist in the Bay Area, so misidentification is possible.",
+      "action": "Client to confirm the quoting entities match these verified companies (e.g., against the written quote documents).",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "Search the CSLB license database (the basis of each name-to-entity match)"
+    },
+    {
+      "id": "flag-bap-workers-comp",
+      "severity": "due-diligence",
+      "title": "Bay Area Plumbing CSLB record shows a workers' compensation exemption",
+      "detail": "The CSLB record for license 757796 states the license 'is exempt from having workers compensation insurance; they certified that they have no employees at this time' (effective 12/11/2024). This is lawful for a sole owner with no employees, but it means the CSLB page shows no workers' compensation policy on file for this licensee.",
+      "action": "Request a current certificate of liability insurance (and note that if workers are used on the job, workers' compensation coverage is required).",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_label": "CSLB license 757796 record showing the exemption"
+    },
+    {
+      "id": "flag-bbb-stale-expiry",
+      "severity": "minor",
+      "title": "BBB page shows a stale license expiration date for Expert Plumbing Solutions",
+      "detail": "The BBB profile states license 977638 'expiration date of this license is 10/31/2026', while the CSLB (the licensing authority) shows expiration 10/31/2028 with current-and-active status as of 2026-11-06. The CSLB record governs; the BBB field appears stale.",
+      "action": "Rely on the CSLB license-detail page for license status.",
+      "source_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "source_label": "The BBB profile showing the conflicting date (CSLB governs)"
+    },
+    {
+      "id": "flag-buildzoom-name-collision",
+      "severity": "minor",
+      "title": "Aggregator profiles mix licenses between same-named companies",
+      "detail": "A BuildZoom profile titled 'Bay Area Plumbing' lists 13 license numbers, several of which belong to other entities on inspection (e.g., 1075566 resolves on CSLB to BAY AREA PIPE & EQUIPMENT INC dba BAY AREA MECHANICAL, 1320 Underwood Ave). Third-party aggregator data is a misattribution hazard for common company names.",
+      "action": "Only records read directly from the CSLB license-detail page and matching the company's own address and phone were used in this project.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566",
+      "source_label": "CSLB record proving license 1075566 belongs to Bay Area Pipe & Equipment dba Bay Area Mechanical, not the storefront Bay Area Plumbing"
+    },
+    {
+      "id": "flag-genteel-duplicate-yelp",
+      "severity": "minor",
+      "title": "Genteel Plumbers has two Yelp listing pages with different review counts",
+      "detail": "yelp.com/biz/genteel-plumbers-san-francisco-7 shows 4.7 (519 reviews); genteel-plumbers-san-francisco-8 shows 4.6 (17 reviews). Both carry the genteelplumbers.com website. Duplicate listings inflate/fragment review counts.",
+      "action": "Read reviews on both pages; treat counts as indicative only.",
+      "source_url": "https://www.yelp.com/biz/genteel-plumbers-san-francisco-8",
+      "source_label": "The second (duplicate) Genteel Plumbers Yelp listing"
+    },
+    {
+      "id": "flag-discount-name-confusion",
+      "severity": "minor",
+      "title": "Two different 'Discount Plumbing' entities operate in the area",
+      "detail": "Discount Plumbing Rooter Services LLC (CSLB 1140843, Burlingame HQ, San Francisco storefront) is the company with the plumbinginsf.com site and the 4321 24th St San Francisco Yelp listing. A separate BBB-listed 'Discount Plumbing, Inc.' (BBB records license 1144424, started 1989, Burlingame) is a distinct business.",
+      "action": "Verify which entity any quote comes from.",
+      "source_url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/discount-plumbing-rooter-inc-1116-71927",
+      "source_label": "BBB profile of the separate 'Discount Plumbing, Inc.' entity"
+    },
+    {
+      "id": "flag-occupied-unit-experience",
+      "severity": "unverified-criterion",
+      "title": "Experience working in tenant-occupied units could not be verified from official sources",
+      "detail": "The requirement for experience performing delicate work in tenant-occupied units is a client criterion. No official public source documents this attribute for any candidate, so per the verification rules the field is left blank rather than filled in.",
+      "action": "Ask each bidder for references from comparable occupied-unit work and for their dust/containment and tenant-notice practices.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "What CAN be verified from official sources (license status) vs. what cannot"
+    },
+    {
+      "id": "flag-failed-attempts-anecdotal",
+      "severity": "unverified-criterion",
+      "title": "'5+ licensed plumbers were unable to remove it from above' is client-stated context",
+      "detail": "This key fact comes from the client's brief and is not independently verifiable. It drives the analysis toward below-floor access planning, so it is recorded as client-stated.",
+      "action": "Retain any written declines/notes from prior plumbers as supporting evidence.",
+      "source_url": "https://www.hunker.com/13769421/how-to-fix-a-bathtub-drain-stopper/",
+      "source_label": "The standard from-above removal method that reportedly kept failing in the field"
+    },
+    {
+      "id": "flag-yelp-counts-volatile",
+      "severity": "minor",
+      "title": "Yelp ratings and review counts change continuously",
+      "detail": "All ratings/counts on the Contractors page are snapshots as displayed on 2026-11-06 and will drift.",
+      "action": "Re-check the linked Yelp pages at decision time.",
+      "source_url": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA",
+      "source_label": "Yelp San Francisco plumbing listings (counts move continuously)"
+    },
+    {
+      "id": "flag-coexisting-project-sites",
+      "severity": "important",
+      "title": "Four independently built project page-sets now coexist in this repository",
+      "detail": "Parallel sessions on this same brief each published their own work: (1) docs/plumbing-index.html + docs/overflow-*.html (session arena/7379ee3c-korea7); (2) the root dashboard index.html + bathtub-overflow/ pages + EXECUTIVE-SUMMARY.md (session-arena-68d76eff); (3) docs/overflow-verification*.html, an official-source verification addendum (session arena/56e0fb61); and (4) this set under docs/bath/ (session arena-a9ed5ccf). All cover the same estimates and quoting companies; this set adds the B + C-36 single-contract licensing analysis and automated enforcement of the source-link and blank-if-unverified rules. Per the coordination protocol no session edited another's files, so all four remain; GitHub Pages serves them side by side.",
+      "action": "Owner decision: pick one canonical set and retire or merge the rest. The coordination boards record cross-checks between the sets (their CSLB findings agree with this set's).",
+      "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "source_label": "COORDINATION.md — all three sessions' boards and file-scope claims"
+    },
+    {
+      "id": "flag-open-owner-requests-earlier-sites",
+      "severity": "due-diligence",
+      "title": "Open review requests recorded against the earlier microsites (owned by other sessions; not actioned here)",
+      "detail": "The coordination board records unresolved requests from session arena/59a50fe0-korea7 to the owner of the docs/overflow-* pages: remove requester-only wording from the public dashboard and leave officially unverifiable amount cells blank while retaining UNVERIFIED flags. Those files belong to another session, so this session logs the request instead of editing them, exactly as the protocol requires.",
+      "action": "Owner: have the owning session apply the two edits, or authorize any session to take over the task with a handoff note in COORDINATION.md.",
+      "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "source_label": "COORDINATION.md — integration handoff notes from arena/59a50fe0-korea7"
+    }
+  ]
+}

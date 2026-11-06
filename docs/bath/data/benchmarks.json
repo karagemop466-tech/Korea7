@@ -1,0 +1,36 @@
+{
+  "retrieved": "2026-11-06",
+  "verification_note": "Third-party national cost guides - market context only. These are NOT quotes for this job and NOT official government sources; they are published cost benchmarks from widely used home-services cost guides, linked so every figure can be checked.",
+  "benchmarks": [
+    {
+      "id": "bench-homeguide",
+      "publisher": "HomeGuide",
+      "metric": "Bathtub plumbing repairs (incl. drain issues)",
+      "range": "$100 - $700+",
+      "detail": "Drain repair $200 - $700; bathtub replacement $1,500 - $8,000",
+      "url": "https://homeguide.com/costs/bathtub-repair-cost",
+      "page_title": "How Much Does Bathtub Repair Cost? (2026)",
+      "retrieved": "2026-11-06"
+    },
+    {
+      "id": "bench-angi",
+      "publisher": "Angi",
+      "metric": "Bathtub or shower drain replacement",
+      "range": "$500 - $1,025",
+      "detail": "Average about $700; guides note that repairs requiring drywall, tile, or flooring removal cost significantly more than repairs at exposed fixtures (accessibility is a main cost driver)",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "page_title": "How Much Does Bathroom Leak Repair Cost? [2026 Data]",
+      "retrieved": "2026-11-06"
+    },
+    {
+      "id": "bench-currentcost",
+      "publisher": "CurrentCost (independent cost guide)",
+      "metric": "Trip-lever overflow assembly work",
+      "range": "$240 - $590 (parts $40 - $90 + labor $200 - $500)",
+      "detail": "National guide figures for trip-lever overflow parts and plumber labor; typical total drain replacement $350 - $1,200 straightforward, $1,000 - $2,000 with hard-to-reach access",
+      "url": "https://currentcost.org/bathtub-drain-replacement-cost-price-ranges-key-drivers-u-s/",
+      "page_title": "Bathtub Drain Replacement Cost: Price Ranges and Key Drivers for U.S. Homes 2026",
+      "retrieved": "2026-11-06"
+    }
+  ]
+}

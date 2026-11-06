@@ -1,0 +1,42 @@
+{
+  "retrieved": "2026-11-06",
+  "verification_note": "All three amounts below were provided to the client directly and are recorded verbatim from the client's brief. They are CLIENT-PROVIDED figures: no official public source publishes these quotes, so they cannot be independently verified and each row is flagged accordingly. The companies themselves (names, licenses, addresses, phones) ARE independently verified against the CSLB on 2026-11-06 - see the Contractors page.",
+  "estimates": [
+    {
+      "id": "est-614",
+      "company_id": "expert-plumbing-solutions",
+      "company_name": "Expert Plumbing Solutions",
+      "scope_as_stated": "Replacing waste and overflow",
+      "amount_usd": 614,
+      "date_as_stated": "8/30/26",
+      "source_type": "client-provided",
+      "source_note": "Amount and wording as provided in the client's brief; not independently verifiable from an official source.",
+      "verified": false,
+      "company_profile_link": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    },
+    {
+      "id": "est-550",
+      "company_id": "bay-area-plumbing",
+      "company_name": "Bay Area Plumbing",
+      "scope_as_stated": "Replace lever for the bathtub plug and spout with diverter; includes labor and materials",
+      "amount_usd": 550,
+      "date_as_stated": null,
+      "source_type": "client-provided",
+      "source_note": "Amount and wording as provided in the client's brief; not independently verifiable from an official source.",
+      "verified": false,
+      "company_profile_link": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796"
+    },
+    {
+      "id": "est-135",
+      "company_id": "fast-response-plumbing-rooter",
+      "company_name": "Fast Response",
+      "scope_as_stated": "Repair or adjust bathtub wastewater plunger handle",
+      "amount_usd": 135,
+      "date_as_stated": null,
+      "source_type": "client-provided",
+      "source_note": "Amount and wording as provided in the client's brief; not independently verifiable from an official source.",
+      "verified": false,
+      "company_profile_link": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    }
+  ]
+}
