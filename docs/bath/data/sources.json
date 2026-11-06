@@ -1,0 +1,75 @@
+{
+  "retrieved": "2026-11-06",
+  "groups": [
+    {
+      "id": "grp-official",
+      "label": "Official / government / licensing-authority sources",
+      "sources": [
+        {"id": "src-cslb-home", "title": "CSLB - Check a License (California Contractors State License Board)", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx", "used_for": "License verification entry point; all license records below were read from CSLB license-detail pages on 2026-11-06."},
+        {"id": "src-cslb-977638", "title": "CSLB License Detail #977638 - Expert Plumbing Solutions", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638", "used_for": "Legal name, address, phone, C-36 classification, status, issue/expire dates, bond, workers' comp."},
+        {"id": "src-cslb-757796", "title": "CSLB License Detail #757796 - Bay Area Plumbing", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796", "used_for": "Legal name, 335 14th Ave address, (415) 668-8000, C-36 classification, status, workers' comp exemption."},
+        {"id": "src-cslb-1024971", "title": "CSLB License Detail #1024971 - Joseph Tinsley dba Fast Response Plumbing and Rooter", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971", "used_for": "Legal name, C-36 classification, status, issue/expire dates."},
+        {"id": "src-cslb-829071", "title": "CSLB License Detail #829071 - Ace Plumbing & Rooter", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071", "used_for": "Six classifications incl. B - General Building and C36 - Plumbing; status and insurance."},
+        {"id": "src-cslb-1025814", "title": "CSLB License Detail #1025814 - The Genteel Plumbers Inc", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814", "used_for": "Classifications C36 - Plumbing and B - General Building; status."},
+        {"id": "src-cslb-868994", "title": "CSLB License Detail #868994 - Atlas Plumbing & Rooter", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994", "used_for": "Classifications C36 - Plumbing and A - General Engineering; status."},
+        {"id": "src-cslb-1089561", "title": "CSLB License Detail #1089561 - Taro Group Inc dba Heises Plumbing", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561", "used_for": "Classifications C36, C10, A, C20; status."},
+        {"id": "src-cslb-1140843", "title": "CSLB License Detail #1140843 - Discount Plumbing Rooter Services LLC", "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843", "used_for": "Classifications C36 and A; status; $2M liability insurance on file."},
+        {"id": "src-cslb-c36", "title": "CSLB - C-36 Plumbing Contractor classification description", "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36", "used_for": "Scope of the plumbing contractor classification."},
+        {"id": "src-cslb-classb", "title": "CSLB - B General Building classification description", "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B", "used_for": "Scope of the general building classification (two or more unrelated trades)."},
+        {"id": "src-leginfo-7057", "title": "California Business and Professions Code section 7057 (official legislative text)", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057", "used_for": "Statutory two-unrelated-trades rule defining what a B-licensed contractor may take a prime contract for; text read directly 2026-11-06."},
+        {"id": "src-cpc-epub", "title": "2022 California Plumbing Code (Title 24 Part 5) - official IAPMO reader", "url": "https://epubs.iapmo.org/2022/CPC/", "used_for": "The plumbing code in force in California (UPC-based)."},
+        {"id": "src-upc-2024", "title": "2024 Uniform Plumbing Code - official IAPMO reader", "url": "https://epubs.iapmo.org/2024/UPC/", "used_for": "Chapter 4 section map: 409.0 Bathtubs; 409.2 Waste Outlet; 409.3 Overflow; 409.6 Installation and Access (section titles read from the official table of contents 2026-11-06)."}
+      ]
+    },
+    {
+      "id": "grp-first-party",
+      "label": "First-party company sources (the companies' own sites and listings)",
+      "sources": [
+        {"id": "src-eps-site", "title": "Expert Plumbing Solutions - official website", "url": "https://www.eplumbingsolutions.com/", "used_for": "Company identity, phone, address, published license #977638."},
+        {"id": "src-bap-site", "title": "Bay Area Plumbing - official website", "url": "https://www.bayareaplumbingsf.com/", "used_for": "Company identity, 335 14th Ave address, (415) 668-8000, service area, since 1995."},
+        {"id": "src-bap-post", "title": "Bay Area Plumbing site post (toilet repair guide) showing 'Lic# 757796'", "url": "https://www.bayareaplumbingsf.com/post/toilet-repair-and-installation-guide-by-bay-area-plumbing-in-san-francisco-ca", "used_for": "First-party publication of license number 757796 with the 335 14th Ave address."},
+        {"id": "src-fr-site", "title": "Fast Response Plumbing & Rooter - official website", "url": "https://www.fastresponseplumbingsf.com/", "used_for": "Company identity, CSLB #1024971, C-36, owner Joe Tinsley, service area, hours."},
+        {"id": "src-ace-site", "title": "Ace Plumbing & Rooter - Yelp business listing (company-maintained about section)", "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco", "used_for": "Company identity, 1090 Bryant St, (415) 824-6444, reviews (1,447+ as displayed 2026-11-06)."},
+        {"id": "src-genteel-site", "title": "Genteel Plumbers - official website (service-area page showing CSL #1025814)", "url": "https://www.genteelplumbers.com/service-areas/plumbing-daly-city", "used_for": "Company identity, 1181 Revere Ave, published license #1025814, 24/7 service."},
+        {"id": "src-atlas-site", "title": "Atlas Plumbing & Rooter - official website", "url": "https://www.atlasplumbingandrooter.com/", "used_for": "Company identity, 3311 Mission St Suite 165, license #: 868994, serving SF since 2005."},
+        {"id": "src-heise-site", "title": "Heise's Plumbing - official website (handyman & repair services page)", "url": "https://www.heisesplumbing.com/property-maintenance/handyman-and-repair-services/", "used_for": "CA License #1089561 with classifications A, C10, C20, C36; drywall/carpentry/minor-plumbing handyman services; 260 Ocean Ave storefront; since 1954."},
+        {"id": "src-discount-site", "title": "Discount Plumbing Rooter Services - official website", "url": "https://plumbinginsf.com/", "used_for": "Company identity, License# 1140843, San Francisco service, since 1992."}
+      ]
+    },
+    {
+      "id": "grp-reviews",
+      "label": "Review platforms (ratings are volatile snapshots retrieved 2026-11-06)",
+      "sources": [
+        {"id": "src-yelp-eps", "title": "Yelp - Expert Plumbing Solutions (4.8, 81 reviews)", "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco", "used_for": "Reviews; address/phone agreement with CSLB record."},
+        {"id": "src-yelp-bap", "title": "Yelp - Bay Area Plumbing (4.8, 168 reviews, Verified License)", "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco", "used_for": "Reviews; 'Yelp confirmed a business or employee license' badge."},
+        {"id": "src-yelp-fr", "title": "Yelp - Fast Response Plumbing & Rooter (4.8, ~906 reviews as displayed 2026-11-06)", "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3", "used_for": "Reviews."},
+        {"id": "src-yelp-ace", "title": "Yelp - Ace Plumbing & Rooter (4.7, 1,447+ reviews)", "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco", "used_for": "Reviews."},
+        {"id": "src-yelp-genteel", "title": "Yelp - Genteel Plumbers (4.7, 519 reviews)", "url": "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7", "used_for": "Reviews (see also duplicate listing flag)."},
+        {"id": "src-yelp-atlas", "title": "Yelp - Atlas Plumbing & Rooter (4.3, 488 reviews)", "url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2", "used_for": "Reviews; address/phone agreement with CSLB record."},
+        {"id": "src-yelp-heise", "title": "Yelp - San Francisco plumber search listing (Heise's Plumbing 4.2, 271 reviews displayed there)", "url": "https://www.yelp.com/search?find_desc=plumber&find_loc=San+Francisco,+CA", "used_for": "Reviews snapshot; direct business-page URL not confirmed."},
+        {"id": "src-yelp-discount", "title": "Yelp - Discount Plumbing Rooter Services (4.5, 1,337 reviews)", "url": "https://www.yelp.com/biz/discount-plumbing-rooter-services-san-francisco-4", "used_for": "Reviews; 4321 24th St storefront."},
+        {"id": "src-bbb-eps", "title": "BBB - Expert Plumbing Solutions profile", "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492", "used_for": "Corroborates license number 977638 and business start 2012; note stale expiry date shown there (flagged)."},
+        {"id": "src-bbb-fr", "title": "BBB - Fast Response Plumbing & Rooter profile", "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063", "used_for": "Corroborates license 1024971 and expiration 3/31/2027."}
+      ]
+    },
+    {
+      "id": "grp-technical",
+      "label": "Technical references (manufacturer instructions and repair guides)",
+      "sources": [
+        {"id": "src-watco-tl", "title": "Watco Manufacturing - Trip Lever Bath Waste installation instructions (official manufacturer PDF)", "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf", "used_for": "Parts of a trip-lever waste-and-overflow (overflow plate, linkage, drop cylinder/plunger, overflow elbow, drain elbow) and the fact that the assembly is installed through/behind the tub - i.e., full replacement needs access to the tub side and underside."},
+        {"id": "src-watco-tl2", "title": "Watco Manufacturing - Trip Lever installation instructions, variations sheet (official manufacturer PDF)", "url": "https://www.watcomfg.com/Instructions/WIRE-TL-TS-SL%20Inst.black.pdf", "used_for": "Trip-lever linkage adjustment (Quick Adjust / Slip Lock / Turnstyle)."},
+        {"id": "src-hunker", "title": "Hunker - How To Fix A Bathtub Drain Stopper (trip-lever section)", "url": "https://www.hunker.com/13769421/how-to-fix-a-bathtub-drain-stopper/", "used_for": "Standard from-above procedure: remove the two overflow-plate screws and withdraw the linkage and plunger through the overflow opening; trip-lever plunger types hide all working parts inside the overflow pipe."},
+        {"id": "src-plumbingsniper", "title": "Plumbing Sniper - How to Fix a Sticky/Broken Trip-Lever Bathtub Stopper", "url": "https://plumbingsniper.com/how-to-fix-a-sticky-trip-lever-bathtub-stopper/", "used_for": "Cause of sticking: mineral/calcium deposits and gunk on the plunger inside the overflow pipe."}
+      ]
+    },
+    {
+      "id": "grp-market",
+      "label": "Market cost benchmarks (third-party, context only)",
+      "sources": [
+        {"id": "src-homeguide", "title": "HomeGuide - Bathtub Repair Cost (2026)", "url": "https://homeguide.com/costs/bathtub-repair-cost", "used_for": "Bathtub plumbing repairs $100-$700+; drain repair $200-$700."},
+        {"id": "src-angi", "title": "Angi - Bathroom Leak Repair Cost [2026 Data]", "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm", "used_for": "Tub/shower drain replacement $500-$1,025; accessibility (drywall/tile removal) as a major cost driver."},
+        {"id": "src-currentcost", "title": "CurrentCost - Bathtub Drain Replacement Cost 2026", "url": "https://currentcost.org/bathtub-drain-replacement-cost-price-ranges-key-drivers-u-s/", "used_for": "Trip-lever overflow parts $40-$90 and labor $200-$500 benchmarks."}
+      ]
+    }
+  ]
+}

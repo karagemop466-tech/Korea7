@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methodology — Bathtub Overflow Trip Lever Project</title>
+<meta name="description" content="How entries were verified: official-source rules, retrieval dates, search methods, and limitations.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html"><span class="mark">TB</span> Bathtub Overflow Project</a>
+    <nav aria-label="Primary">
+      <a href="../index.html">Overview</a>
+      <a href="executive-summary.html">Executive summary</a>
+      <a href="problem-scope.html">Problem &amp; scope</a>
+      <a href="estimates.html">Estimates</a>
+      <a href="providers.html">Providers</a>
+      <a href="permits-compliance.html">Permits &amp; licensing</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="methodology.html" aria-current="page">Methodology</a>
+      <a href="flagged-for-review.html">Flagged for review</a>
+      <a href="sources.html">Sources</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Overview</a> / Methodology</div>
+    <h1>Methodology &amp; verification rules</h1>
+    <p class="lede">How every row on this site was checked, what counts as an official source, and where the limits of this research are.</p>
+  </div>
+</div>
+
+<main class="wrap" id="main">
+
+<section>
+  <h2>Rules applied</h2>
+  <ol>
+    <li><strong>Every table row links to its sources.</strong> No row is published without at least one source link.</li>
+    <li><strong>Official sources</strong> for facts are: California state government (<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048">leginfo.legislature.ca.gov</a>), the Contractors State License Board (<a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx">cslb.ca.gov</a>), City &amp; County of San Francisco (<a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit">sf.gov</a>), and the companies' own official websites (for what the company itself claims — services, addresses, phones, experience). Code-publisher commentary (IAPMO) is labeled as a publisher reference.</li>
+    <li><strong>Never infer.</strong> If a value could not be confirmed from an official source, the cell is left blank and the item appears on <a href="flagged-for-review.html">Flagged for review</a>. No blank was ever filled from a third-party directory.</li>
+    <li><strong>Owner-reported facts are labeled</strong> <span class="badge info">Owner-reported</span> (the symptom, the 5+ plumbers, the storage room, occupancy). They are inputs, not findings.</li>
+    <li><strong>Retrieval dates recorded:</strong> all CSLB records were read from CSLB's own License Detail pages on <strong>2026-11-06</strong> (CSLB prints "Data current as of 11/6/2026" on each record); official sites and Yelp listings were read the same day.</li>
+    <li><strong>License verification method:</strong> the license number shown on each company's official site (or found via the official CSLB page) was looked up directly in the CSLB database at <code>cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=…</code>, and the business name and address in the returned record were matched to the company before marking it verified.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>What was searched</h2>
+  <ul>
+    <li>The three quoting companies' official websites and their CSLB records (identity + license + classifications + bond + workers' comp).</li>
+    <li>Additional candidates surfaced from Yelp's own search listings for San Francisco plumbing and multi-trade contractors (the owner asked for Yelp and reviewed services), then verified: official site → CSLB record → Yelp listing.</li>
+    <li>Official rule text: sf.gov permit pages, California B&amp;P Code §7048 (current law), CSLB classification pages (C-36, B, B-2), and the §104.2 exemption language via the code publisher.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Limitations</h2>
+  <ul>
+    <li><strong>Point-in-time data.</strong> License statuses, bonds, insurance expirations, and Yelp ratings change. Everything here was current as of 2026-11-06; re-verify links before hiring.</li>
+    <li><strong>Private quotes are unverifiable by design</strong> — recorded as client-provided (<a href="flagged-for-review.html">F7</a>).</li>
+    <li><strong>Yelp automated access was blocked (HTTP 403)</strong>, so Yelp values came from Yelp's own search-listing snippets; direct Yelp business links are provided for the owner's manual review (<a href="flagged-for-review.html">F11</a>).</li>
+    <li><strong>No interviews, site visits, or references checks were performed.</strong> Inclusion in the provider table is not an endorsement.</li>
+    <li><strong>Not legal advice.</strong> The permits page summarizes official public rules with citations; the owner decides the permit posture (<a href="flagged-for-review.html">F4</a>).</li>
+    <li><strong>No photographs</strong> of the fixture were available; the scope was built from the written description (<a href="problem-scope.html">Problem &amp; scope</a>).</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Reproducibility</h2>
+  <p>To reproduce this research: open each CSLB License Detail link on the <a href="providers.html">Providers</a> page and compare the returned business name, address, classifications, bond, and workers'-comp rows against the table; open each official-site link and compare the claimed services/addresses; open the sf.gov and leginfo links for the rules. All links are also listed on <a href="sources.html">Sources</a> with retrieval dates. The underlying repo notes and session log are in <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md">COORDINATION.md</a> and <a href="https://github.com/karagemop466-tech/Korea7/blob/main/EXECUTIVE-SUMMARY.md">EXECUTIVE-SUMMARY.md</a>.</p>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><strong>Bathtub Overflow Trip Lever project</strong> · compiled 2026-11-06 · verification session: <code>session-arena-68d76eff</code>.</p>
+  </div>
+</footer>
+</body>
+</html>

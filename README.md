@@ -140,6 +140,23 @@ The specific free official sources needed for the unimplemented hypotheses:
 7. Improve the site and add more tests/CI. The current site is a static GitHub Pages site with a clean UI, a prominent download button, and a clear status badge.
 8. Consider a hedging strategy that combines the off-catalogue consensus with a small number of catalogue-adjacent dots, if the organizer's masking allows. This could improve the holdout and projection simultaneously, but it would need a new experiment and a new run card.
 
+## Bathtub overflow trip lever project (San Francisco)
+
+A separate project housed in this repo: a contractor research dashboard for a stuck bathtub wastewater overflow trip lever in a hard-to-access, tenant-occupied unit. Existing GEMS audit content above is unaffected.
+
+| Item | Link |
+|---|---|
+| Project dashboard (landing page) | [docs/plumbing-index.html](docs/plumbing-index.html) |
+| Executive summary | [docs/overflow-executive-summary.html](docs/overflow-executive-summary.html) |
+| Estimates (user-supplied 2026-08-30; unverified: $614 / $550 / $135) | [docs/overflow-estimates.html](docs/overflow-estimates.html) |
+| Licensed plumber candidates + CSLB verification status | [docs/overflow-contractors.html](docs/overflow-contractors.html) |
+| San Francisco permit requirements (official SF.gov sources) | [docs/overflow-permits.html](docs/overflow-permits.html) |
+| All sources | [docs/overflow-sources.html](docs/overflow-sources.html) |
+| Flagged irregularities and unverified items | [docs/overflow-flagged-review.html](docs/overflow-flagged-review.html) |
+| Analysis and findings | [docs/overflow-analysis.html](docs/overflow-analysis.html) |
+
+No contractor has been hired or contacted. All prices are user-supplied estimates dated 2026-08-30 and are unverified. Consistent with the requester's instruction, no permit-avoidance information is published on this site or in any associated material; permit content comes only from official San Francisco sources.
+
 ## Repository structure
 
 ```
@@ -260,3 +277,19 @@ The parallel session's candidate rasters are `korea7-k7-offcatalogue-relay-corri
 `submission name + note`: `korea7-consensus-offcat-20k-20261104-zeros`; `Korea7 4-method off-catalogue consensus, 20k dots, 85% far from catalogue; unique vs nine focus sites; research only.` (117 characters).
 
 `verdict`: **negative** — research artifact, not cleared for a weekly slot.
+
+---
+
+## Active project (2026-11-06): Bathtub wastewater overflow trip lever — San Francisco
+
+A second work package lives in this repository: a verified research and hiring brief for a stuck
+bathtub waste-and-overflow **trip lever** in a tenant-occupied San Francisco unit (access may require
+opening the ceiling below). It does not touch the GEMS project above.
+
+- Site (dashboard + subpages): [`docs/bath/index.html`](docs/bath/index.html) — published at
+  `https://karagemop466-tech.github.io/Korea7/docs/bath/` once this branch merges to `main`.
+- Executive summary: [`docs/bath/executive-summary.md`](docs/bath/executive-summary.md)
+- Verified data (all rows source-linked): [`docs/bath/data/`](docs/bath/data)
+- Flagged for Review: [`docs/bath/flagged-for-review.html`](docs/bath/flagged-for-review.html)
+- Coordination: [`COORDINATION.md`](COORDINATION.md)
+- Build &amp; verify: `python3 scripts/build_bath_site.py && python3 -m pytest tests/test_bath_site.py -q`
