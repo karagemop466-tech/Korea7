@@ -11,7 +11,7 @@
 | Company | Quoted scope | Amount | License cross-check (CSLB, 2026-11-06) |
 |---|---|---:|---|
 | Fast Response Plumbing & Rooter | Repair or adjust bathtub wastewater plunger handle | $135 | [#1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) — active, C-36 Plumbing |
-| Bay Area Plumbing | Replace lever for bathtub plug and spout with diverter (labor + materials) | $550 | **Unverified** — no license number on official site ([flag F3](bathtub-overflow/flagged-for-review.html)) |
+| Bay Area Plumbing | Replace lever for bathtub plug and spout with diverter (labor + materials) | $550 | [#757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) — active, C-36 Plumbing (number not shown on company site; verified by direct CSLB record read — flag F3 resolved) |
 | Expert Plumbing Solutions | Remove trip lever — "replacing waste and overflow" | $614 | [#977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) — active, C-36 Plumbing |
 
 The spread reflects **scope, not price**: adjustment attempt → stopper/spout replacement → concealed waste-and-overflow assembly replacement. None includes the drywall/ceiling access work; no drywall quote exists yet (blank, flag F8).
@@ -25,14 +25,14 @@ The spread reflects **scope, not price**: adjustment attempt → stopper/spout r
 
 ## 3. Recommendation
 
-1. **Shortlist the dual-classified (B + C-36) firms first:** Ace Plumbing & Rooter (#829071) and GENERALSF (#959843) — one contract for ceiling opening + plumbing repair/replacement + drywall patch. Watch items: General SF shows a workers'-comp exemption "no employees" on CSLB (flag F6) — require insurance certificates and clarify crewing.
+1. **Shortlist the dual-classified (B + C-36) firms first:** Ace Plumbing & Rooter (#829071) and GENERALSF (#959843) — one contract for ceiling opening + plumbing repair/replacement + drywall patch. Watch items: General SF (#959843) and Bay Area Plumbing (#757796) each show a workers'-comp exemption "no employees" on CSLB (flags F6/F14) — require insurance certificates and clarify crewing.
 2. **Get one contingent written scope:** adjust the lever first; if not adjustable, replace the waste-and-overflow — plus ceiling opening, patch/finish, dust protection, and tenant-access windows.
 3. **Re-verify the chosen license on CSLB the day of hire** (links in the provider table); collect liability + workers'-comp certificates.
 4. **Decide the permit posture explicitly** — official guidance describes the replacement scope as permit-required; recorded neutrally as flag F4 for owner sign-off.
 
 ## 4. Flags / unverified items (full list: [Flagged for review](bathtub-overflow/flagged-for-review.html))
 
-- **F3** Bay Area Plumbing CSLB license — **blank**, unverified. **F4** no-permit posture vs. official SF guidance — owner decision. **F5** Advanced Plumbing & Drain — CSLB future-suspension warning. **F6** GENERALSF — workers'-comp exemption on CSLB. **F7** all three dollar amounts client-provided. **F8** no drywall quote yet (blank). **F9** Fast Response CSLB address typo + WC policy expiring 12/18/2026. **F10** Advanced Plumbing — three published phone numbers. **F11** Yelp ratings are point-in-time. **F12** outdated $500 threshold citations online. **F1–F2** repo irregularities (unrelated GEMS project present; Pages root previously had no landing page — fixed).
+- **F3** Bay Area Plumbing CSLB license — initially blank, **resolved 2026-11-06**: verified as #757796 active C-36 by direct CSLB record read. **F4** no-permit posture vs. official SF guidance — owner decision. **F5** Advanced Plumbing & Drain — CSLB future-suspension warning. **F6** GENERALSF — workers'-comp exemption on CSLB. **F7** all three dollar amounts client-provided. **F8** no drywall quote yet (blank). **F9** Fast Response CSLB address typo + WC policy expiring 12/18/2026. **F10** Advanced Plumbing — three published phone numbers. **F11** Yelp ratings are point-in-time. **F12** outdated $500 threshold citations online. **F14** Bay Area Plumbing — workers'-comp exemption on CSLB. **F1–F2** repo irregularities (unrelated GEMS project present; Pages root previously had no landing page — fixed). Full list: `bathtub-overflow/flagged-for-review.html`.
 
 ## 5. Sources
 
