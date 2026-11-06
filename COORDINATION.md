@@ -1,16 +1,41 @@
-# Coordination board
+# Coordination board — Korea7 / arena/7379ee3c-korea7
 
-Session identifier: `86d75315` (Arena branch `arena/86d75315-korea7`). This session is constrained to the Arena-provided branch; no separate session branch/worktree is being created. No other claims were present when the task began.
+Shared task board for parallel agent sessions. Claims are recorded here with session ID, status, and file scope. Never start a task another session has claimed. Scopes must be non-overlapping. Make small, frequent commits; run `git pull --rebase` before every push. On conflict, resolve without discarding the other session's work and log the handoff. When a task finishes, record sources, verification performed, and irregularities here, then mark it done.
 
-| Task | Status | Owner | Files in scope |
-|---|---|---|---|
-| Bathtub overflow research and standalone GitHub Pages subsite | done | 86d75315 | `docs/bathtub-overflow/**`, `COORDINATION.md` |
+Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. This session works directly on `arena/7379ee3c-korea7` (only active session); new pages are under `docs/` and do not touch the pre-existing GEMS pages.
 
-## Log
+## Task legend
+- unclaimed / in progress / done / needs review
+- "needs review" = published on the Flagged for Review page; does not block other work.
 
-- 2026-11-06 — Claimed the bathtub overflow project. Repository contains an unrelated Korea7 geospatial/ML project and an existing GitHub Pages site; the existing landing page/navigation and project artifacts were kept unchanged. No pre-existing coordination file or active claims were present.
-- 2026-11-06 — Completed a standalone six-page subsite under `docs/bathtub-overflow/`: executive overview, contractor shortlist, estimate comparison, work requirements, Flagged for Review, and source register. Kept changes inside the claimed scope. Since existing Pages is configured to publish the repository root on `main`, the subsite's public path after merge is `https://karagemop466-tech.github.io/Korea7/docs/bathtub-overflow/`; the unrelated repository home/README was not replaced.
-- Sources checked: SF DBI plumbing/mechanical permit guidance (https://www.sf.gov/apply-plumbing-and-mechanical-permit); linked SF Plumbing Code §104.2 (https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830); CSLB official license detail records #959843, #1055209, #1009195, and #1024971; CSLB contractor hiring guidance; official provider websites for General SF, Pipe Whisperer, Advanced Plumbing & Drain, and Fast Response; Yelp provider/search pages for review snapshots; owner-provided estimate/project notes.
-- Verification performed: fetched/read official SF permit guidance, CSLB lookup records, CSLB hiring guidance, company service pages, and SF code page; checked the contractor license statuses/classifications as displayed on Nov 6, 2026. Tested all six HTML pages for relative-link targets (pass); reviewed each file/source attribution; `git diff --check` clean before staging. GitHub Pages settings report legacy source `main` at `/`, and the existing live root renders the repository README; no root page was changed.
-- Irregularities published at `docs/bathtub-overflow/flagged.html`: all quoted prices and quoted scope statements are owner-provided and lack quote documents; “Expert Plumbing Solutions” and “Bay Area Plumbing” are not uniquely identifiable; the $135 Fast Response quote is not linked to the similarly named active licensee; no photo/onsite diagnosis, exact trip-lever experience, availability, or drywall inclusion was verified; Yelp ratings/counts are dynamic third-party snapshots; the exact permit/exemption question must be confirmed with SF DBI. No inference was made about an exemption or about the exact safe access method.
-- Publication / PR / merge: pending integration.
+## Tasks
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| 1 | Create COORDINATION.md task board | done | arena/7379ee3c-korea7 | COORDINATION.md | Created at session start; committed 9d80dab. |
+| 2 | Repo review line by line; verify from official sources; flag irregularities | done | arena/7379ee3c-korea7 | README.md, docs/*, root files | Irregularity #1: repo is a DOE GEMS geothermal fault-prospectivity audit; the user's project is a bathtub overflow trip lever repair in San Francisco — unrelated content. New plumbing pages added under docs/ without altering GEMS pages. Flagged on overflow-flagged-review.html item 1. |
+| 3 | Executive summary for the bathtub overflow trip lever project | done | arena/7379ee3c-korea7 | docs/overflow-executive-summary.html | Problem, 3 user-supplied estimates dated 2026-08-30 ($614/$550/$135), access constraints, tenant-occupied unit, next steps. All prices marked user-supplied/unverified. |
+| 4 | Plumber/contractor research: SF licensed plumbers, Yelp + review sources, CSLB license checks, SF DBI permit info | done | arena/7379ee3c-korea7 | docs/overflow-contractors.html, docs/data/overflow-entries.csv | Candidates: Expert Plumbing Solutions #977638, Bay Area Plumbing #757796, Fast Response #1024971 C-36. Yelp ratings from yelp.com search results. License numbers from company sites/BBB/BuildZoom — NOT re-verified on cslb.ca.gov (flagged). SF permit rules from sf.gov. |
+| 5 | Site creation: landing page + category subpages, entries/findings tables with source links | done | arena/7379ee3c-korea7 | docs/plumbing-index.html, overflow-*.html, docs/index.html nav link | Dashboard + 7 subpages; every table row carries a source link; design matches assets/site.css; internal link check passed. |
+| 6 | Verification: every table row has an official source link; blanks + "unverified" flags where unconfirmed | done | arena/7379ee3c-korea7 | all docs pages | Estimate prices: blank official-source confirmation, flagged UNVERIFIED (user-supplied). CSLB statuses flagged; third-party sources cited. No inferred values. |
+| 7 | Flagged-for-review page with sources for irregularities and unverified items | done | arena/7379ee3c-korea7 | docs/overflow-flagged-review.html | 6 flagged items with source links and suggested actions; values-left-blank table. Does not block merge. |
+| 8 | Integration: rebuild/re-verify combined data, check site builds with no broken links | in progress | arena/7379ee3c-korea7 | all docs pages | Internal link check passed (0 missing). External key sources reachable: cslb.ca.gov Check a License page, sf.gov permit pages. Yelp pages fetch with 403 from sandbox but are listed as third-party links only. |
+| 9 | GitHub Pages publish + confirm deploy | unclaimed | arena/7379ee3c-korea7 | repo Pages setting (/docs) | Repo has docs/.nojekyll; confirm Pages enabled and deploy succeeds. |
+| 10 | Pull request to main + merge + record PR link and result | unclaimed | arena/7379ee3c-korea7 | GitHub PR | Create PR from arena/7379ee3c-korea7 to main, merge without waiting once site is live. |
+
+## Claims & handoffs
+- 2026-11-06: session `arena/7379ee3c-korea7` claims tasks 1–10 on branch `arena/7379ee3c-korea7` (only active session). No other sessions detected. No handoffs.
+
+## Verification log
+- 2026-11-06: internal link audit across all 9 new/existing HTML files — 0 broken internal links.
+- 2026-11-06: official sources confirmed reachable — cslb.ca.gov Check a License page; sf.gov/apply-plumbing-and-mechanical-permit; sf.gov/apply-kitchen-or-bath-remodel-permit; SF Building Code via amlegal (106A, 104.2).
+- 2026-11-06: Yelp data captured via web search (yelp.com search pages 403 on direct fetch in this sandbox; treated as third-party listing, not official verification).
+- Irregularities flagged: repo content mismatch; estimates user-supplied/unverified (3); Expert Plumbing Solutions #977638 possibly expired per BBB (10/31/2026 pre-dates 2026-11-06); no license re-verified on official CSLB record; Yelp "Verified License" badges are not CSLB verification.
+
+## Additional integration handoff — session 86d75315 (2026-11-06)
+
+- Session `86d75315` began a separate research microsite before the merged task board from session `arena/7379ee3c-korea7` became available. A merge conflict in this shared file was resolved by retaining the merged board and appending this handoff; no main-session work was discarded. PR #23 was closed as a duplicate after PR #22 had already published the project dashboard.
+- Follow-up `git pull --rebase` against the stale session remote encountered the same add/add conflict while replaying the already-merged main-session board. The rebase was aborted after retaining `origin/main` as a merge parent; the session remote is an ancestor of this integration commit, so the intended sync is a fast-forward push, with all merged work preserved.
+- **Urgent privacy correction request to the active integration owner (`arena/7379ee3c-korea7`):** the already-published dashboard/source/summary text and README contain statements about a private requester instruction that should not be public. Please remove those statements from `docs/plumbing-index.html`, `docs/overflow-sources.html`, `docs/overflow-executive-summary.html`, and `README.md`; preserve neutral permit guidance sourced from SF DBI. This session did not edit those files because they are in the active integration scope. The request deliberately does not repeat the private wording.
+- **Supplemental contractor lead for integration consideration:** General SF is an evidence-supported possible one-call lead (not an exact-work endorsement): its official pages list plumbing plus building/sheetrock/tape/texture, and CSLB record #959843 showed current/active B and C36 classifications on 2026-11-06. Sources: https://generalsf.com/plumbing ; https://generalsf.com/building ; https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843 . Ask directly whether it accepts this exact tub overflow repair, safe access decision, occupied-unit controls, drywall restoration, and permit confirmation.
+- GitHub Pages verification for PR #22: PR `https://github.com/karagemop466-tech/Korea7/pull/22` merged 2026-11-06; Pages workflow run `https://github.com/karagemop466-tech/Korea7/actions/runs/42225984004` completed successfully. Session #23's separate dashboard was not merged to avoid publishing a duplicate site.
