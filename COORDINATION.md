@@ -70,6 +70,51 @@ Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. Th
 - **Two microsites now coexist by design:** the earlier `docs/plumbing-index.html` + `docs/overflow-*.html` set (owned by `arena/7379ee3c-korea7`) and the new root dashboard + `bathtub-overflow/` set (this session). Neither set was edited by the other session. The root dashboard links to the earlier microsite.
 - **Still-pending requests (not actioned by this session, out of scope — logged only):** `arena/59a50fe0-korea7`'s requests to the owner of the `docs/` pages (remove requester-only wording; blank unverified amount cells in the value column) remain open for `arena/7379ee3c-korea7`. Flagged items and unverified values do not block merge per the owner's instructions.
 - **Permit-posture privacy:** no private circumstances are documented on either microsite or in this board; permit content is neutral and grounded in official sf.gov/leginfo/CSLB/IAPMO sources.
+- **FINAL RECORD (session-arena-68d76eff, 2026-11-06 13:37 UTC):** PR #25 (integration: verified dashboard + bathtub-overflow/ pages + exec summary) merged to `main` via merge commit `3fdb8b6a164b702704bae5ad379517bd46c60963` — https://github.com/karagemop466-tech/Korea7/pull/25. Merge required two conflict resolutions (PRs #24/#26 landed on `main` mid-flight); both resolved by preserving the other sessions' files verbatim (see handoff notes above). GitHub Pages build for `3fdb8b6` triggered automatically; deploy result recorded below when complete.
+
+---
+
+## Session 56e0fb61 — addendum (added 2026-11-06, branch `arena/56e0fb61-korea7`)
+
+**Handoff note.** This session first built a parallel plumbing site on `arena/56e0fb61-korea7`. Before pushing, `origin/main` already had session 7379ee3c's overflow project (PR #22), and later sessions 59a50fe0 and others also merged overflow material. This session did not push the parallel site and did not overwrite any of that work. It rebased onto the current `main` (39bd71f), kept the whole existing board unchanged above this section, and adds a verification addendum as new files only. The root README homepage and the existing `docs/overflow-*.html` pages are not edited. Changes to those are logged as requests below.
+
+**Claims (this session, 56e0fb61).** All work is on `arena/56e0fb61-korea7`. File scope is limited to the paths listed.
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| 11 | Official-source verification of permit and licensing rules (quotes, SF Plumbing Code, sf.gov, CSLB) | done | 56e0fb61 | `docs/overflow-verification-permits.html` | 13 permit rows and 6 licensing rows, each quoting the official text read on 2026-11-06. |
+| 12 | Contractor cross-check and quote scope comparison | done | 56e0fb61 | `docs/overflow-verification-contractors.html` | 13 providers. 7 license-verified on the CSLB detail record (status, classification, bond, workers comp; job fit not verified). 6 UNVERIFIED, no license number given. Quotes UNVERIFIED with verified-amount fields blank. |
+| 13 | Korea7 repo review addendum (hash checks, run cards, Pages config, leaderboard figure, test run) | done | 56e0fb61 | `docs/overflow-verification-repo-review.html` | Test suite: 84 passed, 0 failed. No GEMS file edited. |
+| 14 | Flagged for Review (addendum) and sources for the addendum | done | 56e0fb61 | `docs/overflow-verification-flags.html`, `docs/overflow-verification-sources.html`, `docs/overflow-verification.html` | 23 flags (A1–A23). Existing F-items are not renumbered. A19 resolved on the CSLB record. |
+| 15 | Integration for this branch: rebuild, link check, PR to `main`, merge, confirm Pages deploy, record result | in progress | 56e0fb61 | whole branch (this session's files only) | Pages source is `main` at `/`. Deploy confirmation is recorded in the log below. |
+
+**Build and data.** Data: `docs/data/overflow-verification.json`. Build and check: `python3 scripts/build_overflow_verification.py`. The build validates every row (https source links, official domains for VERIFIED, no VERIFIED contractors or quotes, known flag codes, no placeholders) and checks every internal link. Negative tests on the validator were run and all planted errors were caught.
+
+**Sources used (official, read this session):** SF Plumbing Code 2025 PDF (§104.1–104.3); sf.gov "Apply for a plumbing and mechanical permit"; sf.gov "Apply for a kitchen or bath remodel permit"; sf.gov DBI department page; CSLB classification pages (B, C-9, C-36); CSLB "Hire a Licensed Contractor" page; CSLB Check-a-License form page; SF Expanded Compliance Control list (dated 2025-10-06); DrivenData leaderboard and problem page (first chunk). Third-party: Yelp search-result text (direct page fetch returns HTTP 403); business websites and aggregators, used only for claims marked UNVERIFIED.
+
+**Irregularities found on main (requests to session 7379ee3c; not edited here):**
+
+1. **Estimate source links (A16).** `docs/data/overflow-entries.csv` links the three estimates to Yelp search pages. Yelp is third-party, so the official-link rule is not met for those rows. Request: replace with official links or mark as third-party.
+2. **$500 licensing claim (A17).** `docs/overflow-permits.html` says CSLB generally requires a license for work valued at $500 or more. The cited CSLB page (`Hire_A_Contractor/`) does not contain that figure. Request: cite the specific CSLB page or statute, or remove the claim.
+3. **Kitchen/bath permit path (A18).** The sf.gov kitchen and bath permit covers in-kind fixture work with no structural change. Opening a ceiling may move this job to a building permit with plans. Request: state this on the permits page and have DBI confirm.
+4. **Expert Plumbing Solutions license #977638 (A19), resolved.** The CSLB record shows current and active, C-36, expiring 2028-10-31. The BBB expiry date cited on the existing page (10/31/2026) does not match CSLB. Request to the owner of the existing page: correct or source the BBB date, and keep the CSLB record as the license source.
+5. **Yelp review counts (A7).** Bay Area Plumbing shows 168 reviews on the existing page and 175 in the snapshot seen here. Request: state the snapshot date.
+6. **Homepage link (A14).** The README homepage is unchanged on this branch. Request: add a link to `docs/overflow-verification.html` from the README overflow section and `docs/index.html`, or confirm it should stay unlinked.
+
+**Verified on main by this session (PASS):** the existing permits page's statement that a permit is needed "before cutting into or replacing pipes, particularly pipes that will be covered by a wall" matches sf.gov word for word.
+
+**Pages.** Pages is legacy, source `main` at `/`. The addendum sits under `docs/` and needs no Pages setting change. Confirm after merge: `gh api repos/karagemop466-tech/Korea7/pages/builds/latest` and `https://karagemop466-tech.github.io/Korea7/docs/overflow-verification.html`.
+
+**Log.**
+- 2026-11-06: session 56e0fb61 rebased onto `origin/main` (39bd71f). Earlier local work that duplicated the overflow dashboard was not pushed.
+- 2026-11-06: CSLB license detail records (www2.cslb.ca.gov, LicenseDetail.aspx) were read directly for 7 license numbers and match the other session's CSLB checks (1024971, 757796, 977638). This session's additional checks: 1115649, 1089561, 632743, 841229. Each is recorded in the addendum with its CSLB link. Scope and job-fit are not verified by a license record.
+- 2026-11-06: reconciled with the handoff from session 59a50fe0 (CSLB checks for 1024971, 757796, 977638). The official CSLB detail records were read directly and match its dates and status. Those three rows are VERIFIED for license only, with CSLB links. The earlier A19 'not checked' status is withdrawn.
+- 2026-11-06: added CSLB checks for 1115649 (Rapid Flow, B and C-36), 1089561 (Heise's, C-36/C-10/A/C-20), 632743 (Calplumbing, C-36) and 841229 (Manny's, B and C-36). All active. Findings A20–A22: quote issuers not confirmed by license number; four verified licenses are C-36 only, so drywall needs C-9, a B license, or a subcontract; license records do not show job fit.
+- 2026-11-06: cross-checked the new bathtub-overflow microsite (session 68d76eff, on main) against CSLB records: 959843, 829071, 1009195 match its claims; 1024971, 757796, 977638 also match. Flag A23 records the overlap. This addendum does not repeat its provider pages; the owners should decide whether to consolidate.
+- Requests to session 7379ee3c (existing contractor page): update CSLB status for 1024971, 757796, 977638 as in the 59a50fe0 handoff, and add the CSLB links for 1115649, 1089561, 632743, 841229. Not edited here.
+- PR: https://github.com/karagemop466-tech/Korea7/pull/27 (opened 2026-11-06, from `arena/56e0fb61-korea7` to `main`)
+- Merge result: _pending_
+- Pages deploy: _pending_
 
 ---
 
@@ -161,3 +206,50 @@ neutral: licensed contractors, scope, estimates, verification.
 
 | 2026-11-06 | `arena-a9ed5ccf` | **Merge with `origin/main`:** add/add conflict in COORDINATION.md resolved by preserving all prior boards verbatim and appending this section; README.md auto-merged (this session only appends). No file owned by another session was edited. Discovered two earlier project microsites on main plus open owner requests recorded by `arena/59a50fe0-korea7` (requester-only wording and unverified amount cells in the `docs/overflow-*` pages, owned by `arena/7379ee3c-korea7`) — re-logged here and on this session's Flagged for Review page; not actioned, out of scope. |
 | 2026-11-06 | `arena-a9ed5ccf` | **Pre-PR state:** two integration flags added (`flag-coexisting-project-sites`, `flag-open-owner-requests-earlier-sites`); docs/bath regenerated; full suite 96 passed. Site set docs/bath/ = 9 pages + data JSONs + generator + 12 site tests. Ready for PR. |
+=======
+- **FINAL RECORD (session-arena-68d76eff, 2026-11-06 13:37 UTC):** PR #25 (integration: verified dashboard + bathtub-overflow/ pages + exec summary) merged to `main` via merge commit `3fdb8b6a164b702704bae5ad379517bd46c60963` — https://github.com/karagemop466-tech/Korea7/pull/25. Merge required two conflict resolutions (PRs #24/#26 landed on `main` mid-flight); both resolved by preserving the other sessions' files verbatim (see handoff notes above). GitHub Pages build for `3fdb8b6` triggered automatically; deploy result recorded below when complete.
+
+---
+
+## Session 56e0fb61 — addendum (added 2026-11-06, branch `arena/56e0fb61-korea7`)
+
+**Handoff note.** This session first built a parallel plumbing site on `arena/56e0fb61-korea7`. Before pushing, `origin/main` already had session 7379ee3c's overflow project (PR #22), and later sessions 59a50fe0 and others also merged overflow material. This session did not push the parallel site and did not overwrite any of that work. It rebased onto the current `main` (39bd71f), kept the whole existing board unchanged above this section, and adds a verification addendum as new files only. The root README homepage and the existing `docs/overflow-*.html` pages are not edited. Changes to those are logged as requests below.
+
+**Claims (this session, 56e0fb61).** All work is on `arena/56e0fb61-korea7`. File scope is limited to the paths listed.
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| 11 | Official-source verification of permit and licensing rules (quotes, SF Plumbing Code, sf.gov, CSLB) | done | 56e0fb61 | `docs/overflow-verification-permits.html` | 13 permit rows and 6 licensing rows, each quoting the official text read on 2026-11-06. |
+| 12 | Contractor cross-check and quote scope comparison | done | 56e0fb61 | `docs/overflow-verification-contractors.html` | 13 providers. 7 license-verified on the CSLB detail record (status, classification, bond, workers comp; job fit not verified). 6 UNVERIFIED, no license number given. Quotes UNVERIFIED with verified-amount fields blank. |
+| 13 | Korea7 repo review addendum (hash checks, run cards, Pages config, leaderboard figure, test run) | done | 56e0fb61 | `docs/overflow-verification-repo-review.html` | Test suite: 84 passed, 0 failed. No GEMS file edited. |
+| 14 | Flagged for Review (addendum) and sources for the addendum | done | 56e0fb61 | `docs/overflow-verification-flags.html`, `docs/overflow-verification-sources.html`, `docs/overflow-verification.html` | 23 flags (A1–A23). Existing F-items are not renumbered. A19 resolved on the CSLB record. |
+| 15 | Integration for this branch: rebuild, link check, PR to `main`, merge, confirm Pages deploy, record result | in progress | 56e0fb61 | whole branch (this session's files only) | Pages source is `main` at `/`. Deploy confirmation is recorded in the log below. |
+
+**Build and data.** Data: `docs/data/overflow-verification.json`. Build and check: `python3 scripts/build_overflow_verification.py`. The build validates every row (https source links, official domains for VERIFIED, no VERIFIED contractors or quotes, known flag codes, no placeholders) and checks every internal link. Negative tests on the validator were run and all planted errors were caught.
+
+**Sources used (official, read this session):** SF Plumbing Code 2025 PDF (§104.1–104.3); sf.gov "Apply for a plumbing and mechanical permit"; sf.gov "Apply for a kitchen or bath remodel permit"; sf.gov DBI department page; CSLB classification pages (B, C-9, C-36); CSLB "Hire a Licensed Contractor" page; CSLB Check-a-License form page; SF Expanded Compliance Control list (dated 2025-10-06); DrivenData leaderboard and problem page (first chunk). Third-party: Yelp search-result text (direct page fetch returns HTTP 403); business websites and aggregators, used only for claims marked UNVERIFIED.
+
+**Irregularities found on main (requests to session 7379ee3c; not edited here):**
+
+1. **Estimate source links (A16).** `docs/data/overflow-entries.csv` links the three estimates to Yelp search pages. Yelp is third-party, so the official-link rule is not met for those rows. Request: replace with official links or mark as third-party.
+2. **$500 licensing claim (A17).** `docs/overflow-permits.html` says CSLB generally requires a license for work valued at $500 or more. The cited CSLB page (`Hire_A_Contractor/`) does not contain that figure. Request: cite the specific CSLB page or statute, or remove the claim.
+3. **Kitchen/bath permit path (A18).** The sf.gov kitchen and bath permit covers in-kind fixture work with no structural change. Opening a ceiling may move this job to a building permit with plans. Request: state this on the permits page and have DBI confirm.
+4. **Expert Plumbing Solutions license #977638 (A19), resolved.** The CSLB record shows current and active, C-36, expiring 2028-10-31. The BBB expiry date cited on the existing page (10/31/2026) does not match CSLB. Request to the owner of the existing page: correct or source the BBB date, and keep the CSLB record as the license source.
+5. **Yelp review counts (A7).** Bay Area Plumbing shows 168 reviews on the existing page and 175 in the snapshot seen here. Request: state the snapshot date.
+6. **Homepage link (A14).** The README homepage is unchanged on this branch. Request: add a link to `docs/overflow-verification.html` from the README overflow section and `docs/index.html`, or confirm it should stay unlinked.
+
+**Verified on main by this session (PASS):** the existing permits page's statement that a permit is needed "before cutting into or replacing pipes, particularly pipes that will be covered by a wall" matches sf.gov word for word.
+
+**Pages.** Pages is legacy, source `main` at `/`. The addendum sits under `docs/` and needs no Pages setting change. Confirm after merge: `gh api repos/karagemop466-tech/Korea7/pages/builds/latest` and `https://karagemop466-tech.github.io/Korea7/docs/overflow-verification.html`.
+
+**Log.**
+- 2026-11-06: session 56e0fb61 rebased onto `origin/main` (39bd71f). Earlier local work that duplicated the overflow dashboard was not pushed.
+- 2026-11-06: CSLB license detail records (www2.cslb.ca.gov, LicenseDetail.aspx) were read directly for 7 license numbers and match the other session's CSLB checks (1024971, 757796, 977638). This session's additional checks: 1115649, 1089561, 632743, 841229. Each is recorded in the addendum with its CSLB link. Scope and job-fit are not verified by a license record.
+- 2026-11-06: reconciled with the handoff from session 59a50fe0 (CSLB checks for 1024971, 757796, 977638). The official CSLB detail records were read directly and match its dates and status. Those three rows are VERIFIED for license only, with CSLB links. The earlier A19 'not checked' status is withdrawn.
+- 2026-11-06: added CSLB checks for 1115649 (Rapid Flow, B and C-36), 1089561 (Heise's, C-36/C-10/A/C-20), 632743 (Calplumbing, C-36) and 841229 (Manny's, B and C-36). All active. Findings A20–A22: quote issuers not confirmed by license number; four verified licenses are C-36 only, so drywall needs C-9, a B license, or a subcontract; license records do not show job fit.
+- 2026-11-06: cross-checked the new bathtub-overflow microsite (session 68d76eff, on main) against CSLB records: 959843, 829071, 1009195 match its claims; 1024971, 757796, 977638 also match. Flag A23 records the overlap. This addendum does not repeat its provider pages; the owners should decide whether to consolidate.
+- Requests to session 7379ee3c (existing contractor page): update CSLB status for 1024971, 757796, 977638 as in the 59a50fe0 handoff, and add the CSLB links for 1115649, 1089561, 632743, 841229. Not edited here.
+- PR: https://github.com/karagemop466-tech/Korea7/pull/27 (opened 2026-11-06, from `arena/56e0fb61-korea7` to `main`)
+- Merge result: _pending_
+- Pages deploy: _pending_
+>>>>>>> origin/main
