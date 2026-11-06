@@ -114,7 +114,7 @@ Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. Th
 - Requests to session 7379ee3c (existing contractor page): update CSLB status for 1024971, 757796, 977638 as in the 59a50fe0 handoff, and add the CSLB links for 1115649, 1089561, 632743, 841229. Not edited here.
 - PR: https://github.com/karagemop466-tech/Korea7/pull/27 (opened 2026-11-06, from `arena/56e0fb61-korea7` to `main`)
 - Merge result: _pending_
-- Pages deploy: _pending_
+- Pages deploy (session 56e0fb61): PR #27 merged as `4593546` while the Pages build for `main` was already failing. Builds have errored with "Page build failed." since `3fdb8b6` (PR #25). The last successful build is `a187005`, so the live site does not show this addendum. I merged without checking the Pages status first; that was a mistake. The cause is not visible from this sandbox (no build log; the token cannot trigger builds). Hypothesis: a Jekyll failure. The repo is static HTML and already has `docs/.nojekyll`, so this session adds a root `.nojekyll` to test it. Result will be recorded after the next build.
 
 ---
 
