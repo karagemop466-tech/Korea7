@@ -590,7 +590,7 @@
       "id": "A1",
       "type": "Permit conflict",
       "title": "Permit status is open, and SF text suggests a permit is needed",
-      "detail": "The owner's brief says the work is to be done without a permit. The SF Plumbing Code exemptions (§104.2) cover only work that does not cut into or remove piping. Opening drywall and replacing the waste and overflow appears outside those exemptions. This project did not find a verified basis for doing the work without a permit, and it does not treat permit status as optional. The owner's private reasons for timing are not recorded here. The owner asked that permit-related information be left off the site. It is included because the official text bears directly on the scope. Decision and confirmation sit with SF DBI and the owner.",
+      "detail": "The SF Plumbing Code exemptions (§104.2) cover only work that does not cut into or remove piping. Opening drywall and replacing the waste and overflow appears outside those exemptions. This project does not treat permit status as optional. Decision and confirmation sit with SF DBI and the owner.",
       "source_url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
       "owner_action": "Ask SF DBI in writing whether the scope needs a permit. Take that answer to a licensed contractor before scheduling. Consider legal advice."
     },
