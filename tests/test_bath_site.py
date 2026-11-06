@@ -175,3 +175,13 @@ def test_sources_page_lists_every_registered_source():
     for group in sources:
         for s in group["sources"]:
             assert s["url"] in unescaped, s["id"]
+
+
+def test_no_double_escaped_urls():
+    """href attributes must carry URLs escaped exactly once (& not &amp;amp;)."""
+    for name in PAGES:
+        raw = _page(name)
+        assert "&amp;amp;" not in raw, f"{name}: double-escaped ampersand in URL"
+        for href in re.findall(r'href="([^"]+)"', raw):
+            if href.startswith("http"):
+                assert "&amp;amp;" not in href, f"{name}: {href}"

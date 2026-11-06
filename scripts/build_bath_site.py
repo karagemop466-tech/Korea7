@@ -240,13 +240,13 @@ with accessibility — drywall/tile removal — called out as a major cost drive
   <li><strong>8 candidate contractors</strong>, each read directly from the official CSLB license-detail
   page: {", ".join(contractor_link(c["id"]) for c in contractors)}.</li>
   <li>All 8 licenses are <strong>current and active</strong> with C-36 Plumbing classification; two —
-  {ext(by_id["ace-plumbing-rooter"]["cslb_detail_url"], "Ace Plumbing &amp; Rooter (829071)")} and
+  {ext(by_id["ace-plumbing-rooter"]["cslb_detail_url"], "Ace Plumbing & Rooter (829071)")} and
   {ext(by_id["genteel-plumbers"]["cslb_detail_url"], "Genteel Plumbers (1025814)")} — also hold
   <strong>B General Building</strong> on the same license.</li>
   <li>The three companies behind the estimates were matched by name + exact address/phone to CSLB records;
   each match is listed on the <a href="contractors.html">Contractors</a> page and flagged for client
   confirmation.</li>
-  <li>California statute {ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7057", "B&amp;P §7057")} (official
+  <li>California statute {ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057", "B&P §7057")} (official
   text): a prime contract requiring <strong>two unrelated trades</strong> (plumbing + drywall) is within the
   B classification — the legal basis for the all-in-one requirement.</li>
   <li>Technical and code references pinned to official manufacturer instructions
@@ -323,7 +323,7 @@ in-use environment.</p>
 {table(["Item", "Value", "Status", "Source / basis"], [
     ["Service area", "San Francisco, CA", badge("requirement", "ok"), ext("https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ZipCodeSearch.aspx", "CSLB — Find a Licensed Contractor")],
     ["License", "Licensed plumber or contractor (California CSLB license)", badge("requirement", "ok"), ext("https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx", "CSLB — Check a License")],
-    ["Single responsible party for plumbing + drywall", "Preferred (all-in-one service)", badge("requirement", "ok"), ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7057", "B&amp;P Code §7057 (two unrelated trades)")],
+    ["Single responsible party for plumbing + drywall", "Preferred (all-in-one service)", badge("requirement", "ok"), ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057", "B&P Code §7057 (two unrelated trades)")],
     ["Access route", "Above preferred; below via ceiling drywall expected if above fails", badge("constraint", "info"), ext("https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf", "Watco trip-lever waste installation instructions")],
     ["Code governing the fixture work", "California Plumbing Code (Title 24, Part 5, UPC-based)", badge("context", "info"), ext("https://epubs.iapmo.org/2022/CPC/", "2022 CPC — official IAPMO reader")],
 ])}
@@ -363,7 +363,7 @@ def p_technical():
     watco2 = ext("https://www.watcomfg.com/Instructions/WIRE-TL-TS-SL%20Inst.black.pdf", "Watco trip-lever variations sheet")
     hunker = ext("https://www.hunker.com/13769421/how-to-fix-a-bathtub-drain-stopper/", "Hunker bathtub drain stopper guide")
     sniper = ext("https://plumbingsniper.com/how-to-fix-a-sticky-trip-lever-bathtub-stopper/", "Plumbing Sniper trip-lever guide")
-    leginfo = ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7057", "B&amp;P Code §7057")
+    leginfo = ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057", "B&P Code §7057")
     cslb_c36 = ext("https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36", "CSLB C-36 classification")
     cslb_b = ext("https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B", "CSLB B classification")
     body = f"""
@@ -537,7 +537,7 @@ source documents it, so it is a question to ask, not a fact to assert.</p>
   own site). Where aggregator sites disagreed, the CSLB record that matches the company's own address/phone
   was used — see the name-collision flag for the trap this avoids.</li>
   <li><strong>Widely reviewed in San Francisco:</strong> the additional five candidates were taken from
-  Yelp's San Francisco plumbing listings ({ext("https://www.yelp.com/search?cflt=plumbing&amp;find_loc=San+Francisco%2C+CA", "Yelp — plumbing in San Francisco")}),
+  Yelp's San Francisco plumbing listings ({ext("https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA", "Yelp — plumbing in San Francisco")}),
   then license-verified one by one on CSLB.</li>
   <li><strong>Verification chain per row:</strong> CSLB license-detail page (identity, classification,
   status) → company's own site (service area, identity) → Yelp/BBB listing (reviews, cross-check).
@@ -588,7 +588,7 @@ stands after a re-inspection, then:</p>
 <h2>3 — The all-in-one requirement is a licensing question</h2>
 <p>The job's likely end-state — open the ceiling of the storage area, replace the waste-and-overflow from
 below, patch the ceiling — spans <strong>two unrelated trades: plumbing and drywall</strong>. California's
-{ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7057", "Business &amp; Professions Code §7057")}
+{ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057", "Business & Professions Code §7057")}
 (official text) defines the B General Building classification around exactly this case: a prime contract
 whose construction requires at least two unrelated trades. A C-36-only plumber cannot take the combined
 contract as a matter of licensing scope ({ext("https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36", "CSLB C-36 classification")}).</p>
@@ -602,10 +602,10 @@ contract as a matter of licensing scope ({ext("https://www.cslb.ca.gov/About_Us/
 <section class="card">
 <h2>4 — Shortlist for outreach</h2>
 {table(["Tier", "Company (CSLB record)", "Why"], [
-    [badge("Tier 1 — single-contract bids", "ok"), ext(ace["cslb_detail_url"], "Ace Plumbing &amp; Rooter"), "B + C-36 + four more classifications on license 829071 (active, exp. 06/30/2027); ~1,447+ Yelp reviews (4.7); San Francisco (1090 Bryant St)."],
+    [badge("Tier 1 — single-contract bids", "ok"), ext(ace["cslb_detail_url"], "Ace Plumbing & Rooter"), "B + C-36 + four more classifications on license 829071 (active, exp. 06/30/2027); ~1,447+ Yelp reviews (4.7); San Francisco (1090 Bryant St)."],
     [badge("Tier 1 — single-contract bids", "ok"), ext(gen["cslb_detail_url"], "Genteel Plumbers"), "B + C-36 on license 1025814 (active, exp. 04/30/2027); 4.7 with 519 Yelp reviews; 24/7 San Francisco service."],
     [badge("Tier 2 — plumbing scope / comparison bids", "muted"), ext(by_id["expert-plumbing-solutions"]["cslb_detail_url"], "Expert Plumbing Solutions"), "Holds the $614 full-replacement quote (client-provided); C-36 active since 2012; 4.8 (81) on Yelp."],
-    [badge("Tier 2 — plumbing scope / comparison bids", "muted"), ext(by_id["fast-response-plumbing-rooter"]["cslb_detail_url"], "Fast Response Plumbing &amp; Rooter"), "High-volume reviewed shop (4.8, ~906 on Yelp); C-36 active; useful for a sanity-check bid on the same written scope."],
+    [badge("Tier 2 — plumbing scope / comparison bids", "muted"), ext(by_id["fast-response-plumbing-rooter"]["cslb_detail_url"], "Fast Response Plumbing & Rooter"), "High-volume reviewed shop (4.8, ~906 on Yelp); C-36 active; useful for a sanity-check bid on the same written scope."],
     [badge("Tier 2 — plumbing scope / comparison bids", "muted"), ext(by_id["bay-area-plumbing"]["cslb_detail_url"], "Bay Area Plumbing"), "Holds the $550 quote (client-provided); C-36 active since 1999; note the workers' compensation exemption flag."],
     [badge("Tier 3 — additional verified options", "muted"), ", ".join(ext(c["cslb_detail_url"], c["name"]) for c in contractors if c["id"] in ("atlas-plumbing-rooter", "heises-plumbing", "discount-plumbing-rooter")), "All C-36-active with solid review bases; Heise's additionally advertises drywall/carpentry repair services on its own site (no B classification — see flag)."],
 ])}
