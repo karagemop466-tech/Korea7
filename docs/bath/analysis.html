@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis — Bathtub Overflow Trip Lever Project</title>
+<link rel="stylesheet" href="assets/bath.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">SF</span>
+      <span class="brand-text"><strong>Bathtub Overflow Trip Lever</strong><span>Repair research &amp; verified hiring brief — San Francisco</span></span>
+    </a>
+  </div>
+  <nav class="site-nav"><div class="wrap"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="problem-scope.html">Problem &amp; Scope</a><a href="technical-background.html">Technical Background</a><a href="estimates.html">Estimates</a><a href="contractors.html">Contractors</a><a href="analysis.html" class="active">Analysis</a><a href="flagged-for-review.html">Flagged for Review</a><a href="sources.html">Sources</a></div></nav>
+</header>
+<main class="wrap">
+
+<section class="card">
+<h2>1 — The three quotes buy three different scopes</h2>
+<div class="table-scroll"><table class="data-table"><thead><tr><th>Price (client-provided)</th><th>Scope as stated</th><th>What it can and cannot do here</th><th>Technical basis</th></tr></thead><tbody><tr><td><strong>$135</strong></td><td>Repair or adjust bathtub wastewater plunger handle</td><td>Fastest, cheapest — pure from-above trim/linkage work. <em>Cannot</em> address damaged hidden plumbing; presumes the plunger assembly can be withdrawn through the overflow opening.</td><td><a href="https://www.hunker.com/13769421/how-to-fix-a-bathtub-drain-stopper/" rel="noopener" target="_blank">Trip-lever service from above (guide)</a></td></tr><tr><td><strong>$550</strong></td><td>Replace lever for tub plug and spout with diverter (labor + materials)</td><td>Replaces the operating trim. Still from-above work at the overflow plate and spout; presumes the hidden waste-and-overflow body stays in place and sound.</td><td><a href="https://www.watcomfg.com/Instructions/WIRE-TL-TS-SL%20Inst.black.pdf" rel="noopener" target="_blank">Trip-lever trim/linkage variants (Watco)</a></td></tr><tr><td><strong>$614</strong></td><td>Replacing waste and overflow</td><td>Full assembly replacement — the scope that matches the described failure mode if the hidden assembly is corroded or damaged. Per the manufacturer's instructions, the drain elbow/strainer are fitted under the tub, so below-tub access is normally part of this job.</td><td><a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf" rel="noopener" target="_blank">Waste-and-overflow installation (Watco)</a></td></tr></tbody></table></div>
+<p class="small">Scope wordings transcribed from the client's brief (amounts client-provided,
+<span class="badge badge-warn">unverified</span>). Technical basis: the manufacturer instructions and guides on the
+<a href="technical-background.html">Technical Background</a> page.</p>
+</section>
+
+<section class="card">
+<h2>2 — Which scope fits the actual problem?</h2>
+<p>The client-stated field history is that <strong>5+ licensed plumbers could not remove the assembly from
+above</strong> without risking the hidden plumbing (<span class="badge badge-warn">client-stated, unverified</span>). If that
+stands after a re-inspection, then:</p>
+<ul>
+  <li>The <strong>$135</strong> adjust scope and the <strong>$550</strong> trim-replacement scope assume
+  from-above removal works — exactly what the field history says keeps failing. Money spent there may not
+  fix the tub.</li>
+  <li>The <strong>$614</strong> full waste-and-overflow replacement is the scope aligned with the described
+  failure — and it is plumbing-only: it does not include opening or patching the ceiling below.</li>
+  <li>Therefore the realistic total is <strong>$614 + access/patch work</strong> (or a re-bid on the same
+  combined scope), not $135 or $550 alone. Angi's cost guide independently flags drywall removal as a
+  major cost adder for exactly this kind of repair
+  (<a href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" rel="noopener" target="_blank">source</a>).</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>3 — The all-in-one requirement is a licensing question</h2>
+<p>The job's likely end-state — open the ceiling of the storage area, replace the waste-and-overflow from
+below, patch the ceiling — spans <strong>two unrelated trades: plumbing and drywall</strong>. California's
+<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;amp;sectionNum=7057" rel="noopener" target="_blank">Business &amp;amp; Professions Code §7057</a>
+(official text) defines the B General Building classification around exactly this case: a prime contract
+whose construction requires at least two unrelated trades. A C-36-only plumber cannot take the combined
+contract as a matter of licensing scope (<a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36" rel="noopener" target="_blank">CSLB C-36 classification</a>).</p>
+<div class="table-scroll"><table class="data-table"><thead><tr><th>Path</th><th>Who can take it (verified)</th><th>Trade-offs</th></tr></thead><tbody><tr><td>One contractor, one contract (B + C-36 on one license)</td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" rel="noopener" target="_blank">Ace Plumbing &amp; Rooter</a> (829071) and <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814" rel="noopener" target="_blank">Genteel Plumbers</a> (1025814) — both read from CSLB with B and C-36 on the same license</td><td>Single responsible party for plumbing + opening + patch; simplest accountability in a tenant-occupied building. Get the drywall patch scope written into the contract.</td></tr><tr><td>Two contracts: C-36 plumber + licensed drywall contractor</td><td>Any of the six C-36-only candidates on the <a href='contractors.html'>Contractors</a> page, plus a drywall contractor to be sourced (none on file yet — <span class='blank'>blank</span>)</td><td>Works, but splits accountability for a shared opening; sequencing and dust control need explicit coordination.</td><td><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36" rel="noopener" target="_blank">CSLB C-36 classification scope</a></td></tr><tr><td>Plumber with in-house drywall help under a C-36-only license</td><td>Not verifiable from official sources — license classification is the test; <span class='blank'>blank</span> until a firm documents a B-classified arrangement or a licensed drywall subcontractor</td><td>Ask directly; accept only with the subcontractor's license number in writing.</td><td><a href="https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B" rel="noopener" target="_blank">CSLB B classification scope</a></td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+<h2>4 — Shortlist for outreach</h2>
+<div class="table-scroll"><table class="data-table"><thead><tr><th>Tier</th><th>Company (CSLB record)</th><th>Why</th></tr></thead><tbody><tr><td><span class="badge badge-ok">Tier 1 — single-contract bids</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" rel="noopener" target="_blank">Ace Plumbing &amp;amp; Rooter</a></td><td>B + C-36 + four more classifications on license 829071 (active, exp. 06/30/2027); ~1,447+ Yelp reviews (4.7); San Francisco (1090 Bryant St).</td></tr><tr><td><span class="badge badge-ok">Tier 1 — single-contract bids</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814" rel="noopener" target="_blank">Genteel Plumbers</a></td><td>B + C-36 on license 1025814 (active, exp. 04/30/2027); 4.7 with 519 Yelp reviews; 24/7 San Francisco service.</td></tr><tr><td><span class="badge badge-muted">Tier 2 — plumbing scope / comparison bids</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638" rel="noopener" target="_blank">Expert Plumbing Solutions</a></td><td>Holds the $614 full-replacement quote (client-provided); C-36 active since 2012; 4.8 (81) on Yelp.</td></tr><tr><td><span class="badge badge-muted">Tier 2 — plumbing scope / comparison bids</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" rel="noopener" target="_blank">Fast Response Plumbing &amp;amp; Rooter</a></td><td>High-volume reviewed shop (4.8, ~906 on Yelp); C-36 active; useful for a sanity-check bid on the same written scope.</td></tr><tr><td><span class="badge badge-muted">Tier 2 — plumbing scope / comparison bids</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" rel="noopener" target="_blank">Bay Area Plumbing</a></td><td>Holds the $550 quote (client-provided); C-36 active since 1999; note the workers' compensation exemption flag.</td></tr><tr><td><span class="badge badge-muted">Tier 3 — additional verified options</span></td><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994" rel="noopener" target="_blank">Atlas Plumbing &amp; Rooter</a>, <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561" rel="noopener" target="_blank">Heise&#x27;s Plumbing</a>, <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843" rel="noopener" target="_blank">Discount Plumbing Rooter Services</a></td><td>All C-36-active with solid review bases; Heise's additionally advertises drywall/carpentry repair services on its own site (no B classification — see flag).</td></tr></tbody></table></div>
+</section>
+
+<section class="card">
+<h2>5 — Decision checklist (before signing)</h2>
+<ol>
+  <li>Itemized written quote that names the access method (above vs. ceiling opening), the ceiling patch,
+  and who does each part.</li>
+  <li>Confirm the entity name on the quote matches the CSLB record (guard against the name-collision
+  problem documented in the flags).</li>
+  <li>Re-verify the license on <a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" rel="noopener" target="_blank">CSLB Check a License</a> that day;
+  collect liability insurance certificates (and workers' comp where employees are used).</li>
+  <li>References for tenant-occupied work (<span class="badge badge-warn">unverified criterion</span>) plus a written
+  dust/containment plan covering the occupied unit <em>and</em> the storage unit below.</li>
+  <li>Agree in writing what happens on discovery (e.g., corroded pipe beyond the assembly): stop-work
+  point, re-price procedure, and who patches if scope grows.</li>
+</ol>
+</section>
+
+<section class="card">
+<h2>What this analysis is not</h2>
+<p>It is not a recommendation to hire any particular firm, and not a substitute for on-site inspection —
+no photos or prior plumbers' written findings were available (<span class="badge badge-warn">pending</span>). All quote amounts
+are client-provided; all license facts are CSLB-verified as of 2026-11-06; review scores are volatile
+snapshots. This site deliberately does not discuss scheduling or regulatory strategy; it documents verified
+facts about the problem, the market, and the candidates.</p>
+</section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p>Bathtub wastewater overflow trip lever project — static research site. Data verified against linked sources on 2026-11-06; review the <a href="flagged-for-review.html">Flagged for Review</a> page for limitations. Built 2026-11-06.</p>
+</div></footer>
+</body>
+</html>
