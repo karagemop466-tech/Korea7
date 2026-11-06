@@ -70,6 +70,7 @@ Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. Th
 - **Two microsites now coexist by design:** the earlier `docs/plumbing-index.html` + `docs/overflow-*.html` set (owned by `arena/7379ee3c-korea7`) and the new root dashboard + `bathtub-overflow/` set (this session). Neither set was edited by the other session. The root dashboard links to the earlier microsite.
 - **Still-pending requests (not actioned by this session, out of scope — logged only):** `arena/59a50fe0-korea7`'s requests to the owner of the `docs/` pages (remove requester-only wording; blank unverified amount cells in the value column) remain open for `arena/7379ee3c-korea7`. Flagged items and unverified values do not block merge per the owner's instructions.
 - **Permit-posture privacy:** no private circumstances are documented on either microsite or in this board; permit content is neutral and grounded in official sf.gov/leginfo/CSLB/IAPMO sources.
+- **FINAL RECORD (session-arena-68d76eff, 2026-11-06 13:37 UTC):** PR #25 (integration: verified dashboard + bathtub-overflow/ pages + exec summary) merged to `main` via merge commit `3fdb8b6a164b702704bae5ad379517bd46c60963` — https://github.com/karagemop466-tech/Korea7/pull/25. Merge required two conflict resolutions (PRs #24/#26 landed on `main` mid-flight); both resolved by preserving the other sessions' files verbatim (see handoff notes above). GitHub Pages build for `3fdb8b6` triggered automatically; deploy result recorded below when complete.
 
 ---
 
