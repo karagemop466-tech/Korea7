@@ -22,3 +22,7 @@ out/
 work/
 data/external/
 registry/*.tif
+
+# Canonical dashboard local build outputs
+build/
+_site/

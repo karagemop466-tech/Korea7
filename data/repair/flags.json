@@ -24,7 +24,7 @@
       "title": "Shorthand quote names need entity confirmation",
       "detail": "The three names were provisionally matched to San Francisco CSLB records by name/trade/location. Similar names exist; the written quote must confirm the exact entity.",
       "action": "Match each quote to the CSLB legal name and license number before relying on the comparison.",
-      "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
       "source_label": "CSLB lookup",
       "blank": true
     },
@@ -195,7 +195,7 @@
       "title": "Discovery leads have no confirmed CSLB license in this dataset",
       "detail": "Szeto, Handlify, Mike's Water Damage/Mike Handyman, Dany's, Citywide, Kenneth Asire, and Answer Plumbing are retained as discovery leads only. License, status, insurance, and often service area are blank.",
       "action": "Obtain a license number and verify it on CSLB before treating any lead as qualified.",
-      "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
       "source_label": "CSLB official lookup",
       "blank": true
     },

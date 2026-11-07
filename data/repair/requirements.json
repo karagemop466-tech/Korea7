@@ -158,7 +158,7 @@
       "origin": "Owner brief",
       "confirmed_site_fact": null,
       "acceptance": "Original written quotes matched to CSLB entity; unconfirmed amounts remain blank.",
-      "context_source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "context_source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
       "context_label": "CSLB official license lookup (identity context only)"
     },
     {
