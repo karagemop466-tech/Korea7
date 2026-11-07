@@ -562,3 +562,8 @@ Board read at session start: all tasks of prior sessions were `done`; PR #34/#35
 | R5 | PR to main, merge, confirm Pages deploy | done | arena/be737440-korea7 | GitHub PR | See log below. |
 
 Limitations of this session: the sandbox shell has no outbound access to Yelp/company sites; CSLB and the live site were fetched through the page-fetch tool. Yelp counts were not re-captured and keep their 2026-11-06 capture labels. Estimate amounts remain owner-provided/unverified (no official source exists).
+
+### Log — `arena/be737440-korea7`
+- 2026-11-07 — PR **https://github.com/karagemop466-tech/Korea7/pull/36** opened from `arena/be737440-korea7` → `main` and **MERGED** as `ec920ed932f47305c2445376c24ab82e325abffd`.
+- 2026-11-07 — GitHub Pages run 42410876502 for `ec920ed` → **success**. Live `flagged.html` fetched and confirmed to show item 8 and the 2026-11-07 re-verification table. Site live at https://karagemop466-tech.github.io/Korea7/.
+- Open request: owner of PR #32 (`arena/524880f1-korea7`) — PR is CONFLICTING against `main` and duplicates the published dashboard; rebase or close.
