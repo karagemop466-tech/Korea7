@@ -217,6 +217,9 @@ def verify(site: Path, report_path: Path | None = None, check_determinism: bool 
     source_urls = {s["url"] for s in sources}
     check("source_register_nonempty", len(sources) >= 40, f"sources={len(sources)}")
     check("all_cslb_records_in_sources", all(p["cslb_url"] in source_urls for p in verified))
+    check("executive_summary_present", (site / "EXECUTIVE-SUMMARY.md").is_file())
+    excluded = [p for p in ["gems", "docs/bath/data", "docs/data", "vendor"] if (site / p).exists()]
+    check("artifact_excludes_legacy_data", not excluded, f"unexpected={excluded}")
 
     if check_determinism:
         with tempfile.TemporaryDirectory() as td:

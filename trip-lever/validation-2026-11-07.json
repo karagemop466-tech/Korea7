@@ -98,6 +98,16 @@
       "detail": ""
     },
     {
+      "name": "executive_summary_present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "artifact_excludes_legacy_data",
+      "ok": true,
+      "detail": "unexpected=[]"
+    },
+    {
       "name": "deterministic_build",
       "ok": true,
       "detail": "files=38"
