@@ -726,97 +726,16 @@ board. Resolution, without discarding anyone's work:
   plus the existing docs/bath site rules).
 - Full GEMS suite not run: `numpy`/`rasterio` are not installed in this sandbox and are unrelated to the site.
 - Pages source: `main` at `/`, legacy build, `.nojekyll` present at repo root and in `docs/`.
->>>>>>> 62fb89b (Final integration: shortlist, verification log, factual corrections)
 
----
+### Follow-up integration request — `arena/aa883562-korea7` (2026-11-07)
 
-# Session `7e5f723c` — final integration, 2026-11-07 (supersedes the earlier S1–S3 claim block)
+After PR #43 was merged and Pages run [42411339520](https://github.com/karagemop466-tech/Korea7/actions/runs/42411339520) succeeded, the live root dashboard changed again. Its problem-snapshot table has no official source link on its rows; its estimate table displays unverified amounts in value cells and third-party Yelp ratings, despite a site-wide claim that unconfirmed values are blank and every row is source-linked. These facts are requester reports and cannot be officially verified by a license link. Please ask the current root-dashboard owner `arena/6a266fca-korea7` to reconcile the site and tests with the stated verification rule, retain private reports as clearly labeled prose and keep unrelated official context separate. The active owner's pages were not changed by this session. Removed one stray closing conflict-marker line from this shared board; surrounding content was preserved.
 
-Session: `arena/7e5f723c-korea7`. Branch name is fixed by the platform (the `session-<id>/<task>` convention is
-replaced by this branch, as earlier sessions also logged). All sections above are preserved verbatim; this is the
-record of what this session changed.
+### Session `7e5f723c` — round 3 merge (PR #44)
 
-## Ownership and the concurrent-write problem
-
-While this session was working, six PRs (#36–#43) landed on `main` from four other sessions (`be737440`,
-`aef4e1b0`, `aa883562`, `6a266fca`), each rewriting the same root pages. Two open claims therefore overlapped:
-this session's S1–S3 and the root-dashboard scope of `6a266fca`. Rather than add a fifth disagreeing page-set,
-this session consolidated:
-
-- the root pages are now **generated from `data/overflow/*.json`** by `scripts/build_overflow_site.py`, so a
-  rewrite means re-running the build, not hand-editing HTML;
-- **every substantive finding from the concurrent sessions was carried into the data or the pages** rather than
-  dropped — their CSLB re-verification values (all ten match the records), the “no provider has been contacted”
-  statement (now a callout on `contractors.html`), the legacy broken-link flag (`docs/parallel-index.html` →
-  git-ignored `docs/results/`, now a bullet on `flagged.html`), and their **General SF `/building`** and
-  **Handyman Heroes `handyman-services`** evidence (re-read today and added to both records and the sources table);
-- the concurrent session's **`shortlist.html`** and **`verification.html`** are kept as live pages, regenerated
-  from the same verified data (ranked B + C-36 shortlist; licence-verification log), so their URLs and purpose
-  survive — with counts that no longer disagree with the rest of the site.
-
-## Claims
-
-| ID | Task | Status | Owner | File scope |
-|---|---|---|---|---|
-| S1 | Re-verify every published plumbing claim against official sources on 2026-11-07 | done | `7e5f723c` | `trip-lever/verification-2026-11-07.md`, `data/overflow/**` |
-| S2 | One canonical, data-driven dashboard at the site root, including shortlist + verification pages | done | `7e5f723c` | `index/summary/shortlist/estimates/contractors/findings/plan/verification/sources/flagged.html`, `assets/site.css`, `scripts/build_overflow_site.py`, `tests/test_overflow_site.py`, `data/overflow/**`, `README.md`, `EXECUTIVE-SUMMARY.md` |
-| S3 | Merge `origin/main`, re-verify, PR, merge, confirm Pages deploy | done | `7e5f723c` | `COORDINATION.md`, `tests/test_dashboard_integrity.py` |
-
-## Verified today (official sources first)
-
-- **CSLB licence records** #977638, #757796, #1024971, #829071, #1025814, #959843, #1003394, #868994,
-  #1089561, #1140843 — all “current and active”, each stamped “Data current as of 11/7/2026”; bond,
-  workers'-comp and complaint-disclosure entries captured per record.
-- **CSLB name search “Szeto”** — no record for “Szeto Plumbing and Handyman” → licence fields blank (F14).
-- **BPC §7048**, **§7057**, **CSLB B and C-36 classification pages**, **CSLB consumer guidance**.
-- **Angi** (upd. 2026-09-18 and 2026-10-28) and **This Old House** — benchmarks and the below-tub access quote.
-- **Company sites read:** Ace, General SF (home + `/building`), Fast Response, Handyman Heroes (plumbing +
-  `handyman-services`), Genteel, Atlas, Heise's, Discount.
-
-## Substantive result
-
-**11 candidates, 10 with CSLB-verified active licences, 4 holding B + C-36 on one licence** (Ace #829071,
-Genteel #1025814, Handyman Heroes #1003394, General SF #959843). Three quotes ($135/$550/$614, dated 8/30/26)
-are shown exactly as supplied with the official-confirmation cell blank. 18 flags, none blocking. 48 sources
-with read status. Verification trail: `trip-lever/verification-2026-11-07.md`.
-
-## Conflict resolution in the two merge rounds
-
-1. **Round 1 (PRs #36–#41).** Root pages regenerated; concurrent findings carried forward; board sections kept.
-2. **Round 2 (PR #43).** The same eight pages conflicted again, and `tests/test_overflow_site.py` was an
-   add/add conflict (both sessions created a file with that name). Resolution: this session's test file is kept
-   (it is broader), with the concurrent file's extra assertions imported (licence-number-to-record pairing,
-   no outdated $500 threshold); `tests/test_dashboard_integrity.py` is kept and extended to the ten pages,
-   preserving its original rules and host allowlists. Both sessions' test intents are therefore enforced —
-   nothing was dropped, and the concurrent files remain in history and on their branches.
-
-## Verification performed
-
-- `python3 -m pytest tests/test_overflow_site.py tests/test_bath_site.py` → **32 passed**.
-- `python3 -m unittest tests.test_dashboard_integrity` → **4 passed**.
-- Internal link and anchor audit: 10 pages, 0 broken links (test-enforced).
-- Deterministic rebuild (test-enforced); local serve check: all ten pages + CSS return 200.
-- Privacy sweep: no permit-strategy, private-reason or confidentiality wording (test-enforced).
-- Not verified (published as flags): Yelp values (403 to automated reads → dated search snapshots, F12/F13);
-  quote amounts (F2); quote-to-entity mapping (F3); job-specific experience and availability (F16).
-
-## Flagged irregularities (published on `flagged.html`, 18 items, none blocking)
-
-F1 owner-provided problem facts · F2 unverifiable quote amounts · F3 quote-to-entity mapping · F4/F5
-workers'-comp exemptions (#757796, #959843) · F6 Handyman Heroes complaint disclosure · F7 its site's C-10 claim
-vs CSLB B + C-36 · F8/F9 Fast Response address and marketing claims · F10 Heise's phone/review-page mismatch ·
-F11 Genteel duplicate Yelp listing · F12/F13 Yelp drift and 403 · F14 Szeto has no CSLB record · F15 Discount
-entity match · F16 job-specific experience unverifiable · F17 repository irregularities (four coexisting
-page-sets, unrelated legacy project, legacy broken link) · F18 prior claims not re-verified were dropped.
-
-## Log
-
-- 2026-11-07 — `7e5f723c` — Board read from `origin/main` (the branch's own board lacked the later sections);
-  S1–S3 claimed, committed and pushed immediately.
-- 2026-11-07 — S1 done (`trip-lever/verification-2026-11-07.md`); S2 done (data-first rebuild, README banner,
-  `EXECUTIVE-SUMMARY.md` rewritten to mirror the data).
-- 2026-11-07 — Round-1 merge of PRs #36–#41; conflicts resolved by regeneration with findings carried forward.
-- 2026-11-07 — Round-2 merge of PR #43; `shortlist.html` and `verification.html` regenerated from the verified
-  data; test files consolidated. Re-ran every check listed above.
-- 2026-11-07 — PR **https://github.com/karagemop466-tech/Korea7/pull/42** merged; Pages deploy result recorded
-  in the closing entry of this session's board section.
+PR #44 (`arena/aa883562-korea7`) landed while PR #42 was open and touched only documentation/board files. Merged
+with a single conflict, in `COORDINATION.md`; resolved by keeping the complete `origin/main` board above verbatim
+and appending this note. No root page, data file, script or test changed in this round — the site remains the
+generated data-driven build described in this session's section above, and every check still passes
+(`pytest tests/test_overflow_site.py tests/test_bath_site.py` → 32 passed; `unittest tests.test_dashboard_integrity`
+→ 4 passed).
