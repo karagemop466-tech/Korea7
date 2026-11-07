@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "site": "/home/user/Korea7/build/repair-site",
+  "pages": 13,
+  "html_files": 26,
+  "data_rows_checked": 217,
+  "providers": {
+    "total": 21,
+    "verified_licenses": 14,
+    "discovery_only": 7
+  },
+  "external_links_unique": 83,
+  "sources_registered": 73,
+  "checks": [
+    {
+      "name": "required_pages",
+      "ok": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "nojekyll",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "css",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "internal_links_and_anchors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "every_table_row_has_source_link",
+      "ok": true,
+      "detail": "rows=217; unsourced=[]"
+    },
+    {
+      "name": "provider_counts",
+      "ok": true,
+      "detail": "total=21 verified=14 discovery=7"
+    },
+    {
+      "name": "verified_have_cslb_links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "discovery_licenses_blank",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "estimate_amounts_blank",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ratings_blank",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "provider_flags_resolve",
+      "ok": true,
+      "detail": "missing=[]"
+    },
+    {
+      "name": "owner_amounts_not_published",
+      "ok": true,
+      "detail": "leaks=[]"
+    },
+    {
+      "name": "privacy_wording",
+      "ok": true,
+      "detail": "hits=[]"
+    },
+    {
+      "name": "no_contact_claim",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "estimate_amount_cells_blank",
+      "ok": true,
+      "detail": "blank=3/3"
+    },
+    {
+      "name": "source_register_nonempty",
+      "ok": true,
+      "detail": "sources=73"
+    },
+    {
+      "name": "all_cslb_records_in_sources",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "deterministic_build",
+      "ok": true,
+      "detail": "files=37"
+    }
+  ],
+  "failures": [],
+  "page_sha256": {
+    "index.html": "9d388ecf2641483f5ddf0cf62713044b98c2bfa98e087a98cf132a19ab4f2726",
+    "summary.html": "c293aaea23babe69c904f170f5021c389d7025d65a93024cb919ae11752aca46",
+    "requirements.html": "a7e185c216d6b884a5ce9d6aaf18def5157ea2cf3059c51cc6e4c0f3f5c7e4a7",
+    "estimates.html": "631d0e3eea6c1ac25e6642878cb1e668cdc0eeb9c9b9d6fe50d91e2ad586cd2a",
+    "contractors.html": "c3f36fd179148ad53cc48a0c5fad05e8472b443eb857fae8e6e5a8a3b4fc16ef",
+    "reviews.html": "94605757edb7a1fc1f53baf8d0579082898786f728b89e422cd5ec7f74fc674e",
+    "findings.html": "bc86bbac44911d1283f3f87f1843fd4288780445b90ad08642484025dd648171",
+    "access-plan.html": "e5b2c5e5f42c6483729397d461dc110b3227bbab3aaa2602b03b5b96241056b6",
+    "compliance.html": "2b209019b0ce077b1c66bcef02b0357ddadbd09e3ccb1cf416b634cec6f47b89",
+    "sources.html": "edcbde51f928f19b97f0c2311f5ae45cc8a6b8eef04f6a147ed76315e6e7b110",
+    "flagged.html": "d4072c050e4914631609bd2b86362399cf9f62450b984bca327649012a76740d",
+    "verification.html": "29a853817cefbcc96229754378794d58af6506eaf064bd9d4ecb8086a2ecf055",
+    "archive.html": "33b8e5457c5ef5468a9b033f75fc342ada2b4a96eb2eaba770591ebfade48016"
+  },
+  "note": "Offline artifact verification. External primary-source reading is recorded in data/repair/sources.json; Yelp direct fetches were restricted and no current Yelp numeric values are asserted."
+}

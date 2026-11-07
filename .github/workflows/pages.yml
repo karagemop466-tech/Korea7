@@ -1,0 +1,54 @@
+name: Publish canonical repair dashboard
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'data/repair/**'
+      - 'scripts/build_repair_dashboard.py'
+      - 'scripts/verify_repair_dashboard.py'
+      - 'tests/test_repair_dashboard.py'
+      - '.github/workflows/pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install test dependency
+        run: python -m pip install pytest
+      - name: Build canonical artifact
+        run: python scripts/build_repair_dashboard.py --output _site
+      - name: Verify artifact
+        run: python scripts/verify_repair_dashboard.py --site _site --report _site/data/validation.json
+      - name: Regression tests
+        run: python -m pytest -q tests/test_repair_dashboard.py
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
