@@ -546,3 +546,63 @@ integration task T5 (same session in this run — single-session execution).
 - 2026-11-06 — `d5c5d85b` — Merged `origin/main` into this branch (PRs #21–#33 had landed mid-flight). Add/add conflicts resolved: (a) root `index.html` — this session's dashboard now serves the site root; the parallel session's microsite subpages under `bathtub-overflow/` are fully preserved and linked from the root's repository note (their superseded hub content is not deleted); (b) `COORDINATION.md` — the complete `origin/main` board (all sessions, verbatim) is preserved above, this session's section appended below the separator, per the PR #25 precedent.
 - 2026-11-06 — `d5c5d85b` — **Privacy scrub (standing constraint, applies to every published file):** neutralized non-compliant wording that parallel sessions had published in `index.html` (superseded in the conflict resolution above), `README.md`, `EXECUTIVE-SUMMARY.md`, `bathtub-overflow/{analysis,executive-summary,flagged-for-review,methodology,permits-compliance,problem-scope}.html`, `docs/{overflow-executive-summary,overflow-sources,overflow-verification-flags,plumbing-index,overflow-verification.json}`, and two meta lines in this board. Pages, flag IDs (F4/A1 slots), and official-source citations were kept intact — only the forbidden wording changed. Sweep grep across all HTML/MD/CSS/JS/JSON: zero matches. No other session's substantive content was otherwise changed; this entry documents the handoff edit transparently.
 - 2026-11-06 — `d5c5d85b` — **PR #34 MERGED** to `main` as `2ec8f5e` (https://github.com/karagemop466-tech/Korea7/pull/34): dashboard site, research/verification artifacts, main integration, privacy scrub. The GitHub Pages build for `2ec8f5e` (run 42234169692) failed at the **deploy** step (build job succeeded — same flaky deploy pattern recorded earlier on this board); `main` therefore still serves the previous deploy of `7543403`. This follow-up commit/PR re-triggers the Pages build from `main`; live-site confirmation of the new dashboard follows and is recorded in the next log entry.
+
+---
+
+# Session `arena/2eb487ad-korea7` board (appended 2026-11-07; final integration session)
+
+Shared board read at session start (548 lines, 6 prior session sections). All prior claims are dated
+2026-11-06 and have had no commits for more than 60 minutes; per the board's takeover rule this session
+takes over the **final integration** scope and logs the handoff here. PR #32
+(`arena/524880f1-korea7`, OPEN, `mergeable=CONFLICTING`, last updated 2026-11-06 13:45 UTC) is a stale
+parallel PR that also touches `index.html`; this session does **not** merge, close, or edit that PR, and
+its files are not present on this branch. It is recorded on the site's Flagged for Review page instead.
+
+Platform constraint logged as a deviation: the session branch is fixed at `arena/2eb487ad-korea7`, so the
+`session-<id>/<task>` branch/worktree convention cannot be followed. This branch is both the session branch
+and the integration branch; the PR is opened from it directly to `main`.
+
+## Session register
+
+| Session ID | Branch | Status | Notes |
+|---|---|---|---|
+| `arena/2eb487ad-korea7` | `arena/2eb487ad-korea7` | active | Final integration. Single non-overlapping scope: canonical root dashboard. |
+
+## Task board
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| I1 | Read board, claim tasks, commit + push claim | in progress | `arena/2eb487ad-korea7` | `COORDINATION.md` |
+| I2 | Source verification from official sites (CSLB, sf.gov, leginfo, publishers, manufacturer) | in progress | `arena/2eb487ad-korea7` | `data/canonical/site_data.json`, `data/canonical/source_checks.json` |
+| I3 | Consolidated dashboard: landing + category subpages, one source link per table row, blank+flag unverified values, clean table UI | unclaimed | `arena/2eb487ad-korea7` | `index.html`, `summary.html`, `requirements.html`, `estimates.html`, `contractors.html`, `technical.html`, `permits.html`, `findings.html`, `sources.html`, `verification.html`, `repo-review.html`, `brief.html`, `flagged.html`, `assets/dashboard.css`, `assets/dashboard.js`, `scripts/build_dashboard.py`, `scripts/verify_dashboard.py`, `tests/test_dashboard.py` |
+| I4 | Line-by-line verification: row links, blank unverified values, internal/external link audit, dead-link removal, privacy scrub | unclaimed | `arena/2eb487ad-korea7` | `data/canonical/verification_report.json`, `verification.html` |
+| I5 | PR to `main`, merge, confirm GitHub Pages deploy, record PR link + merge result | unclaimed | `arena/2eb487ad-korea7` | `COORDINATION.md`, GitHub PR/Pages |
+
+Scope note: legacy GEMS pages (`docs/`, `data/*.tif`, `vendor/`, `gems/`, `evidence/`, `registry/`) and
+the parallel microsites (`bathtub-overflow/`, `docs/bath/`, `docs/overflow-*.html`) are **not edited** by
+this session; they are linked as archived material. Only the canonical root dashboard files listed in I3
+are modified. No other session's files are touched.
+
+## Verification rules applied (binding)
+
+1. Every table row in the canonical dashboard has at least one source link; the source ledger grades each
+   link (official government / manufacturer / publisher / platform / project primary record).
+2. A value that cannot be confirmed from an official source is **blank** in the value cell, marked
+   `UNVERIFIED`, and published on the Flagged for Review page. Owner-provided figures are transcribed
+   only in a clearly separated "brief transcription" column that links to the project primary record.
+3. No value is inferred. Every official claim is linked to the page it was read from, with the
+   retrieval date and the source's own data-current stamp where available.
+4. Neutral compliance content only: no internal hiring constraints or rationale appear on any page.
+
+## Log
+
+- 2026-11-07 — `arena/2eb487ad-korea7` — Session start: board read; stale-claim handoff recorded above;
+  PR #32 noted as open/conflicting and left untouched; branch constraint deviation logged.
+- 2026-11-07 — `arena/2eb487ad-korea7` — Official sources fetched and read directly (not inferred):
+  `sf.gov/apply-plumbing-and-mechanical-permit`, `sf.gov/information--check-if-your-construction-project-needs-permit`,
+  CSLB License Detail #977638 / #757796 / #1024971 / #959843 / #1003394 / #829071 (each prints
+  "Data current as of 11/7/2026"), CSLB C-36 classification definition, `leginfo` BPC §7048,
+  Angi 2026 drain-replacement and bathroom-leak articles, Oatey Dearborn trip-lever bath waste page,
+  and the BBB profile for Expert Plumbing Solutions. Yelp returns HTTP 403 to automated fetch;
+  `homeguides.sfgate.com` redirects to an empty page and `inspectandtest.net` returns HTTP 500 — both
+  removed from active citations and logged as irregularities.
