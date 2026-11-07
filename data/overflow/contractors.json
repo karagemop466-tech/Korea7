@@ -222,7 +222,7 @@
       "quote_scope": null,
       "all_in_one": true,
       "fit": "B + C-36 + C-10 on one licence; company site lists building, plumbing and electrical services.",
-      "notes": "Company site displays “CSLB. 959843” and describes the business as serving commercial properties, educational institutions and corporate offices — ask specifically about small residential bathroom work. CSLB shows a workers'-compensation exemption.",
+      "notes": "Company site displays “CSLB. 959843”. Its Building page lists rough and finish plumbing, sheetrock / tape and texture, and interior and exterior paint — the closest published match to this job's two trades — while the home page describes commercial properties, educational institutions and corporate offices, so ask specifically about small residential work. CSLB shows a workers'-compensation exemption.",
       "flags": [
         "F5",
         "F12"
@@ -256,7 +256,7 @@
       "quote_scope": null,
       "all_in_one": true,
       "fit": "B + C-36 plus handyman/drywall services; a Yelp review highlight reads “We have employed Handyman Heroes for both their handyman services and plumbing services.”",
-      "notes": "CSLB record carries a complaint disclosure (link on the record). Company website lists “License #1003394 'B', C-10, C-36”, but the CSLB record for #1003394 shows only B and C-36 — CSLB governs; see flag F7. Yelp address (1525 Waller St) differs from the CSLB address of record.",
+      "notes": "CSLB record carries a complaint disclosure (link on the record). Its Handyman Services page lists “sheetrock and wall repairs” and states that plumbing and electrical services are also offered “so many jobs that would normally need several tradespeople can be handled by one team”. The company site also lists “License #1003394 'B', C-10, C-36”, but the CSLB record for #1003394 shows only B and C-36 — CSLB governs; see flag F7. Yelp address (1525 Waller St) differs from the CSLB address of record.",
       "flags": [
         "F6",
         "F7",

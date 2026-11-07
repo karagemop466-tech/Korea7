@@ -703,6 +703,11 @@ def build_contractors(project, contractors, flags) -> str:
         + " — the only list on this page where every entry is a licensed contractor.</li>"
     ) + "</ul>"
 
+    c_contact = callout(
+        "<strong>No provider has been contacted.</strong> None of these firms has confirmed this job's scope, availability or experience with this specific assembly — a licence record establishes licence status, a company site establishes what the company says about itself, and neither has confirmed this job.",
+        "info",
+    )
+
     c_szeto = callout(
         "One candidate — Szeto Plumbing and Handyman — appears on Yelp with plumbing and drywall services but has no matching CSLB record. Its licence fields are deliberately blank rather than guessed: "
         '<a href="flagged.html#F14">flag F14</a>.',
@@ -714,6 +719,7 @@ def build_contractors(project, contractors, flags) -> str:
   <h1>Contractors — San Francisco</h1>
   <p>Eleven candidates found through review-platform searches and the original quotes, then checked line by line against the official CSLB licence database on {e(project["updated"])}. Review values are dated snapshots; licences are official.</p>
 </div>
+{c_contact}
 
 <section class="section">
   <h2>{e(groups["quoter"]["title"])}</h2>
@@ -1011,6 +1017,7 @@ def build_flagged(project, flags, contractors) -> str:
   <ul class="tight">
     <li><strong>The repository contains an unrelated project.</strong> The root of this repository was originally a geothermal fault-prospectivity analysis for a DOE competition; its pages remain under <code>docs/</code> and are unrelated to this repair project. They were left untouched.</li>
     <li><strong>Four overflow page-sets coexist.</strong> Earlier sessions built separate dashboards for this same bathroom job (<code>docs/bath/</code>, <code>docs/overflow-*.html</code>, <code>docs/plumbing-index.html</code>, <code>bathtub-overflow/</code>). None were deleted; all are superseded by the pages at the repository root, which are the only ones maintained.</li>
+    <li><strong>One legacy page has a broken internal link.</strong> The unrelated geothermal project under <code>docs/</code> links to a git-ignored results folder from <code>docs/parallel-index.html</code>. It is outside this project and was left untouched; recorded here so the audit trail is complete.</li>
     <li><strong>One shared coordination board, several appended sections.</strong> <code>COORDINATION.md</code> carries the task board and handoff log for each session, preserved verbatim. See <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md">COORDINATION.md</a>.</li>
     <li><strong>This session's verification trail</strong> is recorded in <code>COORDINATION.md</code> and in the site's own data files under <code>data/overflow/</code>.</li>
   </ul>

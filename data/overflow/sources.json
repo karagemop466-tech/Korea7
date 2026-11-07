@@ -369,6 +369,22 @@
       "url": "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
       "supports": "Drywall-only partners if a two-vendor route is chosen.",
       "read": "search link verified to exist; listings change"
+    },
+    {
+      "publisher": "General SF",
+      "type": "Company site",
+      "title": "generalsf.com/building",
+      "url": "https://generalsf.com/building",
+      "supports": "Lists rough and finish plumbing, sheetrock / tape and texture, tile, paint — published evidence of both trades under one contractor.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Handyman Heroes",
+      "type": "Company site",
+      "title": "handymanhero.es/handyman-services",
+      "url": "https://www.handymanhero.es/handyman-services/",
+      "supports": "Lists “sheetrock and wall repairs” and states plumbing and electrical are also offered so several trades can be handled by one team.",
+      "read": "read 2026-11-07"
     }
   ]
 }

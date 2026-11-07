@@ -548,22 +548,167 @@ integration task T5 (same session in this run — single-session execution).
 - 2026-11-06 — `d5c5d85b` — **PR #34 MERGED** to `main` as `2ec8f5e` (https://github.com/karagemop466-tech/Korea7/pull/34): dashboard site, research/verification artifacts, main integration, privacy scrub. The GitHub Pages build for `2ec8f5e` (run 42234169692) failed at the **deploy** step (build job succeeded — same flaky deploy pattern recorded earlier on this board); `main` therefore still serves the previous deploy of `7543403`. This follow-up commit/PR re-triggers the Pages build from `main`; live-site confirmation of the new dashboard follows and is recorded in the next log entry.
 
 ---
+## Session `arena/aa883562-korea7` — 2026-11-07 integration claim
 
-# Session `7e5f723c` board (appended 2026-11-07; earlier boards preserved verbatim above)
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| Audit and correct the root plumbing dashboard, its verification, and deployment | in progress | `arena/aa883562-korea7` | `index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`, `sources.html`, `flagged.html`, `assets/site.css`, `trip-lever/session-aa883562-verification.md`, `COORDINATION.md` |
 
-Session: `arena/7e5f723c-korea7` · branch `arena/7e5f723c-korea7` · platform rules require all work on this
-exact branch, so the `session-<id>/<task>` naming convention is replaced by this branch (same deviation as the
-`d5c5d85b` session, logged per the conflict rules).
+Handoff: prior integration owner `d5c5d85b` reported PR #34 merged and a failed deploy; its last recorded activity was 2026-11-06, more than 60 minutes ago. This session takes over the root dashboard and integration scope; other page sets are not owned here. The Arena session branch name is fixed and supersedes the requested naming convention. Research and validation must distinguish direct verification from historical notes, and no unverified claims may be represented as official facts.
 
-## Claims (2026-11-07)
+### Integration verification — 2026-11-07
+
+- Scope: seven root dashboard pages; prior page sets and the legacy GEMS repository remain outside this verification and are flagged on the dashboard. Corrected previous claims that every row was sourced, removed unverified Yelp counts and made official quote-value cells blank, while retaining requester-reported amounts with attribution outside those cells.
+- Official records read: [CSLB General SF #959843](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843), [Handyman Heroes #1003394](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394), [Expert #977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638), [Bay Area #757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), [Fast Response #1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971), [General SF services](https://generalsf.com/building), [Handyman Heroes services](https://www.handymanhero.es/handyman-services/), and [SF DBI](https://www.sf.gov/apply-plumbing-and-mechanical-permit).
+- Irregularities: requester facts/quotes lack official source; no direct outreach or booking; exact job experience and availability unconfirmed; direct Yelp fetch blocked; CSLB disclosure, workers' comp exemptions and C-10 company/CSLB discrepancy flagged; old pages may conflict. Full notes: `trip-lever/session-aa883562-verification.md`.
+- Validation: seven root pages parsed, 28 data rows with official source/context links, zero missing local links/anchors; `git diff --check` passed. External access is subject to third-party restrictions. Current Pages build for base `d93299c` reports built; PR and new deploy remain pending.
+
+
+---
+
+## Session `arena/be737440-korea7` — post-deploy re-verification (2026-11-07)
+
+Board read at session start: all tasks of prior sessions were `done`; PR #34/#35 merged; GitHub Pages run 42236078332 (`d93299c`) **succeeded** and the root dashboard is live at https://karagemop466-tech.github.io/Korea7/ (confirmed by fetching the live page). No open claims by other sessions were in progress. One PR from another session remained open — **PR #32 (`arena/524880f1-korea7`)**, status CONFLICTING, overlapping scope (`index.html`, `README.md`, `COORDINATION.md`); it was **not** merged or closed by this session because it is owned by another session; its owner should rebase or close it. Logged here as a request.
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| R1 | Re-verify every CSLB license row against the official record | done | arena/be737440-korea7 | flagged.html (append only) | 5/5 records fetched from cslb.ca.gov, stamped "Data current as of 11/7/2026": #977638 active C-36 exp 10/31/2028; #757796 active C-36 exp 01/31/2027 (WC exempt); #1024971 active C-36 exp 03/31/2027; #959843 active B/C-10/C-36 exp 04/30/2027 (WC exempt); #1003394 active B/C-36 exp 05/31/2027 (complaint disclosure present). All match published values. Re-verification table added to `flagged.html`. |
+| R2 | Internal link audit of the whole published tree | done | arena/be737440-korea7 | — | 888 internal links across all HTML; 1 missing target: legacy `docs/parallel-index.html` → `docs/results/` (git-ignored). Published as flagged item 8; legacy file untouched. |
+| R3 | Privacy wording sweep | done | arena/be737440-korea7 | — | grep across HTML/MD/JSON/CSV for requester-only permit wording: 0 matches. |
+| R4 | Update counts (7→8 flagged) and dates | done | arena/be737440-korea7 | index.html, summary.html, flagged.html | Counts/dates only; no data values changed. |
+| R5 | PR to main, merge, confirm Pages deploy | done | arena/be737440-korea7 | GitHub PR | See log below. |
+
+Limitations of this session: the sandbox shell has no outbound access to Yelp/company sites; CSLB and the live site were fetched through the page-fetch tool. Yelp counts were not re-captured and keep their 2026-11-06 capture labels. Estimate amounts remain owner-provided/unverified (no official source exists).
+
+### Log — `arena/be737440-korea7`
+- 2026-11-07 — PR **https://github.com/karagemop466-tech/Korea7/pull/36** opened from `arena/be737440-korea7` → `main` and **MERGED** as `ec920ed932f47305c2445376c24ab82e325abffd`.
+- 2026-11-07 — GitHub Pages run 42410876502 for `ec920ed` → **success**. Live `flagged.html` fetched and confirmed to show item 8 and the 2026-11-07 re-verification table. Site live at https://karagemop466-tech.github.io/Korea7/.
+- Open request: owner of PR #32 (`arena/524880f1-korea7`) — PR is CONFLICTING against `main` and duplicates the published dashboard; rebase or close.
+
+- 2026-11-07: integration `arena/aa883562-korea7` merged `origin/main` after PR #36 landed concurrently. Board sections from both sessions were retained. Root-page conflicts resolved by retaining the current dashboard, incorporating the other session’s verified CSLB snapshot and its legacy broken-link flag. No older page sets were altered.
+
+
+## Session `arena/aef4e1b0-korea7` — 2026-11-07
+
+The prior `d5c5d85b` integration claim has had no commits for more than 60 minutes; this session takes over the remaining integration and verification work. Arena fixes the branch name to `arena/aef4e1b0-korea7`, overriding the requested naming convention.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit existing root plumbing dashboard, correct verification gaps and publish flags | in progress | `arena/aef4e1b0-korea7` | `index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`, `sources.html`, `flagged.html`, `assets/site.css`, `trip-lever/verification.md`, `tests/test_dashboard_integrity.py` |
+| Integrate, test, PR, merge and check Pages | in progress | `arena/aef4e1b0-korea7` | `COORDINATION.md` |
+
+The earlier sessions' completed research and legacy GEMS materials are preserved. Existing open PR #32 predates this handoff and is not claimed or modified.
+
+- 2026-11-07 `arena/aef4e1b0-korea7`: root dashboard audit completed with qualified scope. Five individual official CSLB records and all five company sites were fetched; CSLB links, exact classifications, contact details and official contextual links are provided in `trip-lever/verification.md`. User-supplied quotes remain unverified and official-confirmed amount cells are blank. Yelp direct fetch returned 403; no ratings or job-specific review claims are asserted. Specific repair experience, availability and all-in-one execution are not verified. Handyman Heroes' classification discrepancy and CSLB disclosure, workers' compensation exemptions, legacy material and unverified project facts are published on `flagged.html`. No outreach or booking was performed. Initial branch pull found no remote branch; the session pulled `origin/main` before creating its remote branch. The offline root dashboard tests pass; the legacy pytest suite cannot run because pytest is absent. Earlier unrelated projects and historical microsites are not reverified by this session. Task status: audit **needs review**; integration **in progress**.
+
+- 2026-11-07 `arena/aef4e1b0-korea7`: origin/main advanced with PR #36 while this branch was in flight. Rebase produced conflicts in this board and `index.html`, `summary.html`, `flagged.html`. Preserved both board sections, applied the current dashboard rewrite, and integrated the other session’s legacy broken-link flag and full CSLB re-verification table into the revised flagged page. Other session’s legacy and historical files remain intact.
+
+- 2026-11-07: integration `arena/aa883562-korea7` encountered overlapping PR #37 after its initial board read. In this second concurrent conflict, the newer owner's root dashboard files were retained without alteration; this session's independent CSLB/company research remains in `trip-lever/session-aa883562-verification.md`. Their legacy-link and license re-verification findings are preserved in their flagged page. No shared dashboard changes were applied over the other active owner. Request to `arena/aef4e1b0-korea7`: consider linking General SF's specific sheetrock listing at https://generalsf.com/building and Handyman Heroes' wall-repair listing at https://www.handymanhero.es/handyman-services/ and include relevant review text only if independently verified.
+
+- 2026-11-07 `arena/aef4e1b0-korea7`: Integration PR [#37](https://github.com/karagemop466-tech/Korea7/pull/37) **merged** as `67fdd4be9859830a76e2096ba8f72bf437393bc2`. Root dashboard offline checks passed after conflict resolution. GitHub Pages [run 42410967044](https://github.com/karagemop466-tech/Korea7/actions/runs/42410967044) succeeded; the updated landing and flagged pages were fetched successfully with a cache-busting query at https://karagemop466-tech.github.io/Korea7/. The prior session's known unrelated legacy link remains flagged. Integration task **done**; evidence limitations and unconfirmed items remain **needs review**.
+- 2026-11-07 — `arena/be737440-korea7`: merged `origin/main` twice more (PRs #37 and #40 from sessions `aef4e1b0`/`aa883562` landed while PR #39 was open); board conflicts resolved by keeping every session's section. Re-ran link audit, privacy sweep, and `tests/test_dashboard_integrity.py` on the merged tree — all pass; only the already-flagged legacy link remains.
+
+### `arena/aa883562-korea7` integration result — 2026-11-07
+
+- Independent research and handoff PR [#38](https://github.com/karagemop466-tech/Korea7/pull/38) **merged** as `47b9755b3a817629da97c1e27b7eb6eeef7b86b1`. It preserves PR #37's dashboard and the other session's shared files; details and sources are in `trip-lever/session-aa883562-verification.md`.
+- The retained dashboard passed `python -m unittest tests/test_dashboard_integrity.py` (3 tests) and `git diff --check`. This does not validate historical microsites or blocked Yelp content. No provider was contacted or booked.
+- Pages run [42411026421](https://github.com/karagemop466-tech/Korea7/actions/runs/42411026421) was canceled in favor of a newer concurrent `main` build. The superseding Pages run [42411039318](https://github.com/karagemop466-tech/Korea7/actions/runs/42411039318) for `8bfeb23` **succeeded**; the updated [live dashboard](https://karagemop466-tech.github.io/Korea7/) was fetched and its revised content confirmed using a cache-busting query.
+- Session task status: integration **done**; unverified quotes, job-specific fit, reviews and historical content remain **needs review** on the published flagged page.
+
+---
+
+# Session `7e5f723c` — final integration, 2026-11-07
+
+Session: `arena/7e5f723c-korea7` (branch name fixed by the platform; the `session-<id>/<task>` convention is
+replaced by this branch, as logged by earlier sessions). Read the whole board first; no claim was active and no
+other session had commits younger than 60 minutes when this session started, so tasks S1–S3 below were taken
+over. **All earlier sections above are preserved verbatim**; this section records what changed.
+
+## Claims
 
 | ID | Task | Status | Owner | File scope |
 |---|---|---|---|---|
-| S1 | Read existing boards + repo review; re-verify every published plumbing claim against official sources (CSLB licence records, company sites, SF.gov, review platforms) on 2026-11-07 | in progress | `7e5f723c` | `COORDINATION.md`, `trip-lever/verification-2026-11-07.md` |
-| S2 | Consolidate the four coexisting overflow page-sets into one canonical dashboard at the site root, built deterministically from data files | in progress | `7e5f723c` | `index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`, `sources.html`, `flagged.html`, `assets/site.css`, `scripts/build_overflow_site.py`, `tests/test_overflow_site.py`, `data/overflow/**` |
-| S3 | Integration, line-by-line data re-check, internal/external link audit, PR to `main`, merge, GitHub Pages deploy confirmation | in progress | `7e5f723c` | `COORDINATION.md` only (no other session's files edited) |
+| S1 | Re-verify every published plumbing claim against official sources on 2026-11-07 | done | `7e5f723c` | `trip-lever/verification-2026-11-07.md`, `data/overflow/**` |
+| S2 | Consolidate the four coexisting overflow page-sets into one canonical data-driven dashboard at the site root | done | `7e5f723c` | `index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`, `plan.html`, `sources.html`, `flagged.html`, `assets/site.css`, `scripts/build_overflow_site.py`, `tests/test_overflow_site.py`, `data/overflow/**`, `README.md`, `EXECUTIVE-SUMMARY.md` |
+| S3 | Integration: merge `origin/main` (PRs #36–#41), re-verify, PR, merge, confirm GitHub Pages deploy | in progress → see log | `7e5f723c` | `COORDINATION.md`, `tests/test_dashboard_integrity.py` (adapted, see below) |
 
-Rules applied: no other session's claim is active today (all earlier tasks are `done` or were left `in progress`
-by sessions that stopped committing >60 min ago — predecessor `T5`/task 8-10 are superseded by S3 here, and the
-handoff is logged below). Scopes above do not overlap any earlier session's finished scope; the earlier
-page-sets are preserved untouched (no deletions) and marked superseded on the canonical dashboard.
+## What was verified (official sources first, all read 2026-11-07)
+
+- **CSLB licence records** for #977638, #757796, #1024971, #829071, #1025814, #959843, #1003394, #868994,
+  #1089561, #1140843 — all “current and active”, each record stamped “Data current as of 11/7/2026”. Bond,
+  workers'-compensation and complaint-disclosure entries captured per record.
+- **CSLB name search “Szeto”** — no record for “Szeto Plumbing and Handyman”; licence fields left blank (F14).
+- **BPC §7048** and **§7057** (leginfo), **CSLB B and C-36 classification pages**, **CSLB consumer guidance**.
+- **Angi** (drain replacement upd. 2026-09-18; bathroom leak upd. 2026-10-28) and **This Old House** — cost
+  benchmarks and the below-tub access statement, quoted verbatim.
+- **Company sites read:** Ace, General SF (home + `/building`), Fast Response, Handyman Heroes (plumbing +
+  `handyman-services`), Genteel, Atlas, Heise's, Discount.
+
+## Substantive changes
+
+- **Two additional B + C-36 single-contract candidates** added in this pass: Ace Plumbing & Rooter **#829071**
+  and Genteel Plumbers **#1025814**. The site now carries **11 candidates, 10 with CSLB-verified active
+  licences** (7 in the previous root dashboard, 8 in `docs/bath/`).
+- **New page:** `plan.html` — ranked shortlist, seven steps, five phone questions, ten-line scope checklist,
+  contract and payment rules with citations.
+- **Every table row** now links a source or is explicitly tagged `owner-provided`; the three quote amounts are
+  shown as supplied with the “official confirmation” cell left blank; a candidate with no licence shows blank
+  licence fields.
+- **Rebuilt data-first:** `data/overflow/*.json` (48 sources, 18 flags, 8 benchmarks, 7 findings) →
+  `scripts/build_overflow_site.py` (deterministic) → the eight root pages. `tests/test_overflow_site.py`
+  enforces the rules (18 tests passing, including a determinism re-build).
+
+## Conflict resolution in this integration
+
+`origin/main` advanced by six PRs while this branch was in flight. Conflicts were resolved as follows:
+
+- **Root HTML pages (8 files):** regenerated from the verified data, so the conflict no longer exists in the
+  files. Content from the concurrent sessions was carried forward rather than dropped: their **CSLB
+  re-verification table** values (all match), their **“no provider has been contacted”** statement (now a
+  callout on `contractors.html`), their **legacy broken-link flag** (`docs/parallel-index.html` →
+  git-ignored `docs/results/`, now a bullet under repository irregularities on `flagged.html`), and their
+  **General SF `/building`** and **Handyman Heroes `handyman-services`** evidence (verified today and added to
+  both contractor records and the sources table).
+- **`tests/test_dashboard_integrity.py`** (added by session `aef4e1b0`): its intent is preserved — row-level
+  official-source links, blank cells for unconfirmed amounts, no claim of confirmation or outreach — but the
+  assertions were re-pointed at the regenerated pages, and the allowed-host list was widened to the publishers
+  now cited (Angi, This Old House, leginfo). File docstring records the adaptation.
+- **`COORDINATION.md`:** this session's earlier claim block (written before the merge) is superseded by this
+  section; all other sessions' sections above are unchanged.
+
+## Verification performed
+
+- `python3 -m pytest tests/test_overflow_site.py` → **18 passed** (data shapes, licence-or-blank rule,
+  all-in-one classification check, flag cross-references, internal links and anchors, row-level sourcing,
+  provenance of amounts, banned-wording scan, summary/data consistency, HTML tag balance, determinism).
+- `python3 scripts/build_overflow_site.py` → deterministic (test-enforced).
+- Internal link audit: 8 pages, **0 broken internal links or anchors**.
+- Privacy sweep: no permit-strategy, private-reason or confidentiality wording in any published page
+  (test-enforced, including the data files).
+- Local serve check: all eight pages + `assets/site.css` return 200.
+- **Not verified:** Yelp pages (HTTP 403 to automated reads — values are dated search snapshots, F12/F13);
+  the three quote amounts (no official source exists, F2); job-specific experience and availability (F16).
+
+## Flagged irregularities (published on `flagged.html`, 18 items, none blocking)
+
+F1 owner-provided problem facts · F2 unverifiable quote amounts · F3 quote-to-entity mapping · F4/F5
+workers'-comp exemptions (#757796, #959843) · F6 Handyman Heroes complaint disclosure · F7 its site's C-10
+claim vs CSLB B+C-36 · F8/F9 Fast Response address and marketing claims · F10 Heise's phone/review-page
+mismatch · F11 Genteel duplicate Yelp listing · F12/F13 Yelp drift and 403 · F14 Szeto has no CSLB record ·
+F15 Discount entity match · F16 job-specific experience unverifiable · F17 repository irregularities (four
+coexisting page-sets, unrelated legacy project, legacy broken link) · F18 prior claims not re-verified were
+dropped.
+
+## Log
+
+- 2026-11-07 — `7e5f723c` — Board read; `COORDINATION.md` did not exist on this branch at start (branch cut from
+  `d93299c` before the board's later sections); read the full board from `origin/main` before acting. Claimed
+  S1–S3, committed and pushed the claim immediately.
+- 2026-11-07 — `7e5f723c` — S1 done: verification trail in `trip-lever/verification-2026-11-07.md`
+  (10 CSLB records + name search + 2 statutes + 2 classification/hiring pages + 2 publishers + 9 company pages).
+- 2026-11-07 — `7e5f723c` — S2 done: data-first rebuild of the eight root pages; README banner added;
+  `EXECUTIVE-SUMMARY.md` rewritten to mirror the verified data (it previously listed six candidates and carried
+  statements not re-verified in this pass).
+- 2026-11-07 — `7e5f723c` — S3: `origin/main` merged (PRs #36–#41). Conflicts in the eight HTML pages resolved by
+  regeneration with the concurrent sessions' findings carried forward; board and test conflicts resolved as
+  described above. PR and Pages deploy result recorded below once known.
