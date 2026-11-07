@@ -9,7 +9,7 @@ Scope: root dashboard (seven HTML pages). This is not a line-by-line verificatio
 - [Expert #977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638), [Bay Area #757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), [Fast Response #1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971): active C-36 and phone, data current 2026-11-07. Bay Area reports exemption from workers' comp based on no employees. These records do not substantiate the quoted amounts or identify the original issuer.
 - [SF DBI](https://www.sf.gov/apply-plumbing-and-mechanical-permit): states a permit is needed before cutting into or replacing pipes, particularly concealed; cites exemptions. This is general guidance, not a determination for a particular repair.
 - Yelp profile direct retrieval returned HTTP 403. Search result snippets indicated relevant but not identical work; dynamic scores and counts were omitted. Company's own customer reviews are self-selected; none proves this precise job. No provider was contacted; availability, precise experience, combined quote and job acceptance remain unverified.
-- An attempted Oatey URL served a page-not-found response and is not used as evidence. The existing site incorrectly claimed all rows were sourced and presented some unverified ratings and estimates as verified; corrected in the root dashboard, while earlier microsites remain outside the claimed scope.
+- An attempted Oatey URL served a page-not-found response and is not used as evidence. The earlier site incorrectly claimed all rows were sourced and presented unverified ratings and estimates as verified. Concurrent session `arena/aef4e1b0-korea7` independently revised the root dashboard; its version was retained in the integration conflict. Earlier microsites remain outside this verification scope.
 
 ## Verification limits
 
@@ -17,4 +17,4 @@ Internal link and row-source checks are performed separately on the seven root p
 
 ## Static validation
 
-On 2026-11-07, parsed the seven root HTML pages: 28 table data rows each contain an official source/context link; all local page, CSS, and fragment links resolved; `git diff --check` passed. This does not validate the older page sets or guarantee availability of remote sites. Yelp direct access remained blocked and is explicitly flagged.
+The initial independent revision was checked locally, but was superseded during integration by the concurrent session’s root dashboard. That session provides `tests/test_dashboard_integrity.py` for the retained pages; re-run it after integration. This does not validate the older page sets or guarantee availability of remote sites. Yelp direct access remained blocked and is explicitly flagged.
