@@ -1,0 +1,236 @@
+[
+  {
+    "id": "cslb-check",
+    "label": "CSLB — Check a License (official lookup)",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+    "publisher": "Contractors State License Board (CA)",
+    "kind": "Official — government",
+    "verifies": "Entry point used for every license record below; CSLB publishes license status, classifications, bond and workers' compensation data — it does not publish job prices or reviews.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-c36",
+    "label": "CSLB classification C-36 Plumbing Contractor",
+    "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Official definition of the C-36 plumbing trade.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-b",
+    "label": "CSLB classification B General Building Contractor",
+    "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Official definition of the B general building classification.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-c9",
+    "label": "CSLB classification C-9 Drywall Contractor",
+    "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Official definition of the C-9 drywall trade.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-hire",
+    "label": "CSLB — Finding the right contractor (consumer guide)",
+    "url": "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Consumer rules: $25,000 contractor bond; down payment capped at 10% or $1,000 (whichever is less); verify workers' compensation and liability insurance.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "bpc-7048",
+    "label": "California Business & Professions Code § 7048",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+    "publisher": "California Legislative Information",
+    "kind": "Official — government",
+    "verifies": "Minor-work exemption from contractor licensing: aggregate contract price under $1,000 (as amended by AB 1170, effective 2026-01-01); the exemption does not apply where a building permit is required or where the person employs others.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "bpc-7057",
+    "label": "California Business & Professions Code § 7057",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057",
+    "publisher": "California Legislative Information",
+    "kind": "Official — government",
+    "verifies": "Definition of a Class B general building contractor: a contract must involve at least two unrelated building trades or crafts other than framing/carpentry, unless the contractor holds (or subcontracts to) the relevant specialty license.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "civ-1954",
+    "label": "California Civil Code § 1954 (landlord entry to make repairs)",
+    "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+    "publisher": "California Legislative Information",
+    "kind": "Official — government",
+    "verifies": "A landlord may enter to make necessary or agreed repairs; reasonable written notice (24 hours presumed reasonable) stating date, approximate time and purpose; entry during normal business hours unless the tenant consents; landlord and tenant may agree orally to an entry for agreed repairs within one week.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "sf-plumbing-permit",
+    "label": "SF.gov — Apply for a plumbing and mechanical permit",
+    "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+    "publisher": "City and County of San Francisco (DBI)",
+    "kind": "Official — government",
+    "verifies": "City guidance on when a plumbing permit is required (including before cutting into or replacing pipes behind walls, with exemptions listed in SF Plumbing Code § 104.2) and which license classes may apply (A; B subject to conditions; C-4; C-36; C-16; C-20; C-54). DBI Help Desk 628-652-4900.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "sf-kb-permit",
+    "label": "SF.gov — Apply for a kitchen or bath remodel permit",
+    "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+    "publisher": "City and County of San Francisco (DBI)",
+    "kind": "Official — government",
+    "verifies": "City guidance for bathroom work; for R-2 apartment buildings the property owner may perform drywall/sheetrock work but must hire licensed contractors for plumbing and electrical.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "oatey",
+    "label": "Oatey — Dearborn plastic tubular trip-lever bath waste (manufacturer specification)",
+    "url": "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+    "publisher": "Oatey Co. (manufacturer)",
+    "kind": "Official — manufacturer",
+    "verifies": "Component identification: a trip-lever bath waste is a full waste-and-overflow kit (e.g., Part #A9226 UPC 041193058379 black polypropylene; Part #P9226 UPC 041193057099 white polypropylene) with a chrome-finish trip-lever stopper assembly.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "generalsf",
+    "label": "General SF — Building services page (company site)",
+    "url": "https://generalsf.com/building",
+    "publisher": "General SF (official company site)",
+    "kind": "Official — company",
+    "verifies": "Company advertises both plumbing (rough and finish) and sheetrock / tape and texture; site references CSLB #959843.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "handyman",
+    "label": "Handyman Heroes — Handyman services page (company site)",
+    "url": "https://www.handymanhero.es/handyman-services/",
+    "publisher": "Handyman Heroes Inc (official company site)",
+    "kind": "Official — company",
+    "verifies": "Company advertises sheetrock and wall repairs and plumbing services.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "ace",
+    "label": "Ace Plumbing & Rooter — home page (company site)",
+    "url": "https://www.aceplumbingandrooter.com/",
+    "publisher": "Ace Plumbing & Rooter (official company site)",
+    "kind": "Official — company",
+    "verifies": "Company states license classes A, B, C-4, C-10, C-16, C-36 and lists HOA / property-manager services; no drywall service statement was seen on the page viewed.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "yelp",
+    "label": "Yelp business page (third-party review platform) — retrieval attempt",
+    "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+    "publisher": "Yelp (third-party; not an official source)",
+    "kind": "Third-party — not official",
+    "verifies": "Nothing. Automated retrieval returned HTTP 403 on 2026-11-07, so no rating or review count is published anywhere on this site. Listed only to document the attempt.",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-977638",
+    "label": "CSLB license detail #977638 — EXPERT PLUMBING SOLUTIONS",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-757796",
+    "label": "CSLB license detail #757796 — BAY AREA PLUMBING",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-1024971",
+    "label": "CSLB license detail #1024971 — JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-959843",
+    "label": "CSLB license detail #959843 — GENERALSF",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-1003394",
+    "label": "CSLB license detail #1003394 — HANDYMAN HEROES INC",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-829071",
+    "label": "CSLB license detail #829071 — ACE PLUMBING & ROOTER",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-1025814",
+    "label": "CSLB license detail #1025814 — THE GENTEEL PLUMBERS INC",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-1115649",
+    "label": "CSLB license detail #1115649 — RAPID FLOW PLUMBING & ROOTER INC",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-841229",
+    "label": "CSLB license detail #841229 — MANNY'S PLUMBING & ROOTER",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-1089561",
+    "label": "CSLB license detail #1089561 — TARO GROUP INC dba HEISES PLUMBING",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Business name, address, phone, entity, issue/expiry dates, status, classifications, bond and workers' compensation data (CSLB data-current stamp 2026-11-07).",
+    "read_date": "2026-11-07"
+  },
+  {
+    "id": "cslb-complaint-1003394",
+    "label": "CSLB complaint disclosure for license #1003394 (Handyman Heroes Inc)",
+    "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+    "publisher": "CSLB",
+    "kind": "Official — government",
+    "verifies": "Citation #2 2020 001045 dated 07/12/2020 is publicly disclosed under B&P § 7124.6.",
+    "read_date": "2026-11-07"
+  }
+]

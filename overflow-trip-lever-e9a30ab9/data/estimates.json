@@ -1,0 +1,56 @@
+[
+  {
+    "n": 1,
+    "company_as_written": "Expert plumbing solutions",
+    "cslb_business_name": "EXPERT PLUMBING SOLUTIONS",
+    "license_number": "977638",
+    "license_status": "Current and active",
+    "classifications": [
+      "C-36"
+    ],
+    "scope_as_reported_by_requester": "Remove bathtub wastewater overflow trip lever — “Replacing waste and overflow”",
+    "verified_amount_usd": null,
+    "verified_date": null,
+    "verification": "UNVERIFIED — amount and date exist only in the requester's brief",
+    "requester_reported_amount_text": "$614",
+    "brief_list_heading_date": "8/30/26",
+    "source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+    "read_date": "2026-11-07"
+  },
+  {
+    "n": 2,
+    "company_as_written": "Bay Area plumbing",
+    "cslb_business_name": "BAY AREA PLUMBING",
+    "license_number": "757796",
+    "license_status": "Current and active",
+    "classifications": [
+      "C-36"
+    ],
+    "scope_as_reported_by_requester": "“Replace lever for the bathtub plug and spout with diverter includes labor and materials”",
+    "verified_amount_usd": null,
+    "verified_date": null,
+    "verification": "UNVERIFIED — amount and date exist only in the requester's brief",
+    "requester_reported_amount_text": "$550",
+    "brief_list_heading_date": "8/30/26",
+    "source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+    "read_date": "2026-11-07"
+  },
+  {
+    "n": 3,
+    "company_as_written": "Fast response",
+    "cslb_business_name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+    "license_number": "1024971",
+    "license_status": "Current and active",
+    "classifications": [
+      "C-36"
+    ],
+    "scope_as_reported_by_requester": "“repair or adjust bath tub wastewater plunger handle”",
+    "verified_amount_usd": null,
+    "verified_date": null,
+    "verification": "UNVERIFIED — amount and date exist only in the requester's brief",
+    "requester_reported_amount_text": "$135",
+    "brief_list_heading_date": "8/30/26",
+    "source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+    "read_date": "2026-11-07"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "F01",
+    "type": "unverified",
+    "item": "Estimate amounts (three figures reported in the brief)",
+    "detail": "No written quote or official publication confirms them; CSLB publishes no prices. Shown blank on the Estimates table; repeated only as requester-reported prose.",
+    "action": "Obtain written quotes on company letterhead and attach them as sources.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    ]
+  },
+  {
+    "id": "F02",
+    "type": "unverified",
+    "item": "Estimate dates",
+    "detail": "The brief has a single heading date (8/30/26); nothing confirms the date of each individual estimate.",
+    "action": "Confirm dates from the written quotes.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "F03",
+    "type": "unverified",
+    "item": "Review-platform ratings (Yelp)",
+    "detail": "Yelp returned HTTP 403 to automated retrieval on 2026-11-07; no rating or count was captured. Third-party ratings are not official in any case.",
+    "action": "Review Yelp manually if desired; rely on CSLB for licence status.",
+    "sources": [
+      "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "F04",
+    "type": "warn",
+    "item": "Handyman Heroes Inc — complaint disclosure",
+    "detail": "CSLB discloses Citation #2 2020 001045 dated 07/12/2020 under B&P § 7124.6.",
+    "action": "Read the disclosure before engaging; ask the company about it.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394"
+    ]
+  },
+  {
+    "id": "F05",
+    "type": "warn",
+    "item": "Workers' compensation exemptions",
+    "detail": "Bay Area Plumbing (#757796), General SF (#959843), Rapid Flow (#1115649) and Manny's (#841229) are exempt because they certified having no employees.",
+    "action": "Ask who will physically perform the work; if anyone other than the licensee attends, request proof of coverage.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229"
+    ]
+  },
+  {
+    "id": "F06",
+    "type": "unverified",
+    "item": "Advertised drywall service — Ace, Genteel, Rapid Flow, Manny's",
+    "detail": "Ace's home page shows licence classes and property-manager services but no drywall statement; the other three company sites were not retrieved. Licence scope permits the work, but the service offer is unconfirmed.",
+    "action": "Ask each for a single written scope covering plumbing, ceiling access and restoration.",
+    "sources": [
+      "https://www.aceplumbingandrooter.com/",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229"
+    ]
+  },
+  {
+    "id": "F07",
+    "type": "unverified",
+    "item": "May a C-36 plumber patch the ceiling as incidental work?",
+    "detail": "The CSLB rule on incidental and supplemental work was not read by this session, so the question is left open rather than answered.",
+    "action": "Ask CSLB or the contractor to cite the rule; otherwise use a B + C-36 licensee.",
+    "sources": [
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
+    ]
+  },
+  {
+    "id": "F08",
+    "type": "unverified",
+    "item": "Job-specific experience in tenant-occupied units",
+    "detail": "No official source records whether a company has freed a seized trip lever from below or worked in occupied units; CIV § 1954 gives the entry/notice frame only.",
+    "action": "Request references for comparable jobs in writing.",
+    "sources": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"
+    ]
+  },
+  {
+    "id": "F09",
+    "type": "info",
+    "item": "Fast Response CSLB address spelling",
+    "detail": "The official record prints “236 W POTRAL AVE #459” (apparently “Portal”); this site shows it as printed.",
+    "action": "Confirm the mailing address with the company; the licence number is the identifier.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    ]
+  },
+  {
+    "id": "F10",
+    "type": "info",
+    "item": "Nearest licence and insurance expiries",
+    "detail": "Fast Response workers' compensation policy expires 12/18/2026; Bay Area Plumbing licence expires 01/31/2027; Genteel WC expires 01/24/2027; Heises WC expires 01/11/2027.",
+    "action": "Re-check the CSLB record on the day of hiring.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    ]
+  },
+  {
+    "id": "F11",
+    "type": "info",
+    "item": "Heises Plumbing — not an all-in-one candidate on classification",
+    "detail": "Holds C-36, C-10, A and C-20 but neither B nor C-9.",
+    "action": "None; listed for completeness because earlier repository pages mention it.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561"
+    ]
+  },
+  {
+    "id": "F12",
+    "type": "warn",
+    "item": "Repository: root dashboard rows without official links and unverified values in cells (RR-01, RR-02, RR-03, RR-04, RR-07)",
+    "detail": "See the Repository review for exact lines.",
+    "action": "Owner of the root pages to reconcile with the blank-cell rule (logged in COORDINATION.md).",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "F13",
+    "type": "warn",
+    "item": "Repository: legacy page sets and CSV (RR-09, RR-10, RR-11, RR-12)",
+    "detail": "Older overflow pages print reported amounts, cite Yelp search pages as sources, and carry an incomplete permit licence-class list; the docs/bath tests lock in printed amounts.",
+    "action": "Add a historical notice or bring the pages up to the rule.",
+    "sources": [
+      "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "https://www.yelp.com/biz/general-sf-san-francisco-2"
+    ]
+  },
+  {
+    "id": "F14",
+    "type": "info",
+    "item": "Repository identity (RR-13)",
+    "detail": "README.md and several docs/ pages describe an unrelated geothermal project served from the same Pages root.",
+    "action": "Add a README pointer to the plumbing dashboards (README owned by another session).",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "F15",
+    "type": "info",
+    "item": "Szeto Plumbing and Handyman (named on root pages)",
+    "detail": "Root pages state no matching CSLB record; this session did not repeat the business-name search.",
+    "action": "Run the CSLB name search before considering this company.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  }
+]

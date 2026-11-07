@@ -1,0 +1,91 @@
+[
+  {
+    "topic": "Who may do the plumbing",
+    "rule": "C-36 Plumbing Contractor is the CSLB classification covering plumbing systems; all ten licensees on this site hold it.",
+    "applies": "The concealed waste-and-overflow assembly is plumbing work.",
+    "sources": [
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "topic": "Who may do the drywall",
+    "rule": "C-9 Drywall Contractor is the CSLB classification covering drywall; none of the ten licensees holds C-9. A Class B General Building Contractor may contract for work involving at least two unrelated trades or crafts other than framing/carpentry, or hold/subcontract the specialty licence (BPC § 7057).",
+    "applies": "The ceiling opening and restoration under the storage unit.",
+    "sources": [
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057"
+    ]
+  },
+  {
+    "topic": "Licensing threshold",
+    "rule": "BPC § 7048 exempts work whose aggregate contract price for labour, materials and all other items is under $1,000 (as amended by AB 1170, effective 2026-01-01), but the exemption does not apply where a building permit is required or where the person employs others.",
+    "applies": "Context only — the requester asked for a licensed provider regardless of price.",
+    "sources": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048"
+    ]
+  },
+  {
+    "topic": "City plumbing-permit guidance",
+    "rule": "SF.gov: apply for a plumbing permit before cutting into or replacing pipes behind walls; exemptions are listed in SF Plumbing Code § 104.2. Licence classes accepted for plumbing permits: A; B (subject to conditions such as an approved scope or a linked kitchen/bath permit); C-4; C-36; C-16; C-20; C-54. DBI Help Desk 628-652-4900.",
+    "applies": "Official reference for the concealed-pipe work described in the brief; applicability to a specific job is determined by the City, not by this site.",
+    "sources": [
+      "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    ]
+  },
+  {
+    "topic": "Owner-performed work in apartment buildings",
+    "rule": "SF.gov kitchen/bath remodel guidance: for R-2 apartment buildings the property owner may do drywall/sheetrock work but must hire licensed contractors for plumbing and electrical.",
+    "applies": "Alternative split of the drywall and plumbing scopes if a single provider cannot be engaged.",
+    "sources": [
+      "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit"
+    ]
+  },
+  {
+    "topic": "Entering a tenant-occupied unit",
+    "rule": "CIV § 1954: a landlord may enter to make necessary or agreed repairs; reasonable written notice stating date, approximate time and purpose (24 hours presumed reasonable), entry during normal business hours unless the tenant consents; landlord and tenant may agree orally to an entry for agreed repairs within one week; access must not be abused.",
+    "applies": "The bathroom is tenant-occupied; the storage unit below may also require coordination.",
+    "sources": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"
+    ]
+  },
+  {
+    "topic": "Bond",
+    "rule": "CSLB requires licensed contractors to carry a $25,000 contractor's bond; each record on this site shows the bond and surety.",
+    "applies": "All ten records show a $25,000 bond on file.",
+    "sources": [
+      "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "topic": "Workers' compensation",
+    "rule": "CSLB consumer guidance: confirm workers' compensation (and liability) insurance. A CSLB exemption means the licensee certified it has no employees.",
+    "applies": "Four candidates are WC-exempt (Bay Area Plumbing, General SF, Rapid Flow, Manny's) — confirm who will physically perform the work.",
+    "sources": [
+      "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229"
+    ]
+  },
+  {
+    "topic": "Down payment",
+    "rule": "CSLB consumer guidance: a home-improvement down payment may not exceed 10% of the contract price or $1,000, whichever is less.",
+    "applies": "Applies to the written contract with whichever provider is engaged.",
+    "sources": [
+      "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx"
+    ]
+  },
+  {
+    "topic": "Complaint disclosure",
+    "rule": "CSLB discloses certain citations and actions under B&P § 7124.6 via a link on the licence detail page.",
+    "applies": "Handyman Heroes Inc (#1003394) shows Citation #2 2020 001045 dated 07/12/2020; no disclosure link was shown for the other nine records.",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394"
+    ]
+  }
+]

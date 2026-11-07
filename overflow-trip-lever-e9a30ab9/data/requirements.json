@@ -1,0 +1,142 @@
+[
+  {
+    "id": "R1",
+    "category": "Problem",
+    "requirement": "Free or remove a bathtub wastewater overflow trip lever that is seized inside the concealed waste-and-overflow plumbing behind the bathroom wall.",
+    "basis": "Requester-stated condition. Component type confirmed against the manufacturer specification: a trip-lever bath waste is a complete waste-and-overflow assembly with a trip-lever stopper, so the seized part sits inside the overflow/waste tube.",
+    "status": "Requester-stated; component type verified",
+    "sources": [
+      "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste"
+    ]
+  },
+  {
+    "id": "R2",
+    "category": "Access",
+    "requirement": "Attempt removal from above first (preferred) and only open walls/ceilings if that cannot be done safely.",
+    "basis": "Requester preference. Plumbing on the concealed assembly is C-36 trade work under the official CSLB classification.",
+    "status": "Requester-stated; trade scope verified",
+    "sources": [
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36"
+    ]
+  },
+  {
+    "id": "R3",
+    "category": "Access",
+    "requirement": "Be prepared to work from below through the storage unit's drywall ceiling and restore the ceiling afterwards.",
+    "basis": "Requester-stated fallback recommended by the plumbers consulted. Ceiling opening/patching is drywall work (CSLB C-9 trade); the City's permit guidance addresses work on pipes behind walls.",
+    "status": "Requester-stated; trade scope verified",
+    "sources": [
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    ]
+  },
+  {
+    "id": "R4",
+    "category": "Provider",
+    "requirement": "One licensed provider for both plumbing and drywall (all-in-one service).",
+    "basis": "Under CSLB classifications a C-36 licence covers plumbing and C-9 covers drywall; a Class B general building contractor may take a contract involving two or more unrelated trades (BPC § 7057). Six active B + C-36 licensees were found in San Francisco / Daly City — see Contractors.",
+    "status": "Verified — candidates identified",
+    "sources": [
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057",
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9"
+    ]
+  },
+  {
+    "id": "R5",
+    "category": "Provider",
+    "requirement": "Provider must be a licensed plumber or contractor.",
+    "basis": "Every candidate on this site was checked against the official CSLB record on 2026-11-07 (status, classifications, bond, workers' compensation). Note BPC § 7048: the licensing exemption for jobs under $1,000 does not apply where a building permit is required or where the person employs others.",
+    "status": "Verified via CSLB",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048"
+    ]
+  },
+  {
+    "id": "R6",
+    "category": "Provider",
+    "requirement": "Experience with delicate work in an occupied unit; ability to work around tenants.",
+    "basis": "No official source rates job-specific experience; it must be asked for in writing. The legal frame for entering an occupied unit is CIV § 1954: entry to make necessary or agreed repairs, reasonable written notice (24 hours presumed reasonable) stating date, approximate time and purpose, during normal business hours, or an oral agreement with the tenant for agreed repairs within one week.",
+    "status": "Partly verifiable — legal frame verified, experience must be confirmed with provider",
+    "sources": [
+      "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"
+    ]
+  },
+  {
+    "id": "R7",
+    "category": "Provider",
+    "requirement": "Serves San Francisco.",
+    "basis": "CSLB business addresses: nine candidates are in San Francisco; Manny's Plumbing & Rooter is in Daly City (adjacent). Service area itself is a company statement, not a CSLB field.",
+    "status": "Address verified via CSLB",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "R8",
+    "category": "Provider",
+    "requirement": "Positive reviews on Yelp or similar platforms for this type of work.",
+    "basis": "Yelp returned HTTP 403 to automated retrieval on 2026-11-07; no rating or review count could be captured, so none is shown. Review platforms are third-party sources in any case and cannot verify licence status — use the CSLB record for that.",
+    "status": "UNVERIFIED — platform inaccessible",
+    "sources": [
+      "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "R9",
+    "category": "Budget",
+    "requirement": "Organise and analyse the three estimates received (list headed 8/30/26).",
+    "basis": "Company identities verified via CSLB; the reported scopes and amounts come only from the requester's brief (no written quotes were supplied) and are therefore not shown as verified values — see Estimates.",
+    "status": "Amounts UNVERIFIED",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971"
+    ]
+  },
+  {
+    "id": "R10",
+    "category": "Contracting",
+    "requirement": "Contractor must carry the required $25,000 contractor's bond and have workers' compensation coverage or a valid exemption.",
+    "basis": "CSLB consumer guide; every candidate's bond and workers' compensation data is tabulated on the Contractors page from the official record.",
+    "status": "Verified for all 10 records",
+    "sources": [
+      "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx",
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  },
+  {
+    "id": "R11",
+    "category": "Contracting",
+    "requirement": "Down payment must not exceed 10% of the contract price or $1,000, whichever is less; get a written contract with a single scope covering plumbing, access and restoration.",
+    "basis": "CSLB consumer guide (home-improvement down-payment rule). The written-scope recommendation is this review's analysis.",
+    "status": "Rule verified",
+    "sources": [
+      "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx"
+    ]
+  },
+  {
+    "id": "R12",
+    "category": "Compliance",
+    "requirement": "Follow City plumbing-permit guidance for work on pipes behind walls; use a licence class the City accepts for plumbing permits.",
+    "basis": "SF.gov: a plumbing permit is required before cutting into or replacing pipes behind walls (exemptions in SF Plumbing Code § 104.2); classes accepted for plumbing permits include A, B (subject to conditions), C-4, C-36, C-16, C-20 and C-54. For R-2 apartment buildings the owner may perform drywall/sheetrock work but must hire licensed contractors for plumbing.",
+    "status": "Official guidance recorded",
+    "sources": [
+      "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit"
+    ]
+  },
+  {
+    "id": "R13",
+    "category": "Documentation",
+    "requirement": "Publish all findings with an official source on every table row; leave unconfirmed values blank and flagged.",
+    "basis": "Met by construction: the generator and the test suite reject any table row without an https:// official link and render unconfirmed values as blank UNVERIFIED cells.",
+    "status": "Enforced by tests",
+    "sources": [
+      "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx"
+    ]
+  }
+]
