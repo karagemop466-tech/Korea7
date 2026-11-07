@@ -546,3 +546,85 @@ integration task T5 (same session in this run — single-session execution).
 - 2026-11-06 — `d5c5d85b` — Merged `origin/main` into this branch (PRs #21–#33 had landed mid-flight). Add/add conflicts resolved: (a) root `index.html` — this session's dashboard now serves the site root; the parallel session's microsite subpages under `bathtub-overflow/` are fully preserved and linked from the root's repository note (their superseded hub content is not deleted); (b) `COORDINATION.md` — the complete `origin/main` board (all sessions, verbatim) is preserved above, this session's section appended below the separator, per the PR #25 precedent.
 - 2026-11-06 — `d5c5d85b` — **Privacy scrub (standing constraint, applies to every published file):** neutralized non-compliant wording that parallel sessions had published in `index.html` (superseded in the conflict resolution above), `README.md`, `EXECUTIVE-SUMMARY.md`, `bathtub-overflow/{analysis,executive-summary,flagged-for-review,methodology,permits-compliance,problem-scope}.html`, `docs/{overflow-executive-summary,overflow-sources,overflow-verification-flags,plumbing-index,overflow-verification.json}`, and two meta lines in this board. Pages, flag IDs (F4/A1 slots), and official-source citations were kept intact — only the forbidden wording changed. Sweep grep across all HTML/MD/CSS/JS/JSON: zero matches. No other session's substantive content was otherwise changed; this entry documents the handoff edit transparently.
 - 2026-11-06 — `d5c5d85b` — **PR #34 MERGED** to `main` as `2ec8f5e` (https://github.com/karagemop466-tech/Korea7/pull/34): dashboard site, research/verification artifacts, main integration, privacy scrub. The GitHub Pages build for `2ec8f5e` (run 42234169692) failed at the **deploy** step (build job succeeded — same flaky deploy pattern recorded earlier on this board); `main` therefore still serves the previous deploy of `7543403`. This follow-up commit/PR re-triggers the Pages build from `main`; live-site confirmation of the new dashboard follows and is recorded in the next log entry.
+
+---
+
+# Session `arena/0aa661e4-korea7` — board (appended 2026-11-07)
+
+> **Why appended, not edited:** the boards above are preserved verbatim. This session
+> read every prior board first; nothing was claimed by an active session at read time
+> (all prior sessions' tasks are `done` except `d5c5d85b` T5 and `arena-a9ed5ccf` #6,
+> whose own owners closed out via PRs #34/#35). Per the 60-minute takeover rule this
+> session continues the unfinished work rather than duplicating it.
+>
+> **Platform constraint (same as every prior session):** the runtime pins all work to
+> `arena/0aa661e4-korea7` and forbids creating other branches, so the
+> `session-<id>/<task>` branch convention is approximated by non-overlapping file
+> scopes on this single branch. This session works only on the root dashboard
+> (`index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`,
+> `sources.html`, `flagged.html`), the new `solutions.html`, the new
+> `data/overflow-*.json` files, `tests/test_overflow_site.py`, and this board. It does
+> **not** edit `docs/bath/**`, `docs/overflow-*.html`, `bathtub-overflow/**`, the GEMS
+> files, or `docs/index.html`.
+
+## Task board — session `arena/0aa661e4-korea7`
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| A1 | Live re-verification of every license and official source cited on the dashboard (2026-11-07 data date) | in progress | `arena/0aa661e4-korea7` | `data/overflow-verification-2026-11-07.json`, `verification-2026-11-07.md` |
+| A2 | **New research pass:** single-provider (plumbing + drywall) candidates for this specific job; Yelp snapshots re-captured 2026-11-07; CSLB check on every added license | in progress | `arena/0aa661e4-korea7` | `data/overflow-providers.json`, `solutions.html` |
+| A3 | Line-by-line correction pass on the root dashboard (stale "verified 2026-11-06" stamps, internally inconsistent review counts, blank-where-unverified rule) | in progress | `arena/0aa661e4-korea7` | `index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`, `sources.html`, `flagged.html` |
+| A4 | Tests: enforce one source link per data row, internal links resolve, no permit-strategy language, blank-not-inferred values | in progress | `arena/0aa661e4-korea7` | `tests/test_overflow_site.py` |
+| A5 | Integration: re-verify combined data, link check, PR to `main`, merge, confirm Pages deploy, record result here | in progress | `arena/0aa661e4-korea7` | `COORDINATION.md` |
+
+**Claim note:** no other session is active in this checkout (`git branch -a` shows only
+`main` + this branch; the last commit on `main` is the PR #35 merge). If another
+session starts, these five IDs are claimed and its owner must not edit files above.
+
+## Verification results — 2026-11-07 (A1)
+
+All eight previously cited licenses were re-read today from the official CSLB
+license-detail pages. Every record still prints **"This license is current and
+active."** Data-current stamps read 11/7/2026 12:21–12:24 PM.
+
+| License | Business on CSLB record | Status | Expires | Classes | WC |
+|---|---|---|---|---|---|
+| [977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) | EXPERT PLUMBING SOLUTIONS | current and active | 2028-10-31 | C-36 | insured (2026-07-19 → 2027-07-19) |
+| [757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) | BAY AREA PLUMBING | current and active | 2027-01-31 | C-36 | exempt, no employees |
+| [1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) | JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER | current and active | 2027-03-31 | C-36 | insured (2025-12-18 → 2026-12-18) |
+| [959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) | GENERALSF | current and active | 2027-04-30 | B, C-10, C-36 | exempt, no employees |
+| [1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) | HANDYMAN HEROES INC | current and active | 2027-05-31 | B, C-36 | insured (2026-04-25 → 2027-04-25) |
+| [829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) | ACE PLUMBING & ROOTER | current and active | 2027-06-30 | C-36, A, C-4, C-16, B, C-10 | insured (2026-07-13 → 2027-07-13) |
+| [1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) | THE GENTEEL PLUMBERS INC | current and active | 2027-04-30 | C-36, B | insured (2026-01-24 → 2027-01-24) |
+| [868994](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994) | ATLAS PLUMBING & ROOTER | current and active | 2028-03-31 | C-36, A | employee service group policy (2026-07-01 → 2027-07-01) |
+| [1089561](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561) | TARO GROUP INC dba HEISES PLUMBING | current and active | 2028-04-30 | C-36, C-10, A, C-20 | insured (2026-01-11 → 2027-01-11) |
+| [1140843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843) | DISCOUNT PLUMBING ROOTER SERVICES LLC | current and active | 2027-07-31 | C-36, A | insured (2025-04-01 → 2027-04-01) |
+
+Also re-read today, unchanged: CSLB complaint disclosure for
+[#1003394](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394)
+(citation 2 2020 001045, 2020-07-12, "FOR DISCLOSURE ONLY PER B&P CODE 7124.6"),
+B&P §7048 current text (amended by Stats. 2025, Ch. 67 (AB 1170), effective 2026-01-01,
+threshold **$1,000** and "does not require a building permit"), CSLB C-36 / C-9 / B
+classification text, and sf.gov "Apply for a plumbing and mechanical permit."
+
+## Irregularities found this session (published on `flagged.html`)
+
+1. **Internal inconsistency (pre-existing, root dashboard):** Bay Area Plumbing's review
+   count appears as **175** on `index.html`, `estimates.html` and `summary.html` but
+   **168** in `docs/bath/data/contractors.json`; the Yelp 94122 snapshot read today
+   shows **168**. General SF appears as 336 and 338 in different places; the snapshot
+   read today shows **337** (Oct 2026) / **335** (Nov 2026 94122). Treat counts as
+   snapshots and show one capture date per value.
+2. **Stale verification stamps:** every root page still says "checked 2026-11-06"; the
+   licenses were re-read 2026-11-07 and the records still match, so the stamps are being
+   updated to the new date with both dates recorded.
+3. **`assets/site.css` has no `.mark` / `.muted` rules** although every page uses them
+   in the brand lockup — cosmetic only, flagged, fixed by adding the two rules.
+4. **Four overlapping project page-sets still coexist** (`/` dashboard,
+   `docs/bath/`, `docs/overflow-*.html`, `bathtub-overflow/`) with different review
+   counts for the same companies. Per the brief's rule that the site index and table
+   data are changed only by the integration session, this session designates the root
+   dashboard as canonical and adds a single "Other page sets" note rather than deleting
+   another session's work.
+5. **Unverified candidates carried forward from prior sessions** with no CSLB record:
+   Szeto Plumbing and Handyman (# blank). Still blank today; not inferred.
