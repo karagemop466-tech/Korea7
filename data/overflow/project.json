@@ -1,0 +1,43 @@
+{
+  "title": "Bathtub wastewater overflow trip lever repair",
+  "short_title": "Overflow Trip Lever",
+  "subtitle": "San Francisco · concealed waste-and-overflow repair",
+  "location": "San Francisco, California",
+  "updated": "2026-11-07",
+  "cslb_data_current": "11/7/2026",
+  "yelp_captured": "2026-11-07",
+  "intro": "The trip lever is seized inside the concealed waste-and-overflow plumbing behind the bathroom wall. Removing it from above has not worked; the reported fallback is access from below, through the ceiling of the storage unit, which means opening and later patching drywall. This dashboard organises the three quotes received on 2026-08-30, eleven San Francisco contractor candidates checked against the State licence database, independent cost benchmarks, the hiring plan, and every item that still needs a human decision.",
+  "problem_facts": [
+    {
+      "item": "Failed component",
+      "detail": "Bathtub wastewater overflow trip lever, stuck inside the concealed waste-and-overflow plumbing behind the wall.",
+      "status": "owner-provided"
+    },
+    {
+      "item": "Access problem",
+      "detail": "The overflow is in a hard-to-reach area. More than five licensed plumbers reportedly would not remove it from above for fear of damaging the hidden plumbing.",
+      "status": "owner-provided"
+    },
+    {
+      "item": "Reported fallback",
+      "detail": "Work from below, through the storage unit underneath. May require opening the drywall ceiling to reach the plumbing.",
+      "status": "owner-provided"
+    },
+    {
+      "item": "Preferred outcome",
+      "detail": "Remove the overflow from above if it can be done without damaging the concealed assembly.",
+      "status": "owner-provided"
+    },
+    {
+      "item": "Service requirement",
+      "detail": "One provider for drywall and plumbing on a single job, experienced with delicate work in a tenant-occupied unit.",
+      "status": "owner-provided"
+    },
+    {
+      "item": "Location",
+      "detail": "San Francisco, California.",
+      "status": "owner-provided"
+    }
+  ],
+  "quote_date_as_stated": "8/30/26"
+}

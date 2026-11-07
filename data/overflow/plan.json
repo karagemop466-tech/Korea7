@@ -1,0 +1,111 @@
+{
+  "captured": "2026-11-07",
+  "intro": "A seven-step plan that turns this dashboard into a booked, insured, scoped job. Nothing here needs a permit decision from you in advance — it is a hiring and verification sequence.",
+  "shortlist_order": [
+    {
+      "rank": "1",
+      "who": "Ace Plumbing & Rooter — CSLB #829071",
+      "why": "B + C-36 + A + C-4 + C-10 + C-16 on one licence, insured, and an established HOA / property-manager practice. Broadest capability and the cleanest single-contract fit.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_label": "CSLB #829071"
+    },
+    {
+      "rank": "2",
+      "who": "Genteel Plumbers — CSLB #1025814",
+      "why": "B + C-36 on one licence, insured, active bond. Smaller firm, 24/7 availability.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "source_label": "CSLB #1025814"
+    },
+    {
+      "rank": "3",
+      "who": "Handyman Heroes — CSLB #1003394",
+      "why": "B + C-36 plus an explicit handyman/drywall service line, insured, and reviews that mention using them for both handyman and plumbing work. Note the complaint disclosure on the record.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "source_label": "CSLB #1003394"
+    },
+    {
+      "rank": "4",
+      "who": "General SF — CSLB #959843",
+      "why": "B + C-36 + C-10 on one licence. Ask about small residential work: its site describes commercial and institutional clients.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "source_label": "CSLB #959843"
+    },
+    {
+      "rank": "5",
+      "who": "The three original quoters — #977638, #757796, #1024971",
+      "why": "All three are licensed and active, but C-36 only. Ask whether they will subcontract the drywall patch or whether a separate patch contractor is needed — then price both halves as one number.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "CSLB — check a licence"
+    }
+  ],
+  "steps": [
+    {
+      "n": "1",
+      "title": "Send the same scope to four firms, not a description of the problem",
+      "body": "Write one page: address, what is stuck, that access from above has failed, that below-access through the storage-unit ceiling may be required, that the unit is occupied, and that you want one contract covering plumbing and drywall. Send it unchanged to the four B + C-36 firms and to whoever quoted you before. Identical scope is what makes bids comparable.",
+      "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB — get at least three written bids on identical scope"
+    },
+    {
+      "n": "2",
+      "title": "Ask five questions on the phone before anyone visits",
+      "body": "Answers should be immediate and specific. A firm that has done this work will describe the access route without prompting.",
+      "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB — verifying a contractor"
+    },
+    {
+      "n": "3",
+      "title": "Verify the licence number that appears on the written bid",
+      "body": "Check status, classification, bond and workers' compensation on the official CSLB record, and read the complaint-disclosure section if one is present. The number on the bid must match the number on the record and the number in the company's advertising.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "CSLB — check a licence"
+    },
+    {
+      "n": "4",
+      "title": "Require a written scope with the drywall priced separately",
+      "body": "The quote should itemise the plumbing work, the ceiling opening, the patch and finish, protection of the tenant's belongings, and disposal. Vague “drywall included” language is how a $600 job becomes a $2,100 conversation.",
+      "source_url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "source_label": "Angi — drywall adds about $2,100 when a wall is opened (updated 2026-09-18)"
+    },
+    {
+      "n": "5",
+      "title": "Agree the access plan, the tenant terms and a stop-and-report point",
+      "body": "Confirm where the opening will be cut, how big, how it will be covered while open, the working hours, the notice given to the tenant, and what happens if hidden damage is found. Work beyond the agreed scope should require your approval and a photograph before it starts.",
+      "source_url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "source_label": "Angi — water-damage repair $1,350–$6,100 (updated 2026-10-28)"
+    },
+    {
+      "n": "6",
+      "title": "Put the contract and payment terms in writing",
+      "body": "CSLB guidance: a licensed contractor must give you a written contract on a home improvement project, and cannot ask for a down payment of more than 10% of the contract price or $1,000, whichever is less, unless a blanket performance and payment bond is on file. Both insurance types must be described in the contract. Confirm certificates of insurance before work starts.",
+      "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB — down-payment limit and insurance requirements"
+    },
+    {
+      "n": "7",
+      "title": "Verify on site, then verify the finish",
+      "body": "On the day: match the licence on the truck and business card to CSLB, and confirm the people attending are covered by the insurance you were shown. After the work: test the trip lever and the overflow, confirm the ceiling is patched to the agreed finish, photograph everything before the opening is closed, and keep the signed scope with the invoice.",
+      "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB — verify licence and insurance at the point of hire"
+    }
+  ],
+  "questions": [
+    "Have you freed a seized trip lever inside a concealed waste-and-overflow assembly without opening the wall — and if not, what is your plan?",
+    "Will you open the storage-unit ceiling, and who patches and finishes it afterwards?",
+    "Which licence number will appear on the written bid, and what classifications does it carry?",
+    "Who will be on site, and are they covered by your workers' compensation insurance?",
+    "How do you protect an occupied unit — dust barrier, floor covering, notice, hours, clean-up?"
+  ],
+  "scope_checklist": [
+    "Access route stated: from above, from below, or a two-stage attempt",
+    "Size and location of any opening, and who cuts it",
+    "Plumbing: adjust, replace the trim, or replace the waste-and-overflow assembly — stated explicitly",
+    "Drywall: patch, tape, sand and paint to an agreed finish level, priced as its own line",
+    "Protection: floor coverings, dust barrier, covering of stored items in the storage unit",
+    "Tenant terms: notice period, working hours, access to the unit and to the storage unit",
+    "Disposal of removed material",
+    "Stop-and-report clause: hidden damage inspected, photographed and approved before extra work",
+    "Payment schedule within the CSLB down-payment limit",
+    "Insurance certificates for liability and workers' compensation attached to the contract"
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "captured": "2026-11-07",
+  "rule": "Every source cited anywhere on this site appears here with what it supports and when it was read. Rows marked “read 2026-11-07” were opened directly in this session.",
+  "sources": [
+    {
+      "publisher": "California Contractors State License Board (CSLB)",
+      "type": "Official — licence record",
+      "title": "Licence detail #977638 — Expert Plumbing Solutions",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "supports": "Status, entity, issue/expiry dates, C-36 classification, bond and workers' comp for the $614 quoter.",
+      "read": "read 2026-11-07 (record: data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #757796 — Bay Area Plumbing",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "supports": "Status, classification, bond, and the workers'-compensation exemption for the $550 quoter.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #1024971 — Joseph Tinsley dba Fast Response Plumbing and Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "supports": "Status, classification, address of record, bond and workers' comp for the $135 quoter.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #829071 — Ace Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "supports": "Six classifications including B General Building and C-36 Plumbing; status, bond, workers' comp.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #1025814 — The Genteel Plumbers Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "supports": "B + C-36 classifications; status, bond, workers' comp.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #959843 — GeneralSF",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "supports": "B + C-36 + C-10 classifications; status, bond, and the workers'-compensation exemption.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #1003394 — Handyman Heroes Inc",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "supports": "B + C-36 classifications; status, bond, workers' comp; existence of complaint-disclosure information.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #868994 — Atlas Plumbing & Rooter",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "supports": "C-36 + A classifications; status, bond, workers' comp.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #1089561 — Taro Group Inc dba Heises Plumbing",
+      "url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "supports": "4.2 stars, about 273 reviews as displayed on Yelp search surfaces 2026-11-07 (flag F10).",
+      "read": "HTTP 403 to automated fetch; value from Yelp search snapshot 2026-11-07; business-page URL taken from the company site"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — licence record",
+      "title": "Licence detail #1140843 — Discount Plumbing Rooter Services LLC",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "supports": "C-36 + A classifications, status, bonds (including the LLC employee bond), workers' comp and $2,000,000 liability insurance.",
+      "read": "read 2026-11-07 (data current 11/7/2026)"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — complaint disclosure",
+      "title": "Complaint disclosure — licence #1003394",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "supports": "The disclosure page that the Handyman Heroes record links to (flag F6).",
+      "read": "link taken from the licence record read 2026-11-07; disclosure page itself not read in this pass"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — lookup tool",
+      "title": "Check a licence",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "supports": "The public lookup anyone can use to re-verify every licence on this site.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — lookup tool",
+      "title": "Contractor name search — “Szeto”",
+      "url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx?NextName=Szeto&NextLicNum=",
+      "supports": "Result set showing no licence for “Szeto Plumbing and Handyman” (flag F14).",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — consumer guidance",
+      "title": "How do I find the right licensed contractor?",
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "supports": "Licence check, three written bids, insurance verification, bond explanation, and the 10% / $1,000 down-payment limit.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — classification",
+      "title": "B — General Building Contractor",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "supports": "The B classification text, including the two-unrelated-trades rule.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "CSLB",
+      "type": "Official — classification",
+      "title": "C-36 — Plumbing Contractor",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "supports": "The plumbing classification's scope, including maintenance and replacement of the items described.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "California Legislative Information",
+      "type": "Official — statute",
+      "title": "Business & Professions Code §7048",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "supports": "The $1,000 licensing threshold and the condition that the work does not require a building permit; amended by Stats. 2025, Ch. 67 (AB 1170), effective 1 Jan 2026.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "California Legislative Information",
+      "type": "Official — statute",
+      "title": "Business & Professions Code §7057",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057",
+      "supports": "General building contractor definition and the prime-contract rule for multi-trade projects.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Angi",
+      "type": "Industry publisher — cost data",
+      "title": "How much does it cost to replace a bathtub or shower drain? [2026 data]",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "supports": "Drain replacement $500–$1,020 (average $700); extra $1,350–$6,100 where drywall/unclogging/water damage is involved; drywall about $2,100 when a wall is opened; unclogging $225.",
+      "read": "read 2026-11-07 (page updated 2026-09-18)"
+    },
+    {
+      "publisher": "Angi",
+      "type": "Industry publisher — cost data",
+      "title": "How much does bathroom leak repair cost? [2026 data]",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "supports": "Leak repair $150–$600 (average $275); drywall/tile add-ons $300–$930; labour $45–$200/hour; call-out $50–$200; hidden pipes or significant water damage up to $4,000.",
+      "read": "read 2026-11-07 (page updated 2026-10-28)"
+    },
+    {
+      "publisher": "This Old House",
+      "type": "Industry publisher — technical",
+      "title": "How to replace a tub drain",
+      "url": "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+      "supports": "Below-tub access for stubborn drains; cutting out an old drain from below in extreme cases; the role of the overflow as a safety feature.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Expert Plumbing Solutions",
+      "type": "Company site",
+      "title": "eplumbingsolutions.com",
+      "url": "https://www.eplumbingsolutions.com/",
+      "supports": "Company identity and public contact details (website address also listed on its Yelp listing).",
+      "read": "website field on the business's Yelp listing, 2026-11-07; page not opened this pass"
+    },
+    {
+      "publisher": "Bay Area Plumbing",
+      "type": "Company site",
+      "title": "bayareaplumbingsf.com",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "supports": "Company identity; service area including Daly City, Pacifica, South San Francisco and San Bruno.",
+      "read": "website field on the business's Yelp listing, 2026-11-07; page not opened this pass"
+    },
+    {
+      "publisher": "Fast Response Plumbing & Rooter",
+      "type": "Company site",
+      "title": "fastresponseplumbingsf.com — commercial services",
+      "url": "https://www.fastresponseplumbingsf.com/commercial-services",
+      "supports": "Displays CSLB #1024971; HOA, apartment-building and property-manager practice; the “4.9 · 1,500 reviews” marketing claim (flag F9).",
+      "read": "read 2026-11-07 via search snapshot of the page"
+    },
+    {
+      "publisher": "Ace Plumbing & Rooter",
+      "type": "Company site",
+      "title": "aceplumbingandrooter.com",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "supports": "Displays licence #829071 with the same classifications as CSLB; HOA / property-manager practice description; 25+ years in San Francisco.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Genteel Plumbers",
+      "type": "Company site",
+      "title": "genteelplumbers.com",
+      "url": "https://www.genteelplumbers.com/",
+      "supports": "Company identity and contact route.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "General SF",
+      "type": "Company site",
+      "title": "generalsf.com",
+      "url": "https://generalsf.com/",
+      "supports": "Displays “CSLB. 959843”; services list (electrical, plumbing, building); states the business has served the Bay Area since 1991 and serves commercial properties, educational institutions and corporate offices.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Handyman Heroes",
+      "type": "Company site",
+      "title": "handymanhero.es — plumbing services",
+      "url": "https://www.handymanhero.es/plumbing-services/plumbing/",
+      "supports": "Address 912 Cole Street #202, San Francisco 94117 with licence #1003394 “B, C-10, C-36” (CSLB shows B + C-36 only — flag F7).",
+      "read": "read 2026-11-07 via search snapshot of the page"
+    },
+    {
+      "publisher": "Atlas Plumbing & Rooter",
+      "type": "Company site",
+      "title": "atlasplumbingandrooter.com",
+      "url": "https://www.atlasplumbingandrooter.com/",
+      "supports": "Company identity; family-owned, serving San Francisco since 2005.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Heise's Plumbing",
+      "type": "Company site",
+      "title": "heisesplumbing.com",
+      "url": "https://www.heisesplumbing.com/",
+      "supports": "Company identity; storefront address mentioned on the site (flag F10).",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Discount Plumbing Rooter Services",
+      "type": "Company site",
+      "title": "plumbinginsf.com",
+      "url": "https://plumbinginsf.com/",
+      "supports": "Company identity and San Francisco service presence (entity match unresolved — flag F15).",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Expert Plumbing Solutions",
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "supports": "4.8 stars, 81 reviews as displayed 2026-11-07 (flag F12).",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Bay Area Plumbing",
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "supports": "4.8 stars, 175 reviews as displayed 2026-11-07.",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Fast Response Plumbing & Rooter",
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "supports": "4.8 stars, 906 reviews as displayed 2026-11-07.",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Ace Plumbing & Rooter",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "supports": "4.7 stars, ~1.4k–1.5k reviews, “Verified License” badge, bathtub-repair service listed.",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Genteel Plumbers (search)",
+      "url": "https://www.yelp.com/search?find_desc=Genteel+Plumbers&find_loc=San+Francisco%2C+CA",
+      "supports": "4.7 stars, review counts 478–546 across surfaces (flag F11).",
+      "read": "search results read 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "General SF",
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "supports": "4.8 stars, 335–337 reviews as displayed 2026-11-07.",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Handyman Heroes",
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "supports": "4.7 stars, 389–410 reviews, “Verified License” badge.",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Atlas Plumbing & Rooter",
+      "url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2",
+      "supports": "4.3 stars, 481–488 reviews as displayed 2026-11-07.",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Heise's Plumbing (search)",
+      "url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "supports": "4.2 stars, about 273 reviews as displayed on Yelp search surfaces 2026-11-07 (flag F10).",
+      "read": "HTTP 403 to automated fetch; value from Yelp search snapshot 2026-11-07; business-page URL taken from the company site"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Discount Plumbing Rooter Services",
+      "url": "https://www.yelp.com/biz/discount-plumbing-rooter-services-san-francisco-4",
+      "supports": "4.5 stars, ~1.2k–1.3k reviews (flag F15).",
+      "read": "HTTP 403 to automated fetch; value from search snapshot 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform",
+      "title": "Szeto Plumbing and Handyman",
+      "url": "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
+      "supports": "4.8 stars, 89 reviews; services list includes drywall repair (flag F14).",
+      "read": "recorded 2026-11-06; not re-confirmed 2026-11-07"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform — discovery",
+      "title": "Bathtub repair in San Francisco",
+      "url": "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+      "supports": "Live list of businesses reviewed for this exact task.",
+      "read": "search link verified to exist; listings change"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform — discovery",
+      "title": "Plumbers in San Francisco",
+      "url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+      "supports": "Full local plumber list with ratings.",
+      "read": "search link verified to exist; listings change"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform — discovery",
+      "title": "Handyman plumbing in San Francisco",
+      "url": "https://www.yelp.com/search?find_desc=Handyman+Plumbing&find_loc=San+Francisco%2C+CA",
+      "supports": "Handyman/plumbing crossover firms.",
+      "read": "search link verified to exist; listings change"
+    },
+    {
+      "publisher": "Yelp",
+      "type": "Review platform — discovery",
+      "title": "Drywall installation & repair in San Francisco",
+      "url": "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
+      "supports": "Drywall-only partners if a two-vendor route is chosen.",
+      "read": "search link verified to exist; listings change"
+    },
+    {
+      "publisher": "General SF",
+      "type": "Company site",
+      "title": "generalsf.com/building",
+      "url": "https://generalsf.com/building",
+      "supports": "Lists rough and finish plumbing, sheetrock / tape and texture, tile, paint — published evidence of both trades under one contractor.",
+      "read": "read 2026-11-07"
+    },
+    {
+      "publisher": "Handyman Heroes",
+      "type": "Company site",
+      "title": "handymanhero.es/handyman-services",
+      "url": "https://www.handymanhero.es/handyman-services/",
+      "supports": "Lists “sheetrock and wall repairs” and states plumbing and electrical are also offered so several trades can be handled by one team.",
+      "read": "read 2026-11-07"
+    }
+  ]
+}

@@ -730,3 +730,12 @@ board. Resolution, without discarding anyone's work:
 ### Follow-up integration request — `arena/aa883562-korea7` (2026-11-07)
 
 After PR #43 was merged and Pages run [42411339520](https://github.com/karagemop466-tech/Korea7/actions/runs/42411339520) succeeded, the live root dashboard changed again. Its problem-snapshot table has no official source link on its rows; its estimate table displays unverified amounts in value cells and third-party Yelp ratings, despite a site-wide claim that unconfirmed values are blank and every row is source-linked. These facts are requester reports and cannot be officially verified by a license link. Please ask the current root-dashboard owner `arena/6a266fca-korea7` to reconcile the site and tests with the stated verification rule, retain private reports as clearly labeled prose and keep unrelated official context separate. The active owner's pages were not changed by this session. Removed one stray closing conflict-marker line from this shared board; surrounding content was preserved.
+
+### Session `7e5f723c` — round 3 merge (PR #44)
+
+PR #44 (`arena/aa883562-korea7`) landed while PR #42 was open and touched only documentation/board files. Merged
+with a single conflict, in `COORDINATION.md`; resolved by keeping the complete `origin/main` board above verbatim
+and appending this note. No root page, data file, script or test changed in this round — the site remains the
+generated data-driven build described in this session's section above, and every check still passes
+(`pytest tests/test_overflow_site.py tests/test_bath_site.py` → 32 passed; `unittest tests.test_dashboard_integrity`
+→ 4 passed).
