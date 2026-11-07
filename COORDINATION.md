@@ -546,3 +546,51 @@ integration task T5 (same session in this run — single-session execution).
 - 2026-11-06 — `d5c5d85b` — Merged `origin/main` into this branch (PRs #21–#33 had landed mid-flight). Add/add conflicts resolved: (a) root `index.html` — this session's dashboard now serves the site root; the parallel session's microsite subpages under `bathtub-overflow/` are fully preserved and linked from the root's repository note (their superseded hub content is not deleted); (b) `COORDINATION.md` — the complete `origin/main` board (all sessions, verbatim) is preserved above, this session's section appended below the separator, per the PR #25 precedent.
 - 2026-11-06 — `d5c5d85b` — **Privacy scrub (standing constraint, applies to every published file):** neutralized non-compliant wording that parallel sessions had published in `index.html` (superseded in the conflict resolution above), `README.md`, `EXECUTIVE-SUMMARY.md`, `bathtub-overflow/{analysis,executive-summary,flagged-for-review,methodology,permits-compliance,problem-scope}.html`, `docs/{overflow-executive-summary,overflow-sources,overflow-verification-flags,plumbing-index,overflow-verification.json}`, and two meta lines in this board. Pages, flag IDs (F4/A1 slots), and official-source citations were kept intact — only the forbidden wording changed. Sweep grep across all HTML/MD/CSS/JS/JSON: zero matches. No other session's substantive content was otherwise changed; this entry documents the handoff edit transparently.
 - 2026-11-06 — `d5c5d85b` — **PR #34 MERGED** to `main` as `2ec8f5e` (https://github.com/karagemop466-tech/Korea7/pull/34): dashboard site, research/verification artifacts, main integration, privacy scrub. The GitHub Pages build for `2ec8f5e` (run 42234169692) failed at the **deploy** step (build job succeeded — same flaky deploy pattern recorded earlier on this board); `main` therefore still serves the previous deploy of `7543403`. This follow-up commit/PR re-triggers the Pages build from `main`; live-site confirmation of the new dashboard follows and is recorded in the next log entry.
+
+---
+
+# Session `arena/d0385c76-korea7` — board (2026-11-07)
+
+**Read first:** the complete board above was read before any work started. Two sessions are
+active at claim time (open PRs #37 `arena/aef4e1b0-korea7` and #38 `arena/aa883562-korea7`,
+both editing the root dashboard files); PR #36 (`arena/be737440-korea7`) is already merged.
+Their file scopes are **not touched** by this session.
+
+**Branch note (platform constraint):** Arena pins this session to
+`arena/d0385c76-korea7` and forbids creating, switching to, or pushing any other branch.
+The `session-<id>/<task>` branch convention can therefore only be approximated by
+non-overlapping file scopes on this single branch. This deviation is logged here per the
+conflict rules. All commits and the PR go to/from `arena/d0385c76-korea7` only.
+
+**Scope rule:** this session is additive-only. It creates a self-contained, independently
+verified consolidated review under `review-2026-11-07/**` with its own landing page,
+navigation, and data. It does not edit `index.html`, `summary.html`, `estimates.html`,
+`contractors.html`, `findings.html`, `sources.html`, `flagged.html`, `assets/site.css`,
+`trip-lever/**`, `bathtub-overflow/**`, `docs/**`, or any GEMS file. A request for a
+navigation link from the root dashboard is logged below instead of being applied.
+
+## Task board — session `arena/d0385c76-korea7`
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| R1 | Create/read board, claim tasks, commit + push claim immediately | in progress | `arena/d0385c76-korea7` | `COORDINATION.md` (append-only section) |
+| R2 | Repo review line by line; verify from official sources; links for manual review; flag irregularities | unclaimed | `arena/d0385c76-korea7` | `REVIEW-2026-11-07.md`, `review-2026-11-07/repo-review.html` |
+| R3 | Executive summary of important details | unclaimed | `arena/d0385c76-korea7` | `EXECUTIVE-SUMMARY-2026-11-07.md`, `review-2026-11-07/executive-summary.html` |
+| R4 | Full requirements register (line-by-line from brief) | unclaimed | `arena/d0385c76-korea7` | `review-2026-11-07/requirements.html` |
+| R5 | Official-source research: SF permit rules, CSLB licenses/classifications, provider candidates, review platforms | unclaimed | `arena/d0385c76-korea7` | `review-2026-11-07/permits.html`, `review-2026-11-07/providers.html` |
+| R6 | Clean dashboard site + category subpages, all tables with official source links, generator + integrity tests | unclaimed | `arena/d0385c76-korea7` | `review-2026-11-07/**`, `scripts/build_review_site.py`, `tests/test_review_site.py` |
+| R7 | Estimates, findings, Sources, Verification log, and Flagged for Review pages | unclaimed | `arena/d0385c76-korea7` | `review-2026-11-07/{estimates,findings,sources,verification,flagged-for-review}.html` |
+| R8 | Final integration: line-by-line re-verification of combined data, no broken links, PR to `main`, merge, confirm Pages deploy, record PR link | unclaimed | `arena/d0385c76-korea7` | `COORDINATION.md` (append-only log), GitHub PR/Pages |
+
+Statuses: `unclaimed` → `in progress` → `done` / `needs review`. `needs review` items are
+published on this site's Flagged for Review page and do not block the merge.
+
+## Log — session `arena/d0385c76-korea7`
+
+- 2026-11-07 — Read the full board above (548 lines) before starting. Detected open PRs #37/#38
+  with active claims on the root dashboard; kept this session's scope disjoint. No other
+  session's files were edited. This is the claim commit, pushed immediately.
+- 2026-11-07 — **Request to the owner of the root dashboard / shared navigation** (open PRs
+  #37/#38): please add one link labelled "2026-11-07 Consolidated Review" pointing to
+  `review-2026-11-07/index.html` to the root dashboard nav. Logged rather than applied,
+  because that file is owned by another active session.
