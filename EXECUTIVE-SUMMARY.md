@@ -3,7 +3,8 @@
 **Project:** free a seized bathtub overflow trip lever inside concealed waste-and-overflow plumbing, in a
 tenant-occupied San Francisco unit, with one provider covering plumbing **and** drywall.
 **Verified:** 2026-11-07 · **Session:** `7e5f723c` · **Canonical site:** <https://karagemop466-tech.github.io/Korea7/>
-**Data + build:** `data/overflow/*.json` → `scripts/build_overflow_site.py` → root pages ·
+(dashboard · executive summary · shortlist · estimates · contractors · analysis · hiring plan · verification log · sources · flagged)
+**Data + build:** `data/overflow/*.json` → `scripts/build_overflow_site.py` → ten root pages ·
 **Tests:** `tests/test_overflow_site.py`
 
 > The canonical deliverable is the site. This file is a plain-markdown mirror of its executive summary.

@@ -1,12 +1,15 @@
 """Offline integrity checks for the root overflow-repair dashboard.
 
-Adapted on 2026-11-07 (session `7e5f723c`) for the regenerated, data-driven pages.
-The intent of the original checks is preserved:
+Originally written by session be737440 for a leaner dashboard, extended by session
+6a266fca for the shortlist/verification pages, and consolidated on 2026-11-07 by
+session `7e5f723c` for the regenerated, data-driven pages. The intent of every
+original rule is preserved:
 
-* every table row carries a source or documented link, and every internal link and
-  anchor resolves;
+* every table row carries a link to a source, or an explicit owner-provided /
+  unverified marker;
+* every internal link and internal anchor resolves;
 * the three owner-provided amounts are never shown in an officially confirmed cell;
-* the site does not claim confirmation, outreach or booking.
+* the site never claims a provider was contacted or has confirmed the job.
 
 Run: python3 -m unittest tests.test_dashboard_integrity
 """
@@ -21,17 +24,17 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGES = (
     "index.html",
     "summary.html",
+    "shortlist.html",
     "estimates.html",
     "contractors.html",
     "findings.html",
     "plan.html",
+    "verification.html",
     "sources.html",
     "flagged.html",
 )
 
-# Hosts whose pages are used as evidence: licensing authority, statutes, cost
-# publishers and the repository itself. Listed so an accidental link to an
-# unrelated domain in a data row is caught.
+# Licensing authority, statutes, cost publishers and the repository itself.
 EVIDENCE_HOSTS = {
     "www.cslb.ca.gov",
     "www2.cslb.ca.gov",
@@ -41,8 +44,7 @@ EVIDENCE_HOSTS = {
     "github.com",
 }
 
-# Review platforms, company sites and search pages are contact/context sources,
-# not evidence, but still acceptable links in a row.
+# Review platforms, company sites and search pages: contact/context, not evidence.
 CONTACT_HOSTS = {
     "www.yelp.com",
     "www.eplumbingsolutions.com",
@@ -98,9 +100,8 @@ class DashboardTest(unittest.TestCase):
             text = (ROOT / name).read_text(encoding="utf-8")
             for row_body in re.findall(r"<tbody>(.*?)</tbody>", text, flags=re.S):
                 for row in re.findall(r"<tr>.*?</tr>", row_body, flags=re.S):
-                    # a row either links a source or is explicitly labelled owner-provided
                     self.assertTrue(
-                        'href="' in row or "owner-provided" in row,
+                        'href="' in row or "owner-provided" in row or "unverified" in row.lower(),
                         (name, row[:160]),
                     )
             for href in scan.links:
@@ -118,19 +119,22 @@ class DashboardTest(unittest.TestCase):
 
     def test_data_rows_link_evidence_or_contact_sources(self):
         allowed = EVIDENCE_HOSTS | CONTACT_HOSTS
-        for name in ("contractors.html", "sources.html", "findings.html", "estimates.html"):
+        for name in ("contractors.html", "shortlist.html", "verification.html", "sources.html", "findings.html", "estimates.html"):
             scan = Scan()
             scan.feed((ROOT / name).read_text(encoding="utf-8"))
             for row in scan.rows:
                 hosts = {urlparse(h).hostname for h in row if urlparse(h).scheme}
-                self.assertTrue(hosts & allowed, (name, row))
+                internal = [h for h in row if not urlparse(h).scheme]
+                # the verification log cross-references this site's own evidence pages
+                # for a few flags; every other data row must reach an external source.
+                self.assertTrue(
+                    (hosts & allowed) or (name == "verification.html" and bool(internal)),
+                    (name, row),
+                )
 
     def test_unverified_amounts_not_present_in_confirmed_cells(self):
         html = (ROOT / "estimates.html").read_text(encoding="utf-8")
-        # the page states the rule ...
         self.assertIn("deliberately blank", html)
-        # ... and each of the three amounts keeps its owner-provided tag while the
-        # official-confirmation cell stays blank.
         self.assertEqual(html.count("blank: no official confirmation exists"), 3)
         self.assertGreaterEqual(html.count("owner-provided"), 3)
 

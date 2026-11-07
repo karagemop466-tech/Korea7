@@ -29,10 +29,12 @@ DATA = ROOT / "data" / "overflow"
 PAGES = [
     "index.html",
     "summary.html",
+    "shortlist.html",
     "estimates.html",
     "contractors.html",
     "findings.html",
     "plan.html",
+    "verification.html",
     "sources.html",
     "flagged.html",
 ]
@@ -294,3 +296,21 @@ def test_build_is_deterministic(tmp_path=None):
     assert result.returncode == 0, result.stderr
     after = {name: page(name) for name in PAGES}
     assert before == after, "build is not deterministic — generated pages changed on rebuild"
+
+
+# --------------------------------------------------------------------------- carried over from the concurrent session's test file
+def test_licence_numbers_link_to_their_own_official_record():
+    """Any CSLB number shown as a licence must be paired with that record's link."""
+    for name in ("contractors.html", "shortlist.html", "verification.html", "summary.html", "findings.html"):
+        text = page(name)
+        for num in set(re.findall(r"#(\d{6,8})", text)):
+            assert f"LicNum={num}" in text, f"{name}: #{num} stated without its CSLB record link"
+
+
+def test_no_outdated_licensing_threshold():
+    """B&P 7048 was amended by AB 1170 (effective 2026-01-01): the figure is $1,000, not $500."""
+    for name in PAGES:
+        text = page(name).lower()
+        assert "$500 or more" not in text, name
+        assert "500 threshold" not in text, name
+    assert "$1,000" in page("findings.html")

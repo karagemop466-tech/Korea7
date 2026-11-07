@@ -21,13 +21,18 @@ DATA = ROOT / "data" / "overflow"
 PAGES = [
     ("index.html", "Dashboard"),
     ("summary.html", "Executive summary"),
+    ("shortlist.html", "Shortlist"),
     ("estimates.html", "Estimates"),
     ("contractors.html", "Contractors"),
     ("findings.html", "Analysis"),
     ("plan.html", "Hiring plan"),
+    ("verification.html", "Verification"),
     ("sources.html", "Sources"),
     ("flagged.html", "Flagged for review"),
 ]
+
+# order in which the all-in-one candidates are recommended (see plan.json)
+SHORTLIST_IDS = ["ace-plumbing-rooter", "genteel-plumbers", "handyman-heroes", "general-sf"]
 
 
 # --------------------------------------------------------------------------- helpers
@@ -259,10 +264,12 @@ def build_index(project, contractors, estimates, flags, plan) -> str:
 
     quick = [
         ("summary.html", "Executive summary", "One page: what is known, what is verified, what to do next."),
+        ("shortlist.html", "Shortlist", "Who can hold the plumbing and the drywall on one licence — ranked, with the record behind each."),
         ("estimates.html", "Estimates & benchmarks", "The three 2026-08-30 quotes against 2026 national cost data, and what none of them includes."),
         ("contractors.html", "Contractors", f"{len(contractors['records'])} San Francisco candidates with CSLB verification, reviews and contact details."),
         ("findings.html", "Analysis & findings", "Access route, licence scope, quote comparison, drywall budget and occupied-unit planning."),
         ("plan.html", "Hiring plan", "Shortlist order, the questions to ask, the scope checklist and the contract terms."),
+        ("verification.html", "Verification log", "Every licence record read, and every value that could not be confirmed."),
         ("sources.html", "Sources", "Every source, what it supports, and when it was read."),
         ("flagged.html", "Flagged for review", f"{len(flags['flags'])} items: unverified values, source disagreements and repository irregularities."),
     ]
@@ -950,6 +957,186 @@ def build_sources(project, sources, contractors) -> str:
     )
 
 
+def build_shortlist(project, contractors, plan, flags) -> str:
+    cl = contractor_lookup(contractors)
+    rank = {cid: i + 1 for i, cid in enumerate(SHORTLIST_IDS)}
+
+    rows = []
+    for cid in SHORTLIST_IDS:
+        c = cl[cid]
+        rows.append(
+            [
+                f'<strong>{rank[cid]}</strong>',
+                company_cell(c),
+                f'<small>{e(", ".join(c["classes"]))}</small>',
+                f'{pill(c["cslb_status"], "ok")}<br><small>expires {e(c["expires"])}</small>',
+                f'<small>{e(c["bond"])}<br>{e(c["workers_comp"])}</small>',
+                yelp_cell(c),
+                f'<small>{e(c["fit"])}</small>',
+            ]
+        )
+    all_in_one_tbl = table(
+        ["Rank", "Company", "Classifications on the CSLB record", "Status", "Bond &amp; workers' comp", "Reviews (snapshot)", "Why this rank"],
+        rows,
+        caption_html=f'Official CSLB records read {e(project["updated"])}, each stamped “data current as of {e(project["cslb_data_current"])}”. Ranking reflects licence fit first, then verifiable public record — it is a recommendation, not an endorsement.',
+    )
+
+    quoter_rows = []
+    for cid in ("expert-plumbing-solutions", "bay-area-plumbing", "fast-response"):
+        c = cl[cid]
+        quoter_rows.append(
+            [
+                company_cell(c),
+                licence_cell(c),
+                f'<strong>${c["quote"]:,}</strong><br>' + pill("owner-provided", "warn"),
+                f'<small>{e(c["fit"])}</small>',
+            ]
+        )
+    quoter_tbl = table(
+        ["Company", "CSLB licence", "Quote as stated", "Fit"],
+        quoter_rows,
+        caption_html="All three are licensed and active, but C-36 only. Each would need the drywall patch subcontracted or handled on a separate contract.",
+        num_cols=(2,),
+    )
+
+    body = f"""
+<div class="page-head">
+  <h1>Shortlist — who can do the plumbing <em>and</em> the drywall</h1>
+  <p>Ranked from the official CSLB records read on {e(project["updated"])}. No provider has been contacted; none has confirmed scope, price, access method or availability.</p>
+</div>
+
+{callout("<strong>Why licence classifications decide the shortlist.</strong> CSLB's B General Building text states that a general building contractor “shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor”. Holding C-36 on the same licence is what lets one firm take the ceiling opening, the plumbing repair and the drywall restoration under one contract. <br><small>Source: " + ext("https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B", "CSLB — B General Building Contractor") + " · " + ext("https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057", "BPC §7057") + "</small>", "info")}
+
+<section class="section">
+  <h2>1. Single-contract candidates — B General Building + C-36 Plumbing on one licence</h2>
+  <p class="sub">Four firms, in recommended order. Watch items: two carry workers'-compensation exemptions, one has a complaint disclosure.</p>
+  {all_in_one_tbl}
+  <p class="src">Full profiles, addresses, notes and flags: <a href="contractors.html">Contractors</a>. Flag detail: <a href="flagged.html#F4">F4</a>, <a href="flagged.html#F5">F5</a>, <a href="flagged.html#F6">F6</a>.</p>
+</section>
+
+<section class="section">
+  <h2>2. The three firms that already quoted</h2>
+  <p class="sub">Licensed and active, but plumbing-only on the licence — ask how they would handle the ceiling patch.</p>
+  {quoter_tbl}
+</section>
+
+<section class="section">
+  <h2>3. The two-vendor fallback</h2>
+  <p>If none of the four single-contract firms is available or willing, the job can still be done by a C-36 plumber plus a licensed building or drywall contractor, on two contracts or one subcontracted scope. The trade-off is coordination: someone has to own the interface between the plumbing and the finish, and it should be written down.</p>
+  <ul class="tight">
+    <li>Ask the plumber to subcontract the patch, with the drywall firm named in the quote.</li>
+    <li>Or contract the drywall separately and hold payment until the plumbing has been tested and the ceiling is finished.</li>
+    <li>Never let the two scopes overlap in time without a single person responsible for the opening being closed.</li>
+  </ul>
+  <p class="src">Licence scope references: {ext("https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36", "CSLB — C-36 Plumbing")} · {ext("https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B", "CSLB — B General Building")}.</p>
+</section>
+
+<section class="section">
+  <h2>Next: how to run the calls</h2>
+  <p>The hiring sequence — the questions to ask, the scope checklist and the contract terms — is on the <a href="plan.html">Hiring plan</a> page. The scored shortlist above is the order to call in.</p>
+</section>
+"""
+    return page(
+        "shortlist.html",
+        "Shortlist · Bathtub Overflow Trip Lever",
+        "Ranked shortlist of San Francisco contractors who hold B General Building and C-36 Plumbing on one CSLB licence, plus the three quoting firms and the two-vendor fallback.",
+        body,
+        project,
+    )
+
+
+def build_verification(project, contractors, flags, sources) -> str:
+    rows = []
+    for c in contractors["records"]:
+        if not c["license"]:
+            continue
+        rows.append(
+            [
+                f'<strong>{e(c["name"])}</strong><br><small>{e(c["entity_type"])}</small>',
+                ext(c["cslb_url"], "#" + c["license"]),
+                f'<small>{e(c["issued"])}</small>' if c["issued"] else '<span class="muted">—</span>',
+                f'<small>{e(c["expires"])}</small>',
+                f'<small>{e(", ".join(c["classes"]))}</small>',
+                f'<small>{e(c["bond"])}</small>',
+                f'<small>{e(c["workers_comp"])}</small>',
+                pill(c["cslb_status"], "ok"),
+            ]
+        )
+    lic_tbl = table(
+        ["Business on record", "Licence", "Issued", "Expires", "Classifications", "Bond", "Workers' comp", "Status"],
+        rows,
+        caption_html=f'All ten records printed “This license is current and active” and a data-current stamp of {e(project["cslb_data_current"])} when read on {e(project["updated"])}. Re-check on the day you hire; status can change.',
+    )
+
+    open_rows = []
+    for fid in ("F2", "F3", "F10", "F11", "F12", "F13", "F14", "F15", "F16"):
+        f = next(x for x in flags["flags"] if x["id"] == fid)
+        sev = {"unverified": "warn", "caution": "info", "info": "mute"}.get(f["severity"], "mute")
+        if f["source_url"].startswith("http"):
+            src = ext(f["source_url"], f["source_label"])
+        else:
+            src = f'<a href="{e(f["source_url"])}">{e(f["source_label"])}</a>'
+        open_rows.append(
+            [
+                f'<a href="flagged.html#{e(fid)}"><strong>{e(fid)}</strong></a>',
+                pill(f["severity"], sev),
+                e(f["title"]),
+                e(f["detail"]),
+                src,
+            ]
+        )
+    open_tbl = table(
+        ["Flag", "Type", "Item", "What is unconfirmed", "Source"],
+        open_rows,
+        caption_html='Full list with sources and suggested actions: <a href="flagged.html">Flagged for review</a>.',
+    )
+
+    official = sum(1 for s in sources["sources"] if s["type"].startswith("Official"))
+
+    body = f"""
+<div class="page-head">
+  <h1>Verification log</h1>
+  <p>Every licence value published on this site, the official record it was read from on {e(project["updated"])}, and the items that could not be confirmed. Blank means unconfirmed — nothing is inferred or backfilled.</p>
+</div>
+
+<div class="grid cols-3">
+  <div class="card stat"><div class="k">Licence records read</div><div class="v">10</div><div class="s">CSLB licence-detail pages, data current {e(project["cslb_data_current"])}</div></div>
+  <div class="card stat"><div class="k">Official sources</div><div class="v ok">{official}</div><div class="s">CSLB records and lookups, classifications, statutes</div></div>
+  <div class="card stat"><div class="k">Still unconfirmed</div><div class="v warn">9</div><div class="s">Items carried on the flagged page, with their links</div></div>
+</div>
+
+<section class="section">
+  <h2>1. Licence records — official CSLB, read {e(project["updated"])}</h2>
+  {lic_tbl}
+</section>
+
+<section class="section">
+  <h2>2. What could not be confirmed</h2>
+  <p class="sub">Each item is published rather than guessed. The link opens the record or page that shows the problem.</p>
+  {open_tbl}
+</section>
+
+<section class="section">
+  <h2>3. How the checks were performed</h2>
+  <ul class="tight">
+    <li><strong>Licence values</strong> were read on the CSLB licence-detail page for each licence number; the record's own data-current stamp is quoted in the table caption. No value was copied from a directory, an aggregator or a company site.</li>
+    <li><strong>Company names and contact details</strong> were checked against the CSLB record; where a company site or Yelp listing disagrees with the record, the disagreement is flagged rather than resolved silently.</li>
+    <li><strong>Yelp</strong> pages return HTTP 403 to automated reads in this environment. Star ratings and review counts therefore come from search-engine snapshots of those pages, were captured on {e(project["yelp_captured"])}, and are dated in place (flags F12, F13).</li>
+    <li><strong>Cost benchmarks</strong> were read on the publishers' own pages on {e(project["updated"])}; page-updated dates are shown beside them on the <a href="estimates.html">Estimates</a> page.</li>
+    <li><strong>Anything not re-read on {e(project["updated"])}</strong> is not used to support a claim on this site (flag F18).</li>
+  </ul>
+  <p class="src">Every source with its URL and read status: <a href="sources.html">Sources</a>.</p>
+</section>
+"""
+    return page(
+        "verification.html",
+        "Verification log · Bathtub Overflow Trip Lever",
+        "The official CSLB licence records behind every licence value on this site, read 2026-11-07, plus the items that could not be confirmed.",
+        body,
+        project,
+    )
+
+
 def build_flagged(project, flags, contractors) -> str:
     counts = {}
     for f in flags["flags"]:
@@ -1047,9 +1234,11 @@ def main() -> None:
         "index.html": build_index(project, contractors, estimates, flags, plan),
         "summary.html": build_summary(project, contractors, estimates, flags, plan),
         "estimates.html": build_estimates(project, contractors, estimates, benchmarks, flags),
+        "shortlist.html": build_shortlist(project, contractors, plan, flags),
         "contractors.html": build_contractors(project, contractors, flags),
         "findings.html": build_findings(project, findings, flags),
         "plan.html": build_plan(project, plan, flags),
+        "verification.html": build_verification(project, contractors, flags, sources),
         "sources.html": build_sources(project, sources, contractors),
         "flagged.html": build_flagged(project, flags, contractors),
     }
