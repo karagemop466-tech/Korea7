@@ -649,6 +649,16 @@
       "supports": "Ranked shortlist of dual-classified (B + C-36) firms with a vetting script",
       "note": "Page produced by a concurrent session, merged unchanged and linked from the dashboard navigation."
     },
+    "S60": {
+      "label": "SF overflow audit — parallel session dashboard",
+      "publisher": "This repository (parallel session)",
+      "url": "sf-overflow-audit/index.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Independent 9-page audit dashboard with 11 CSLB records, Watco/Oatey technical notes and 15 flagged items",
+      "note": "Disjoint file scope produced by session arena/2baecdab-korea7, merged unchanged; linked here in response to its cross-link request."
+    },
     "S59": {
       "label": "Verification log — earlier session",
       "publisher": "This repository (parallel session)",
@@ -2561,13 +2571,14 @@
         {
           "cells": [
             "Concurrent session output",
-            "shortlist.html (ranked B + C-36 candidates and vetting script) and verification-log.html (earlier line-by-line log) were merged and preserved unchanged",
-            "Both pages are linked from the dashboard navigation and this review page",
+            "shortlist.html (ranked B + C-36 candidates and vetting script), verification-log.html (earlier line-by-line log) and sf-overflow-audit/ (independent 9-page audit) were merged and preserved unchanged",
+            "All three are linked from the dashboard navigation, quick links and this review page",
             "<span class=\"pill ok\">preserved</span>"
           ],
           "src": [
             "S58",
             "S59",
+            "S60",
             "S45"
           ]
         }
@@ -3291,6 +3302,18 @@
           ],
           "src": [
             "S59"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S60</code>",
+            "<strong>SF overflow audit — parallel session dashboard</strong><br><small><a href=\"sf-overflow-audit/index.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">sf-overflow-audit/index.html</a></small>",
+            "This repository (parallel session)<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Independent 9-page audit dashboard with 11 CSLB records, Watco/Oatey technical notes and 15 flagged items<br><small>Disjoint file scope produced by session arena/2baecdab-korea7, merged unchanged; linked here in response to its cross-link request.</small>"
+          ],
+          "src": [
+            "S60"
           ]
         }
       ],

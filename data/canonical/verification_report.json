@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T20:51:05+00:00",
+  "generated_at": "2026-11-07T20:53:44+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -18,14 +18,14 @@
   "counts": {
     "pages": 13,
     "tables": 14,
-    "rows": 191,
-    "source_ledger_entries": 59,
-    "verified_sources": 48,
+    "rows": 192,
+    "source_ledger_entries": 60,
+    "verified_sources": 49,
     "official_or_manufacturer_verified": 16,
-    "generated_tbody_rows": 409,
-    "internal_links_checked": 486,
+    "generated_tbody_rows": 411,
+    "internal_links_checked": 493,
     "unique_external_links": 50,
-    "published_text_files_scanned": 108
+    "published_text_files_scanned": 121
   },
   "checks": [
     {
@@ -36,7 +36,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "409 tbody rows checked, 0 missing links"
+      "detail": "411 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -46,7 +46,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "486 internal links checked, 0 broken"
+      "detail": "493 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -66,7 +66,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "108 files scanned, 0 matches"
+      "detail": "121 files scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -81,7 +81,7 @@
     {
       "name": "Official sources verified directly",
       "status": "PASS",
-      "detail": "16 official/manufacturer sources verified 2026-11-07; 48 sources verified overall"
+      "detail": "16 official/manufacturer sources verified 2026-11-07; 49 sources verified overall"
     }
   ],
   "broken_internal": [],

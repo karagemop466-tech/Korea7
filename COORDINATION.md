@@ -753,6 +753,36 @@ This branch has just been rebased onto `origin/main` at `408e90c` (PR #44). The 
 - Evidence: fetched the live estimate pages in both page sets; re-read SF.gov's [plumbing and mechanical permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit), CSLB B/C-36 classifications, and CSLB records #829071, #1025814, #959843 and #1003394 (all data-current stamps 2026-11-07). Official company pages reviewed for Ace, Genteel, General SF and Handyman Heroes; no provider contacted.
 - Validation: 9 HTML pages per set; local link/anchor scan found 0 broken links (288 in `bathtub-overflow/`, 301 in `docs/bath/`). All 12 `tests/test_bath_site.py` functions passed by direct invocation; `pytest` is not installed. The generator was not run because this task was read-only.
 
+---
+
+# Session `arena/2baecdab-korea7` — Comprehensive 2026-11-07 Audit & Dashboard Suite
+
+**Platform & scope note:** Arena binds this session strictly to branch `arena/2baecdab-korea7` (creating or pushing to any other branch is prohibited by the session runtime, logged here per coordination rules). Because concurrent 2026-11-07 sessions actively own or claim the root `*.html` files, `trip-lever/**`, and `review-2026-11-07/**`, this session claims a **100% disjoint, additive file scope** under `sf-overflow-audit/**`, `scripts/build_sf_overflow_audit.py`, and `tests/test_sf_overflow_audit.py`. No file owned or claimed by any other session is modified.
+
+## Task board (`arena/2baecdab-korea7`)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| B1 | Read `COORDINATION.md`, register non-overlapping claims, commit and push immediately | done | `arena/2baecdab-korea7` | `COORDINATION.md` (append-only section) |
+| B2 | Full line-by-line repository audit across legacy GEMS artifacts and all coexisting overflow page-sets; verify against official sources; flag irregularities | done | `arena/2baecdab-korea7` | `sf-overflow-audit/REPO-AUDIT.md`, `sf-overflow-audit/repo-review.html`, `sf-overflow-audit/data/audit_data.json` |
+| B3 | Official-source research & verification (2026-11-07): CSLB license/classification/bond/WC records for quoted plumbers + SF all-in-one B+C-36 & C-9+B contractors, CA statutory rules, manufacturer trip-lever extraction specs, review-platform snapshots | done | `arena/2baecdab-korea7` | `sf-overflow-audit/data/audit_data.json` |
+| B4 | Executive summary & full requirements traceability register | done | `arena/2baecdab-korea7` | `sf-overflow-audit/EXECUTIVE-SUMMARY.md`, `sf-overflow-audit/executive-summary.html`, `sf-overflow-audit/requirements.html` |
+| B5 | Build clean GitHub Pages dashboard (`sf-overflow-audit/index.html` + 8 category subpages) with table-per-category UI, official source link on every row, blank cells + `UNVERIFIED` flags for unconfirmed values, generator + offline integrity test suite | done | `arena/2baecdab-korea7` | `sf-overflow-audit/**`, `scripts/build_sf_overflow_audit.py`, `tests/test_sf_overflow_audit.py` |
+| B6 | Final verification, PR to `main`, merge, confirm live GitHub Pages deployment at `/Korea7/sf-overflow-audit/`, record PR link and merge/deploy result | in progress | `arena/2baecdab-korea7` | `COORDINATION.md` (append-only log), GitHub PR & Pages |
+
+## Official Sources & Verification Log (`arena/2baecdab-korea7`, 2026-11-07)
+
+- **11 Official CSLB License Detail + Complaint Disclosure records read directly on `www2.cslb.ca.gov` (all stamped `11/7/2026`):**
+  - Dual `B + C-36` leads: `#829071` Ace Plumbing & Rooter (active `B/C36/A/C-4/C10/C16`, `$25k` bond, active WC, `0` disclosures), `#1025814` The Genteel Plumbers Inc (active `B/C36`, `$25k` bond, active WC, `0` disclosures), `#959843` GeneralSF (active `B/C10/C36`, `$25k` bond, WC exempt `03/10/2025`), `#1003394` Handyman Heroes Inc (active `B/C36`, `$25k` + `$25k` BQI bonds, active WC, Citation `#2 2020 001045` `07/12/2020`), `#1115649` Rapid Flow Plumbing & Rooter Inc (active `B/C36`, WC exempt `02/03/2026`), `#841229` Manny's Plumbing & Rooter (active `B/C36`, Daly City, WC exempt `06/28/2026`).
+  - Client-quoted `C-36`-only plumbers: `#977638` Expert Plumbing Solutions (active `C36` exp `10/31/2028`, active WC), `#757796` Bay Area Plumbing (active `C36`, WC exempt `12/11/2024`), `#1024971` Joseph Tinsley dba Fast Response Plumbing and Rooter (active `C36`, `236 W POTRAL AVE #459` [sic], WC exp `12/18/2026`).
+  - Dedicated `C-9 + B` SF ceiling drywall specialist: `#995163` Bernal Hill Drywall Inc (active `C-9/B` exp `07/31/2028`, active WC, `0` disclosures).
+  - Caution-flagged screen: `#1009195` Advanced Plumbing and Drain Inc (active `C36` carrying official CSLB future-suspension liability warning).
+- **CA Statutes & CSLB Rules (`leginfo.legislature.ca.gov` & `cslb.ca.gov`):** `BPC § 7048` (`<$1,000` casual/minor threshold per AB 1170 eff `2026-01-01`), `BPC § 7057` (`Class B` multi-trade authority), `BPC § 7057.5` (`Class B-2` bars plumbing replacement without `C-36`), `16 CCR` `C-36` & `C-9` scopes, and CSLB `$25k` bond / `10%` or `$1,000` deposit cap.
+- **Manufacturer Technical Specs (`watcomfg.com` & `oatey.com`):** Watco `500/501/600-TL` instructions & `501-TL` tubular brass spec (`#41005` drop cylinder, `#44003` overflow elbow, `#40675` rear sponge gasket) and Oatey Dearborn bath-waste FAQ (Toe-Touch stopper conversion & post-replacement open-joint overflow fill test).
+- **Repository & DOE GEMS Verification:** Recomputed 8/8 SHA-256 digests (`data/labels.tif`, `data/sample_submission.tif`, `docs/downloads/*`) — `100% PASS`; fetched live DrivenData leaderboard on `2026-11-07` (`#1 xiaofanhu = 0.4720`, `#2 = 0.4121`, `#3 = 0.4093`) and DOE/NLR Sept 2026 Official Rules PDF (`docs.nlr.gov/docs/fy26osti/96647.pdf`).
+- **15 Non-Blocking Flagged Items Published on `sf-overflow-audit/flagged-for-review.html`:** Unverified client quotes (`$614/$550/$135` left blank in official-value cells), unverified physical site details, Yelp HTTP 403 automated block, `#1003394` citation disclosure, 4 WC exemptions (`#959843, #1115649, #757796, #841229`), `#1024971` street typo & `12/18/2026` WC renewal, `#977638` third-party expiry drift vs CSLB `10/31/2028`, `#1009195` CSLB liability warning, dead external Oatey SKU URL excluded, GEMS/plumbing repo mismatch, stale `README.md` GEMS leaderboard figures, 4 divergent `run*card*.json` schemas, `docs/parallel-index.html -> results/` missing `index.html` on Pages, earlier microsite `$500` statutory drift (subsequently patched by `6a266fca`), and parallel-session dashboard coexistence.
+- **Cross-session coordination log:** Rebased cleanly onto `origin/main` (`9b9cbaa`), preserving all prior sessions' `COORDINATION.md` entries verbatim and modifying zero files outside `sf-overflow-audit/**`, `scripts/build_sf_overflow_audit.py`, and `tests/test_sf_overflow_audit.py`. Request to active root-dashboard owner (`arena/6a266fca-korea7` / `arena/7e5f723c-korea7`): optional cross-link to `sf-overflow-audit/index.html` if helpful.
+
 # Session `arena/2eb487ad-korea7` board (appended 2026-11-07; final integration session)
 
 Shared board read at session start (548 lines, 6 prior session sections). All prior claims are dated
@@ -861,3 +891,27 @@ without discarding any other session's work (same precedent as PR #43 on this bo
 - **Final checks after conflict resolution:** `python3 scripts/build_dashboard.py` → **11/11 PASS**: 13 pages, 14 tables, 191 data rows, 59 source-ledger entries; 409 rendered tbody rows with 0 missing source links; 0 unflagged blanks; 486 internal links with 0 broken; 0 broken anchors; 50 unique external links all in the ledger; nav consistent; privacy sweep 108 files / 0 matches; 0 template markers; 0 dead-source links; 16 official/manufacturer sources verified 2026-11-07 (48 verified overall). Full-repo internal-link audit: 1,196 links, **0 broken**. `python3 -m pytest -q tests/test_dashboard.py tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_bath_site.py` → **37 passed, 9 subtests passed** (pytest installed in the sandbox for this run). Local static-server smoke test: 13 canonical pages + CSS/JS/report all HTTP 200.
 - Earlier numbers in this session's I3/I4 entry above (179 rows / 55 sources / 382 rows / 425 links / 15 flags / 6 candidates / 12 tests) describe the pre-merge build; the counts in this entry supersede them. Both builds passed all checks.
 - **I5 status:** PR #46 opened and conflict resolved. Merge, Pages deploy confirmation and the final PR/merge record are still pending at the time of this entry.
+
+---
+
+## Second concurrent-main merge — session `arena/2eb487ad-korea7` (2026-11-07)
+
+PR #47 (`arena/2baecdab-korea7`) landed on `main` during the resolution above, adding a disjoint
+`sf-overflow-audit/**` dashboard plus `scripts/build_sf_overflow_audit.py` and
+`tests/test_sf_overflow_audit.py`. All of those files merged cleanly and are **untouched**.
+`COORDINATION.md` was resolved by preserving the complete incoming board verbatim above and
+re-appending this session's board section and logs below it (no entry discarded).
+
+- Honoured the incoming session's cross-link request: `sf-overflow-audit/index.html` is now linked
+  from the canonical dashboard's "Browse by category" and Repo review page as a parallel
+  research set (source-ledger S60). Their 11 CSLB records, Watco/Oatey technical notes and 15
+  flagged items remain in their own files; no value was copied into this dashboard without a
+  direct official-source read by this session.
+- The two additional CSLB records this session verified directly (S56 #1115649, S57 #841229)
+  agree with the incoming session's independent read.
+- After this merge, all site checks were re-run; results are recorded in the final verification
+  entry below.
+
+### Rebase / conflict log (continued) — `arena/2eb487ad-korea7`
+
+- A plain `git pull --rebase origin arena/2eb487ad-korea7` was run before the post-merge push, as required. Because this branch now contains a **merge commit** whose second parent is `main`, plain `git rebase` tried to linearize and replay the concurrent sessions' commits (starting at `39e7166`), producing four add/add conflicts. It was **aborted with `git rebase --abort`**; no work was discarded and the branch tip was unchanged (`b8ae87a`). `git pull --rebase --rebase-merges` is not accepted by this `git pull` version. For subsequent pushes this session uses `git fetch origin arena/2eb487ad-korea7` + `git merge-base --is-ancestor FETCH_HEAD HEAD` (no divergence) before `git push`, which preserves the merge parent needed for a clean PR. This deviation is logged here as required by the conflict rule.
