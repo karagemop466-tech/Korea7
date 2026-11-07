@@ -562,3 +562,22 @@ Handoff: prior integration owner `d5c5d85b` reported PR #34 merged and a failed 
 - Official records read: [CSLB General SF #959843](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843), [Handyman Heroes #1003394](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394), [Expert #977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638), [Bay Area #757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), [Fast Response #1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971), [General SF services](https://generalsf.com/building), [Handyman Heroes services](https://www.handymanhero.es/handyman-services/), and [SF DBI](https://www.sf.gov/apply-plumbing-and-mechanical-permit).
 - Irregularities: requester facts/quotes lack official source; no direct outreach or booking; exact job experience and availability unconfirmed; direct Yelp fetch blocked; CSLB disclosure, workers' comp exemptions and C-10 company/CSLB discrepancy flagged; old pages may conflict. Full notes: `trip-lever/session-aa883562-verification.md`.
 - Validation: seven root pages parsed, 28 data rows with official source/context links, zero missing local links/anchors; `git diff --check` passed. External access is subject to third-party restrictions. Current Pages build for base `d93299c` reports built; PR and new deploy remain pending.
+
+
+---
+
+## Session `arena/be737440-korea7` — post-deploy re-verification (2026-11-07)
+
+Board read at session start: all tasks of prior sessions were `done`; PR #34/#35 merged; GitHub Pages run 42236078332 (`d93299c`) **succeeded** and the root dashboard is live at https://karagemop466-tech.github.io/Korea7/ (confirmed by fetching the live page). No open claims by other sessions were in progress. One PR from another session remained open — **PR #32 (`arena/524880f1-korea7`)**, status CONFLICTING, overlapping scope (`index.html`, `README.md`, `COORDINATION.md`); it was **not** merged or closed by this session because it is owned by another session; its owner should rebase or close it. Logged here as a request.
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| R1 | Re-verify every CSLB license row against the official record | done | arena/be737440-korea7 | flagged.html (append only) | 5/5 records fetched from cslb.ca.gov, stamped "Data current as of 11/7/2026": #977638 active C-36 exp 10/31/2028; #757796 active C-36 exp 01/31/2027 (WC exempt); #1024971 active C-36 exp 03/31/2027; #959843 active B/C-10/C-36 exp 04/30/2027 (WC exempt); #1003394 active B/C-36 exp 05/31/2027 (complaint disclosure present). All match published values. Re-verification table added to `flagged.html`. |
+| R2 | Internal link audit of the whole published tree | done | arena/be737440-korea7 | — | 888 internal links across all HTML; 1 missing target: legacy `docs/parallel-index.html` → `docs/results/` (git-ignored). Published as flagged item 8; legacy file untouched. |
+| R3 | Privacy wording sweep | done | arena/be737440-korea7 | — | grep across HTML/MD/JSON/CSV for requester-only permit wording: 0 matches. |
+| R4 | Update counts (7→8 flagged) and dates | done | arena/be737440-korea7 | index.html, summary.html, flagged.html | Counts/dates only; no data values changed. |
+| R5 | PR to main, merge, confirm Pages deploy | done | arena/be737440-korea7 | GitHub PR | See log below. |
+
+Limitations of this session: the sandbox shell has no outbound access to Yelp/company sites; CSLB and the live site were fetched through the page-fetch tool. Yelp counts were not re-captured and keep their 2026-11-06 capture labels. Estimate amounts remain owner-provided/unverified (no official source exists).
+
+- 2026-11-07: integration `arena/aa883562-korea7` merged `origin/main` after PR #36 landed concurrently. Board sections from both sessions were retained. Root-page conflicts resolved by retaining the current dashboard, incorporating the other session’s verified CSLB snapshot and its legacy broken-link flag. No older page sets were altered.
