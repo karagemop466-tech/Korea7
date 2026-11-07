@@ -614,3 +614,116 @@ The earlier sessions' completed research and legacy GEMS materials are preserved
 - The retained dashboard passed `python -m unittest tests/test_dashboard_integrity.py` (3 tests) and `git diff --check`. This does not validate historical microsites or blocked Yelp content. No provider was contacted or booked.
 - Pages run [42411026421](https://github.com/karagemop466-tech/Korea7/actions/runs/42411026421) was canceled in favor of a newer concurrent `main` build. The superseding Pages run [42411039318](https://github.com/karagemop466-tech/Korea7/actions/runs/42411039318) for `8bfeb23` **succeeded**; the updated [live dashboard](https://karagemop466-tech.github.io/Korea7/) was fetched and its revised content confirmed using a cache-busting query.
 - Session task status: integration **done**; unverified quotes, job-specific fit, reviews and historical content remain **needs review** on the published flagged page.
+
+---
+
+# Session `6a266fca` board (appended 2026-11-07; the full board above is preserved verbatim)
+
+**Platform constraint:** Arena pins this session to branch `arena/6a266fca-korea7` and forbids creating or pushing to
+other branches, so the `session-<id>/<task>` convention cannot be followed; this branch is the session branch and the
+deviation is logged here per the conflict rules. Scope was chosen to avoid collision: the earlier sessions' tasks are
+all `done` at read time, so this session claimed only integration + a verification pass, and edited other sessions'
+files **only** to correct factual errors (logged below, item by item) and to add cross-links.
+
+## Tasks
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| I1 | Read board, confirm no live claims, claim integration pass | done | `6a266fca` | `COORDINATION.md` | Prior tasks all `done`; no claim newer than 60 min outstanding. |
+| I2 | Line-by-line re-verification of published licence/rule values against official sources | done | `6a266fca` | `verification.html`, `sources.html` | Eight CSLB records re-read 2026-11-07; sf.gov, 2025 SF Plumbing Code, leginfo §7048, CSLB B/C-36 classifications re-read. |
+| I3 | Close the "find someone who can do the work" gap: shortlist + vetting script | done | `6a266fca` | `shortlist.html`, `contractors.html`, `summary.html`, `findings.html`, `index.html` | Five verified B+C-36 firms added/confirmed; requirement→evidence matrix; call script. |
+| I4 | Correct factual errors found on published pages | done | `6a266fca` | `docs/overflow-{contractors,executive-summary,permits,sources,verification-permits,verification-flags}.html`, `docs/plumbing-index.html`, `bathtub-overflow/sources.html` | Outdated $500 threshold on 5 pages; DBI licence-scope list; Szeto name-search wording. |
+| I5 | Structural/HTML hygiene + static test coverage | done | `6a266fca` | `tests/test_overflow_site.py`, affected pages | Link/anchor checker, threshold guard, privacy guard, licence-link guard; 21 tests pass. |
+| I6 | Executive summary + README pointer refresh | done | `6a266fca` | `EXECUTIVE-SUMMARY.md`, `README.md` | Summary now lists the five all-in-one firms and the corrected rule text. |
+| I7 | PR → merge → confirm GitHub Pages deploy → record result | in progress | `6a266fca` | GitHub PR, this board | Recorded below when complete. |
+
+## Sources and verification performed (2026-11-07)
+
+- **CSLB licence-detail records read directly** (each printed “Data current as of 11/7/2026”): 977638, 757796,
+  1024971, 959843, **829071**, 1003394, **1115649**, **841229** — all *current and active*; classifications, bonds,
+  workers'-comp status and addresses transcribed into `verification.html` §1. Links:
+  `https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=<n>`.
+- **CSLB name search “Szeto” re-run**: returns other Szeto-named licensees; **no record for “Szeto Plumbing and
+  Handyman”** → licence cell stays blank and flagged.
+- **sf.gov — Apply for a plumbing and mechanical permit**: permit trigger and the full DBI licence list (A; B after
+  scope approval; C-4/C-36 for plumbing; C-16; C-20; C-54 shower pan only). This corrects the earlier
+  “C-4 or C-36 only” summary and its citation of the contractor-registration page (which lists only C46/C4 for
+  solar and boiler registrations).
+- **2025 San Francisco Plumbing Code PDF, §104.2**: exemption text read verbatim (“Repair of leaks not requiring
+  cutting into or removing piping…”) and quoted on `verification.html` §2.
+- **leginfo — B&P §7048**: current text (amended by AB 1170, Stats. 2025 ch. 67, eff. 2026-01-01) — under **$1,000**
+  *and* no building permit required.
+- **CSLB classification pages B and C-36**: quoted for the all-in-one analysis.
+- **Angi drain-replacement cost article re-read** (updated 2026-09-18): $500–$1,020, avg $700, low $230, high $1,170,
+  labour $45–$200/hr, drywall ≈$2,100, water damage $1,350–$6,100 — matches the published benchmark table.
+- **Yelp**: third-party only. Direct page fetches return HTTP 403 in this environment; ratings were taken from
+  search-result snapshots and are flagged as third-party/unverified (new flagged item 8).
+
+## Corrections made to other sessions' files (factual only, each backed by an official source)
+
+1. `docs/overflow-contractors.html`, `docs/overflow-executive-summary.html`, `docs/overflow-permits.html`,
+   `docs/overflow-sources.html`, `docs/plumbing-index.html`, `docs/overflow-verification-permits.html`,
+   `docs/overflow-verification-flags.html` — the “$500 or more requires a CSLB licence” statement was out of date;
+   replaced with the current §7048 test (<$1,000 **and** no building permit) plus the leginfo link.
+2. `bathtub-overflow/sources.html` S2 — claimed the contractor-registration page lists “C-4 or C-36” for plumbing
+   permits; that page does not (it covers solar/boiler registration). Replaced with the plumbing-permit page and the
+   full licence list DBI publishes.
+3. `contractors.html`, `summary.html`, `findings.html` — Szeto wording corrected (“no records” → the search returns
+   other Szeto licensees but no matching business record).
+4. Yelp values relabelled third-party/unverified everywhere; green “ok” styling that implied official verification
+   was removed.
+5. Structural fixes only (no content change): missing `</main>`/`</div>` in `docs/overflow-analysis.html`,
+   `docs/overflow-estimates.html`, `docs/overflow-flagged-review.html`, `docs/plumbing-index.html`,
+   `docs/overflow-permits.html`, `docs/overflow-contractors.html`, `docs/overflow-executive-summary.html`,
+   `docs/overflow-sources.html`; stray `</b>` in `docs/submit.html`; broken table nesting in `findings.html`.
+
+## Irregularities (published, not blocking)
+
+- All prior irregularity sets (F1–F14, A1–A23, flagged 1–7) remain published on their pages; none were removed.
+- **New flagged items 8–10** on `flagged.html`: (8) Yelp ratings/“Verified License” badges are third-party and cannot
+  be officially verified; (9) Handyman Heroes Yelp address (1525 Waller St) ≠ CSLB address (912 Cole St #202);
+  (10) no official source rates job-specific experience and no quote includes drywall.
+- **Transient CSLB outage observed**: `www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx` served a DCA
+  maintenance page (“Estimated outage time is Nov 7th 10am-5pm”) while `www2.cslb.ca.gov` worked and licence-detail
+  links resolved on both hosts. Recorded on `verification.html`; no link was changed on a guess.
+- **Nine live pages exist across three research sets** (`/`, `/bathtub-overflow/`, `/docs/plumbing-index.html`).
+  Consolidating them is out of scope for a factual pass; the root dashboard is the entry point and links the others.
+  Flagged for the owner's decision.
+- **Legacy GEMS project** remains at `docs/` and the repo README still leads with it; a pointer section to this
+  project exists in `README.md`. Untouched otherwise.
+
+## Merge resolution after rebase onto `2773ada` (2026-11-07)
+
+While this session was working, PRs #36–#41 landed on `main` (sessions `be737440`, `aef4e1b0`, `aa883562`,
+`d5c5d85b`). `git pull --rebase` produced add/add and content conflicts in the eight root dashboard pages and this
+board. Resolution, without discarding anyone's work:
+
+- **Root dashboard pages** (`index`, `summary`, `estimates`, `contractors`, `findings`, `sources`, `flagged`): kept
+  this session's versions, which are a superset of the incoming ones — all five leads from the incoming pages are
+  present, all eight licence records re-read 2026-11-07, plus the four additional verified firms, the shortlist and the
+  verification log. Nothing was deleted from the incoming content's claims; where the incoming pages were more
+  conservative (ratings omitted, "no provider contacted" caveat) that language was **carried across** explicitly.
+- **`COORDINATION.md`**: the complete `origin/main` board (all sessions, verbatim) is preserved above this section;
+  only this session's section is appended.
+- **`tests/test_dashboard_integrity.py`** (session `be737440`): kept and extended rather than dropped. Its three
+  original rules survive — every row points at a source or carries an explicit unverified marker; internal links and
+  anchors resolve; no provider-contacted/confirmed claim. The string-specific assertions tied to the superseded markup
+  were replaced with equivalent structural checks for the merged pages, and the page list now includes
+  `shortlist.html` and `verification.html`. 25 tests pass.
+- **Reported legacy broken link**: the incoming board flagged `docs/parallel-index.html` → `docs/results/` as missing.
+  Re-checked 2026-11-07: the directory exists (`all_experiments.json`, `e1_metric_calibration.json`, `e2_emission.json`,
+  `e3_regimes.json`) and the link resolves. No change made; recorded on `flagged.html` item 11.
+- **Flagged items**: the incoming "reviews omitted / repository scope" concerns are covered by this session's flagged
+  items 8 (third-party Yelp data) and the new item 11 (repository scope, historical pages). No incoming flag was dropped.
+
+**Final test run:** `python3 -m pytest -q tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_bath_site.py`
+→ **25 passed, 9 subtests passed**.
+
+## Test / build status
+
+- `python3 -m pytest -q tests/test_overflow_site.py tests/test_bath_site.py` → **21 passed**
+  (link + anchor resolution across all 63 HTML files, outdated-threshold guard, privacy guard, licence-link guard,
+  plus the existing docs/bath site rules).
+- Full GEMS suite not run: `numpy`/`rasterio` are not installed in this sandbox and are unrelated to the site.
+- Pages source: `main` at `/`, legacy build, `.nojekyll` present at repo root and in `docs/`.
+>>>>>>> 62fb89b (Final integration: shortlist, verification log, factual corrections)

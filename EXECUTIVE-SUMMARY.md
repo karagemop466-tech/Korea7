@@ -1,43 +1,58 @@
 # Executive Summary — Bathtub Wastewater Overflow Trip Lever (San Francisco)
 
-**Project:** Remove/repair a stuck bathtub overflow trip lever located in concealed plumbing behind a bathroom wall in a tenant-occupied San Francisco unit. Access from above was declined by 5+ licensed plumbers (owner-reported); the recommended route (owner-reported) is from below, which requires opening the drywall ceiling of the storage unit underneath. Owner wants one licensed service covering **plumbing + drywall**.
+**Project:** Free/repair a seized bathtub overflow trip lever that sits in concealed waste-and-overflow plumbing behind a bathroom wall, in a tenant-occupied San Francisco unit. Access from above has been declined by 5+ licensed plumbers (owner-reported); the reported fallback is working from below, which may require opening the storage-unit ceiling drywall. The requirement is **one licensed provider who can do the plumbing and the drywall**.
 
-**Compiled:** 2026-11-06 · **Session:** `session-arena-68d76eff` · **Live site:** https://karagemop466-tech.github.io/Korea7/ (dashboard) — full subpages under `/bathtub-overflow/`.
+**Compiled:** 2026-11-07 · **Session:** `6a266fca` · **Live site:** https://karagemop466-tech.github.io/Korea7/ (dashboard, shortlist, verification log, flagged items).
 
 ---
 
-## 1. The three quotes received (2026-08-30, amounts client-provided — unverifiable by nature)
+## 1. The three quotes received (2026-08-30 — amounts owner-provided, no official source exists)
 
-| Company | Quoted scope | Amount | License cross-check (CSLB, 2026-11-06) |
+| Company | Quoted scope | Amount | License cross-check (official CSLB, read 2026-11-07) |
 |---|---|---:|---|
-| Fast Response Plumbing & Rooter | Repair or adjust bathtub wastewater plunger handle | $135 | [#1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) — active, C-36 Plumbing |
-| Bay Area Plumbing | Replace lever for bathtub plug and spout with diverter (labor + materials) | $550 | [#757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) — active, C-36 Plumbing (number not shown on company site; verified by direct CSLB record read — flag F3 resolved) |
-| Expert Plumbing Solutions | Remove trip lever — "replacing waste and overflow" | $614 | [#977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) — active, C-36 Plumbing |
+| Fast Response Plumbing & Rooter | Repair or adjust bathtub wastewater plunger handle | $135 | [#1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) — current and active, C-36 Plumbing, expires 2027-03-31 |
+| Bay Area Plumbing | Replace lever for bathtub plug and spout with diverter (labor + materials) | $550 | [#757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) — current and active, C-36 Plumbing, expires 2027-01-31, workers'-comp exempt |
+| Expert Plumbing Solutions | Remove trip lever — "replacing waste and overflow" | $614 | [#977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) — current and active, C-36 Plumbing, expires 2028-10-31 |
 
-The spread reflects **scope, not price**: adjustment attempt → stopper/spout replacement → concealed waste-and-overflow assembly replacement. None includes the drywall/ceiling access work; no drywall quote exists yet (blank, flag F8).
+The spread reflects **scope, not price**: adjustment attempt → stopper/spout replacement → concealed waste-and-overflow replacement. **None of the three includes the drywall/ceiling work.** Every amount is flagged unverified on the site — no official or public source publishes them ([Flagged item 1–2](flagged.html)).
 
-## 2. Key verified findings (official sources)
+## 2. Who can actually do the work (the answer to the search)
 
-1. **Two verified candidates can lawfully contract plumbing + drywall on one contract** — CSLB records show both **Ace Plumbing & Rooter (#829071)** and **GENERALSF (#959843)** hold **B — General Building + C-36 — Plumbing**, active as of 2026-11-06. The other four candidates hold C-36 only.
-2. **SF permit rule (official):** "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground" ([sf.gov](https://www.sf.gov/apply-plumbing-and-mechanical-permit)). SF Plumbing Code §104.2 exemptions cover stopping leaks / clearing stoppages **only without replacing concealed pipe**; replacing concealed material is "new work and a permit shall be procured" ([CPC §104.2 text, IAPMO](https://forms.iapmo.org/email_marketing/codespotlight/2018/Oct18.htm)). Plumbing permits require a **C-4 or C-36** licensee ([sf.gov](https://www.sf.gov/register-city-licensed-contractor)).
-3. **California licensing threshold changed 2026-01-01:** B&P Code §7048 (as amended by AB 1170, Stats. 2025 ch. 67) exempts only jobs **under $1,000** *that do not require a building permit* ([leginfo](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048)). Widely cited "$500" references are outdated (flag F12). The replacement scope is permit-type work, so a licensed contractor is required — consistent with the owner's requirement.
-4. **Occupied-unit / property-manager experience is verifiable from official sites** for Fast Response (HOA condos, apartment buildings, PMs), Bay Area Plumbing (landlords/PM/HOA page), and Ace Plumbing (HOA & PM page). For others, left blank rather than inferred.
+Five San Francisco-area firms hold **B General Building + C-36 Plumbing on the same CSLB licence**, which is what allows one company to take the plumbing and the drywall restoration together (CSLB B classification text requires the appropriate classification or a subcontract for the other trade):
 
-## 3. Recommendation
+| Firm | Licence | Status on CSLB (2026-11-07) | Notes |
+|---|---|---|---|
+| **General SF** | [#959843](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) — B + C-36 + C-10 | Active · expires 2027-04-30 · $25k bond | Workers'-comp exempt ("no employees") |
+| **Ace Plumbing & Rooter** | [#829071](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) — B + C-36 + A, C-4, C-16, C-10 | Active · expires 2027-06-30 · $25k bond · WC insured | Widest classification set |
+| **Handyman Heroes Inc** | [#1003394](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) — B + C-36 | Active · expires 2027-05-31 · $25k bond · WC insured | Complaint disclosure on record |
+| **Rapid Flow Plumbing & Rooter Inc** | [#1115649](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) — B + C-36 | Active · expires 2028-01-31 · $25k bond | Workers'-comp exempt; small review count |
+| **Manny's Plumbing & Rooter** | [#841229](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) — C-36 + B | Active · expires 2028-06-30 · $25k bond | Daly City (adjacent); workers'-comp exempt |
 
-1. **Shortlist the dual-classified (B + C-36) firms first:** Ace Plumbing & Rooter (#829071) and GENERALSF (#959843) — one contract for ceiling opening + plumbing repair/replacement + drywall patch. Watch items: General SF (#959843) and Bay Area Plumbing (#757796) each show a workers'-comp exemption "no employees" on CSLB (flags F6/F14) — require insurance certificates and clarify crewing.
-2. **Get one contingent written scope:** adjust the lever first; if not adjustable, replace the waste-and-overflow — plus ceiling opening, patch/finish, dust protection, and tenant-access windows.
-3. **Re-verify the chosen license on CSLB the day of hire** (links in the provider table); collect liability + workers'-comp certificates.
-4. **Review the official permit rules** — official guidance describes the replacement scope as permit-required; the rules are recorded on the Permits & licensing page as flag F4.
+Three further candidates were reviewed: the three quoting plumbers above (C-36 only) and **Szeto Plumbing and Handyman**, whose licence stays **blank/unverified** — the CSLB name search returns other Szeto-named licensees but no record matching that business. Ranked shortlist, requirement matrix and a call script: [shortlist.html](shortlist.html).
 
-## 4. Flags / unverified items (full list: [Flagged for review](bathtub-overflow/flagged-for-review.html))
+## 3. Key verified findings (official sources only)
 
-- **F3** Bay Area Plumbing CSLB license — initially blank, **resolved 2026-11-06**: verified as #757796 active C-36 by direct CSLB record read. **F4** official SF permit guidance vs. the replacement scope (rules on the Permits & licensing page). **F5** Advanced Plumbing & Drain — CSLB future-suspension warning. **F6** GENERALSF — workers'-comp exemption on CSLB. **F7** all three dollar amounts client-provided. **F8** no drywall quote yet (blank). **F9** Fast Response CSLB address typo + WC policy expiring 12/18/2026. **F10** Advanced Plumbing — three published phone numbers. **F11** Yelp ratings are point-in-time. **F12** outdated $500 threshold citations online. **F14** Bay Area Plumbing — workers'-comp exemption on CSLB. **F1–F2** repo irregularities (unrelated GEMS project present; Pages root previously had no landing page — fixed). Full list: `bathtub-overflow/flagged-for-review.html`.
+1. **Licensing scope is verified; job experience is not.** CSLB confirms licence status, classification, bond and workers' comp for eight candidates ([CSLB Check a License](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx)). No official source rates anyone's experience with this exact repair — that stays flagged.
+2. **San Francisco permit rule (official):** "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground" ([sf.gov](https://www.sf.gov/apply-plumbing-and-mechanical-permit)). The local exemptions are narrow — §104.2 exempts, e.g., "Repair of leaks not requiring cutting into or removing piping" ([2025 SF Plumbing Code PDF](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf)). DBI lists the licence types it accepts on a plumbing permit: **A; B after scope approval; C-4 or C-36 for plumbing; C-16 sprinklers; C-20 mechanical; C-54 shower pan only** (same sf.gov page).
+3. **California licensing threshold changed 2026-01-01:** B&P Code §7048 (as amended by AB 1170, Stats. 2025 ch. 67) exempts only jobs **under $1,000 that do not require a building permit** ([leginfo](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048)). Widely cited "$500" references are out of date — four legacy pages on this site were corrected during this pass.
+4. **Cost context (national, 2026):** bathtub/shower drain replacement $500–$1,020, average $700 ([Angi, updated 2026-09-18](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm)); new drywall ≈$2,100 and water-damage repair $1,350–$6,100 if the ceiling has to be opened. The $550 and $614 quotes sit inside the replacement range; the $135 quote is scoped as an adjustment.
 
-## 5. Sources
+## 4. Recommendation
 
-Official: [sf.gov plumbing permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit) · [sf.gov contractor registration](https://www.sf.gov/register-city-licensed-contractor) · [B&P §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048) · [CSLB classifications](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/) · CSLB License Detail records #829071, #959843, #977638, #1024971, #1009195 (each read 2026-11-06, linked on the [Providers](bathtub-overflow/providers.html) page) · [CPC §104.2 (IAPMO)](https://forms.iapmo.org/email_marketing/codespotlight/2018/Oct18.htm).
-Company sites: eplumbingsolutions.com · bayareaplumbingsf.com · fastresponseplumbingsf.com · aceplumbingandrooter.com · generalsf.com · advancedplumbingsf.com.
-Reviews: Yelp listings per provider (links on [Providers](bathtub-overflow/providers.html) and [Sources](bathtub-overflow/sources.html)).
+1. **Call the two strongest documented fits first:** General SF (#959843) and Ace Plumbing & Rooter (#829071) — both B + C-36, both bonded; Ace also shows current workers'-comp insurance.
+2. **Ask for one written scope** covering: first attempt from above, the below-access ceiling cut (location/size), plumbing, drywall patch and finish, containment, water test before the ceiling is closed, and tenant scheduling windows.
+3. **Confirm crewing and insurance** for the firms whose CSLB record shows a "no employees" exemption (Bay Area Plumbing, General SF, Rapid Flow, Manny's).
+4. **Decide the permit question with the contractor and DBI** — official guidance is linked; this site takes no position and publishes no instruction either way.
+5. **Re-verify the chosen licence on the hire date** at [cslb.ca.gov](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx); statuses and policies change.
+
+## 5. Flags / unverified items
+
+Full list with sources: [flagged.html](flagged.html) (10 items). Headlines: all three amounts and every problem fact are owner-provided; Yelp ratings are third-party and cannot be officially verified; Handyman Heroes and Fast Response addresses differ between Yelp and CSLB; four licences show workers'-comp "no employees" exemptions; Handyman Heroes carries a CSLB complaint disclosure; Szeto has no matching CSLB record; no quote includes drywall; job-specific experience is unverified everywhere.
+
+## 6. Sources
+
+Official: [CSLB Check a License](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx) · CSLB licence-detail records #977638, #757796, #1024971, #959843, #829071, #1003394, #1115649, #841229 (each read 2026-11-07, data-current stamp 11/7/2026) · [CSLB B classification](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B) · [CSLB C-36 classification](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36) · [sf.gov — plumbing and mechanical permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit) · [2025 SF Plumbing Code, §104.2](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf) · [B&P §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048).
+Third-party (context only): [Angi](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm), [This Old House](https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain), Yelp listings (linked per contractor).
+Full source table and the correction log: [sources.html](sources.html) · [verification.html](verification.html).
 
 *Informational only — not legal advice.*
