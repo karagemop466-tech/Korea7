@@ -753,3 +753,23 @@ This branch has just been rebased onto `origin/main` at `408e90c` (PR #44). The 
 - Evidence: fetched the live estimate pages in both page sets; re-read SF.gov's [plumbing and mechanical permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit), CSLB B/C-36 classifications, and CSLB records #829071, #1025814, #959843 and #1003394 (all data-current stamps 2026-11-07). Official company pages reviewed for Ace, Genteel, General SF and Handyman Heroes; no provider contacted.
 - Validation: 9 HTML pages per set; local link/anchor scan found 0 broken links (288 in `bathtub-overflow/`, 301 in `docs/bath/`). All 12 `tests/test_bath_site.py` functions passed by direct invocation; `pytest` is not installed. The generator was not run because this task was read-only.
 
+---
+
+# Session `arena/02b14b57-korea7` — integration and independent revalidation (2026-11-07)
+
+## Claim and stale-task handoff
+
+Read the complete existing board before claiming. At 2026-11-07T20:22:53Z, `origin/main` is `d93299c` (2026-11-06). The remaining integration claims are more than 60 minutes old without a subsequent main commit; take over final integration under the board's stale-claim rule, preserving all earlier records and substantive research. The open PR #32 is an older parallel implementation, not authorization to edit its branch; inspect it before deciding whether any unmerged evidence is needed. This platform fixes the working branch to `arena/02b14b57-korea7`; no other branch will be created or pushed. Non-overlapping file scopes below stand in for the requested session/task branch convention.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| I0 | Coordination, takeover record, source/verification/final PR log | in progress | arena/02b14b57-korea7 | COORDINATION.md (append only) |
+| I1 | Independent repository and public-project audit | in progress | arena/02b14b57-korea7 | trip-lever/audit-2026-11-07.md; audit report outputs |
+| I2 | Revalidate requirements, providers, license records, technical sources and quote treatment | in progress | arena/02b14b57-korea7 | project source data and trip-lever research; shared bath pages after takeover |
+| I3 | Consolidate the user-facing dashboard and category pages; resolve earlier privacy/value requests | in progress | arena/02b14b57-korea7 | root index/summary/estimates/contractors/findings/sources/flagged.html, assets/site.css, earlier bathtub/overflow/bath project pages as needed; legacy GEMS content excluded |
+| I4 | Deterministic validation, all-row source checks, link/anchor audit, regression tests | in progress | arena/02b14b57-korea7 | scripts/verify_repair_dashboard.py, tests/test_repair_dashboard.py, trip-lever/validation-2026-11-07.json |
+| I5 | Final integration PR, merge, exact-commit Pages deployment confirmation | in progress | arena/02b14b57-korea7 | GitHub PR/Pages settings and append-only final log in COORDINATION.md |
+
+No edits to legacy GEMS source, datasets, run cards, or unrelated open PRs are claimed. Shared project outputs are in this session's integration scope only after the documented stale handoff. If another session makes a fresh commit, stop and re-coordinate rather than overwrite it. Verification labels will distinguish primary regulator/manufacturer evidence, business self-description, review-platform observations, owner testimony, and unverified claims. Public publication must not contain private scheduling context or tenant identifiers.
+
+- 2026-11-07T20:30Z: main advanced through PRs #36–#41 while research was underway. Rebase conflict in this board resolved by preserving the complete newer main board and appending this session verbatim. Those sessions report their integration tasks done; no fresh in-progress claim remains. This session continues as the final consolidation owner for the still-unresolved historical page sets and verification gaps. No other session work was discarded.
