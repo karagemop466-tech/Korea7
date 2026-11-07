@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Line-by-Line Repository Review &amp; Cross-Microsite Audit · SF Overflow Trip Lever Audit</title>
+  <meta name="description" content="Line-by-line verified contractor, estimate, technical access, and repository audit for a San Francisco bathtub wastewater overflow trip lever repair.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="topbar">
+    <div class="wrap nav-row">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">SF</span>
+        <span>Overflow Trip Lever Audit <span class="brand-sub">/ San Francisco · 2026-11-07</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary"><a href="index.html">Dashboard</a><a href="executive-summary.html">Executive Summary</a><a href="requirements.html">Requirements</a><a href="estimates.html">Estimates</a><a href="contractors.html">Contractors &amp; Licensing</a><a href="technical-access.html">Technical &amp; Access</a><a href="repo-review.html" aria-current="page">Repo Audit</a><a href="sources.html">Official Sources</a><a href="flagged-for-review.html">Flagged for Review</a></nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Repository Audit · karagemop466-tech/Korea7</div>
+      <h1>Line-by-Line Repository Review &amp; Cross-Microsite Audit</h1>
+      <p class="lede">Cryptographic hash verification, live DrivenData GEMS leaderboard check (0.4720 #1), run-card schema audit, static link validation, and statutory cross-checks.</p>
+      
+    </div>
+  </section>
+  <main class="wrap" id="main">
+
+    <div class="callout">
+      <strong>Non-Destructive Repository Audit:</strong> Every file tree in <code>karagemop466-tech/Korea7</code> was audited line by line on 2026-11-07 against byte-level SHA-256 checksums, offline HTML/anchor parsers, official DOE/NLR + DrivenData competition pages, California statutes, and CSLB records. Per parallel-session scope rules, legacy GEMS files and other sessions' microsites were left untouched and all irregularities are linked on <a href="flagged-for-review.html">Flagged for Review</a>.
+    </div>
+
+    <section class="section">
+      <h2>Line-by-Line Repository Verification Table</h2>
+      <div class="toolbar" data-filter-table="tbl-repo">
+        <input class="search-input" type="search" placeholder="Search audited paths, SHA-256, GEMS, BPC 7048..." aria-label="Search repository audit">
+        <span class="row-count"></span>
+      </div>
+      <div class="table-wrap">
+        <table id="tbl-repo">
+          <caption>Repository audit findings across legacy DOE GEMS artifacts and coexisting overflow microsites</caption>
+          <thead>
+            <tr>
+              <th>Audit ID / Type</th>
+              <th>Repository Path</th>
+              <th>Line-by-Line Finding</th>
+              <th>Measured / Verified Result</th>
+              <th>Status</th>
+              <th>Official Verification Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="ra-01" data-status="FLAGGED">
+              <td><code>RA-01</code><br><span class="muted-note">Domain Mismatch</span></td>
+              <td><code>README.md &amp; Repository Root</code></td>
+              <td>Repository karagemop466-tech/Korea7 was originally built for the DOE Office of Geothermal GEMS Prize Challenge (fault-prospectivity GeoTIFF modeling), unrelated to San Francisco residential plumbing; multiple sessions subsequently added bathtub-overflow microsites.</td>
+              <td>Legacy GEMS + 5 coexisting overflow microsite paths</td>
+              <td><a href="flagged-for-review.html#flag-repo-mismatch"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/" target="_blank" rel="noopener noreferrer">GitHub Repo Root &amp; DrivenData #306</a></td>
+            </tr><tr id="ra-02" data-status="FLAGGED">
+              <td><code>RA-02</code><br><span class="muted-note">Stale Leaderboard Figures</span></td>
+              <td><code>README.md (lines 129–131, 262)</code></td>
+              <td>README states DrivenData could not be reached and cites older user/cached top scores (0.4544 / 0.4413 / 0.3195). Direct fetch of the official DrivenData leaderboard on 2026-11-07 shows #1 xiaofanhu = 0.4720, #2 herculesschonfeldt6 = 0.4121, #3 j234 = 0.4093 (deadline Dec. 3, 2026, $300,000 pool).</td>
+              <td>Live #1 DW-Tversky = 0.4720 (verified 2026-11-07)</td>
+              <td><a href="flagged-for-review.html#flag-gems-leaderboard"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://www.drivendata.org/competitions/306/competition-doe-gems/leaderboard/" target="_blank" rel="noopener noreferrer">DrivenData GEMS Official Leaderboard</a></td>
+            </tr><tr id="ra-03" data-status="VERIFIED">
+              <td><code>RA-03</code><br><span class="muted-note">Cryptographic Integrity</span></td>
+              <td><code>data/*.tif &amp; docs/downloads/*.tif</code></td>
+              <td>Byte-level SHA-256 re-computation on 2026-11-07 matches 100% of pinned hashes in README.md and docs/downloads/SHA256SUMS.txt (labels.tif 7ba308cc..., sample_submission.tif 2176d08e..., consensus TIF 9e345463..., consensus ZIP 7460b2dd..., E3 TIF f013b9c4..., plus all 3 SHA256SUMS entries).</td>
+              <td>8/8 SHA-256 digests verified PASS</td>
+              <td><span class="badge badge-verified">VERIFIED</span></td>
+              <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/downloads/SHA256SUMS.txt" target="_blank" rel="noopener noreferrer">Repo SHA256SUMS.txt &amp; DOE/NLR Rules PDF</a></td>
+            </tr><tr id="ra-04" data-status="FLAGGED">
+              <td><code>RA-04</code><br><span class="muted-note">Artifact Schema Drift</span></td>
+              <td><code>run-card.json, run_card.json, run-card-korea7-e3.json, docs/run-card.json</code></td>
+              <td>Four run-card JSON files coexist with conflicting naming (hyphen vs underscore) and incompatible schemas: root run-card.json (5,404 B, SDCC1 44,090 dots), run_card.json (4,260 B, raster_sha256: null), docs/run-card.json (768 B, raster_sha256: null), and run-card-korea7-e3.json (5,188 B, f013b9c4...).</td>
+              <td>4 distinct schemas across 5 run-card files</td>
+              <td><a href="flagged-for-review.html#flag-runcard-drift"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/run-card.json" target="_blank" rel="noopener noreferrer">GitHub Repo Root Run Cards</a></td>
+            </tr><tr id="ra-05" data-status="FLAGGED">
+              <td><code>RA-05</code><br><span class="muted-note">Static Pages Directory 404</span></td>
+              <td><code>docs/parallel-index.html -&gt; href=&quot;results/&quot;</code></td>
+              <td>Legacy page docs/parallel-index.html links to relative directory &#x27;results/&#x27;, which exists in Git (docs/results/*.json) but contains no index.html; GitHub Pages returns HTTP 404 on directory requests without index.html.</td>
+              <td>docs/results/index.html absent (HTTP 404 on Pages)</td>
+              <td><a href="flagged-for-review.html#flag-legacy-dir-link"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/parallel-index.html" target="_blank" rel="noopener noreferrer">GitHub Repo — docs/parallel-index.html</a></td>
+            </tr><tr id="ra-06" data-status="FLAGGED">
+              <td><code>RA-06</code><br><span class="muted-note">Outdated Statutory Threshold</span></td>
+              <td><code>docs/overflow-permits.html (line 69)</code></td>
+              <td>Earlier session page docs/overflow-permits.html states California requires a CSLB license for work valued at &#x27;$500 or more&#x27;. Official California BPC § 7048 (amended by AB 1170, Stats. 2025, Ch. 67, eff. Jan 1, 2026) raised the threshold to less than $1,000 (subject to strict non-advertising/no-employee/no-permit conditions).</td>
+              <td>Current statutory threshold is &lt; $1,000 (BPC § 7048)</td>
+              <td><a href="flagged-for-review.html#flag-stale-500-law"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048" target="_blank" rel="noopener noreferrer">CA BPC § 7048 (LegInfo)</a></td>
+            </tr><tr id="ra-07" data-status="FLAGGED">
+              <td><code>RA-07</code><br><span class="muted-note">Unverified Value Cells &amp; Source Rule</span></td>
+              <td><code>docs/overflow-estimates.html &amp; docs/data/overflow-entries.csv</code></td>
+              <td>Earlier microsite docs/overflow-estimates.html renders user-supplied figures ($614, $550, $135) directly inside primary Estimate value cells with no row-level official source links, and docs/data/overflow-entries.csv cites third-party Yelp search URLs for estimate rows.</td>
+              <td>Left untouched per parallel-session scope rule; corrected in this audit</td>
+              <td><a href="flagged-for-review.html#flag-earlier-microsites"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/docs/overflow-estimates.html" target="_blank" rel="noopener noreferrer">GitHub Repo — docs/overflow-estimates.html</a></td>
+            </tr><tr id="ra-08" data-status="FLAGGED">
+              <td><code>RA-08</code><br><span class="muted-note">Multi-Session Coexistence</span></td>
+              <td><code>Root *.html, bathtub-overflow/, docs/overflow-*, docs/bath/, sf-overflow-audit/</code></td>
+              <td>Parallel Arena sessions prohibited from editing each other&#x27;s claimed scopes produced separate static sub-dashboards. All internal links within each active dashboard pass offline checks, and tests/test_dashboard_integrity.py (3 tests) passes in standard-library Python 3.11.</td>
+              <td>0 broken file links across 61 HTML files; 3/3 root unittest pass</td>
+              <td><a href="flagged-for-review.html#flag-earlier-microsites"><span class="badge badge-flagged">FLAGGED</span></a></td>
+              <td><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer">GitHub Repo — COORDINATION.md</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <div><strong>SF Bathtub Overflow Trip Lever Audit</strong> · Verified 2026-11-07 · Official CSLB, CA Statutory &amp; Manufacturer Sources</div>
+      <div>
+        <a href="sources.html">Official Sources</a> ·
+        <a href="flagged-for-review.html">Flagged for Review</a> ·
+        <a href="../index.html">Repository Root</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
