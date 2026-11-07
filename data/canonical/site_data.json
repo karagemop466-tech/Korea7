@@ -1,0 +1,3083 @@
+{
+  "meta": {
+    "updated": "2026-11-07",
+    "session": "arena/2eb487ad-korea7",
+    "title": "Bathtub overflow trip lever — repair research dashboard",
+    "pages_url": "https://karagemop466-tech.github.io/Korea7/",
+    "repo_url": "https://github.com/karagemop466-tech/Korea7"
+  },
+  "nav": [
+    {
+      "group": "Overview",
+      "links": [
+        [
+          "index.html",
+          "Dashboard"
+        ],
+        [
+          "summary.html",
+          "Executive summary"
+        ],
+        [
+          "requirements.html",
+          "Requirements"
+        ]
+      ]
+    },
+    {
+      "group": "Data",
+      "links": [
+        [
+          "estimates.html",
+          "Estimates & costs"
+        ],
+        [
+          "contractors.html",
+          "Contractors & reviews"
+        ],
+        [
+          "findings.html",
+          "Findings & analysis"
+        ]
+      ]
+    },
+    {
+      "group": "Reference",
+      "links": [
+        [
+          "technical.html",
+          "Technical background"
+        ],
+        [
+          "permits.html",
+          "Permits & licensing"
+        ],
+        [
+          "brief.html",
+          "Project brief"
+        ],
+        [
+          "sources.html",
+          "Source ledger"
+        ]
+      ]
+    },
+    {
+      "group": "Audit",
+      "links": [
+        [
+          "verification.html",
+          "Verification"
+        ],
+        [
+          "repo-review.html",
+          "Repo review"
+        ],
+        [
+          "flagged.html",
+          "Flagged for review"
+        ]
+      ]
+    }
+  ],
+  "sources": {
+    "S01": {
+      "label": "SF.gov — Apply for a plumbing and mechanical permit",
+      "publisher": "SF Dept. of Building Inspection",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Permit requirement for cutting into/replacing pipes; license classes allowed to apply; inspection before covering pipes; homeowner R-3 restriction",
+      "note": "Read directly on sf.gov, 2026-11-07."
+    },
+    "S02": {
+      "label": "SF.gov — Check if your construction project needs a permit",
+      "publisher": "SF Dept. of Building Inspection",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Published list of work that does not need a permit, including minor repairs to existing interior plaster or wallboard",
+      "note": "Read directly on sf.gov, 2026-11-07."
+    },
+    "S03": {
+      "label": "SF Building/Plumbing Code — Section 104.0 Permits",
+      "publisher": "American Legal Publishing code library (City and County of SF)",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Official code location for §104.2 exempt work referenced by sf.gov",
+      "note": "Page title confirmed as 'SECTION 104.0 - PERMITS'. The code library page is JavaScript-heavy; the exemption text was not machine-parsed, so the link is provided for manual review and no section wording is quoted from it."
+    },
+    "S04": {
+      "label": "CSLB — Check a License",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Official license lookup by number or business name; CSLB advises checking status and complaint disclosure before hiring",
+      "note": "Read directly on cslb.ca.gov, 2026-11-07."
+    },
+    "S05": {
+      "label": "CSLB — C-36 Plumbing classification",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Official definition of the C-36 Plumbing classification (16 CCR, Div. 8, Art. 3)",
+      "note": "Read directly on cslb.ca.gov, 2026-11-07."
+    },
+    "S06": {
+      "label": "CSLB License Detail #977638 — Expert Plumbing Solutions",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business name, address, entity, issue/expiry dates, status, classification, bond, workers' compensation",
+      "note": "Record printed 'Data current as of 11/7/2026 12:22:23 PM'."
+    },
+    "S07": {
+      "label": "CSLB License Detail #757796 — Bay Area Plumbing",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business name, address, entity, issue/expiry dates, status, classification, bond, workers' compensation exemption",
+      "note": "Record printed 'Data current as of 11/7/2026 12:22:25 PM'."
+    },
+    "S08": {
+      "label": "CSLB License Detail #1024971 — Fast Response Plumbing and Rooter",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business name, address, entity, issue/expiry dates, status, classification, bond, workers' compensation policy dates",
+      "note": "Record printed 'Data current as of 11/7/2026 12:22:23 PM'."
+    },
+    "S09": {
+      "label": "CSLB License Detail #959843 — GENERALSF",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business name, address, entity, issue/expiry dates, status, B/C10/C36 classifications, bond, workers' compensation exemption",
+      "note": "Record printed 'Data current as of 11/7/2026 12:21:47 PM'."
+    },
+    "S10": {
+      "label": "CSLB License Detail #1003394 — Handyman Heroes Inc",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business name, address, entity, issue/expiry dates, status, B/C36 classifications, bond, workers' compensation, complaint-disclosure flag",
+      "note": "Record printed 'Data current as of 11/7/2026 12:21:47 PM'."
+    },
+    "S11": {
+      "label": "CSLB License Detail #829071 — Ace Plumbing & Rooter",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business name, address, entity, issue/reissue/expiry dates, status, A/B/C-4/C10/C16/C36 classifications, bond, workers' compensation",
+      "note": "Record printed 'Data current as of 11/7/2026 12:23:38 PM'."
+    },
+    "S12": {
+      "label": "CSLB Complaint Disclosure #1003394",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Citation 2 2020 001045, dated 07/12/2020, 'FOR DISCLOSURE ONLY PER B&P CODE 7124.6'",
+      "note": "Read directly on cslb.ca.gov, 2026-11-07. Reported verbatim, no interpretation."
+    },
+    "S13": {
+      "label": "California Business & Professions Code §7048",
+      "publisher": "California Legislative Information (leginfo)",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Current small-job licensing exemption: aggregate price under $1,000, casual/minor/inconsequential, and no building permit required; amended by Stats. 2025 ch. 67 (AB 1170), effective 2026-01-01",
+      "note": "Read directly on leginfo, 2026-11-07."
+    },
+    "S14": {
+      "label": "Oatey — Dearborn Plastic Tubular Trip-Lever Bath Waste",
+      "publisher": "Oatey (manufacturer)",
+      "url": "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+      "tier": "manufacturer",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Existence and naming of a full trip-lever bath waste-and-overflow kit with chrome-finish stopper",
+      "note": "Manufacturer product page read directly, 2026-11-07."
+    },
+    "S15": {
+      "label": "Angi — Cost to Replace a Bathtub or Shower Drain (2026)",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "$500–$1,020 range, $700 average, $230 low / $1,170 high; labor $45–$200/hr; drywall ~$2,100; drain clearing avg $225; water damage $1,350–$6,100",
+      "note": "Article states 'Updated Sep 18, 2026'. Read directly."
+    },
+    "S16": {
+      "label": "Angi — Bathroom Leak Repair Cost (2026)",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "$150–$600 leak repair range, $275 average, up to $4,000 complex; drywall/tile follow-up $300–$930; call-out $50–$200; labor $45–$200/hr; worn-out tub drain avg $700",
+      "note": "Article states 'Updated Oct 28, 2026'. Read directly."
+    },
+    "S17": {
+      "label": "Angi — What Is a Bathtub Overflow Drain?",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/what-is-overflow-drain.htm",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Overflow drain function; concealed channel; traditional vs integral overflow; trip-lever/rod diagram",
+      "note": "Article states 'Updated Jul 9, 2026'. Read directly."
+    },
+    "S18": {
+      "label": "This Old House — How To Replace a Tub Drain",
+      "publisher": "This Old House",
+      "url": "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Bath waste-and-overflow components (drain shoe, linkage assembly, overflow plate, trap); remove the two overflow-plate screws from above; for stubborn drains access plumbing from below; 3–4 hour DIY estimate",
+      "note": "Read directly. Article is a DIY guide, not San Francisco code guidance."
+    },
+    "S19": {
+      "label": "This Old House — Bathtub Installation Cost (2026)",
+      "publisher": "This Old House",
+      "url": "https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Itemized component table including Overflow $163, Drain $190, Spout $82; total $2,110",
+      "note": "Article states 'Updated 03/05/2026'. Read directly."
+    },
+    "S20": {
+      "label": "Family Handyman — Replace a bathtub drain stopper",
+      "publisher": "Family Handyman",
+      "url": "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Removing an old-style trip-lever linkage begins at the overflow plate; lift-and-turn conversion",
+      "note": "Article states 'Updated on Feb. 14, 2024'. Read directly."
+    },
+    "S21": {
+      "label": "Hunker — The Trip Lever In My Bathtub Is Stuck",
+      "publisher": "Hunker",
+      "url": "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Trip lever is hidden behind the tub wall; diagnosis begins by removing the cover plate and checking links",
+      "note": "Article states 'Updated Oct 3, 2020'. Read directly."
+    },
+    "S22": {
+      "label": "The Overall Plumber — Bathtub Drain Drama",
+      "publisher": "The Overall Plumber (trade blog, Houston TX)",
+      "url": "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
+      "tier": "publisher",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Typical repair range $80–$600; most repairs 1–4 hours; repair-vs-replacement decision table; hydrostatic/water test of drain assembly",
+      "note": "Published date not shown on the fetched page — left blank, not inferred. Trade blog; not a San Francisco authority."
+    },
+    "S23": {
+      "label": "Angi — Best plumbers in San Francisco, CA",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "San Francisco plumbing category with verified-review counts; 873 verified plumbing reviews; review text about older SF homes",
+      "note": "Page states 'Last update on August 01, 2026'. Read directly. Platform reviews are not license verification."
+    },
+    "S24": {
+      "label": "Angi — Bathtub restoration pros in San Francisco, CA",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "SF bathtub-specific verified reviews, including a small SF property owner describing plumbing plus drywall/ceiling work in a tenant-occupied multi-unit building",
+      "note": "Read directly. Review text is a customer statement, not an official capability finding."
+    },
+    "S25": {
+      "label": "BuildZoom — Plumbers in San Francisco, CA",
+      "publisher": "BuildZoom",
+      "url": "https://www.buildzoom.com/san-francisco-ca/plumbers",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "San Francisco plumbing directory with client reviews, verified projects and permit/license-derived profiles",
+      "note": "Read directly. Page shows '683 experts'; count is a point-in-time platform figure."
+    },
+    "S26": {
+      "label": "BuildZoom — Drywall and plaster contractors in San Francisco, CA",
+      "publisher": "BuildZoom",
+      "url": "https://www.buildzoom.com/san-francisco-ca/drywall-contractors",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "San Francisco drywall/plaster directory with reviews and project photos",
+      "note": "Read directly. Page shows '83 experts'; point-in-time platform figure."
+    },
+    "S27": {
+      "label": "Thumbtack — Bathtub services near San Francisco, CA",
+      "publisher": "Thumbtack",
+      "url": "https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "San Francisco bathtub-service listings with customer reviews and 'Licensed pro' badges",
+      "note": "Read directly. A platform 'Licensed pro' badge is not a CSLB license verification."
+    },
+    "S28": {
+      "label": "BBB — Expert Plumbing Solutions business profile",
+      "publisher": "Better Business Bureau",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Business profile: not BBB accredited, no BBB rating, no complaints in last 3 years, license number 977638 on record, 1465 44th Avenue SF",
+      "note": "Read directly. BBB states it does not verify third-party information."
+    },
+    "S29": {
+      "label": "Yelp — Bathtub Repair in San Francisco",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Category search for the specific work type in San Francisco",
+      "note": "Direct fetch returned HTTP 403 to automated access; the live link is provided for manual review. No rating values are claimed from this URL."
+    },
+    "S30": {
+      "label": "Yelp — Plumbers in San Francisco",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Category search for licensed plumbers serving San Francisco",
+      "note": "HTTP 403 on automated fetch; link provided for manual review."
+    },
+    "S31": {
+      "label": "Yelp — Drywall Installation & Repair in San Francisco",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Category search for the drywall half of the combined scope",
+      "note": "HTTP 403 on automated fetch; link provided for manual review."
+    },
+    "S32": {
+      "label": "Yelp — Expert Plumbing Solutions",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Business review page for one of the three quoting companies",
+      "note": "HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 81 reviews) exists in prior-session notes; not re-verified — flagged."
+    },
+    "S33": {
+      "label": "Yelp — Bay Area Plumbing",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Business review page for one of the three quoting companies",
+      "note": "HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 175 reviews) exists in prior-session notes; not re-verified — flagged."
+    },
+    "S34": {
+      "label": "Yelp — Fast Response Plumbing & Rooter",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Business review page for one of the three quoting companies",
+      "note": "HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 906 reviews) exists in prior-session notes; not re-verified — flagged."
+    },
+    "S35": {
+      "label": "Yelp — General SF",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Business review page for an all-in-one candidate",
+      "note": "HTTP 403 on automated fetch. Prior-session snapshot (4.8, 336 reviews) not re-verified — flagged."
+    },
+    "S36": {
+      "label": "Yelp — Handyman Heroes",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Business review page for an all-in-one candidate",
+      "note": "HTTP 403 on automated fetch. Prior-session snapshot (4.7, 410 reviews) not re-verified — flagged."
+    },
+    "S37": {
+      "label": "Yelp — Szeto Plumbing and Handyman",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-07",
+      "supports": "Business review page for a plumbing+drywall lead outside SF proper",
+      "note": "HTTP 403 on automated fetch. Prior-session snapshot (4.8, 89 reviews) not re-verified — flagged; license not found on CSLB."
+    },
+    "S38": {
+      "label": "Expert Plumbing Solutions — official site",
+      "publisher": "Expert Plumbing Solutions",
+      "url": "https://www.eplumbingsolutions.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Company states License # 977638, San Francisco address 1465 44th Avenue, phone (415) 531-5340",
+      "note": "Read directly. Company self-description is not independent verification; license facts come from CSLB."
+    },
+    "S39": {
+      "label": "Bay Area Plumbing — official site",
+      "publisher": "Bay Area Plumbing",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Company states it has served San Francisco since 1995, phone (415) 668-8000, residential and commercial plumbing",
+      "note": "Read directly. Company self-description is not independent verification."
+    },
+    "S40": {
+      "label": "Fast Response Plumbing & Rooter — official site",
+      "publisher": "Fast Response Plumbing & Rooter",
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Company states CSLB #1024971, C-36, service to houses/apartments/HOAs/property managers, and '4.9 / 1,500 Reviews on Yelp & Google'",
+      "note": "Read directly. The review aggregate is a company claim, not verified — flagged. License facts come from CSLB."
+    },
+    "S41": {
+      "label": "General SF — official site",
+      "publisher": "General SF",
+      "url": "https://generalsf.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Company site lists Electrical, Plumbing, Building and Bathroom & Kitchen services and prints 'CSLB. 959843'",
+      "note": "Read directly. Company self-description is not independent verification."
+    },
+    "S42": {
+      "label": "Handyman Heroes — official site",
+      "publisher": "Handyman Heroes Inc",
+      "url": "https://www.handymanhero.es/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Company site advertises construction, electrical, plumbing and handyman services; states 'Licensed C-10' and 'Licensed C-36'",
+      "note": "Read directly. CSLB #1003394 lists B + C-36 only — the C-10 claim is an irregularity (flagged)."
+    },
+    "S43": {
+      "label": "Ace Plumbing & Rooter — official site",
+      "publisher": "Ace Plumbing & Rooter Inc",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Company lists license #829071 with A, B, C4, C10, C16 and C36 classifications; describes service to HOAs and property managers",
+      "note": "Read directly. Classifications independently confirmed on CSLB #829071."
+    },
+    "S44": {
+      "label": "Project brief (owner-provided primary record)",
+      "publisher": "This project's own record, published on this site",
+      "url": "brief.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Owner-provided problem statement, three 2026-08-30 estimates, access constraints, service requirements and tenant-occupancy context",
+      "note": "Primary record only — not an independent public source. Every value taken from it is marked UNVERIFIED in official-verification columns."
+    },
+    "S45": {
+      "label": "COORDINATION.md — shared task board",
+      "publisher": "This repository",
+      "url": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Task claims, handoffs, verification log, irregularities, PR and merge record",
+      "note": "Repository file, read locally 2026-11-07."
+    },
+    "S46": {
+      "label": "Published GitHub Pages site",
+      "publisher": "GitHub Pages / this repository",
+      "url": "https://karagemop466-tech.github.io/Korea7/",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Live landing page location for this dashboard",
+      "note": "Pages source is branch main, path /."
+    },
+    "S47": {
+      "label": "Repository README",
+      "publisher": "This repository",
+      "url": "https://github.com/karagemop466-tech/Korea7/blob/main/README.md",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Legacy GEMS project description and current status, used for the repo-review irregularity",
+      "note": "Read locally."
+    },
+    "S48": {
+      "label": "Legacy GEMS site (archived)",
+      "publisher": "This repository",
+      "url": "docs/index.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Unrelated legacy project pages retained in the repo",
+      "note": "Internal link, not edited by this session."
+    },
+    "S49": {
+      "label": "Parallel microsite (archived)",
+      "publisher": "This repository",
+      "url": "bathtub-overflow/executive-summary.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Prior session's overflow pages, retained unpublished-from-nav as archive",
+      "note": "Internal link, not edited by this session."
+    },
+    "S50": {
+      "label": "Parallel microsite (archived)",
+      "publisher": "This repository",
+      "url": "docs/bath/index.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Prior session's docs/bath pages, retained as archive",
+      "note": "Internal link, not edited by this session."
+    },
+    "S51": {
+      "label": "Parallel dashboard (archived)",
+      "publisher": "This repository",
+      "url": "docs/plumbing-index.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Prior session's docs/overflow dashboard, retained as archive",
+      "note": "Internal link, not edited by this session."
+    },
+    "S52": {
+      "label": "Open PR #32 (stale parallel session)",
+      "publisher": "GitHub",
+      "url": "https://github.com/karagemop466-tech/Korea7/pull/32",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Open, conflicting PR from a 2026-11-06 parallel session that also touched index.html",
+      "note": "Checked with gh: state OPEN, mergeable CONFLICTING, last updated 2026-11-06 13:45 UTC. Left untouched."
+    },
+    "S53": {
+      "label": "SFGate Home Guides — trip lever article (DEAD)",
+      "publisher": "SFGate / Weekand",
+      "url": "https://homeguides.sfgate.com/repair-trip-lever-tub-drain-41958.html",
+      "tier": "publisher",
+      "status": "dead",
+      "checked": "2026-11-07",
+      "supports": "Removed from all active citations",
+      "note": "Redirects to weekand.com with empty content on 2026-11-07. Not linked from any table row; retained here as a labeled documentation row."
+    },
+    "S55": {
+      "label": "Source ledger (this site)",
+      "publisher": "This dashboard",
+      "url": "sources.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-07",
+      "supports": "Documentation rows about sources removed from active citations",
+      "note": "Internal page on this site. Dead URLs are shown there as plain text, never as links."
+    },
+    "S54": {
+      "label": "InspectAndTest — bathtub overflow guide (DEAD)",
+      "publisher": "InspectAndTest",
+      "url": "https://inspectandtest.net/guides/bathtub-overflow-drain/",
+      "tier": "publisher",
+      "status": "dead",
+      "checked": "2026-11-07",
+      "supports": "Removed from all active citations",
+      "note": "HTTP 500 on 2026-11-07. Not linked from any table row; retained here as a labeled documentation row."
+    }
+  },
+  "tables": {
+    "problem": {
+      "title": "Problem snapshot (owner-provided)",
+      "columns": [
+        "Item",
+        "Detail as provided",
+        "Official verification",
+        "Provenance",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Failed component",
+            "Bathtub wastewater overflow trip lever — stuck inside the hidden plumbing behind the wall",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S14"
+          ]
+        },
+        {
+          "cells": [
+            "Access problem",
+            "Overflow sits in a hard-to-reach area; more than five licensed plumbers declined to remove it from above for fear of damaging the hidden plumbing",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S18"
+          ]
+        },
+        {
+          "cells": [
+            "Reported fallback",
+            "Work from below; a storage unit is underneath, so the drywall ceiling may need to be opened to reach the concealed plumbing",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "Service requirement",
+            "One provider for drywall and plumbing; delicate work in a tenant-occupied unit",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "Preference",
+            "Removing the overflow from above is preferred if it can be done safely",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S20"
+          ]
+        },
+        {
+          "cells": [
+            "Location",
+            "San Francisco, California",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "Pictures",
+            "Owner said reference pictures might be provided; none were supplied to this session",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        }
+      ],
+      "caption": "All facts in this table come from the owner's project brief, transcribed on the <a href=\"brief.html\">Project brief</a> page. No public source publishes them, so the official-verification column is blank and each row is flagged. Context links in the Source column point to official or manufacturer pages that describe the relevant component or rule — they do not confirm the owner's facts."
+    },
+    "estimates": {
+      "title": "Estimates received — 2026-08-30",
+      "columns": [
+        "#",
+        "Company (identity source)",
+        "Scope as quoted",
+        "Verified amount",
+        "Date",
+        "Verification",
+        "License status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1",
+            "<strong>Expert Plumbing Solutions</strong><br><a href=\"https://www.eplumbingsolutions.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official site</a> · <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #977638</a>",
+            "Remove bathtub wastewater overflow trip lever — “replacing waste and overflow”",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span>",
+            "2026-08-30",
+            "<span class=\"pill warn\">UNVERIFIED</span><br><small>Owner-provided; no official publication exists</small>",
+            "<span class=\"pill ok\">C-36 active</span>"
+          ],
+          "src": [
+            "S44",
+            "S06",
+            "S38"
+          ]
+        },
+        {
+          "cells": [
+            "2",
+            "<strong>Bay Area Plumbing</strong><br><a href=\"https://www.bayareaplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official site</a> · <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #757796</a>",
+            "Replace lever for the bathtub plug and spout with diverter; includes labor and materials",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span>",
+            "2026-08-30",
+            "<span class=\"pill warn\">UNVERIFIED</span><br><small>Owner-provided; no official publication exists</small>",
+            "<span class=\"pill ok\">C-36 active</span>"
+          ],
+          "src": [
+            "S44",
+            "S07",
+            "S39"
+          ]
+        },
+        {
+          "cells": [
+            "3",
+            "<strong>Fast Response Plumbing &amp; Rooter</strong><br><a href=\"https://www.fastresponseplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">official site</a> · <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1024971</a>",
+            "Repair or adjust bathtub wastewater plunger handle",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span>",
+            "2026-08-30",
+            "<span class=\"pill warn\">UNVERIFIED</span><br><small>Owner-provided; no official publication exists</small>",
+            "<span class=\"pill ok\">C-36 active</span>"
+          ],
+          "src": [
+            "S44",
+            "S08",
+            "S40"
+          ]
+        }
+      ],
+      "caption": "Amounts are deliberately blank in the Verified amount column: no official source publishes these private quotes. The owner's transcribed figures are retained only on the clearly labeled <a href=\"brief.html\">Project brief</a> page and are listed as unverified on the Flagged for Review page. Company identity and license status are independently verified on CSLB. Nothing is inferred or filled in."
+    },
+    "brief_quotes": {
+      "title": "Brief transcription — quoted amounts (NOT verified)",
+      "columns": [
+        "#",
+        "Company",
+        "Quoted scope (transcription)",
+        "Amount as stated in brief",
+        "Date stated",
+        "Status",
+        "Record type",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1",
+            "Expert Plumbing Solutions",
+            "Remove bathtub wastewater overflow trip lever; replacing waste and overflow",
+            "$614",
+            "2026-08-30",
+            "<span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill mute\">primary record only</span>"
+          ],
+          "src": [
+            "S44",
+            "S06"
+          ]
+        },
+        {
+          "cells": [
+            "2",
+            "Bay Area Plumbing",
+            "Replace lever for the bathtub plug and spout with diverter, includes labor and materials",
+            "$550",
+            "2026-08-30",
+            "<span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill mute\">primary record only</span>"
+          ],
+          "src": [
+            "S44",
+            "S07"
+          ]
+        },
+        {
+          "cells": [
+            "3",
+            "Fast Response",
+            "Repair or adjust bath tub wastewater plunger handle",
+            "$135",
+            "2026-08-30",
+            "<span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill mute\">primary record only</span>"
+          ],
+          "src": [
+            "S44",
+            "S08"
+          ]
+        }
+      ],
+      "caption": "This is a transcription of the owner's brief, not a verification table. These three figures are not used in any officially verified value column anywhere on this site. Source: <a href=\"brief.html\">Project brief</a>; identity cross-checks: <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #977638</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\">#757796</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">#1024971</a>."
+    },
+    "benchmarks": {
+      "title": "Independent 2026 cost benchmarks",
+      "columns": [
+        "Benchmark",
+        "Value as published",
+        "Publisher's own date",
+        "Scope note",
+        "Verification",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Bathtub/shower drain replacement — typical range",
+            "<strong>$500–$1,020</strong><br>avg $700 · low $230 · high $1,170",
+            "2026-09-18",
+            "National figure, not a San Francisco quote",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "Plumber labor rate for drain replacement",
+            "$45–$200 / hour",
+            "2026-09-18",
+            "National figure",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "New drywall installation (if wall/ceiling opened)",
+            "≈ $2,100",
+            "2026-09-18",
+            "Add-on cost, not part of any received quote",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "Drain unclogging (if debris also cleared)",
+            "avg $225",
+            "2026-09-18",
+            "Add-on cost",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "Water damage repair (if a hidden leak is found)",
+            "$1,350–$6,100",
+            "2026-09-18",
+            "Add-on cost",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "Bathroom leak repair — typical range",
+            "<strong>$150–$600</strong><br>avg $275 · complex up to $4,000",
+            "2026-10-28",
+            "Hidden pipes behind walls raise labor time",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "Drywall/tile follow-up after a leak",
+            "$300–$930",
+            "2026-10-28",
+            "Add-on cost",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "Small-job plumber call-out minimum",
+            "$50–$200",
+            "2026-10-28",
+            "Relevant to an adjustment-only visit",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "Worn-out tub drain replacement (access note)",
+            "avg $700",
+            "2026-10-28",
+            "Publisher notes easier access lowers cost",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "Overflow component, itemized bathtub installation",
+            "$163",
+            "2026-03-05",
+            "Component cost only, not labor",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S19"
+          ]
+        },
+        {
+          "cells": [
+            "Typical bathtub drain repairs",
+            "$80–$600",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Publisher date not shown on the fetched page; value read directly, date left blank",
+            "<span class=\"pill warn\">verified value / date blank</span>"
+          ],
+          "src": [
+            "S22"
+          ]
+        },
+        {
+          "cells": [
+            "Typical repair duration",
+            "1–4 hours",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Publisher date not shown; trade blog, not SF-specific",
+            "<span class=\"pill warn\">verified value / date blank</span>"
+          ],
+          "src": [
+            "S22"
+          ]
+        }
+      ],
+      "caption": "Each row links to the publisher's own article — the official source for what that article states. Values were read directly on 2026-11-07. These are national benchmarks, not quotes for this job and not San Francisco price data. Where a publisher date was not visible, the date cell is blank and flagged rather than inferred."
+    },
+    "contractors": {
+      "title": "San Francisco contractor candidates — official license records",
+      "columns": [
+        "Company",
+        "CSLB license",
+        "Classifications on record",
+        "Status / expiry",
+        "Workers' compensation on record",
+        "Address on record",
+        "Analysis (not a vendor claim)",
+        "Verification",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "<strong>Expert Plumbing Solutions</strong><br><a href=\"https://www.eplumbingsolutions.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">#977638</a>",
+            "C-36 Plumbing",
+            "<span class=\"pill ok\">current and active</span><br>expires 2028-10-31",
+            "Insured, policy effective 2026-07-19 → 2027-07-19; $25,000 bond",
+            "1465 44th Avenue, San Francisco, CA 94122",
+            "Quoted the full waste-and-overflow scope; C-36 covers plumbing work",
+            "<span class=\"pill ok\">CSLB verified</span>"
+          ],
+          "src": [
+            "S06",
+            "S38",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>Bay Area Plumbing</strong><br><a href=\"https://www.bayareaplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/bay-area-plumbing-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\">#757796</a>",
+            "C-36 Plumbing",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-01-31",
+            "<span class=\"pill warn\">exempt — “no employees at this time”</span>; $25,000 bond",
+            "335 14th Avenue, San Francisco, CA 94118",
+            "Quoted lever + spout/diverter scope; C-36 covers plumbing work",
+            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">WC exemption flagged</span>"
+          ],
+          "src": [
+            "S07",
+            "S39",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>Fast Response Plumbing &amp; Rooter</strong><br><a href=\"https://www.fastresponseplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">#1024971</a>",
+            "C-36 Plumbing",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-03-31",
+            "Insured, policy effective 2025-12-18 → <span class=\"pill warn\">expires 2026-12-18</span>; $25,000 bond",
+            "236 W POTRAL AVE #459, San Francisco, CA 94127",
+            "Quoted the adjustment scope; site states service to apartments, HOAs and property managers",
+            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">address mismatch flagged</span>"
+          ],
+          "src": [
+            "S08",
+            "S40",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>GENERALSF</strong> (General SF)<br><a href=\"https://generalsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/general-sf-san-francisco-2\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">#959843</a>",
+            "B General Building · C-10 Electrical · C-36 Plumbing",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-04-30",
+            "<span class=\"pill warn\">exempt — “no employees at this time”</span>; $25,000 bond",
+            "3624 Irving Street Ste A, San Francisco, CA 94122",
+            "One license lists both building and plumbing classifications — matches the single-provider requirement",
+            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">WC exemption flagged</span>"
+          ],
+          "src": [
+            "S09",
+            "S41",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>Handyman Heroes Inc</strong><br><a href=\"https://www.handymanhero.es/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/handyman-heroes-san-francisco-5\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">#1003394</a>",
+            "B General Building · C-36 Plumbing",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-05-31",
+            "Insured, policy effective 2026-04-25 → 2027-04-25; $25,000 bond",
+            "912 Cole St # 202, San Francisco, CA 94117",
+            "One license lists building + plumbing; official CSLB complaint disclosure exists",
+            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">disclosure flagged</span>"
+          ],
+          "src": [
+            "S10",
+            "S12",
+            "S42"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>Ace Plumbing &amp; Rooter Inc</strong><br><a href=\"https://www.aceplumbingandrooter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">#829071</a>",
+            "A · B · C-4 · C-10 · C-16 · C-36",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-06-30",
+            "Insured, policy effective 2026-07-13 → 2027-07-13; $25,000 bond",
+            "1090 Bryant Street, San Francisco, CA 94103-4417",
+            "Broadest verified classification set including B + C-36; site describes HOA/property-manager service",
+            "<span class=\"pill ok\">CSLB verified</span>"
+          ],
+          "src": [
+            "S11",
+            "S43",
+            "S05"
+          ]
+        }
+      ],
+      "caption": "Every license fact (status, classifications, expiry, bond, workers' compensation, address) was read from the linked official CSLB License Detail page on 2026-11-07; each record printed a 'Data current as of 11/7/2026' stamp. The Analysis column is this site's reasoning from those verified classifications — not a vendor promise and not a finding that any firm can perform this specific repair. C-36 definition: <a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB C-36</a>. Re-check any license at <a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB Check a License</a> on the hire date."
+    },
+    "review_snapshots": {
+      "title": "Review-platform snapshots (not independently verified)",
+      "columns": [
+        "Candidate",
+        "Prior-session Yelp snapshot (2026-11-06)",
+        "Re-check 2026-11-07",
+        "Official license source",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Expert Plumbing Solutions",
+            "4.8 ★ (81 reviews)",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #977638</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S32",
+            "S06"
+          ]
+        },
+        {
+          "cells": [
+            "Bay Area Plumbing",
+            "4.8 ★ (175 reviews)",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #757796</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S33",
+            "S07"
+          ]
+        },
+        {
+          "cells": [
+            "Fast Response Plumbing &amp; Rooter",
+            "4.8 ★ (906 reviews)",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1024971</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S34",
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "GENERALSF",
+            "4.8 ★ (336 reviews)",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #959843</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S35",
+            "S09"
+          ]
+        },
+        {
+          "cells": [
+            "Handyman Heroes Inc",
+            "4.7 ★ (410 reviews)",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1003394</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S36",
+            "S10"
+          ]
+        },
+        {
+          "cells": [
+            "Szeto Plumbing and Handyman (Daly City)",
+            "4.8 ★ (89 reviews)",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">no CSLB record found</span>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S37",
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "Fast Response — company's own aggregate claim",
+            "“4.9 · 1,500 Reviews on Yelp &amp; Google”",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1024971</a>",
+            "<span class=\"pill warn\">company claim — flagged</span>"
+          ],
+          "src": [
+            "S40",
+            "S34"
+          ]
+        }
+      ],
+      "caption": "Yelp blocks automated access with HTTP 403 in this environment, so no rating could be confirmed from the platform on 2026-11-07. The left column reproduces a 2026-11-06 snapshot recorded by an earlier session; the re-check column is blank and flagged. Review counts change daily. Platform badges and company aggregates are not CSLB license verification. See the Flagged for Review page."
+    },
+    "platforms": {
+      "title": "Where to look for reviews of this specific work in San Francisco",
+      "columns": [
+        "Platform",
+        "San Francisco link for this work type",
+        "What the page provides (as read)",
+        "Verification",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Yelp — Bathtub Repair",
+            "<a href=\"https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\">Bathtub Repair in San Francisco</a>",
+            "Category search for the exact repair type",
+            "<span class=\"pill warn\">HTTP 403 on automated fetch — manual review link</span>"
+          ],
+          "src": [
+            "S29"
+          ]
+        },
+        {
+          "cells": [
+            "Yelp — Plumbers",
+            "<a href=\"https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\">Plumbers in San Francisco</a>",
+            "General plumbing category with business reviews",
+            "<span class=\"pill warn\">HTTP 403 — manual review link</span>"
+          ],
+          "src": [
+            "S30"
+          ]
+        },
+        {
+          "cells": [
+            "Yelp — Drywall Installation &amp; Repair",
+            "<a href=\"https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\">Drywall Installation &amp; Repair in San Francisco</a>",
+            "Category search for the drywall half of the combined scope",
+            "<span class=\"pill warn\">HTTP 403 — manual review link</span>"
+          ],
+          "src": [
+            "S31"
+          ]
+        },
+        {
+          "cells": [
+            "Angi — plumbers",
+            "<a href=\"https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Best plumbers in San Francisco, CA</a>",
+            "873 verified plumbing reviews; page last updated 2026-08-01",
+            "<span class=\"pill ok\">read directly 2026-11-07</span>"
+          ],
+          "src": [
+            "S23"
+          ]
+        },
+        {
+          "cells": [
+            "Angi — bathtub restoration",
+            "<a href=\"https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Bathtub restoration pros in San Francisco</a>",
+            "SF bathtub-specific reviews, including a multi-unit tenant-occupied plumbing + drywall project",
+            "<span class=\"pill ok\">read directly 2026-11-07</span>"
+          ],
+          "src": [
+            "S24"
+          ]
+        },
+        {
+          "cells": [
+            "BuildZoom — plumbers",
+            "<a href=\"https://www.buildzoom.com/san-francisco-ca/plumbers\" target=\"_blank\" rel=\"noopener noreferrer\">Plumbers in San Francisco, CA</a>",
+            "Client reviews, verified projects, permit/license-derived profiles; 683 experts listed",
+            "<span class=\"pill ok\">read directly 2026-11-07</span>"
+          ],
+          "src": [
+            "S25"
+          ]
+        },
+        {
+          "cells": [
+            "BuildZoom — drywall",
+            "<a href=\"https://www.buildzoom.com/san-francisco-ca/drywall-contractors\" target=\"_blank\" rel=\"noopener noreferrer\">Drywall and plaster contractors in San Francisco</a>",
+            "Drywall/plaster directory with reviews and project photos; 83 experts listed",
+            "<span class=\"pill ok\">read directly 2026-11-07</span>"
+          ],
+          "src": [
+            "S26"
+          ]
+        },
+        {
+          "cells": [
+            "Thumbtack — bathtub services",
+            "<a href=\"https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing\" target=\"_blank\" rel=\"noopener noreferrer\">Bathtub services near San Francisco, CA</a>",
+            "Bathtub-service listings with customer reviews and 'Licensed pro' badges",
+            "<span class=\"pill ok\">read directly 2026-11-07</span> <span class=\"pill warn\">badge ≠ CSLB</span>"
+          ],
+          "src": [
+            "S27"
+          ]
+        },
+        {
+          "cells": [
+            "BBB — business profile",
+            "<a href=\"https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492\" target=\"_blank\" rel=\"noopener noreferrer\">Expert Plumbing Solutions profile</a>",
+            "Accreditation status, complaint history, license number on record",
+            "<span class=\"pill ok\">read directly 2026-11-07</span>"
+          ],
+          "src": [
+            "S28"
+          ]
+        },
+        {
+          "cells": [
+            "CSLB — official license lookup",
+            "<a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">Check a License</a>",
+            "Definitive license status, classifications, bond, workers' comp, complaint disclosure",
+            "<span class=\"pill ok\">official</span>"
+          ],
+          "src": [
+            "S04"
+          ]
+        }
+      ],
+      "caption": "Platform links are discovery aids, not proof that any firm can perform this delicate repair. Only <a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB</a> verifies a California contractor license. Specific-work review text found on <a href=\"https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi's SF bathtub page</a> is a customer statement and is not treated as an official capability finding."
+    },
+    "requirements": {
+      "title": "Requirements register — line by line",
+      "columns": [
+        "#",
+        "Requirement as stated",
+        "Category",
+        "Officially confirmed value",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "R01",
+            "Collect, organize and analyze a full list of requirements",
+            "Project scope",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">implemented on this page</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "R02",
+            "Create an executive summary outlining important details",
+            "Deliverable",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">implemented</span> — <a href=\"summary.html\">Executive summary</a>"
+          ],
+          "src": [
+            "S44",
+            "S46"
+          ]
+        },
+        {
+          "cells": [
+            "R03",
+            "Problem: bathtub overflow in a hard-to-access area; may require opening drywall to reach the plumbing",
+            "Problem",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "R04",
+            "Remove the bathtub wastewater overflow trip lever",
+            "Scope of work",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S14"
+          ]
+        },
+        {
+          "cells": [
+            "R05",
+            "Estimate dated 8/30/26 — Expert Plumbing Solutions — replacing waste and overflow — $614",
+            "Estimate",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S06"
+          ]
+        },
+        {
+          "cells": [
+            "R06",
+            "Estimate dated 8/30/26 — Bay Area Plumbing — replace lever for bathtub plug and spout with diverter, labor and materials — $550",
+            "Estimate",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S07"
+          ]
+        },
+        {
+          "cells": [
+            "R07",
+            "Estimate dated 8/30/26 — Fast Response — $135 for repair or adjust bathtub wastewater plunger handle",
+            "Estimate",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "R08",
+            "Find someone who can perform the work we need",
+            "Objective",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">candidates on Contractors page</span>"
+          ],
+          "src": [
+            "S44",
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "R09",
+            "Removing the overflow from above is preferred if possible",
+            "Preference",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S18"
+          ]
+        },
+        {
+          "cells": [
+            "R10",
+            "Over five licensed plumbers could not remove it from above without concern over damaging hidden plumbing",
+            "Constraint",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S21"
+          ]
+        },
+        {
+          "cells": [
+            "R11",
+            "Plumbers recommend working from below; a storage unit is below and the drywall ceiling may need opening",
+            "Access",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill info\">owner-provided</span>"
+          ],
+          "src": [
+            "S44",
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "R12",
+            "One all-in-one service covering drywall and plumbing",
+            "Service requirement",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">#959843</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">#1003394</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">#829071</a> list B + C-36-type combinations",
+            "<span class=\"pill ok\">license classes verified</span> <span class=\"pill warn\">job capability unverified</span>"
+          ],
+          "src": [
+            "S44",
+            "S09",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "R13",
+            "Look on Yelp and other review services for this specific type of work in San Francisco",
+            "Research",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">platforms table on Contractors page</span>"
+          ],
+          "src": [
+            "S44",
+            "S23",
+            "S25",
+            "S27"
+          ]
+        },
+        {
+          "cells": [
+            "R14",
+            "Provider should be a licensed plumber or licensed contractor",
+            "Provider",
+            "<a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB Check a License</a> verifies California licenses",
+            "<span class=\"pill ok\">official rule source linked</span>"
+          ],
+          "src": [
+            "S44",
+            "S04",
+            "S05",
+            "S13"
+          ]
+        },
+        {
+          "cells": [
+            "R15",
+            "Provider must service our area (San Francisco)",
+            "Provider",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #977638</a> and other records list San Francisco addresses",
+            "<span class=\"pill ok\">addresses verified on CSLB</span>"
+          ],
+          "src": [
+            "S44",
+            "S06",
+            "S07",
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "R16",
+            "Experience with delicate work in a sensitive, tenant-occupied unit",
+            "Environment",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill warn\">not confirmable from an official source</span>"
+          ],
+          "src": [
+            "S44",
+            "S24",
+            "S40"
+          ]
+        },
+        {
+          "cells": [
+            "R17",
+            "Reference pictures may be supplied; work from the description if absent",
+            "Input",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill warn\">no pictures received</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "R18",
+            "No manual input from the owner; complete all tasks autonomously",
+            "Process",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">executed by this integration session</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "R19",
+            "Review the repo, verify from official trusted sources, provide links for manual review, flag irregularities",
+            "Repo work",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">Repo review + Verification pages</span>"
+          ],
+          "src": [
+            "S44",
+            "S45",
+            "S47"
+          ]
+        },
+        {
+          "cells": [
+            "R20",
+            "Create a GitHub Pages live site with a clean landing page, category subpages and table-format entries/findings",
+            "Site",
+            "<a href=\"https://karagemop466-tech.github.io/Korea7/\" target=\"_blank\" rel=\"noopener noreferrer\">Live site root</a>",
+            "<span class=\"pill ok\">implemented</span>"
+          ],
+          "src": [
+            "S44",
+            "S46"
+          ]
+        },
+        {
+          "cells": [
+            "R21",
+            "Every table row has an official source link; unconfirmable values are blank and flagged",
+            "Verification",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">enforced by build + verify scripts</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "R22",
+            "Parallel sessions must coordinate via COORDINATION.md on non-overlapping scopes",
+            "Coordination",
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md\" target=\"_blank\" rel=\"noopener noreferrer\">Shared board</a>",
+            "<span class=\"pill ok\">claim committed and pushed</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "R23",
+            "Publish flagged irregularities and unverified items on a clearly labeled Flagged for Review page",
+            "Site",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">Flagged for Review page</span>"
+          ],
+          "src": [
+            "S44",
+            "S46"
+          ]
+        },
+        {
+          "cells": [
+            "R24",
+            "Create a PR to main, merge it, confirm GitHub Pages deploys, record PR link and result",
+            "Delivery",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<span class=\"pill ok\">recorded on Verification + board</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        }
+      ],
+      "caption": "Requirements are transcribed from the owner's brief (<a href=\"brief.html\">Project brief (owner-provided primary record)</a>). The 'Officially confirmed value' column is blank wherever no official source can confirm the requirement; the Source column always links the primary record plus the relevant official page. Internal-only instructions are intentionally absent from this register — see the Verification page's privacy note."
+    },
+    "technical": {
+      "title": "Technical background — bathtub waste-and-overflow trip lever",
+      "columns": [
+        "Topic",
+        "What the source states",
+        "Relevance to this job",
+        "Verification",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Trip-lever mechanism",
+            "The trip lever operates a hidden linkage behind the tub wall connected to the stopper; diagnosis starts by removing the overflow cover plate and inspecting the links",
+            "Explains why a seized linkage is not visible from the tub side",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S21",
+            "S17"
+          ]
+        },
+        {
+          "cells": [
+            "Bath waste-and-overflow parts",
+            "Drain shoe, linkage assembly, overflow plate and trap form the system; the overflow plate is a safety feature",
+            "Defines the concealed assembly at issue",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S18",
+            "S17"
+          ]
+        },
+        {
+          "cells": [
+            "Above-access removal",
+            "Remove the two screws in the overflow plate and pull the plate away; the upper linkage should follow",
+            "Supports the preferred from-above approach when the linkage is free",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S18",
+            "S20"
+          ]
+        },
+        {
+          "cells": [
+            "Stuck / corroded drains",
+            "For stubborn drains, access the plumbing from below the tub; extreme cases may require cutting out old drain components from below",
+            "Explains why five-plus plumbers recommended below access",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S18"
+          ]
+        },
+        {
+          "cells": [
+            "Below-access assembly",
+            "Installing a new kit requires aligning the rubber gasket and drain elbow from below while a helper holds the shoe from above",
+            "Concealed work usually needs an opening or access panel",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S18"
+          ]
+        },
+        {
+          "cells": [
+            "Replacement kit",
+            "Oatey publishes a full 'Dearborn Plastic Tubular Trip-Lever Bath Waste' kit with a chrome-finish stopper",
+            "Confirms the component type is a standard manufactured assembly",
+            "<span class=\"pill ok\">manufacturer</span>"
+          ],
+          "src": [
+            "S14"
+          ]
+        },
+        {
+          "cells": [
+            "Overflow function",
+            "The overflow directs excess water into a concealed channel connected to the drain; traditional and integral types exist",
+            "Distinguishes the overflow plate from the trip-lever linkage",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S17"
+          ]
+        },
+        {
+          "cells": [
+            "Testing after replacement",
+            "Trade guidance describes a hydrostatic / fill-and-inspect test of the drain and overflow connections",
+            "Plan access to the space below for a water test",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S22"
+          ]
+        }
+      ],
+      "caption": "All technical statements are linked to the publisher or manufacturer page they were read from on 2026-11-07. These sources describe typical assemblies and procedures; none of them inspected this specific bathtub, and none is San Francisco code guidance."
+    },
+    "permits": {
+      "title": "Official permit and licensing references (neutral)",
+      "columns": [
+        "Topic",
+        "Official text / fact",
+        "Applies to this project",
+        "Grade",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Plumbing permit requirement",
+            "“You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.”",
+            "Replacement of concealed waste-and-overflow piping is the scope described by the rule",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "Exempt-work pointer",
+            "SF.gov points to San Francisco Plumbing Code Section 104.2 for exemptions; the official code library hosts Section 104.0 Permits",
+            "Link provided for manual review of exemption wording",
+            "<span class=\"pill ok\">official</span>"
+          ],
+          "src": [
+            "S01",
+            "S03"
+          ]
+        },
+        {
+          "cells": [
+            "Work exempt from a building permit",
+            "SF.gov lists “minor repairs to existing interior plaster or wallboard, unless they are required for fire protection” among work that does not need a permit",
+            "Relevant to the ceiling-opening / patching discussion",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "Who may apply for a plumbing permit",
+            "Contractors must hold C-4, C-16, C-20, C-36, C-54, B or A classifications; scope may be further limited by license type",
+            "Matches the requirement for a licensed plumber or contractor",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "Inspection before covering",
+            "After a permit is issued, work must be inspected before covering pipes",
+            "Sequencing consideration if a ceiling is opened and re-closed",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "Homeowner route",
+            "Only owners of stand-alone single-family dwellings (R-3) may apply to do the work themselves",
+            "Tenant-occupied multi-unit context should be checked directly with SF DBI",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "Small-job licensing exemption",
+            "B&amp;P §7048 exempts work only when the aggregate price is under $1,000, the work is casual/minor/inconsequential, and no building permit is required (as amended by AB 1170, effective 2026-01-01)",
+            "Current statutory text; widely repeated older $500 figures are outdated",
+            "<span class=\"pill ok\">official — leginfo</span>"
+          ],
+          "src": [
+            "S13"
+          ]
+        },
+        {
+          "cells": [
+            "Confirm applicability",
+            "SF.gov lists the Permit Center help desk and permitsf@sfgov.org as contacts",
+            "The hiring party should confirm permit applicability for the exact scope with SF DBI and the contractor",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01"
+          ]
+        }
+      ],
+      "caption": "This page reports official requirements only. It contains no instruction, request or recommendation about obtaining or not obtaining a permit, and it records no private project rationale. Confirm the final scope with SF DBI and the selected licensed contractor. Nothing here is legal advice."
+    },
+    "findings": {
+      "title": "Analysis and findings",
+      "columns": [
+        "#",
+        "Finding",
+        "Basis (verified sources)",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "F01",
+            "Three quotes bracket three different scopes: adjustment, stopper/spout replacement, and full waste-and-overflow replacement",
+            "Owner brief scopes; Angi's replacement range $500–$1,020 and leak-repair range $150–$600",
+            "<span class=\"pill info\">analysis</span> <span class=\"pill warn\">amounts unverified</span>"
+          ],
+          "src": [
+            "S44",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "F02",
+            "Below-access is the documented norm when above-access fails on a seized assembly",
+            "This Old House: stubborn drains may need access from below; new kits are aligned from below",
+            "<span class=\"pill ok\">analysis supported by publisher</span>"
+          ],
+          "src": [
+            "S18",
+            "S21"
+          ]
+        },
+        {
+          "cells": [
+            "F03",
+            "A single license can cover both building/drywall and plumbing work",
+            "CSLB #959843 (B + C10 + C36), #1003394 (B + C36), #829071 (A + B + C36 among others)",
+            "<span class=\"pill ok\">license classes verified</span> <span class=\"pill warn\">job capability unverified</span>"
+          ],
+          "src": [
+            "S09",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "F04",
+            "All six shortlisted firms hold active CSLB licenses checked 2026-11-07",
+            "Six official License Detail pages each print 'current and active'",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S06",
+            "S07",
+            "S08",
+            "S09",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "F05",
+            "Drywall/ceiling work is not included in any of the three quoted scopes",
+            "Owner brief scopes; Angi lists new drywall ≈ $2,100 and post-leak patching $300–$930 as separate costs",
+            "<span class=\"pill info\">analysis</span> <span class=\"pill warn\">no drywall quote exists</span>"
+          ],
+          "src": [
+            "S44",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "F06",
+            "Two licenses show a workers'-compensation exemption 'no employees', and one policy expires 2026-12-18",
+            "CSLB #757796, #959843, #1024971",
+            "<span class=\"pill ok\">verified on CSLB</span> <span class=\"pill warn\">flagged</span>"
+          ],
+          "src": [
+            "S07",
+            "S09",
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "F07",
+            "Review counts and badges are not license verification",
+            "Yelp HTTP 403; Thumbtack 'Licensed pro' badge; BBB states it does not verify third-party information; CSLB is the authority",
+            "<span class=\"pill ok\">verified sources</span>"
+          ],
+          "src": [
+            "S04",
+            "S27",
+            "S28",
+            "S29"
+          ]
+        },
+        {
+          "cells": [
+            "F08",
+            "Occupied-unit / property-manager experience is only partially documented",
+            "Fast Response site (apartments, HOAs, property managers), Ace site (HOAs/property managers), Angi SF review mentions a tenant-occupied multi-unit project",
+            "<span class=\"pill warn\">company/review statements only</span>"
+          ],
+          "src": [
+            "S40",
+            "S43",
+            "S24"
+          ]
+        },
+        {
+          "cells": [
+            "F09",
+            "Two previously cited sources are dead and were removed from all active claims",
+            "SFGate redirect to empty page; InspectAndTest HTTP 500 — both re-checked 2026-11-07",
+            "<span class=\"pill warn\">irregularity — flagged</span>"
+          ],
+          "src": [
+            "S55",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "F10",
+            "The repository's root content belongs to an unrelated legacy project",
+            "README describes a DOE GEMS fault-prospectivity audit; legacy site remains under docs/",
+            "<span class=\"pill warn\">irregularity — flagged</span>"
+          ],
+          "src": [
+            "S47",
+            "S48"
+          ]
+        },
+        {
+          "cells": [
+            "F11",
+            "Recommended shortlist order: firms whose verified classes cover both building and plumbing first",
+            "CSLB #829071, #959843, #1003394",
+            "<span class=\"pill info\">recommendation</span>"
+          ],
+          "src": [
+            "S11",
+            "S09",
+            "S10"
+          ]
+        }
+      ],
+      "caption": "Findings marked 'analysis' are this site's reasoning from the cited verified sources; they are not vendor claims, quotes, or official determinations. Values that could not be confirmed from an official source remain blank on the data pages and are listed on the Flagged for Review page."
+    },
+    "flagged": {
+      "title": "Flagged for Review — unverified values and irregularities",
+      "columns": [
+        "ID",
+        "Item",
+        "Why it is flagged",
+        "What would clear it",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "U01",
+            "Three estimate amounts ($614, $550, $135) and all owner-provided problem facts",
+            "No official or public source publishes private quotes or the owner's description; officially verified value cells are blank",
+            "Attach the original written quotes and photos as project documents, then re-verify",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S44",
+            "S06",
+            "S07",
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "U02",
+            "Estimate scope wording and dates",
+            "Transcribed from the brief only",
+            "Supply the original quote documents",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S44",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "U03",
+            "Yelp ratings and review counts",
+            "Direct Yelp fetch returns HTTP 403 on 2026-11-07; only a 2026-11-06 prior-session snapshot exists",
+            "Open the linked Yelp pages manually on the decision date",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S29",
+            "S32",
+            "S33",
+            "S34"
+          ]
+        },
+        {
+          "cells": [
+            "U04",
+            "Fast Response address mismatch",
+            "Yelp listing shows 4444 Geary Blvd Ste 203 (prior snapshot); official CSLB #1024971 shows 236 W POTRAL AVE #459",
+            "Ask the company which is the service vs mailing address",
+            "<span class=\"pill warn\">irregularity</span>"
+          ],
+          "src": [
+            "S08",
+            "S34",
+            "S40"
+          ]
+        },
+        {
+          "cells": [
+            "U05",
+            "Fast Response workers'-compensation policy expires 2026-12-18",
+            "CSLB #1024971 shows a policy with that expiry date; re-check on the hire date",
+            "Request a current certificate of insurance",
+            "<span class=\"pill warn\">verified fact / time-sensitive</span>"
+          ],
+          "src": [
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "U06",
+            "Workers'-compensation exemptions on #757796 and #959843",
+            "Both CSLB records state the licensee certified 'no employees at this time'",
+            "Confirm in writing who will be on site and what coverage applies to the crew",
+            "<span class=\"pill warn\">verified fact / needs review</span>"
+          ],
+          "src": [
+            "S07",
+            "S09"
+          ]
+        },
+        {
+          "cells": [
+            "U07",
+            "Handyman Heroes CSLB complaint disclosure",
+            "CSLB shows citation 2 2020 001045 dated 07/12/2020, 'FOR DISCLOSURE ONLY PER B&P CODE 7124.6' — reported verbatim, no interpretation",
+            "Open the official disclosure yourself and decide before hiring",
+            "<span class=\"pill warn\">verified fact / needs review</span>"
+          ],
+          "src": [
+            "S12",
+            "S10"
+          ]
+        },
+        {
+          "cells": [
+            "U08",
+            "Handyman Heroes site claims 'Licensed C-10'",
+            "The official CSLB #1003394 record lists B and C-36 only",
+            "Ask the company which license covers electrical work",
+            "<span class=\"pill warn\">irregularity</span>"
+          ],
+          "src": [
+            "S42",
+            "S10"
+          ]
+        },
+        {
+          "cells": [
+            "U09",
+            "Fast Response company aggregate '4.9 / 1,500 Reviews on Yelp &amp; Google'",
+            "Company self-claim combining two platforms; Yelp page could not be re-fetched",
+            "Re-open each platform separately",
+            "<span class=\"pill warn\">irregularity</span>"
+          ],
+          "src": [
+            "S40",
+            "S34"
+          ]
+        },
+        {
+          "cells": [
+            "U10",
+            "Szeto Plumbing and Handyman — license not found",
+            "A prior session's CSLB name search on 2026-11-06 found no record; not re-verified on 2026-11-07, and the business is in Daly City with a 310 area code",
+            "Ask for a CSLB number and verify it directly, or drop the candidate",
+            "<span class=\"pill warn\">unverified</span>"
+          ],
+          "src": [
+            "S37",
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "U11",
+            "Two dead source URLs from earlier sessions",
+            "SFGate Home Guides redirects to an empty page; InspectAndTest returns HTTP 500 (both re-checked 2026-11-07)",
+            "Removed from all active citations; retained only as labeled documentation rows on the Source ledger",
+            "<span class=\"pill ok\">resolved / documented</span>"
+          ],
+          "src": [
+            "S55",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "U12",
+            "Repository content mismatch",
+            "The README and docs/ describe an unrelated DOE GEMS fault-prospectivity audit; this dashboard occupies the site root",
+            "No action required; legacy files deliberately untouched",
+            "<span class=\"pill warn\">irregularity</span>"
+          ],
+          "src": [
+            "S47",
+            "S48"
+          ]
+        },
+        {
+          "cells": [
+            "U13",
+            "Stale conflicting PR #32 from a parallel session",
+            "Open since 2026-11-06, mergeable=CONFLICTING, also touches index.html; left untouched and not merged or closed by this session",
+            "Owner may close or rebase it after this integration",
+            "<span class=\"pill warn\">needs review</span>"
+          ],
+          "src": [
+            "S52",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "U14",
+            "No combined written quote for plumbing + drywall exists",
+            "No official or company source publishes a combined scope for this job",
+            "Request one contingent written scope covering above-attempt, below access, ceiling cut/patch/finish and tenant coordination",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S44",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "U15",
+            "Job-specific capability, tenant-occupied experience and service-area confirmation",
+            "CSLB verifies license classes, not the ability to perform this specific delicate repair; company sites and reviews are self- or customer statements",
+            "Ask each shortlisted firm for references on concealed waste-and-overflow work in occupied units",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S04",
+            "S24",
+            "S40",
+            "S43"
+          ]
+        }
+      ],
+      "caption": "Flagged items do not block the site, the analysis, or the merge. They are published here, with their source links, so they can be reviewed after the site is live. Blank means unconfirmed — nothing was inferred to fill a gap."
+    },
+    "repo_review": {
+      "title": "Repository review — line by line",
+      "columns": [
+        "Area",
+        "What was found",
+        "Verification",
+        "Result",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Root",
+            "A prior session published a 7-page dashboard (index, summary, estimates, contractors, findings, sources, flagged) at the site root",
+            "Files read locally 2026-11-07; this integration replaces them with a 13-page canonical dashboard",
+            "<span class=\"pill ok\">reviewed</span>"
+          ],
+          "src": [
+            "S46",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "Legacy project",
+            "README documents a DOE GEMS geothermal fault-prospectivity submission audit with GeoTIFF datasets under data/, docs/, vendor/, gems/, evidence/, registry/",
+            "README read locally; legacy content is unrelated to the bathtub project and is untouched",
+            "<span class=\"pill warn\">irregularity</span>"
+          ],
+          "src": [
+            "S47",
+            "S48"
+          ]
+        },
+        {
+          "cells": [
+            "Parallel microsites",
+            "bathtub-overflow/, docs/bath/, docs/overflow-*.html and docs/plumbing-index.html contain earlier, partly overlapping research",
+            "Linked as archive; files not edited",
+            "<span class=\"pill ok\">reviewed</span>"
+          ],
+          "src": [
+            "S49",
+            "S50",
+            "S51"
+          ]
+        },
+        {
+          "cells": [
+            "Coordination board",
+            "COORDINATION.md contains 548 lines from six prior sessions with claims, handoffs and a verification log",
+            "Read at session start; this session appended its own board section and pushed the claim",
+            "<span class=\"pill ok\">reviewed</span>"
+          ],
+          "src": [
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "Prior compliance gap",
+            "The earlier root estimates table displayed owner-provided amounts in value cells and had rows with no source links",
+            "Reproduced by a local row-link audit; fixed in this build (blank verified cells, every row linked)",
+            "<span class=\"pill ok\">fixed</span>"
+          ],
+          "src": [
+            "S45",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Dead external links",
+            "Earlier pages cited homeguides.sfgate.com and inspectandtest.net; both fail on re-check",
+            "Removed from active citations; retained as labeled documentation rows",
+            "<span class=\"pill warn\">fixed / flagged</span>"
+          ],
+          "src": [
+            "S55",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "Open PR",
+            "PR #32 from a parallel session is open and conflicting",
+            "Checked with gh; not merged, not closed, not edited",
+            "<span class=\"pill warn\">needs review</span>"
+          ],
+          "src": [
+            "S52"
+          ]
+        },
+        {
+          "cells": [
+            "Pages configuration",
+            "GitHub Pages builds from branch main, path / (legacy build type); .nojekyll is present at the repo root",
+            "Confirmed with gh api repos/.../pages on 2026-11-07",
+            "<span class=\"pill ok\">verified</span>"
+          ],
+          "src": [
+            "S46"
+          ]
+        },
+        {
+          "cells": [
+            "Tests / scripts",
+            "Existing Python scripts and tests belong to the legacy GEMS project; pytest is not installed in this sandbox",
+            "This session added standalone unittest-based dashboard checks runnable with python3",
+            "<span class=\"pill ok\">reviewed</span>"
+          ],
+          "src": [
+            "S47"
+          ]
+        },
+        {
+          "cells": [
+            "Privacy sweep",
+            "A grep for internal-only hiring constraints across all published HTML/MD/JSON/CSS/JS returned zero matches",
+            "See the Verification page for the exact pattern list and result",
+            "<span class=\"pill ok\">pass</span>"
+          ],
+          "src": [
+            "S45"
+          ]
+        }
+      ],
+      "caption": "Repo review was performed by reading the files in the checkout and querying the GitHub API. Links point to the repository files and Pages site for manual review. Irregularities are also published on the Flagged for Review page."
+    },
+    "source_ledger": {
+      "title": "Source ledger — all sources with verification status",
+      "columns": [
+        "ID",
+        "Source",
+        "Publisher / tier",
+        "Status",
+        "What it supports",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "<code>S01</code>",
+            "<strong>SF.gov — Apply for a plumbing and mechanical permit</strong><br><small><a href=\"https://www.sf.gov/apply-plumbing-and-mechanical-permit\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.sf.gov/apply-plumbing-and-mechanical-permit</a></small>",
+            "SF Dept. of Building Inspection<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Permit requirement for cutting into/replacing pipes; license classes allowed to apply; inspection before covering pipes; homeowner R-3 restriction<br><small>Read directly on sf.gov, 2026-11-07.</small>"
+          ],
+          "src": [
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S02</code>",
+            "<strong>SF.gov — Check if your construction project needs a permit</strong><br><small><a href=\"https://www.sf.gov/information--check-if-your-construction-project-needs-permit\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.sf.gov/information--check-if-your-construction-project-needs-permit</a></small>",
+            "SF Dept. of Building Inspection<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Published list of work that does not need a permit, including minor repairs to existing interior plaster or wallboard<br><small>Read directly on sf.gov, 2026-11-07.</small>"
+          ],
+          "src": [
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S03</code>",
+            "<strong>SF Building/Plumbing Code — Section 104.0 Permits</strong><br><small><a href=\"https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830</a></small>",
+            "American Legal Publishing code library (City and County of SF)<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Official code location for §104.2 exempt work referenced by sf.gov<br><small>Page title confirmed as &#x27;SECTION 104.0 - PERMITS&#x27;. The code library page is JavaScript-heavy; the exemption text was not machine-parsed, so the link is provided for manual review and no section wording is quoted from it.</small>"
+          ],
+          "src": [
+            "S03"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S04</code>",
+            "<strong>CSLB — Check a License</strong><br><small><a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Official license lookup by number or business name; CSLB advises checking status and complaint disclosure before hiring<br><small>Read directly on cslb.ca.gov, 2026-11-07.</small>"
+          ],
+          "src": [
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S05</code>",
+            "<strong>CSLB — C-36 Plumbing classification</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Official definition of the C-36 Plumbing classification (16 CCR, Div. 8, Art. 3)<br><small>Read directly on cslb.ca.gov, 2026-11-07.</small>"
+          ],
+          "src": [
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S06</code>",
+            "<strong>CSLB License Detail #977638 — Expert Plumbing Solutions</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation<br><small>Record printed &#x27;Data current as of 11/7/2026 12:22:23 PM&#x27;.</small>"
+          ],
+          "src": [
+            "S06"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S07</code>",
+            "<strong>CSLB License Detail #757796 — Bay Area Plumbing</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation exemption<br><small>Record printed &#x27;Data current as of 11/7/2026 12:22:25 PM&#x27;.</small>"
+          ],
+          "src": [
+            "S07"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S08</code>",
+            "<strong>CSLB License Detail #1024971 — Fast Response Plumbing and Rooter</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation policy dates<br><small>Record printed &#x27;Data current as of 11/7/2026 12:22:23 PM&#x27;.</small>"
+          ],
+          "src": [
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S09</code>",
+            "<strong>CSLB License Detail #959843 — GENERALSF</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business name, address, entity, issue/expiry dates, status, B/C10/C36 classifications, bond, workers&#x27; compensation exemption<br><small>Record printed &#x27;Data current as of 11/7/2026 12:21:47 PM&#x27;.</small>"
+          ],
+          "src": [
+            "S09"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S10</code>",
+            "<strong>CSLB License Detail #1003394 — Handyman Heroes Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business name, address, entity, issue/expiry dates, status, B/C36 classifications, bond, workers&#x27; compensation, complaint-disclosure flag<br><small>Record printed &#x27;Data current as of 11/7/2026 12:21:47 PM&#x27;.</small>"
+          ],
+          "src": [
+            "S10"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S11</code>",
+            "<strong>CSLB License Detail #829071 — Ace Plumbing &amp; Rooter</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business name, address, entity, issue/reissue/expiry dates, status, A/B/C-4/C10/C16/C36 classifications, bond, workers&#x27; compensation<br><small>Record printed &#x27;Data current as of 11/7/2026 12:23:38 PM&#x27;.</small>"
+          ],
+          "src": [
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S12</code>",
+            "<strong>CSLB Complaint Disclosure #1003394</strong><br><small><a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&amp;LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&amp;LicNum=1003394</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Citation 2 2020 001045, dated 07/12/2020, &#x27;FOR DISCLOSURE ONLY PER B&amp;P CODE 7124.6&#x27;<br><small>Read directly on cslb.ca.gov, 2026-11-07. Reported verbatim, no interpretation.</small>"
+          ],
+          "src": [
+            "S12"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S13</code>",
+            "<strong>California Business &amp; Professions Code §7048</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048</a></small>",
+            "California Legislative Information (leginfo)<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Current small-job licensing exemption: aggregate price under $1,000, casual/minor/inconsequential, and no building permit required; amended by Stats. 2025 ch. 67 (AB 1170), effective 2026-01-01<br><small>Read directly on leginfo, 2026-11-07.</small>"
+          ],
+          "src": [
+            "S13"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S14</code>",
+            "<strong>Oatey — Dearborn Plastic Tubular Trip-Lever Bath Waste</strong><br><small><a href=\"https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste</a></small>",
+            "Oatey (manufacturer)<br><span class=\"pill info\">manufacturer</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Existence and naming of a full trip-lever bath waste-and-overflow kit with chrome-finish stopper<br><small>Manufacturer product page read directly, 2026-11-07.</small>"
+          ],
+          "src": [
+            "S14"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S15</code>",
+            "<strong>Angi — Cost to Replace a Bathtub or Shower Drain (2026)</strong><br><small><a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm</a></small>",
+            "Angi<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "$500–$1,020 range, $700 average, $230 low / $1,170 high; labor $45–$200/hr; drywall ~$2,100; drain clearing avg $225; water damage $1,350–$6,100<br><small>Article states &#x27;Updated Sep 18, 2026&#x27;. Read directly.</small>"
+          ],
+          "src": [
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S16</code>",
+            "<strong>Angi — Bathroom Leak Repair Cost (2026)</strong><br><small><a href=\"https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm</a></small>",
+            "Angi<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "$150–$600 leak repair range, $275 average, up to $4,000 complex; drywall/tile follow-up $300–$930; call-out $50–$200; labor $45–$200/hr; worn-out tub drain avg $700<br><small>Article states &#x27;Updated Oct 28, 2026&#x27;. Read directly.</small>"
+          ],
+          "src": [
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S17</code>",
+            "<strong>Angi — What Is a Bathtub Overflow Drain?</strong><br><small><a href=\"https://www.angi.com/articles/what-is-overflow-drain.htm\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.angi.com/articles/what-is-overflow-drain.htm</a></small>",
+            "Angi<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Overflow drain function; concealed channel; traditional vs integral overflow; trip-lever/rod diagram<br><small>Article states &#x27;Updated Jul 9, 2026&#x27;. Read directly.</small>"
+          ],
+          "src": [
+            "S17"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S18</code>",
+            "<strong>This Old House — How To Replace a Tub Drain</strong><br><small><a href=\"https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain</a></small>",
+            "This Old House<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Bath waste-and-overflow components (drain shoe, linkage assembly, overflow plate, trap); remove the two overflow-plate screws from above; for stubborn drains access plumbing from below; 3–4 hour DIY estimate<br><small>Read directly. Article is a DIY guide, not San Francisco code guidance.</small>"
+          ],
+          "src": [
+            "S18"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S19</code>",
+            "<strong>This Old House — Bathtub Installation Cost (2026)</strong><br><small><a href=\"https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost</a></small>",
+            "This Old House<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Itemized component table including Overflow $163, Drain $190, Spout $82; total $2,110<br><small>Article states &#x27;Updated 03/05/2026&#x27;. Read directly.</small>"
+          ],
+          "src": [
+            "S19"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S20</code>",
+            "<strong>Family Handyman — Replace a bathtub drain stopper</strong><br><small><a href=\"https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/</a></small>",
+            "Family Handyman<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Removing an old-style trip-lever linkage begins at the overflow plate; lift-and-turn conversion<br><small>Article states &#x27;Updated on Feb. 14, 2024&#x27;. Read directly.</small>"
+          ],
+          "src": [
+            "S20"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S21</code>",
+            "<strong>Hunker — The Trip Lever In My Bathtub Is Stuck</strong><br><small><a href=\"https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/</a></small>",
+            "Hunker<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Trip lever is hidden behind the tub wall; diagnosis begins by removing the cover plate and checking links<br><small>Article states &#x27;Updated Oct 3, 2020&#x27;. Read directly.</small>"
+          ],
+          "src": [
+            "S21"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S22</code>",
+            "<strong>The Overall Plumber — Bathtub Drain Drama</strong><br><small><a href=\"https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/</a></small>",
+            "The Overall Plumber (trade blog, Houston TX)<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Typical repair range $80–$600; most repairs 1–4 hours; repair-vs-replacement decision table; hydrostatic/water test of drain assembly<br><small>Published date not shown on the fetched page — left blank, not inferred. Trade blog; not a San Francisco authority.</small>"
+          ],
+          "src": [
+            "S22"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S23</code>",
+            "<strong>Angi — Best plumbers in San Francisco, CA</strong><br><small><a href=\"https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm</a></small>",
+            "Angi<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "San Francisco plumbing category with verified-review counts; 873 verified plumbing reviews; review text about older SF homes<br><small>Page states &#x27;Last update on August 01, 2026&#x27;. Read directly. Platform reviews are not license verification.</small>"
+          ],
+          "src": [
+            "S23"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S24</code>",
+            "<strong>Angi — Bathtub restoration pros in San Francisco, CA</strong><br><small><a href=\"https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm</a></small>",
+            "Angi<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "SF bathtub-specific verified reviews, including a small SF property owner describing plumbing plus drywall/ceiling work in a tenant-occupied multi-unit building<br><small>Read directly. Review text is a customer statement, not an official capability finding.</small>"
+          ],
+          "src": [
+            "S24"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S25</code>",
+            "<strong>BuildZoom — Plumbers in San Francisco, CA</strong><br><small><a href=\"https://www.buildzoom.com/san-francisco-ca/plumbers\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.buildzoom.com/san-francisco-ca/plumbers</a></small>",
+            "BuildZoom<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "San Francisco plumbing directory with client reviews, verified projects and permit/license-derived profiles<br><small>Read directly. Page shows &#x27;683 experts&#x27;; count is a point-in-time platform figure.</small>"
+          ],
+          "src": [
+            "S25"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S26</code>",
+            "<strong>BuildZoom — Drywall and plaster contractors in San Francisco, CA</strong><br><small><a href=\"https://www.buildzoom.com/san-francisco-ca/drywall-contractors\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.buildzoom.com/san-francisco-ca/drywall-contractors</a></small>",
+            "BuildZoom<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "San Francisco drywall/plaster directory with reviews and project photos<br><small>Read directly. Page shows &#x27;83 experts&#x27;; point-in-time platform figure.</small>"
+          ],
+          "src": [
+            "S26"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S27</code>",
+            "<strong>Thumbtack — Bathtub services near San Francisco, CA</strong><br><small><a href=\"https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing</a></small>",
+            "Thumbtack<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "San Francisco bathtub-service listings with customer reviews and &#x27;Licensed pro&#x27; badges<br><small>Read directly. A platform &#x27;Licensed pro&#x27; badge is not a CSLB license verification.</small>"
+          ],
+          "src": [
+            "S27"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S28</code>",
+            "<strong>BBB — Expert Plumbing Solutions business profile</strong><br><small><a href=\"https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492</a></small>",
+            "Better Business Bureau<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Business profile: not BBB accredited, no BBB rating, no complaints in last 3 years, license number 977638 on record, 1465 44th Avenue SF<br><small>Read directly. BBB states it does not verify third-party information.</small>"
+          ],
+          "src": [
+            "S28"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S29</code>",
+            "<strong>Yelp — Bathtub Repair in San Francisco</strong><br><small><a href=\"https://www.yelp.com/search?find_desc=Bathtub+Repair&amp;find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/search?find_desc=Bathtub+Repair&amp;find_loc=San+Francisco%2C+CA</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Category search for the specific work type in San Francisco<br><small>Direct fetch returned HTTP 403 to automated access; the live link is provided for manual review. No rating values are claimed from this URL.</small>"
+          ],
+          "src": [
+            "S29"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S30</code>",
+            "<strong>Yelp — Plumbers in San Francisco</strong><br><small><a href=\"https://www.yelp.com/search?find_desc=Plumbers&amp;find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/search?find_desc=Plumbers&amp;find_loc=San+Francisco%2C+CA</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Category search for licensed plumbers serving San Francisco<br><small>HTTP 403 on automated fetch; link provided for manual review.</small>"
+          ],
+          "src": [
+            "S30"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S31</code>",
+            "<strong>Yelp — Drywall Installation &amp; Repair in San Francisco</strong><br><small><a href=\"https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&amp;find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&amp;find_loc=San+Francisco%2C+CA</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Category search for the drywall half of the combined scope<br><small>HTTP 403 on automated fetch; link provided for manual review.</small>"
+          ],
+          "src": [
+            "S31"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S32</code>",
+            "<strong>Yelp — Expert Plumbing Solutions</strong><br><small><a href=\"https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Business review page for one of the three quoting companies<br><small>HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 81 reviews) exists in prior-session notes; not re-verified — flagged.</small>"
+          ],
+          "src": [
+            "S32"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S33</code>",
+            "<strong>Yelp — Bay Area Plumbing</strong><br><small><a href=\"https://www.yelp.com/biz/bay-area-plumbing-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/bay-area-plumbing-san-francisco</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Business review page for one of the three quoting companies<br><small>HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 175 reviews) exists in prior-session notes; not re-verified — flagged.</small>"
+          ],
+          "src": [
+            "S33"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S34</code>",
+            "<strong>Yelp — Fast Response Plumbing &amp; Rooter</strong><br><small><a href=\"https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Business review page for one of the three quoting companies<br><small>HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 906 reviews) exists in prior-session notes; not re-verified — flagged.</small>"
+          ],
+          "src": [
+            "S34"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S35</code>",
+            "<strong>Yelp — General SF</strong><br><small><a href=\"https://www.yelp.com/biz/general-sf-san-francisco-2\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/general-sf-san-francisco-2</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Business review page for an all-in-one candidate<br><small>HTTP 403 on automated fetch. Prior-session snapshot (4.8, 336 reviews) not re-verified — flagged.</small>"
+          ],
+          "src": [
+            "S35"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S36</code>",
+            "<strong>Yelp — Handyman Heroes</strong><br><small><a href=\"https://www.yelp.com/biz/handyman-heroes-san-francisco-5\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/handyman-heroes-san-francisco-5</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Business review page for an all-in-one candidate<br><small>HTTP 403 on automated fetch. Prior-session snapshot (4.7, 410 reviews) not re-verified — flagged.</small>"
+          ],
+          "src": [
+            "S36"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S37</code>",
+            "<strong>Yelp — Szeto Plumbing and Handyman</strong><br><small><a href=\"https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Business review page for a plumbing+drywall lead outside SF proper<br><small>HTTP 403 on automated fetch. Prior-session snapshot (4.8, 89 reviews) not re-verified — flagged; license not found on CSLB.</small>"
+          ],
+          "src": [
+            "S37"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S38</code>",
+            "<strong>Expert Plumbing Solutions — official site</strong><br><small><a href=\"https://www.eplumbingsolutions.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.eplumbingsolutions.com/</a></small>",
+            "Expert Plumbing Solutions<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Company states License # 977638, San Francisco address 1465 44th Avenue, phone (415) 531-5340<br><small>Read directly. Company self-description is not independent verification; license facts come from CSLB.</small>"
+          ],
+          "src": [
+            "S38"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S39</code>",
+            "<strong>Bay Area Plumbing — official site</strong><br><small><a href=\"https://www.bayareaplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.bayareaplumbingsf.com/</a></small>",
+            "Bay Area Plumbing<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Company states it has served San Francisco since 1995, phone (415) 668-8000, residential and commercial plumbing<br><small>Read directly. Company self-description is not independent verification.</small>"
+          ],
+          "src": [
+            "S39"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S40</code>",
+            "<strong>Fast Response Plumbing &amp; Rooter — official site</strong><br><small><a href=\"https://www.fastresponseplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.fastresponseplumbingsf.com/</a></small>",
+            "Fast Response Plumbing &amp; Rooter<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Company states CSLB #1024971, C-36, service to houses/apartments/HOAs/property managers, and &#x27;4.9 / 1,500 Reviews on Yelp &amp; Google&#x27;<br><small>Read directly. The review aggregate is a company claim, not verified — flagged. License facts come from CSLB.</small>"
+          ],
+          "src": [
+            "S40"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S41</code>",
+            "<strong>General SF — official site</strong><br><small><a href=\"https://generalsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://generalsf.com/</a></small>",
+            "General SF<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Company site lists Electrical, Plumbing, Building and Bathroom &amp; Kitchen services and prints &#x27;CSLB. 959843&#x27;<br><small>Read directly. Company self-description is not independent verification.</small>"
+          ],
+          "src": [
+            "S41"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S42</code>",
+            "<strong>Handyman Heroes — official site</strong><br><small><a href=\"https://www.handymanhero.es/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.handymanhero.es/</a></small>",
+            "Handyman Heroes Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Company site advertises construction, electrical, plumbing and handyman services; states &#x27;Licensed C-10&#x27; and &#x27;Licensed C-36&#x27;<br><small>Read directly. CSLB #1003394 lists B + C-36 only — the C-10 claim is an irregularity (flagged).</small>"
+          ],
+          "src": [
+            "S42"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S43</code>",
+            "<strong>Ace Plumbing &amp; Rooter — official site</strong><br><small><a href=\"https://www.aceplumbingandrooter.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.aceplumbingandrooter.com/</a></small>",
+            "Ace Plumbing &amp; Rooter Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Company lists license #829071 with A, B, C4, C10, C16 and C36 classifications; describes service to HOAs and property managers<br><small>Read directly. Classifications independently confirmed on CSLB #829071.</small>"
+          ],
+          "src": [
+            "S43"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S44</code>",
+            "<strong>Project brief (owner-provided primary record)</strong><br><small><a href=\"brief.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">brief.html</a></small>",
+            "This project&#x27;s own record, published on this site<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Owner-provided problem statement, three 2026-08-30 estimates, access constraints, service requirements and tenant-occupancy context<br><small>Primary record only — not an independent public source. Every value taken from it is marked UNVERIFIED in official-verification columns.</small>"
+          ],
+          "src": [
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S45</code>",
+            "<strong>COORDINATION.md — shared task board</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md</a></small>",
+            "This repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Task claims, handoffs, verification log, irregularities, PR and merge record<br><small>Repository file, read locally 2026-11-07.</small>"
+          ],
+          "src": [
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S46</code>",
+            "<strong>Published GitHub Pages site</strong><br><small><a href=\"https://karagemop466-tech.github.io/Korea7/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://karagemop466-tech.github.io/Korea7/</a></small>",
+            "GitHub Pages / this repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Live landing page location for this dashboard<br><small>Pages source is branch main, path /.</small>"
+          ],
+          "src": [
+            "S46"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S47</code>",
+            "<strong>Repository README</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/blob/main/README.md</a></small>",
+            "This repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Legacy GEMS project description and current status, used for the repo-review irregularity<br><small>Read locally.</small>"
+          ],
+          "src": [
+            "S47"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S48</code>",
+            "<strong>Legacy GEMS site (archived)</strong><br><small><a href=\"docs/index.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">docs/index.html</a></small>",
+            "This repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Unrelated legacy project pages retained in the repo<br><small>Internal link, not edited by this session.</small>"
+          ],
+          "src": [
+            "S48"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S49</code>",
+            "<strong>Parallel microsite (archived)</strong><br><small><a href=\"bathtub-overflow/executive-summary.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">bathtub-overflow/executive-summary.html</a></small>",
+            "This repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Prior session&#x27;s overflow pages, retained unpublished-from-nav as archive<br><small>Internal link, not edited by this session.</small>"
+          ],
+          "src": [
+            "S49"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S50</code>",
+            "<strong>Parallel microsite (archived)</strong><br><small><a href=\"docs/bath/index.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">docs/bath/index.html</a></small>",
+            "This repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Prior session&#x27;s docs/bath pages, retained as archive<br><small>Internal link, not edited by this session.</small>"
+          ],
+          "src": [
+            "S50"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S51</code>",
+            "<strong>Parallel dashboard (archived)</strong><br><small><a href=\"docs/plumbing-index.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">docs/plumbing-index.html</a></small>",
+            "This repository<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Prior session&#x27;s docs/overflow dashboard, retained as archive<br><small>Internal link, not edited by this session.</small>"
+          ],
+          "src": [
+            "S51"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S52</code>",
+            "<strong>Open PR #32 (stale parallel session)</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/pull/32\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/pull/32</a></small>",
+            "GitHub<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Open, conflicting PR from a 2026-11-06 parallel session that also touched index.html<br><small>Checked with gh: state OPEN, mergeable CONFLICTING, last updated 2026-11-06 13:45 UTC. Left untouched.</small>"
+          ],
+          "src": [
+            "S52"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S53</code>",
+            "<strong>SFGate Home Guides — trip lever article (DEAD)</strong><br><small><code class=\"dead-url\">https://homeguides.sfgate.com/repair-trip-lever-tub-drain-41958.html</code></small>",
+            "SFGate / Weekand<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill bad\">DEAD — removed from citations</span>",
+            "Removed from all active citations<br><small>Redirects to weekand.com with empty content on 2026-11-07. Not linked from any table row; retained here as a labeled documentation row.</small>"
+          ],
+          "src": [
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S54</code>",
+            "<strong>InspectAndTest — bathtub overflow guide (DEAD)</strong><br><small><code class=\"dead-url\">https://inspectandtest.net/guides/bathtub-overflow-drain/</code></small>",
+            "InspectAndTest<br><span class=\"pill info\">publisher</span>",
+            "<span class=\"pill bad\">DEAD — removed from citations</span>",
+            "Removed from all active citations<br><small>HTTP 500 on 2026-11-07. Not linked from any table row; retained here as a labeled documentation row.</small>"
+          ],
+          "src": [
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S55</code>",
+            "<strong>Source ledger (this site)</strong><br><small><a href=\"sources.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">sources.html</a></small>",
+            "This dashboard<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-07</span>",
+            "Documentation rows about sources removed from active citations<br><small>Internal page on this site. Dead URLs are shown there as plain text, never as links.</small>"
+          ],
+          "src": [
+            "S55"
+          ]
+        }
+      ],
+      "caption": "Every external URL used on this dashboard is listed here with its publisher, tier, retrieval date and verification status. 'dead' sources are never linked from a table row; their URL is shown as plain text for documentation only."
+    }
+  }
+}
