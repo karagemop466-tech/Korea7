@@ -503,6 +503,44 @@ def build(output: Path) -> None:
 """
     write("archive.html", "Archive", "Immutable historical snapshots and legacy GEMS separation.", body)
 
+    # Executive summary (Markdown companion to summary.html).
+    exec_lines = [
+        "# Executive summary — San Francisco bathtub overflow / trip-lever repair",
+        "",
+        f"Evidence checked: {checked}. Canonical source-linked dataset: `data/repair/`.",
+        "",
+        "## Result",
+        "",
+        f"- {len(verified)} contractor license records were read directly from CSLB; {len(discovery)} earlier discovery leads are retained with blank license fields.",
+        f"- {len(estimates['estimates'])} owner-reported estimate scopes are preserved. Amounts, per-estimate dates, and drywall inclusions are unverified and remain blank in public value cells.",
+        "- No provider was contacted, confirmed, or booked. Exact job fit, access method, availability, combined price, and tenant-protection protocol remain unconfirmed.",
+        "",
+        "## Combined-service screening order (not an endorsement)",
+        "",
+        "1. **General SF** — company building page explicitly lists sheetrock/tape/texture; plumbing page lists plumbing services; CSLB #959843 active B/C-10/C-36. Workers' compensation exemption requires crew-specific verification.",
+        "2. **Heise's Plumbing** — company page explicitly lists drywall patching/touch-ups, rental units, and respect for tenant schedules; CSLB #1089561 active C-36/C-10/A/C-20 (no B/C-9). Confirm ceiling-opening/restoration scope and any subcontractor.",
+        "3. **Handyman Heroes** — company page lists sheetrock/wall repairs and plumbing; CSLB #1003394 active B/C-36. Review CSLB complaint disclosure and the company C-10 claim not present on the checked record.",
+        "",
+        "## Evidence limits",
+        "",
+        "- A B or C-36 license does not prove drywall service, delicate concealed-work experience, or willingness to take this job.",
+        "- The installed manufacturer/model is unknown. Watco instructions are model-specific technical context, not a diagnosis.",
+        "- Yelp direct fetches returned HTTP 403; current Yelp ratings/counts are blank. BBB profiles for Expert, Fast Response, and Handyman Heroes were read directly and are reported only as platform statements.",
+        "- Permit/inspection requirements are scope-dependent. No job-specific exemption is asserted; contractor/DBI must classify the actual work before it begins.",
+        "",
+        "## Next action",
+        "",
+        "Request identical itemized written scopes from the combined-service leads using `requirements.html` and `access-plan.html`: diagnosis/adjustment vs replacement, above-first access, below-ceiling alternative, drywall restoration, testing before closure, tenant/storage protection, insurance, and change orders. Recheck CSLB and insurance on the day of hiring.",
+        "",
+        "## Canonical pages",
+        "",
+        "`index.html`, `summary.html`, `requirements.html`, `estimates.html`, `contractors.html`, `reviews.html`, `findings.html`, `access-plan.html`, `compliance.html`, `sources.html`, `flagged.html`, `verification.html`, `archive.html`.",
+        "",
+        "Historical page sets and the unrelated legacy GEMS project remain preserved in Git; see `archive.html` and `trip-lever/secondary-pages-audit.md`. Deployment status is recorded in `COORDINATION.md`, not inferred here.",
+        "",
+    ]
+    (output / "EXECUTIVE-SUMMARY.md").write_text("\n".join(exec_lines), encoding="utf-8")
+
     # Compatibility redirects for old project entry points. These are not data pages.
     redirects = {
         "bathtub-overflow/index.html": "index.html",

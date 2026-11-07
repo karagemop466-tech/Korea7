@@ -142,26 +142,30 @@ The specific free official sources needed for the unimplemented hypotheses:
 
 ## Bathtub overflow trip lever project (San Francisco)
 
-A separate project housed in this repo: a contractor research dashboard for a stuck bathtub wastewater overflow trip lever in a hard-to-access, tenant-occupied unit. Existing GEMS audit content above is unaffected.
+A separate project housed in this repo: a canonical, source-linked contractor research dashboard for a seized bathtub wastewater overflow trip-lever/plunger mechanism in concealed plumbing in a tenant-occupied San Francisco unit. Existing GEMS audit content above is preserved and unaffected.
 
-**Live site:** https://karagemop466-tech.github.io/Korea7/ — the site root is the current dashboard.
+**Live site:** https://karagemop466-tech.github.io/Korea7/ — the site root is the canonical repair dashboard.
 
 | Item | Link |
 |---|---|
 | Dashboard (landing page) | [index.html](index.html) |
 | Executive summary | [summary.html](summary.html) · [EXECUTIVE-SUMMARY.md](EXECUTIVE-SUMMARY.md) |
-| **Shortlist — who can do plumbing + drywall** | [shortlist.html](shortlist.html) |
-| Estimates (owner-supplied 2026-08-30; unverified: $614 / $550 / $135) | [estimates.html](estimates.html) |
-| Nine contractor candidates + CSLB verification status | [contractors.html](contractors.html) |
+| Requirements and acceptance checks | [requirements.html](requirements.html) |
+| Estimates (owner-reported scopes; unverified amounts blank) | [estimates.html](estimates.html) |
+| Contractors / combined-service screening | [contractors.html](contractors.html) |
+| Reviews (Yelp restricted; BBB platform statements) | [reviews.html](reviews.html) |
 | Findings and analysis | [findings.html](findings.html) |
-| **Verification log + correction log** | [verification.html](verification.html) |
-| All sources | [sources.html](sources.html) |
-| Flagged unverified items and irregularities (10) | [flagged.html](flagged.html) |
+| Access plan (above-first / below alternative) | [access-plan.html](access-plan.html) |
+| Compliance (official guidance; no job-specific exemption) | [compliance.html](compliance.html) |
+| Sources and verification method | [sources.html](sources.html) · [verification.html](verification.html) |
+| Flagged unverified items and irregularities | [flagged.html](flagged.html) |
+| Archive / legacy separation | [archive.html](archive.html) |
 
-Earlier research sets from parallel sessions remain published and linked for cross-checking:
-`bathtub-overflow/` and `docs/plumbing-index.html` + `docs/overflow-*.html`.
+Canonical data: [`data/repair/`](data/repair). Build: `python scripts/build_repair_dashboard.py --output _site`. Verify: `python scripts/verify_repair_dashboard.py --site _site --report _site/data/validation.json`. Tests: `python -m pytest tests/test_repair_dashboard.py -q`.
 
-No contractor has been hired or contacted. All prices are owner-supplied estimates dated 2026-08-30 and are unverified. Licence facts come only from the official CSLB records; permit content only from official San Francisco sources.
+Earlier research sets from parallel sessions (`bathtub-overflow/`, `docs/bath/`, `docs/plumbing-index.html`, `docs/overflow-*.html`) and the unrelated legacy GEMS project remain preserved in Git. The canonical published artifact excludes superseded live page sets; old project entry URLs redirect to the canonical dashboard or archive. See [`trip-lever/secondary-pages-audit.md`](trip-lever/secondary-pages-audit.md) and [`trip-lever/audit-2026-11-07.md`](trip-lever/audit-2026-11-07.md).
+
+No contractor has been hired, contacted, or booked. Owner-reported estimate amounts and current Yelp ratings/counts are unverified and remain blank in public value cells. License facts come from official CSLB records; company service claims are labeled as company-published; permit guidance comes from official San Francisco sources and does not assert a job-specific exemption.
 
 ## Repository structure
 
@@ -286,16 +290,16 @@ The parallel session's candidate rasters are `korea7-k7-offcatalogue-relay-corri
 
 ---
 
-## Active project (2026-11-06): Bathtub wastewater overflow trip lever — San Francisco
+## Active project (2026-11-07): Bathtub wastewater overflow trip lever — San Francisco
 
-A second work package lives in this repository: a verified research and hiring brief for a stuck
-bathtub waste-and-overflow **trip lever** in a tenant-occupied San Francisco unit (access may require
-opening the ceiling below). It does not touch the GEMS project above.
+A second work package lives in this repository: a canonical, source-linked research and hiring brief for a seized bathtub waste-and-overflow **trip lever** in a tenant-occupied San Francisco unit (access may require opening the ceiling below). It does not touch the GEMS project above.
 
-- Site (dashboard + subpages): [`docs/bath/index.html`](docs/bath/index.html) — published at
-  `https://karagemop466-tech.github.io/Korea7/docs/bath/` once this branch merges to `main`.
-- Executive summary: [`docs/bath/executive-summary.md`](docs/bath/executive-summary.md)
-- Verified data (all rows source-linked): [`docs/bath/data/`](docs/bath/data)
-- Flagged for Review: [`docs/bath/flagged-for-review.html`](docs/bath/flagged-for-review.html)
-- Coordination: [`COORDINATION.md`](COORDINATION.md)
-- Build &amp; verify: `python3 scripts/build_bath_site.py && python3 -m pytest tests/test_bath_site.py -q`
+- Canonical site: [`index.html`](index.html) — published at `https://karagemop466-tech.github.io/Korea7/`.
+- Executive summary: [`EXECUTIVE-SUMMARY.md`](EXECUTIVE-SUMMARY.md) and [`summary.html`](summary.html).
+- Canonical data (all rows source-linked; unconfirmed values blank): [`data/repair/`](data/repair).
+- Flagged for Review: [`flagged.html`](flagged.html).
+- Archive / historical page sets: [`archive.html`](archive.html).
+- Coordination: [`COORDINATION.md`](COORDINATION.md).
+- Build & verify: `python scripts/build_repair_dashboard.py --output _site && python scripts/verify_repair_dashboard.py --site _site --report _site/data/validation.json && python -m pytest tests/test_repair_dashboard.py -q`.
+
+The earlier `docs/bath/` generator and page set remain preserved in Git as historical material; they are not the canonical live dashboard.

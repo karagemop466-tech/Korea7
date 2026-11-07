@@ -10,6 +10,9 @@ on:
       - 'scripts/verify_repair_dashboard.py'
       - 'tests/test_repair_dashboard.py'
       - '.github/workflows/pages.yml'
+      - '*.html'
+      - 'assets/**'
+      - 'EXECUTIVE-SUMMARY.md'
 
 permissions:
   contents: read

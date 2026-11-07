@@ -94,7 +94,7 @@
     {
       "id": "F11",
       "title": "Contact and identity discrepancies are preserved, not silently corrected",
-      "finding": "CSLB and company/Yelp addresses or phones differ for several providers. Fast Response's CSLB street spelling is POTRAL; Heise's CSLB address differs from its Yelp storefront; Atlas, Discount, Advanced, and Rapid Flow have phone differences. Confirm the contracting entity and service location.",
+      "finding": "CSLB and company/Yelp addresses or phones differ for several providers. Fast Response's CSLB street spelling is POTRAL; Heise's CSLB address differs from its Yelp storefront; Atlas, Discount, Advanced, Rapid Flow, and Genteel have phone differences. Confirm the contracting entity and service location.",
       "basis": "CSLB records compared with company/review sources",
       "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "source_label": "Example: Fast Response CSLB record",

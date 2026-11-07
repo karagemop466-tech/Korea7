@@ -1,0 +1,3639 @@
+{
+  "audit_date": "2026-11-07",
+  "method": "Every tracked file hashed; every text line scanned for URLs and known verification-policy patterns. Canonical repair data was separately source-checked; legacy GEMS scientific claims were not independently reverified. Pattern hits in scripts/tests are verification guards/assertions, not public values.",
+  "totals": {
+    "files": 290,
+    "text_files": 261,
+    "binary_files": 29,
+    "lines_scanned": 47326,
+    "urls_found": 1581
+  },
+  "pattern_totals": {
+    "owner_amount_display": 144,
+    "requester_meta": 11,
+    "stale_500_threshold": 49,
+    "all_in_one_capability_flag": 11,
+    "yelp_rating_numeric": 15
+  },
+  "canonical_public_pattern_hits": {
+    "EXECUTIVE-SUMMARY.md": {
+      "owner_amount_display": [
+        13,
+        14,
+        15,
+        38
+      ],
+      "stale_500_threshold": [
+        37,
+        38
+      ]
+    },
+    "contractors.html": {
+      "owner_amount_display": [
+        63,
+        75,
+        88
+      ]
+    },
+    "estimates.html": {
+      "owner_amount_display": [
+        7,
+        54,
+        65,
+        76,
+        87,
+        88,
+        89,
+        185,
+        187,
+        190
+      ],
+      "stale_500_threshold": [
+        103,
+        185
+      ]
+    },
+    "findings.html": {
+      "owner_amount_display": [
+        115,
+        120,
+        210
+      ],
+      "stale_500_threshold": [
+        116
+      ]
+    },
+    "flagged.html": {
+      "owner_amount_display": [
+        45
+      ]
+    },
+    "index.html": {
+      "owner_amount_display": [
+        53,
+        103,
+        109,
+        115
+      ]
+    },
+    "sources.html": {
+      "owner_amount_display": [
+        242
+      ],
+      "stale_500_threshold": [
+        155,
+        211
+      ]
+    },
+    "summary.html": {
+      "owner_amount_display": [
+        61,
+        67,
+        73,
+        87,
+        104,
+        110,
+        116,
+        173,
+        183
+      ],
+      "stale_500_threshold": [
+        86,
+        173
+      ]
+    },
+    "verification.html": {
+      "owner_amount_display": [
+        203
+      ],
+      "stale_500_threshold": [
+        230
+      ]
+    }
+  },
+  "inventory": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "42db30e26cae5b0ce4f67218c358151f5ed33234b2ed726242e0f46306e6d2b0",
+      "bytes": 1520,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 57,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9dd54dd3c21c4fc0c7035a1c843ee333c30b64c457bd3f1c7c5878751701b0f7",
+      "bytes": 366,
+      "classification": "other",
+      "binary": false,
+      "lines": 24,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "classification": "other",
+      "binary": false,
+      "lines": 0,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "COORDINATION.md",
+      "sha256": "9c5a8254c18e5b56f80ed8f017edf056f3a1a3d2825c04e3226896d509956192",
+      "bytes": 110993,
+      "classification": "coordination",
+      "binary": false,
+      "lines": 777,
+      "url_count": 49,
+      "pattern_hits": {
+        "owner_amount_display": [
+          17,
+          201,
+          407,
+          527
+        ],
+        "requester_meta": [
+          38,
+          43,
+          47,
+          71,
+          206,
+          277,
+          412,
+          577
+        ],
+        "stale_500_threshold": [
+          61,
+          97,
+          233,
+          267,
+          303,
+          439,
+          635,
+          657,
+          666
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "EXECUTIVE-SUMMARY.md",
+      "sha256": "69ead7b46506e2b9109c21c9557d0983f65955b7fb14737db9786d134d7a8c7e",
+      "bytes": 8645,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 58,
+      "url_count": 23,
+      "pattern_hits": {
+        "owner_amount_display": [
+          13,
+          14,
+          15,
+          38
+        ],
+        "stale_500_threshold": [
+          37,
+          38
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "README.md",
+      "sha256": "ec5dc4069aee9c2c5b26302f48ad3f632c9d9970159fe08dd1603201e853f183",
+      "bytes": 30355,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 305,
+      "url_count": 28,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "assets/site.css",
+      "sha256": "5b3abd3eb6475f3bbf33b62fd249cce5f5d02beb7ae34b127733f6557614c6fc",
+      "bytes": 7495,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 178,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/analysis.html",
+      "sha256": "b356510b65e901185ed8d06ceb604ae56b88b25764c674541b51506d38106104",
+      "bytes": 9452,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 129,
+      "url_count": 4,
+      "pattern_hits": {
+        "owner_amount_display": [
+          80,
+          89,
+          90,
+          91,
+          97
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/assets/style.css",
+      "sha256": "0b7a79c9aa361c29cf7f8648f51ea818ff4c55bf250a7d91d1823979b2528182",
+      "bytes": 4696,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 125,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/estimates.html",
+      "sha256": "28de40cd65deb9de59ae2f3cc292faa75fc20a1156e053e7dc1977944a88d60e",
+      "bytes": 7802,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 109,
+      "url_count": 12,
+      "pattern_hits": {
+        "owner_amount_display": [
+          7,
+          53,
+          62,
+          71,
+          83,
+          88,
+          89,
+          90
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/executive-summary.html",
+      "sha256": "32c6958fb613da89f5321bb0667a001f357c2b4ab5df7bac90f839b86d2272c0",
+      "bytes": 9444,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 93,
+      "url_count": 7,
+      "pattern_hits": {
+        "owner_amount_display": [
+          51,
+          52,
+          53,
+          57
+        ],
+        "stale_500_threshold": [
+          65
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/flagged-for-review.html",
+      "sha256": "17b35d07d0457fbf2b01825f0c57aef0069a772fb289798544c1d15f781e0c09",
+      "bytes": 12024,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 174,
+      "url_count": 9,
+      "pattern_hits": {
+        "owner_amount_display": [
+          54
+        ],
+        "stale_500_threshold": [
+          130,
+          131
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/methodology.html",
+      "sha256": "e79c3332b13b81e8114073897f4da046a141c7c8b92a4501058f6ebc0b54d318",
+      "bytes": 6399,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 85,
+      "url_count": 5,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/permits-compliance.html",
+      "sha256": "2808ffe9c4eb96e28c4ed35203db55576f90715405bddc36291dd72eea49f5f4",
+      "bytes": 9617,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 101,
+      "url_count": 10,
+      "pattern_hits": {
+        "owner_amount_display": [
+          52,
+          53,
+          54
+        ],
+        "stale_500_threshold": [
+          66
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/problem-scope.html",
+      "sha256": "0cf36034ca539c1906bf90d181cab02f7e5310d475b46de3145cb7aa3905ca24",
+      "bytes": 6512,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 100,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/providers.html",
+      "sha256": "7e99bc44aa4b873d8c0bbb30bae87afa3dfcd286554c2cdd51f7a7a74ff45c77",
+      "bytes": 12123,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 143,
+      "url_count": 35,
+      "pattern_hits": {
+        "owner_amount_display": [
+          82,
+          92,
+          112
+        ],
+        "yelp_rating_numeric": [
+          87,
+          107
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "bathtub-overflow/sources.html",
+      "sha256": "57a28d9ad93b769a0416bc0438b350ac33bcfe2181e72efd9adb782f85aa1aad",
+      "bytes": 11839,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 121,
+      "url_count": 31,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "conftest.py",
+      "sha256": "af32daac1142227466a6bf542d9f193780568d5adacb7dbe515154539939a98a",
+      "bytes": 105,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 4,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "contractors.html",
+      "sha256": "837ab1d6b33a4e2c6d26e8ae6be45f98785702c414bc84e3fdd09987a11fb3ac",
+      "bytes": 16744,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 221,
+      "url_count": 32,
+      "pattern_hits": {
+        "owner_amount_display": [
+          63,
+          75,
+          88
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "data/bridge/existing_faults.tif",
+      "sha256": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+      "bytes": 425830,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/bridge/sample_submission.tif",
+      "sha256": "2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc",
+      "bytes": 1599597,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE24.tif",
+      "sha256": "68d0e2e4fcc594f9a23f56c44b885fee733d026d39be55e18ad2a07289525310",
+      "bytes": 1632732,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE25.tif",
+      "sha256": "3e78737f0da8dd2ca66cc6caac0ce8eeefcd6715707f8d1bd3091845cd9bcc30",
+      "bytes": 836982,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE27.tif",
+      "sha256": "33003374335d84bf885f2d8f5e9dd4c57044c8ec58fa6a0d7fa581e8bc41c11d",
+      "bytes": 1635084,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE28.tif",
+      "sha256": "5556aa1438fd67376b60d5ffc99228ec09dcc11a8408298a743ccb88d6163641",
+      "bytes": 1590848,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE30.tif",
+      "sha256": "8cf893ead5667df21d3288a9968c35fd5385c425b029d82ee71d311715b129fd",
+      "bytes": 806758,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE31.tif",
+      "sha256": "07b6db440535404bb41ec8ddc797713e200d308e3da35937393efde5eb84bc40",
+      "bytes": 199214,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE32.tif",
+      "sha256": "c55bafc470054e8271dcb89347a17e07fefe50de6af6e6ba6c4b169ef7ab6fa9",
+      "bytes": 219065,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE33.tif",
+      "sha256": "87f857d505e23247e991ccfab2cbe9f49a04df4f9c8028dce7ea261554690757",
+      "bytes": 917544,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/focus/GEMSDOE36.tif",
+      "sha256": "e15891020b9c57056ac7fa874a5e506fbd6ed9314a4ea8e73af0753887a3708a",
+      "bytes": 318190,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/labels.tif",
+      "sha256": "7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093",
+      "bytes": 425830,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/reference/HV31.tif",
+      "sha256": "4221236752e703ec035b4d4245d23dbb0cf2b1126f8cb6040e810316be1d738a",
+      "bytes": 282359,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/reference/geo_habitat_dti_40561.tif",
+      "sha256": "ff22311cb19c83926b1b3d3f66a0f960c863fb9d3c3d603a682a0b7870d0402f",
+      "bytes": 79838,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/reference/geothermal_conduit_20000.tif",
+      "sha256": "50b0e7b0c7d56b8bb1207b52c118ef86cf59c94c34a6908c05bf707077c299ed",
+      "bytes": 97516,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/reference/kp1_far_conduit_32000.tif",
+      "sha256": "30a5fc28ff060ad38681d9b721024aea5aec3b070f407537dd28354efbe0ff0d",
+      "bytes": 128570,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/reference/offcat_corridor_prior_15000.tif",
+      "sha256": "6432d93d31eb1a1344ccb1c613f4637b0c30f64dc960c182222551694106a6aa",
+      "bytes": 127534,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/reference/offcat_geophys_edge_37654.tif",
+      "sha256": "9b29f8e14de2ffa7bd23f62a36b9717e9ce73e9c9eb338b80920d0716f15ed6d",
+      "bytes": 132339,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/registry/13GEMSDOE_lattice.tif",
+      "sha256": "b4570b406efec198eb2f4d142ad8d0d6184b14b66f2f52b5c4d697f0647dc9b2",
+      "bytes": 1706456,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "data/repair/estimates.json",
+      "sha256": "224d26be3d6d15ebea6ff82b366dfd0f0aba0c48558ae5f0bdd344da2cfdabcf",
+      "bytes": 1899,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 11,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/repair/findings.json",
+      "sha256": "aad61718ad4de02bfa0e6502b33fe301cb4789cf554dbe98bbda5a11fb1a5a17",
+      "bytes": 7863,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 113,
+      "url_count": 12,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/repair/flags.json",
+      "sha256": "448c3575cd77696066c9bd56ba4c63fa7449f3b374fb231cfd5b5d54e1fb2f31",
+      "bytes": 16057,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 257,
+      "url_count": 28,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/repair/guidance.json",
+      "sha256": "0b36f4117eb61940771db3297a1d8a47dbb4800f14e9076d3afe823eb565d8ec",
+      "bytes": 5170,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 18,
+      "url_count": 12,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/repair/providers.json",
+      "sha256": "897480842c7f0834f94e77ef648e5b9eb328f57110ebc2b988617740849b56b9",
+      "bytes": 33914,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 813,
+      "url_count": 73,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/repair/requirements.json",
+      "sha256": "0cd4ba4e6ac9a5539a4a8fa4d16c7ffbc237fabee2a931406041a514e18ec9ab",
+      "bytes": 13989,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 245,
+      "url_count": 24,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/repair/reviews.json",
+      "sha256": "824e638b9f27973c9d4daa7ce174866feadc8ce14375554c0bcf7abbb23f51eb",
+      "bytes": 1639,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 9,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "data/sample_submission.tif",
+      "sha256": "2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc",
+      "bytes": 1599597,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/.nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 0,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/STANDING_PROMPT.md",
+      "sha256": "7e00065f1ca74bded2ddbf4c99f499a45a4404e26fb2b25e1fdb60c59697d67c",
+      "bytes": 23681,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 226,
+      "url_count": 17,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/assets/korea7-e3-vs-nine.png",
+      "sha256": "9caa6a5f18c4c2612c056641e49f147cf4a90cbc23ab2e123a6b03f9f906c967",
+      "bytes": 140706,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/assets/site.css",
+      "sha256": "c7c645fc42a7ed72cd8c9a87914f5c8fa16f073bde5945618c3304a01c80fcfc",
+      "bytes": 8497,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 107,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/assets/site.js",
+      "sha256": "f36a643540f11ab8d8fb301ab76dab389154931618699398a83ba51a1af1eb56",
+      "bytes": 1139,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 29,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/assets/verification-filter.js",
+      "sha256": "2e408d99dac32023435bc3ba5b6a3c3d66778bddc32bda322d6f608170b14546",
+      "bytes": 695,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 16,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/assets/verification.css",
+      "sha256": "164a8b5e4bf30b10d26c5c292fc8f7eef7bfadb0a5593f1352963eab6b1d86c8",
+      "bytes": 4472,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 114,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/analysis.html",
+      "sha256": "58cfc2402407bf3cf916b5dfda560106b915a581710efcc29013903ddf7b8366",
+      "bytes": 12060,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 93,
+      "url_count": 19,
+      "pattern_hits": {
+        "owner_amount_display": [
+          23,
+          35,
+          38,
+          40,
+          41,
+          60
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/assets/bath.css",
+      "sha256": "37b49fed4fdc714a45925cd94d8d5bd72813288ede56e102d03d9012c4ffd81c",
+      "bytes": 5562,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 143,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/contractors.html",
+      "sha256": "abe46767f3ea1a3a061c2c162b91ec54c6be66a5bf16f3ee35f97e3724e4e58c",
+      "bytes": 14280,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 60,
+      "url_count": 33,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/data/benchmarks.json",
+      "sha256": "340c479840a468b9a7adec30680336b306adfebf225a589d060bbd6481102c1f",
+      "bytes": 1948,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 36,
+      "url_count": 3,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          19,
+          29
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/data/contractors.json",
+      "sha256": "df1ec1cda985451e3cba2416cbab6b447136b586b67d82f58c92ec087e9e6340",
+      "bytes": 11783,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 182,
+      "url_count": 24,
+      "pattern_hits": {
+        "all_in_one_capability_flag": [
+          23,
+          45,
+          67,
+          89,
+          111,
+          133,
+          155,
+          177
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/data/estimates.json",
+      "sha256": "4033901bbd6cf01c137c7fffe57846d14857f4162564e6199108d347a4d70dd4",
+      "bytes": 2257,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 42,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/data/flags.json",
+      "sha256": "782622929a65c031addf319ddbbcedad30261365953cdbf25f4b789efed39671",
+      "bytes": 11994,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 131,
+      "url_count": 14,
+      "pattern_hits": {
+        "owner_amount_display": [
+          8,
+          17
+        ],
+        "requester_meta": [
+          125
+        ],
+        "yelp_rating_numeric": [
+          71
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/data/sources.json",
+      "sha256": "db1033e16b986dd6ebaf2453a757fc13431aa1867310b709d9c8299842eec551",
+      "bytes": 12281,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 75,
+      "url_count": 40,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          70,
+          71
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/estimates.html",
+      "sha256": "68a51f37c94cb602dc026fe8f4111d171d2be648f753ac680c47150819fe5625",
+      "bytes": 7089,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 61,
+      "url_count": 9,
+      "pattern_hits": {
+        "owner_amount_display": [
+          23,
+          47,
+          49
+        ],
+        "stale_500_threshold": [
+          35
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/executive-summary.html",
+      "sha256": "06484ebbef7ee1ebce9c78776925584ae02b86fd5908f37d80252cbc726a1e11",
+      "bytes": 10322,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 116,
+      "url_count": 22,
+      "pattern_hits": {
+        "owner_amount_display": [
+          48,
+          49,
+          84,
+          85
+        ],
+        "stale_500_threshold": [
+          55
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/executive-summary.md",
+      "sha256": "255ad981ef0a0659da50fc0f10ab9b38da5c0ebe4f4c967fe6406bff1fde7ffc",
+      "bytes": 6255,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 88,
+      "url_count": 10,
+      "pattern_hits": {
+        "owner_amount_display": [
+          29,
+          30,
+          31,
+          58,
+          59
+        ],
+        "stale_500_threshold": [
+          36
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/flagged-for-review.html",
+      "sha256": "be77a33c732d8d7ea855d7dd2ff060a0349221c4094c6a96b9f5838437d55511",
+      "bytes": 15161,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 45,
+      "url_count": 14,
+      "pattern_hits": {
+        "owner_amount_display": [
+          26
+        ],
+        "requester_meta": [
+          26
+        ],
+        "yelp_rating_numeric": [
+          26
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/index.html",
+      "sha256": "f88688e067b83d605194a9c3415e8bc9a2404a9f53dc08ab54ac4227b55f2580",
+      "bytes": 7750,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 67,
+      "url_count": 8,
+      "pattern_hits": {
+        "owner_amount_display": [
+          33,
+          53
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/problem-scope.html",
+      "sha256": "8bce9606a7b94723ee05889a27fbd4ed2008ae716ae6a67c0c277504155837bb",
+      "bytes": 6532,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 84,
+      "url_count": 5,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/sources.html",
+      "sha256": "fff6a98266358affa1948dc8d6ec35a13e6a9f7caeef5e5131a56c4e123b8999",
+      "bytes": 16022,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 35,
+      "url_count": 40,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          27
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/bath/technical-background.html",
+      "sha256": "92095e7647178f080bee54bbf50638ef9cded20344d5e8ca1a563cd718b14d67",
+      "bytes": 8676,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 89,
+      "url_count": 15,
+      "pattern_hits": {
+        "owner_amount_display": [
+          48
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/consensus_holdout.json",
+      "sha256": "93375dd62995689addf8eba19f6ac3a20d32421832ca550a495dc4e03a3388b5",
+      "bytes": 54091,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1745,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/consensus_run_card.json",
+      "sha256": "181c2a19fe757bc7c92b788c01f7a493722604e0cfe6edd576cd98057f914b9b",
+      "bytes": 61920,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1924,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/consensus_summary.md",
+      "sha256": "898005be181feb5c8ae5eaf9ee3846fad7d0d20306ef32c463a961f6d51406fe",
+      "bytes": 63170,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1945,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/consensus_uniqueness.json",
+      "sha256": "c69a1bc0d948627b07052a32d9d297a60433617487d198e0d9a8408dcdcc3f07",
+      "bytes": 2268,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 76,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/consensus_validation.json",
+      "sha256": "98c87afbd7607101c081bf23fdf3d812aa430eda8391b014971d2b41e185003e",
+      "bytes": 2051,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 71,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/focus_analysis.json",
+      "sha256": "0cc11e12f0fdc1cda0b8ee53387bc10942599a03d863b111e09aad2ac1c42f86",
+      "bytes": 11262,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 318,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/focus_analysis.md",
+      "sha256": "39099334ce9824f05988e5ef54c8e64df3793a442fc5381fa96f1191773d498a",
+      "bytes": 1601,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 27,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/overflow-entries.csv",
+      "sha256": "5fd241e69686b71841c2204a73b0bb9aed9d067317bdc0d7bd6c10282c4fcd78",
+      "bytes": 2090,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 9,
+      "url_count": 8,
+      "pattern_hits": {
+        "owner_amount_display": [
+          2,
+          3,
+          4
+        ],
+        "yelp_rating_numeric": [
+          5,
+          6
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/overflow-verification.json",
+      "sha256": "f1fbbd66bd8e57c447a218074413b25dec60f6913c2f8d96fd4cc60c6320fee9",
+      "bytes": 60336,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1034,
+      "url_count": 96,
+      "pattern_hits": {
+        "owner_amount_display": [
+          556,
+          568,
+          580,
+          609
+        ],
+        "stale_500_threshold": [
+          304,
+          307,
+          720,
+          721,
+          1006
+        ],
+        "yelp_rating_numeric": [
+          320,
+          338,
+          356,
+          374,
+          392,
+          536
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/site_analysis.json",
+      "sha256": "7aa6ccafa79e6efdfdf727482641fdd82f3046305c74dfe509bea8ae8fe7dc70",
+      "bytes": 13787,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 434,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/site_analysis.md",
+      "sha256": "ab86928b70362ff4a1d8766892a2b627ef4814c5a537f57e7ed3a4f5dc3b9ed2",
+      "bytes": 1790,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 18,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/data/site_manifest.json",
+      "sha256": "8f1a7bb7d92ab1bb21e654c0dd6768fb4cb7ba6022d918854549a690cd3457f5",
+      "bytes": 1446,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 49,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/downloads/SHA256SUMS.txt",
+      "sha256": "ec4859936935bf15c3ae4f879525ce0d76bdc4499ff7dc6d8535ede316e3b598",
+      "bytes": 425,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 3,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/downloads/format_probe_score_0.0000_do_not_submit.tif",
+      "sha256": "72bc382485597a0e0147a7daa6562c115eea2a062b16b589042b147775798c41",
+      "bytes": 62056,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-audit.json",
+      "sha256": "2e3ffc9ce10f53c163bb411e4583e706c2b31291368f5a61e32aaf60ea1ae631",
+      "bytes": 3472,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 110,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif",
+      "sha256": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d",
+      "bytes": 208602,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.zip",
+      "sha256": "3abd0d7713d15dbb68f904a6ed2b9884566c7d687fbda32e692b57c25a1b79fb",
+      "bytes": 172615,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.json",
+      "sha256": "7a6c27dd12921219535bbcaf0c3c2ba57da47e019e50b5865aae65e212a36ac9",
+      "bytes": 3726,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 131,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+      "sha256": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c",
+      "bytes": 102331,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.zip",
+      "sha256": "7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5",
+      "bytes": 61450,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif",
+      "sha256": "ef8ef331f3f70c82d3448bac5f91e8e5903e7a97292f1731608dc6c01643cca0",
+      "bytes": 235224,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif.receipt.json",
+      "sha256": "082ddd61c51927bbf89929a14e1dc486ee4845c62b4d5c6837e9b4221fbf05fd",
+      "bytes": 914,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 34,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/downloads/korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif.sha256",
+      "sha256": "f5312d17067e37021464d4146b68333e799bc1e0327c0b8213544f6b7a0af6a4",
+      "bytes": 65,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-37654-20261104T201224Z-d88f4742-zeros.tif",
+      "sha256": "d88f4742d9fd01f2e450622282a83b1d7d14390673caf8ce42b3841fdc953031",
+      "bytes": 279007,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif",
+      "sha256": "5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c",
+      "bytes": 295627,
+      "classification": "legacy_or_unrelated",
+      "binary": true
+    },
+    {
+      "path": "docs/executive-korea7-e3.html",
+      "sha256": "d63ce9c5403467baa389cc77044abe2fdfdc3976c4cf1a3926ffa64ab4b47d48",
+      "bytes": 23145,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 119,
+      "url_count": 14,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/executive-summary.html",
+      "sha256": "20554f5ca327cb79ac07e210e555b209dd7d48868a902d6b978d8b44ecf4e107",
+      "bytes": 95802,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 2096,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/how-to-submit.html",
+      "sha256": "cb14cf01e6f162700ee4d211b8ea405b32816b286cb6f7c272dbacddee04fc0c",
+      "bytes": 4562,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 48,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/hypotheses.md",
+      "sha256": "05f425c55611252f25c88581a33144c193b15272432dad8998a5e220a87b4930",
+      "bytes": 5247,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "795dc80710a0df4b56ce53188c1fdc5d0a1d38e2dbc6045f7f63f74bbde1a17e",
+      "bytes": 107934,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 2187,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/method.html",
+      "sha256": "9e32d984bc945cbfdd605c55623fe79f6d39fd57b260ff6296c2bb276e9d67ef",
+      "bytes": 8248,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 124,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-analysis.html",
+      "sha256": "a72eb8052ebddf564da3027b1e2b805fb9fb3f592aa4470f0e02ca278000f956",
+      "bytes": 7128,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 107,
+      "url_count": 0,
+      "pattern_hits": {
+        "owner_amount_display": [
+          31,
+          36,
+          37,
+          38,
+          87
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-contractors.html",
+      "sha256": "5beb54a8e1527ee25625c86a3ee9d9ae965ddd62b221b3d6b1b99013d9304e1e",
+      "bytes": 8612,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 114,
+      "url_count": 3,
+      "pattern_hits": {
+        "owner_amount_display": [
+          44,
+          55,
+          66
+        ],
+        "stale_500_threshold": [
+          81
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-estimates.html",
+      "sha256": "1243c4fda674980626179c58f52f7f19451f4d72df7eb7fc1050b26ba6ce811c",
+      "bytes": 5293,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 100,
+      "url_count": 0,
+      "pattern_hits": {
+        "owner_amount_display": [
+          40,
+          50,
+          60,
+          69
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-executive-summary.html",
+      "sha256": "d316f9c90a79d1309c91743d505f17617b4ff969e84328e0661c248101f98d90",
+      "bytes": 8720,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 98,
+      "url_count": 2,
+      "pattern_hits": {
+        "owner_amount_display": [
+          47,
+          48,
+          49,
+          50
+        ],
+        "stale_500_threshold": [
+          60
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-flagged-review.html",
+      "sha256": "2bbc6fb6e723c957755c44e31f075b8ed149923dbc76c90fb88f625022d15746",
+      "bytes": 7554,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 114,
+      "url_count": 6,
+      "pattern_hits": {
+        "owner_amount_display": [
+          47
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-permits.html",
+      "sha256": "22458d0dcbf4a590720283e2c46afec1a4da805dec449d834d1a51fec17c3e26",
+      "bytes": 8068,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 98,
+      "url_count": 6,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          73
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-sources.html",
+      "sha256": "e51cb396e0fdf64c018a9c4b34cb3ce2abe1535b3b8fc562e014b14bf9d1c47c",
+      "bytes": 9726,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 86,
+      "url_count": 19,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          37
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-verification-contractors.html",
+      "sha256": "53648ea71f5203bfa630ff7a7b8593c74295b3f07b1125b2344f4b866caa9708",
+      "bytes": 20579,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 33,
+      "url_count": 29,
+      "pattern_hits": {
+        "owner_amount_display": [
+          24
+        ],
+        "yelp_rating_numeric": [
+          21
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-verification-flags.html",
+      "sha256": "8716fdf2961e6bba916bcc7bbe2ada061a82378be8be172e43d07336549f478f",
+      "bytes": 16759,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 29,
+      "url_count": 20,
+      "pattern_hits": {
+        "owner_amount_display": [
+          20
+        ],
+        "stale_500_threshold": [
+          20
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-verification-permits.html",
+      "sha256": "18fbaf219ffbd39c0a3c751cea8dbd10689d07cf985fbab9d3768bda93640e41",
+      "bytes": 15943,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 32,
+      "url_count": 20,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          23
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-verification-repo-review.html",
+      "sha256": "1fb3559572c973d29f9efb0a22850c1145876ebde5f63440ee051fd0fb17cbe3",
+      "bytes": 5889,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 29,
+      "url_count": 10,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-verification-sources.html",
+      "sha256": "7b3a0410d6548d74ca1720d58519621d13b8a11c8d7b594d69580c5ec4bbfa1b",
+      "bytes": 10344,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 29,
+      "url_count": 44,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          20
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/overflow-verification.html",
+      "sha256": "56f45d2120d5e6d0cae15cdab9c0940ce867ce978e45cf4e8f2249ca3f6606d5",
+      "bytes": 9539,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 35,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/parallel-executive-summary.html",
+      "sha256": "a89a8c3c28ca9e58b711ab532fa5c0053f782c9acc134f5346b9c0c1f206dd8d",
+      "bytes": 11862,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 62,
+      "url_count": 13,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/parallel-index.html",
+      "sha256": "996b45ccdf2a7fb8d65425cdccf550ba855ed6933007f4793b4195ae6a391a23",
+      "bytes": 20729,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 187,
+      "url_count": 9,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/parallel-readme.md",
+      "sha256": "29486940830deebc8292b6990c1c78679879d2c2432966fc6c85648edce3d687",
+      "bytes": 8063,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 130,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/plumbing-index.html",
+      "sha256": "080bd60977e3d4e78948aa6b2d656818060191b8a121b0069128cf6b03484ff0",
+      "bytes": 9557,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 90,
+      "url_count": 2,
+      "pattern_hits": {
+        "owner_amount_display": [
+          39,
+          54,
+          55,
+          56
+        ],
+        "stale_500_threshold": [
+          71
+        ],
+        "yelp_rating_numeric": [
+          57,
+          58
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/prior-review.md",
+      "sha256": "defa0b61381415ae55b47a86ba6c28b79a50599027b90c165c1b4f2eacd4606a",
+      "bytes": 13805,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 95,
+      "url_count": 20,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/prompt.md",
+      "sha256": "c3e69d7c5ced91485291f5d1caa85e66b610998f8cab27495886f21b989c6b94",
+      "bytes": 17676,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 219,
+      "url_count": 23,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/research.md",
+      "sha256": "369b05d4d369d3ae0dc7e8c89ab9161d9cb63baa15d55c813b382dc622337388",
+      "bytes": 12909,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 130,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/results/all_experiments.json",
+      "sha256": "d2e4dbcf74bf03f5db64e9b5208c2809c1f1e8efef452a36f6da005fbdebc0d9",
+      "bytes": 15963,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 694,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/results/e1_metric_calibration.json",
+      "sha256": "1dfc9fea4abc11379fa094db54ae4f9ab97b99eab8aae9f4eaa64f0cff13ea82",
+      "bytes": 3149,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 164,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/results/e2_emission.json",
+      "sha256": "838d73903ac25147cef797947279737d7ea5f19e55fd3d6833cfa3e839329f21",
+      "bytes": 4154,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 195,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/results/e3_regimes.json",
+      "sha256": "05a8a1fa7351aea2b03202821b04517c4f36103a39b3e3dc8938de035b9ff849",
+      "bytes": 7228,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 332,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/review-2026-11-04.md",
+      "sha256": "019574b6e6d8bfcf325c5df582c6eebc67d1cf89accd54f5dfc7a5f90fef4867",
+      "bytes": 3480,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 17,
+      "url_count": 2,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/run-card-korea7-e3.json",
+      "sha256": "f181a2f8394789646349b9e6f73bb7f73ffa9f221d3191f6cbcfa8ac0e7ff0c2",
+      "bytes": 5188,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 55,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/run-card.json",
+      "sha256": "ce67a65ac0c4dc0000eb10c256d844d1164aad81e9d97e36bfa847e513ad5d9d",
+      "bytes": 768,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 17,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE24.html",
+      "sha256": "9161cd8331d7572c59e80cea9832a981a812363722f0b1c322c30d20cfd9ae75",
+      "bytes": 3282,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE25.html",
+      "sha256": "a1f04f084dd6fab2caba2aadda6d16ac4b25fde5861774ffd7851c00b41b613d",
+      "bytes": 3270,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE27.html",
+      "sha256": "7035b9de540f44b2da5291ba45d02079acd0333131c12829cacad6d10d8809d3",
+      "bytes": 3294,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE28.html",
+      "sha256": "5d58e03790a23f67eb7355d8bf6cf92b86dbd4a75af8b3417f1701cd4bba87f9",
+      "bytes": 3278,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE30.html",
+      "sha256": "fcedc8b1522ffee4015b8aedc20b13df34094614e2e2594f03f091d91436e27e",
+      "bytes": 3292,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE31.html",
+      "sha256": "eea60269b38deeafa9e0a94a17454c2e1e7545321bc664427982f98470b08d10",
+      "bytes": 3256,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE32.html",
+      "sha256": "0231931d0f0b2e88724c18b8b04251c3c1f6fb8be4594d9adeda798785054d14",
+      "bytes": 3272,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE33.html",
+      "sha256": "edbcf48c99343eb4177e62295b5907da6c8182233441aa83874701d6d536989d",
+      "bytes": 3284,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/site-GEMSDOE36.html",
+      "sha256": "9941a1f6d5a19d58536a81262643d6e26d74e6e064d86af1f111de60bdf3d3bf",
+      "bytes": 3308,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/sources.html",
+      "sha256": "4bd360435720a4932dc0dbf048359ae6bd152452af8ca10695a475a45fb33cd1",
+      "bytes": 4871,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 49,
+      "url_count": 11,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/style.css",
+      "sha256": "356c806202f985a70ea4d7f4df958e91c9279a3c0077ed5829110c523606da56",
+      "bytes": 1444,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 17,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/submission-korea7-e3.html",
+      "sha256": "24ef0b93ac5784ec7e09a317f3b2d90d21daf57862e4b0bf1e6fdbfe22a2fd24",
+      "bytes": 4377,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 29,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/submission.html",
+      "sha256": "28b2371e59f0536d8cbcbfd07d020164ad2db4d8f9b5f932ad0648b3abf726ef",
+      "bytes": 2847,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/submit.html",
+      "sha256": "797c345d313419506259e0c10bf4256711e6d7cb3c785826b11b1c51a6f81298",
+      "bytes": 5982,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 86,
+      "url_count": 2,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/validation.html",
+      "sha256": "65dfe473ed9f15f28e8a6426f15ee33e77029cc68b8f69486e4dbaa088dc4a1d",
+      "bytes": 87725,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 1973,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "docs/verification.html",
+      "sha256": "2bc1b60164300d2f2cde6d79c9a470744c8b3f30ae3cfc2a24b111c862c144a7",
+      "bytes": 8719,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 101,
+      "url_count": 4,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "estimates.html",
+      "sha256": "bd97d8279079c295b4b28d1812a1f10854b34a9be739f6c6de1c60f5312235d5",
+      "bytes": 13063,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 208,
+      "url_count": 23,
+      "pattern_hits": {
+        "owner_amount_display": [
+          7,
+          54,
+          65,
+          76,
+          87,
+          88,
+          89,
+          185,
+          187,
+          190
+        ],
+        "stale_500_threshold": [
+          103,
+          185
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/calibration.json",
+      "sha256": "e7dd0985d6770fee0a973a264d094b1fe191bea0c45e4787d203a9d5c5a07cca",
+      "bytes": 1935,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 68,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/canary.json",
+      "sha256": "43751ac0b2bc460c6bbd2b303a5cfa8829b2aacee1896641d822ca0b551c1587",
+      "bytes": 3176,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 128,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/champion_anatomy.json",
+      "sha256": "bb1ebf271a156e72e1689e4db639ca5e223c5a8233400da87c50ba6a670362c1",
+      "bytes": 14355,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 475,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/check_candidate_final.json",
+      "sha256": "d492cae20842064cafcd0c044129a98e6527dd1af51a6ec3e39676e419f0eb5e",
+      "bytes": 3425,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 86,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/data_provenance.json",
+      "sha256": "8c179864e0796a888c374855829055548598f5a73c6676786ceb8729e5b5d90f",
+      "bytes": 6611,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 149,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/e1_oof_build.json",
+      "sha256": "b94c60afe3cb3c73130cd83b6f55436604485186642aec314f8f4e17b8dbd7b4",
+      "bytes": 707,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 42,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/e3_build.json",
+      "sha256": "9871d3f8a39dfebcb206695dc1c0efd29ce92c83f7daf49f36af908c7bff0d83",
+      "bytes": 271,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 11,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_E1.json",
+      "sha256": "a9bd82a1a412d92ac19dbabecb74e81dc31f112f4853e6c9e0afb701ea441831",
+      "bytes": 3726,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_E1_oof.json",
+      "sha256": "f09247c8b284ffd4d4bc6e314f14f9f8c5c9dd2a092b0f7ad0262a3b3e60e679",
+      "bytes": 2981,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 102,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_E2.json",
+      "sha256": "a38351be31dfdcac2f478d41b31a4672e1145c67ca80c663c82fe1c8b96fd3ad",
+      "bytes": 3742,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_E3.json",
+      "sha256": "d00623def92cba991abe0f1bd01b454685c3c2f15374d564c17bd756446b31ad",
+      "bytes": 3731,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE24.json",
+      "sha256": "236944c94fa024dfe30589e2530bf0d7a7d066a74a0b28482b974e7f4dbb2e4c",
+      "bytes": 3726,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE25.json",
+      "sha256": "0fe0ad83454a08330c644601d8472ddf07af2d37bd5d7be4661a3dcd7cd8d23d",
+      "bytes": 3729,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE27.json",
+      "sha256": "02c655fae8f4dc489a9eb735407fec904cf36f381fa0fa63d1e5b7dd9961a7eb",
+      "bytes": 3731,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE28.json",
+      "sha256": "ca22f5d805f9ff0aeddfeeb2865d3df8bc2bda6f06a870dae8f98c42cc6fdc8f",
+      "bytes": 3732,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE30.json",
+      "sha256": "2f8253182e193888be87638e0a0a9a2775cb88ae2ab60dea3dc9d1fdbd8638d6",
+      "bytes": 3729,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE31.json",
+      "sha256": "53db4e8aea30bf9653fdb14ddae2107539afbe001d6824ed63204b3cc704b3b1",
+      "bytes": 3740,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE33.json",
+      "sha256": "aed5851acd07fb2fd5f6aa154150f321442d89cb114be5d0509df57e415fd97f",
+      "bytes": 3725,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/eval_GEMSDOE36.json",
+      "sha256": "b1d57fe7b03029e353e590b3da9dd7c02c2cc2426273fe4e95cfea5b7a45c332",
+      "bytes": 3758,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/exp1_canary.json",
+      "sha256": "7b00994a51a129a7ba955839be0dc89219a09354ce7fcd75e31696528b1db09e",
+      "bytes": 139,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 9,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/exp2_place.json",
+      "sha256": "8478c622d8f05d5ed3a6ed04a661490488fcc1d253b2e83b0e130804a2b902b3",
+      "bytes": 1446,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 21,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/exp2_surface_check.json",
+      "sha256": "e1b88b81fe793ed78b209435f61d51ec2aaecfba6aa024844a9daf5c3c661b72",
+      "bytes": 145,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 5,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/exp3_v2a.json",
+      "sha256": "8c45525c7511b038634b61fef5e45c9fe3d75f48b2ba5b68f5f8176a4c118c6d",
+      "bytes": 1440,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 21,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/exp3_v2b.json",
+      "sha256": "088597a45f583915b78575c184134899a7e497eb097957a61b40a339178ae2fd",
+      "bytes": 1446,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 21,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/experiments_build.json",
+      "sha256": "8963ce9ede9a4da453b197454005b540bb4fe38ec90825d9cdef7977b0930f57",
+      "bytes": 834,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 24,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/final_lane_checks.json",
+      "sha256": "3d4d077ebd7027546e17c9a11b454b1ea82e4cdac4df680e4391443beb8acfaa",
+      "bytes": 7805,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 213,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/fleet_stats.json",
+      "sha256": "67a4974a3ccce158da081e2d20b60b3ecdecbad40122ea1321b3731a48f415c2",
+      "bytes": 6093,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 242,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/holdout_expA_full.json",
+      "sha256": "dba1a4960ba1e37453930d310063fb65f056be0a44ab11ae7ed56d174482bf0c",
+      "bytes": 3748,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/holdout_v2a_full.json",
+      "sha256": "4cf8e77076d1553af4dac1da729ad6fa9cef4258904a08511fcabfe9ab0fca68",
+      "bytes": 3753,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/holdout_v2b_full.json",
+      "sha256": "13b536a9df491283102859fc7674ae240076494cb097e994943d81f46cc5b6ec",
+      "bytes": 3763,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/repro_GEMSDOE32.json",
+      "sha256": "c36e5fb810d7c9f8c5be23a4c65684cf0decc2c3cad24a528aa52abd05e37756",
+      "bytes": 3767,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 126,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/uniqueness.json",
+      "sha256": "b7cdebab85ea51b75d1fa45d1b3dff75089243bd2c6a71a4440c50e26b62397d",
+      "bytes": 4276,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 103,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/uniqueness_e1.json",
+      "sha256": "c488ea3dfa5fb5aa03bdbec3f481315f2bd371d3df2ff714917312eb8e759f5b",
+      "bytes": 4276,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 103,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/uniqueness_vs_parallel_lanes.json",
+      "sha256": "80be779a035429a5daac3619441bf93c81f260e6d2aad332c28061e76fed593c",
+      "bytes": 1095,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 30,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/validate_raster_final.json",
+      "sha256": "2bfbd93eaf7ca7394062115f33c7a8122bd404fc6a7624372fcbfd168fdf5661",
+      "bytes": 649,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 19,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/validate_submission_final.json",
+      "sha256": "f651852c0092d1c615e22801bdd499fba59cf08c917ceb547d6d05e8b61f816d",
+      "bytes": 760,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 21,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "evidence/writer_bundle.json",
+      "sha256": "6256b798fae18644f6ea5ad6432a4156e5af22842df7cdda40fe74080327fa6f",
+      "bytes": 3797,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 116,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "findings.html",
+      "sha256": "d4558278d7912f6f039edcb163de307b787b0eb74a71d517cd00686fa259f203",
+      "bytes": 15709,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 225,
+      "url_count": 36,
+      "pattern_hits": {
+        "owner_amount_display": [
+          115,
+          120,
+          210
+        ],
+        "stale_500_threshold": [
+          116
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "flagged.html",
+      "sha256": "10c253da3a6bdf89fc3b4884e3cae957850e690bf1c69c976a8f813da4388b84",
+      "bytes": 12619,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 184,
+      "url_count": 17,
+      "pattern_hits": {
+        "owner_amount_display": [
+          45
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/__init__.py",
+      "sha256": "5ab233a20506032597a52e426c23631acae808ffe171099a44ed4df25450b52f",
+      "bytes": 869,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 18,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/calibrate.py",
+      "sha256": "fb6af3f568380ea8f55cce63dc5b8e03a3ed36566c11f349e0da4e9422106688",
+      "bytes": 5278,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 127,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/emission.py",
+      "sha256": "bc8097410959d1d761fa4fe9cb2de1427b00b2582ae281a0fe852b19dadf54be",
+      "bytes": 9868,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 240,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/features.py",
+      "sha256": "d1260d08a2427459dc63051f8222bbdfe7a39a5382c19de4b7229ecf9f042d8e",
+      "bytes": 5273,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 125,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/geometry.py",
+      "sha256": "1e0f3ff77905652f3542448de305b275bfeffd35f57350b58026dbd83aba792d",
+      "bytes": 4379,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 119,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/grid.py",
+      "sha256": "8ed44b847df581cdc72bbda4a035380ca248365ebbc2612861a02a660b5b2b9b",
+      "bytes": 2807,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 71,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/holdout.py",
+      "sha256": "08d73a48f09d68304544bb6ab0c510a46b57a82355c025059ef19b7e16d1f9af",
+      "bytes": 4951,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 129,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/metric.py",
+      "sha256": "2669587b00fbd94888b046e3f1c29eb5b95e6e8f94fd3bfb816ade4a2d7d5794",
+      "bytes": 6320,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 170,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/model.py",
+      "sha256": "7b3512da17bd8e0a6b09406bb509c7a40badf68092eb34c1965e810ee62eb66f",
+      "bytes": 2857,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 71,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/network.py",
+      "sha256": "c5ab546cc99c092550f65acee0acd42a06dd27f830e58cfbf0d155ff63c67077",
+      "bytes": 11854,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 274,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/registry.py",
+      "sha256": "d194f1cd3c631b19512f07621e703e2fa3fd5e5256cc1b3957379c965390ab7e",
+      "bytes": 6095,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 144,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/validate.py",
+      "sha256": "54b276f29dd859822fea138deb98376709696178eb4ee98f6a60f53c0f10ce54",
+      "bytes": 6008,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 130,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "gems/writer.py",
+      "sha256": "0c3c2047230ef97498666391c326a0574a36d528b8ff863ead274fde67355a81",
+      "bytes": 4073,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 102,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "hypotheses.md",
+      "sha256": "e49c3ce5ccf2caee11f6e864c3ae1e6d525a815a92c8503ab027f81a8e5b8ba2",
+      "bytes": 4103,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 27,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "index.html",
+      "sha256": "5d4ad113f528ab38be310bc88804453d285ef5e0ddf6451a438d833059570f0c",
+      "bytes": 11378,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 166,
+      "url_count": 4,
+      "pattern_hits": {
+        "owner_amount_display": [
+          53,
+          103,
+          109,
+          115
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "registry/focus9_manifest.json",
+      "sha256": "1ac25e722a39471ed9ca405fa4c8f247f1a95a09b2473d4b54f6db9a35b87fe2",
+      "bytes": 3509,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 82,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "registry/owner_score_ledger.csv",
+      "sha256": "74fc19f793f8ac58bce60b06436ee5d4301175cde7af0599b30dc1ec22b6b9f4",
+      "bytes": 56403,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 161,
+      "url_count": 160,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "40c19e251a42f7a5f39abfcfe4795a46a84640aae0898b8630e276129a3a1a21",
+      "bytes": 122,
+      "classification": "other",
+      "binary": false,
+      "lines": 5,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "run-card-korea7-e3.json",
+      "sha256": "f181a2f8394789646349b9e6f73bb7f73ffa9f221d3191f6cbcfa8ac0e7ff0c2",
+      "bytes": 5188,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 55,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "run-card.json",
+      "sha256": "e16f1272d96b37c33eabcde57df057afc2501e5ee341a7377f3803fd1f2ef81a",
+      "bytes": 5404,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 66,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "run_card.json",
+      "sha256": "41ab2ab9c08005515e2b39473e74b32540d33238fcc0f01275649947b2fe2f8d",
+      "bytes": 4260,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 60,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "scripts/analyze_champion.py",
+      "sha256": "74a40793d2c09c7ed8654b43c7e5e906fd2844afcd076d7c57b5cd073b1f3669",
+      "bytes": 5552,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 135,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/analyze_focus.py",
+      "sha256": "b7c17d902e67bdd977fc221e2db9ca45ee0a6cf57478269b8cba71836c4c7a63",
+      "bytes": 10053,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 228,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/analyze_sites.py",
+      "sha256": "2fe62b747810fa79cdad18e2f5232ba1dd22de67a93f7279648a29e9d5838411",
+      "bytes": 6919,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 146,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/bath_assets/bath.css",
+      "sha256": "37b49fed4fdc714a45925cd94d8d5bd72813288ede56e102d03d9012c4ffd81c",
+      "bytes": 5562,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 143,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_bath_site.py",
+      "sha256": "aa53681ee3b734dea6548dd6ae2144ef091b77c78b10782900f209a95d927454",
+      "bytes": 45697,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 733,
+      "url_count": 36,
+      "pattern_hits": {
+        "owner_amount_display": [
+          262,
+          263,
+          398,
+          399,
+          400,
+          482,
+          484,
+          560,
+          561,
+          562,
+          575,
+          578,
+          580,
+          581,
+          607,
+          609
+        ],
+        "stale_500_threshold": [
+          233
+        ],
+        "all_in_one_capability_flag": [
+          123,
+          498
+        ]
+      },
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_consensus.py",
+      "sha256": "be52685dfa4fa46c4ad7697cdb0f844626ca04fd6046ef0c3f976ddc5dc4dcb0",
+      "bytes": 23572,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 434,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_e3.py",
+      "sha256": "648c8294b30ccb8fb5345a5535ebb56bd4a0fe5cf90faa73f24986d5ee41a56f",
+      "bytes": 2003,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 54,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_experiments.py",
+      "sha256": "1c174e3b2787bfad3ac3f49728ff4419d96e5aa6fbe5a85e619f8ce46e765483",
+      "bytes": 6717,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 163,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_overflow_verification.py",
+      "sha256": "4b4c0dd4fde451a493b72de34cfa8846f5fe7e19d39cf2e64a26e0f06870ba9e",
+      "bytes": 23745,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 465,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_repair_dashboard.py",
+      "sha256": "7a27881d2e0057d6810d792a3a8d586266da98eea082aad82aae0c88336180da",
+      "bytes": 43524,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 574,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_site.py",
+      "sha256": "7315e5f1398a8a8f0cb26a5c9fdc51a0b8c41396aaa3113799ee05769f365051",
+      "bytes": 41315,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 468,
+      "url_count": 13,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/build_submission.py",
+      "sha256": "691bc14307385220d9cd26d72e91e6f513282b2437e24642ca5c7e98b39ac004",
+      "bytes": 12353,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 272,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/calibrate.py",
+      "sha256": "7e118357ab97a9f92f8456a0b08862f456347170c8ae8538035654a18a642ef1",
+      "bytes": 3044,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 69,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/canary.py",
+      "sha256": "afc63a22e5dfb885047566426e2eee36b1412a0c6eda7e778db8ff514aa40a30",
+      "bytes": 3067,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 77,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/check_candidate.py",
+      "sha256": "b9af6b6417d02b1e7cc3e931df4ea51d4dffb0cacd4edf3fc63eaed4d10696ae",
+      "bytes": 671,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 19,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/fleet_stats.py",
+      "sha256": "1cd06beb0d3681bed5b61c99aa9982757234a617104f3e574bbd45ed483f6166",
+      "bytes": 2760,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 63,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/generate_submission.py",
+      "sha256": "afde6f5b5ff493daa04cb3f4c4ea707f0275af60b5c3afe3028adfe36d038125",
+      "bytes": 12227,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 298,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/make_demo_data.py",
+      "sha256": "96feee1505905635e013eadae11ce14dd4627d79cbe3bd8a3dba3be8c83a38ae",
+      "bytes": 2606,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 62,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/make_figure.py",
+      "sha256": "1d369f45088547ae108810a5b572f2668dc507c58f475699ff408b92cc8616f8",
+      "bytes": 3185,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 75,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/make_report.py",
+      "sha256": "c364adfccad3e6d2ff7f5619b2259c4fe0ffdf8694fd92c4e22efcadef2d6a3c",
+      "bytes": 20685,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 343,
+      "url_count": 9,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/oof_e1.py",
+      "sha256": "d30a1f4ba7e17d680cabd3d2e7649b9f97e1784f747a4da64547b1f0cf8bbf61",
+      "bytes": 1987,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 53,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/prepare_data.py",
+      "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+      "bytes": 9029,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 176,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/restore_data.py",
+      "sha256": "65219638fc0cbc330eb1ac290661f83bf9e58ac35ec26df8e276943c79f6330d",
+      "bytes": 7603,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 112,
+      "url_count": 2,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/run_experiments.py",
+      "sha256": "2d9e916bbd129603e2b2d6a69f870e9ee6bd0f52ab3eaa6c7c7be519906d63f9",
+      "bytes": 15510,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 321,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/uniqueness.py",
+      "sha256": "dee255d7c423fe793cec01cf77f7e15820c16b9cbdaa25fb4a920c136de3b0b0",
+      "bytes": 3400,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 75,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/validate_raster.py",
+      "sha256": "e1d0d95ab75481ca73ffa1b745a445113ff5a15bafd859163bdba1013e9201f0",
+      "bytes": 2849,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 66,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/validate_submission.py",
+      "sha256": "608e579758bcc71a4ae14362b46eb17d0effc53c48f4f2ed8a7d3de397a279ac",
+      "bytes": 4073,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 112,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "scripts/verify_repair_dashboard.py",
+      "sha256": "2480de6bb4e4f30776b2653e8750ee5ea5dc35ebc3a1553e3277e5eff92cb21c",
+      "bytes": 11928,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 263,
+      "url_count": 1,
+      "pattern_hits": {
+        "owner_amount_display": [
+          33
+        ],
+        "requester_meta": [
+          30
+        ]
+      },
+      "is_guard_file": true
+    },
+    {
+      "path": "shortlist.html",
+      "sha256": "5f4b510bfbc9990dd6105b158c866ffee0fe5c43e31d9fc8f367a8f54615f57d",
+      "bytes": 17274,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 244,
+      "url_count": 23,
+      "pattern_hits": {
+        "owner_amount_display": [
+          121,
+          128,
+          135
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "sources.html",
+      "sha256": "4f7f19110da1209a592b761ed040ad26e1b65b99f7c1dfebadf202693b687588",
+      "bytes": 25516,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 257,
+      "url_count": 50,
+      "pattern_hits": {
+        "owner_amount_display": [
+          242
+        ],
+        "stale_500_threshold": [
+          155,
+          211
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "summary.html",
+      "sha256": "4e5583ebcd203263d9436adc2d701c9ead33f6fb3138c9ef1576abec5419f5b0",
+      "bytes": 16060,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 205,
+      "url_count": 31,
+      "pattern_hits": {
+        "owner_amount_display": [
+          61,
+          67,
+          73,
+          87,
+          104,
+          110,
+          116,
+          173,
+          183
+        ],
+        "stale_500_threshold": [
+          86,
+          173
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "tests/test_bath_site.py",
+      "sha256": "581f1b973bf0a39c7ea5ccb62abef73e9e2fffc8bdff95ea114af8d60e322e03",
+      "bytes": 6845,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 187,
+      "url_count": 3,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_dashboard_integrity.py",
+      "sha256": "8d03cf2e498ee58acb48b56c50cecf9094795376eedfbd48eb7a37c708184f59",
+      "bytes": 5399,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 121,
+      "url_count": 0,
+      "pattern_hits": {
+        "owner_amount_display": [
+          103
+        ]
+      },
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_emission.py",
+      "sha256": "4828d34aecfbfc4a7e875a6ea7c7b762a236834f7ab03ad3754a1ba06dafc089",
+      "bytes": 2290,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 66,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_evaluate_holdout.py",
+      "sha256": "2e354c977536dcf85dd6230420c1ca2ffec525f7068941e1206736b73061cf68",
+      "bytes": 5978,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 145,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_holdout_registry.py",
+      "sha256": "51dd4ab95c10031215676d40bd81957540237e7458f94b998abe5582c40c3e23",
+      "bytes": 2927,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 82,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_metric.py",
+      "sha256": "302f312494dd879ceaf36c4527cea58a96398b230f61e92b2fbf6c0a6ad72753",
+      "bytes": 2363,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 77,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_metric_official.py",
+      "sha256": "8eb3574531c7e71bbbb55d0ffe8e235d46614a9a3c29e70053ca70a6ae62de8d",
+      "bytes": 1640,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 46,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_network_calibrate.py",
+      "sha256": "d542ea6212043a1be248fb775d5b9d26be9ebfdc59f058a4741e520be2a2fdb7",
+      "bytes": 914,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 28,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_overflow_site.py",
+      "sha256": "ca4a2b6e8e3656dfea65b62283a777619e114609c0b077f8da1ad568a80bd8b6",
+      "bytes": 4762,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 129,
+      "url_count": 0,
+      "pattern_hits": {
+        "stale_500_threshold": [
+          7,
+          87
+        ]
+      },
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_project.py",
+      "sha256": "84da7f2b2a9cb9b4732e8d491f284f91742ee1746b6a8836b06663198097e54b",
+      "bytes": 6986,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 199,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_repair_dashboard.py",
+      "sha256": "70a2bd7ad4b899887d8fe3e52f64c358dc01f5bc697356a5552586e749442d75",
+      "bytes": 5405,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 147,
+      "url_count": 1,
+      "pattern_hits": {
+        "owner_amount_display": [
+          88
+        ]
+      },
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_shipped_artifacts.py",
+      "sha256": "e883525a9f442af8b76cb5c275fa08fef40c61d8e4b04e96c8ca7c82ff3c7b9b",
+      "bytes": 1547,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 43,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_validate_raster.py",
+      "sha256": "e1f0f1021a84c9d1b57401ba80ec7db1a9ce3bcd89372c35dae3a6d158ad3ecb",
+      "bytes": 2193,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 55,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_validate_submission.py",
+      "sha256": "1d5f1fe7fbde469bcebc8ccf9c7f43b7f01ce568763b94619d9a6eca236451b6",
+      "bytes": 2029,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 48,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "tests/test_writer_validate.py",
+      "sha256": "54713f6530c8821736323ccb5d01b09242592eb6ad1c1fd92d4c02ddea006859",
+      "bytes": 3174,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 95,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": true
+    },
+    {
+      "path": "trip-lever/research.md",
+      "sha256": "441b95ce210900fb7814c76645e0c0fb3c61c1021db4fc60f784d6db59e64857",
+      "bytes": 16778,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 110,
+      "url_count": 40,
+      "pattern_hits": {
+        "owner_amount_display": [
+          17,
+          18,
+          19
+        ],
+        "stale_500_threshold": [
+          49
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "trip-lever/secondary-pages-audit.md",
+      "sha256": "c0fcfa62845d240272df3d95a3f598d3ddb42bd5651ce68ec32b307be7fa726e",
+      "bytes": 12342,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 39,
+      "url_count": 23,
+      "pattern_hits": {
+        "all_in_one_capability_flag": [
+          21
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "trip-lever/session-aa883562-verification.md",
+      "sha256": "541646492bebf222d40cc3ac763505b096c0bb6846ff32f288601a0dd6c3ff6c",
+      "bytes": 3731,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 20,
+      "url_count": 11,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "trip-lever/validation-2026-11-07.json",
+      "sha256": "74ef123be2eb2117d3e619443e74bf7a4fb3721533cb7f6b95e3b3529bdd9376",
+      "bytes": 3412,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 123,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "trip-lever/verification.md",
+      "sha256": "0eb6d47b65de7d89b3a745c5f6f6d0e968b2dd64e8440829cea8dca059be8e52",
+      "bytes": 14604,
+      "classification": "historical_repair",
+      "binary": false,
+      "lines": 135,
+      "url_count": 11,
+      "pattern_hits": {
+        "owner_amount_display": [
+          111
+        ],
+        "stale_500_threshold": [
+          66
+        ]
+      },
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/PROVENANCE.json",
+      "sha256": "6790e3a5a2ea0fc6ebcdb560ddc40a0dca202f3e2d621ede315f69e153449b5d",
+      "bytes": 3003,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 35,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/README.md",
+      "sha256": "18cbdffb1b40742546b3de32e99220e67b9c3c37c87ddc200e5d5b5968c11cb0",
+      "bytes": 718,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 11,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/VENDOR.md",
+      "sha256": "0218131523deae37311db8c58fa1dd9252e2babd90cad74d62a73410544b8631",
+      "bytes": 1556,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 25,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/scripts/evaluate_holdout.py",
+      "sha256": "21ed7f6460d876dc0eb83d8c01d3843ee660f43bb73576eb3f0adb1a07e61dbb",
+      "bytes": 4822,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 109,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/scripts/submission_writer.py",
+      "sha256": "663bc075d90cdfa8d440fa201eeb87fba2783c503562e06044a705963d76bcf6",
+      "bytes": 5085,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 127,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/src/gems32/__init__.py",
+      "sha256": "e4a584f79eab8c0db81b5704b1525536fef2dcee5bac28da1455a39868983504",
+      "bytes": 139,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 3,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/src/gems32/holdout.py",
+      "sha256": "9ce9cf359f4d7b7fa844dd8f208ec00c3e6c15afef5d724d9014320b944d318d",
+      "bytes": 32822,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 821,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/src/gems32/metric.py",
+      "sha256": "382de3eb6d77d549e01bafa718fd01f5a7132263be0b6925dbd5a40a24025289",
+      "bytes": 10363,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 250,
+      "url_count": 2,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/src/gems32/paths.py",
+      "sha256": "ceb7c79097958beff1f618e608491c3528341b14ee8b2e9cdcfafe1406230b69",
+      "bytes": 1678,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 57,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems32/src/gems32/submission.py",
+      "sha256": "d397118a7165f674ba45bdea89b65852f2a24450edaa9b7e00e7cd5b87f0b9e1",
+      "bytes": 11454,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 262,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/__init__.py",
+      "sha256": "bd7f12b45caf67b7b4d0da4656c7c3895513bec524ec0b7f251227ecbdd39d26",
+      "bytes": 641,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 15,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/anatomy.py",
+      "sha256": "f47103ae0f615a0f04ef0427ea83ad2dd11ecd4af34e53b99f2e20e557025cf9",
+      "bytes": 20081,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 394,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/damagezone_envelope.py",
+      "sha256": "5e5cc359f3ccc239a0906d96f642057461ae7928e967f02249b62dab2ac98a36",
+      "bytes": 9838,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 194,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/emit.py",
+      "sha256": "05c473e736e4a599b35be77b2791b62d72460383853c8fba0eb56ea26c99055d",
+      "bytes": 19204,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 444,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/evaluate_holdout.py",
+      "sha256": "ad86640b46f3c5fc6b1aceec4c4bfc82d03e35008b37ab2a8ad6076e6810ff3a",
+      "bytes": 7490,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 143,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/evaluator_provenance.py",
+      "sha256": "6f1d1932fbe427ceb028f74d80926aa836b2cb77c982625c97d1c4141b7b80e2",
+      "bytes": 2952,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 91,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/faultzone.py",
+      "sha256": "620537490173e565898911577f6cdf95e288d8eff326830a1da9c71f4b467bdd",
+      "bytes": 17696,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 413,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/fit.py",
+      "sha256": "936488cc00c0f71c64d7e36a94dd1ddd0f17625abeefb41e7c6e75360ac14ae8",
+      "bytes": 5891,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 131,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/fitting.py",
+      "sha256": "91fbc11fc51374ca07b5246d5221edee33636e546fa457331e84272b80a7cbc7",
+      "bytes": 10707,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 231,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/gates.py",
+      "sha256": "7c57f70dbba58bb1112df4193a3de56516af0f981970d4b943b394f99b573dae",
+      "bytes": 10238,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 189,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/geo.py",
+      "sha256": "4320d4fb718a66a794b21c35af28cc1f2ce7b6e49649b17e86b3e9eb34235ff8",
+      "bytes": 6015,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 133,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/grid.py",
+      "sha256": "b96df7ec0f33658a61b0baa5db85fcd19be2cd8b1873f99699bd26bddae8cd8d",
+      "bytes": 8704,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 198,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/holdout.py",
+      "sha256": "7a0a84176986190b527aa9c6a84216c2dab4b599f25b1143db5f420e85020ab1",
+      "bytes": 14883,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 316,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/metric.py",
+      "sha256": "4afe10cbaa229948520c75194b1ebc32676e72544f05582f0725092b097b4d7f",
+      "bytes": 9895,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 235,
+      "url_count": 1,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/network.py",
+      "sha256": "d5e53d7df182e69bb22a6e39ac16f43d3f5b730e503d86538d5f8f7360020943",
+      "bytes": 9095,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 222,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/offcatalogue.py",
+      "sha256": "5c1937dda9f16563d8679446bb60e66c8c878e7440c522c44afa0e7879b7b6e8",
+      "bytes": 16436,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 330,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/prepare_data.py",
+      "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+      "bytes": 9029,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 176,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/relay_bend_anatomy.py",
+      "sha256": "cb9b79b9b61feaaaf6305009f571b6222c1ec390d1f94a1b05a91e05e7eb5dcb",
+      "bytes": 13742,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 330,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/spatial.py",
+      "sha256": "fad7b09db9efc512247b9a176a7e7ce8631e287592b4e07902d0b9c38bed00f8",
+      "bytes": 9879,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 176,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/strand_orientation.py",
+      "sha256": "c1dd6d8bc39c48c4cda11321c116e600b59b18cf1764e23ce3d5438bea9dd0bc",
+      "bytes": 5342,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 101,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/strike_zone.py",
+      "sha256": "eaf5b1030b731ec743650568d28598d3b6104e641a089dd6cca196e05be4e9c4",
+      "bytes": 5132,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 124,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/submission_writer.py",
+      "sha256": "41220185ac2823fe5358603d38f2a915ea3e5f1ab1f94f0b237295b38b4a2565",
+      "bytes": 6387,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 143,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/uniqueness.py",
+      "sha256": "1c5094b814277ae801ccea6a47cf744429cffcdc10f9cc79f229d5fc44a8df95",
+      "bytes": 24437,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 459,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "vendor/gems57/validate.py",
+      "sha256": "e7849554b47f6a2b66aeb2f7cfd5db06267412f049f52a73f1c41f934a2c34dd",
+      "bytes": 4765,
+      "classification": "legacy_or_unrelated",
+      "binary": false,
+      "lines": 109,
+      "url_count": 0,
+      "pattern_hits": {},
+      "is_guard_file": false
+    },
+    {
+      "path": "verification.html",
+      "sha256": "0118b63e606de9cab15672b34aee2415ef4f1d7f8c9ae7f8497156fe6995f8a3",
+      "bytes": 18693,
+      "classification": "canonical_repair",
+      "binary": false,
+      "lines": 282,
+      "url_count": 24,
+      "pattern_hits": {
+        "owner_amount_display": [
+          203
+        ],
+        "stale_500_threshold": [
+          230
+        ]
+      },
+      "is_guard_file": false
+    }
+  ]
+}

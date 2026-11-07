@@ -3,14 +3,14 @@
   "site": "/home/user/Korea7/build/repair-site",
   "pages": 13,
   "html_files": 26,
-  "data_rows_checked": 217,
+  "data_rows_checked": 219,
   "providers": {
     "total": 21,
     "verified_licenses": 14,
     "discovery_only": 7
   },
-  "external_links_unique": 83,
-  "sources_registered": 73,
+  "external_links_unique": 84,
+  "sources_registered": 74,
   "checks": [
     {
       "name": "required_pages",
@@ -35,7 +35,7 @@
     {
       "name": "every_table_row_has_source_link",
       "ok": true,
-      "detail": "rows=217; unsourced=[]"
+      "detail": "rows=219; unsourced=[]"
     },
     {
       "name": "provider_counts",
@@ -90,7 +90,7 @@
     {
       "name": "source_register_nonempty",
       "ok": true,
-      "detail": "sources=73"
+      "detail": "sources=74"
     },
     {
       "name": "all_cslb_records_in_sources",
@@ -100,22 +100,22 @@
     {
       "name": "deterministic_build",
       "ok": true,
-      "detail": "files=37"
+      "detail": "files=38"
     }
   ],
   "failures": [],
   "page_sha256": {
-    "index.html": "9d388ecf2641483f5ddf0cf62713044b98c2bfa98e087a98cf132a19ab4f2726",
+    "index.html": "61fc46cc839b2fd583dbeaffe37fe34c4727a100880a141ada54ebe48c4345d3",
     "summary.html": "c293aaea23babe69c904f170f5021c389d7025d65a93024cb919ae11752aca46",
     "requirements.html": "a7e185c216d6b884a5ce9d6aaf18def5157ea2cf3059c51cc6e4c0f3f5c7e4a7",
     "estimates.html": "631d0e3eea6c1ac25e6642878cb1e668cdc0eeb9c9b9d6fe50d91e2ad586cd2a",
-    "contractors.html": "c3f36fd179148ad53cc48a0c5fad05e8472b443eb857fae8e6e5a8a3b4fc16ef",
+    "contractors.html": "1474c9bb48275d2579585a3815ac9bc9f31c174f6c4fc8cdb6f3c86594c29020",
     "reviews.html": "94605757edb7a1fc1f53baf8d0579082898786f728b89e422cd5ec7f74fc674e",
-    "findings.html": "bc86bbac44911d1283f3f87f1843fd4288780445b90ad08642484025dd648171",
+    "findings.html": "6d96760c353984461d1670cc2ee90408909201a3cc3c4b47a868b4fcd5ccaaa9",
     "access-plan.html": "e5b2c5e5f42c6483729397d461dc110b3227bbab3aaa2602b03b5b96241056b6",
     "compliance.html": "2b209019b0ce077b1c66bcef02b0357ddadbd09e3ccb1cf416b634cec6f47b89",
-    "sources.html": "edcbde51f928f19b97f0c2311f5ae45cc8a6b8eef04f6a147ed76315e6e7b110",
-    "flagged.html": "d4072c050e4914631609bd2b86362399cf9f62450b984bca327649012a76740d",
+    "sources.html": "90fb9ffd9157b66c775002543f11d16226d6c3dd8ea99f9043aaa749a32c356a",
+    "flagged.html": "7afcd49f587e07dc321838e00fd64613d6ebfdde9b5e98467cd0062755713c17",
     "verification.html": "29a853817cefbcc96229754378794d58af6506eaf064bd9d4ecb8086a2ecf055",
     "archive.html": "33b8e5457c5ef5468a9b033f75fc342ada2b4a96eb2eaba770591ebfade48016"
   },

@@ -243,6 +243,15 @@
       "source": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
       "source_label": "Coordination / prior review requests",
       "blank": false
+    },
+    {
+      "id": "genteel-phone",
+      "title": "Genteel Plumbers: phone differs by source",
+      "detail": "CSLB lists (833) 436-8335; the company San Francisco service page lists 415-465-5853. The company page also describes vintage/delicate SF plumbing systems, but that is a company-published claim, not confirmation of this exact trip-lever job.",
+      "action": "Confirm the current service number and contracting entity; do not silently merge the numbers.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "source_label": "CSLB #1025814",
+      "blank": false
     }
   ]
 }
