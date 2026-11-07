@@ -106,6 +106,14 @@
           <td>Re-open the Yelp pages on the decision date; treat CSLB as authoritative for license facts; ask Handyman
               Heroes which license covers electrical work.</td>
         </tr>
+        <tr>
+          <td>8</td>
+          <td>Legacy page <span class="mono">docs/parallel-index.html</span> links to <span class="mono">docs/results/</span>, which is not in the repository</td>
+          <td>Found by the 2026-11-07 internal link audit (888 internal links checked across all published HTML; this was the only
+              missing target). The page belongs to the unrelated legacy GEMS project; the folder is git-ignored, so the link 404s on
+              GitHub Pages. No repair-project page links to it. Legacy files were left untouched per the task board.</td>
+          <td>Owner decides whether to remove the legacy link or publish the results folder. Does not affect any repair-project page.</td>
+        </tr>
       </tbody>
       <caption>Housekeeping item: this repository's root content belongs to an unrelated legacy project (GEMS
       fault-prospectivity audit) whose site remains at <a href="docs/index.html">docs/index.html</a>; this repair
@@ -115,11 +123,30 @@
 </section>
 
 <section class="section">
+  <h2>Re-verification record — 2026-11-07</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>License</th><th>Business name on official record</th><th>Status</th><th>Classes</th><th>Expires</th><th>Matches published value?</th></tr></thead>
+      <tbody>
+        <tr><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638">#977638</a></td><td>EXPERT PLUMBING SOLUTIONS</td><td>current and active</td><td>C-36</td><td>10/31/2028</td><td>yes</td></tr>
+        <tr><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796">#757796</a></td><td>BAY AREA PLUMBING</td><td>current and active</td><td>C-36</td><td>01/31/2027</td><td>yes (workers' comp exemption still shown)</td></tr>
+        <tr><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971">#1024971</a></td><td>JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER</td><td>current and active</td><td>C-36</td><td>03/31/2027</td><td>yes</td></tr>
+        <tr><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843">#959843</a></td><td>GENERALSF</td><td>current and active</td><td>B, C-10, C-36</td><td>04/30/2027</td><td>yes (workers' comp exemption still shown)</td></tr>
+        <tr><td><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394">#1003394</a></td><td>HANDYMAN HEROES INC</td><td>current and active · complaint disclosure present</td><td>B, C-36</td><td>05/31/2027</td><td>yes</td></tr>
+      </tbody>
+      <caption>Source: the linked official CSLB license-detail records, each stamped “Data current as of 11/7/2026”. Re-checked line by
+      line against the Contractors and Dashboard tables on 2026-11-07; no published value required a change. Owner-provided estimate
+      amounts remain unverifiable (no official source exists) and keep their flags.</caption>
+    </table>
+  </div>
+</section>
+
+<section class="section">
   <h2>How flagged items are handled</h2>
   <ul class="tight">
     <li>Flagged items <strong>do not block</strong> the site, the analysis, or any merge — they are published here by design.</li>
     <li>Nothing flagged was “filled in” with an assumed value: blank means unconfirmed.</li>
-    <li>To request a change, note the item number (1–7) and what you'd like corrected; the site can be revised and redeployed.</li>
+    <li>To request a change, note the item number (1–8) and what you'd like corrected; the site can be revised and redeployed.</li>
   </ul>
   <div class="callout info"><div class="icon">ℹ️</div><p>Full research notes with every source URL and capture detail:
   <span class="mono">trip-lever/research.md</span> in the repository · verification log:
@@ -130,7 +157,7 @@
 
 <footer class="site">
   <div class="wrap">
-    <span>Flagged for review · 7 items · updated 2026-11-06</span>
+    <span>Flagged for review · 8 items · updated 2026-11-07</span>
     <span><a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a></span>
   </div>
 </footer>
