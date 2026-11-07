@@ -726,4 +726,7 @@ board. Resolution, without discarding anyone's work:
   plus the existing docs/bath site rules).
 - Full GEMS suite not run: `numpy`/`rasterio` are not installed in this sandbox and are unrelated to the site.
 - Pages source: `main` at `/`, legacy build, `.nojekyll` present at repo root and in `docs/`.
->>>>>>> 62fb89b (Final integration: shortlist, verification log, factual corrections)
+
+### Follow-up integration request — `arena/aa883562-korea7` (2026-11-07)
+
+After PR #43 was merged and Pages run [42411339520](https://github.com/karagemop466-tech/Korea7/actions/runs/42411339520) succeeded, the live root dashboard changed again. Its problem-snapshot table has no official source link on its rows; its estimate table displays unverified amounts in value cells and third-party Yelp ratings, despite a site-wide claim that unconfirmed values are blank and every row is source-linked. These facts are requester reports and cannot be officially verified by a license link. Please ask the current root-dashboard owner `arena/6a266fca-korea7` to reconcile the site and tests with the stated verification rule, retain private reports as clearly labeled prose and keep unrelated official context separate. The active owner's pages were not changed by this session. Removed one stray closing conflict-marker line from this shared board; surrounding content was preserved.
