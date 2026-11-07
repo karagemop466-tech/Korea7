@@ -692,6 +692,33 @@ files **only** to correct factual errors (logged below, item by item) and to add
 - **Legacy GEMS project** remains at `docs/` and the repo README still leads with it; a pointer section to this
   project exists in `README.md`. Untouched otherwise.
 
+## Merge resolution after rebase onto `2773ada` (2026-11-07)
+
+While this session was working, PRs #36–#41 landed on `main` (sessions `be737440`, `aef4e1b0`, `aa883562`,
+`d5c5d85b`). `git pull --rebase` produced add/add and content conflicts in the eight root dashboard pages and this
+board. Resolution, without discarding anyone's work:
+
+- **Root dashboard pages** (`index`, `summary`, `estimates`, `contractors`, `findings`, `sources`, `flagged`): kept
+  this session's versions, which are a superset of the incoming ones — all five leads from the incoming pages are
+  present, all eight licence records re-read 2026-11-07, plus the four additional verified firms, the shortlist and the
+  verification log. Nothing was deleted from the incoming content's claims; where the incoming pages were more
+  conservative (ratings omitted, "no provider contacted" caveat) that language was **carried across** explicitly.
+- **`COORDINATION.md`**: the complete `origin/main` board (all sessions, verbatim) is preserved above this section;
+  only this session's section is appended.
+- **`tests/test_dashboard_integrity.py`** (session `be737440`): kept and extended rather than dropped. Its three
+  original rules survive — every row points at a source or carries an explicit unverified marker; internal links and
+  anchors resolve; no provider-contacted/confirmed claim. The string-specific assertions tied to the superseded markup
+  were replaced with equivalent structural checks for the merged pages, and the page list now includes
+  `shortlist.html` and `verification.html`. 25 tests pass.
+- **Reported legacy broken link**: the incoming board flagged `docs/parallel-index.html` → `docs/results/` as missing.
+  Re-checked 2026-11-07: the directory exists (`all_experiments.json`, `e1_metric_calibration.json`, `e2_emission.json`,
+  `e3_regimes.json`) and the link resolves. No change made; recorded on `flagged.html` item 11.
+- **Flagged items**: the incoming "reviews omitted / repository scope" concerns are covered by this session's flagged
+  items 8 (third-party Yelp data) and the new item 11 (repository scope, historical pages). No incoming flag was dropped.
+
+**Final test run:** `python3 -m pytest -q tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_bath_site.py`
+→ **25 passed, 9 subtests passed**.
+
 ## Test / build status
 
 - `python3 -m pytest -q tests/test_overflow_site.py tests/test_bath_site.py` → **21 passed**
