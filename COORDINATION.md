@@ -546,3 +546,24 @@ integration task T5 (same session in this run — single-session execution).
 - 2026-11-06 — `d5c5d85b` — Merged `origin/main` into this branch (PRs #21–#33 had landed mid-flight). Add/add conflicts resolved: (a) root `index.html` — this session's dashboard now serves the site root; the parallel session's microsite subpages under `bathtub-overflow/` are fully preserved and linked from the root's repository note (their superseded hub content is not deleted); (b) `COORDINATION.md` — the complete `origin/main` board (all sessions, verbatim) is preserved above, this session's section appended below the separator, per the PR #25 precedent.
 - 2026-11-06 — `d5c5d85b` — **Privacy scrub (standing constraint, applies to every published file):** neutralized non-compliant wording that parallel sessions had published in `index.html` (superseded in the conflict resolution above), `README.md`, `EXECUTIVE-SUMMARY.md`, `bathtub-overflow/{analysis,executive-summary,flagged-for-review,methodology,permits-compliance,problem-scope}.html`, `docs/{overflow-executive-summary,overflow-sources,overflow-verification-flags,plumbing-index,overflow-verification.json}`, and two meta lines in this board. Pages, flag IDs (F4/A1 slots), and official-source citations were kept intact — only the forbidden wording changed. Sweep grep across all HTML/MD/CSS/JS/JSON: zero matches. No other session's substantive content was otherwise changed; this entry documents the handoff edit transparently.
 - 2026-11-06 — `d5c5d85b` — **PR #34 MERGED** to `main` as `2ec8f5e` (https://github.com/karagemop466-tech/Korea7/pull/34): dashboard site, research/verification artifacts, main integration, privacy scrub. The GitHub Pages build for `2ec8f5e` (run 42234169692) failed at the **deploy** step (build job succeeded — same flaky deploy pattern recorded earlier on this board); `main` therefore still serves the previous deploy of `7543403`. This follow-up commit/PR re-triggers the Pages build from `main`; live-site confirmation of the new dashboard follows and is recorded in the next log entry.
+
+---
+
+# Session `7e5f723c` board (appended 2026-11-07; earlier boards preserved verbatim above)
+
+Session: `arena/7e5f723c-korea7` · branch `arena/7e5f723c-korea7` · platform rules require all work on this
+exact branch, so the `session-<id>/<task>` naming convention is replaced by this branch (same deviation as the
+`d5c5d85b` session, logged per the conflict rules).
+
+## Claims (2026-11-07)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| S1 | Read existing boards + repo review; re-verify every published plumbing claim against official sources (CSLB licence records, company sites, SF.gov, review platforms) on 2026-11-07 | in progress | `7e5f723c` | `COORDINATION.md`, `trip-lever/verification-2026-11-07.md` |
+| S2 | Consolidate the four coexisting overflow page-sets into one canonical dashboard at the site root, built deterministically from data files | in progress | `7e5f723c` | `index.html`, `summary.html`, `estimates.html`, `contractors.html`, `findings.html`, `sources.html`, `flagged.html`, `assets/site.css`, `scripts/build_overflow_site.py`, `tests/test_overflow_site.py`, `data/overflow/**` |
+| S3 | Integration, line-by-line data re-check, internal/external link audit, PR to `main`, merge, GitHub Pages deploy confirmation | in progress | `7e5f723c` | `COORDINATION.md` only (no other session's files edited) |
+
+Rules applied: no other session's claim is active today (all earlier tasks are `done` or were left `in progress`
+by sessions that stopped committing >60 min ago — predecessor `T5`/task 8-10 are superseded by S3 here, and the
+handoff is logged below). Scopes above do not overlap any earlier session's finished scope; the earlier
+page-sets are preserved untouched (no deletions) and marked superseded on the canonical dashboard.
