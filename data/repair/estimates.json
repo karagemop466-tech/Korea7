@@ -1,0 +1,11 @@
+{
+  "date_heading_as_supplied": "8/30/26",
+  "date_note": "The supplied heading appears above the estimate list. Whether it is the issue date of every estimate is unconfirmed; no per-estimate date is asserted.",
+  "amount_policy": "Owner-reported amounts are not published by an official/first-party source in the reviewed evidence. Official-confirmed amount cells are blank and flagged. Scopes below are owner testimony, not verified contractor commitments.",
+  "estimates": [
+    {"id":"E1","provider_id":"expert-plumbing","provider":"Expert Plumbing Solutions","scope_owner_reported":"Replacing waste and overflow.","amount_usd":null,"official_amount_source":null,"labor_materials":null,"drywall_included":null,"identity_source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638","status":"Unverified owner report"},
+    {"id":"E2","provider_id":"bay-area-plumbing","provider":"Bay Area Plumbing","scope_owner_reported":"Replace lever for the bathtub plug and spout with diverter; owner says labor and materials are included.","amount_usd":null,"official_amount_source":null,"labor_materials":"Owner-reported: included","drywall_included":null,"identity_source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796","status":"Unverified owner report"},
+    {"id":"E3","provider_id":"fast-response","provider":"Fast Response Plumbing & Rooter","scope_owner_reported":"Repair or adjust bathtub wastewater plunger handle.","amount_usd":null,"official_amount_source":null,"labor_materials":null,"drywall_included":null,"identity_source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971","status":"Unverified owner report"}
+  ],
+  "combined_quote": {"amount_usd": null, "source": null, "status": "No combined plumbing + access + drywall restoration quote was supplied or verified."}
+}

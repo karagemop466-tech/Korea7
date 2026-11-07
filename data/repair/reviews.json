@@ -1,0 +1,9 @@
+{
+  "checked_on": "2026-11-07",
+  "note": "Yelp business/search pages returned HTTP 403 on direct fetch; ratings and counts are blank. BBB profiles below were read directly and are reported only as statements of that platform, not as government licensing or proof of this job's fit. Company-published testimonials are not treated as independent reviews.",
+  "bbb": [
+    {"provider_id":"expert-plumbing","provider":"Expert Plumbing Solutions","url":"https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492","rating_as_platform_states":"Not currently rated; BBB says insufficient information","accreditation":"Not BBB Accredited","complaints_last_3_years_as_platform_states":0,"customer_review_count":null,"license_number_platform_reports":"977638","status":"Read directly 2026-11-07"},
+    {"provider_id":"fast-response","provider":"Fast Response Plumbing & Rooter","url":"https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063","rating_as_platform_states":"A+","accreditation":"Not BBB Accredited","complaints_last_3_years_as_platform_states":0,"customer_review_count":null,"license_number_platform_reports":"1024971","status":"Read directly 2026-11-07"},
+    {"provider_id":"handyman-heroes","provider":"Handyman Heroes Inc.","url":"https://www.bbb.org/us/ca/san-francisco/profile/handyman/handyman-heroes-inc-1116-541366","rating_as_platform_states":"A+","accreditation":"Not BBB Accredited","complaints_last_3_years_as_platform_states":0,"customer_review_count":null,"license_number_platform_reports":"1003394","status":"Read directly 2026-11-07"}
+  ]
+}

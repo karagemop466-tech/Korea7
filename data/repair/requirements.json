@@ -1,0 +1,245 @@
+{
+  "note": "Requirements are transcribed from the owner brief or labeled as proposed acceptance checks. An official context link explains a standard or agency guidance; it does not independently confirm the owner's site conditions or a contractor's agreement.",
+  "requirements": [
+    {
+      "id": "R01",
+      "category": "Problem",
+      "requirement": "Diagnose the seized bathtub overflow trip-lever/plunger mechanism in concealed plumbing.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Contractor documents the actual mechanism, failure point, and proposed repair before work.",
+      "context_source": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "context_label": "Watco typical trip-lever assembly (model-specific; not a diagnosis)"
+    },
+    {
+      "id": "R02",
+      "category": "Access",
+      "requirement": "Prefer a safe from-above / overflow-opening approach if the contractor can perform it without damaging hidden plumbing.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Written access plan states whether top-down retrieval is feasible and what stops the attempt.",
+      "context_source": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "context_label": "Manufacturer installation/adjustment instructions"
+    },
+    {
+      "id": "R03",
+      "category": "Access",
+      "requirement": "If from-above service is not feasible, plan controlled access from below through the storage-unit ceiling.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Contractor identifies opening location/size, protects storage contents, and keeps access open for testing.",
+      "context_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "context_label": "SF DBI concealed-pipe guidance"
+    },
+    {
+      "id": "R04",
+      "category": "Scope",
+      "requirement": "One responsible licensed service for plumbing plus drywall opening, patch, texture, and paint restoration.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Single prime contract or written coordinated subcontracting plan names responsibility for every trade and finish.",
+      "context_source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "context_label": "CSLB B classification / two-trade rule"
+    },
+    {
+      "id": "R05",
+      "category": "Licensing",
+      "requirement": "Licensed plumbing performer (C-36) and appropriately licensed drywall/building scope as applicable.",
+      "origin": "Owner brief + official classification context",
+      "confirmed_site_fact": null,
+      "acceptance": "Check CSLB status/classifications for the actual contracting entity and crew on hire day.",
+      "context_source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "context_label": "CSLB C-36 plumbing classification"
+    },
+    {
+      "id": "R06",
+      "category": "Service area",
+      "requirement": "Provider confirms service to the specific San Francisco address and the below-unit work area.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Written confirmation of address coverage; city-wide marketing alone is not a booking.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "context_label": "CSLB: verify business location and telephone"
+    },
+    {
+      "id": "R07",
+      "category": "Experience",
+      "requirement": "Demonstrated experience with delicate concealed waste-and-overflow / seized trip-lever work.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Comparable job references or documented examples; do not substitute license class or star rating for this evidence.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "context_label": "CSLB: ask for recommendations for similar projects"
+    },
+    {
+      "id": "R08",
+      "category": "Occupied unit",
+      "requirement": "Experience and procedures for tenant-occupied work, including scheduling and access coordination.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Named coordinator, agreed access windows, tenant communication plan, and references from occupied units.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "context_label": "CSLB: put special requests and instructions in the contract"
+    },
+    {
+      "id": "R09",
+      "category": "Protection",
+      "requirement": "Protect occupants, storage contents, finishes, and adjacent areas from dust, debris, and water.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Written containment, floor/content protection, water control, cleanup, and debris-removal plan.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "context_label": "CSLB: include cleanup and special instructions"
+    },
+    {
+      "id": "R10",
+      "category": "Parts",
+      "requirement": "Identify tub/overflow manufacturer, model, and compatible replacement parts before ordering or replacing.",
+      "origin": "Proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Photos/model markings recorded; proposed parts confirmed compatible by the contractor/manufacturer.",
+      "context_source": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "context_label": "Watco model-specific instructions illustrate why identification matters"
+    },
+    {
+      "id": "R11",
+      "category": "Damage control",
+      "requirement": "Do not force a seized linkage; stop and re-scope if hidden plumbing damage becomes likely.",
+      "origin": "Owner brief + proposed safety check",
+      "confirmed_site_fact": null,
+      "acceptance": "Written stop-work threshold and change-order process before additional cutting or pipe replacement.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "context_label": "CSLB: changes should be written change orders"
+    },
+    {
+      "id": "R12",
+      "category": "Inspection",
+      "requirement": "Inspect concealed plumbing and surrounding materials for leaks or damage while access is open.",
+      "origin": "Proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Contractor records condition and obtains approval before closing any ceiling or wall.",
+      "context_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "context_label": "SF DBI: required inspections before covering pipes"
+    },
+    {
+      "id": "R13",
+      "category": "Testing",
+      "requirement": "Verify stopper/drain operation and check drain/overflow connections for leaks before ceiling closure.",
+      "origin": "Proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Contractor performs functional and leak checks with access open; results documented and any required inspection completed.",
+      "context_source": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "context_label": "Watco step 7: readjust until drain stops water"
+    },
+    {
+      "id": "R14",
+      "category": "Restoration",
+      "requirement": "Restore ceiling drywall, tape, texture, and paint; assess any required fire-rated assembly or access-panel option.",
+      "origin": "Owner brief + proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Restoration scope identifies materials, finish match, assembly requirements, and who performs each step.",
+      "context_source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C9",
+      "context_label": "CSLB C-9 drywall classification"
+    },
+    {
+      "id": "R15",
+      "category": "Pricing",
+      "requirement": "Itemized written proposal separating diagnosis/adjustment, replacement, access, restoration, and contingencies.",
+      "origin": "Proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Compare at least three bids on identical scope; no unsupported total is published here.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "context_label": "CSLB: compare at least three written bids on identical scope"
+    },
+    {
+      "id": "R16",
+      "category": "Estimates",
+      "requirement": "Confirm the legal entity, scope, date, amount, and inclusions behind each of the three owner-reported estimates.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Original written quotes matched to CSLB entity; unconfirmed amounts remain blank.",
+      "context_source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "context_label": "CSLB official license lookup (identity context only)"
+    },
+    {
+      "id": "R17",
+      "category": "Insurance",
+      "requirement": "Verify bond, workers' compensation for the actual crew, and general liability coverage.",
+      "origin": "Proposed due-diligence check",
+      "confirmed_site_fact": null,
+      "acceptance": "Current certificates verified with carrier/agent; exemptions are not treated as proof of crew coverage.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "context_label": "CSLB insurance and bond guidance"
+    },
+    {
+      "id": "R18",
+      "category": "Disclosures",
+      "requirement": "Review CSLB complaint/disclosure information and additional status warnings before selection.",
+      "origin": "Proposed due-diligence check",
+      "confirmed_site_fact": null,
+      "acceptance": "Read the exact regulator record; do not infer wrongdoing beyond the disclosed text.",
+      "context_source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "context_label": "Example: Handyman Heroes CSLB disclosure"
+    },
+    {
+      "id": "R19",
+      "category": "Compliance",
+      "requirement": "Determine permit and inspection requirements for the actual proposed scope with San Francisco DBI before work.",
+      "origin": "Proposed compliance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Contractor/DBI documents whether the specific work is exempt or requires permits; no blanket exemption is assumed.",
+      "context_source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "context_label": "SF DBI plumbing/mechanical permit guidance"
+    },
+    {
+      "id": "R20",
+      "category": "Contract",
+      "requirement": "Written contract, change orders, payment terms, warranty, cleanup, and access instructions.",
+      "origin": "Proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Contract names license/entity, complete scope, price, schedule, permits, insurance, and restoration responsibilities.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "context_label": "CSLB contract guidance"
+    },
+    {
+      "id": "R21",
+      "category": "Documentation",
+      "requirement": "Before/during/after photos and repair/test records without publishing tenant identifiers.",
+      "origin": "Proposed acceptance check",
+      "confirmed_site_fact": null,
+      "acceptance": "Job record retained privately; public dashboard contains no tenant names, unit address, or private scheduling context.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "context_label": "CSLB: written records and contract documentation"
+    },
+    {
+      "id": "R22",
+      "category": "Reviews",
+      "requirement": "Use Yelp and other review platforms for discovery and manual reading, not as license or job-fit proof.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Review links supplied; blocked/inconsistent numeric values remain blank and flagged.",
+      "context_source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "context_label": "CSLB: check licenses and references independently"
+    },
+    {
+      "id": "R23",
+      "category": "Verification",
+      "requirement": "Every published data row has a source link; unconfirmed values are blank and appear on Flagged for Review.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Automated row/source and blank-value checks pass before publication.",
+      "context_source": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "context_label": "Repository coordination / verification protocol"
+    },
+    {
+      "id": "R24",
+      "category": "Publication",
+      "requirement": "Clean GitHub Pages dashboard with category subpages, executive summary, and verified deployment.",
+      "origin": "Owner brief",
+      "confirmed_site_fact": null,
+      "acceptance": "Build and link checks pass; PR merged; exact-commit Pages deployment confirmed.",
+      "context_source": "https://docs.github.com/en/rest/pages/pages?apiVersion=2022-11-28#update-information-about-a-github-pages-site",
+      "context_label": "GitHub Pages official documentation"
+    }
+  ]
+}

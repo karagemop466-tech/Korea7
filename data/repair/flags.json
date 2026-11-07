@@ -1,0 +1,248 @@
+{
+  "checked_on": "2026-11-07",
+  "flags": [
+    {
+      "id": "owner-facts",
+      "title": "Owner-reported site conditions are not independently verified",
+      "detail": "Stuck mechanism, prior plumber concerns, storage unit below, tenant occupancy, and the preferred access route come from the owner brief. No site inspection, photos, or prior-plumber records were supplied.",
+      "action": "Retain as owner testimony; confirm during contractor diagnosis.",
+      "source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB hiring/recommendation guidance (context only)",
+      "blank": true
+    },
+    {
+      "id": "quotes",
+      "title": "Three estimate amounts, per-estimate dates, and inclusions are unverified",
+      "detail": "No official/first-party written quote was supplied. Amount cells are blank. The heading 8/30/26 is preserved as supplied, but its application to every estimate is unconfirmed. Drywall inclusion is not stated and is not inferred.",
+      "action": "Obtain original written quotes and match legal entity, scope, date, amount, and exclusions.",
+      "source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB: written bids on identical scope",
+      "blank": true
+    },
+    {
+      "id": "quote-identity",
+      "title": "Shorthand quote names need entity confirmation",
+      "detail": "The three names were provisionally matched to San Francisco CSLB records by name/trade/location. Similar names exist; the written quote must confirm the exact entity.",
+      "action": "Match each quote to the CSLB legal name and license number before relying on the comparison.",
+      "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "CSLB lookup",
+      "blank": true
+    },
+    {
+      "id": "exact-fit-unconfirmed",
+      "title": "Exact job fit, access method, availability, and combined price are unconfirmed for every provider",
+      "detail": "No provider was contacted. A license, service page, or review does not confirm ability to retrieve this seized assembly, protect occupants, restore the ceiling, or schedule the work.",
+      "action": "Use the requirements page as a screening checklist and obtain a written site-specific proposal.",
+      "source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB: similar-project references and identical-scope bids",
+      "blank": true
+    },
+    {
+      "id": "reviews",
+      "title": "Yelp is restricted; BBB statements are platform evidence only",
+      "detail": "Direct Yelp business/search fetches returned HTTP 403, so current Yelp ratings/counts are blank. Three BBB profiles were read directly; their ratings/complaint fields are platform statements, not government verification or proof of job fit. Company testimonials are not independent reviews.",
+      "action": "Read the linked reviews directly and ask for comparable occupied-unit references.",
+      "source": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "source_label": "Yelp listing (restricted; not a license source)",
+      "blank": true
+    },
+    {
+      "id": "workers-comp-exempt",
+      "title": "Workers' compensation exemptions require crew-specific verification",
+      "detail": "Bay Area Plumbing, General SF, Rapid Flow, Manny's, and Cal Plumbing records show exemptions based on certifying no employees. This is not proof that an advertised crew is covered.",
+      "action": "Verify who performs the work and obtain current workers' compensation and liability certificates.",
+      "source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB insurance guidance",
+      "blank": false
+    },
+    {
+      "id": "hh-complaint",
+      "title": "Handyman Heroes: CSLB complaint disclosure exists",
+      "detail": "CSLB lists citation 2 2020 001045 dated 07/12/2020 with status FOR DISCLOSURE ONLY PER B&P CODE 7124.6. No interpretation beyond that text is made.",
+      "action": "Open the official disclosure and decide whether it affects selection.",
+      "source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "source_label": "CSLB disclosure #1003394",
+      "blank": false
+    },
+    {
+      "id": "hh-c10",
+      "title": "Handyman Heroes: company C-10 claim not on checked CSLB record",
+      "detail": "The company website advertises Licensed C-10; the checked CSLB record lists B and C-36 only. Electrical work is not part of the stated repair, but the discrepancy remains flagged.",
+      "action": "If electrical work becomes relevant, verify the actual license/entity that will perform it.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "source_label": "CSLB #1003394",
+      "blank": false
+    },
+    {
+      "id": "hh-address",
+      "title": "Handyman Heroes: CSLB and Yelp addresses differ",
+      "detail": "CSLB lists 912 Cole St #202; earlier Yelp research listed 1525 Waller St. The regulator address is reproduced exactly; the business/service location is not inferred.",
+      "action": "Confirm current business and service locations with the company.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "source_label": "CSLB #1003394",
+      "blank": false
+    },
+    {
+      "id": "heise-scope",
+      "title": "Heise's: drywall patching is published, ceiling-opening scope is not",
+      "detail": "The company advertises drywall patching/touch-ups and rental/tenant scheduling. The checked CSLB record has C-36, C-10, A, and C-20, but no B or C-9. Do not assume it will open/restore a ceiling or self-perform every trade.",
+      "action": "Confirm ceiling access/restoration scope and any appropriately licensed subcontractor in writing.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_label": "CSLB #1089561",
+      "blank": true
+    },
+    {
+      "id": "heise-address",
+      "title": "Heise's: CSLB address differs from historical Yelp storefront",
+      "detail": "CSLB lists 1610 Evans Ave; earlier Yelp snapshots showed 260 Ocean Ave. The difference is preserved rather than resolved by assumption.",
+      "action": "Confirm the current business location and contracting entity.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_label": "CSLB #1089561",
+      "blank": false
+    },
+    {
+      "id": "fast-address",
+      "title": "Fast Response: CSLB address/spelling differs from review listings",
+      "detail": "CSLB records 236 W POTRAL AVE #459, San Francisco 94127. Earlier Yelp research showed 4444 Geary Blvd Ste 203. POTRAL is reproduced exactly; no silent correction to Portal is made.",
+      "action": "Confirm mailing versus service address and the quote's legal entity.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_label": "CSLB #1024971",
+      "blank": false
+    },
+    {
+      "id": "advanced-suspension",
+      "title": "Advanced Plumbing & Drain: CSLB future-suspension warning",
+      "detail": "The license is current and active, but CSLB warns it may be suspended at a future date for failure to resolve an outstanding final liability from FTB, DIR, EDD, or CSLB.",
+      "action": "Recheck the official record immediately before engagement and review the underlying status.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "source_label": "CSLB #1009195",
+      "blank": false
+    },
+    {
+      "id": "advanced-phone",
+      "title": "Advanced Plumbing & Drain: phone differs by source",
+      "detail": "CSLB lists (415) 744-4944; the company homepage lists (415) 729-3843.",
+      "action": "Confirm the current service number and contracting entity.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "source_label": "CSLB #1009195",
+      "blank": false
+    },
+    {
+      "id": "atlas-phone",
+      "title": "Atlas Plumbing & Rooter: phone differs by source",
+      "detail": "CSLB lists (650) 871-9863; the company homepage lists (415) 849-2346.",
+      "action": "Confirm the current service number.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_label": "CSLB #868994",
+      "blank": false
+    },
+    {
+      "id": "discount-phone",
+      "title": "Discount Plumbing: phone differs by source",
+      "detail": "CSLB lists (650) 991-2100; the company homepage lists (415) 702-1079.",
+      "action": "Confirm the current service number.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "source_label": "CSLB #1140843",
+      "blank": false
+    },
+    {
+      "id": "discount-identity",
+      "title": "Discount Plumbing: similarly named entities exist",
+      "detail": "The reviewed record is Discount Plumbing Rooter Services LLC #1140843. Earlier research found a separate Discount Plumbing, Inc. entity. Do not transfer reviews or licenses between them.",
+      "action": "Match any quote to the exact CSLB legal name and number.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "source_label": "CSLB #1140843",
+      "blank": false
+    },
+    {
+      "id": "rapid-phone",
+      "title": "Rapid Flow: phone differs by source",
+      "detail": "CSLB lists (415) 866-8401; the company site advertises 844-BAY-FLOW.",
+      "action": "Confirm the current service number and entity.",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "source_label": "CSLB #1115649",
+      "blank": false
+    },
+    {
+      "id": "manny-area",
+      "title": "Manny's: exact San Francisco address coverage unconfirmed",
+      "detail": "The company lists Peninsula cities and surrounding areas of San Mateo/San Francisco Counties; CSLB address is Daly City. City coverage is not inferred from county language.",
+      "action": "Confirm service to the specific San Francisco address.",
+      "source": "https://www.mannysplumbingandremodeling.com/",
+      "source_label": "Company service area",
+      "blank": true
+    },
+    {
+      "id": "license-not-service",
+      "title": "License class does not establish advertised drywall service",
+      "detail": "Ace, Genteel, Rapid Flow, and Manny's hold B + C-36, but explicit ceiling drywall restoration for this job was not confirmed on the reviewed pages.",
+      "action": "Ask for the actual combined scope, crew, and references; leave drywall capability blank until confirmed.",
+      "source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "source_label": "CSLB B classification",
+      "blank": true
+    },
+    {
+      "id": "drywall-unconfirmed",
+      "title": "Drywall/ceiling restoration unconfirmed for plumbing-only leads",
+      "detail": "Atlas, Discount, Advanced, and Cal Plumbing have no drywall service confirmation in the reviewed evidence. Checked records do not show B or C-9 for these entries.",
+      "action": "Require a written combined scope with appropriately licensed responsibility before selection.",
+      "source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C9",
+      "source_label": "CSLB C-9 drywall classification",
+      "blank": true
+    },
+    {
+      "id": "discovery-license",
+      "title": "Discovery leads have no confirmed CSLB license in this dataset",
+      "detail": "Szeto, Handlify, Mike's Water Damage/Mike Handyman, Dany's, Citywide, Kenneth Asire, and Answer Plumbing are retained as discovery leads only. License, status, insurance, and often service area are blank.",
+      "action": "Obtain a license number and verify it on CSLB before treating any lead as qualified.",
+      "source": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "source_label": "CSLB official lookup",
+      "blank": true
+    },
+    {
+      "id": "mike-identity",
+      "title": "Mike's Water Damage name-to-URL mapping unresolved",
+      "detail": "Earlier research paired the name Mike's Water Damage with a Yelp URL slug mike-handyman-san-francisco. The identity is not confirmed.",
+      "action": "Resolve the business identity before contact or licensing checks.",
+      "source": "https://www.yelp.com/biz/mike-handyman-san-francisco",
+      "source_label": "Yelp URL retained for review (restricted)",
+      "blank": true
+    },
+    {
+      "id": "dany-area",
+      "title": "Dany's: San Francisco service unconfirmed",
+      "detail": "The retained discovery listing is Albany-based. Earlier ceiling-drywall review evidence was not independently reverified.",
+      "action": "Confirm SF coverage, license, and comparable references.",
+      "source": "https://www.yelp.com/biz/danys-remodeling-and-handyman-service-albany",
+      "source_label": "Yelp discovery listing (restricted)",
+      "blank": true
+    },
+    {
+      "id": "compliance",
+      "title": "Job-specific permit/inspection classification is pending",
+      "detail": "Official SF guidance distinguishes limited exempt repairs from cutting/replacing concealed pipes. No exemption is asserted for this job.",
+      "action": "Have the contractor/DBI classify the actual scope before work and complete required inspections before covering pipes.",
+      "source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "source_label": "SF DBI guidance",
+      "blank": true
+    },
+    {
+      "id": "legacy-repo",
+      "title": "Unrelated legacy GEMS content remains in the repository",
+      "detail": "Legacy scientific code/data and earlier project pages are preserved in Git but are not part of the canonical published artifact. Their scientific claims were not independently reverified for this repair project.",
+      "action": "Review legacy material separately if needed; use the canonical dashboard for this project.",
+      "source": "https://github.com/karagemop466-tech/Korea7",
+      "source_label": "Repository",
+      "blank": false
+    },
+    {
+      "id": "source-errors",
+      "title": "Earlier source and inference errors were corrected",
+      "detail": "Historical pages displayed unverified amounts/ratings, inferred all-in-one capability from license class, silently corrected a CSLB street spelling, and cited some stale/dead or mismatched sources. The canonical dataset leaves unconfirmed values blank and separates evidence types.",
+      "action": "Use canonical pages and the audit log; historical versions remain available in Git for provenance.",
+      "source": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "source_label": "Coordination / prior review requests",
+      "blank": false
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "checked_on": "2026-11-07",
+  "findings": [
+    {
+      "id": "F01",
+      "title": "One canonical dashboard; historical page sets preserved in Git",
+      "finding": "The repository contains an unrelated legacy GEMS project and several earlier bathtub dashboards built by parallel sessions. This integration publishes one canonical, source-linked dashboard and retains earlier files in repository history rather than presenting conflicting live versions.",
+      "basis": "Repository inspection and coordination board",
+      "source": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "source_label": "Coordination history",
+      "status": "Resolved by integration"
+    },
+    {
+      "id": "F02",
+      "title": "The three estimates describe different scopes",
+      "finding": "The owner-reported scopes are adjustment/repair, lever/spout-diverter replacement, and waste-and-overflow replacement. They are not directly comparable. Amounts, dates per estimate, and drywall inclusions remain blank/unverified until written quotes are supplied.",
+      "basis": "Owner brief; CSLB bid-comparison guidance",
+      "source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB: compare identical scopes",
+      "status": "Unverified values blank"
+    },
+    {
+      "id": "F03",
+      "title": "General SF has the clearest published combined scope",
+      "finding": "General SF's own building page lists sheetrock/tape/texture and its plumbing page lists plumbing repair/installation. CSLB shows active B, C-10, and C-36. This supports screening first, not a conclusion that it can perform this exact seized assembly or has availability.",
+      "basis": "Company pages + CSLB record",
+      "source": "https://generalsf.com/building",
+      "source_label": "General SF building services",
+      "status": "Company-published; job fit unconfirmed"
+    },
+    {
+      "id": "F04",
+      "title": "Handyman Heroes publishes wall repair plus plumbing",
+      "finding": "The company's handyman page lists sheetrock/wall repairs and says many multi-trade jobs can be handled by one team; CSLB shows active B and C-36. Review the complaint disclosure and the C-10 advertising discrepancy before selection.",
+      "basis": "Company pages + CSLB record/disclosure",
+      "source": "https://www.handymanhero.es/handyman-services/",
+      "source_label": "Handyman Heroes services",
+      "status": "Company-published; disclosures flagged"
+    },
+    {
+      "id": "F05",
+      "title": "Heise's explicitly addresses rental units and tenant schedules",
+      "finding": "Heise's property-repair page lists drywall patching/touch-ups, rental-unit service, and respect for tenant schedules. Its checked CSLB record has C-36 but no B or C-9; confirm who handles ceiling opening/restoration and whether the advertised patching covers the required scope.",
+      "basis": "Company page + CSLB record",
+      "source": "https://www.heisesplumbing.com/property-maintenance/handyman-and-repair-services/",
+      "source_label": "Heise's handyman/property repair",
+      "status": "Company-published; ceiling scope unconfirmed"
+    },
+    {
+      "id": "F06",
+      "title": "A B + C-36 license is not proof of drywall service",
+      "finding": "Ace, Genteel, Rapid Flow, and Manny's hold B + C-36, but the reviewed company pages do not explicitly confirm ceiling drywall restoration for this job. License classification and actual service capability are separate fields.",
+      "basis": "CSLB records and company service pages",
+      "source": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "source_label": "CSLB B classification",
+      "status": "Corrected inference"
+    },
+    {
+      "id": "F07",
+      "title": "Yelp is discovery, not verification of license or exact fit",
+      "finding": "Direct Yelp business/search fetches returned HTTP 403 in this environment, so current Yelp ratings/counts are blank and links are retained for manual reading. BBB profiles for Expert Plumbing Solutions, Fast Response, and Handyman Heroes were read directly; their platform-stated ratings/complaint fields are shown separately on the Reviews page and are not government licensing evidence.",
+      "basis": "Direct fetch attempts and search-index observations",
+      "source": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+      "source_label": "Example: Fast Response BBB profile (read directly)",
+      "status": "Access restricted; numeric values blank"
+    },
+    {
+      "id": "F08",
+      "title": "The installed mechanism is not identified",
+      "finding": "Watco instructions show a typical trip-lever assembly with linkage and drop cylinder connected to overflow/drain elbows behind/under the tub. They do not identify the installed brand/model or prove that forcing the lever is safe. Contractor diagnosis and compatible parts are required.",
+      "basis": "Official manufacturer instructions",
+      "source": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "source_label": "Watco trip-lever instructions",
+      "status": "General technical context only"
+    },
+    {
+      "id": "F09",
+      "title": "Permit status is scope-dependent",
+      "finding": "SF DBI says a permit is needed before cutting into or replacing pipes, especially concealed pipes; Plumbing Code 104.2 lists limited exemptions. The dashboard does not classify this job as exempt. The contractor/DBI must determine requirements for the actual scope before work.",
+      "basis": "SF DBI and current code library",
+      "source": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "source_label": "SF DBI permit guidance",
+      "status": "Official guidance; job classification pending"
+    },
+    {
+      "id": "F10",
+      "title": "Insurance and disclosures need job-specific review",
+      "finding": "Several CSLB records show workers' compensation exemptions based on no employees. Handyman Heroes has a disclosure-only citation; Advanced Plumbing has a future-suspension warning. These are regulator-record facts to review, not findings of wrongdoing.",
+      "basis": "CSLB records",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "source_label": "Example: Advanced Plumbing additional status",
+      "status": "Flagged for review"
+    },
+    {
+      "id": "F11",
+      "title": "Contact and identity discrepancies are preserved, not silently corrected",
+      "finding": "CSLB and company/Yelp addresses or phones differ for several providers. Fast Response's CSLB street spelling is POTRAL; Heise's CSLB address differs from its Yelp storefront; Atlas, Discount, Advanced, and Rapid Flow have phone differences. Confirm the contracting entity and service location.",
+      "basis": "CSLB records compared with company/review sources",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_label": "Example: Fast Response CSLB record",
+      "status": "Flagged for review"
+    },
+    {
+      "id": "F12",
+      "title": "No contractor has been contacted, confirmed, or booked",
+      "finding": "This session performed source research and site integration only. Availability, exact repair method, combined price, tenant protections, and agreement to work remain unconfirmed for every candidate.",
+      "basis": "Session action log",
+      "source": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB hiring guidance for next steps",
+      "status": "Open action"
+    }
+  ]
+}
