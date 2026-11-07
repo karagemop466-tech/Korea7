@@ -1,0 +1,168 @@
+{
+  "captured": "2026-11-07",
+  "intro": "Everything on this page is published deliberately: unverified values, source disagreements, and repository irregularities. Nothing here blocks use of the site — but each item needs a human decision before hiring.",
+  "flags": [
+    {
+      "id": "F1",
+      "severity": "unverified",
+      "title": "The problem description is owner-provided — no public source exists",
+      "detail": "Every fact about the failed trip lever, the five-plus plumbers who declined to remove it from above, and the storage-unit ceiling route came from the owner's brief. No public record of a private building's plumbing exists, so these statements carry an “owner-provided” tag on every page and are not presented as verified.",
+      "source_url": "flagged.html",
+      "source_label": "This page — provenance rule",
+      "action": "No action needed unless a detail changes. Photos, if supplied, would document the condition."
+    },
+    {
+      "id": "F2",
+      "severity": "unverified",
+      "title": "The three quote amounts cannot be confirmed from any official source",
+      "detail": "$614, $550 and $135 were supplied in the brief dated 8/30/26. No contractor, licensing body or public register publishes private quotes. The amounts are shown as supplied, tagged “owner-provided”, and the “Official confirmation” column is left blank. The CSLB links in those rows verify the company and licence only.",
+      "source_url": "estimates.html",
+      "source_label": "Estimates page — amount provenance",
+      "action": "Use the quotes as a starting range only; get the same scope priced in writing by the shortlisted firms."
+    },
+    {
+      "id": "F3",
+      "severity": "unverified",
+      "title": "Shorthand company names were mapped to specific licensed entities",
+      "detail": "The brief names “Expert plumbing solutions”, “Bay Area plumbing” and “Fast response”. The third is the weakest match: “Fast Response Plumbing & Rooter” (CSLB #1024971, Joseph Tinsley) is the San Francisco C-36 plumbing business with that name, but the quote could have come from another similarly named firm.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_label": "CSLB #1024971",
+      "action": "Confirm with the quoter which licence number appears on their written bid."
+    },
+    {
+      "id": "F4",
+      "severity": "caution",
+      "title": "Bay Area Plumbing: workers'-compensation exemption on the CSLB record",
+      "detail": "The record states the licence is exempt because the holder certified “they have no employees at this time” (effective 2024-12-11). If anyone other than the licence holder will be on site, ask how they are covered.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_label": "CSLB #757796",
+      "action": "Request a certificate of insurance and the names of the people attending; confirm in the contract."
+    },
+    {
+      "id": "F5",
+      "severity": "caution",
+      "title": "General SF: workers'-compensation exemption on the CSLB record",
+      "detail": "The record states an exemption for “no employees at this time” (effective 2025-03-10), yet the company's site describes an established multi-trade operation. Ask who performs the work and how they are insured.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "source_label": "CSLB #959843",
+      "action": "Request certificates and clarify the crew before signing."
+    },
+    {
+      "id": "F6",
+      "severity": "caution",
+      "title": "Handyman Heroes: the CSLB record carries complaint-disclosure information",
+      "detail": "The licence-detail page shows a live “There is Complaint Disclosure information for this license” link. CSLB restricts what may be disclosed by law, so read the disclosure page itself rather than relying on a summary.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "source_label": "CSLB complaint disclosure — licence #1003394",
+      "action": "Read the disclosure before hiring; weigh it against the firm's review record and references."
+    },
+    {
+      "id": "F7",
+      "severity": "caution",
+      "title": "Handyman Heroes' own site lists an electrical classification that CSLB does not show",
+      "detail": "The company's plumbing page lists “License #1003394 'B', C-10, C-36”. The official CSLB record for #1003394, read 2026-11-07, lists B General Building and C-36 Plumbing only — no C-10 classification. The CSLB record governs.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "source_label": "CSLB #1003394",
+      "action": "Do not rely on the company's C-10 claim; electrical work is not part of this job in any case."
+    },
+    {
+      "id": "F8",
+      "severity": "info",
+      "title": "Fast Response: CSLB address of record differs from the Yelp address",
+      "detail": "CSLB lists “236 W Portal Ave #459, San Francisco, CA 94127” (printed on the record as “POTRAL”) — a suite-style mailing address. Yelp lists 4444 Geary Blvd Ste 203. Both can be true; the CSLB address is the legal address of record.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_label": "CSLB #1024971",
+      "action": "Use the CSLB address on the contract; confirm the service address in writing."
+    },
+    {
+      "id": "F9",
+      "severity": "info",
+      "title": "Fast Response marketing claim does not match its Yelp listing",
+      "detail": "The company site states “4.9 · 1,500 reviews on Yelp & Google”. The Yelp listing showed 4.8 with 906 reviews on 2026-11-07. The site figure combines platforms; the Yelp figure is the one the Yelp link supports.",
+      "source_url": "https://www.fastresponseplumbingsf.com/",
+      "source_label": "Fast Response — company site",
+      "action": "Treat star ratings as marketing unless the platform page itself is open in front of you."
+    },
+    {
+      "id": "F10",
+      "severity": "info",
+      "title": "Heise's Plumbing: review value is a search-listing snapshot, and the site lists a different phone",
+      "detail": "The company site links its Yelp business page and advertises plumbing, electrical, appliance repair and property repairs. The rating shown here (4.2, about 273 reviews) was read from Yelp's San Francisco plumbing search listing rather than the business page, and the company site's phone number differs from the CSLB number of record.",
+      "source_url": "https://www.heisesplumbing.com/",
+      "source_label": "Heise's Plumbing — company site",
+      "action": "Open the linked Yelp page, and ask for the licence number and business address on the written bid."
+    },
+    {
+      "id": "F11",
+      "severity": "info",
+      "title": "Genteel Plumbers appears to have more than one Yelp listing",
+      "detail": "Yelp search surfaces showed review counts from 478 to 546 for listings carrying the same business name, and no single business-page URL could be confirmed in this pass. The rating was consistently 4.7.",
+      "source_url": "https://www.yelp.com/search?find_desc=Genteel+Plumbers&find_loc=San+Francisco%2C+CA",
+      "source_label": "Yelp search listing",
+      "action": "Open the listing from the Yelp search link and read the most-reviewed one."
+    },
+    {
+      "id": "F12",
+      "severity": "info",
+      "title": "Rating and review counts are third-party snapshots and change daily",
+      "detail": "Every star rating and review count on this site was captured on 2026-11-07 and is dated in place. Yelp is not an official source and review counts moved during the capture itself (for example 165–175 for Bay Area Plumbing, 837–906 for Fast Response, 335–337 for General SF).",
+      "source_url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+      "source_label": "Yelp — San Francisco plumbers",
+      "action": "Re-read the linked page on the day you hire; treat the number here as a dated snapshot."
+    },
+    {
+      "id": "F13",
+      "severity": "info",
+      "title": "Yelp pages block automated reads, so values come from search snapshots of those pages",
+      "detail": "Direct requests to yelp.com/biz pages returned HTTP 403 in this environment. Ratings and counts were therefore taken from search-engine snapshots of those same Yelp pages on 2026-11-07, and each row links the Yelp listing so a human can open it directly.",
+      "source_url": "contractors.html",
+      "source_label": "Contractors page — Yelp column",
+      "action": "Open the Yelp link yourself; the link is the source, the number is a snapshot."
+    },
+    {
+      "id": "F14",
+      "severity": "unverified",
+      "title": "Szeto Plumbing and Handyman: no matching CSLB licence found",
+      "detail": "The CSLB name search for “Szeto” on 2026-11-07 returned several Szeto entities but none named “Szeto Plumbing and Handyman”, and none in Daly City with an active plumbing classification matching the Yelp listing. Licence fields are left blank rather than guessed.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/NameSearch.aspx?NextName=Szeto&NextLicNum=",
+      "source_label": "CSLB name search — “Szeto”",
+      "action": "Do not hire until a licence number is produced and checked on CSLB."
+    },
+    {
+      "id": "F15",
+      "severity": "unverified",
+      "title": "Discount Plumbing Rooter Services: Yelp listing is not clearly matched to the licence",
+      "detail": "CSLB #1140843 is registered to an LLC at a Burlingame address with a (650) phone; the Yelp listing and the company site present a San Francisco business with different phone numbers. The business name matches, but the entity match is not confirmed. Several similarly named “Discount Plumbing” businesses exist.",
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "source_label": "CSLB #1140843",
+      "action": "If you contact them, ask for the licence number and match it to this record — and confirm which legal entity will contract."
+    },
+    {
+      "id": "F16",
+      "severity": "unverified",
+      "title": "Job-specific experience cannot be verified from an official source",
+      "detail": "No official register records whether a firm has freed a seized trip lever inside concealed plumbing, or worked in an occupied unit. What is verifiable — licence, classifications, bond, insurance, complaint disclosure — is on the Contractors page. Experience claims should be tested by phone and references.",
+      "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "source_label": "CSLB — finding the right contractor",
+      "action": "Ask the three questions on the Hiring plan page, then call two references for similar concealed-access work."
+    },
+    {
+      "id": "F17",
+      "severity": "info",
+      "title": "Repository irregularity: several page-sets and an unrelated project coexist",
+      "detail": "This repository also contains an unrelated legacy analysis project (a geothermal fault-prospectivity audit) published under docs/, plus earlier draft page-sets for this same bathroom job built by previous sessions (under docs/bath/, docs/overflow-*.html, docs/plumbing-index.html and bathtub-overflow/). None were deleted — earlier sessions' work is preserved — but only the pages at the repository root are canonical and maintained.",
+      "source_url": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "source_label": "COORDINATION.md — task board and handoff log",
+      "action": "Read the root pages only. Earlier drafts are history, not current guidance."
+    },
+    {
+      "id": "F18",
+      "severity": "info",
+      "title": "Only sources re-read on 2026-11-07 are cited on this site",
+      "detail": "Earlier sessions cited additional publishers that were not re-read in this pass. Those claims were dropped rather than carried forward on trust, so this site may cite fewer sources than earlier drafts while asserting the same or more.",
+      "source_url": "sources.html",
+      "source_label": "Sources page — capture dates",
+      "action": "None; this is the verification rule working as intended."
+    }
+  ]
+}

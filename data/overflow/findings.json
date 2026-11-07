@@ -1,0 +1,131 @@
+{
+  "captured": "2026-11-07",
+  "findings": [
+    {
+      "id": "access",
+      "title": "When access from above fails, working from below is the documented route",
+      "body": "The owner reports that more than five licensed plumbers would not remove the overflow from above for fear of damaging the hidden plumbing. The trade literature describes the same fallback: This Old House's drain-replacement guide says that for stubborn drains you may need to access the plumbing from below the tub, and that in extreme cases the old drain is cut out from below with a reciprocating saw. That does not prove this particular assembly must be opened from below — it shows that the recommendation is standard practice, not a workaround invented for this job.",
+      "rows": [
+        {
+          "claim": "“For stubborn drains, you may need to access the plumbing from below the tub.”",
+          "source_url": "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+          "source_label": "This Old House — How to replace a tub drain"
+        },
+        {
+          "claim": "“In extreme cases, you might need to cut out the old drain from below using a reciprocating saw.”",
+          "source_url": "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+          "source_label": "This Old House — How to replace a tub drain"
+        }
+      ],
+      "takeaway": "Ask the successful bidder to state, in writing, which access route they will use and where the opening will be — before any cutting."
+    },
+    {
+      "id": "licence",
+      "title": "One contract for plumbing and drywall needs the right licence combination",
+      "body": "A plumbing contractor's C-36 classification covers plumbing. A general building contractor (B) is defined by the work requiring at least two unrelated building trades or crafts, and may take a prime contract for such work. A firm holding B plus C-36 on a single CSLB record can therefore contract for the ceiling opening, the plumbing repair and the patch under one licence. A C-36-only firm can do the plumbing but would have the drywall handled by a licensed building contractor — either subcontracted by them or on a separate contract.",
+      "rows": [
+        {
+          "claim": "General building contractor definition and prime-contract rule (Business & Professions Code §7057).",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7057",
+          "source_label": "California Legislative Information — BPC §7057"
+        },
+        {
+          "claim": "CSLB's own reproduction of the B General Building classification text.",
+          "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+          "source_label": "CSLB — B General Building Contractor"
+        },
+        {
+          "claim": "C-36 plumbing scope: supply of safe water and proper disposal of fluid waste in all structures, including maintenance and replacement.",
+          "source_url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+          "source_label": "CSLB — C-36 Plumbing Contractor"
+        }
+      ],
+      "takeaway": "Four candidates hold B + C-36 on one licence: Ace Plumbing & Rooter, Genteel Plumbers, General SF and Handyman Heroes. Start there if the single-contract requirement is firm."
+    },
+    {
+      "id": "quotes",
+      "title": "The three quotes differ in scope, not in competitiveness",
+      "body": "Read side by side against 2026 national benchmarks, the spread makes sense. The $135 quote is worded as repair or adjust — an adjustment attempt, consistent with the $50–$200 call-out band. The $550 quote replaces the lever, plug and spout with a diverter. The $614 quote is described as replacing the waste and overflow, which sits inside the published $500–$1,020 national range for a drain replacement. None of the three includes opening or patching drywall, and none can be compared to another until the same scope is priced.",
+      "rows": [
+        {
+          "claim": "Drain replacement $500–$1,020 (average $700), 2026 national data.",
+          "source_url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+          "source_label": "Angi — cost to replace a bathtub or shower drain (updated 2026-09-18)"
+        },
+        {
+          "claim": "Minimum call-out fee for small bathroom leaks $50–$200; plumber labour $45–$200 per hour.",
+          "source_url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+          "source_label": "Angi — bathroom leak repair cost (updated 2026-10-28)"
+        }
+      ],
+      "takeaway": "Do not choose on price. Ask each firm to price the same three-line scope: adjust or replace, open ceiling, patch and finish."
+    },
+    {
+      "id": "drywall",
+      "title": "Drywall is a real budget line, not a rounding error",
+      "body": "If the ceiling below is opened, the repair has two halves: putting the plumbing right, and restoring the ceiling so the storage unit is usable again. Published 2026 figures put new drywall where an installation requires opening the wall at about $2,100, post-leak drywall patching or tile replacement at $300–$930, and jobs that involve drywall, unclogging or water-damage repair at $1,350–$6,100 in total. The range depends on whether the opening is a clean access hatch or a larger repair after hidden damage is found.",
+      "rows": [
+        {
+          "claim": "“If the installation requires opening the wall, new drywall installation costs about $2,100.”",
+          "source_url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+          "source_label": "Angi — bathtub or shower drain replacement (updated 2026-09-18)"
+        },
+        {
+          "claim": "Drywall patching or tile replacement after a leak adds $300–$930.",
+          "source_url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+          "source_label": "Angi — bathroom leak repair cost (updated 2026-10-28)"
+        }
+      ],
+      "takeaway": "Ask for the drywall portion as a separate line on the same quote, with the patch size and finish level stated."
+    },
+    {
+      "id": "risk",
+      "title": "The main financial risk is what is behind the wall",
+      "body": "Opening a concealed waste-and-overflow assembly can expose corrosion, a previous repair, or water damage. Published 2026 figures put water-damage repair at $1,350–$6,100, and a leak repair involving hidden pipes or significant water damage can reach $4,000. This is why the scope should include a stop-and-report point: open, inspect, photograph, and agree any extra work before proceeding.",
+      "rows": [
+        {
+          "claim": "Water-damage repair $1,350–$6,100; hidden pipes or significant water damage can push a leak repair to $4,000.",
+          "source_url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+          "source_label": "Angi — bathroom leak repair cost (updated 2026-10-28)"
+        }
+      ],
+      "takeaway": "Write a contingency into the scope: nothing extra starts without your approval and a photo."
+    },
+    {
+      "id": "occupied",
+      "title": "Occupied-unit work is a scheduling and protection problem, not a licencing one",
+      "body": "No licence classification covers “works neatly in an occupied flat”. What can be verified is whether a firm routinely works in managed buildings: Ace Plumbing & Rooter's site describes a long-standing HOA and property-manager practice including insurance requirements and not-to-exceed work, and Fast Response's site advertises HOA, apartment-building and property-manager service. Everything else — dust control, notice to the tenant, daily clean-up, working hours — belongs in the written scope.",
+      "rows": [
+        {
+          "claim": "“After over two decades of delivering plumbing services directly to HOA's and property management companies around San Francisco… whether it be insurance requirements, purchase orders, or working within NTE's…”",
+          "source_url": "https://www.aceplumbingandrooter.com/",
+          "source_label": "Ace Plumbing & Rooter — company site"
+        },
+        {
+          "claim": "Company site describes commercial plumbing work for HOA condos, apartment buildings and property managers.",
+          "source_url": "https://www.fastresponseplumbingsf.com/commercial-services",
+          "source_label": "Fast Response — commercial services page"
+        }
+      ],
+      "takeaway": "Put the protection and access terms in the quote: floor and contents covering, dust barrier, notice period, hours, and clean-up."
+    },
+    {
+      "id": "licensing",
+      "title": "The licence check is the one thing you can verify in advance",
+      "body": "Under Business & Professions Code §7048, as amended effective 1 January 2026, the licensing law does not apply to work where the aggregate contract price is under $1,000 and the work does not require a building permit. Above that, or where a permit is required, a licensed contractor is required. CSLB's consumer guidance is to check the licence status, get at least three written bids on identical scope, confirm workers'-compensation and liability insurance, and never pay more than 10% of the contract price or $1,000, whichever is less, as a down payment on a home improvement project without a blanket performance and payment bond on file.",
+      "rows": [
+        {
+          "claim": "§7048 exemption text, including the $1,000 threshold and the condition that the work does not require a building permit; amended by Stats. 2025, Ch. 67 (AB 1170), effective 1 January 2026.",
+          "source_url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+          "source_label": "California Legislative Information — BPC §7048"
+        },
+        {
+          "claim": "CSLB consumer guidance: check the licence, get three written bids, verify insurance, down-payment limit of 10% or $1,000.",
+          "source_url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+          "source_label": "CSLB — How do I find the right licensed contractor?"
+        }
+      ],
+      "takeaway": "Whatever the scope ends up being, check the licence number on the written bid against CSLB before any work starts."
+    }
+  ]
+}

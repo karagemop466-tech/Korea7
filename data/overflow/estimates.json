@@ -1,0 +1,43 @@
+{
+  "captured": "2026-11-07",
+  "quote_date_as_stated": "8/30/26",
+  "rule": "The amount column shows the figure supplied in the owner's brief. The official-confirmation column is deliberately blank: no public record of a private quote exists. Nothing here is inferred.",
+  "estimates": [
+    {
+      "id": "est-614",
+      "company": "Expert Plumbing Solutions",
+      "company_id": "expert-plumbing-solutions",
+      "scope": "Remove bathtub wastewater overflow trip lever — “replacing waste and overflow”",
+      "amount": 614,
+      "amount_status": "owner-provided",
+      "official_confirmation": null,
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_label": "CSLB #977638 (company identity and licence only — not the amount)",
+      "note": "Broadest scope of the three quotes; the only one described as a waste-and-overflow replacement."
+    },
+    {
+      "id": "est-550",
+      "company": "Bay Area Plumbing",
+      "company_id": "bay-area-plumbing",
+      "scope": "Replace lever for the bathtub plug and spout with diverter — includes labour and materials",
+      "amount": 550,
+      "amount_status": "owner-provided",
+      "official_confirmation": null,
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_label": "CSLB #757796 (company identity and licence only — not the amount)",
+      "note": "Trim/diverter replacement. Does not state whether the concealed overflow assembly is included."
+    },
+    {
+      "id": "est-135",
+      "company": "Fast Response Plumbing & Rooter",
+      "company_id": "fast-response",
+      "scope": "Repair or adjust bathtub wastewater plunger handle",
+      "amount": 135,
+      "amount_status": "owner-provided",
+      "official_confirmation": null,
+      "source_url": "https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_label": "CSLB #1024971 (company identity and licence only — not the amount)",
+      "note": "Adjustment of the existing linkage — the smallest scope. No drywall work in any of the three quotes."
+    }
+  ]
+}

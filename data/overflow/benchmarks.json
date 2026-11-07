@@ -1,0 +1,62 @@
+{
+  "captured": "2026-11-07",
+  "note": "National 2026 cost data published by the named publishers and re-read on 2026-11-07. These are not San Francisco quotes and do not price this specific job.",
+  "benchmarks": [
+    {
+      "item": "Bathtub or shower drain replacement (national)",
+      "value": "$500–$1,020 (average $700)",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "page_note": "Updated 2026-09-18"
+    },
+    {
+      "item": "Extra budget when the job involves drywall work, unclogging or water-damage repair",
+      "value": "$1,350–$6,100",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "page_note": "Updated 2026-09-18"
+    },
+    {
+      "item": "New drywall installation when the installation requires opening the wall",
+      "value": "about $2,100",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "page_note": "Updated 2026-09-18"
+    },
+    {
+      "item": "Drain unclogging (average)",
+      "value": "$225",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "page_note": "Updated 2026-09-18"
+    },
+    {
+      "item": "Plumber labour rate",
+      "value": "$45–$200 per hour",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "page_note": "Updated 2026-10-28"
+    },
+    {
+      "item": "Bathroom leak repair (national)",
+      "value": "$150–$600 (average $275; up to $4,000 for hidden pipes or significant water damage)",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "page_note": "Updated 2026-10-28"
+    },
+    {
+      "item": "Additional drywall patching or tile replacement after a leak",
+      "value": "$300–$930",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "page_note": "Updated 2026-10-28"
+    },
+    {
+      "item": "Minimum call-out fee for small bathroom leaks",
+      "value": "$50–$200",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "page_note": "Updated 2026-10-28"
+    }
+  ]
+}

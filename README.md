@@ -1,3 +1,13 @@
+> **Repository note (updated 2026-11-07).** The GitHub Pages site at the repository root is the
+> **Bathtub Wastewater Overflow Trip Lever** research dashboard for a San Francisco repair job —
+> `index.html` plus seven category pages, generated from `data/overflow/*.json` by
+> `scripts/build_overflow_site.py` and tested by `tests/test_overflow_site.py`.
+> The **GEMS geothermal fault-prospectivity analysis** documented from here down is an older,
+> unrelated project; its pages remain under `docs/` and were not changed.
+> Live site: <https://karagemop466-tech.github.io/Korea7/> · task board: [`COORDINATION.md`](COORDINATION.md).
+
+---
+
 # Korea7 — GEMS fault-prospectivity submission audit
 
 > **Session starting point:** read this README and [the standing prompt](docs/prompt.md) before each project session. The objective, evidence rules, experiment limits, and submission requirements are in force. This repository contains the measured audit, the shared evaluator/writer, the candidate GeoTIFF, the validation artifacts, and the static GitHub Pages site.
