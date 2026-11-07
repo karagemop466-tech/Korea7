@@ -1,0 +1,449 @@
+{
+  "checked_on": "2026-11-07",
+  "sources": [
+    {
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "title": "SF DBI: Apply for a plumbing and mechanical permit",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "title": "San Francisco Plumbing Code, Section 104.0 (current code library)",
+      "type": "Government code publisher",
+      "method": "Read Section 104.2 directly"
+    },
+    {
+      "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+      "title": "SF DBI: Apply for a kitchen or bath remodel permit",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "title": "CSLB: How do I find the right licensed contractor?",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "title": "CSLB: Contract and binding agreements",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "title": "CSLB: C-36 Plumbing Contractor classification",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "title": "CSLB: B General Building Contractor classification / B&P 7057",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C9",
+      "title": "CSLB: C-9 Drywall Contractor classification",
+      "type": "Government",
+      "method": "Read directly"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "title": "CSLB: Check a License",
+      "type": "Government",
+      "method": "Official lookup entry point"
+    },
+    {
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "title": "Watco: Trip Lever Installation Instructions (500/501/600 families)",
+      "type": "Manufacturer",
+      "method": "Read official PDF directly"
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "title": "California B&P Code 7048 (effective January 1, 2026)",
+      "type": "Government",
+      "method": "Read current statutory text directly"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/pages/pages?apiVersion=2022-11-28#update-information-about-a-github-pages-site",
+      "title": "GitHub REST API: GitHub Pages",
+      "type": "Official platform documentation",
+      "method": "Read official documentation directly"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "title": "CSLB #959843 — GENERALSF",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://generalsf.com/",
+      "title": "General SF — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://generalsf.com/building",
+      "title": "General SF — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://generalsf.com/plumbing",
+      "title": "General SF — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "title": "General SF — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "title": "CSLB #1003394 — HANDYMAN HEROES INC",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.handymanhero.es/",
+      "title": "Handyman Heroes — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.handymanhero.es/handyman-services/",
+      "title": "Handyman Heroes — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.handymanhero.es/plumbing-services/",
+      "title": "Handyman Heroes — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "title": "Handyman Heroes — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "title": "CSLB #1089561 — TARO GROUP INC dba HEISES PLUMBING",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.heisesplumbing.com/",
+      "title": "Heise's Plumbing — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.heisesplumbing.com/property-maintenance/handyman-and-repair-services/",
+      "title": "Heise's Plumbing — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/heises-plumbing-san-francisco",
+      "title": "Heise's Plumbing — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "title": "CSLB #977638 — EXPERT PLUMBING SOLUTIONS",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.eplumbingsolutions.com/",
+      "title": "Expert Plumbing Solutions — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "title": "Expert Plumbing Solutions — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "title": "CSLB #757796 — BAY AREA PLUMBING",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.bayareaplumbingsf.com/",
+      "title": "Bay Area Plumbing — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.bayareaplumbingsf.com/property-management-plumbing-san-francisco",
+      "title": "Bay Area Plumbing — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "title": "Bay Area Plumbing — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "title": "CSLB #1024971 — JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "title": "Fast Response Plumbing & Rooter — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.fastresponseplumbingsf.com/commercial-services",
+      "title": "Fast Response Plumbing & Rooter — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "title": "Fast Response Plumbing & Rooter — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "title": "CSLB #829071 — ACE PLUMBING & ROOTER",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.aceplumbingandrooter.com/",
+      "title": "Ace Plumbing & Rooter — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.aceplumbingandrooter.com/commercial-plumber/hoa-property-managers/",
+      "title": "Ace Plumbing & Rooter — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "title": "Ace Plumbing & Rooter — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "title": "CSLB #1025814 — THE GENTEEL PLUMBERS INC",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.genteelplumbers.com/",
+      "title": "Genteel Plumbers — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.genteelplumbers.com/service-areas/plumbing-san-francisco",
+      "title": "Genteel Plumbers — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
+      "title": "Genteel Plumbers — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "title": "CSLB #1115649 — RAPID FLOW PLUMBING & ROOTER INC",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.rapidflowbayarea.com/",
+      "title": "Rapid Flow Plumbing & Rooter — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.rapidflowbayarea.com/about",
+      "title": "Rapid Flow Plumbing & Rooter — service page",
+      "type": "Business self-description",
+      "method": "Read directly; company-published scope"
+    },
+    {
+      "url": "https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing+%26+Rooter&find_loc=San+Francisco%2C+CA",
+      "title": "Rapid Flow Plumbing & Rooter — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "title": "CSLB #841229 — MANNY'S PLUMBING & ROOTER",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.mannysplumbingandremodeling.com/",
+      "title": "Manny's Plumbing & Rooter — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.yelp.com/search?find_desc=Manny%27s+Plumbing+%26+Rooter&find_loc=Daly+City%2C+CA",
+      "title": "Manny's Plumbing & Rooter — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "title": "CSLB #868994 — ATLAS PLUMBING & ROOTER",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.atlasplumbingandrooter.com/",
+      "title": "Atlas Plumbing & Rooter — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.yelp.com/biz/atlas-plumbing-and-rooter-san-francisco-2",
+      "title": "Atlas Plumbing & Rooter — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "title": "CSLB #1140843 — DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://plumbinginsf.com/",
+      "title": "Discount Plumbing Rooter Services — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.yelp.com/biz/discount-plumbing-rooter-services-san-francisco-4",
+      "title": "Discount Plumbing Rooter Services — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "title": "CSLB #1009195 — ADVANCED PLUMBING AND DRAIN INC",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://advancedplumbingsf.com/",
+      "title": "Advanced Plumbing & Drain — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.yelp.com/biz/advanced-plumbing-and-drain-san-francisco",
+      "title": "Advanced Plumbing & Drain — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743",
+      "title": "CSLB #632743 — CALPLUMBING CO",
+      "type": "Government regulator record",
+      "method": "Read directly 2026-11-07"
+    },
+    {
+      "url": "https://www.calplumbing.com/",
+      "title": "Cal Plumbing & Heating — company website",
+      "type": "Business self-description",
+      "method": "Company-published; not independent performance proof"
+    },
+    {
+      "url": "https://www.yelp.com/biz/calplumbing-san-francisco-4",
+      "title": "Cal Plumbing & Heating — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
+      "title": "Szeto Plumbing and Handyman — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www.yelp.com/biz/handlify-san-francisco-3",
+      "title": "Handlify — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www.yelp.com/biz/mike-handyman-san-francisco",
+      "title": "Mike's Water Damage (Yelp listing name unresolved) — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www.yelp.com/biz/danys-remodeling-and-handyman-service-albany",
+      "title": "Dany's Remodeling & Handyman Service — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=San+Francisco%2C+CA%2C+US",
+      "title": "Citywide Plumbing — Yelp review/discovery link",
+      "type": "Review platform",
+      "method": "Direct fetch restricted (HTTP 403); no current numeric values asserted"
+    },
+    {
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "title": "Expert Plumbing Solutions — BBB profile",
+      "type": "Review/complaint platform",
+      "method": "Read directly 2026-11-07; platform statements only"
+    },
+    {
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/fast-response-plumbing-rooter-1116-387063",
+      "title": "Fast Response Plumbing & Rooter — BBB profile",
+      "type": "Review/complaint platform",
+      "method": "Read directly 2026-11-07; platform statements only"
+    },
+    {
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/handyman/handyman-heroes-inc-1116-541366",
+      "title": "Handyman Heroes Inc. — BBB profile",
+      "type": "Review/complaint platform",
+      "method": "Read directly 2026-11-07; platform statements only"
+    },
+    {
+      "url": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
+      "title": "Repository coordination board",
+      "type": "Repository",
+      "method": "Session history and verification protocol"
+    },
+    {
+      "url": "https://github.com/karagemop466-tech/Korea7",
+      "title": "Repository",
+      "type": "Repository",
+      "method": "Canonical source and preserved history"
+    }
+  ]
+}
