@@ -730,3 +730,26 @@ board. Resolution, without discarding anyone's work:
 ### Follow-up integration request — `arena/aa883562-korea7` (2026-11-07)
 
 After PR #43 was merged and Pages run [42411339520](https://github.com/karagemop466-tech/Korea7/actions/runs/42411339520) succeeded, the live root dashboard changed again. Its problem-snapshot table has no official source link on its rows; its estimate table displays unverified amounts in value cells and third-party Yelp ratings, despite a site-wide claim that unconfirmed values are blank and every row is source-linked. These facts are requester reports and cannot be officially verified by a license link. Please ask the current root-dashboard owner `arena/6a266fca-korea7` to reconcile the site and tests with the stated verification rule, retain private reports as clearly labeled prose and keep unrelated official context separate. The active owner's pages were not changed by this session. Removed one stray closing conflict-marker line from this shared board; surrounding content was preserved.
+
+---
+
+# Session `arena/1d8a3122-korea7` — secondary-page audit (2026-11-07)
+
+| Task | Status | Owner session | File scope |
+|---|---|---|---|
+| R1 — Root-dashboard audit | done | `arena/1d8a3122-korea7` | `COORDINATION.md` only; no dashboard files edited |
+| R2 — Audit preserved alternate bathtub-overflow page sets for unsupported, stale, or conflicting public claims; publish the audit record | done | `arena/1d8a3122-korea7` | Read-only review of `bathtub-overflow/**` and `docs/bath/**`; `trip-lever/secondary-pages-audit.md`; coordination log | 9 HTML pages in each set; no alternate-page edits; 0 broken internal links across 589 links. Findings and sources are in the audit report. |
+| R3 — Root-dashboard verification-policy follow-up (handoff only; avoid overlapping edits) | needs review | `arena/1d8a3122-korea7` | `COORDINATION.md` handoff only; root pages untouched on this branch | Open PR #42 (`arena/7e5f723c-korea7`, updated 2026-11-07 20:32 UTC) overlaps the root pages/tests and states unverified values will be blank. Do not edit those files while that active PR is pending; revisit only if its scope closes without resolving the issue. |
+
+Coordination and conflict log: this session initially claimed root-dashboard audit in commit `eb3e166` before its branch view showed active root-page claims. No dashboard files were changed. The board conflicted during rebases as other sessions' PRs landed; each conflict was resolved by preserving the complete newer board entries and adding this session below them. PRs #37–#44 contain the root-dashboard audit, independent verification, and subsequent integration work. This session releases the overlapping root-page scope and limits its active work to the preserved alternate page sets and a new audit report. No existing alternate pages are edited while the audit is being written.
+
+This branch has just been rebased onto `origin/main` at `408e90c` (PR #44). The root dashboard is the canonical site; this session's separate task is to evaluate the alternate static page sets at `bathtub-overflow/` and `docs/bath/`, then report needed remediation without modifying those historical pages.
+
+- 2026-11-07 — Root-dashboard follow-up R3 was changed to a handoff after checking open PR #42. That PR, updated 2026-11-07 20:32 UTC, overlaps the root pages and tests and claims the same verification-policy correction. This branch has not edited any root dashboard files; the historical-page audit remains independent.
+
+### R2 completion — 2026-11-07
+
+- Read-only audit: `trip-lever/secondary-pages-audit.md`. It records unsupported/stale estimate and review values, date and provider-list differences, the permit-page citation problem, qualification limits for combined-service claims, and the `docs/bath` builder/test mismatch. No files in `bathtub-overflow/**` or `docs/bath/**` were modified.
+- Evidence: fetched the live estimate pages in both page sets; re-read SF.gov's [plumbing and mechanical permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit), CSLB B/C-36 classifications, and CSLB records #829071, #1025814, #959843 and #1003394 (all data-current stamps 2026-11-07). Official company pages reviewed for Ace, Genteel, General SF and Handyman Heroes; no provider contacted.
+- Validation: 9 HTML pages per set; local link/anchor scan found 0 broken links (288 in `bathtub-overflow/`, 301 in `docs/bath/`). All 12 `tests/test_bath_site.py` functions passed by direct invocation; `pytest` is not installed. The generator was not run because this task was read-only.
+
