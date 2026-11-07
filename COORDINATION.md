@@ -753,3 +753,27 @@ This branch has just been rebased onto `origin/main` at `408e90c` (PR #44). The 
 - Evidence: fetched the live estimate pages in both page sets; re-read SF.gov's [plumbing and mechanical permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit), CSLB B/C-36 classifications, and CSLB records #829071, #1025814, #959843 and #1003394 (all data-current stamps 2026-11-07). Official company pages reviewed for Ace, Genteel, General SF and Handyman Heroes; no provider contacted.
 - Validation: 9 HTML pages per set; local link/anchor scan found 0 broken links (288 in `bathtub-overflow/`, 301 in `docs/bath/`). All 12 `tests/test_bath_site.py` functions passed by direct invocation; `pytest` is not installed. The generator was not run because this task was read-only.
 
+---
+
+# Session `arena/e9a30ab9-korea7` — board (appended 2026-11-07)
+
+**Read first:** The complete shared board above was read before starting work. Multiple concurrent 2026-11-07 sessions (`arena/be737440-korea7`, `arena/aef4e1b0-korea7`, `arena/aa883562-korea7`, `arena/6a266fca-korea7`, `arena/7e5f723c-korea7`, `arena/d0385c76-korea7`, `arena/2baecdab-korea7`, `arena/2eb487ad-korea7`, `arena/0aa661e4-korea7`) own or claim the root `*.html` files, `trip-lever/**`, `review-2026-11-07/**`, and `sf-overflow-audit/**`. To keep scopes 100% non-overlapping and never edit files owned by another session, this session claims a **100% disjoint, additive file scope** under `overflow-trip-lever-e9a30ab9/**`, `scripts/build_e9a30ab9_overflow_site.py`, and `tests/test_e9a30ab9_overflow_site.py`, plus append-only updates to this section of `COORDINATION.md`.
+
+**Branch note (platform constraint):** Arena pins this session strictly to branch `arena/e9a30ab9-korea7` and forbids creating, switching to, or pushing any other branch. The `session-<id>/<task>` branch convention is therefore approximated by non-overlapping file scopes on this single branch, and this deviation is logged here per the conflict rules.
+
+## Task board (`arena/e9a30ab9-korea7`)
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| E1 | Read `COORDINATION.md`, register disjoint non-overlapping claims, commit and push immediately | done | `arena/e9a30ab9-korea7` | `COORDINATION.md` (append-only section) |
+| E2 | Line-by-line repository review across legacy GEMS artifacts and coexisting overflow dashboards; verify against official sources; flag irregularities | in progress | `arena/e9a30ab9-korea7` | `overflow-trip-lever-e9a30ab9/REPO-REVIEW.md`, `overflow-trip-lever-e9a30ab9/repo-review.html`, `overflow-trip-lever-e9a30ab9/data/repo_review.json` |
+| E3 | Official-source verification (2026-11-07): CSLB license/classification/bond/WC records for quoted plumbers + SF all-in-one B+C-36 & C-36+C-9 contractors, CA statutory rules, SF DBI permit guidance, manufacturer trip-lever specs, Yelp review snapshots | in progress | `arena/e9a30ab9-korea7` | `overflow-trip-lever-e9a30ab9/data/*.json` |
+| E4 | Executive summary & full requirements register | unclaimed | `arena/e9a30ab9-korea7` | `overflow-trip-lever-e9a30ab9/EXECUTIVE-SUMMARY.md`, `overflow-trip-lever-e9a30ab9/executive-summary.html`, `overflow-trip-lever-e9a30ab9/requirements.html` |
+| E5 | Build clean GitHub Pages dashboard (`overflow-trip-lever-e9a30ab9/index.html` + category subpages) with table-per-category UI, official source link on every row, blank cells + `UNVERIFIED` flags for unconfirmed values, generator + offline integrity test suite | unclaimed | `arena/e9a30ab9-korea7` | `overflow-trip-lever-e9a30ab9/**`, `scripts/build_e9a30ab9_overflow_site.py`, `tests/test_e9a30ab9_overflow_site.py` |
+| E6 | Final line-by-line verification, PR to `main`, merge, confirm live GitHub Pages deployment, record PR link and merge/deploy result | unclaimed | `arena/e9a30ab9-korea7` | `COORDINATION.md` (append-only log), GitHub PR & Pages |
+
+## Cross-session requests & log (`arena/e9a30ab9-korea7`)
+
+- 2026-11-07 — Read `COORDINATION.md` in full before starting; rebased onto `origin/main` (`408e90c`); claimed disjoint additive scope `overflow-trip-lever-e9a30ab9/**`, `scripts/build_e9a30ab9_overflow_site.py`, `tests/test_e9a30ab9_overflow_site.py`.
+- 2026-11-07 — **Request to owner of root `index.html` and `README.md`:** please consider adding a navigation/reference link to `overflow-trip-lever-e9a30ab9/index.html` once published (logged here instead of editing files claimed by other active sessions).
+
