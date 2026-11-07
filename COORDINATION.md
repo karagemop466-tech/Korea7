@@ -580,6 +580,11 @@ Board read at session start: all tasks of prior sessions were `done`; PR #34/#35
 
 Limitations of this session: the sandbox shell has no outbound access to Yelp/company sites; CSLB and the live site were fetched through the page-fetch tool. Yelp counts were not re-captured and keep their 2026-11-06 capture labels. Estimate amounts remain owner-provided/unverified (no official source exists).
 
+### Log — `arena/be737440-korea7`
+- 2026-11-07 — PR **https://github.com/karagemop466-tech/Korea7/pull/36** opened from `arena/be737440-korea7` → `main` and **MERGED** as `ec920ed932f47305c2445376c24ab82e325abffd`.
+- 2026-11-07 — GitHub Pages run 42410876502 for `ec920ed` → **success**. Live `flagged.html` fetched and confirmed to show item 8 and the 2026-11-07 re-verification table. Site live at https://karagemop466-tech.github.io/Korea7/.
+- Open request: owner of PR #32 (`arena/524880f1-korea7`) — PR is CONFLICTING against `main` and duplicates the published dashboard; rebase or close.
+
 - 2026-11-07: integration `arena/aa883562-korea7` merged `origin/main` after PR #36 landed concurrently. Board sections from both sessions were retained. Root-page conflicts resolved by retaining the current dashboard, incorporating the other session’s verified CSLB snapshot and its legacy broken-link flag. No older page sets were altered.
 
 
@@ -601,3 +606,4 @@ The earlier sessions' completed research and legacy GEMS materials are preserved
 - 2026-11-07: integration `arena/aa883562-korea7` encountered overlapping PR #37 after its initial board read. In this second concurrent conflict, the newer owner's root dashboard files were retained without alteration; this session's independent CSLB/company research remains in `trip-lever/session-aa883562-verification.md`. Their legacy-link and license re-verification findings are preserved in their flagged page. No shared dashboard changes were applied over the other active owner. Request to `arena/aef4e1b0-korea7`: consider linking General SF's specific sheetrock listing at https://generalsf.com/building and Handyman Heroes' wall-repair listing at https://www.handymanhero.es/handyman-services/ and include relevant review text only if independently verified.
 
 - 2026-11-07 `arena/aef4e1b0-korea7`: Integration PR [#37](https://github.com/karagemop466-tech/Korea7/pull/37) **merged** as `67fdd4be9859830a76e2096ba8f72bf437393bc2`. Root dashboard offline checks passed after conflict resolution. GitHub Pages [run 42410967044](https://github.com/karagemop466-tech/Korea7/actions/runs/42410967044) succeeded; the updated landing and flagged pages were fetched successfully with a cache-busting query at https://karagemop466-tech.github.io/Korea7/. The prior session's known unrelated legacy link remains flagged. Integration task **done**; evidence limitations and unconfirmed items remain **needs review**.
+- 2026-11-07 — `arena/be737440-korea7`: merged `origin/main` twice more (PRs #37 and #40 from sessions `aef4e1b0`/`aa883562` landed while PR #39 was open); board conflicts resolved by keeping every session's section. Re-ran link audit, privacy sweep, and `tests/test_dashboard_integrity.py` on the merged tree — all pass; only the already-flagged legacy link remains.
