@@ -110,7 +110,7 @@
     {
       "name": "deterministic_build",
       "ok": true,
-      "detail": "files=38"
+      "detail": "files=37"
     }
   ],
   "failures": [],
@@ -118,7 +118,7 @@
     "index.html": "61fc46cc839b2fd583dbeaffe37fe34c4727a100880a141ada54ebe48c4345d3",
     "summary.html": "c293aaea23babe69c904f170f5021c389d7025d65a93024cb919ae11752aca46",
     "requirements.html": "26b32742f2c3bb0f102d8fb54c3eb52be4fd5d7cb18b84dd1e0d6c2c685bb6b8",
-    "estimates.html": "631d0e3eea6c1ac25e6642878cb1e668cdc0eeb9c9b9d6fe50d91e2ad586cd2a",
+    "estimates.html": "d5c1615c051fc040ed4722519ec0b4048c434326ae54210b1830def150d7d27a",
     "contractors.html": "1474c9bb48275d2579585a3815ac9bc9f31c174f6c4fc8cdb6f3c86594c29020",
     "reviews.html": "94605757edb7a1fc1f53baf8d0579082898786f728b89e422cd5ec7f74fc674e",
     "findings.html": "6d96760c353984461d1670cc2ee90408909201a3cc3c4b47a868b4fcd5ccaaa9",
@@ -127,7 +127,7 @@
     "sources.html": "c92626af1f11e95de78af3fbd4d2f78aeecd592f1d99e537d6ade7d869303baf",
     "flagged.html": "969655d3ff65decaf1005b6eb61acebd2bc521f82240f2421373d5383bba9796",
     "verification.html": "29a853817cefbcc96229754378794d58af6506eaf064bd9d4ecb8086a2ecf055",
-    "archive.html": "33b8e5457c5ef5468a9b033f75fc342ada2b4a96eb2eaba770591ebfade48016"
+    "archive.html": "75b272fea82f3f137b098102b3733311bd780d762f7258b024f1fb8ff05cb3c9"
   },
   "note": "Offline artifact verification. External primary-source reading is recorded in data/repair/sources.json; Yelp direct fetches were restricted and no current Yelp numeric values are asserted."
 }

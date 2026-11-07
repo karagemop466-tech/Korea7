@@ -19,7 +19,7 @@ DATA = REPO / "data" / "repair"
 REPO_URL = "https://github.com/karagemop466-tech/Korea7"
 SITE_URL = "https://karagemop466-tech.github.io/Korea7/"
 PRE_INTEGRATION_SHA = "d93299c3647a94ba2d1c4762ddc48e6f0429fdab"
-LAST_PARALLEL_SHA = "408e90c"  # updated during final integration if main advances
+LAST_PARALLEL_SHA = "9b9cbaa"  # updated during final integration if main advances
 
 PAGES = [
     ("index.html", "Overview"),
@@ -546,7 +546,6 @@ def build(output: Path) -> None:
         "bathtub-overflow/index.html": "index.html",
         "docs/plumbing-index.html": "index.html",
         "docs/bath/index.html": "index.html",
-        "docs/index.html": "archive.html",
     }
     for old in ["docs/overflow-analysis.html", "docs/overflow-contractors.html", "docs/overflow-estimates.html", "docs/overflow-executive-summary.html", "docs/overflow-flagged-review.html", "docs/overflow-permits.html", "docs/overflow-sources.html", "docs/overflow-verification-flags.html", "docs/overflow-verification-permits.html"]:
         redirects[old] = "archive.html"
