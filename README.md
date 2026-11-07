@@ -1,5 +1,7 @@
 # Korea7 — GEMS fault-prospectivity submission audit
 
+> **Current dashboard (updated 2026-11-07):** The active bathtub overflow trip-lever research project is published at the [site root](index.html), live at <https://karagemop466-tech.github.io/Korea7/>, with 13 category subpages, a [Source ledger](sources.html), a [Verification](verification.html) report, a [Repo review](repo-review.html) and a clearly labeled [Flagged for Review](flagged.html) page. Every table row carries a source link; unverified values are blank and flagged. Earlier dashboards under `docs/` and `bathtub-overflow/` are archived and were not edited. The GEMS audit content in this README is unchanged.
+
 > **Session starting point:** read this README and [the standing prompt](docs/prompt.md) before each project session. The objective, evidence rules, experiment limits, and submission requirements are in force. This repository contains the measured audit, the shared evaluator/writer, the candidate GeoTIFF, the validation artifacts, and the static GitHub Pages site.
 
 ## Core values
@@ -140,7 +142,9 @@ The specific free official sources needed for the unimplemented hypotheses:
 7. Improve the site and add more tests/CI. The current site is a static GitHub Pages site with a clean UI, a prominent download button, and a clear status badge.
 8. Consider a hedging strategy that combines the off-catalogue consensus with a small number of catalogue-adjacent dots, if the organizer's masking allows. This could improve the holdout and projection simultaneously, but it would need a new experiment and a new run card.
 
-## Bathtub overflow trip lever project (San Francisco)
+## Bathtub overflow trip lever project (San Francisco) — archived dashboard from an earlier session
+
+Earlier-session dashboard; the current canonical site is [index.html](index.html).
 
 A separate project housed in this repo: a contractor research dashboard for a stuck bathtub wastewater overflow trip lever in a hard-to-access, tenant-occupied unit. Existing GEMS audit content above is unaffected.
 
@@ -286,7 +290,9 @@ The parallel session's candidate rasters are `korea7-k7-offcatalogue-relay-corri
 
 ---
 
-## Active project (2026-11-06): Bathtub wastewater overflow trip lever — San Francisco
+## Active project (2026-11-06): Bathtub wastewater overflow trip lever — San Francisco — archived
+
+This earlier-session microsite is archived; the current canonical site is [index.html](index.html).
 
 A second work package lives in this repository: a verified research and hiring brief for a stuck
 bathtub waste-and-overflow **trip lever** in a tenant-occupied San Francisco unit (access may require
