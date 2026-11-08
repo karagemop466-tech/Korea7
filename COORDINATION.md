@@ -930,3 +930,27 @@ re-appending this session's board section and logs below it (no entry discarded)
 - **Final verification:** `python3 scripts/build_dashboard.py` → 11/11 PASS (13 pages, 14 tables, 192 data rows, 60 ledger entries, 411 rendered rows with 0 missing source links, 493 internal links 0 broken, 50 external links all in the ledger, privacy sweep 121 files / 0 matches, 16 official/manufacturer sources verified 2026-11-07). `python3 -m pytest -q` over all five site test modules → **41 passed, 9 subtests passed**. Full-repo internal-link audit: 1,196 links, 0 broken. Local static-server smoke test: all 13 canonical pages + CSS/JS/reports HTTP 200.
 - **Task board:** I1–I5 **done**. Flagged items U01–U20 are published on `flagged.html` with source links and do not block. PR #32 remains OPEN/CONFLICTING and was deliberately left untouched for its owner. No manual input was requested or received.
 - This final record is published to `main` through a small follow-up integration PR; PR #46 above is the delivery PR whose link and merge result were required to be recorded here.
+
+
+---
+
+# Session `arena/dc6a8da6-korea7` — independent integration audit (2026-11-08T22:56:16+00:00)
+
+## Claim and stale-owner handoff
+
+Board inspected before research or site edits. The canonical root-dashboard integration records are completed; the remaining active root-page PR #42 last committed 2026-11-07T20:31:59Z and last updated 2026-11-07T20:41:27Z, more than 60 minutes before this claim. Its owner has no newer commit on main (main tip at claim: `1faccdc`, 2026-11-07T20:57:14Z). Under the requested stale-claim takeover rule, this session takes over a new bounded audit/integration of the canonical dashboard, preserving all previous work. PRs #42 and #32 are left open and untouched; neither is merged or closed. No other current session claim was found. All earlier board text is preserved verbatim above.
+
+Platform constraint: Arena fixes this session to `arena/dc6a8da6-korea7`; no other branch may be created, used, or pushed. This is the integration branch, replacing the requested `session-<id>/<task>` naming convention. Shared outputs are edited only in this integration scope. Historical microsites, GEMS research, and other sessions' files remain read-only.
+
+| ID | Task | Status | Owner session | File scope |
+|---|---|---|---|---|
+| DC1 | Read board; register and publish stale-owner handoff | in progress | `arena/dc6a8da6-korea7` | `COORDINATION.md` (append-only) |
+| DC2 | Line-by-line repo/project audit; preserve unrelated historical work; identify current irregularities | unclaimed | `arena/dc6a8da6-korea7` | `repo-review.html`, `data/review-2026-11-08/**`, `scripts/audit_project.py`, `tests/test_project_audit.py` |
+| DC3 | Re-read official licensing, business, permit, and manufacturer sources; collect review-platform evidence separately | unclaimed | `arena/dc6a8da6-korea7` | `data/canonical/**`, `data/review-2026-11-08/**` |
+| DC4 | Update executive summary, full requirements register, estimate analysis, ranked decision analysis | unclaimed | `arena/dc6a8da6-korea7` | `README.md`, `EXECUTIVE-SUMMARY.md`, `scripts/dashboard_content.py`, generated root category pages |
+| DC5 | Integrate one clean dashboard and category pages with per-row source links and blank unverified values | unclaimed | `arena/dc6a8da6-korea7` | `index.html`, `summary.html`, `requirements.html`, `estimates.html`, `contractors.html`, `technical.html`, `permits.html`, `findings.html`, `sources.html`, `verification.html`, `brief.html`, `flagged.html`, `assets/dashboard.css`, `assets/dashboard.js`, `scripts/build_dashboard.py` |
+| DC6 | Re-verify combined data line by line; build, link/anchor, privacy, browser and regression checks | unclaimed | `arena/dc6a8da6-korea7` | `scripts/verify_dashboard.py`, `tests/test_dashboard.py`, `data/canonical/verification_report.*`, `data/review-2026-11-08/**` |
+| DC7 | PR from fixed integration branch to main; merge only after checks pass; confirm live Pages deployment | unclaimed | `arena/dc6a8da6-korea7` | GitHub PR/Pages for this branch only |
+| DC8 | Record sources, verification, irregularities, PR link, merge and deployment results | unclaimed | `arena/dc6a8da6-korea7` | `COORDINATION.md` (append-only completion log) |
+
+Read-only scopes: all other files, including `sf-overflow-audit/**`, `bathtub-overflow/**`, `docs/**`, `trip-lever/**`, `shortlist.html`, `verification-log.html`, legacy GEMS data/code and other open PRs. Any needed change outside scope will be logged as a request, not edited. No provider has been contacted and no job-specific service commitment is claimed.
