@@ -164,6 +164,15 @@ class DecisionMatrixTests(unittest.TestCase):
             self.assertEqual(src["checked"], "2026-11-08", sid)
             self.assertTrue(src["label"] and src["publisher"] and src["supports"], sid)
 
+    def test_concurrent_bpc_7059_nuance_is_preserved(self):
+        self.assertIn("7059", DATA["sources"]["O18"]["url"])
+        self.assertTrue(any(f["id"] == "D06" for f in DATA["flags"]))
+        for name in GENERATED:
+            text = (ROOT / name).read_text(encoding="utf-8")
+            self.assertIn("7059", text, name)
+            self.assertIn("U22", text, name)
+        self.assertIn("not automatically required", DATA["candidates"][5]["ranking_reason"])
+
 
 if __name__ == "__main__":
     unittest.main()

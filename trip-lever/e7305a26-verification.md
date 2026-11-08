@@ -31,6 +31,7 @@ The ninth candidate, Szeto Plumbing and Handyman, has no confirmed CSLB license 
 - [SF.gov plumbing/mechanical permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit): a permit is needed before cutting into or replacing pipes, particularly pipes covered by a wall; permit fees depend on scope; qualifying license classes include A, B, C-4, C-16, C-20, C-36 and C-54; work must be inspected before pipes are covered.
 - [SF.gov permit-exemption information](https://www.sf.gov/information--check-if-your-construction-project-needs-permit): minor repairs to existing interior plaster or wallboard are listed among projects that do not need a building permit, subject to stated exceptions.
 - [California BPC §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048): the current exemption is for aggregate contract price under $1,000, casual/minor/inconsequential work, and work that does not require a building permit; amended by Stats. 2025 ch. 67, effective 2026-01-01. Applicability to a specific scope is not decided here.
+- [California BPC §7059](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC): a specialty contractor may execute a contract involving two or more trades when work outside its licensed craft is incidental and supplemental to its licensed work. This preserves the concurrent session’s correction: B + C-36 is a useful screening signal, not an exclusive lawful route. Whether this ceiling repair qualifies is unverified. The canonical site publishes the corresponding U22 flag.
 - [Oatey Dearborn trip-lever bath waste](https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste): manufacturer publishes a full plastic tubular trip-lever bath-waste kit with chrome-finish stopper.
 - [CSLB Check a License](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx): official lookup used as the neutral authority link on every row whose other citation is a publisher or platform.
 
@@ -64,6 +65,7 @@ The ninth candidate, Szeto Plumbing and Handyman, has no confirmed CSLB license 
 7. Fast Response’s official CSLB address spells `POTRAL AVE`; third-party pages show a different Geary Boulevard address and the company site shows `W Portal Ave`. Ask the business which is the service versus mailing address. No inference is made.
 8. Open PR #42 (`arena/7e5f723c-korea7`) is stale and conflicting; it was not merged or closed by this session. PR #32’s historical status is recorded on the canonical Flagged for Review page.
 9. Earlier GitHub Pages runs include transient deploy failures followed by successful deployments; the final deployment for this session is confirmed separately in `COORDINATION.md` and the GitHub Actions record.
+10. A concurrent session added a BPC §7059 clarification and U22 to its version of `shortlist.html` while this branch was in progress. Its substantive correction is preserved in the new decision analysis, the rewritten shortlist, D06, and §3 above; no categorical claim that a C-36-only firm must always subcontract drywall is made.
 
 ## 7. Automated checks
 

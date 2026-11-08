@@ -334,6 +334,15 @@ def build_decision_page(data: dict) -> str:
     summary_callout = ('<div class="callout info"><div class="icon">i</div><p><strong>Decision rule.</strong> '
         '%s</p></div>' % esc(data["meta"]["ranking_basis"]))
 
+    license_note = ('<div class="callout info"><div class="icon">i</div><p><strong>License-scope '
+        'qualification.</strong> ' + link(data["sources"]["O18"]["url"], "California BPC §7059") +
+        ' permits a specialty contractor to perform qualifying work in other trades when it is incidental and '
+        'supplemental to its licensed work. B + C-36 on one license is therefore a strong screening signal for '
+        'one-provider service, not an exclusive lawful route or a confirmation that a firm will perform both '
+        'trades; a second trade is not automatically required. Whether this ceiling repair qualifies depends on '
+        'the final scope. See ' +
+        link("flagged.html", "U22 on Flagged for Review") + '.</p></div>')
+
     cost_table = table(
         ["Cost factor", "Officially confirmed value", "Publisher-reported context", "Decision implication", "Official source"],
         cost_rows(data),
@@ -413,7 +422,7 @@ def build_decision_page(data: dict) -> str:
         'provider accepts this job.</p></div>')
 
     body = "\n".join([cards, '<section class="section"><h2>Ranked decision matrix</h2></section>',
-                      summary_callout, decision_table,
+                      summary_callout, license_note, decision_table,
                       '<section class="section"><h2>Cost analysis</h2></section>', cost_table, cost_notes,
                       '<section class="section"><h2>Review discovery</h2></section>', review_table,
                       '<section class="section"><h2>Flagged for Review — decision analysis</h2></section>',
@@ -432,7 +441,12 @@ def build_shortlist_page(data: dict) -> str:
                + link("decision-matrix.html", "Decision matrix") +
                ' for ranking, costs, reasoning and review links.</strong> This compact shortlist is a verified '
                'license register only. Third-party ratings, owner-provided amounts, job-specific capability and '
-               'availability are blank and UNVERIFIED.</p></div>')
+               'availability are blank and UNVERIFIED, with specific job coverage unverified — classifications do '
+               'not confirm acceptance of this repair. ' + link(data["sources"]["O18"]["url"], "BPC §7059") +
+               ' permits qualifying incidental and supplemental work by specialty contractors, so B + C-36 is a '
+               'screening signal, not the only lawful arrangement and a second trade is not automatically required; '
+               'see ' + link("flagged.html", "U22") +
+               ' and ask each firm who will open, patch and finish the ceiling.</p></div>')
     shortlist_table = table(
         ["Rank", "Business · official phone", "Verified official license value", "Unverified values", "Official source"],
         shortlist_rows(data),
@@ -440,7 +454,7 @@ def build_shortlist_page(data: dict) -> str:
         "official CSLB detail record linked in each row. The older shortlist’s third-party ratings and "
         "owner-supplied quote figures were removed; no value was inferred.")
     audit = ('<section class="section"><h2>How to use this page</h2><ol class="tight">'
-             '<li>Start with ranks 1–5 because each has B + C-36 on one active CSLB record.</li>'
+             '<li>Start with ranks 1–5 as a screening signal: each has B + C-36 on one active CSLB record; other lawful arrangements may exist under BPC §7059.</li>'
              '<li>Open the linked official record on the hire date; license status changes.</li>'
              '<li>Use the ' + link("decision-matrix.html", "Decision matrix") +
              ' for cost reasoning, review discovery and flagged items.</li>'

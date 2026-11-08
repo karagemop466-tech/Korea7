@@ -6,7 +6,7 @@
     "live_site": "https://karagemop466-tech.github.io/Korea7/",
     "repo": "https://github.com/karagemop466-tech/Korea7",
     "policy": "Only values read from an official government, manufacturer or official company source are shown as verified. Owner-provided and third-party values are blank and flagged UNVERIFIED. Rank ordering is a documented decision analysis, not an official rating.",
-    "ranking_basis": "1) B + C-36 on one active CSLB license, 2) bond / workers compensation / complaint disclosure, 3) San Francisco address and official-site service evidence, 4) specificity of cost scope, 5) explicit gaps. No provider was contacted by this session; no provider has confirmed acceptance, availability or a price for this job."
+    "ranking_basis": "1) B + C-36 on one active CSLB license, 2) bond / workers compensation / complaint disclosure, 3) San Francisco address and official-site service evidence, 4) specificity of cost scope, 5) explicit gaps. No provider was contacted by this session; no provider has confirmed acceptance, availability or a price for this job. B + C-36 is a screening signal, not an exclusive lawful route: BPC §7059 permits qualifying incidental and supplemental work by specialty contractors."
   },
   "sources": {
     "O01": {
@@ -352,6 +352,14 @@
       "tier": "platform",
       "checked": "2026-11-08",
       "supports": "Third-party business profile; BBB states it does not verify third-party information"
+    },
+    "O18": {
+      "label": "California BPC §7059 — specialty contractor incidental work",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "A specialty contractor may execute a contract involving two or more trades when work outside its licensed craft is incidental and supplemental to its licensed work; application to this ceiling repair is not established"
     }
   },
   "candidates": [
@@ -469,7 +477,7 @@
       "company_site": "C03",
       "cslb": "O11",
       "review": "R03",
-      "ranking_reason": "Sixth: active C-36, San Francisco address and an official repair page that lists bathtub waste & overflow among bathroom fixtures and offers a free estimate. It ranks behind the B + C-36 firms because its CSLB record does not carry a building classification for the ceiling patch; a second trade or written subcontract is needed. Its workers-compensation policy expires 2026-12-18.",
+      "ranking_reason": "Sixth: active C-36, San Francisco address and an official repair page that lists bathtub waste & overflow among bathroom fixtures and offers a free estimate. It ranks behind the B + C-36 firms because its CSLB record does not carry a building classification for the ceiling patch; a second trade or written subcontract is one possible arrangement, but BPC §7059 permits qualifying incidental and supplemental work by a specialty contractor, so it is not automatically required; ask each firm who will open, patch and finish the ceiling. Its workers-compensation policy expires 2026-12-18.",
       "cost_basis": "Owner-provided quote for a narrow repair/adjust scope dated 2026-08-30; the amount is blank — UNVERIFIED and no official source publishes it. The scope does not include drywall. A low adjustment figure is not comparable to a full concealed-access repair; CSLB warns against automatically accepting a substantially lower bid.",
       "quote_scope": "Owner-reported adjustment/repair scope; amount blank — UNVERIFIED",
       "review_rating": "",
@@ -716,6 +724,18 @@
       "sources": [
         "O01",
         "O04"
+      ]
+    },
+    {
+      "id": "D06",
+      "item": "B + C-36 is a screening signal, not the only lawful arrangement",
+      "why": "BPC §7059 permits qualifying incidental and supplemental work by a specialty contractor. Whether this ceiling repair qualifies depends on the final scope and is not established by a CSLB classification record.",
+      "action": "Ask every bidder for a written scope, the responsible trades and confirmation of applicable requirements; do not reject a C-36-only firm solely on classification.",
+      "sources": [
+        "O02",
+        "O03",
+        "O18",
+        "O01"
       ]
     }
   ],
