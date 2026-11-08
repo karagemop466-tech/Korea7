@@ -1,6 +1,6 @@
 # Korea7 — GEMS fault-prospectivity submission audit
 
-> **Current dashboard (updated 2026-11-07):** The active bathtub overflow trip-lever research project is published at the [site root](index.html), live at <https://karagemop466-tech.github.io/Korea7/>, with 13 category subpages, a [Source ledger](sources.html), a [Verification](verification.html) report, a [Repo review](repo-review.html) and a clearly labeled [Flagged for Review](flagged.html) page. Every table row carries a source link; unverified values are blank and flagged. Earlier dashboards under `docs/` and `bathtub-overflow/` are archived and were not edited. The GEMS audit content in this README is unchanged.
+> **Current dashboard (updated 2026-11-08):** The active bathtub overflow trip-lever research project is published at the [site root](index.html), live at <https://karagemop466-tech.github.io/Korea7/>, with 13 category subpages, a [Source ledger](sources.html), a [Verification](verification.html) report, a [Repo review](repo-review.html) and a clearly labeled [Flagged for Review](flagged.html) page. Every table row carries a source link; unverified values are blank and flagged. Official CSLB/permit/manufacturer sources were re-read 2026-11-08; the three owner-reported estimates remain unverified and non-comparable. Earlier dashboards under `docs/`, `bathtub-overflow/` and `sf-overflow-audit/` are archived and were not edited. The GEMS audit content in this README is unchanged.
 
 > **Session starting point:** read this README and [the standing prompt](docs/prompt.md) before each project session. The objective, evidence rules, experiment limits, and submission requirements are in force. This repository contains the measured audit, the shared evaluator/writer, the candidate GeoTIFF, the validation artifacts, and the static GitHub Pages site.
 
@@ -142,30 +142,31 @@ The specific free official sources needed for the unimplemented hypotheses:
 7. Improve the site and add more tests/CI. The current site is a static GitHub Pages site with a clean UI, a prominent download button, and a clear status badge.
 8. Consider a hedging strategy that combines the off-catalogue consensus with a small number of catalogue-adjacent dots, if the organizer's masking allows. This could improve the holdout and projection simultaneously, but it would need a new experiment and a new run card.
 
-## Bathtub overflow trip lever project (San Francisco) — archived dashboard from an earlier session
+## Bathtub overflow trip lever project (San Francisco) — canonical dashboard
 
-Earlier-session dashboard; the current canonical site is [index.html](index.html).
+The current canonical site is [index.html](index.html), updated 2026-11-08. It covers a stuck bathtub wastewater overflow trip lever in concealed plumbing behind a bathroom wall in a tenant-occupied San Francisco unit. Above-removal is preferred but reportedly unsuccessful; the fallback may require opening a storage-unit drywall ceiling. One provider covering plumbing and drywall restoration is wanted.
 
-A separate project housed in this repo: a contractor research dashboard for a stuck bathtub wastewater overflow trip lever in a hard-to-access, tenant-occupied unit. Existing GEMS audit content above is unaffected.
-
-**Live site:** https://karagemop466-tech.github.io/Korea7/ — the site root is the current dashboard.
+**Live site:** https://karagemop466-tech.github.io/Korea7/
 
 | Item | Link |
 |---|---|
-| Dashboard (landing page) | [index.html](index.html) |
+| Dashboard | [index.html](index.html) |
 | Executive summary | [summary.html](summary.html) · [EXECUTIVE-SUMMARY.md](EXECUTIVE-SUMMARY.md) |
-| **Shortlist — who can do plumbing + drywall** | [shortlist.html](shortlist.html) |
-| Estimates (owner-supplied 2026-08-30; unverified: $614 / $550 / $135) | [estimates.html](estimates.html) |
-| Nine contractor candidates + CSLB verification status | [contractors.html](contractors.html) |
-| Findings and analysis | [findings.html](findings.html) |
-| **Verification log + correction log** | [verification.html](verification.html) |
-| All sources | [sources.html](sources.html) |
-| Flagged unverified items and irregularities (10) | [flagged.html](flagged.html) |
+| Full requirements register | [requirements.html](requirements.html) |
+| Estimates & costs (reported amounts unverified; verified cells blank) | [estimates.html](estimates.html) |
+| Contractors, contacts and ranked interview order | [contractors.html](contractors.html) |
+| Findings, decision criteria and occupied-unit checklist | [findings.html](findings.html) |
+| Technical background (manufacturer facts vs unknowns) | [technical.html](technical.html) |
+| Permits & licensing (neutral official guidance) | [permits.html](permits.html) |
+| Project brief (owner-provided primary record) | [brief.html](brief.html) |
+| Source ledger | [sources.html](sources.html) |
+| Verification and row audit | [verification.html](verification.html) |
+| Repository review | [repo-review.html](repo-review.html) |
+| Flagged for Review (25 non-blocking items) | [flagged.html](flagged.html) |
 
-Earlier research sets from parallel sessions remain published and linked for cross-checking:
-`bathtub-overflow/` and `docs/plumbing-index.html` + `docs/overflow-*.html`.
+Canonical data: [data/review-2026-11-08/research.json](data/review-2026-11-08/research.json). Repository audit: [data/review-2026-11-08/REPO-AUDIT.md](data/review-2026-11-08/REPO-AUDIT.md). Build: `python3 scripts/build_dashboard.py`; verify: `python3 scripts/verify_dashboard.py`; audit: `python3 scripts/audit_project.py`; tests: `python3 -m pytest -q tests/test_dashboard.py tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_project_audit.py`.
 
-No contractor has been hired or contacted. All prices are owner-supplied estimates dated 2026-08-30 and are unverified. Licence facts come only from the official CSLB records; permit content only from official San Francisco sources.
+No provider has been contacted and no provider has confirmed this job. The three owner-reported amounts ($614, $550, $135) are unverified and describe different scopes; they are not comparable combined plumbing+drywall prices. License facts come from CSLB records re-read 2026-11-08; permit content from official San Francisco/California sources; technical facts from Oatey/Watco. Company and platform statements are labeled separately. Earlier microsites (`shortlist.html`, `verification-log.html`, `bathtub-overflow/`, `docs/bath/`, `docs/overflow-*.html`, `sf-overflow-audit/`) and the unrelated GEMS project are preserved unchanged.
 
 ## Repository structure
 

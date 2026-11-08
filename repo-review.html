@@ -17,11 +17,10 @@
 <a href="summary.html">Executive summary</a>
 <a href="requirements.html">Requirements</a>
 </div>
-<div class="nav-group"><div class="nav-group-title">Data</div>
+<div class="nav-group"><div class="nav-group-title">Decision</div>
+<a href="contractors.html">Contractors &amp; ranking</a>
 <a href="estimates.html">Estimates &amp; costs</a>
-<a href="contractors.html">Contractors &amp; reviews</a>
 <a href="findings.html">Findings &amp; analysis</a>
-<a href="shortlist.html">Shortlist</a>
 </div>
 <div class="nav-group"><div class="nav-group-title">Reference</div>
 <a href="technical.html">Technical background</a>
@@ -32,110 +31,63 @@
 <div class="nav-group"><div class="nav-group-title">Audit</div>
 <a href="verification.html">Verification</a>
 <a href="repo-review.html" aria-current="page" class="active">Repo review</a>
-<a href="verification-log.html">Prior verification log</a>
 <a href="flagged.html">Flagged for review</a>
 </div>
-<div class="side-foot">Updated 2026-11-07<br>Session <span class="mono">arena/2eb487ad-korea7</span></div>
+<div class="side-foot">Updated 2026-11-08<br>Session <span class="mono">arena/dc6a8da6-korea7</span></div>
 </aside>
 <main id="main" class="content">
 <header class="page-head">
-  <div class="eyebrow">Audit · line-by-line repository review</div>
+  <div class="eyebrow">Audit · repository inventory</div>
   <h1>Repository review</h1>
-  <p class="lede">What is in this checkout, what prior sessions produced, what was verified against official sources, and every irregularity found.</p>
+  <p class="lede">What is in this repository, what was checked line by line, and what remains flagged as legacy or irregular.</p>
 </header>
+<section class="section"><h2>Scope</h2><p>The canonical plumbing dashboard lives at the repository root. The repo also contains an unrelated legacy GEMS geothermal audit and several archived overflow microsites from parallel sessions. This session inventoried tracked files, hashed bytes, parsed JSON/Python, scanned HTML links and re-read official plumbing sources. It did not edit or revalidate legacy GEMS science or archived microsites.</p></section>
 <section class="section">
-<h2>Repository review — line by line</h2>
+<h2>Repository irregularities</h2>
 <div class="table-wrap"><table class="data-table">
 <thead><tr>
-<th>Area</th>
-<th>What was found</th>
-<th>Verification</th>
-<th>Result</th>
+<th>ID</th>
+<th>Item</th>
+<th>Finding</th>
 <th>Source</th>
 </tr></thead><tbody>
 <tr>
-<td>Root</td>
-<td>A prior session published a 7-page dashboard (index, summary, estimates, contractors, findings, sources, flagged) at the site root</td>
-<td>Files read locally 2026-11-07; this integration replaces them with a 13-page canonical dashboard</td>
-<td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td>F18</td>
+<td>Unrelated legacy GEMS project shares the repository</td>
+<td>The repo contains a geothermal fault-prospectivity audit alongside plumbing dashboards. Legacy science was preserved, not revalidated as part of this plumbing project.</td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S60</a> · <a href="docs/index.html" title="Legacy GEMS site">S65</a> · <a href="data/review-2026-11-08/REPO-AUDIT.md" title="Current repository audit report">S72</a></span></td>
 </tr>
 <tr>
-<td>Legacy project</td>
-<td>README documents a DOE GEMS geothermal fault-prospectivity submission audit with GeoTIFF datasets under data/, docs/, vendor/, gems/, evidence/, registry/</td>
-<td>README read locally; legacy content is unrelated to the bathtub project and is untouched</td>
-<td><span class="pill warn">irregularity</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a> · <a href="docs/index.html" title="Legacy GEMS site (archived)">S48</a></span></td>
+<td>F19</td>
+<td>Multiple archived overflow dashboards</td>
+<td>Earlier page sets under bathtub-overflow/, docs/bath/, docs/overflow-* and sf-overflow-audit/ contain older quote/review presentation and provider lists.</td>
+<td class="src-col"><span class="src-ids"><a href="trip-lever/secondary-pages-audit.md" title="Secondary-page audit (2026-11-07)">S63</a> · <a href="sf-overflow-audit/index.html" title="Parallel SF overflow audit dashboard">S64</a> · <a href="bathtub-overflow/executive-summary.html" title="Archived bathtub-overflow page set">S66</a> · <a href="docs/bath/index.html" title="Archived docs/bath page set">S67</a> · <a href="docs/plumbing-index.html" title="Archived docs overflow dashboard">S68</a> · <a href="shortlist.html" title="Archived shortlist">S69</a> · <a href="verification-log.html" title="Prior verification log">S70</a></span></td>
 </tr>
 <tr>
-<td>Parallel microsites</td>
-<td>bathtub-overflow/, docs/bath/, docs/overflow-*.html and docs/plumbing-index.html contain earlier, partly overlapping research</td>
-<td>Linked as archive; files not edited</td>
-<td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="bathtub-overflow/executive-summary.html" title="Parallel microsite (archived)">S49</a> · <a href="docs/bath/index.html" title="Parallel microsite (archived)">S50</a> · <a href="docs/plumbing-index.html" title="Parallel dashboard (archived)">S51</a></span></td>
+<td>F20</td>
+<td>Stale open PRs #32 and #42</td>
+<td>Both overlap earlier dashboard work and are stale. They were left open and untouched; this session logged a bounded takeover under the 60-minute rule.</td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer" title="Open PR #32 — stale parallel dashboard">S61</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/42" target="_blank" rel="noopener noreferrer" title="Open PR #42 — stale root-dashboard rebuild">S62</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S58</a></span></td>
 </tr>
 <tr>
-<td>Coordination board</td>
-<td>COORDINATION.md contains 548 lines from six prior sessions with claims, handoffs and a verification log</td>
-<td>Read at session start; this session appended its own board section and pushed the claim</td>
-<td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td>F21</td>
+<td>docs/parallel-index.html links to a directory without an index</td>
+<td>docs/results/ exists as a data directory but has no index.html, so a GitHub Pages directory request can fail even though a filesystem link check passes.</td>
+<td class="src-col"><span class="src-ids"><a href="docs/index.html" title="Legacy GEMS site">S65</a> · <a href="data/review-2026-11-08/REPO-AUDIT.md" title="Current repository audit report">S72</a></span></td>
 </tr>
 <tr>
-<td>Prior compliance gap</td>
-<td>The earlier root estimates table displayed owner-provided amounts in value cells and had rows with no source links</td>
-<td>Reproduced by a local row-link audit; fixed in this build (blank verified cells, every row linked)</td>
-<td><span class="pill ok">fixed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="brief.html" title="Project brief (owner-provided primary record)">S44</a></span></td>
-</tr>
-<tr>
-<td>Dead external links</td>
-<td>Earlier pages cited homeguides.sfgate.com and inspectandtest.net; both fail on re-check</td>
-<td>Removed from active citations; retained as labeled documentation rows</td>
-<td><span class="pill warn">fixed / flagged</span></td>
-<td class="src-col"><span class="src-ids"><a href="sources.html" title="Source ledger (this site)">S55</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
-</tr>
-<tr>
-<td>Open PR</td>
-<td>PR #32 from a parallel session is open and conflicting</td>
-<td>Checked with gh; not merged, not closed, not edited</td>
-<td><span class="pill warn">needs review</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer" title="Open PR #32 (stale parallel session)">S52</a></span></td>
-</tr>
-<tr>
-<td>Pages configuration</td>
-<td>GitHub Pages builds from branch main, path / (legacy build type); .nojekyll is present at the repo root</td>
-<td>Confirmed with gh api repos/.../pages on 2026-11-07</td>
-<td><span class="pill ok">verified</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a></span></td>
-</tr>
-<tr>
-<td>Tests / scripts</td>
-<td>Existing Python scripts and tests belong to the legacy GEMS project; pytest is not installed in this sandbox</td>
-<td>This session added standalone unittest-based dashboard checks runnable with python3</td>
-<td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a></span></td>
-</tr>
-<tr>
-<td>Privacy sweep</td>
-<td>A grep for internal-only hiring constraints across all published HTML/MD/JSON/CSS/JS returned zero matches</td>
-<td>See the Verification page for the exact pattern list and result</td>
-<td><span class="pill ok">pass</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
-</tr>
-<tr>
-<td>Concurrent session output</td>
-<td>shortlist.html (ranked B + C-36 candidates and vetting script), verification-log.html (earlier line-by-line log) and sf-overflow-audit/ (independent 9-page audit) were merged and preserved unchanged</td>
-<td>All three are linked from the dashboard navigation, quick links and this review page</td>
-<td><span class="pill ok">preserved</span></td>
-<td class="src-col"><span class="src-ids"><a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a> · <a href="verification-log.html" title="Verification log — earlier session">S59</a> · <a href="sf-overflow-audit/index.html" title="SF overflow audit — parallel session dashboard">S60</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td>F22</td>
+<td>Run-card schema drift and stale README leaderboard figures</td>
+<td>Multiple run-card JSON schemas and historical GEMS leaderboard statements coexist. They are unrelated to the plumbing decision and were not rewritten.</td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S60</a> · <a href="sf-overflow-audit/index.html" title="Parallel SF overflow audit dashboard">S64</a> · <a href="data/review-2026-11-08/REPO-AUDIT.md" title="Current repository audit report">S72</a></span></td>
 </tr>
 </tbody>
-<caption>Repo review was performed by reading the files in the checkout and querying the GitHub API. Links point to the repository files and Pages site for manual review. Irregularities are also published on the Flagged for Review page.</caption>
+<caption>Full line-by-line inventory and hash/link results: <a href="data/review-2026-11-08/REPO-AUDIT.md">repository audit report</a>. Legacy GEMS science was preserved, not revalidated.</caption>
 </table></div></section>
-<div class="callout info"><div class="icon">i</div><p>Links for manual review: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">README</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer">COORDINATION.md</a> · <a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer">live Pages site</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer">open PR #32</a>, <a href="shortlist.html">shortlist.html</a>, <a href="verification-log.html">verification-log.html</a>, <a href="sf-overflow-audit/index.html">sf-overflow-audit/</a>. Archived parallel work: <a href="bathtub-overflow/executive-summary.html">bathtub-overflow/</a>, <a href="docs/bath/index.html">docs/bath/</a>, <a href="docs/plumbing-index.html">docs/plumbing-index.html</a>.</p></div>
+<section class="section"><h2>Audit artifacts</h2><p>Line-by-line inventory and hashes: <a href="data/review-2026-11-08/repo_inventory.json">repo_inventory.json</a>. Findings: <a href="data/review-2026-11-08/repo_findings.json">repo_findings.json</a>. Report: <a href="data/review-2026-11-08/REPO-AUDIT.md">REPO-AUDIT.md</a>. Current research dataset: <a href="data/review-2026-11-08/research.json">research.json</a>.</p></section>
+<section class="section"><h2>Archived material</h2><p>Preserved unchanged: <a href="bathtub-overflow/executive-summary.html">bathtub-overflow/</a>, <a href="docs/bath/index.html">docs/bath/</a>, <a href="docs/plumbing-index.html">docs overflow dashboard</a>, <a href="sf-overflow-audit/index.html">parallel SF overflow audit</a>, <a href="shortlist.html">earlier shortlist</a>, <a href="verification-log.html">prior verification log</a>, and the unrelated <a href="docs/index.html">legacy GEMS site</a>. Canonical root pages control for this project.</p></section>
 <footer class="site">
-  <span>Research dashboard · San Francisco · updated 2026-11-07 · session <span class="mono">arena/2eb487ad-korea7</span></span>
+  <span>Research dashboard · San Francisco · updated 2026-11-08 · session <span class="mono">arena/dc6a8da6-korea7</span></span>
   <span><a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="https://github.com/karagemop466-tech/Korea7">Repository</a></span>
 </footer>
 </main>

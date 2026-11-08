@@ -230,8 +230,8 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
     official_sources = sum(1 for s in C.SOURCES.values()
                            if s["tier"] in ("official", "manufacturer") and s["status"] == "verified")
     checks.append(check("Official sources verified directly", official_sources >= 10,
-                        "%d official/manufacturer sources verified 2026-11-07; %d sources verified overall"
-                        % (official_sources, verified_sources)))
+                        "%d official/manufacturer sources recorded verified %s; %d sources verified overall"
+                        % (official_sources, C.META["updated"], verified_sources)))
 
     return {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
@@ -282,8 +282,8 @@ def write_report(root: Path, report: dict) -> None:
     lines += ["", "## Notes", "",
               "- Every table row is emitted with a Source column from `data/canonical/site_data.json`.",
               "- Unverified values are blank in verified cells and published on `flagged.html`.",
-              "- Official values were read directly from the issuing site on 2026-11-07; CSLB records printed",
-              "  \"Data current as of 11/7/2026\".",
+              "- Official values were read directly from the issuing site on %s; CSLB records printed" % C.META["updated"],
+              "  \"Data current as of %s\"." % C.META.get("cslb_stamp", "11/8/2026"),
               "- Yelp URLs return HTTP 403 to automated access and are flagged as platform snapshots.",
               "- Dead sources: %s (documented, never linked from a row)." % ", ".join(report["dead_sources"]),
               ""]
