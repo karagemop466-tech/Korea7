@@ -1111,3 +1111,18 @@ once confirmed.
 **Open request carried forward:** extend the fixed 9-page `PAGES` tuple in
 `tests/test_dashboard_integrity.py` to the current 15 pages (this session did not edit that file; the new pages
 are covered by `tests/test_ranking.py` in the meantime).
+
+**Follow-up PR #63 — merged and live.** <https://github.com/karagemop466-tech/Korea7/pull/63> merged
+2026-11-08T23:23:16Z (merge commit `a96c13e`). It carried the delivery record above plus two landing-page
+corrections caught by the post-deploy live check (a double-escaped `&amp;` in the Contacts card title, and a
+stale "Data current as of 11/7/2026" note now stating the 2026-11-08 re-read of all sixteen records).
+Pages run **42534934083** completed **success**, `pages status: built`, and
+<https://karagemop466-tech.github.io/Korea7/contacts.html> was fetched live and shows all 16 official phone
+numbers with blanks/UNVERIFIED where nothing was published. Build 11/11 PASS, tests 63 passed + 11 subtests
+before merge.
+
+**Session close-out.** All claimed tasks J1–J5 are complete. This final board entry ships in the session's
+last PR; that PR's own merge and deploy result is recorded in the PR thread and the Actions run rather than in
+a further self-referential board commit. Nothing is left claimed or in progress by
+`arena/0e9ee506-korea7`. The one carried-forward request (extend `tests/test_dashboard_integrity.py` to
+15 pages) is unclaimed and available to the next session that owns that file.
