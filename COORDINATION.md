@@ -931,6 +931,13 @@ re-appending this session's board section and logs below it (no entry discarded)
 - **Task board:** I1–I5 **done**. Flagged items U01–U20 are published on `flagged.html` with source links and do not block. PR #32 remains OPEN/CONFLICTING and was deliberately left untouched for its owner. No manual input was requested or received.
 - This final record is published to `main` through a small follow-up integration PR; PR #46 above is the delivery PR whose link and merge result were required to be recorded here.
 
+## Follow-up audit — session `arena/60cdc184-korea7` (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Independently audit existing integration, privacy, tests, and deployment; publish follow-up findings | in progress | arena/60cdc184-korea7 | COORDINATION.md; additional scope will be claimed if needed |
+
+This session uses the fixed Arena branch rather than creating a separate session branch. Earlier integration and parallel deliverables are retained.
 ## Current session claim — arena/89ae6815-korea7 (2026-11-08)
 
 | Task | Status | Owner | File scope |
@@ -960,3 +967,18 @@ Prior tasks 1-10/I1-I5 done by earlier sessions (PR #46 merged). This session re
 - Estimates ($614/$550/$135, dated 2026-08-30 as provided) remain owner-supplied/UNVERIFIED with blank verified cells on estimates.html/flagged.html (U-items). No provider has confirmed accepting this specific stuck-lever job; ranking on shortlist.html/contractors.html is classification+review based only.
 - Privacy sweep: no private rationale anywhere in repo/site (grep + builder check 0 matches). Permits page is neutral official sf.gov/CSLB reporting only.
 - Irregularity: repo's legacy content is an unrelated DOE GEMS audit (flagged on flagged.html/repo-review.html); latest Pages run at audit time was queued, prior run success, live site fetched OK 2026-11-08.
+---
+### Follow-up audit result — arena/60cdc184-korea7
+
+- Status: **needs review**. This session's claim preceded discovery of PR #50 from a concurrent auditor. The conflicting appended board sections were resolved by preserving both; this audit does not replace that session's work. The first branch-specific pull found no remote ref because the branch had not yet been published.
+- Local `scripts/build_dashboard.py`: 11 checks passed; five dashboard test modules: 41 passed, 9 subtests passed. Link-presence checks are not independent verification of every claim, and the test accepts non-official links or explicit unverified markers; they do not prove the requested official-source standard for every row. No provider was contacted.
+- Independently checked [CSLB #959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843): GENERALSF, (650) 303-1515, active B and C-36, expiring 2027-04-30 as of the record dated 2026-11-08. Experience on this exact job, current availability, drywall inclusion, and cost remain unverified. [SF DBI](https://www.sf.gov/apply-plumbing-and-mechanical-permit) says a permit is required before cutting or replacing pipes, subject to exemptions; applicability depends on scope.
+- [Live site](https://karagemop466-tech.github.io/Korea7/) was fetched successfully, but [deployment for 1faccdc](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253) failed; the published site can reflect a previous successful version. Subsequent run 42532738336 was in progress during audit. External source content and all repository lines were not independently reverified.
+- The later [Pages run 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) for main commit `2fb3e81` succeeded at both build and deploy, superseding the failed deployment noted above.
+- After the merge with concurrent main, `git pull --rebase origin arena/60cdc184-korea7` attempted to replay the other session's already-merged commits and produced a conflict. The rebase was aborted without discarding work; fetch and ancestry verification confirmed the remote branch is an ancestor of this branch, permitting a normal fast-forward push that retains both sessions' records.
+### Delivery update — arena/89ae6815-korea7
+
+- Audit PR [#50](https://github.com/karagemop466-tech/Korea7/pull/50) merged at 2026-11-08T22:56:58Z as `2fb3e81270ba257a7af49b0a07d56685f3113389`. It changed only this task board, not the built site.
+- Its [Pages workflow 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) completed successfully, including the deploy job, after the prior failed deployment. The earlier failure remains documented above. [Live dashboard](https://karagemop466-tech.github.io/Korea7/).
+
+- A second concurrent-main merge conflicted in this board; both sessions’ appended delivery updates were retained.
