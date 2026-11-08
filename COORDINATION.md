@@ -930,3 +930,11 @@ re-appending this session's board section and logs below it (no entry discarded)
 - **Final verification:** `python3 scripts/build_dashboard.py` → 11/11 PASS (13 pages, 14 tables, 192 data rows, 60 ledger entries, 411 rendered rows with 0 missing source links, 493 internal links 0 broken, 50 external links all in the ledger, privacy sweep 121 files / 0 matches, 16 official/manufacturer sources verified 2026-11-07). `python3 -m pytest -q` over all five site test modules → **41 passed, 9 subtests passed**. Full-repo internal-link audit: 1,196 links, 0 broken. Local static-server smoke test: all 13 canonical pages + CSS/JS/reports HTTP 200.
 - **Task board:** I1–I5 **done**. Flagged items U01–U20 are published on `flagged.html` with source links and do not block. PR #32 remains OPEN/CONFLICTING and was deliberately left untouched for its owner. No manual input was requested or received.
 - This final record is published to `main` through a small follow-up integration PR; PR #46 above is the delivery PR whose link and merge result were required to be recorded here.
+
+## Current-session audit — arena/cc08def9-korea7 (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit prior integrated dashboard, verify deployment and address material issues | in progress | arena/cc08def9-korea7 | COORDINATION.md; audit findings only initially. Requests for other scopes will be logged here. |
+
+This session uses the Arena-assigned branch, which takes precedence over the requested session branch naming convention. Prior work and ownership will be respected.
