@@ -647,7 +647,7 @@
       "status": "verified",
       "checked": "2026-11-07",
       "supports": "Ranked shortlist of dual-classified (B + C-36) firms with a vetting script",
-      "note": "Page produced by a concurrent session, merged unchanged and linked from the dashboard navigation."
+      "note": "Page produced by a concurrent session; license-scope clarification added 2026-11-08."
     },
     "S61": {
       "label": "Fast Response — plumbing repair and replacement",
@@ -658,6 +658,26 @@
       "checked": "2026-11-08",
       "supports": "Company lists bathtub waste and overflow repair and replacement in San Francisco and publishes a phone number",
       "note": "Company self-description, not proof of experience with this stuck mechanism, drywall, availability or acceptance of this job."
+    },
+    "S62": {
+      "label": "California BPC §7059 — specialty contractor incidental work",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Specialty contractors may undertake other trades when incidental and supplemental to their licensed work",
+      "note": "Directly read 2026-11-08; applicability to this particular ceiling repair is not established."
+    },
+    "S63": {
+      "label": "Archived overflow verification page",
+      "publisher": "This repository (parallel session)",
+      "url": "docs/overflow-verification.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Historical page containing overly categorical licensing statements; see U22",
+      "note": "Historical claims should not be treated as current legal advice."
     },
     "S60": {
       "label": "SF overflow audit — parallel session dashboard",
@@ -2440,6 +2460,20 @@
         },
         {
           "cells": [
+            "U22",
+            "License classifications do not establish the only possible repair arrangement",
+            "B + C-36 is a useful screening signal, not proof of acceptance or an exclusive route. BPC §7059 allows qualifying incidental and supplemental work by specialty contractors; application to this ceiling is not established. The archived docs/overflow-verification.html contains more categorical statements that omit this qualification",
+            "Ask each contractor for a written scope, responsible trades and confirmation of applicable requirements",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S62",
+            "S58",
+            "S63"
+          ]
+        },
+        {
+          "cells": [
             "U21",
             "Official-source coverage and automated verification limits",
             "Some rows cite only publishers, platforms or internal project records, not government sources; source-link checks do not establish truth, relevance or live availability. Prior verification dates are historical.",
@@ -2598,7 +2632,7 @@
         {
           "cells": [
             "Concurrent session output",
-            "shortlist.html (ranked B + C-36 candidates and vetting script), verification-log.html (earlier line-by-line log) and sf-overflow-audit/ (independent 9-page audit) were merged and preserved unchanged",
+            "shortlist.html (ranked B + C-36 candidates and vetting script), verification-log.html (earlier line-by-line log) and sf-overflow-audit/ (independent 9-page audit) were merged and preserved; shortlist wording was clarified 2026-11-08",
             "All three are linked from the dashboard navigation, quick links and this review page",
             "<span class=\"pill ok\">preserved</span>"
           ],
@@ -3313,7 +3347,7 @@
             "<strong>Shortlist — who can do the plumbing and the drywall</strong><br><small><a href=\"shortlist.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">shortlist.html</a></small>",
             "This repository (parallel session)<br><span class=\"pill info\">primary</span>",
             "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Ranked shortlist of dual-classified (B + C-36) firms with a vetting script<br><small>Page produced by a concurrent session, merged unchanged and linked from the dashboard navigation.</small>"
+            "Ranked shortlist of dual-classified (B + C-36) firms with a vetting script<br><small>Page produced by a concurrent session; license-scope clarification added 2026-11-08.</small>"
           ],
           "src": [
             "S58"
@@ -3353,6 +3387,30 @@
           ],
           "src": [
             "S61"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S62</code>",
+            "<strong>California BPC §7059 — specialty contractor incidental work</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC</a></small>",
+            "California Legislative Information<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Specialty contractors may undertake other trades when incidental and supplemental to their licensed work<br><small>Directly read 2026-11-08; applicability to this particular ceiling repair is not established.</small>"
+          ],
+          "src": [
+            "S62"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S63</code>",
+            "<strong>Archived overflow verification page</strong><br><small><a href=\"docs/overflow-verification.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">docs/overflow-verification.html</a></small>",
+            "This repository (parallel session)<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Historical page containing overly categorical licensing statements; see U22<br><small>Historical claims should not be treated as current legal advice.</small>"
+          ],
+          "src": [
+            "S63"
           ]
         }
       ],
