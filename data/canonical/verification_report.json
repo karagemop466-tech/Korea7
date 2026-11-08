@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T23:14:35+00:00",
+  "generated_at": "2026-11-08T23:15:51+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -19,7 +19,7 @@
   "counts": {
     "pages": 14,
     "tables": 18,
-    "rows": 181,
+    "rows": 257,
     "source_ledger_entries": 76,
     "verified_sources": 61,
     "official_or_manufacturer_verified": 21,

@@ -1,6 +1,6 @@
 # Dashboard verification report
 
-Generated: 2026-11-08T23:14:35+00:00
+Generated: 2026-11-08T23:15:51+00:00
 
 | Check | Result | Detail |
 |---|---|---|
@@ -20,7 +20,7 @@ Generated: 2026-11-08T23:14:35+00:00
 
 - pages: 14
 - tables: 18
-- rows: 181
+- rows: 257
 - source_ledger_entries: 76
 - verified_sources: 61
 - official_or_manufacturer_verified: 21

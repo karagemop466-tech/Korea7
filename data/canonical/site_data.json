@@ -693,7 +693,7 @@
       "supports": "Removed from all active citations",
       "note": "HTTP 500 on 2026-11-07. Not linked from any table row; retained here as a labeled documentation row."
     },
-    "S61": {
+    "S64": {
       "label": "CSLB License Detail #1025814 — The Genteel Plumbers Inc",
       "publisher": "Contractors State License Board",
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
@@ -703,7 +703,7 @@
       "supports": "Corporation, 1181 Revere Ave, San Francisco, CA 94124, business phone (833) 436-8335; issued 2017-04-14, expires 2027-04-30; current and active; C-36 Plumbing + B General Building; $25,000 bond (American Contractors Indemnity, eff. 2023-01-01); workers' compensation insured (Technology Insurance Co., 2026-01-24 → 2027-01-24); no complaint-disclosure or additional-status line",
       "note": "Record printed 'Data current as of 11/8/2026 2:56:58 PM'. Candidate first identified by the sf-overflow-audit session; read directly here before inclusion."
     },
-    "S62": {
+    "S65": {
       "label": "CSLB License Detail #995163 — Bernal Hill Drywall Inc",
       "publisher": "Contractors State License Board",
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
@@ -713,7 +713,7 @@
       "supports": "Corporation, 720 Anderson St, San Francisco, CA 94110, business phone (415) 533-8274; issued 2014-07-28, expires 2028-07-31; current and active; C-9 Drywall + B General Building; $25,000 bond; workers' compensation insured (Endurance Assurance, 2026-03-10 → 2027-03-10, class 5447 wallboard installation); no disclosure line",
       "note": "Record printed 'Data current as of 11/8/2026 2:58:18 PM'. Drywall specialist — not a plumbing candidate; listed as a ceiling-restoration partner option."
     },
-    "S63": {
+    "S66": {
       "label": "CSLB License Detail #1009195 — Advanced Plumbing and Drain Inc",
       "publisher": "Contractors State License Board",
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
@@ -723,7 +723,7 @@
       "supports": "Corporation, 3450 Sacramento St 204, San Francisco, CA 94118, business phone (415) 744-4944; expires 2027-11-30; current and active; C-36 only; Additional Status printed verbatim: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.'; workers' comp insured (Hartford, 2026-08-21 → 2027-08-21)",
       "note": "Record printed 'Data current as of 11/8/2026 2:58:23 PM'. Screened out of the ranking because of the official notice; reported verbatim, no interpretation."
     },
-    "S64": {
+    "S67": {
       "label": "CSLB — B General Building classification (B&P §7057)",
       "publisher": "Contractors State License Board",
       "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
@@ -733,7 +733,7 @@
       "supports": "§7057(b): a general building contractor shall not take a prime contract for a project involving trades other than framing or carpentry unless it requires at least two unrelated trades, or unless the contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor",
       "note": "Read directly on cslb.ca.gov, 2026-11-08. Basis for weighting B + C-36 on one license as the single-provider criterion."
     },
-    "S65": {
+    "S68": {
       "label": "CSLB — C-9 Drywall classification",
       "publisher": "Contractors State License Board",
       "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
@@ -743,7 +743,7 @@
       "supports": "A drywall contractor lays out and installs gypsum wall board and assemblies and performs taping and texturing (16 CCR Div. 8 Art. 3)",
       "note": "Read directly on cslb.ca.gov, 2026-11-08."
     },
-    "S66": {
+    "S69": {
       "label": "Genteel Plumbers — official site",
       "publisher": "The Genteel Plumbers Inc",
       "url": "https://www.genteelplumbers.com/",
@@ -753,7 +753,7 @@
       "supports": "Company states: office at 1181 Revere Avenue, San Francisco (matches CSLB); phone 415-465-5853; dispatch fee $149 applied to the cost of services; same-day service in San Francisco and San Mateo County; does not cross the Golden Gate or Bay Bridge and does not serve the Financial District; founded 2016 by Graham W. Jones",
       "note": "Read directly. Company self-description is not independent verification; the license number was not printed on the fetched home page — license facts come from CSLB #1025814. Phone differs from the CSLB record — flagged."
     },
-    "S67": {
+    "S70": {
       "label": "Rapid Flow Plumbing & Rooter — official site",
       "publisher": "Rapid Flow Plumbing & Rooter Inc",
       "url": "https://www.rapidflowbayarea.com/",
@@ -763,7 +763,7 @@
       "supports": "Company prints 'CA License #1115649 · B General Building · C-36 Plumbing', 230 Edinburgh St, San Francisco 94112, phones 844-BAY-FLOW and (415) 866-8401; lists general contracting (remodels, renovations), leak detection and repair, 'residential and commercial expertise', 'fully bonded'",
       "note": "Read directly. Company self-description is not independent verification; license, address and phone match CSLB #1115649."
     },
-    "S68": {
+    "S71": {
       "label": "Manny's Plumbing & Rooters — official site",
       "publisher": "Manny's Plumbing & Rooter",
       "url": "https://www.mannysplumbingandremodeling.com/",
@@ -773,7 +773,7 @@
       "supports": "Company prints 'License # 841229', 'C-36 Plumbing / General B - Insured & Bonded'; services include tub install, drain clean and drain replacement, kitchen and bathroom remodeling, residential and commercial; serves nine San Mateo County cities 'and surrounding areas of San Mateo & San Francisco Counties'",
       "note": "Read directly. 'Insured' is a company statement; the CSLB record shows a workers'-compensation exemption ('no employees') — flagged for a certificate request."
     },
-    "S69": {
+    "S72": {
       "label": "General SF — Building services page",
       "publisher": "General SF",
       "url": "https://generalsf.com/building",
@@ -783,7 +783,7 @@
       "supports": "Building page lists 'Sheetrock/Tape and Texture' and 'Rough and Finish Plumbing' among services; footer prints 'CSLB. 959843' and phone (650)-303-1515",
       "note": "Read directly. Company self-description is not independent verification; license and phone match CSLB #959843."
     },
-    "S70": {
+    "S73": {
       "label": "Handyman Heroes — Handyman services page",
       "publisher": "Handyman Heroes Inc",
       "url": "https://www.handymanhero.es/handyman-services/",
@@ -793,7 +793,7 @@
       "supports": "Page states 'sheetrock and wall repairs', 'plumbing and electrical services', service to 'San Francisco homes and apartments', bathroom remodeling including tub and shower upgrades, license #1003394 and phone 1-844-382-4376; lists dated customer testimonials (latest 2026-11-06)",
       "note": "Read directly. Company self-description and testimonials are not independent verification; license and phone match CSLB #1003394."
     },
-    "S71": {
+    "S74": {
       "label": "Yelp — Genteel Plumbers (two listings)",
       "publisher": "Yelp",
       "url": "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
@@ -803,7 +803,7 @@
       "supports": "Search-result snapshot 2026-11-08: listing '-7' shows 4.7 ★ (519 reviews) at 1314 22nd Ave Ste 007, phone (415) 598-0562; a second listing '-8' shows 4.6 ★ (17 reviews) at 1181 Revere Ave, phone (415) 484-3631",
       "note": "Direct page fetch returned HTTP 403 on 2026-11-08; values come from Yelp search-result text and are third-party, point-in-time and unverified. Two listings for one company — flagged."
     },
-    "S72": {
+    "S75": {
       "label": "Yelp — Ace Plumbing & Rooter",
       "publisher": "Yelp",
       "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
@@ -813,7 +813,7 @@
       "supports": "Search-result snapshot 2026-11-08: 4.7 ★ with 1.4k–1.5k reviews, 'Verified License', 'Serving San Francisco and the Surrounding Area'",
       "note": "Direct page fetch is blocked (HTTP 403); values are third-party and unverified. 'Verified License' is a platform badge, not CSLB verification."
     },
-    "S73": {
+    "S76": {
       "label": "Yelp — Manny's Plumbing & Rooters",
       "publisher": "Yelp",
       "url": "https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city",
@@ -823,7 +823,7 @@
       "supports": "Search-result snapshot 2026-11-08: 4.7 ★ (175 reviews), 41 Midvale Dr, Daly City, (650) 207-5733; the business's own specialties text lists 'tub and shower valve repair and install' and 'tub overflow repair and replacement'; 'Bathtub repair' appears under services 'Verified by Business'",
       "note": "Direct page fetch is blocked (HTTP 403); values are third-party and unverified. The specialties text is the business's own description on the platform."
     },
-    "S74": {
+    "S77": {
       "label": "Yelp — Rapid Flow Plumbing (search)",
       "publisher": "Yelp",
       "url": "https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&find_loc=San+Francisco%2C+CA",
@@ -833,7 +833,7 @@
       "supports": "Prior-session snapshot 2026-11-07: 5.0 ★ (8 reviews); not re-seen in 2026-11-08 search results",
       "note": "Direct fetch blocked (HTTP 403). Third-party, thin evidence (8 reviews) — treated as a low score on the review criterion, not as verification."
     },
-    "S75": {
+    "S78": {
       "label": "GitHub Actions — Pages run 42413503253 for main @ 1faccdc (deploy failed)",
       "publisher": "GitHub (this repository)",
       "url": "https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253",
@@ -843,7 +843,7 @@
       "supports": "'pages build and deployment' for commit 1faccdc: build job success, deploy job failure; deployment 7626930247 went in_progress 2026-11-07T20:57:32Z and failure at 21:08:10Z",
       "note": "Checked with gh run view / gh api on 2026-11-08. The live site kept serving the previous successful deploy (08fa03b). Re-triggered by this session's merge."
     },
-    "S76": {
+    "S79": {
       "label": "Open PR #42 (stale parallel session)",
       "publisher": "GitHub",
       "url": "https://github.com/karagemop466-tech/Korea7/pull/42",
@@ -1397,10 +1397,10 @@
             "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">phone mismatch flagged</span>"
           ],
           "src": [
-            "S61",
-            "S66",
+            "S64",
+            "S69",
             "S05",
-            "S64"
+            "S67"
           ]
         },
         {
@@ -1415,9 +1415,9 @@
             "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill info\">not a plumbing candidate</span>"
           ],
           "src": [
-            "S62",
             "S65",
-            "S64"
+            "S68",
+            "S67"
           ]
         },
         {
@@ -1432,7 +1432,7 @@
             "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill bad\">screened out</span>"
           ],
           "src": [
-            "S63",
+            "S66",
             "S05"
           ]
         }
@@ -1524,7 +1524,7 @@
             "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
           ],
           "src": [
-            "S72",
+            "S75",
             "S11"
           ]
         },
@@ -1537,8 +1537,8 @@
             "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
           ],
           "src": [
-            "S71",
-            "S61"
+            "S74",
+            "S64"
           ]
         },
         {
@@ -1550,7 +1550,7 @@
             "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
           ],
           "src": [
-            "S73",
+            "S76",
             "S57"
           ]
         },
@@ -1563,7 +1563,7 @@
             "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
           ],
           "src": [
-            "S74",
+            "S77",
             "S56"
           ]
         },
@@ -2328,7 +2328,7 @@
             "S11",
             "S56",
             "S57",
-            "S61"
+            "S64"
           ]
         },
         {
@@ -2417,12 +2417,12 @@
           ],
           "src": [
             "S11",
-            "S61",
+            "S64",
             "S10",
             "S09",
             "S57",
             "S56",
-            "S64",
+            "S67",
             "S58"
           ]
         },
@@ -2435,7 +2435,7 @@
           ],
           "src": [
             "S11",
-            "S61",
+            "S64",
             "S10",
             "S09",
             "S57",
@@ -2443,7 +2443,7 @@
             "S08",
             "S06",
             "S07",
-            "S64"
+            "S67"
           ]
         },
         {
@@ -2454,7 +2454,7 @@
             "<span class=\"pill ok\">verified on CSLB</span> <span class=\"pill bad\">screened out</span>"
           ],
           "src": [
-            "S63"
+            "S66"
           ]
         },
         {
@@ -2465,9 +2465,9 @@
             "<span class=\"pill warn\">irregularity — flagged</span>"
           ],
           "src": [
-            "S61",
-            "S66",
-            "S71"
+            "S64",
+            "S69",
+            "S74"
           ]
         },
         {
@@ -2478,7 +2478,7 @@
             "<span class=\"pill warn\">irregularity — flagged</span>"
           ],
           "src": [
-            "S75",
+            "S78",
             "S45"
           ]
         }
@@ -2577,8 +2577,7 @@
             "S07",
             "S09",
             "S56",
-            "S57",
-            "S68"
+            "S57"
           ]
         },
         {
@@ -2770,75 +2769,75 @@
         },
         {
           "cells": [
-            "U21",
+            "U23",
             "Previous Pages deploy of main failed",
             "Run 42413503253 for main @ 1faccdc: build success, deploy failure (2026-11-07T21:08:10Z); the live site kept serving the earlier deploy 08fa03b",
             "Re-deploy from the next merge to main and confirm the Actions run and the deployment status both succeed — recorded on the Verification page and the coordination board",
             "<span class=\"pill warn\">irregularity</span>"
           ],
           "src": [
-            "S75",
+            "S78",
             "S45"
           ]
         },
         {
           "cells": [
-            "U22",
+            "U24",
             "Genteel Plumbers phone and Yelp listings inconsistent",
             "CSLB #1025814 business phone (833) 436-8335; company site prints 415-465-5853; Yelp shows two listings (4.7 ★/519 at 1314 22nd Ave with (415) 598-0562, and 4.6 ★/17 at 1181 Revere Ave with (415) 484-3631)",
             "Call the CSLB-record number first and ask the company which listing and number are current",
             "<span class=\"pill warn\">irregularity</span> <span class=\"pill warn\">UNVERIFIED</span>"
           ],
           "src": [
-            "S61",
-            "S66",
-            "S71"
+            "S64",
+            "S69",
+            "S74"
           ]
         },
         {
           "cells": [
-            "U23",
+            "U25",
             "Advanced Plumbing and Drain Inc — official CSLB notice",
             "CSLB #1009195 prints an 'Additional Status' line stating the license may be suspended at a future date for failure to resolve an outstanding final liability",
             "Screened out of the ranking; re-read the record before any contact",
             "<span class=\"pill bad\">irregularity</span>"
           ],
           "src": [
-            "S63"
+            "S66"
           ]
         },
         {
           "cells": [
-            "U24",
+            "U26",
             "Five stale open pull requests, all conflicting",
             "PR #42 (parallel dashboard session, updated 2026-11-08) and GEMS-era PRs #20, #18, #15, #2 are open with mergeable=CONFLICTING; none was merged, closed or edited by this session",
             "Owners of those branches should rebase onto main or close them; the canonical dashboard is on main",
             "<span class=\"pill warn\">irregularity</span>"
           ],
           "src": [
-            "S76",
+            "S79",
             "S45",
             "S47"
           ]
         },
         {
           "cells": [
-            "U25",
+            "U27",
             "Decision ranking is documentation-based",
             "Weights (30/15/15/10/10/10/10) are this site's own; company-page and review criteria rest on self-statements and third-party snapshots; no provider was contacted, no site visit occurred and no combined plumbing + drywall quote exists",
             "Treat the ranking as a calling order, not a selection; re-score after written quotes arrive",
             "<span class=\"pill info\">analysis</span> <span class=\"pill warn\">UNVERIFIED</span>"
           ],
           "src": [
-            "S64",
+            "S67",
             "S11",
-            "S61",
+            "S64",
             "S44"
           ]
         },
         {
           "cells": [
-            "U26",
+            "U28",
             "Time-sensitive expiries among candidates",
             "Fast Response workers' comp policy expires 2026-12-18 (#1024971); Bay Area Plumbing license expires 2027-01-31 (#757796); Genteel workers' comp expires 2027-01-24 (#1025814)",
             "Re-read each CSLB record on the hire date and request a current certificate of insurance",
@@ -2847,21 +2846,21 @@
           "src": [
             "S08",
             "S07",
-            "S61"
+            "S64"
           ]
         },
         {
           "cells": [
-            "U27",
+            "U29",
             "Review-platform figures are search-result text, not listing pages",
             "Every 2026-11-08 review figure (Ace 4.7/1.5k, Genteel 4.7/519, Manny's 4.7/175, Fast Response 4.8/870) was read from Yelp search-result text because listing pages return HTTP 403",
             "Open each linked listing manually on the decision date",
             "<span class=\"pill warn\">third-party</span> <span class=\"pill warn\">UNVERIFIED</span>"
           ],
           "src": [
-            "S72",
-            "S71",
-            "S73",
+            "S75",
+            "S74",
+            "S76",
             "S34"
           ]
         }
@@ -2959,7 +2958,7 @@
           ],
           "src": [
             "S52",
-            "S76"
+            "S79"
           ]
         },
         {
@@ -2970,7 +2969,7 @@
             "<span class=\"pill warn\">irregularity — re-deployed by this session</span>"
           ],
           "src": [
-            "S75",
+            "S78",
             "S45"
           ]
         },
@@ -2990,9 +2989,9 @@
             "S11",
             "S56",
             "S57",
-            "S61",
-            "S62",
-            "S63",
+            "S64",
+            "S65",
+            "S66",
             "S01",
             "S13"
           ]
@@ -3001,12 +3000,12 @@
           "cells": [
             "Decision ranking page",
             "No formal scored ranking existed: shortlist.html lists dual-classified firms without weights or cost explanations and the findings table gave an unscored order",
-            "ranking.html was added, generated from the same data file as every other page; its criteria, weights, scores and cost notes are in tables with source links and its limitations are flagged (U25)",
+            "ranking.html was added, generated from the same data file as every other page; its criteria, weights, scores and cost notes are in tables with source links and its limitations are flagged (U27)",
             "<span class=\"pill ok\">added 2026-11-08</span>"
           ],
           "src": [
             "S58",
-            "S64",
+            "S67",
             "S45"
           ]
         },
@@ -3082,7 +3081,7 @@
             "<span class=\"pill ok\">official basis</span>"
           ],
           "src": [
-            "S64",
+            "S67",
             "S05",
             "S44"
           ]
@@ -3116,7 +3115,7 @@
           "src": [
             "S12",
             "S10",
-            "S63"
+            "S66"
           ]
         },
         {
@@ -3145,7 +3144,7 @@
           ],
           "src": [
             "S44",
-            "S66",
+            "S69",
             "S15"
           ]
         },
@@ -3161,13 +3160,13 @@
           "src": [
             "S40",
             "S43",
-            "S70",
+            "S73",
             "S39",
-            "S67",
-            "S68",
+            "S70",
+            "S71",
             "S38",
-            "S69",
-            "S66"
+            "S72",
+            "S69"
           ]
         },
         {
@@ -3180,12 +3179,12 @@
             "<span class=\"pill warn\">third-party</span> <span class=\"pill warn\">UNVERIFIED</span>"
           ],
           "src": [
-            "S72",
-            "S71",
+            "S75",
+            "S74",
             "S36",
             "S35",
-            "S73",
-            "S74",
+            "S76",
+            "S77",
             "S34",
             "S32",
             "S33"
@@ -3226,8 +3225,8 @@
           "src": [
             "S11",
             "S43",
-            "S72",
-            "S64"
+            "S75",
+            "S67"
           ]
         },
         {
@@ -3244,10 +3243,10 @@
             "<strong>86</strong>"
           ],
           "src": [
-            "S61",
-            "S66",
-            "S71",
-            "S64"
+            "S64",
+            "S69",
+            "S74",
+            "S67"
           ]
         },
         {
@@ -3265,9 +3264,9 @@
           ],
           "src": [
             "S10",
-            "S70",
+            "S73",
             "S36",
-            "S64"
+            "S67"
           ]
         },
         {
@@ -3285,9 +3284,9 @@
           ],
           "src": [
             "S09",
-            "S69",
+            "S72",
             "S35",
-            "S64"
+            "S67"
           ]
         },
         {
@@ -3305,9 +3304,9 @@
           ],
           "src": [
             "S57",
-            "S68",
-            "S73",
-            "S64"
+            "S71",
+            "S76",
+            "S67"
           ]
         },
         {
@@ -3325,9 +3324,9 @@
           ],
           "src": [
             "S56",
-            "S67",
-            "S74",
-            "S64"
+            "S70",
+            "S77",
+            "S67"
           ]
         },
         {
@@ -3347,7 +3346,7 @@
             "S08",
             "S40",
             "S34",
-            "S64"
+            "S67"
           ]
         },
         {
@@ -3367,7 +3366,7 @@
             "S06",
             "S38",
             "S32",
-            "S64"
+            "S67"
           ]
         },
         {
@@ -3387,7 +3386,7 @@
             "S07",
             "S39",
             "S33",
-            "S64"
+            "S67"
           ]
         }
       ],
@@ -3412,13 +3411,13 @@
             "<strong>90</strong> / 100",
             "Only candidate with the full set: B + C-36 (plus A, C-4, C-10, C-16) on one current license, an insured workers'-comp policy to 2027-07-13, a clean record, a San Francisco address, a company page that names HOAs and property managers, and the largest review volume in the set (4.7 ★, 1.4–1.5k, third-party).",
             "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Benchmarks: drain replacement $500–$1,020 (avg $700), new drywall ≈ $2,100 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>); leak repair $150–$600 plus $300–$930 drywall/tile follow-up (<a href=\"https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
-            "Capability for this specific concealed repair is unverified (U15); Yelp figures are search-result text (U27). Ask for a single written scope covering above-attempt, below access, ceiling patch/finish and a water test."
+            "Capability for this specific concealed repair is unverified (U15); Yelp figures are search-result text (U29). Ask for a single written scope covering above-attempt, below access, ceiling patch/finish and a water test."
           ],
           "src": [
             "S11",
             "S43",
-            "S72",
-            "S64",
+            "S75",
+            "S67",
             "S15",
             "S16"
           ]
@@ -3430,13 +3429,13 @@
             "<strong>86</strong> / 100",
             "B + C-36 on one license, insured workers' comp (to 2027-01-24), clean record and a San Francisco office. The company publishes its pricing model — a $149 dispatch fee credited to the work — which is the only published price evidence among the dual-classified firms. Loses points because its page makes no occupied-unit statement.",
             "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Company states a $149 dispatch fee applied to the cost of services and flat-rate pricing (<a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">company statement</a>). Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
-            "Phone differs between CSLB and the company site, and Yelp shows two listings (U22); the company says it does not serve the Financial District (<a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a>). If only the 17-review Yelp listing is current, C7 would be 4 and the firm would score 80 (rank 3)."
+            "Phone differs between CSLB and the company site, and Yelp shows two listings (U24); the company says it does not serve the Financial District (<a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a>). If only the 17-review Yelp listing is current, C7 would be 4 and the firm would score 80 (rank 3)."
           ],
           "src": [
-            "S61",
-            "S66",
-            "S71",
             "S64",
+            "S69",
+            "S74",
+            "S67",
             "S15"
           ]
         },
@@ -3451,9 +3450,9 @@
           ],
           "src": [
             "S10",
-            "S70",
+            "S73",
             "S36",
-            "S64",
+            "S67",
             "S12",
             "S15",
             "S16"
@@ -3470,9 +3469,9 @@
           ],
           "src": [
             "S09",
-            "S69",
+            "S72",
             "S35",
-            "S64",
+            "S67",
             "S15"
           ]
         },
@@ -3487,9 +3486,9 @@
           ],
           "src": [
             "S57",
-            "S68",
-            "S73",
-            "S64",
+            "S71",
+            "S76",
+            "S67",
             "S15"
           ]
         },
@@ -3500,13 +3499,13 @@
             "<strong>69</strong> / 100",
             "B + C-36 on one license (valid to 2028-01-31), clean record, San Francisco address, and a site that lists general contracting/remodels and leak repair with 'residential and commercial expertise'. The newest license in the set with only an 8-review snapshot and a workers'-comp exemption, so it ranks last among the dual-classified firms.",
             "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
-            "Thin review evidence (8 reviews, prior-session snapshot) (U27) and a workers'-comp exemption (U06)."
+            "Thin review evidence (8 reviews, prior-session snapshot) (U29) and a workers'-comp exemption (U06)."
           ],
           "src": [
             "S56",
+            "S70",
+            "S77",
             "S67",
-            "S74",
-            "S64",
             "S15"
           ]
         },
@@ -3517,13 +3516,13 @@
             "<strong>69</strong> / 100",
             "Best of the plumbing-only firms: insured, clean record, San Francisco address, a page that names apartments, HOAs and property managers, strong review volume, and the cheapest quote on file ($135, adjust/repair). Cannot satisfy the one-provider requirement alone — a C-9 drywall partner (e.g. Bernal Hill #995163) or a subcontract would be needed for the ceiling.",
             "$135 repair/adjust plunger handle (owner-provided quote, <span class=\"pill warn\">UNVERIFIED</span>) — covers an adjustment only, not removal via the ceiling or drywall; add drywall patch $300–$930 (<a href=\"https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>) if below access is needed.",
-            "Workers'-comp policy expires 2026-12-18 (U05/U26); company aggregate '4.9 · 1,500 reviews' is a company claim (U09); address mismatch between CSLB and the company site (U04)."
+            "Workers'-comp policy expires 2026-12-18 (U05/U28); company aggregate '4.9 · 1,500 reviews' is a company claim (U09); address mismatch between CSLB and the company site (U04)."
           ],
           "src": [
             "S08",
             "S40",
             "S34",
-            "S64",
+            "S67",
             "S44",
             "S16"
           ]
@@ -3541,7 +3540,7 @@
             "S06",
             "S38",
             "S32",
-            "S64",
+            "S67",
             "S44",
             "S15"
           ]
@@ -3553,13 +3552,13 @@
             "<strong>56</strong> / 100",
             "Plumbing-only sole owner with a workers'-comp exemption and a license that expires 2027-01-31 (about 12 weeks after this review); its $550 quote covers a different scope (lever + spout/diverter) rather than the stuck-lever removal itself.",
             "$550 replace lever for tub plug and spout with diverter, labor + materials (owner-provided quote, <span class=\"pill warn\">UNVERIFIED</span>) — scope differs from the other two quotes; drywall not included.",
-            "License expiry 2027-01-31 and workers'-comp exemption (U06/U26); quote scope differs from the other two (U02/U14)."
+            "License expiry 2027-01-31 and workers'-comp exemption (U06/U28); quote scope differs from the other two (U02/U14)."
           ],
           "src": [
             "S07",
             "S39",
             "S33",
-            "S64",
+            "S67",
             "S44"
           ]
         }
@@ -3584,7 +3583,7 @@
             "<span class=\"pill bad\">screened out</span>"
           ],
           "src": [
-            "S63"
+            "S66"
           ]
         },
         {
@@ -3595,8 +3594,8 @@
             "<span class=\"pill info\">partner option, not a candidate</span>"
           ],
           "src": [
-            "S62",
-            "S65"
+            "S65",
+            "S68"
           ]
         },
         {
@@ -4347,47 +4346,11 @@
         },
         {
           "cells": [
-            "<code>S61</code>",
+            "<code>S64</code>",
             "<strong>CSLB License Detail #1025814 — The Genteel Plumbers Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
             "Corporation, 1181 Revere Ave, San Francisco, CA 94124, business phone (833) 436-8335; issued 2017-04-14, expires 2027-04-30; current and active; C-36 Plumbing + B General Building; $25,000 bond (American Contractors Indemnity, eff. 2023-01-01); workers&#x27; compensation insured (Technology Insurance Co., 2026-01-24 → 2027-01-24); no complaint-disclosure or additional-status line<br><small>Record printed &#x27;Data current as of 11/8/2026 2:56:58 PM&#x27;. Candidate first identified by the sf-overflow-audit session; read directly here before inclusion.</small>"
-          ],
-          "src": [
-            "S61"
-          ]
-        },
-        {
-          "cells": [
-            "<code>S62</code>",
-            "<strong>CSLB License Detail #995163 — Bernal Hill Drywall Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163</a></small>",
-            "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Corporation, 720 Anderson St, San Francisco, CA 94110, business phone (415) 533-8274; issued 2014-07-28, expires 2028-07-31; current and active; C-9 Drywall + B General Building; $25,000 bond; workers&#x27; compensation insured (Endurance Assurance, 2026-03-10 → 2027-03-10, class 5447 wallboard installation); no disclosure line<br><small>Record printed &#x27;Data current as of 11/8/2026 2:58:18 PM&#x27;. Drywall specialist — not a plumbing candidate; listed as a ceiling-restoration partner option.</small>"
-          ],
-          "src": [
-            "S62"
-          ]
-        },
-        {
-          "cells": [
-            "<code>S63</code>",
-            "<strong>CSLB License Detail #1009195 — Advanced Plumbing and Drain Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195</a></small>",
-            "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Corporation, 3450 Sacramento St 204, San Francisco, CA 94118, business phone (415) 744-4944; expires 2027-11-30; current and active; C-36 only; Additional Status printed verbatim: &#x27;The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.&#x27;; workers&#x27; comp insured (Hartford, 2026-08-21 → 2027-08-21)<br><small>Record printed &#x27;Data current as of 11/8/2026 2:58:23 PM&#x27;. Screened out of the ranking because of the official notice; reported verbatim, no interpretation.</small>"
-          ],
-          "src": [
-            "S63"
-          ]
-        },
-        {
-          "cells": [
-            "<code>S64</code>",
-            "<strong>CSLB — B General Building classification (B&amp;P §7057)</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B</a></small>",
-            "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "§7057(b): a general building contractor shall not take a prime contract for a project involving trades other than framing or carpentry unless it requires at least two unrelated trades, or unless the contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor<br><small>Read directly on cslb.ca.gov, 2026-11-08. Basis for weighting B + C-36 on one license as the single-provider criterion.</small>"
           ],
           "src": [
             "S64"
@@ -4396,10 +4359,10 @@
         {
           "cells": [
             "<code>S65</code>",
-            "<strong>CSLB — C-9 Drywall classification</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9</a></small>",
+            "<strong>CSLB License Detail #995163 — Bernal Hill Drywall Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "A drywall contractor lays out and installs gypsum wall board and assemblies and performs taping and texturing (16 CCR Div. 8 Art. 3)<br><small>Read directly on cslb.ca.gov, 2026-11-08.</small>"
+            "Corporation, 720 Anderson St, San Francisco, CA 94110, business phone (415) 533-8274; issued 2014-07-28, expires 2028-07-31; current and active; C-9 Drywall + B General Building; $25,000 bond; workers&#x27; compensation insured (Endurance Assurance, 2026-03-10 → 2027-03-10, class 5447 wallboard installation); no disclosure line<br><small>Record printed &#x27;Data current as of 11/8/2026 2:58:18 PM&#x27;. Drywall specialist — not a plumbing candidate; listed as a ceiling-restoration partner option.</small>"
           ],
           "src": [
             "S65"
@@ -4408,10 +4371,10 @@
         {
           "cells": [
             "<code>S66</code>",
-            "<strong>Genteel Plumbers — official site</strong><br><small><a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.genteelplumbers.com/</a></small>",
-            "The Genteel Plumbers Inc<br><span class=\"pill info\">company</span>",
+            "<strong>CSLB License Detail #1009195 — Advanced Plumbing and Drain Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Company states: office at 1181 Revere Avenue, San Francisco (matches CSLB); phone 415-465-5853; dispatch fee $149 applied to the cost of services; same-day service in San Francisco and San Mateo County; does not cross the Golden Gate or Bay Bridge and does not serve the Financial District; founded 2016 by Graham W. Jones<br><small>Read directly. Company self-description is not independent verification; the license number was not printed on the fetched home page — license facts come from CSLB #1025814. Phone differs from the CSLB record — flagged.</small>"
+            "Corporation, 3450 Sacramento St 204, San Francisco, CA 94118, business phone (415) 744-4944; expires 2027-11-30; current and active; C-36 only; Additional Status printed verbatim: &#x27;The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.&#x27;; workers&#x27; comp insured (Hartford, 2026-08-21 → 2027-08-21)<br><small>Record printed &#x27;Data current as of 11/8/2026 2:58:23 PM&#x27;. Screened out of the ranking because of the official notice; reported verbatim, no interpretation.</small>"
           ],
           "src": [
             "S66"
@@ -4420,10 +4383,10 @@
         {
           "cells": [
             "<code>S67</code>",
-            "<strong>Rapid Flow Plumbing &amp; Rooter — official site</strong><br><small><a href=\"https://www.rapidflowbayarea.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.rapidflowbayarea.com/</a></small>",
-            "Rapid Flow Plumbing &amp; Rooter Inc<br><span class=\"pill info\">company</span>",
+            "<strong>CSLB — B General Building classification (B&amp;P §7057)</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Company prints &#x27;CA License #1115649 · B General Building · C-36 Plumbing&#x27;, 230 Edinburgh St, San Francisco 94112, phones 844-BAY-FLOW and (415) 866-8401; lists general contracting (remodels, renovations), leak detection and repair, &#x27;residential and commercial expertise&#x27;, &#x27;fully bonded&#x27;<br><small>Read directly. Company self-description is not independent verification; license, address and phone match CSLB #1115649.</small>"
+            "§7057(b): a general building contractor shall not take a prime contract for a project involving trades other than framing or carpentry unless it requires at least two unrelated trades, or unless the contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor<br><small>Read directly on cslb.ca.gov, 2026-11-08. Basis for weighting B + C-36 on one license as the single-provider criterion.</small>"
           ],
           "src": [
             "S67"
@@ -4432,10 +4395,10 @@
         {
           "cells": [
             "<code>S68</code>",
-            "<strong>Manny&#x27;s Plumbing &amp; Rooters — official site</strong><br><small><a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.mannysplumbingandremodeling.com/</a></small>",
-            "Manny&#x27;s Plumbing &amp; Rooter<br><span class=\"pill info\">company</span>",
+            "<strong>CSLB — C-9 Drywall classification</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Company prints &#x27;License # 841229&#x27;, &#x27;C-36 Plumbing / General B - Insured &amp; Bonded&#x27;; services include tub install, drain clean and drain replacement, kitchen and bathroom remodeling, residential and commercial; serves nine San Mateo County cities &#x27;and surrounding areas of San Mateo &amp; San Francisco Counties&#x27;<br><small>Read directly. &#x27;Insured&#x27; is a company statement; the CSLB record shows a workers&#x27;-compensation exemption (&#x27;no employees&#x27;) — flagged for a certificate request.</small>"
+            "A drywall contractor lays out and installs gypsum wall board and assemblies and performs taping and texturing (16 CCR Div. 8 Art. 3)<br><small>Read directly on cslb.ca.gov, 2026-11-08.</small>"
           ],
           "src": [
             "S68"
@@ -4444,10 +4407,10 @@
         {
           "cells": [
             "<code>S69</code>",
-            "<strong>General SF — Building services page</strong><br><small><a href=\"https://generalsf.com/building\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://generalsf.com/building</a></small>",
-            "General SF<br><span class=\"pill info\">company</span>",
+            "<strong>Genteel Plumbers — official site</strong><br><small><a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.genteelplumbers.com/</a></small>",
+            "The Genteel Plumbers Inc<br><span class=\"pill info\">company</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Building page lists &#x27;Sheetrock/Tape and Texture&#x27; and &#x27;Rough and Finish Plumbing&#x27; among services; footer prints &#x27;CSLB. 959843&#x27; and phone (650)-303-1515<br><small>Read directly. Company self-description is not independent verification; license and phone match CSLB #959843.</small>"
+            "Company states: office at 1181 Revere Avenue, San Francisco (matches CSLB); phone 415-465-5853; dispatch fee $149 applied to the cost of services; same-day service in San Francisco and San Mateo County; does not cross the Golden Gate or Bay Bridge and does not serve the Financial District; founded 2016 by Graham W. Jones<br><small>Read directly. Company self-description is not independent verification; the license number was not printed on the fetched home page — license facts come from CSLB #1025814. Phone differs from the CSLB record — flagged.</small>"
           ],
           "src": [
             "S69"
@@ -4456,10 +4419,10 @@
         {
           "cells": [
             "<code>S70</code>",
-            "<strong>Handyman Heroes — Handyman services page</strong><br><small><a href=\"https://www.handymanhero.es/handyman-services/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.handymanhero.es/handyman-services/</a></small>",
-            "Handyman Heroes Inc<br><span class=\"pill info\">company</span>",
+            "<strong>Rapid Flow Plumbing &amp; Rooter — official site</strong><br><small><a href=\"https://www.rapidflowbayarea.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.rapidflowbayarea.com/</a></small>",
+            "Rapid Flow Plumbing &amp; Rooter Inc<br><span class=\"pill info\">company</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "Page states &#x27;sheetrock and wall repairs&#x27;, &#x27;plumbing and electrical services&#x27;, service to &#x27;San Francisco homes and apartments&#x27;, bathroom remodeling including tub and shower upgrades, license #1003394 and phone 1-844-382-4376; lists dated customer testimonials (latest 2026-11-06)<br><small>Read directly. Company self-description and testimonials are not independent verification; license and phone match CSLB #1003394.</small>"
+            "Company prints &#x27;CA License #1115649 · B General Building · C-36 Plumbing&#x27;, 230 Edinburgh St, San Francisco 94112, phones 844-BAY-FLOW and (415) 866-8401; lists general contracting (remodels, renovations), leak detection and repair, &#x27;residential and commercial expertise&#x27;, &#x27;fully bonded&#x27;<br><small>Read directly. Company self-description is not independent verification; license, address and phone match CSLB #1115649.</small>"
           ],
           "src": [
             "S70"
@@ -4468,10 +4431,10 @@
         {
           "cells": [
             "<code>S71</code>",
-            "<strong>Yelp — Genteel Plumbers (two listings)</strong><br><small><a href=\"https://www.yelp.com/biz/genteel-plumbers-san-francisco-7\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/genteel-plumbers-san-francisco-7</a></small>",
-            "Yelp<br><span class=\"pill info\">platform</span>",
-            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
-            "Search-result snapshot 2026-11-08: listing &#x27;-7&#x27; shows 4.7 ★ (519 reviews) at 1314 22nd Ave Ste 007, phone (415) 598-0562; a second listing &#x27;-8&#x27; shows 4.6 ★ (17 reviews) at 1181 Revere Ave, phone (415) 484-3631<br><small>Direct page fetch returned HTTP 403 on 2026-11-08; values come from Yelp search-result text and are third-party, point-in-time and unverified. Two listings for one company — flagged.</small>"
+            "<strong>Manny&#x27;s Plumbing &amp; Rooters — official site</strong><br><small><a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.mannysplumbingandremodeling.com/</a></small>",
+            "Manny&#x27;s Plumbing &amp; Rooter<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Company prints &#x27;License # 841229&#x27;, &#x27;C-36 Plumbing / General B - Insured &amp; Bonded&#x27;; services include tub install, drain clean and drain replacement, kitchen and bathroom remodeling, residential and commercial; serves nine San Mateo County cities &#x27;and surrounding areas of San Mateo &amp; San Francisco Counties&#x27;<br><small>Read directly. &#x27;Insured&#x27; is a company statement; the CSLB record shows a workers&#x27;-compensation exemption (&#x27;no employees&#x27;) — flagged for a certificate request.</small>"
           ],
           "src": [
             "S71"
@@ -4480,10 +4443,10 @@
         {
           "cells": [
             "<code>S72</code>",
-            "<strong>Yelp — Ace Plumbing &amp; Rooter</strong><br><small><a href=\"https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco</a></small>",
-            "Yelp<br><span class=\"pill info\">platform</span>",
-            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
-            "Search-result snapshot 2026-11-08: 4.7 ★ with 1.4k–1.5k reviews, &#x27;Verified License&#x27;, &#x27;Serving San Francisco and the Surrounding Area&#x27;<br><small>Direct page fetch is blocked (HTTP 403); values are third-party and unverified. &#x27;Verified License&#x27; is a platform badge, not CSLB verification.</small>"
+            "<strong>General SF — Building services page</strong><br><small><a href=\"https://generalsf.com/building\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://generalsf.com/building</a></small>",
+            "General SF<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Building page lists &#x27;Sheetrock/Tape and Texture&#x27; and &#x27;Rough and Finish Plumbing&#x27; among services; footer prints &#x27;CSLB. 959843&#x27; and phone (650)-303-1515<br><small>Read directly. Company self-description is not independent verification; license and phone match CSLB #959843.</small>"
           ],
           "src": [
             "S72"
@@ -4492,10 +4455,10 @@
         {
           "cells": [
             "<code>S73</code>",
-            "<strong>Yelp — Manny&#x27;s Plumbing &amp; Rooters</strong><br><small><a href=\"https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city</a></small>",
-            "Yelp<br><span class=\"pill info\">platform</span>",
-            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
-            "Search-result snapshot 2026-11-08: 4.7 ★ (175 reviews), 41 Midvale Dr, Daly City, (650) 207-5733; the business&#x27;s own specialties text lists &#x27;tub and shower valve repair and install&#x27; and &#x27;tub overflow repair and replacement&#x27;; &#x27;Bathtub repair&#x27; appears under services &#x27;Verified by Business&#x27;<br><small>Direct page fetch is blocked (HTTP 403); values are third-party and unverified. The specialties text is the business&#x27;s own description on the platform.</small>"
+            "<strong>Handyman Heroes — Handyman services page</strong><br><small><a href=\"https://www.handymanhero.es/handyman-services/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.handymanhero.es/handyman-services/</a></small>",
+            "Handyman Heroes Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Page states &#x27;sheetrock and wall repairs&#x27;, &#x27;plumbing and electrical services&#x27;, service to &#x27;San Francisco homes and apartments&#x27;, bathroom remodeling including tub and shower upgrades, license #1003394 and phone 1-844-382-4376; lists dated customer testimonials (latest 2026-11-06)<br><small>Read directly. Company self-description and testimonials are not independent verification; license and phone match CSLB #1003394.</small>"
           ],
           "src": [
             "S73"
@@ -4504,10 +4467,10 @@
         {
           "cells": [
             "<code>S74</code>",
-            "<strong>Yelp — Rapid Flow Plumbing (search)</strong><br><small><a href=\"https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&amp;find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&amp;find_loc=San+Francisco%2C+CA</a></small>",
+            "<strong>Yelp — Genteel Plumbers (two listings)</strong><br><small><a href=\"https://www.yelp.com/biz/genteel-plumbers-san-francisco-7\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/genteel-plumbers-san-francisco-7</a></small>",
             "Yelp<br><span class=\"pill info\">platform</span>",
             "<span class=\"pill warn\">HTTP 403 — manual review</span>",
-            "Prior-session snapshot 2026-11-07: 5.0 ★ (8 reviews); not re-seen in 2026-11-08 search results<br><small>Direct fetch blocked (HTTP 403). Third-party, thin evidence (8 reviews) — treated as a low score on the review criterion, not as verification.</small>"
+            "Search-result snapshot 2026-11-08: listing &#x27;-7&#x27; shows 4.7 ★ (519 reviews) at 1314 22nd Ave Ste 007, phone (415) 598-0562; a second listing &#x27;-8&#x27; shows 4.6 ★ (17 reviews) at 1181 Revere Ave, phone (415) 484-3631<br><small>Direct page fetch returned HTTP 403 on 2026-11-08; values come from Yelp search-result text and are third-party, point-in-time and unverified. Two listings for one company — flagged.</small>"
           ],
           "src": [
             "S74"
@@ -4516,10 +4479,10 @@
         {
           "cells": [
             "<code>S75</code>",
-            "<strong>GitHub Actions — Pages run 42413503253 for main @ 1faccdc (deploy failed)</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253</a></small>",
-            "GitHub (this repository)<br><span class=\"pill info\">primary</span>",
-            "<span class=\"pill ok\">verified 2026-11-08</span>",
-            "&#x27;pages build and deployment&#x27; for commit 1faccdc: build job success, deploy job failure; deployment 7626930247 went in_progress 2026-11-07T20:57:32Z and failure at 21:08:10Z<br><small>Checked with gh run view / gh api on 2026-11-08. The live site kept serving the previous successful deploy (08fa03b). Re-triggered by this session&#x27;s merge.</small>"
+            "<strong>Yelp — Ace Plumbing &amp; Rooter</strong><br><small><a href=\"https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Search-result snapshot 2026-11-08: 4.7 ★ with 1.4k–1.5k reviews, &#x27;Verified License&#x27;, &#x27;Serving San Francisco and the Surrounding Area&#x27;<br><small>Direct page fetch is blocked (HTTP 403); values are third-party and unverified. &#x27;Verified License&#x27; is a platform badge, not CSLB verification.</small>"
           ],
           "src": [
             "S75"
@@ -4528,13 +4491,49 @@
         {
           "cells": [
             "<code>S76</code>",
+            "<strong>Yelp — Manny&#x27;s Plumbing &amp; Rooters</strong><br><small><a href=\"https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Search-result snapshot 2026-11-08: 4.7 ★ (175 reviews), 41 Midvale Dr, Daly City, (650) 207-5733; the business&#x27;s own specialties text lists &#x27;tub and shower valve repair and install&#x27; and &#x27;tub overflow repair and replacement&#x27;; &#x27;Bathtub repair&#x27; appears under services &#x27;Verified by Business&#x27;<br><small>Direct page fetch is blocked (HTTP 403); values are third-party and unverified. The specialties text is the business&#x27;s own description on the platform.</small>"
+          ],
+          "src": [
+            "S76"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S77</code>",
+            "<strong>Yelp — Rapid Flow Plumbing (search)</strong><br><small><a href=\"https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&amp;find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&amp;find_loc=San+Francisco%2C+CA</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Prior-session snapshot 2026-11-07: 5.0 ★ (8 reviews); not re-seen in 2026-11-08 search results<br><small>Direct fetch blocked (HTTP 403). Third-party, thin evidence (8 reviews) — treated as a low score on the review criterion, not as verification.</small>"
+          ],
+          "src": [
+            "S77"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S78</code>",
+            "<strong>GitHub Actions — Pages run 42413503253 for main @ 1faccdc (deploy failed)</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253</a></small>",
+            "GitHub (this repository)<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "&#x27;pages build and deployment&#x27; for commit 1faccdc: build job success, deploy job failure; deployment 7626930247 went in_progress 2026-11-07T20:57:32Z and failure at 21:08:10Z<br><small>Checked with gh run view / gh api on 2026-11-08. The live site kept serving the previous successful deploy (08fa03b). Re-triggered by this session&#x27;s merge.</small>"
+          ],
+          "src": [
+            "S78"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S79</code>",
             "<strong>Open PR #42 (stale parallel session)</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/pull/42\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/pull/42</a></small>",
             "GitHub<br><span class=\"pill info\">primary</span>",
             "<span class=\"pill ok\">verified 2026-11-08</span>",
             "Open, mergeable=CONFLICTING, last updated 2026-11-08T20:41:27Z, branch arena/7e5f723c-korea7, overlaps the root dashboard pages<br><small>Checked with gh pr list on 2026-11-08. Not merged, closed or edited by this session (owned by another session). Four older GEMS-era PRs (#20, #18, #15, #2) are also open and conflicting.</small>"
           ],
           "src": [
-            "S76"
+            "S79"
           ]
         }
       ],
