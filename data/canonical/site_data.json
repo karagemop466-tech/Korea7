@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated": "2026-11-07",
-    "session": "arena/2eb487ad-korea7",
+    "updated": "2026-11-08",
+    "session": "arena/13d957de-korea7",
     "title": "Bathtub overflow trip lever — repair research dashboard",
     "pages_url": "https://karagemop466-tech.github.io/Korea7/",
     "repo_url": "https://github.com/karagemop466-tech/Korea7"
@@ -648,6 +648,16 @@
       "checked": "2026-11-07",
       "supports": "Ranked shortlist of dual-classified (B + C-36) firms with a vetting script",
       "note": "Page produced by a concurrent session, merged unchanged and linked from the dashboard navigation."
+    },
+    "S61": {
+      "label": "Fast Response — plumbing repair and replacement",
+      "publisher": "Fast Response Plumbing & Rooter",
+      "url": "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Company lists bathtub waste and overflow repair and replacement in San Francisco and publishes a phone number",
+      "note": "Company self-description, not proof of experience with this stuck mechanism, drywall, availability or acceptance of this job."
     },
     "S60": {
       "label": "SF overflow audit — parallel session dashboard",
@@ -1741,7 +1751,7 @@
             "Every table row has an official source link; unconfirmable values are blank and flagged",
             "Verification",
             "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
-            "<span class=\"pill ok\">enforced by build + verify scripts</span>"
+            "<span class=\"pill warn\">not fully enforced — see U21</span>"
           ],
           "src": [
             "S44",
@@ -2079,13 +2089,15 @@
         {
           "cells": [
             "F06",
-            "Two licenses show a workers'-compensation exemption 'no employees', and one policy expires 2026-12-18",
-            "CSLB #757796, #959843, #1024971",
+            "Four licenses show a workers'-compensation exemption 'no employees', and one policy expires 2026-12-18",
+            "CSLB #757796, #959843, #1115649, #841229, #1024971",
             "<span class=\"pill ok\">verified on CSLB</span> <span class=\"pill warn\">flagged</span>"
           ],
           "src": [
             "S07",
             "S09",
+            "S56",
+            "S57",
             "S08"
           ]
         },
@@ -2242,14 +2254,16 @@
         {
           "cells": [
             "U06",
-            "Workers'-compensation exemptions on #757796 and #959843",
-            "Both CSLB records state the licensee certified 'no employees at this time'",
+            "Workers'-compensation exemptions on #757796, #959843, #1115649 and #841229",
+            "All four CSLB records state the licensee certified 'no employees at this time'",
             "Confirm in writing who will be on site and what coverage applies to the crew",
             "<span class=\"pill warn\">verified fact / needs review</span>"
           ],
           "src": [
             "S07",
-            "S09"
+            "S09",
+            "S56",
+            "S57"
           ]
         },
         {
@@ -2413,8 +2427,8 @@
         {
           "cells": [
             "U20",
-            "No provider has been contacted and none has confirmed this job",
-            "This is desk research; no capability, availability, price or service-area confirmation exists from any provider",
+            "No provider was contacted during this desk-research session",
+            "The owner reported prior estimates; this research session did not contact providers or independently confirm job-specific scope, current price or availability",
             "Contact shortlisted firms with the written scope",
             "<span class=\"pill warn\">UNVERIFIED</span>"
           ],
@@ -2422,6 +2436,19 @@
             "S44",
             "S45",
             "S58"
+          ]
+        },
+        {
+          "cells": [
+            "U21",
+            "Official-source coverage and automated verification limits",
+            "Some rows cite only publishers, platforms or internal project records, not government sources; source-link checks do not establish truth, relevance or live availability. Prior verification dates are historical.",
+            "Review each row and its cited source manually; do not treat a generic official link as proof of unrelated facts",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S04",
+            "S45"
           ]
         },
         {
@@ -3314,6 +3341,18 @@
           ],
           "src": [
             "S60"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S61</code>",
+            "<strong>Fast Response — plumbing repair and replacement</strong><br><small><a href=\"https://www.fastresponseplumbingsf.com/plumbing-repair-replacement\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.fastresponseplumbingsf.com/plumbing-repair-replacement</a></small>",
+            "Fast Response Plumbing &amp; Rooter<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Company lists bathtub waste and overflow repair and replacement in San Francisco and publishes a phone number<br><small>Company self-description, not proof of experience with this stuck mechanism, drywall, availability or acceptance of this job.</small>"
+          ],
+          "src": [
+            "S61"
           ]
         }
       ],
