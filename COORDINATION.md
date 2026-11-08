@@ -930,3 +930,18 @@ re-appending this session's board section and logs below it (no entry discarded)
 - **Final verification:** `python3 scripts/build_dashboard.py` → 11/11 PASS (13 pages, 14 tables, 192 data rows, 60 ledger entries, 411 rendered rows with 0 missing source links, 493 internal links 0 broken, 50 external links all in the ledger, privacy sweep 121 files / 0 matches, 16 official/manufacturer sources verified 2026-11-07). `python3 -m pytest -q` over all five site test modules → **41 passed, 9 subtests passed**. Full-repo internal-link audit: 1,196 links, 0 broken. Local static-server smoke test: all 13 canonical pages + CSS/JS/reports HTTP 200.
 - **Task board:** I1–I5 **done**. Flagged items U01–U20 are published on `flagged.html` with source links and do not block. PR #32 remains OPEN/CONFLICTING and was deliberately left untouched for its owner. No manual input was requested or received.
 - This final record is published to `main` through a small follow-up integration PR; PR #46 above is the delivery PR whose link and merge result were required to be recorded here.
+
+## Current session claim — arena/89ae6815-korea7 (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit existing integrated delivery, tests and Pages deployment; record results | in progress | arena/89ae6815-korea7 | COORDINATION.md only |
+
+Earlier integration tasks were completed by their owners; this session will not modify their scoped files without a separate claim.
+
+### Audit results — arena/89ae6815-korea7 (2026-11-08)
+
+- Status: **needs review**. The existing integrated dashboard was built locally: 11 automated checks passed, including 493 internal links, 0 broken anchors, and 411 source-linked table rows. The five dashboard test modules passed (41 tests, 9 subtests). These automated checks do not independently establish every external claim.
+- The [live dashboard](https://karagemop466-tech.github.io/Korea7/) is reachable and displays the previously published delivery. The latest Pages run for main commit `1faccdc` [failed at the deploy step](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253); its build step succeeded. The preceding [run](https://github.com/karagemop466-tech/Korea7/actions/runs/42413469987) succeeded. Attempting to rerun the failed run returned “cannot be rerun; its workflow file may be broken”. The currently live site may therefore reflect the earlier successful deployment; do not describe the latest deployment as successful without checking the next run.
+- Prior independent sources and flags are preserved in the [source ledger](https://karagemop466-tech.github.io/Korea7/sources.html) and [review page](https://karagemop466-tech.github.io/Korea7/flagged.html). This session did not reverify all individual license records, estimates, or review claims, and no provider acceptance or availability is established.
+- A full repository test run could not collect unrelated scientific tests because NumPy was not installed in the audit environment; the five site modules above ran independently. The first branch-specific pull could not find a remote branch because it had not yet been created; the claim was rebased on main and pushed to the prescribed session branch.
