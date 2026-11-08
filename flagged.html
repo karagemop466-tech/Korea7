@@ -98,8 +98,8 @@
 <tr>
 <td>U06</td>
 <td>Workers'-compensation exemptions on #757796, #959843, #1115649 and #841229</td>
-<td>All four CSLB records state the licensee certified 'no employees at this time' (re-read 2026-11-08); Manny's company site nevertheless says 'Insured &amp; Bonded'</td>
-<td>Confirm in writing who will be on site and what coverage applies to the crew; request a certificate of insurance</td>
+<td>All four CSLB records state the licensee certified 'no employees at this time'</td>
+<td>Confirm in writing who will be on site and what coverage applies to the crew</td>
 <td><span class="pill warn">verified fact / needs review</span></td>
 <td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #757796 — Bay Area Plumbing">S07</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc">S56</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter">S57</a></span></td>
 </tr>
@@ -209,18 +209,34 @@
 </tr>
 <tr>
 <td>U20</td>
-<td>No provider has been contacted and none has confirmed this job</td>
-<td>This is desk research; no capability, availability, price or service-area confirmation exists from any provider</td>
+<td>No provider was contacted during this desk-research session</td>
+<td>The owner reported prior estimates; this research session did not contact providers or independently confirm job-specific scope, current price or availability</td>
 <td>Contact shortlisted firms with the written scope</td>
 <td><span class="pill warn">UNVERIFIED</span></td>
 <td class="src-col"><span class="src-ids"><a href="brief.html" title="Project brief (owner-provided primary record)">S44</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a></span></td>
 </tr>
 <tr>
+<td>U21</td>
+<td>Official-source coverage and automated verification limits</td>
+<td>Some rows cite only publishers, platforms or internal project records, not government sources; source-link checks do not establish truth, relevance or live availability. Prior verification dates are historical.</td>
+<td>Review each row and its cited source manually; do not treat a generic official link as proof of unrelated facts</td>
+<td><span class="pill warn">UNVERIFIED</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener noreferrer" title="CSLB — Check a License">S04</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+</tr>
+<tr>
+<td>U22</td>
+<td>License classifications do not establish the only possible repair arrangement</td>
+<td>B + C-36 is a useful screening signal, not proof of acceptance or an exclusive route. BPC §7059 allows qualifying incidental and supplemental work by specialty contractors; application to this ceiling is not established. The archived docs/overflow-verification.html contains more categorical statements that omit this qualification</td>
+<td>Ask each contractor for a written scope, responsible trades and confirmation of applicable requirements</td>
+<td><span class="pill warn">UNVERIFIED</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC" target="_blank" rel="noopener noreferrer" title="California BPC §7059 — specialty contractor incidental work">S62</a> · <a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a> · <a href="docs/overflow-verification.html" title="Archived overflow verification page">S63</a></span></td>
+</tr>
+<tr>
 <td>U23</td>
-<td>Previous Pages deploy of main failed</td>
-<td>Run 42413503253 for main @ 1faccdc: build success, deploy failure (2026-11-07T21:08:10Z); the live site kept serving the earlier deploy 08fa03b</td>
-<td>Re-deploy from the next merge to main and confirm the Actions run and the deployment status both succeed — recorded on the Verification page and the coordination board</td>
-<td><span class="pill warn">irregularity</span></td>
+<td>Pages deploy of main @ 1faccdc failed on 2026-11-07</td>
+<td>Run 42413503253 for main @ 1faccdc: build success, deploy failure (2026-11-07T21:08:10Z); the live site kept serving the earlier deploy 08fa03b until later merges re-deployed successfully (latest before this session's merge: run 42533131013 for 665f41d, success 2026-11-08T23:01:52Z; Pages API status 'built')</td>
+<td>Confirm the Actions run and the deployment status for this session's merge commit as well — recorded on the coordination board</td>
+<td><span class="pill warn">irregularity — resolved by later deploys</span></td>
 <td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253" target="_blank" rel="noopener noreferrer" title="GitHub Actions — Pages run 42413503253 for main @ 1faccdc (deploy failed)">S78</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
 <tr>
@@ -241,11 +257,11 @@
 </tr>
 <tr>
 <td>U26</td>
-<td>Five stale open pull requests, all conflicting</td>
-<td>PR #42 (parallel dashboard session, updated 2026-11-08) and GEMS-era PRs #20, #18, #15, #2 are open with mergeable=CONFLICTING; none was merged, closed or edited by this session</td>
+<td>Six stale open pull requests, all conflicting</td>
+<td>PR #42 (parallel dashboard session, last updated 2026-11-07), PR #32 (see U13) and GEMS-era PRs #20, #18, #15, #2 are open with mergeable=CONFLICTING on 2026-11-08; none was merged, closed or edited by this session</td>
 <td>Owners of those branches should rebase onto main or close them; the canonical dashboard is on main</td>
 <td><span class="pill warn">irregularity</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/pull/42" target="_blank" rel="noopener noreferrer" title="Open PR #42 (stale parallel session)">S79</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a></span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/pull/42" target="_blank" rel="noopener noreferrer" title="Open PR #42 (stale parallel session)">S79</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer" title="Open PR #32 (stale parallel session)">S52</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a></span></td>
 </tr>
 <tr>
 <td>U27</td>

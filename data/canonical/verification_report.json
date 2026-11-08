@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T23:15:51+00:00",
+  "generated_at": "2026-11-08T23:17:48+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -19,13 +19,13 @@
   "counts": {
     "pages": 14,
     "tables": 18,
-    "rows": 257,
-    "source_ledger_entries": 76,
-    "verified_sources": 61,
-    "official_or_manufacturer_verified": 21,
-    "generated_tbody_rows": 541,
-    "internal_links_checked": 551,
-    "unique_external_links": 66,
+    "rows": 262,
+    "source_ledger_entries": 79,
+    "verified_sources": 64,
+    "official_or_manufacturer_verified": 22,
+    "generated_tbody_rows": 551,
+    "internal_links_checked": 559,
+    "unique_external_links": 68,
     "published_text_files_scanned": 122
   },
   "checks": [
@@ -37,7 +37,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "541 tbody rows checked, 0 missing links"
+      "detail": "551 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -47,7 +47,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "551 internal links checked, 0 broken"
+      "detail": "559 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -57,7 +57,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "66 unique external links, 0 unknown/dead"
+      "detail": "68 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -80,9 +80,9 @@
       "detail": "0 dead-source links"
     },
     {
-      "name": "Official sources verified directly",
+      "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "21 official/manufacturer sources verified directly (17 of them re-read 2026-11-08); 61 sources verified overall"
+      "detail": "22 official/manufacturer sources marked verified (18 of them with a 2026-11-08 read date); 64 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -108,6 +108,7 @@
     "https://github.com/karagemop466-tech/Korea7/pull/42",
     "https://karagemop466-tech.github.io/Korea7/",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
     "https://www.aceplumbingandrooter.com/",
     "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
     "https://www.angi.com/articles/what-is-overflow-drain.htm",
@@ -121,6 +122,7 @@
     "https://www.eplumbingsolutions.com/",
     "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
     "https://www.fastresponseplumbingsf.com/",
+    "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
     "https://www.genteelplumbers.com/",
     "https://www.handymanhero.es/",
     "https://www.handymanhero.es/handyman-services/",
