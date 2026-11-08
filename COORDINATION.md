@@ -1030,3 +1030,23 @@ The prior final integration is already complete; this is a follow-up rather than
 - Two merge conflicts with concurrent sessions resolved preserving both sides' board records and incoming generated verification files; no work discarded.
 - **Delivery:** [PR #57](https://github.com/karagemop466-tech/Korea7/pull/57) merged without approval on 2026-11-08 at 23:00:36Z, merge commit `c3c01066eff7c357b45b53abb7c45f18219a121c`. Its [Pages build and deploy run 42533022816](https://github.com/karagemop466-tech/Korea7/actions/runs/42533022816) succeeded; the live flagged page was fetched and displays both U21 and U22. After the concurrent integration, the build passed 11 structural checks with 501 internal links and the site test suite passed 46 tests and 9 subtests. The Pages workflow reported a non-blocking GitHub-hosted action runtime deprecation warning. A follow-up corrects the stale flag-range label and records this delivery; it does not assert a new external re-verification.
 - A further board-only conflict with PR #58 was resolved by retaining the full incoming board and appending the PR #57 delivery record; no other work was discarded.
+
+### Rebase conflict resolution — session `arena/e7305a26-korea7` (2026-11-08)
+
+The incoming `main` board above was retained verbatim; this session’s claim section is appended below. No other session’s entry was removed.
+
+---
+
+# Session `arena/e7305a26-korea7` — final integration claim (2026-11-08)
+
+**Platform constraint:** this session is bound to `arena/e7305a26-korea7`; it cannot create or push the `session-<id>/<task>` branch described in the requester’s coordination protocol. All work stays on this fixed branch, with an additive, explicitly listed file scope. No private project rationale is recorded on this public board or any site page.
+
+| Task | Status | Owner session | File scope |
+|---|---|---|---|
+| E1 | Re-read board, take over stale integration/root-page scope, claim and push immediately | in progress | `arena/e7305a26-korea7` | `COORDINATION.md` |
+| E2 | Line-by-line audit of canonical and legacy table rows; verify official sources and business phones; blank/flag unverified cells; publish ranked decision analysis and costs | unclaimed | `arena/e7305a26-korea7` | `scripts/dashboard_content.py`, `scripts/build_dashboard.py`, `scripts/verify_dashboard.py`, generated canonical `*.html`, `shortlist.html`, `data/canonical/**`, `EXECUTIVE-SUMMARY.md`, `README.md`, `assets/dashboard.css`, `tests/test_dashboard.py`, `tests/test_dashboard_integrity.py`, `tests/test_overflow_site.py`, `tests/test_bath_site.py` |
+| E3 | Full-repo link/build/test audit, repo irregularity flags, executive-summary reconciliation | unclaimed | `arena/e7305a26-korea7` | `flagged.html`, `repo-review.html`, `verification.html`, `data/canonical/verification_report.*`, `COORDINATION.md` |
+| E4 | PR from this branch to `main`, merge without waiting, confirm successful Pages deployment, record links/results | unclaimed | `arena/e7305a26-korea7` | GitHub PR/Pages, `COORDINATION.md` |
+
+**Handoff rule applied:** open PR #42 (`arena/7e5f723c-korea7`) and the root-page claims in prior board sections are more than 60 minutes old with no later commits; all earlier delivery PRs are merged. Under the board’s stale-claim rule this session takes over the integration/root-page scope only. PR #42 is left untouched and is flagged for its owner’s reconciliation; its content is not discarded.
+>>>>>>> 811088d (Claim final dashboard integration and audit scope)
