@@ -945,3 +945,58 @@ Earlier integration tasks were completed by their owners; this session will not 
 - The [live dashboard](https://karagemop466-tech.github.io/Korea7/) is reachable and displays the previously published delivery. The latest Pages run for main commit `1faccdc` [failed at the deploy step](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253); its build step succeeded. The preceding [run](https://github.com/karagemop466-tech/Korea7/actions/runs/42413469987) succeeded. Attempting to rerun the failed run returned “cannot be rerun; its workflow file may be broken”. The currently live site may therefore reflect the earlier successful deployment; do not describe the latest deployment as successful without checking the next run.
 - Prior independent sources and flags are preserved in the [source ledger](https://karagemop466-tech.github.io/Korea7/sources.html) and [review page](https://karagemop466-tech.github.io/Korea7/flagged.html). This session did not reverify all individual license records, estimates, or review claims, and no provider acceptance or availability is established.
 - A full repository test run could not collect unrelated scientific tests because NumPy was not installed in the audit environment; the five site modules above ran independently. The first branch-specific pull could not find a remote branch because it had not yet been created; the claim was rebased on main and pushed to the prescribed session branch.
+
+---
+
+## Session `arena/4676216c-korea7` — claim (2026-11-08)
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|------|--------|-------|------------|-------|
+| T1 | Re-verify every contractor licence row against the official CSLB record; add official phone numbers | in progress | arena/4676216c-korea7 | scripts/dashboard_content.py (contractors table), contractors.html, data/canonical/* | Read directly on www2.cslb.ca.gov 2026-11-08. |
+| T2 | Re-verify official permit / licensing / technical sources | in progress | arena/4676216c-korea7 | scripts/dashboard_content.py (SOURCES), permits.html, technical.html | sf.gov plumbing permit, sf.gov no-permit list, CSLB B and C-36 classifications, CSLB §7048, manufacturer page. |
+| T3 | Correct published inaccuracies found by this audit (counts, shortlist ranking, stale figures) | in progress | arena/4676216c-korea7 | scripts/dashboard_content.py, shortlist.html, summary.html, findings.html | See "Audit findings" below. |
+| T4 | Fix GitHub Pages deployment for `main` and confirm the live site | in progress | arena/4676216c-korea7 | COORDINATION.md, GitHub Pages settings/build | Runs for `b3e2ada` succeeded; run for `1faccdc` failed at the deploy step. |
+| T5 | Open PR to `main`, merge, record PR link and deploy result | in progress | arena/4676216c-korea7 | GitHub PR | This session is the integration session for T1–T4. |
+
+Scope note: this session edits only the files listed above. The legacy GEMS files, `sf-overflow-audit/**`,
+`docs/**`, `bathtub-overflow/**`, `tests/test_overflow_site.py`, `tests/test_bath_site.py`,
+`tests/test_sf_overflow_audit.py` and `verification-log.html` are **not** edited.
+
+### Audit findings so far (2026-11-08, all read directly from the official source)
+
+1. **CSLB licence values re-read on 2026-11-08** for #977638, #757796, #1024971, #959843, #1003394, #829071,
+   #1115649 and #841229. All eight still print *"This license is current and active."* Expiry dates, entity
+   types, addresses, classifications, bonds and workers'-compensation status all match the published rows.
+   Every record now also prints the CSLB **business phone number**, so the previously missing phone numbers
+   can be published as verified values instead of blanks.
+2. **Bay Area Plumbing (#757796) workers' compensation**: the record read today still says the licence
+   *"is exempt from having workers compensation insurance; they certified that they have no employees at this
+   time"* (effective 12/11/2024). The published row already flags this. **No change needed.**
+3. **Official permit sources re-read**: sf.gov plumbing/mechanical permit page still states a permit is needed
+   before cutting into or replacing pipes, lists C4/C16/C20/C36/C54/B/A as the licence classes that may apply,
+   and restricts the homeowner route to owners of stand-alone single-family (R-3) dwellings. The B
+   classification page still carries the §7057(b) text about holding the appropriate classification or
+   subcontracting. No change needed.
+4. **Dashboard counter mismatch (needs correction).** `index.html` card "Contractor candidates" prints **9**
+   with the note "8 with active CSLB licenses + 1 unverified lead". The contractor table has **8** rows and
+   the unverified lead (Szeto) appears only in `review_snapshots`. `contractors.html` lede says "Six San
+   Francisco candidates", `summary.html` says "Eight". Three different numbers for the same set.
+5. **PASS-count mismatch (needs correction).** The build summary line and `verification.html` text say
+   "11/11 PASS"; `verify_dashboard.py` now runs **12** checks (`Official sources verified directly` added
+   later). The published count is stale.
+6. **Stale verification date.** Source notes print `Data current as of 11/7/2026`, which is a historical
+   observation and stays, but every row was re-read on 2026-11-08 and the site should say so.
+7. **shortlist.html ranking contradiction (needs correction).** The page explains that a firm needs
+   *both* B General Building and C-36 Plumbing on one licence for the single-provider scope, yet it ranks
+   **General SF (#959843)** and **Handyman Heroes (#1003394)**, both of which carry complaint disclosure /
+   flagged items, above **Ace Plumbing & Rooter (#829071)**, which holds the widest verified classification
+   set and an insured workers'-comp policy. The ranking also lists **Rapid Flow (#1115649)** with only 8
+   reviews above **Manny's (#841229)**. Ranking rationale is being rewritten to a stated, reproducible rule.
+8. **`shortlist.html` unreachable from the dashboard nav ordering**: it is linked, so this is a note only.
+9. **Pages deployment.** `gh run list` shows the run for `main` commit `1faccdc` **failed** at the deploy step
+   (`gh run view --log-failed` cannot fetch the log: the Actions log endpoint returns an error from this
+   sandbox). The previous run for `08fa03b` succeeded, and `GET /repos/.../pages` reports
+   `"status":"errored"` while the live URL serves the dashboard. This is an open item for T4.
+10. **No privacy leakage found.** Re-ran the privacy pattern sweep over the repository: 0 matches for the
+    internal-only permit rationale. The public pages state the official permit rule neutrally and contain no
+    reference to the owner's private reason. This session adds no such wording.
