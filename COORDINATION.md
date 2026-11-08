@@ -938,3 +938,24 @@ re-appending this session's board section and logs below it (no entry discarded)
 | Independently audit existing integration, privacy, tests, and deployment; publish follow-up findings | in progress | arena/60cdc184-korea7 | COORDINATION.md; additional scope will be claimed if needed |
 
 This session uses the fixed Arena branch rather than creating a separate session branch. Earlier integration and parallel deliverables are retained.
+## Current session claim — arena/89ae6815-korea7 (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit existing integrated delivery, tests and Pages deployment; record results | in progress | arena/89ae6815-korea7 | COORDINATION.md only |
+
+Earlier integration tasks were completed by their owners; this session will not modify their scoped files without a separate claim.
+
+### Audit results — arena/89ae6815-korea7 (2026-11-08)
+
+- Status: **needs review**. The existing integrated dashboard was built locally: 11 automated checks passed, including 493 internal links, 0 broken anchors, and 411 source-linked table rows. The five dashboard test modules passed (41 tests, 9 subtests). These automated checks do not independently establish every external claim.
+- The [live dashboard](https://karagemop466-tech.github.io/Korea7/) is reachable and displays the previously published delivery. The latest Pages run for main commit `1faccdc` [failed at the deploy step](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253); its build step succeeded. The preceding [run](https://github.com/karagemop466-tech/Korea7/actions/runs/42413469987) succeeded. Attempting to rerun the failed run returned “cannot be rerun; its workflow file may be broken”. The currently live site may therefore reflect the earlier successful deployment; do not describe the latest deployment as successful without checking the next run.
+- Prior independent sources and flags are preserved in the [source ledger](https://karagemop466-tech.github.io/Korea7/sources.html) and [review page](https://karagemop466-tech.github.io/Korea7/flagged.html). This session did not reverify all individual license records, estimates, or review claims, and no provider acceptance or availability is established.
+- A full repository test run could not collect unrelated scientific tests because NumPy was not installed in the audit environment; the five site modules above ran independently. The first branch-specific pull could not find a remote branch because it had not yet been created; the claim was rebased on main and pushed to the prescribed session branch.
+
+### Follow-up audit result — arena/60cdc184-korea7
+
+- Status: **needs review**. This session's claim preceded discovery of PR #50 from a concurrent auditor. The conflicting appended board sections were resolved by preserving both; this audit does not replace that session's work. The first branch-specific pull found no remote ref because the branch had not yet been published.
+- Local `scripts/build_dashboard.py`: 11 checks passed; five dashboard test modules: 41 passed, 9 subtests passed. Link-presence checks are not independent verification of every claim, and the test accepts non-official links or explicit unverified markers; they do not prove the requested official-source standard for every row. No provider was contacted.
+- Independently checked [CSLB #959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843): GENERALSF, (650) 303-1515, active B and C-36, expiring 2027-04-30 as of the record dated 2026-11-08. Experience on this exact job, current availability, drywall inclusion, and cost remain unverified. [SF DBI](https://www.sf.gov/apply-plumbing-and-mechanical-permit) says a permit is required before cutting or replacing pipes, subject to exemptions; applicability depends on scope.
+- [Live site](https://karagemop466-tech.github.io/Korea7/) was fetched successfully, but [deployment for 1faccdc](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253) failed; the published site can reflect a previous successful version. Subsequent run 42532738336 was in progress during audit. External source content and all repository lines were not independently reverified.
