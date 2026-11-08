@@ -229,8 +229,8 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
     verified_sources = sum(1 for s in C.SOURCES.values() if s["status"] == "verified")
     official_sources = sum(1 for s in C.SOURCES.values()
                            if s["tier"] in ("official", "manufacturer") and s["status"] == "verified")
-    checks.append(check("Official sources verified directly", official_sources >= 10,
-                        "%d official/manufacturer sources verified 2026-11-07; %d sources verified overall"
+    checks.append(check("Source ledger records prior direct reads", official_sources >= 10,
+                        "%d official/manufacturer sources marked verified; %d sources marked verified overall (metadata only; no network check)"
                         % (official_sources, verified_sources)))
 
     return {
@@ -282,7 +282,7 @@ def write_report(root: Path, report: dict) -> None:
     lines += ["", "## Notes", "",
               "- Every table row is emitted with a Source column from `data/canonical/site_data.json`.",
               "- Unverified values are blank in verified cells and published on `flagged.html`.",
-              "- Official values were read directly from the issuing site on 2026-11-07; CSLB records printed",
+              "- The ledger records source-specific check dates; this automated check does not re-fetch sources. Prior CSLB checks printed",
               "  \"Data current as of 11/7/2026\".",
               "- Yelp URLs return HTTP 403 to automated access and are flagged as platform snapshots.",
               "- Dead sources: %s (documented, never linked from a row)." % ", ".join(report["dead_sources"]),
