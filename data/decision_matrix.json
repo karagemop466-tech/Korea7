@@ -1,0 +1,744 @@
+{
+  "meta": {
+    "updated": "2026-11-08",
+    "session": "arena/e7305a26-korea7",
+    "verification_date": "2026-11-08",
+    "live_site": "https://karagemop466-tech.github.io/Korea7/",
+    "repo": "https://github.com/karagemop466-tech/Korea7",
+    "policy": "Only values read from an official government, manufacturer or official company source are shown as verified. Owner-provided and third-party values are blank and flagged UNVERIFIED. Rank ordering is a documented decision analysis, not an official rating.",
+    "ranking_basis": "1) B + C-36 on one active CSLB license, 2) bond / workers compensation / complaint disclosure, 3) San Francisco address and official-site service evidence, 4) specificity of cost scope, 5) explicit gaps. No provider was contacted by this session; no provider has confirmed acceptance, availability or a price for this job."
+  },
+  "sources": {
+    "O01": {
+      "label": "CSLB — Check a License",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Official license lookup, status, classifications, bond and workers compensation"
+    },
+    "O02": {
+      "label": "CSLB — B General Building classification",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Official B classification text: a general building contractor may not take a prime contract involving other trades unless it holds the appropriate classification or subcontracts with an appropriately licensed specialty contractor"
+    },
+    "O03": {
+      "label": "CSLB — C-36 Plumbing classification",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Official C-36 classification covers plumbing and maintenance/replacement of waste-system items"
+    },
+    "O04": {
+      "label": "CSLB — Finding the right licensed contractor",
+      "publisher": "Contractors State License Board",
+      "url": "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Official guidance to check license status, get at least three written bids on identical scope, verify address/phone and insurance, and not automatically accept the lowest bid"
+    },
+    "O05": {
+      "label": "SF.gov — Apply for a plumbing and mechanical permit",
+      "publisher": "San Francisco Department of Building Inspection",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Permit is required before cutting into or replacing pipes, especially pipes covered by a wall; permit fees depend on scope; qualifying license classes; inspection before covering pipes"
+    },
+    "O06": {
+      "label": "SF.gov — Check if your construction project needs a permit",
+      "publisher": "San Francisco Department of Building Inspection",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Minor repairs to existing interior plaster or wallboard are listed among work that does not need a building permit, subject to exceptions"
+    },
+    "O07": {
+      "label": "California Business & Professions Code §7048",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Current small-job exemption is under $1,000 for casual/minor/inconsequential work that does not require a building permit; effective 2026-01-01"
+    },
+    "O08": {
+      "label": "Oatey — Dearborn trip-lever bath waste",
+      "publisher": "Oatey (manufacturer)",
+      "url": "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+      "tier": "manufacturer",
+      "checked": "2026-11-08",
+      "supports": "Manufacturer publishes a full trip-lever bath-waste-and-overflow kit with a chrome-finish stopper"
+    },
+    "O09": {
+      "label": "CSLB #977638 — Expert Plumbing Solutions",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active C-36; (415) 531-5340; 1465 44th Avenue, San Francisco; expires 2028-10-31; $25,000 bond; workers compensation insured through 2027-07-19"
+    },
+    "O10": {
+      "label": "CSLB #757796 — Bay Area Plumbing",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active C-36; (415) 668-8000; 335 14th Avenue, San Francisco; expires 2027-01-31; $25,000 bond; no-employee workers-compensation exemption"
+    },
+    "O11": {
+      "label": "CSLB #1024971 — Fast Response Plumbing and Rooter",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active C-36; (415) 596-6115; 236 W POTRAL AVE #459, San Francisco; expires 2027-03-31; $25,000 bond; workers-compensation policy expires 2026-12-18"
+    },
+    "O12": {
+      "label": "CSLB #959843 — GENERALSF",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active B, C-10, C-36; (650) 303-1515; 3624 Irving Street Ste A, San Francisco; expires 2027-04-30; $25,000 bond; no-employee workers-compensation exemption"
+    },
+    "O13": {
+      "label": "CSLB #1003394 — Handyman Heroes Inc",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active B, C-36; (844) 382-4376; 912 Cole St #202, San Francisco; expires 2027-05-31; $25,000 bond; workers compensation insured through 2027-04-25; complaint disclosure linked"
+    },
+    "O14": {
+      "label": "CSLB #829071 — Ace Plumbing & Rooter",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active A, B, C-4, C-10, C-16, C-36; (415) 824-6444; 1090 Bryant Street, San Francisco; expires 2027-06-30; $25,000 bond; workers compensation insured through 2027-07-13"
+    },
+    "O15": {
+      "label": "CSLB #1115649 — Rapid Flow Plumbing & Rooter Inc",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active B, C-36; (415) 866-8401; 230 Edinburgh St, San Francisco; expires 2028-01-31; $25,000 bond; no-employee workers-compensation exemption"
+    },
+    "O16": {
+      "label": "CSLB #841229 — Manny’s Plumbing & Rooter",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Active C-36, B; (650) 207-5733; 41 Midvale Drive, Daly City; expires 2028-06-30; $25,000 bond; no-employee workers-compensation exemption"
+    },
+    "O17": {
+      "label": "CSLB complaint disclosure #1003394",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "tier": "official",
+      "checked": "2026-11-08",
+      "supports": "Official complaint-disclosure record linked from the license detail; read before hiring"
+    },
+    "C01": {
+      "label": "Expert Plumbing Solutions — official site",
+      "publisher": "Expert Plumbing Solutions",
+      "url": "https://www.eplumbingsolutions.com/",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site publishes license #977638 and phone (415) 531-5340"
+    },
+    "C02": {
+      "label": "Bay Area Plumbing — official site",
+      "publisher": "Bay Area Plumbing",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site publishes phone (415) 668-8000 and San Francisco plumbing services"
+    },
+    "C03": {
+      "label": "Fast Response — plumbing repair & replacement",
+      "publisher": "Fast Response Plumbing & Rooter",
+      "url": "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site lists bathtub waste & overflow among bathroom fixtures and publishes phone (415) 596-6115 and a free-estimate process"
+    },
+    "C04": {
+      "label": "General SF — official site",
+      "publisher": "General SF",
+      "url": "https://generalsf.com/",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site publishes plumbing, building and bathroom/kitchen service pages, CSLB #959843 and phone (650) 303-1515"
+    },
+    "C05": {
+      "label": "Handyman Heroes — official site",
+      "publisher": "Handyman Heroes",
+      "url": "https://www.handymanhero.es/",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site lists construction, plumbing and handyman services; no job-specific capability is inferred"
+    },
+    "C06": {
+      "label": "Ace Plumbing & Rooter — official site",
+      "publisher": "Ace Plumbing & Rooter",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site publishes license classes, phone (415) 824-6444, and HOA/property-manager service information"
+    },
+    "C07": {
+      "label": "Rapid Flow Plumbing & Rooter — contact",
+      "publisher": "Rapid Flow Plumbing & Rooter",
+      "url": "https://www.rapidflowbayarea.com/contact",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site publishes license #1115649, B/C-36, San Francisco address and contact numbers"
+    },
+    "C08": {
+      "label": "Manny’s Plumbing & Rooters — official site",
+      "publisher": "Manny’s Plumbing & Rooter",
+      "url": "https://www.mannysplumbingandremodeling.com/",
+      "tier": "company",
+      "checked": "2026-11-08",
+      "supports": "Official site publishes license #841229, C-36/B, and San Mateo/San Francisco county service area"
+    },
+    "P01": {
+      "label": "Angi — bathtub/shower drain replacement cost (2026)",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "tier": "publisher",
+      "checked": "2026-11-08",
+      "supports": "Publisher-reported national cost ranges for drain replacement, labor and drywall follow-up; not a quote for this job"
+    },
+    "P02": {
+      "label": "Angi — bathroom leak repair cost (2026)",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
+      "tier": "publisher",
+      "checked": "2026-11-08",
+      "supports": "Publisher-reported national leak-repair and drywall/tile follow-up ranges; not a quote for this job"
+    },
+    "P03": {
+      "label": "This Old House — how to replace a tub drain",
+      "publisher": "This Old House",
+      "url": "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+      "tier": "publisher",
+      "checked": "2026-11-08",
+      "supports": "Trade guidance on overflow-plate removal, seized drains, below-tub access and water testing"
+    },
+    "R01": {
+      "label": "Yelp — bathtub repair in San Francisco",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party category discovery for bathtub repair; ratings not treated as official values"
+    },
+    "R02": {
+      "label": "Yelp — Ace Plumbing & Rooter",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R03": {
+      "label": "Yelp — Fast Response Plumbing & Rooter",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R04": {
+      "label": "Yelp — General SF",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R05": {
+      "label": "Yelp — Handyman Heroes",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R06": {
+      "label": "Yelp — Manny’s Plumbing & Rooters",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R07": {
+      "label": "Yelp — Expert Plumbing Solutions",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R08": {
+      "label": "Yelp — Bay Area Plumbing",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business page for manual review; ratings not treated as official values"
+    },
+    "R09": {
+      "label": "Yelp — Szeto Plumbing and Handyman",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party discovery lead; no license number has been confirmed from an official record"
+    },
+    "R10": {
+      "label": "Angi — SF plumbing reviews",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party review/discovery directory for San Francisco plumbing"
+    },
+    "R11": {
+      "label": "Angi — SF bathtub restoration reviews",
+      "publisher": "Angi",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party review/discovery directory for San Francisco bathtub work"
+    },
+    "R12": {
+      "label": "BuildZoom — SF plumbers",
+      "publisher": "BuildZoom",
+      "url": "https://www.buildzoom.com/san-francisco-ca/plumbers",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party contractor directory and permit-derived project listings"
+    },
+    "R13": {
+      "label": "BuildZoom — SF drywall contractors",
+      "publisher": "BuildZoom",
+      "url": "https://www.buildzoom.com/san-francisco-ca/drywall-contractors",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party drywall contractor directory"
+    },
+    "R14": {
+      "label": "Thumbtack — SF bathtub services",
+      "publisher": "Thumbtack",
+      "url": "https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party service discovery link"
+    },
+    "R15": {
+      "label": "BBB — Expert Plumbing Solutions profile",
+      "publisher": "Better Business Bureau",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+      "tier": "platform",
+      "checked": "2026-11-08",
+      "supports": "Third-party business profile; BBB states it does not verify third-party information"
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "Ace Plumbing & Rooter",
+      "license": "#829071",
+      "phone": "(415) 824-6444",
+      "address": "1090 Bryant Street, San Francisco, CA 94103-4417",
+      "status": "current and active",
+      "expires": "2027-06-30",
+      "classes": "A · B · C-4 · C-10 · C-16 · C-36",
+      "bond": "$25,000",
+      "workers_comp": "insured through 2027-07-13",
+      "company_site": "C06",
+      "cslb": "O14",
+      "review": "R02",
+      "ranking_reason": "Best documented single-license fit: one active CSLB record carries B General Building and C-36 Plumbing, plus A/C-4/C-10/C-16. It has a San Francisco address, a $25,000 bond and an active workers-compensation policy. The official company site describes HOA/property-manager work. Exact stuck-lever ability, drywall scope, availability and tenant coordination remain unverified.",
+      "cost_basis": "No official published quote and no combined plumbing+drywall quote. Verified amount is blank — UNVERIFIED. Cost should be bid as one contingent written scope covering an above attempt, below access, ceiling opening/patch/finish, fill-and-inspect test and tenant schedule. Publisher benchmarks identify concealed access and drywall as separate cost drivers.",
+      "quote_scope": "",
+      "review_rating": "",
+      "official_note": "Company self-description is not proof of job-specific capability."
+    },
+    {
+      "rank": 2,
+      "name": "Handyman Heroes Inc",
+      "license": "#1003394",
+      "phone": "(844) 382-4376",
+      "address": "912 Cole St #202, San Francisco, CA 94117",
+      "status": "current and active",
+      "expires": "2027-05-31",
+      "classes": "B · C-36",
+      "bond": "$25,000",
+      "workers_comp": "insured through 2027-04-25",
+      "company_site": "C05",
+      "cslb": "O13",
+      "review": "R05",
+      "ranking_reason": "Second: active B + C-36 on one license, a San Francisco address, $25,000 bond and active workers-compensation insurance. It ranks below Ace because the official record links a complaint disclosure and the company site advertises C-10 while the CSLB record lists B + C-36 only. Read the disclosure and confirm the actual crew.",
+      "cost_basis": "No official published quote and no combined plumbing+drywall quote. Verified amount is blank — UNVERIFIED. Obtain three written bids on identical scope per CSLB guidance; ask whether the ceiling patch/finish is included in the same contract.",
+      "quote_scope": "",
+      "review_rating": "",
+      "official_note": "Complaint disclosure exists on the official CSLB record."
+    },
+    {
+      "rank": 3,
+      "name": "GENERALSF",
+      "license": "#959843",
+      "phone": "(650) 303-1515",
+      "address": "3624 Irving Street Ste A, San Francisco, CA 94122",
+      "status": "current and active",
+      "expires": "2027-04-30",
+      "classes": "B · C-10 · C-36",
+      "bond": "$25,000",
+      "workers_comp": "no-employee exemption",
+      "company_site": "C04",
+      "cslb": "O12",
+      "review": "R04",
+      "ranking_reason": "Third: active B + C-36 on one record, with C-10 also listed; San Francisco address and official plumbing/building/bathroom-and-kitchen pages. It ranks below the first two because CSLB records a no-employee workers-compensation exemption, so crew coverage must be confirmed in writing.",
+      "cost_basis": "No official published quote and no combined plumbing+drywall quote. Verified amount is blank — UNVERIFIED. Request one written price for the full contingent scope; confirm who performs each trade and what insurance covers the crew.",
+      "quote_scope": "",
+      "review_rating": "",
+      "official_note": "Official site publishes CSLB #959843 and the same phone number."
+    },
+    {
+      "rank": 4,
+      "name": "Rapid Flow Plumbing & Rooter Inc",
+      "license": "#1115649",
+      "phone": "(415) 866-8401",
+      "address": "230 Edinburgh St, San Francisco, CA 94112",
+      "status": "current and active",
+      "expires": "2028-01-31",
+      "classes": "B · C-36",
+      "bond": "$25,000",
+      "workers_comp": "no-employee exemption",
+      "company_site": "C07",
+      "cslb": "O15",
+      "review": "",
+      "ranking_reason": "Fourth: active B + C-36 on one license, San Francisco address, $25,000 bond and a company site restating the dual classification. It ranks below the first three because the license was issued in 2024, CSLB shows a no-employee workers-compensation exemption, and no reliable official or platform review evidence for this exact repair was established.",
+      "cost_basis": "No official published quote and no combined plumbing+drywall quote. Verified amount is blank — UNVERIFIED. Ask for a written combined bid plus references for concealed waste-and-overflow work in occupied space.",
+      "quote_scope": "",
+      "review_rating": "",
+      "official_note": "Company site also publishes a separate 844-BAY-FLOW number; the phone shown here is the CSLB phone."
+    },
+    {
+      "rank": 5,
+      "name": "Manny’s Plumbing & Rooter",
+      "license": "#841229",
+      "phone": "(650) 207-5733",
+      "address": "41 Midvale Drive, Daly City, CA 94015",
+      "status": "current and active",
+      "expires": "2028-06-30",
+      "classes": "C-36 · B",
+      "bond": "$25,000",
+      "workers_comp": "no-employee exemption",
+      "company_site": "C08",
+      "cslb": "O16",
+      "review": "R06",
+      "ranking_reason": "Fifth: active C-36 + B on one license and $25,000 bond. Its official site lists San Mateo and San Francisco counties, but the CSLB address is Daly City and service to the specific San Francisco address is not officially confirmed. A no-employee workers-compensation exemption also requires written crew-coverage confirmation.",
+      "cost_basis": "No official published quote and no combined plumbing+drywall quote. Verified amount is blank — UNVERIFIED. Confirm travel/service area in writing before comparing any bid.",
+      "quote_scope": "",
+      "review_rating": "",
+      "official_note": "Third-party page mentions tub overflow repair; not treated as official capability evidence."
+    },
+    {
+      "rank": 6,
+      "name": "Fast Response Plumbing & Rooter",
+      "license": "#1024971",
+      "phone": "(415) 596-6115",
+      "address": "236 W POTRAL AVE #459, San Francisco, CA 94127",
+      "status": "current and active",
+      "expires": "2027-03-31",
+      "classes": "C-36",
+      "bond": "$25,000",
+      "workers_comp": "policy expires 2026-12-18",
+      "company_site": "C03",
+      "cslb": "O11",
+      "review": "R03",
+      "ranking_reason": "Sixth: active C-36, San Francisco address and an official repair page that lists bathtub waste & overflow among bathroom fixtures and offers a free estimate. It ranks behind the B + C-36 firms because its CSLB record does not carry a building classification for the ceiling patch; a second trade or written subcontract is needed. Its workers-compensation policy expires 2026-12-18.",
+      "cost_basis": "Owner-provided quote for a narrow repair/adjust scope dated 2026-08-30; the amount is blank — UNVERIFIED and no official source publishes it. The scope does not include drywall. A low adjustment figure is not comparable to a full concealed-access repair; CSLB warns against automatically accepting a substantially lower bid.",
+      "quote_scope": "Owner-reported adjustment/repair scope; amount blank — UNVERIFIED",
+      "review_rating": "",
+      "official_note": "Official site self-description is not proof of ability to free this seized linkage or restore drywall."
+    },
+    {
+      "rank": 7,
+      "name": "Expert Plumbing Solutions",
+      "license": "#977638",
+      "phone": "(415) 531-5340",
+      "address": "1465 44th Avenue, San Francisco, CA 94122",
+      "status": "current and active",
+      "expires": "2028-10-31",
+      "classes": "C-36",
+      "bond": "$25,000",
+      "workers_comp": "insured through 2027-07-19",
+      "company_site": "C01",
+      "cslb": "O09",
+      "review": "R07",
+      "ranking_reason": "Seventh: active C-36, San Francisco address, $25,000 bond and active workers-compensation insurance. The owner-reported scope is full waste-and-overflow replacement, but the CSLB record has no building classification for drywall restoration. Exact experience with this seized mechanism remains unverified.",
+      "cost_basis": "Owner-provided quote for waste-and-overflow replacement dated 2026-08-30; the amount is blank — UNVERIFIED and no official source publishes it. It is a different scope from an adjustment and does not state ceiling patch/finish. Request a combined re-bid on identical scope.",
+      "quote_scope": "Owner-reported full replacement scope; amount blank — UNVERIFIED",
+      "review_rating": "",
+      "official_note": "Official company site confirms license #977638 and phone."
+    },
+    {
+      "rank": 8,
+      "name": "Bay Area Plumbing",
+      "license": "#757796",
+      "phone": "(415) 668-8000",
+      "address": "335 14th Avenue, San Francisco, CA 94118",
+      "status": "current and active",
+      "expires": "2027-01-31",
+      "classes": "C-36",
+      "bond": "$25,000",
+      "workers_comp": "no-employee exemption",
+      "company_site": "C02",
+      "cslb": "O10",
+      "review": "R08",
+      "ranking_reason": "Eighth: active C-36 and San Francisco address, but no building classification on the CSLB record. The owner-reported scope is lever/spout replacement, which does not establish access to the concealed assembly or ceiling restoration. A no-employee workers-compensation exemption requires crew confirmation.",
+      "cost_basis": "Owner-provided quote for lever/spout replacement dated 2026-08-30; the amount is blank — UNVERIFIED and no official source publishes it. No drywall is included in the reported scope; compare only against written bids for the same combined scope.",
+      "quote_scope": "Owner-reported lever/spout replacement scope; amount blank — UNVERIFIED",
+      "review_rating": "",
+      "official_note": "Official company site confirms phone and San Francisco service."
+    },
+    {
+      "rank": 9,
+      "name": "Szeto Plumbing and Handyman",
+      "license": "",
+      "phone": "",
+      "address": "",
+      "status": "",
+      "expires": "",
+      "classes": "",
+      "bond": "",
+      "workers_comp": "",
+      "company_site": "",
+      "cslb": "O01",
+      "review": "R09",
+      "ranking_reason": "Ninth and not hire-ready from public records: no CSLB license number has been confirmed for this lead from an official source. A third-party Yelp page lists bathtub repair and drywall services, but that is not license verification or capability evidence. Leave the license, phone and address blank until an official record is produced.",
+      "cost_basis": "No verified quote, license, phone or address. Every unconfirmed value is blank — UNVERIFIED. Do not compare a price until the business identity and active license are confirmed on CSLB and a written combined scope is supplied.",
+      "quote_scope": "",
+      "review_rating": "",
+      "official_note": "Third-party discovery lead only."
+    }
+  ],
+  "cost_rows": [
+    {
+      "factor": "Owner-provided private quotes",
+      "official_value": "",
+      "publisher_value": "",
+      "decision": "Three scopes were reported by the owner, but no official source publishes the amounts. Verified values are blank and flagged; do not compare them as confirmed prices.",
+      "sources": [
+        "O04",
+        "O09",
+        "O10",
+        "O11"
+      ],
+      "publisher": [
+        "P01",
+        "P02"
+      ]
+    },
+    {
+      "factor": "Bathtub/shower drain replacement benchmark",
+      "official_value": "",
+      "publisher_value": "Publisher-reported national range and average; not a local bid",
+      "decision": "Use only as directional context for a full replacement; ask for three identical written bids per official CSLB guidance.",
+      "sources": [
+        "O04"
+      ],
+      "publisher": [
+        "P01"
+      ]
+    },
+    {
+      "factor": "Plumber labor benchmark",
+      "official_value": "",
+      "publisher_value": "Publisher-reported hourly range; not a local bid",
+      "decision": "Concealed access adds labor; require a fixed written scope rather than extrapolating from a national hourly figure.",
+      "sources": [
+        "O04"
+      ],
+      "publisher": [
+        "P01",
+        "P02"
+      ]
+    },
+    {
+      "factor": "Drywall / ceiling restoration",
+      "official_value": "",
+      "publisher_value": "Publisher-reported national drywall and follow-up ranges; not a local bid",
+      "decision": "No owner-reported quote includes ceiling patch/finish. Make this one line item in the same written contract as plumbing.",
+      "sources": [
+        "O04",
+        "O06"
+      ],
+      "publisher": [
+        "P01",
+        "P02"
+      ]
+    },
+    {
+      "factor": "Permit fees",
+      "official_value": "Fees depend on scope (official SF.gov statement, no numeric amount read)",
+      "publisher_value": "",
+      "decision": "Permit applicability and fees depend on the exact scope; confirm with SF DBI and the selected contractor before work.",
+      "sources": [
+        "O05",
+        "O07"
+      ],
+      "publisher": []
+    },
+    {
+      "factor": "Technical access / water test",
+      "official_value": "",
+      "publisher_value": "Trade guidance describes above-access, below-access and fill-and-inspect testing; not a price",
+      "decision": "The access plan must be in the bid; no official source prices this specific building.",
+      "sources": [
+        "O08",
+        "O05"
+      ],
+      "publisher": [
+        "P03"
+      ]
+    }
+  ],
+  "review_rows": [
+    {
+      "platform": "Yelp — bathtub repair category",
+      "link": "R01",
+      "official_value": "",
+      "note": "SF-specific third-party discovery for this work type; ratings are not official values.",
+      "official": "O01"
+    },
+    {
+      "platform": "Yelp — individual business pages",
+      "link": "R02",
+      "official_value": "",
+      "note": "Manual review links for Ace, Fast Response, General SF, Handyman Heroes, Expert, Bay Area, Manny’s and the Szeto lead are in the source ledger. No rating is presented as verified.",
+      "official": "O01"
+    },
+    {
+      "platform": "Angi — SF plumbing reviews",
+      "link": "R10",
+      "official_value": "",
+      "note": "Third-party review/discovery directory; not license verification.",
+      "official": "O01"
+    },
+    {
+      "platform": "Angi — SF bathtub reviews",
+      "link": "R11",
+      "official_value": "",
+      "note": "Third-party bathtub-specific customer review page; not official capability evidence.",
+      "official": "O01"
+    },
+    {
+      "platform": "BuildZoom — plumbers / drywall",
+      "link": "R12",
+      "official_value": "",
+      "note": "Third-party directories and permit-derived listings; re-check every license on CSLB.",
+      "official": "O01"
+    },
+    {
+      "platform": "Thumbtack / BBB",
+      "link": "R14",
+      "official_value": "",
+      "note": "Third-party discovery and business profiles; badges and reviews do not equal CSLB verification.",
+      "official": "O01"
+    }
+  ],
+  "flags": [
+    {
+      "id": "D01",
+      "item": "Three owner-provided estimates and all project-specific facts",
+      "why": "No government, manufacturer or official company page publishes the private quotes, the tub condition, the tenant occupancy or the prior access attempts.",
+      "action": "Attach original written quotes and photos as project documents; verified value cells remain blank.",
+      "sources": [
+        "O01",
+        "O09",
+        "O10",
+        "O11"
+      ]
+    },
+    {
+      "id": "D02",
+      "item": "Yelp ratings, counts and “Verified License” badges",
+      "why": "Yelp is a third-party platform and direct automated reads return HTTP 403 in prior sessions; badges are not CSLB verification.",
+      "action": "Open the linked pages manually on the decision date; verify the license and complaint disclosure on CSLB.",
+      "sources": [
+        "O01",
+        "O04"
+      ]
+    },
+    {
+      "id": "D03",
+      "item": "Job-specific experience, availability and all-in-one execution",
+      "why": "CSLB verifies classifications, bond and insurance, not the ability to free this seized linkage or to coordinate a tenant-occupied ceiling repair.",
+      "action": "Request references, a single written contingent scope, crew/insurance details and an explicit tenant schedule.",
+      "sources": [
+        "O02",
+        "O03",
+        "O04"
+      ]
+    },
+    {
+      "id": "D04",
+      "item": "Four no-employee workers-compensation exemptions and one expiring policy",
+      "why": "CSLB records for #757796, #959843, #1115649 and #841229 show no-employee exemptions; #1024971 shows a policy expiring 2026-12-18.",
+      "action": "Request current certificates for the actual crew on the hire date.",
+      "sources": [
+        "O10",
+        "O11",
+        "O12",
+        "O15",
+        "O16"
+      ]
+    },
+    {
+      "id": "D05",
+      "item": "Legacy shortlist and historical dashboard rows",
+      "why": "Earlier pages displayed point-in-time third-party ratings and owner-provided amounts; canonical automated checks validated link presence, not external fact support.",
+      "action": "This decision page and the rewritten shortlist blank all unconfirmed values; other historical page sets remain flagged on the main review page.",
+      "sources": [
+        "O01",
+        "O04"
+      ]
+    }
+  ],
+  "cost_notes": [
+    {
+      "text": "Angi’s 2026 drain-replacement guide reports a national $500–$1,020 typical range ($700 average), $45–$200/hour labor, about $2,100 for new drywall, and $1,350–$6,100 for possible water-damage work. These are publisher benchmarks, not quotes for this building.",
+      "sources": [
+        "P01"
+      ]
+    },
+    {
+      "text": "Angi’s 2026 bathroom-leak guide reports $150–$600 for typical leak repair, a $275 average, and $300–$930 for drywall/tile follow-up. It notes that concealed pipes and access drive cost. These are publisher benchmarks, not officially confirmed values.",
+      "sources": [
+        "P02"
+      ]
+    },
+    {
+      "text": "The three owner-provided figures dated 2026-08-30 describe an adjustment, a lever/spout replacement and a full waste-and-overflow replacement. They are transcribed only on the Project Brief and are deliberately blank in the verified value cells here. None includes a combined drywall scope.",
+      "sources": [
+        "O04",
+        "P01",
+        "P02"
+      ]
+    }
+  ]
+}

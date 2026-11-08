@@ -1064,4 +1064,3 @@ Concurrent session `arena/13d957de-korea7` completed a targeted correction to th
 - `COORDINATION.md`: this board only.
 - Final integration only, if no later active claim appears: add one nav link and the new review flags through `scripts/dashboard_content.py`, then regenerate and re-run all checks.
 - Official records independently read on 2026-11-08: eight CSLB License Detail pages, CSLB B/C-36 classifications and hiring guidance, two SF.gov permit pages, California BPC §7048, Oatey trip-lever kit, and six official company sites. Yelp and other platform values remain blank/UNVERIFIED; no rating or private quote amount is presented as an official value.
->>>>>>> 485e0be (Narrow active scope and record official source reads)
