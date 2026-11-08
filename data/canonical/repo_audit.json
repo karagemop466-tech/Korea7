@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-08T23:23:02+00:00",
+  "commit": "c70660884210c2961ec9b2100f9e1958a94e952a",
+  "scope": "All tracked files inventoried; every UTF-8 text line read for count/merge markers; syntax and link structure checked. Not semantic certification of unrelated scientific claims. No network check.",
+  "counts": {
+    "tracked_files": 315,
+    "inventoried_files": 315,
+    "text_files": 285,
+    "text_lines": 56271,
+    "binary_or_non_utf8_files": 30,
+    "tracked_bytes": 19715505,
+    "html_files": 78,
+    "json_files": 68,
+    "python_files": 94,
+    "internal_file_references": 1593,
+    "unique_external_links": 202,
+    "categories": {
+      "canonical-or-shared": 71,
+      "other-documentation-data": 59,
+      "historical-overflow": 62,
+      "legacy-scientific-or-vendor": 123
+    }
+  },
+  "checks": {
+    "json_syntax_errors": [],
+    "python_syntax_errors": [],
+    "merge_markers": [],
+    "broken_internal_links": [],
+    "broken_anchors": [],
+    "directory_links": [
+      {
+        "page": "docs/parallel-index.html",
+        "url": "results/",
+        "target": "docs/results",
+        "index_exists": false
+      }
+    ],
+    "pinned_hashes": [
+      {
+        "path": "docs/downloads/korea7-k7-offcatalogue-relay-corridor-30000dots-20261104T000000Z-zeros.tif",
+        "expected": "ef8ef331f3f70c82d3448bac5f91e8e5903e7a97292f1731608dc6c01643cca0",
+        "actual": "ef8ef331f3f70c82d3448bac5f91e8e5903e7a97292f1731608dc6c01643cca0",
+        "match": true
+      },
+      {
+        "path": "docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-37654-20261104T201224Z-d88f4742-zeros.tif",
+        "expected": "d88f4742d9fd01f2e450622282a83b1d7d14390673caf8ce42b3841fdc953031",
+        "actual": "d88f4742d9fd01f2e450622282a83b1d7d14390673caf8ce42b3841fdc953031",
+        "match": true
+      },
+      {
+        "path": "docs/downloads/korea7-sdcc1-scarpdom-conc-uniq65-44090-20261104T201224Z-5631ba53-zeros.tif",
+        "expected": "5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c",
+        "actual": "5631ba539672f57187429b11867ba6a3d5c4ed8791001469b6f131534b09fd8c",
+        "match": true
+      },
+      {
+        "path": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.tif",
+        "expected": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c",
+        "actual": "9e3454636697248a9fa547ecf96f7611f671ca05fdd11352b890f7069a68999c",
+        "match": true
+      },
+      {
+        "path": "docs/downloads/korea7-consensus-offcat-20k-20261104-zeros.zip",
+        "expected": "7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5",
+        "actual": "7460b2dd99ba2cd44d412b3d021fa1c30fb0a25b071b6e5f66a0c661a0d2a6a5",
+        "match": true
+      },
+      {
+        "path": "docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-zeros.tif",
+        "expected": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d",
+        "actual": "f013b9c451a38730bb2527d7d096b98d9447b67df9af45902fc998a2ec7bb40d",
+        "match": true
+      }
+    ],
+    "run_cards": [
+      {
+        "path": "docs/run-card-korea7-e3.json",
+        "top_level_keys": [
+          "branch",
+          "candidate_id",
+          "experiments_run",
+          "holdout_dti",
+          "hypothesis",
+          "leakage_canary",
+          "mechanism",
+          "named_non_fault_mimic",
+          "organizer_confirmed_score",
+          "raster_sha256",
+          "registry_correlation_overlap",
+          "score_estimate",
+          "session_date",
+          "submission_name",
+          "submission_note",
+          "validator_output",
+          "verdict",
+          "verdict_scope"
+        ],
+        "bytes": 5188
+      },
+      {
+        "path": "docs/run-card.json",
+        "top_level_keys": [
+          "holdout_95_percent_ci",
+          "holdout_dti",
+          "holdout_evaluator_version",
+          "hypothesis",
+          "mechanism",
+          "non_fault_mimic",
+          "raster_sha256",
+          "reason",
+          "registry_dot_overlap_within_3px",
+          "registry_surface_rank_correlation",
+          "submission_name",
+          "submission_note",
+          "validator_output",
+          "verdict",
+          "withheld_positives"
+        ],
+        "bytes": 768
+      },
+      {
+        "path": "run-card-korea7-e3.json",
+        "top_level_keys": [
+          "branch",
+          "candidate_id",
+          "experiments_run",
+          "holdout_dti",
+          "hypothesis",
+          "leakage_canary",
+          "mechanism",
+          "named_non_fault_mimic",
+          "organizer_confirmed_score",
+          "raster_sha256",
+          "registry_correlation_overlap",
+          "score_estimate",
+          "session_date",
+          "submission_name",
+          "submission_note",
+          "validator_output",
+          "verdict",
+          "verdict_scope"
+        ],
+        "bytes": 5188
+      },
+      {
+        "path": "run-card.json",
+        "top_level_keys": [
+          "experiment_log",
+          "experiments_used",
+          "holdout_dti",
+          "hypothesis",
+          "irregularities",
+          "mechanism",
+          "non_fault_mimic",
+          "raster_sha256",
+          "registry_correlation_overlap",
+          "reproduction",
+          "submission_name",
+          "submission_note",
+          "validator_output",
+          "verdict",
+          "verdict_basis"
+        ],
+        "bytes": 5404
+      },
+      {
+        "path": "run_card.json",
+        "top_level_keys": [
+          "competition",
+          "correlation_overlap_vs_registry",
+          "date",
+          "estimated_score",
+          "experiment",
+          "holdout_blocker",
+          "holdout_dti",
+          "holdout_dti_95_ci",
+          "hypothesis",
+          "lane_check",
+          "leakage_canary",
+          "mechanism",
+          "next_steps",
+          "non_fault_mimic",
+          "note",
+          "note_length_chars",
+          "protocol",
+          "raster",
+          "registry_rasters",
+          "session",
+          "submission_name",
+          "unique_vs_gemsdoe_sites",
+          "uniqueness_basis",
+          "validator_output",
+          "verdict",
+          "verdict_reason",
+          "withheld_positives"
+        ],
+        "bytes": 4260
+      }
+    ]
+  },
+  "tests": {
+    "command": "/home/user/Korea7/.venv/bin/python -m pytest -q --tb=short",
+    "exit_code": 0,
+    "summary": "138 passed, 34 warnings, 9 subtests passed in 9.56s",
+    "output_tail": "............................................................... [ 45%]\n........................................................................ [ 97%]\n...                                                                      [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.11/site-packages/rasterio/transform.py:178: 1 warning\ntests/test_validate_raster.py: 20 warnings\ntests/test_validate_submission.py: 13 warnings\n  /home/user/Korea7/.venv/lib/python3.11/site-packages/rasterio/transform.py:178: PendingDeprecationWarning: Use `@` matmul instead of `*` mul operator for matrix multiplication\n    return Affine.translation(west, north) * Affine.scale(xsize, -ysize)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n138 passed, 34 warnings, 9 subtests passed in 9.56s\n"
+  },
+  "findings": [
+    {
+      "id": "RA-01",
+      "severity": "info",
+      "status": "preserved",
+      "finding": "Unrelated legacy DOE GEMS code/data coexist with overflow research; scientific claims are outside this repair dashboard's certification.",
+      "paths": [
+        "README.md",
+        "gems/",
+        "data/"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/README.md"
+    },
+    {
+      "id": "RA-02",
+      "severity": "flag",
+      "status": "corrected-in-canonical",
+      "finding": "README banner had an outdated date/category count; canonical navigation and current audit are linked instead.",
+      "paths": [
+        "README.md"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/README.md"
+    },
+    {
+      "id": "RA-03",
+      "severity": "info",
+      "status": "checked",
+      "finding": "Pinned download hashes independently recomputed; results are in pinned_hashes. This does not validate scientific predictions.",
+      "paths": [
+        "docs/downloads/SHA256SUMS.txt"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/docs/downloads/SHA256SUMS.txt"
+    },
+    {
+      "id": "RA-04",
+      "severity": "flag",
+      "status": "preserved",
+      "finding": "Multiple run-card filenames/schemas coexist; keys and bytes inventoried, not silently normalized.",
+      "paths": [
+        "docs/run-card-korea7-e3.json",
+        "docs/run-card.json",
+        "run-card-korea7-e3.json",
+        "run-card.json",
+        "run_card.json"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/run-card.json"
+    },
+    {
+      "id": "RA-05",
+      "severity": "flag",
+      "status": "historical-flag",
+      "finding": "Legacy directory links may lack index.html and return 404 on Pages even when the directory exists locally; see directory_links.",
+      "paths": [
+        "docs/parallel-index.html",
+        "docs/results/"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/docs/parallel-index.html"
+    },
+    {
+      "id": "RA-06",
+      "severity": "flag",
+      "status": "corrected-in-canonical",
+      "finding": "Archived $500 licensing wording is superseded by current BPC 7048 under-$1,000 aggregate threshold plus other conditions.",
+      "paths": [
+        "docs/overflow-permits.html"
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048"
+    },
+    {
+      "id": "RA-07",
+      "severity": "flag",
+      "status": "corrected-in-canonical",
+      "finding": "Owner-only amounts are blank in verified-value cells and retained only as labeled transcriptions; drywall inclusion is unknown, not assumed excluded.",
+      "paths": [
+        "estimates.html",
+        "brief.html",
+        "flagged.html"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/data/canonical/source_evidence.json"
+    },
+    {
+      "id": "RA-08",
+      "severity": "info",
+      "status": "integrated",
+      "finding": "Concurrent claims, U21/U22, BPC 7059 caveat, S61\u2013S63 and regression tests retained; shared canonical output rebuilt after integration.",
+      "paths": [
+        "COORDINATION.md",
+        "scripts/dashboard_content.py",
+        "tests/"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md"
+    },
+    {
+      "id": "RA-09",
+      "severity": "flag",
+      "status": "corrected",
+      "finding": "Repository HTML walker previously entered hidden virtual environments and scanned dependency documentation; now excludes hidden/environment/build directories.",
+      "paths": [
+        "tests/test_overflow_site.py"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/tests/test_overflow_site.py"
+    },
+    {
+      "id": "RA-10",
+      "severity": "flag",
+      "status": "corrected-in-canonical",
+      "finding": "Source-link presence was previously described too broadly as verification; row audit now distinguishes source roles and direct-read evidence consistency.",
+      "paths": [
+        "scripts/verify_dashboard.py",
+        "verification.html"
+      ],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/data/canonical/source_evidence.json"
+    },
+    {
+      "id": "RA-11",
+      "severity": "flag",
+      "status": "historical-flag",
+      "finding": "Historical internal broken links/anchors, if any, are inventoried rather than silently rewriting other sessions' archives. Canonical links must pass separately.",
+      "paths": [],
+      "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/data/canonical/repo_audit.json"
+    },
+    {
+      "id": "RA-12",
+      "severity": "flag",
+      "status": "delivery-check",
+      "finding": "Pages deployment must be confirmed from the new Actions run and live content after merge; an older reachable page is not proof of a successful new deployment.",
+      "paths": [
+        "COORDINATION.md",
+        ".github/workflows/pages-check.yml"
+      ],
+      "official_source": "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+    }
+  ],
+  "inventory_file": "data/canonical/repo_line_inventory.json",
+  "official_source": "https://github.com/karagemop466-tech/Korea7/blob/main/data/canonical/repo_audit.json"
+}

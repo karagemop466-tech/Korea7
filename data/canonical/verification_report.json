@@ -1,52 +1,39 @@
 {
-  "generated_at": "2026-11-08T23:01:20+00:00",
-  "pages": [
-    "index.html",
-    "summary.html",
-    "requirements.html",
-    "estimates.html",
-    "contractors.html",
-    "technical.html",
-    "permits.html",
-    "brief.html",
-    "findings.html",
-    "sources.html",
-    "verification.html",
-    "repo-review.html",
-    "flagged.html"
-  ],
+  "generated_at": "2026-11-08T23:23:05+00:00",
+  "scope": "Offline structural, privacy and direct-read register consistency; no network check",
+  "pages": 13,
   "counts": {
     "pages": 13,
-    "tables": 14,
-    "rows": 197,
-    "source_ledger_entries": 63,
-    "verified_sources": 52,
-    "official_or_manufacturer_verified": 17,
-    "generated_tbody_rows": 421,
-    "internal_links_checked": 501,
-    "unique_external_links": 52,
+    "tables": 15,
+    "rows": 201,
+    "source_ledger_entries": 68,
+    "verified_sources": 58,
+    "official_or_manufacturer_verified": 29,
+    "generated_tbody_rows": 440,
+    "internal_links_checked": 391,
+    "unique_external_links": 56,
     "published_text_files_scanned": 121
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "13 pages generated"
+      "detail": "13 canonical pages"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "421 tbody rows checked, 0 missing links"
+      "detail": "440 rendered rows; 0 missing"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
       "status": "PASS",
-      "detail": "0 unflagged blank rows"
+      "detail": "0 unflagged blanks"
     },
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "501 internal links checked, 0 broken"
+      "detail": "391 links; 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -56,22 +43,22 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "52 unique external links, 0 unknown/dead"
+      "detail": "56 unique external links; 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
       "status": "PASS",
-      "detail": "0 nav issues"
+      "detail": "0 issues"
     },
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "121 files scanned, 0 matches"
+      "detail": "121 published text files; 0 matches"
     },
     {
       "name": "No unfilled template markers",
       "status": "PASS",
-      "detail": "0 template-marker matches"
+      "detail": "0 matches"
     },
     {
       "name": "Dead sources not linked",
@@ -81,7 +68,17 @@
     {
       "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "17 official/manufacturer sources marked verified; 52 sources marked verified overall (metadata only; no network check)"
+      "detail": "29 official/manufacturer; 58 direct-read sources overall (metadata only; no network check)"
+    },
+    {
+      "name": "Row source roles and evidence fields",
+      "status": "PASS",
+      "detail": "0 issues"
+    },
+    {
+      "name": "JSON snapshot matches generator",
+      "status": "PASS",
+      "detail": "0 stale/missing entries"
     }
   ],
   "broken_internal": [],
@@ -91,13 +88,14 @@
   "unflagged_blanks": [],
   "privacy_matches": [],
   "nav_issues": [],
-  "dead_sources": [
-    "https://homeguides.sfgate.com/repair-trip-lever-tub-drain-41958.html",
-    "https://inspectandtest.net/guides/bathtub-overflow-drain/"
-  ],
+  "content_issues": [],
+  "snapshot_issues": [],
+  "dead_sources": [],
   "external_links": [
-    "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
     "https://generalsf.com/",
+    "https://generalsf.com/building",
+    "https://generalsf.com/plumbing",
     "https://github.com/karagemop466-tech/Korea7",
     "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
     "https://github.com/karagemop466-tech/Korea7/blob/main/README.md",
@@ -106,47 +104,55 @@
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
     "https://www.aceplumbingandrooter.com/",
-    "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
-    "https://www.angi.com/articles/what-is-overflow-drain.htm",
-    "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
-    "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
-    "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
     "https://www.bayareaplumbingsf.com/",
-    "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
-    "https://www.buildzoom.com/san-francisco-ca/drywall-contractors",
-    "https://www.buildzoom.com/san-francisco-ca/plumbers",
     "https://www.eplumbingsolutions.com/",
-    "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
     "https://www.fastresponseplumbingsf.com/",
     "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+    "https://www.genteelplumbers.com/",
     "https://www.handymanhero.es/",
-    "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
+    "https://www.handymanhero.es/city/san-francisco-ca/",
+    "https://www.handymanhero.es/handyman-services/sheetrock-and-wall-repairs/",
+    "https://www.mannysplumbingandremodeling.com/",
     "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+    "https://www.oatey.com/products/bath-waste-overflow/bath-waste-overflow",
+    "https://www.rapidflowbayarea.com/",
+    "https://www.rapidflowbayarea.com/services",
     "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
     "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
-    "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
-    "https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost",
-    "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
-    "https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing",
+    "https://www.watcomfg.com/Spec_Sheets/tubular_brass/Watco_Trip_Lever_501-502-551-552_Series_Bath_Waste_Sheet.pdf",
+    "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+    "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
     "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
     "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
     "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
     "https://www.yelp.com/biz/general-sf-san-francisco-2",
+    "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
     "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
-    "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
-    "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city",
     "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
-    "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&find_loc=San+Francisco%2C+CA",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
     "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+    "https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
-  ]
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1003394",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1009195",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1024971",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1025814",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=1115649",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=757796",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=829071",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=841229",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=959843",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=977638",
+    "https://www2.cslb.ca.gov/onlineservices/checklicenseII/LicenseDetail.aspx?LicNum=995163"
+  ],
+  "ok": true,
+  "tables": 15,
+  "rows": 201,
+  "sources": 68,
+  "broken_links": [],
+  "row_issues": []
 }

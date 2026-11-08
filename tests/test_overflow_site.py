@@ -28,9 +28,12 @@ SITE_PAGES = [
 
 
 def _pages():
+    """Walk published/project HTML only, never local environments or dependencies."""
+    excluded = {"node_modules", "vendor", "__pycache__", "venv", "env", "build",
+                "dist", "out", "target", "coverage", "work"}
     out = []
     for base, dirs, files in os.walk(ROOT):
-        dirs[:] = [d for d in dirs if d != ".git"]
+        dirs[:] = [d for d in dirs if not d.startswith(".") and d not in excluded]
         for f in files:
             if f.endswith(".html"):
                 out.append(os.path.relpath(os.path.join(base, f), ROOT))
