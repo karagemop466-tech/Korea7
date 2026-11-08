@@ -1063,3 +1063,7 @@ Full tracked-text inventory: 55,222 lines; all JSON parsed and all Python AST-pa
 ### Concurrent-main integration checkpoint
 
 Merged `origin/main` at `665f41d` after PRs #51–#59 landed. Only the append-only board conflicted; retained the complete incoming board and re-applied this session claim/checkpoint below it. Incoming canonical corrections (including U21/U22 and BPC 7059), tests and other session files are preserved. This session active claim was pushed before those merges; final integration will re-read the changed official scope source and preserve the new regression tests.
+
+### Final integration claim — `arena/3a4a1788-korea7`
+
+A2 official-source research is complete; A3 repository review is complete. The concurrent follow-up owners have marked their work done/needs review and their PRs merged. This session now claims A4/A5 shared integration over its previously declared canonical scope, plus `shortlist.html` (preserved as a labeled historical page), `data/canonical/repo_line_inventory.json`, and `scripts/audit_repository.py`. Incoming U21/U22, S61–S63 and regression tests are retained. New source IDs start at S64; new flags start at U23. No active session is displaced. The integration will distinguish official license facts, business self-descriptions, owner statements and blocked review pages; rank conditionally rather than infer exact-job competence.
