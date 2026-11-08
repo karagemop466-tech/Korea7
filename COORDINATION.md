@@ -1166,3 +1166,34 @@ Read the complete existing board before editing. Earlier delivery/integration ta
 - The incoming request to extend `tests/test_dashboard_integrity.py` from 9 to 15 pages is handled in this integration. Final checks and the PR #60 merge/deploy record are appended after actual verification.
 
 - PR #63/#64 close-out and landing corrections from `arena/0e9ee506-korea7` were also merged into this branch before the PR #60 merge gate: the Contacts card escaping fix, the 2026-11-08 CSLB stamp note, and the complete J5 delivery/close-out board entry are preserved. The carried-forward 15-page integrity-test request is satisfied here.
+
+---
+
+## Session `arena/6696a17e-korea7` — concurrent-main integration (2026-11-08)
+
+The Arena runtime fixes this session's branch to `arena/6696a17e-korea7`; no other branch is created or pushed. This session preserves the complete incoming board and the concurrent 16-record CSLB ranking/contacts work now on `main`. Open PRs #42 and #32 predate this handoff and are not edited or merged by this session.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| C1 — Claim integration and review current repository/live site | done | arena/6696a17e-korea7 | COORDINATION.md; read-only repository review |
+| C2 — Reverify contractor identities, licenses, phones, technical and regulatory sources; record evidence | done | arena/6696a17e-korea7 | data/canonical/source_checks.json; supplemental evidence |
+| C3 — Refresh requirements, executive summary, transparent decision ranking and canonical dashboard | done | arena/6696a17e-korea7 | canonical dashboard corrections; EXECUTIVE-SUMMARY.md; README.md |
+| C4 — Line-by-line source/blank/link/privacy audit and regression tests | done | arena/6696a17e-korea7 | scripts/audit_repository.py; data/canonical/repo_audit.*; tests/test_canonical_integrity.py |
+| C5 — Final integration PR, merge, confirm the exact deployed revision, record result | in progress | arena/6696a17e-korea7 | COORDINATION.md; GitHub PR/Pages |
+
+### C1–C4 evidence and concurrent-main handoff
+
+- Direct official reads on 2026-11-08: CSLB records #829071, #959843, #1003394, #1025814, #977638, #757796, #1024971, #1115649, #841229, #995163, #1009195; CSLB B/C-36/C-9 definitions and #1003394 disclosure; sf.gov plumbing, permit-exemption and kitchen/bath pages; California BPC §7048. Exact “Data current as of 11/8/2026” timestamps are preserved in `data/canonical/source_checks.json`.
+- Company first-party pages were read for the listed providers. Yelp business/category pages still return HTTP 403; search-index snippets are labeled third-party and are not license evidence. The Angi SF bathtub-restoration category was re-read: it shows 17 verified reviews and last update October 14, 2024, not the previously asserted 873-review/2026-08-01 tenant-occupied plumbing+drywall project. The separate Angi plumbing category does show 873 reviews and an August 01, 2026 update.
+- Advanced Plumbing and Drain Inc #1009195 is active but carries a future-suspension additional-status warning. The similarly named `advancedplumbinganddrain.com` website fetched in this session is a New Jersey business and is **not** matched to the San Francisco CSLB record.
+- `origin/main` advanced to `5880bf5` during this session with the 16-record computed CSLB ranking, contacts directory, canonical datasets and tests from concurrent sessions. This integration merges that work rather than overwriting it. The primary published ranking remains `scripts/ranking_data.py` / `ranking.html`; this session's 10-candidate evidence-strength model is retained only as supplemental `data/canonical/decision_analysis.json`.
+- Supplemental artifacts added: `data/canonical/source_checks.json`, `data/canonical/decision_analysis.json`, `scripts/audit_repository.py`, `data/canonical/repo_audit.json`, `data/canonical/repo_audit.md`, and `tests/test_canonical_integrity.py`. Archived plumbing sets and unrelated GEMS/scientific files are preserved.
+
+### Final pre-merge gate — arena/6696a17e-korea7
+
+- Concurrent `origin/main` at `5880bf5` is merged into this branch; the 16-record computed ranking, contacts directory, canonical datasets, assets and concurrent tests are preserved. This session's earlier 13-page rewrite is retained only as branch history and supplemental artifacts, not as a competing primary publication.
+- Targeted corrections applied on top of the merged canonical generator: Angi S24 is corrected to 17 verified reviews / October 14, 2024 and removed from the unsupported candidate-specific occupied-unit finding; S22 is explicitly labeled a Texas trade blog and excluded from SF permit guidance; Advanced #1009195's similarly named New Jersey website is added as S101 and flagged U44; supplemental source checks, decision model and repo audit are linked as S102–S104.
+- `python3 scripts/build_dashboard.py` → **11/11 PASS**: 15 pages, 25 tables, 672 dataset rows, 104 sources, 1,371 rendered tbody rows with 0 missing source links, 1,448 internal links and 0 broken anchors, 390 unique external links all in the ledger, privacy sweep 136 files / 0 matches, template-marker sweep 0 matches.
+- `python3 scripts/audit_repository.py` → 329 tracked files, 80,781 text lines, 0 parse failures, 0 broken internal links, 0 broken internal anchors; remaining line flags are benign code/scanner references.
+- Site suite: **76 passed, 18 subtests passed**. Full repository suite in `/home/user/korea7-venv`: **160 passed, 34 warnings, 18 subtests passed**. Warnings are existing rasterio Affine deprecations in unrelated legacy tests.
+- C5 is in progress: PR creation, merge, exact Pages run and live-content confirmation are recorded below after they actually occur. No provider outreach, booking or job acceptance is claimed.

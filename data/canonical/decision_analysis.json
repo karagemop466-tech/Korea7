@@ -1,0 +1,314 @@
+{
+  "updated": "2026-11-08",
+  "method": "Weighted evidence-strength scoring; analyst judgment, not official rating or capability guarantee",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Combined plumbing + drywall evidence",
+      "weight": 30,
+      "rule": "2 = company page explicitly advertises both plumbing and drywall/wall repair; 1 = active B + C-36 but drywall not explicitly advertised; 0 = C-36 only.",
+      "why": "One-company preference is central, but a license class is not proof of job capability.",
+      "sources": [
+        "S44",
+        "S76",
+        "S05"
+      ]
+    },
+    {
+      "id": "C2",
+      "name": "Occupied / multi-unit evidence",
+      "weight": 20,
+      "rule": "2 = independent third-party review explicitly describes an occupied/multi-unit property; 1 = company or search-index evidence advertises apartments/HOAs/property managers; 0 = no such evidence found.",
+      "why": "Tenant-occupied delicate work requires protection, communication and references.",
+      "sources": [
+        "S44",
+        "S77",
+        "S73"
+      ]
+    },
+    {
+      "id": "C3",
+      "name": "License / insurance / disclosure risk",
+      "weight": 20,
+      "rule": "2 = active C-36, workers compensation insured, no additional warning, license expiry more than 90 days away, and no workers-compensation policy expiry within 90 days; 1 = exempt/no employees, disclosure, near-term license/policy expiry, or other caution; 0 = future-suspension additional status.",
+      "why": "CSLB status, bond, workers compensation and disclosures are official risk signals.",
+      "sources": [
+        "S04",
+        "S77",
+        "S63"
+      ]
+    },
+    {
+      "id": "C4",
+      "name": "San Francisco service-area fit",
+      "weight": 10,
+      "rule": "2 = company explicitly serves San Francisco; 1 = SF address of record or surrounding-counties service only; 0 = service area not established/mismatched.",
+      "why": "Address of record is not the same as confirmed service at the job address.",
+      "sources": [
+        "S04",
+        "S66",
+        "S69"
+      ]
+    },
+    {
+      "id": "C5",
+      "name": "Review evidence quality",
+      "weight": 10,
+      "rule": "2 = directly read third-party platform with substantial reviews; 1 = search-index snippet or company-selected testimonial; 0 = no usable review evidence found.",
+      "why": "Reviews are third-party evidence, never license verification.",
+      "sources": [
+        "S73",
+        "S74",
+        "S35"
+      ]
+    },
+    {
+      "id": "C6",
+      "name": "Cost transparency",
+      "weight": 10,
+      "rule": "2 = published itemized price for this exact scope; 1 = owner-reported quote, published dispatch fee, or free-estimate policy; 0 = no cost evidence found.",
+      "why": "No provider has published a verified combined price for this job.",
+      "sources": [
+        "S44",
+        "S66",
+        "S78"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "rank": 1,
+      "name": "Ace Plumbing & Rooter",
+      "license": "829071",
+      "scores": {
+        "C1": 1,
+        "C2": 2,
+        "C3": 2,
+        "C4": 2,
+        "C5": 2,
+        "C6": 1
+      },
+      "total": 80.0,
+      "reason": "Strongest occupied-property evidence: BBB review from a family-run SF apartment building plus HOA/property-manager page; insured C-36/B. Drywall restoration is not explicitly advertised, so pair with a drywall specialist unless the company confirms scope.",
+      "limit": "Drywall scope unconfirmed; no job quote.",
+      "cost_basis": "Free estimates advertised; no job price published",
+      "sources": [
+        "S11",
+        "S43",
+        "S72",
+        "S73",
+        "S74"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Handyman Heroes Inc",
+      "license": "1003394",
+      "scores": {
+        "C1": 2,
+        "C2": 1,
+        "C3": 1,
+        "C4": 2,
+        "C5": 1,
+        "C6": 1
+      },
+      "total": 70.0,
+      "reason": "Explicitly advertises sheetrock/wall repairs plus plumbing for SF homes/apartments; B + C-36 and insured. Official complaint disclosure and a site C-10 claim absent from the CSLB record require review.",
+      "limit": "CSLB disclosure; C-10 website claim not on record; Yelp blocked.",
+      "cost_basis": "Free consultation advertised; no job price published",
+      "sources": [
+        "S10",
+        "S42",
+        "S65",
+        "S36",
+        "S12"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "General SF",
+      "license": "959843",
+      "scores": {
+        "C1": 2,
+        "C2": 1,
+        "C3": 1,
+        "C4": 2,
+        "C5": 1,
+        "C6": 0
+      },
+      "total": 65.0,
+      "reason": "Building page explicitly lists rough/finish plumbing and sheetrock/tape/texture; B + C-36. Best documented one-company scope, but workers compensation is exempt/no employees and review evidence is search-index only.",
+      "limit": "WC exempt; no published cost; exact crew/coverage unconfirmed.",
+      "cost_basis": "— UNVERIFIED",
+      "sources": [
+        "S09",
+        "S64",
+        "S35"
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "The Genteel Plumbers Inc",
+      "license": "1025814",
+      "scores": {
+        "C1": 1,
+        "C2": 0,
+        "C3": 1,
+        "C4": 2,
+        "C5": 1,
+        "C6": 1
+      },
+      "total": 45.0,
+      "reason": "Active B + C-36, insured, flat-rate pricing and published dispatch fee. Drywall is not advertised on the fetched page; company excludes the Financial District.",
+      "limit": "Drywall unadvertised; service-area exclusion; workers-compensation policy expires 2027-01-24; Yelp snippet address/phone conflict.",
+      "cost_basis": "$149 dispatch fee applied to services (company published); not a job quote",
+      "sources": [
+        "S61",
+        "S66",
+        "S84"
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "Rapid Flow Plumbing & Rooter Inc",
+      "license": "1115649",
+      "scores": {
+        "C1": 1,
+        "C2": 0,
+        "C3": 1,
+        "C4": 2,
+        "C5": 0,
+        "C6": 1
+      },
+      "total": 40.0,
+      "reason": "Active B + C-36; advertises plumbing plus general contracting/remodels and one crew. Drywall/ceiling restoration and occupied-unit references are not explicitly documented.",
+      "limit": "WC exempt; drywall and occupied-unit evidence limited.",
+      "cost_basis": "Free estimate advertised; no job price published",
+      "sources": [
+        "S56",
+        "S67",
+        "S68"
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "Fast Response Plumbing & Rooter",
+      "license": "1024971",
+      "scores": {
+        "C1": 0,
+        "C2": 1,
+        "C3": 1,
+        "C4": 2,
+        "C5": 1,
+        "C6": 1
+      },
+      "total": 40.0,
+      "reason": "Company advertises houses/apartments/HOAs, free per-job quotes and company-selected testimonials; active insured C-36. Owner-reported scope is adjustment only, and workers compensation policy expires 2026-12-18.",
+      "limit": "Adjustment scope may not solve seized assembly; WC renewal check; review aggregate is company claim.",
+      "cost_basis": "$135 owner-reported (unverified) — repair/adjust plunger handle",
+      "sources": [
+        "S08",
+        "S40",
+        "S44"
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "Expert Plumbing Solutions",
+      "license": "977638",
+      "scores": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 2,
+        "C4": 2,
+        "C5": 0,
+        "C6": 1
+      },
+      "total": 35.0,
+      "reason": "Owner reports a full waste-and-overflow quote; active insured C-36. C-36 only, so drywall would need a separately licensed partner unless scope is confirmed otherwise.",
+      "limit": "Owner quote unverified; no drywall classification; no occupied-unit review evidence found.",
+      "cost_basis": "$614 owner-reported (unverified) — waste & overflow",
+      "sources": [
+        "S06",
+        "S38",
+        "S44"
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "Manny's Plumbing & Rooter",
+      "license": "841229",
+      "scores": {
+        "C1": 1,
+        "C2": 0,
+        "C3": 1,
+        "C4": 1,
+        "C5": 0,
+        "C6": 0
+      },
+      "total": 30.0,
+      "reason": "Active C-36 + B; advertises tub install, drain replacement and kitchen/bath remodeling. Service wording is surrounding areas of San Mateo & San Francisco Counties; drywall/ceiling and occupied-unit evidence are limited.",
+      "limit": "WC exempt; Daly City address; exact SF service and drywall scope unconfirmed.",
+      "cost_basis": "— UNVERIFIED",
+      "sources": [
+        "S57",
+        "S69"
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "Bay Area Plumbing",
+      "license": "757796",
+      "scores": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 1,
+        "C4": 2,
+        "C5": 0,
+        "C6": 1
+      },
+      "total": 25.0,
+      "reason": "Active C-36; advertises SF residential/commercial plumbing and leak/pipe repair. Owner-reported quote is a different diverter scope; workers compensation is exempt/no employees.",
+      "limit": "Quote scope differs; WC exempt; no drywall classification.",
+      "cost_basis": "$550 owner-reported (unverified) — plug/spout diverter",
+      "sources": [
+        "S07",
+        "S39",
+        "S44"
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "Advanced Plumbing and Drain Inc",
+      "license": "1009195",
+      "scores": {
+        "C1": 0,
+        "C2": 0,
+        "C3": 0,
+        "C4": 1,
+        "C5": 0,
+        "C6": 0
+      },
+      "total": 5.0,
+      "reason": "Active C-36 and insured, but CSLB carries an additional status warning that the license may be suspended at a future date for an unresolved final liability. A similarly named website is a New Jersey business and is not matched.",
+      "limit": "Future-suspension warning; identity mismatch; not recommended without resolution.",
+      "cost_basis": "— UNVERIFIED",
+      "sources": [
+        "S63",
+        "S86",
+        "S86"
+      ]
+    }
+  ],
+  "partner": {
+    "name": "Bernal Hill Drywall Inc",
+    "license": "995163",
+    "role": "Drywall specialist partner; not scored against plumbing candidates",
+    "sources": [
+      "S62",
+      "S70",
+      "S71",
+      "S75"
+    ]
+  }
+}

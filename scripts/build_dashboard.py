@@ -33,6 +33,8 @@ GENERATED_OUTPUTS = {
     "data/canonical/verification_report.md",
     "data/canonical/repo_inventory.json",
     "data/canonical/repo_inventory.csv",
+    "data/canonical/repo_audit.json",
+    "data/canonical/repo_audit.md",
     "COORDINATION.md",
 }
 INVENTORY_SKIP_DIRS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", "node_modules", ".venv"}
@@ -56,7 +58,9 @@ def refresh_repo_inventory():
         current = rel.startswith((
             "scripts/dashboard_content.py", "scripts/build_dashboard.py", "scripts/verify_dashboard.py",
             "assets/dashboard", "tests/test_dashboard", "tests/test_dashboard_integrity.py",
-            "tests/test_followup_audit.py", "data/canonical/evidence-", "data/canonical/providers-",
+            "tests/test_followup_audit.py", "tests/test_canonical_integrity.py", "scripts/audit_repository.py",
+            "data/canonical/evidence-", "data/canonical/providers-", "data/canonical/source_checks.json",
+            "data/canonical/decision_analysis.json",
         ))
         rows.append({
             "path": rel,
