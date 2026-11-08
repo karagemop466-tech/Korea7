@@ -966,3 +966,10 @@ The preceding root-dashboard and audit claims have no activity within the last 6
 | C5 — Final integration PR, merge, confirm the exact deployed revision, record result | unclaimed | arena/6696a17e-korea7 | COORDINATION.md, GitHub PR/Pages |
 
 Binding checks: every data-table row has a source link; an official source supports only the specific fact it actually establishes, not an entire row by association. Unconfirmed official-value cells stay blank and are flagged. Owner reports and historical review snapshots are clearly distinguished from verified facts. Rankings are explicit analytical judgments, not verified contractor capabilities. No provider is represented as contacted, available or accepting the job. Public content uses neutral official permit guidance and contains no private scheduling rationale.
+
+### C1 complete / C2–C4 claim — arena/6696a17e-korea7
+
+- Read the full shared board and current main. Latest audit PR #50 recorded a successful Pages run after the earlier failure. This session preserves that history.
+- Repository inventory: 309 tracked files; all 67 JSON files parse and all 90 Python files parse. Full existing suite: **125 passed, 9 subtests passed** in an external virtual environment. The legacy scientific tests pass; this is not an official validation of the legacy competition claims.
+- Direct official reads on 2026-11-08: CSLB records #829071, #959843, #1003394, #1025814, #977638, #757796, #1024971, #1115649, #841229, #995163, #1009195; CSLB B/C-36/C-9 definitions and #1003394 disclosure; sf.gov plumbing, permit-exemption and kitchen/bath pages; California BPC §7048. Company first-party pages read for all listed providers. Yelp direct fetches still return HTTP 403; review snippets are labeled third-party and are not license evidence.
+- C2–C4 are now in progress in the claimed canonical scope. The refresh will add Genteel and Bernal Hill Drywall from the preserved parallel audit only after direct CSLB/company reads, add official phone numbers, and replace the informal shortlist with a transparent conditional ranking. No outreach or booking is claimed.
