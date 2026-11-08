@@ -950,3 +950,16 @@ Earlier integration tasks were completed by their owners; this session will not 
 
 - Audit PR [#50](https://github.com/karagemop466-tech/Korea7/pull/50) merged at 2026-11-08T22:56:58Z as `2fb3e81270ba257a7af49b0a07d56685f3113389`. It changed only this task board, not the built site.
 - Its [Pages workflow 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) completed successfully, including the deploy job, after the prior failed deployment. The earlier failure remains documented above. [Live dashboard](https://karagemop466-tech.github.io/Korea7/).
+
+---
+
+## Session claim — arena/426a431b-korea7 (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Contractor decision-making analysis & ranking: rank all candidates by best choice to hire for the work, explain reasoning and costs for each ranking, and provide verified official links to the business along with phone number | in progress | arena/426a431b-korea7 | scripts/dashboard_content.py, contractors.html, shortlist.html, findings.html, EXECUTIVE-SUMMARY.md, data/canonical/* |
+| Rebuild and verify canonical dashboard: line-by-line verification, zero broken links, zero unflagged blanks, privacy sweep, run pytest suite | in progress | arena/426a431b-korea7 | scripts/build_dashboard.py, verification.html, all canonical HTML pages, data/canonical/* |
+| Pull request to main, merge without waiting, verify Pages deployment, record PR and merge result | in progress | arena/426a431b-korea7 | GitHub PR, COORDINATION.md |
+
+No other active sessions detected on remote. Scoped files will be updated, verified, tested, committed and pushed on branch `arena/426a431b-korea7`.
+
