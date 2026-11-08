@@ -539,7 +539,7 @@ PAGES = {
         "lede": "Every value that could not be confirmed from an official source, and every irregularity found during repo and source review. None of these items blocks the site, the analysis, or the merge — they are published here, with source links, for review after the site is live.",
         "sections": [
             {"type": "table", "ref": "flagged"},
-            {"type": "callout", "tone": "warn", "html": "To request a change, note the item ID (U01–U21) and the correction. Unverified values are blank in the data tables; nothing was inferred to fill a gap. Full source ledger: <a href=\"sources.html\">Sources</a>."},
+            {"type": "callout", "tone": "warn", "html": "To request a change, note the item ID (U01–U22) and the correction. Unverified values are blank in the data tables; nothing was inferred to fill a gap. Full source ledger: <a href=\"sources.html\">Sources</a>."},
         ],
     },
 }
