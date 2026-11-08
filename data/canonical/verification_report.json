@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T20:53:44+00:00",
+  "generated_at": "2026-11-08T22:59:16+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -18,13 +18,13 @@
   "counts": {
     "pages": 13,
     "tables": 14,
-    "rows": 192,
-    "source_ledger_entries": 60,
-    "verified_sources": 49,
-    "official_or_manufacturer_verified": 16,
-    "generated_tbody_rows": 411,
-    "internal_links_checked": 493,
-    "unique_external_links": 50,
+    "rows": 195,
+    "source_ledger_entries": 62,
+    "verified_sources": 51,
+    "official_or_manufacturer_verified": 17,
+    "generated_tbody_rows": 417,
+    "internal_links_checked": 500,
+    "unique_external_links": 51,
     "published_text_files_scanned": 121
   },
   "checks": [
@@ -36,7 +36,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "411 tbody rows checked, 0 missing links"
+      "detail": "417 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -46,7 +46,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "493 internal links checked, 0 broken"
+      "detail": "500 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -56,7 +56,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "50 unique external links, 0 unknown/dead"
+      "detail": "51 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -79,9 +79,9 @@
       "detail": "0 dead-source links"
     },
     {
-      "name": "Official sources verified directly",
+      "name": "Official source ledger entries",
       "status": "PASS",
-      "detail": "16 official/manufacturer sources verified 2026-11-07; 49 sources verified overall"
+      "detail": "17 official/manufacturer sources marked verified in the ledger; 51 sources marked verified overall (not live checks)"
     }
   ],
   "broken_internal": [],
@@ -104,6 +104,7 @@
     "https://github.com/karagemop466-tech/Korea7/pull/32",
     "https://karagemop466-tech.github.io/Korea7/",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
     "https://www.aceplumbingandrooter.com/",
     "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
     "https://www.angi.com/articles/what-is-overflow-drain.htm",
