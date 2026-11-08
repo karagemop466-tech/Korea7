@@ -61,6 +61,59 @@ class TestContent(unittest.TestCase):
             self.assertIsNone(re.search(pat, blob, re.I), "private wording matched: %s" % pat)
 
 
+    def test_primary_ranking_rows_cite_fresh_official_cslb_and_blank_cost(self):
+        for tid in ("rank_allinone", "rank_plumbing", "rank_restoration"):
+            table = C.TABLES[tid]
+            cost_idx = table["columns"].index("Cost position")
+            for row in table["rows"]:
+                self.assertTrue(row["src"])
+                self.assertTrue(any(
+                    C.SOURCES[s]["tier"] == "official"
+                    and C.SOURCES[s]["status"] == "verified"
+                    and C.SOURCES[s]["checked"] == "2026-11-08"
+                    and "LicNum=" in C.SOURCES[s]["url"]
+                    for s in row["src"]
+                ), (tid, row["src"]))
+                self.assertIn(C.BLANK, row["cells"][cost_idx])
+                self.assertIn(C.UNVERIFIED, row["cells"][cost_idx])
+
+    def test_top_pick_and_contacts_are_source_linked(self):
+        top = C.TABLES["rank_allinone"]["rows"][0]
+        self.assertIn("Ace Plumbing", top["cells"][1])
+        self.assertIn("(415) 824-6444", top["cells"][1])
+        self.assertIn("S11", top["src"])
+        self.assertEqual(len(C.TABLES["contacts"]["rows"]), 16)
+        for row in C.TABLES["contacts"]["rows"]:
+            self.assertRegex(row["cells"][1], r"\(\d{3}\) \d{3}-\d{4}")
+            self.assertTrue(any(C.SOURCES[s]["tier"] == "official" for s in row["src"]))
+
+    def test_review_numbers_and_drywall_inclusion_remain_unverified(self):
+        for row in C.TABLES["review_snapshots"]["rows"]:
+            self.assertIn(C.BLANK, row["cells"][2])
+            self.assertIn(C.UNVERIFIED, row["cells"][2])
+        flags = {r["cells"][0]: r for r in C.TABLES["flagged"]["rows"]}
+        self.assertIn("U35", flags)
+        self.assertIn("does not state", flags["U35"]["cells"][2])
+        requirements = {r["cells"][0]: r for r in C.TABLES["requirements"]["rows"]}
+        self.assertIn("partial", requirements["R22"]["cells"][4])
+
+    def test_inventory_files_exist_and_match(self):
+        import csv, json, re
+        data = json.loads((ROOT / "data/canonical/repo_inventory.json").read_text())
+        with (ROOT / "data/canonical/repo_inventory.csv").open(newline="") as fh:
+            rows = list(csv.DictReader(fh))
+        self.assertEqual(len(data), len(rows))
+        self.assertGreater(len(data), 200)
+        for item in data:
+            self.assertRegex(item["sha256"], r"^[0-9a-f]{64}$")
+            self.assertFalse(item["path"].startswith(".git/"))
+
+    def test_verification_does_not_call_all_rows_official(self):
+        text = (ROOT / "verification.html").read_text()
+        self.assertIn("project primary record", text)
+        self.assertIn("historical", text)
+        self.assertIn("not independent proof", text)
+
 class TestBuiltSite(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

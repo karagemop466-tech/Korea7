@@ -1,0 +1,272 @@
+{
+  "checked_date": "2026-11-08",
+  "method": "Direct page/PDF reads through the research page-fetch tool; Yelp entries are search-result excerpts because direct Yelp fetches returned HTTP 403. Extracts are limited to the fields used by the dashboard; they are not endorsements or job acceptances.",
+  "records": [
+    {
+      "source_id": "S01",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "method": "direct fetch",
+      "extract": "A permit is needed before cutting into or replacing pipes, particularly pipes covered by a wall; exemptions are in SF Plumbing Code 104.2. After issuance, plumbing work is inspected before covering pipes. Permit Center help desk: 628-652-4900; permitsf@sfgov.org."
+    },
+    {
+      "source_id": "S02",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "method": "direct fetch",
+      "extract": "Minor repairs to existing interior plaster or wallboard are listed as not needing a permit unless required for fire protection."
+    },
+    {
+      "source_id": "S04",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
+      "method": "direct fetch",
+      "extract": "Official lookup by license number, business name or personnel name; CSLB recommends reading hiring guidance and complaint disclosure before hiring."
+    },
+    {
+      "source_id": "S05",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "method": "direct fetch",
+      "extract": "C-36 covers proper disposal of fluid waste and maintenance/replacement of the described plumbing items."
+    },
+    {
+      "source_id": "S06",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:22 PM",
+      "extract": "EXPERT PLUMBING SOLUTIONS; (415) 531-5340; 1465 44TH AVENUE, SAN FRANCISCO, CA 94122; current and active; C36; expires 10/31/2028; $25,000 bond; workers' compensation policy 07/19/2026-07/19/2027."
+    },
+    {
+      "source_id": "S07",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:52 PM",
+      "extract": "BAY AREA PLUMBING; (415) 668-8000; 335 14TH AVENUE, SAN FRANCISCO, CA 94118; current and active; C36; expires 01/31/2027; $25,000 bond; workers' compensation exempt, certified no employees at this time."
+    },
+    {
+      "source_id": "S08",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:34 PM",
+      "extract": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER; (415) 596-6115; 236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127; current and active; C36; expires 03/31/2027; $25,000 bond; workers' compensation policy 12/18/2025-12/18/2026."
+    },
+    {
+      "source_id": "S09",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:52 PM",
+      "extract": "GENERALSF; (650) 303-1515; 3624 IRVING STREET STE A, SAN FRANCISCO, CA 94122; current and active; B, C10, C36; expires 04/30/2027; $25,000 bond; workers' compensation exempt, certified no employees at this time."
+    },
+    {
+      "source_id": "S10",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:52 PM",
+      "extract": "HANDYMAN HEROES INC; (844) 382-4376; 912 COLE ST # 202, SAN FRANCISCO, CA 94117; current and active; B, C36; expires 05/31/2027; $25,000 bond; workers' compensation policy 04/25/2026-04/25/2027; complaint-disclosure link present."
+    },
+    {
+      "source_id": "S11",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:57 PM",
+      "extract": "ACE PLUMBING & ROOTER; (415) 824-6444; 1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417; current and active; C36, A, C-4, C16, B, C10; expires 06/30/2027; $25,000 bond; workers' compensation policy 07/13/2026-07/13/2027."
+    },
+    {
+      "source_id": "S12",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "method": "direct fetch",
+      "extract": "HANDYMAN HEROES INC; citation 2 2020 001045; date 07/12/2020; status FOR DISCLOSURE ONLY PER B&P CODE 7124.6."
+    },
+    {
+      "source_id": "S13",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "method": "direct fetch",
+      "extract": "BPC 7048: aggregate contract price less than $1,000, casual/minor/inconsequential work, and no building permit required; larger-operation and advertising/employee limitations apply. Amended by Stats. 2025, Ch. 67, Sec. 12 (AB 1170), effective January 1, 2026."
+    },
+    {
+      "source_id": "S14",
+      "url": "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+      "method": "direct fetch",
+      "extract": "Manufacturer lists Dearborn Plastic Tubular Trip-Lever Bath Waste Full Kit with chrome-finish stopper; variants A9226 and P9226."
+    },
+    {
+      "source_id": "S15",
+      "url": "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
+      "method": "direct fetch",
+      "extract": "Publisher updated Sep 18, 2026; national bathtub/shower drain replacement range $500-$1,020, average $700; labor $45-$200/hour; new drywall about $2,100. Publisher data, not an official San Francisco quote."
+    },
+    {
+      "source_id": "S18",
+      "url": "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+      "method": "direct fetch",
+      "extract": "Publisher describes drain shoe, linkage assembly, overflow plate and trap; remove two overflow-plate screws; stubborn drains may need access from below; new kit gasket/elbow aligned from below. DIY guidance, not a diagnosis of this tub."
+    },
+    {
+      "source_id": "S32",
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "method": "web_search excerpt; direct fetch HTTP 403",
+      "extract": "Search excerpt located the business profile and plumbing category. Numeric rating/count not used as verified evidence."
+    },
+    {
+      "source_id": "S33",
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "method": "web_search excerpt; direct fetch HTTP 403",
+      "extract": "Search excerpt includes bathtub/shower drain leak repair and bathtub installation captions. Review content is third-party and unverified."
+    },
+    {
+      "source_id": "S34",
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "method": "web_search excerpt; direct fetch HTTP 403",
+      "extract": "Search excerpt located the profile; address shown as 4444 Geary Blvd. Numeric rating/count not used as verified evidence."
+    },
+    {
+      "source_id": "S35",
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "method": "web_search excerpt; direct fetch HTTP 403",
+      "extract": "Search excerpts located the profile; one older excerpt describes bead board work and replacing a long-leaking drain. Third-party review content, not proof of this job's capability."
+    },
+    {
+      "source_id": "S36",
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "method": "web_search excerpt; direct fetch HTTP 403",
+      "extract": "Search excerpt located the profile; address shown as 1525 Waller St; categories include Handyman, Electricians, Plumbing. Numeric rating/count not used as verified evidence."
+    },
+    {
+      "source_id": "S37",
+      "url": "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
+      "method": "historical lead; not reverified",
+      "extract": "Prior session lead only. No matching CSLB record was established in this pass; license and phone remain blank/unverified."
+    },
+    {
+      "source_id": "S38",
+      "url": "https://www.eplumbingsolutions.com/",
+      "method": "direct fetch",
+      "extract": "Company lists license #977638, phone 415-531-5340, San Francisco residential plumbing, drain/clog and fixture services."
+    },
+    {
+      "source_id": "S39",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "method": "direct fetch",
+      "extract": "Company lists phone (415) 668-8000, San Francisco plumbing, leak detection/pipe repair, drain cleaning and bathtub/faucet installation caption."
+    },
+    {
+      "source_id": "S40",
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "method": "direct fetch",
+      "extract": "Company lists CSLB #1024971, phone (415) 596-6115, San Francisco residential plumbing for houses, apartments and HOAs; aggregate review claim is self-reported."
+    },
+    {
+      "source_id": "S41",
+      "url": "https://generalsf.com/",
+      "method": "direct fetch",
+      "extract": "Company lists CSLB 959843, phone (650) 303-1515, San Francisco Bay Area electrical, plumbing and building services."
+    },
+    {
+      "source_id": "S42",
+      "url": "https://www.handymanhero.es/",
+      "method": "direct fetch",
+      "extract": "Company lists license #1003394, phone 1-844-382-4376, construction/plumbing/handyman services; page also says Licensed C-10, which is not on CSLB #1003394."
+    },
+    {
+      "source_id": "S43",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "method": "direct fetch",
+      "extract": "Company lists license #829071, phone (415) 824-6444, San Francisco residential/commercial plumbing and HOA/property-manager services."
+    },
+    {
+      "source_id": "S56",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:34 PM",
+      "extract": "RAPID FLOW PLUMBING & ROOTER INC; (415) 866-8401; 230 EDINBURGH ST, SAN FRANCISCO, CA 94112; current and active; B, C36; expires 01/31/2028; $25,000 bond; workers' compensation exempt, certified no employees at this time."
+    },
+    {
+      "source_id": "S57",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "method": "direct fetch",
+      "data_current": "11/8/2026 2:55:34 PM",
+      "extract": "MANNY'S PLUMBING & ROOTER; (650) 207-5733; 41 MIDVALE DRIVE, DALY CITY, CA 94015; current and active; C36, B; expires 06/30/2028; $25,000 bond; workers' compensation exempt, certified no employees at this time."
+    },
+    {
+      "source_id": "S61",
+      "url": "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+      "method": "direct fetch",
+      "extract": "Company lists Bathtubs (waste & overflow), phone (415) 596-6115, San Francisco service, and working alongside a general contractor for remodels. Not proof of drywall self-performance or this stuck mechanism."
+    },
+    {
+      "source_id": "S99",
+      "url": "https://generalsf.com/building",
+      "method": "direct fetch",
+      "extract": "Company lists Rough and Finish Plumbing; Sheetrock/Tape and Texture; phone (650)-303-1515; CSLB 959843."
+    },
+    {
+      "source_id": "S100",
+      "url": "https://generalsf.com/plumbing",
+      "method": "direct fetch",
+      "extract": "Company lists plumbing installation/repair, sewer/water lines, faucet/toilet/tub/shower replacement; phone (650)-303-1515; CSLB 959843."
+    },
+    {
+      "source_id": "S89",
+      "url": "https://www.handymanhero.es/handyman-services/",
+      "method": "direct fetch",
+      "extract": "Company lists sheetrock and wall repairs, plumbing and electrical services, San Francisco homes and apartments; phone 1-844-382-4376; license #1003394."
+    },
+    {
+      "source_id": "S90",
+      "url": "https://www.rapidflowbayarea.com/",
+      "method": "direct fetch",
+      "extract": "Company lists B and C-36 license #1115649, plumbing and general contracting/remodels, San Francisco Bay Area service; marketing phone 844-BAY-FLOW."
+    },
+    {
+      "source_id": "S74",
+      "url": "https://www.rapidflowbayarea.com/contact",
+      "method": "direct fetch",
+      "extract": "Company contact page lists 230 Edinburgh St, San Francisco; SF Bay Area service; license #1115649; phone/text (415) 866-8401 and marketing line 844-BAY-FLOW."
+    },
+    {
+      "source_id": "S75",
+      "url": "https://www.mannysplumbingandremodeling.com/",
+      "method": "direct fetch",
+      "extract": "Company lists license #841229, C-36/B, tub installation, drain replacement, kitchen/bathroom remodeling; named service list includes Daly City and San Mateo County cities plus surrounding San Mateo & San Francisco Counties. Exact SF address availability unconfirmed."
+    },
+    {
+      "source_id": "S83",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "method": "direct fetch",
+      "extract": "B General Building definition and BPC 7057 limits: non-framing/carpentry trades require appropriate classification or appropriately licensed subcontractor, subject to the stated multi-trade rules."
+    },
+    {
+      "source_id": "S91",
+      "url": "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx",
+      "method": "direct fetch",
+      "extract": "CSLB advises at least three written bids on identical scope, checking license/personnel, address/phone, workers' compensation and general liability insurance; bond is not a competency guarantee."
+    },
+    {
+      "source_id": "S92",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+      "method": "direct fetch",
+      "extract": "Civil Code 1954 limits landlord entry, generally requires reasonable written notice with date/approximate time/purpose and normal business hours; 24 hours is presumed reasonable absent contrary evidence; exceptions include emergency, consent at entry and agreed repair entry within one week."
+    },
+    {
+      "source_id": "S93",
+      "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+      "method": "direct fetch",
+      "extract": "Watco trip-lever instructions: drain elbow/gasket secured under tub; overflow elbow aligned behind tub; overflow plate and drop cylinder installed with screws; linkage must not be kinked; readjust to ensure drain stops water. Model-specific instructions, not identification of this tub."
+    },
+    {
+      "source_id": "S94",
+      "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+      "method": "direct fetch",
+      "extract": "SF DBI kitchen/bath permit guidance for in-kind fixture renovation with no structural work; online route limited to no wall removal/moving and R-2/R-3 legally permitted kitchens/baths; related plumbing/electrical permits and inspections are separate."
+    },
+    {
+      "source_id": "S95",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco?start=160",
+      "method": "web_search excerpt; direct Yelp fetch HTTP 403",
+      "extract": "Search excerpt located Ace Plumbing & Rooter's Yelp profile and plumbing categories. Numeric rating/count not used as verified evidence."
+    },
+    {
+      "source_id": "S96",
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "method": "direct fetch, chunk 1, printed pages 4-5",
+      "extract": "SF Plumbing Code 104.2 exempt work includes repair of leaks not requiring cutting into or removing piping, and unstopping traps/sewers/vents/waste pipes not requiring cutting into or removal of traps or piping."
+    }
+  ]
+}

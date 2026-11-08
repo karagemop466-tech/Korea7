@@ -46,7 +46,7 @@ PRIVACY_PATTERNS = [
 ]
 PLACEHOLDER_PATTERNS = [r"\bTODO\b", r"\bTBD\b", r"\bPLACEHOLDER\b", r"example\.com", r"lorem ipsum"]
 
-EXTENSIONS = {".html", ".md", ".json", ".css", ".js"}
+EXTENSIONS = {".html", ".md", ".json", ".csv", ".css", ".js"}
 SKIP_DIRS = {".git", "node_modules", "__pycache__", "vendor", "gems", "evidence", "registry", "data"}
 
 
@@ -185,7 +185,8 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
         if not path.is_file() or path.suffix not in EXTENSIONS:
             continue
         rel = path.relative_to(root)
-        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]):
+        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]) \
+                and not rel.as_posix().startswith("data/canonical/"):
             continue
         if rel.as_posix().startswith("data/canonical/verification_report"):
             continue

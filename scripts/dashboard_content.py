@@ -676,3 +676,463 @@ for _block in PAGES["index.html"]["sections"]:
         for _card in _block["items"]:
             if _card["v"] == "AUTO_FLAGS":
                 _card["v"] = str(len(TABLES["flagged"]["rows"]))
+
+
+# --- Integration audit additions (session arena/52d35ede-korea7, PR #60/#61 merge) ---
+SOURCES.update({'S89': {'label': 'Handyman Heroes — Handyman services',
+         'publisher': 'Handyman Heroes Inc',
+         'url': 'https://www.handymanhero.es/handyman-services/',
+         'tier': 'company',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'Company lists sheetrock and wall repairs, plumbing and electrical services, San '
+                     'Francisco homes and apartments; phone 1-844-382-4376; license #1003394.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S90': {'label': 'Rapid Flow Plumbing & Rooter — home',
+         'publisher': 'Rapid Flow Plumbing & Rooter Inc',
+         'url': 'https://www.rapidflowbayarea.com/',
+         'tier': 'company',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'Company lists B and C-36 license #1115649, plumbing and general contracting/remodels, '
+                     'San Francisco Bay Area service; marketing phone 844-BAY-FLOW.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S91': {'label': 'CSLB — How to find the right licensed contractor',
+         'publisher': 'Contractors State License Board',
+         'url': 'https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx',
+         'tier': 'official',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'CSLB advises at least three written bids on identical scope, checking '
+                     "license/personnel, address/phone, workers' compensation and general liability "
+                     'insurance; bond is not a competency guarantee.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S92': {'label': 'California Civil Code §1954 — landlord entry',
+         'publisher': 'California Legislative Information',
+         'url': 'https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954',
+         'tier': 'official',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'Civil Code 1954 limits landlord entry, generally requires reasonable written notice '
+                     'with date/approximate time/purpose and normal business hours; 24 hours is presumed '
+                     'reasonable absent contrary evidence; exceptions include emergency, consent at entry '
+                     'and agreed repair entry within one week.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S93': {'label': 'Watco — Trip Lever Installation Instructions (PDF)',
+         'publisher': 'Watco Manufacturing Co.',
+         'url': 'https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf',
+         'tier': 'manufacturer',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'Watco trip-lever instructions: drain elbow/gasket secured under tub; overflow elbow '
+                     'aligned behind tub; overflow plate and drop cylinder installed with screws; linkage '
+                     'must not be kinked; readjust to ensure drain stops water. Model-specific instructions, '
+                     'not identification of this tub.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S94': {'label': 'SF.gov — Apply for a kitchen or bath remodel permit',
+         'publisher': 'SF Department of Building Inspection',
+         'url': 'https://www.sf.gov/apply-kitchen-or-bath-remodel-permit',
+         'tier': 'official',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'SF DBI kitchen/bath permit guidance for in-kind fixture renovation with no structural '
+                     'work; online route limited to no wall removal/moving and R-2/R-3 legally permitted '
+                     'kitchens/baths; related plumbing/electrical permits and inspections are separate.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S95': {'label': 'Yelp — Ace Plumbing & Rooter profile',
+         'publisher': 'Yelp',
+         'url': 'https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco?start=160',
+         'tier': 'platform',
+         'status': 'blocked-403',
+         'checked': '2026-11-08',
+         'supports': "Search excerpt located Ace Plumbing & Rooter's Yelp profile and plumbing categories. "
+                     'Numeric rating/count not used as verified evidence.',
+         'note': 'web_search excerpt; direct Yelp fetch HTTP 403 Preserved by integration session '
+                 'arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S96': {'label': '2025 San Francisco Plumbing Code PDF — §104.2',
+         'publisher': 'City and County of San Francisco',
+         'url': 'https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf',
+         'tier': 'official',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'SF Plumbing Code 104.2 exempt work includes repair of leaks not requiring cutting into '
+                     'or removing piping, and unstopping traps/sewers/vents/waste pipes not requiring '
+                     'cutting into or removal of traps or piping.',
+         'note': 'direct fetch, chunk 1, printed pages 4-5 Preserved by integration session '
+                 'arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S97': {'label': 'Prior canonical research snapshot (2026-11-07/08)',
+         'publisher': 'This repository',
+         'url': 'data/canonical/research-history-2026-11-07.json',
+         'tier': 'primary',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'Preserved prior tables/sources before this refresh',
+         'note': 'Historical data retained; not current verification. Preserved by integration session '
+                 'arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S98': {'label': 'Repository source/artifact inventory',
+         'publisher': 'This repository',
+         'url': 'data/canonical/repo_inventory.json',
+         'tier': 'primary',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'File paths, byte counts, SHA-256 hashes and review category',
+         'note': 'Generated pages/reports excluded to avoid self-reference; external factual claims in '
+                 'unrelated files not verified. Preserved by integration session arena/52d35ede-korea7 '
+                 'during PR #61 merge.'},
+ 'S99': {'label': 'General SF — Building services',
+         'publisher': 'General SF',
+         'url': 'https://generalsf.com/building',
+         'tier': 'company',
+         'status': 'verified',
+         'checked': '2026-11-08',
+         'supports': 'Company lists Rough and Finish Plumbing; Sheetrock/Tape and Texture; phone '
+                     '(650)-303-1515; CSLB 959843.',
+         'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'},
+ 'S100': {'label': 'General SF — Plumbing services',
+          'publisher': 'General SF',
+          'url': 'https://generalsf.com/plumbing',
+          'tier': 'company',
+          'status': 'verified',
+          'checked': '2026-11-08',
+          'supports': 'Company lists plumbing installation/repair, sewer/water lines, '
+                      'faucet/toilet/tub/shower replacement; phone (650)-303-1515; CSLB 959843.',
+          'note': 'direct fetch Preserved by integration session arena/52d35ede-korea7 during PR #61 merge.'}})
+TABLES["requirements"] = {'title': 'Requirements register — line by line',
+ 'columns': ['#',
+             'Requirement as stated',
+             'Category',
+             'Officially confirmed value / implementation',
+             'Status',
+             'Source'],
+ 'rows': [{'cells': ['R01',
+                     'Collect, organize and analyze a full list of requirements',
+                     'Project scope',
+                     'Implemented in this register',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R02',
+                     'Create an executive summary of important details',
+                     'Deliverable',
+                     'Executive summary page and Markdown file',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S46']},
+          {'cells': ['R03',
+                     'Bathtub overflow is hard to access; drywall may need opening',
+                     'Problem',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S02']},
+          {'cells': ['R04',
+                     'Remove the bathtub wastewater overflow trip lever',
+                     'Scope',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S14', 'S93']},
+          {'cells': ['R05',
+                     'Expert Plumbing Solutions: replacing waste and overflow; owner-reported $614',
+                     'Estimate',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S06']},
+          {'cells': ['R06',
+                     'Bay Area Plumbing: lever/plug/spout with diverter, labor/materials; owner-reported '
+                     '$550',
+                     'Estimate',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S07']},
+          {'cells': ['R07',
+                     'Fast Response: repair/adjust plunger handle; owner-reported $135',
+                     'Estimate',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S08']},
+          {'cells': ['R08',
+                     'Estimates dated 8/30/26',
+                     'Estimate date',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44']},
+          {'cells': ['R09',
+                     'Find someone who can perform the needed work',
+                     'Objective',
+                     'Eight licensed candidates researched; no provider acceptance confirmed',
+                     '<span class="pill warn">research done / acceptance unverified</span>'],
+           'src': ['S44', 'S04']},
+          {'cells': ['R10',
+                     'Removal from above is preferred if possible',
+                     'Preference',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S93']},
+          {'cells': ['R11',
+                     '5+ licensed plumbers could not remove it from above without damage concern',
+                     'Constraint',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S04']},
+          {'cells': ['R12',
+                     'Work from below; storage unit below; ceiling drywall may need opening',
+                     'Access',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S02', 'S96']},
+          {'cells': ['R13',
+                     'One all-in-one service for drywall and plumbing',
+                     'Service requirement',
+                     'Five B+C-36 licenses verified; combined execution and drywall scope unconfirmed',
+                     '<span class="pill warn">license verified / execution unverified</span>'],
+           'src': ['S44', 'S09', 'S10', 'S11', 'S56', 'S57', 'S83']},
+          {'cells': ['R14',
+                     'Look on Yelp and other review services for this specific work in San Francisco',
+                     'Research',
+                     'Yelp profiles/searches located; direct fetch blocked; numeric values blank',
+                     '<span class="pill warn">research done / reviews unverified</span>'],
+           'src': ['S44', 'S32', 'S33', 'S34', 'S35', 'S36', 'S95']},
+          {'cells': ['R15',
+                     'Provider should be a licensed plumber or contractor',
+                     'Provider',
+                     'CSLB records checked for eight candidates',
+                     '<span class="pill ok">license records verified</span>'],
+           'src': ['S44', 'S04', 'S05']},
+          {'cells': ['R16',
+                     'Provider must service the San Francisco area',
+                     'Service area',
+                     'Company service claims and CSLB addresses recorded; exact address availability '
+                     'unconfirmed',
+                     '<span class="pill warn">recorded / availability unverified</span>'],
+           'src': ['S44', 'S41', 'S43', 'S75']},
+          {'cells': ['R17',
+                     'Experience with delicate work in a sensitive, tenant-occupied unit',
+                     'Environment',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S92', 'S91']},
+          {'cells': ['R18',
+                     'Reference pictures may be supplied; work from description if absent',
+                     'Input',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R19',
+                     'No manual input; complete tasks autonomously',
+                     'Process',
+                     'No clarification requested; desk research/build performed',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R20',
+                     'Review repo line by line; official trusted sources; links; flag irregularities',
+                     'Repo work',
+                     'Repository inventory and dashboard row audit generated; unrelated GEMS facts not '
+                     'externally verified',
+                     '<span class="pill warn">inventory done / external facts flagged</span>'],
+           'src': ['S44', 'S45', 'S47', 'S98']},
+          {'cells': ['R21',
+                     'GitHub Pages site: clean landing page, category subpages, simple tables',
+                     'Site',
+                     'Static dashboard built at repository root',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S46']},
+          {'cells': ['R22',
+                     'Every table row has an official source link; unconfirmable values blank and flagged',
+                     'Verification',
+                     'Source links present; owner/third-party rows lack official confirmation and are '
+                     'flagged (U21)',
+                     '<span class="pill warn">partial / needs review</span>'],
+           'src': ['S44', 'S04', 'S45']},
+          {'cells': ['R23',
+                     'Rank contractors best-to-hire with reasoning, costs, official links and phone numbers',
+                     'Decision analysis',
+                     'Conditional ranking and contact directory published; combined costs blank/unverified',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S91']},
+          {'cells': ['R24',
+                     'No hallucinations; never infer or fill unconfirmed values',
+                     'Verification',
+                     'Blank + UNVERIFIED policy and source grades enforced; manual review still required',
+                     '<span class="pill ok">policy implemented</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R25',
+                     'Coordinate parallel sessions through COORDINATION.md; non-overlapping scopes; frequent '
+                     'commits',
+                     'Coordination',
+                     'Claim pushed; concurrent board entries preserved',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R26',
+                     'Publish Flagged for Review page; flags do not block merge',
+                     'Site',
+                     'Flagged page published with source links',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S46']},
+          {'cells': ['R27',
+                     'Create PR to main, merge after checks, confirm Pages, record result',
+                     'Delivery',
+                     'See COORDINATION.md for the actual PR, merge and Pages deployment record',
+                     '<span class="pill info">delivery record in board</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R28',
+                     'Keep requester-only context out of public artifacts',
+                     'Privacy boundary',
+                     'Privacy sweep and public-content review performed',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S45']},
+          {'cells': ['R29',
+                     'Build must have no broken links; do not merge a broken site',
+                     'Quality gate',
+                     'Internal links/anchors/assets checked; deploy confirmed separately',
+                     '<span class="pill ok">implemented / see evidence</span>'],
+           'src': ['S44', 'S45', 'S46']},
+          {'cells': ['R30',
+                     'Tenants occupy the unit where the lever is stuck',
+                     'Environment',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>',
+                     '<span class="pill warn">owner-provided / unverified</span>'],
+           'src': ['S44', 'S92']}],
+ 'caption': 'Owner requirements cannot be “officially verified” as facts. Implementation status is a project '
+            'record; external facts use the cited official/company sources. Blank means no official '
+            'confirmation.'}
+TABLES["access_options"] = {'title': 'Access options — what is and is not established',
+ 'columns': ['Route', 'Evidence', 'Project-specific conclusion', 'Source'],
+ 'rows': [{'cells': ['From above (preferred)',
+                     'Watco instructions show overflow plate/linkage removal and adjustment for its models; '
+                     'this tub model is unknown',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>'],
+           'src': ['S93', 'S44']},
+          {'cells': ['From below (reported fallback)',
+                     'This Old House describes below access for stubborn drains; SF rules govern any '
+                     'cutting/replacement and covering',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>'],
+           'src': ['S18', 'S01', 'S44']},
+          {'cells': ['Ceiling drywall opening',
+                     'SF DBI lists minor wallboard repairs as exempt unless fire-protection related; exact '
+                     'ceiling assembly/scope unknown',
+                     '<span class="blank" aria-label="blank — unverified">—</span> <span class="pill '
+                     'warn">UNVERIFIED</span>'],
+           'src': ['S02', 'S96', 'S44']}],
+ 'caption': 'No access method, opening size or permit exemption is inferred. A licensed site assessment is '
+            'required.'}
+TABLES["repo_inventory"] = {'title': 'Line-by-line source/artifact inventory',
+ 'columns': ['Path', 'Bytes', 'SHA-256', 'Category', 'Review scope', 'Source'],
+ 'rows': [],
+ 'caption': 'Generated at build time.'}
+for _r in TABLES["findings"]["rows"]:
+    if _r["cells"][0] == "F02":
+        _r["cells"][1] = "Below access is a publisher-described fallback for stubborn drains, not a verified project-specific norm"
+        _r["cells"][2] = "This Old House describes below access for stubborn drains; the exact access route for this tub remains unverified"
+        _r["cells"][3] = pill("publisher guidance / project unverified", "warn")
+    if _r["cells"][0] == "F04":
+        _r["cells"][1] = "All sixteen canonical candidates hold active CSLB licenses checked 2026-11-08"
+        _r["cells"][2] = "The canonical CSLB dataset transcribes each official record and its retrieval stamp"
+        _r["src"] = ["S85"]
+    if _r["cells"][0] == "F05":
+        _r["cells"][1] = "Drywall inclusion in the three owner-reported estimates is not stated"
+        _r["cells"][2] = "The supplied wording does not confirm inclusion or exclusion; no combined plumbing + drywall quote is verified"
+        _r["cells"][3] = pill("owner-provided / unverified", "warn")
+        _r["src"] = ["S44"]
+TABLES["flagged"]["rows"].extend([{'cells': ['U35',
+            '[Integration audit] Drywall inclusion in the three owner-reported estimates',
+            'The supplied wording does not state whether drywall/ceiling patch and finish is included; '
+            'earlier blanket exclusions were unsupported',
+            'Obtain written scope inclusions/exclusions for each estimate',
+            '<span class="pill warn">UNVERIFIED</span>'],
+  'src': ['S44']},
+ {'cells': ['U36',
+            '[Integration audit] No reference photos or model identification',
+            'No photos, model number or inspection were supplied; assembly type and access route are not '
+            'inferred',
+            'Provide photos/model to the contractor for assessment; verified cells remain blank until then',
+            '<span class="pill warn">UNVERIFIED</span>'],
+  'src': ['S44', 'S93']},
+ {'cells': ['U37',
+            '[Integration audit] Permit applicability is not determined',
+            'Official rules and exemptions are cited, but the exact concealed plumbing/ceiling scope has not '
+            'been assessed by DBI',
+            'Confirm scope and applicable requirements with DBI and the licensed contractor',
+            '<span class="pill warn">UNVERIFIED</span>'],
+  'src': ['S01', 'S02', 'S96', 'S94']},
+ {'cells': ['U38',
+            "[Integration audit] Manny's exact San Francisco service availability",
+            'Company lists surrounding San Mateo & San Francisco Counties but not a specific SF address '
+            'commitment; CSLB address is Daly City',
+            'Confirm the job address is within the service area and obtain a written quote',
+            '<span class="pill warn">UNVERIFIED</span>'],
+  'src': ['S57', 'S75']},
+ {'cells': ['U39',
+            '[Integration audit] Handyman Heroes workers’ compensation classification codes',
+            'CSLB #1003394 lists carpentry/high-low wage and clerical codes; adequacy for plumbing work is '
+            'not established by the record',
+            'Ask the carrier/contractor to confirm coverage for the actual plumbing crew',
+            '<span class="pill warn">needs review</span>'],
+  'src': ['S10', 'S91']},
+ {'cells': ['U40',
+            '[Integration audit] General SF crew and insurance',
+            'CSLB #959843 shows a no-employee workers’ compensation exemption; a bond is not liability '
+            'insurance',
+            'Confirm crew identity, workers’ compensation and general liability coverage before work',
+            '<span class="pill warn">verified fact / needs review</span>'],
+  'src': ['S09', 'S91']},
+ {'cells': ['U41',
+            '[Integration audit] Public repository / Pages visibility',
+            'GitHub Pages is public; only project-suitable content is published and requester-only context '
+            'is excluded',
+            'Review public artifacts before adding any sensitive material',
+            '<span class="pill info">privacy boundary</span>'],
+  'src': ['S46', 'S45']},
+ {'cells': ['U42',
+            '[Integration audit] Supplemental 8-provider conditional inquiry order is editorial',
+            'The earlier 8-provider order is preserved as structured evidence; the primary published ranking '
+            'is the computed 16-record CSLB rubric',
+            'Re-rank after written quotes, references and site assessment',
+            '<span class="pill info">analysis</span>'],
+  'src': ['S91', 'S09', 'S10', 'S11']},
+ {'cells': ['U43',
+            '[Integration audit] Rapid Flow / Manny’s / Szeto review evidence',
+            'No directly verified Yelp profile was established for these leads in this pass; review cells '
+            'remain blank',
+            'Locate and review platform profiles independently; do not infer ratings',
+            '<span class="pill warn">UNVERIFIED</span>'],
+  'src': ['S56', 'S57', 'S37', 'S04']}])
+for _page, _ref, _idx in (("technical.html", "access_options", 1), ("repo-review.html", "repo_inventory", 1)):
+    _sections = PAGES[_page]["sections"]
+    if not any(_b.get("ref") == _ref for _b in _sections if _b["type"] == "table"):
+        _sections.insert(_idx, {"type": "table", "ref": _ref})
+PAGES["repo-review.html"]["sections"].insert(2, {'type': 'prose',
+ 'title': 'Integration audit downloads',
+ 'html': '<p><a href="data/canonical/evidence-2026-11-08.json">Current evidence extracts</a> · <a '
+         'href="data/canonical/providers-2026-11-08.json">Supplemental 8-provider records</a> · <a '
+         'href="data/canonical/research-history-2026-11-07.json">Prior canonical snapshot</a> · <a '
+         'href="data/canonical/repo_inventory.csv">Repository inventory CSV</a>. The computed <a '
+         'href="ranking.html">16-record ranking</a> remains the primary hiring decision.</p>'})
+PAGES["sources.html"]["sections"].insert(len(PAGES["sources.html"]["sections"]) - 1, {'type': 'prose',
+ 'title': 'Integration evidence files',
+ 'html': '<p><a href="data/canonical/evidence-2026-11-08.json">Evidence extracts</a> · <a '
+         'href="data/canonical/providers-2026-11-08.json">Provider records</a> · <a '
+         'href="data/canonical/cslb_records.json">Canonical CSLB records</a> · <a '
+         'href="data/canonical/vendor_sites.json">Business-site transcriptions</a> · <a '
+         'href="data/canonical/review_snapshots.json">Review snapshots</a>.</p>'})
+for _block in PAGES["index.html"]["sections"]:
+    if _block["type"] == "cards":
+        for _card in _block["items"]:
+            if _card["k"] == "Flagged for review":
+                _card["v"] = str(len(TABLES["flagged"]["rows"]))
+for _page in PAGES.values():
+    for _b in _page["sections"]:
+        for _k, _v in list(_b.items()):
+            if isinstance(_v, str):
+                _b[_k] = _v.replace("U01–U34", "U01–U43").replace("34 flagged items", "43 flagged items")
+META["session"] = "arena/52d35ede-korea7"

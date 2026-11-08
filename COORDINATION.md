@@ -1126,3 +1126,43 @@ last PR; that PR's own merge and deploy result is recorded in the PR thread and 
 a further self-referential board commit. Nothing is left claimed or in progress by
 `arena/0e9ee506-korea7`. The one carried-forward request (extend `tests/test_dashboard_integrity.py` to
 15 pages) is unclaimed and available to the next session that owns that file.
+
+---
+
+# Follow-up integration — session `arena/52d35ede-korea7` (2026-11-08)
+
+Read the complete existing board before editing. Earlier delivery/integration tasks are recorded as done; the claims below cover a new current-date follow-up, not a takeover of active work. The Arena session branch is fixed: all work, commits and the delivery PR stay on `arena/52d35ede-korea7`; no extra `session-*` branch is created. Starting revision: `1faccdc3a99b209b7630d02470aebc816d2b1104`, identical to `origin/main`. Existing open PRs belong to other sessions and will not be merged or closed by this session.
+
+| Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|
+| F1 — current-source and decision audit | done | arena/52d35ede-korea7 | scripts/dashboard_content.py; data/canonical/* | Re-read official evidence, correct unsupported claims, preserve provenance and explicit unverified values. |
+| F2 — dashboard usability and requirements coverage | done | arena/52d35ede-korea7 | root canonical HTML; assets/dashboard.css; assets/dashboard.js; scripts/build_dashboard.py; EXECUTIVE-SUMMARY.md; README.md | Build on the existing canonical dashboard; do not duplicate archives or unrelated GEMS content. |
+| F3 — independent integration checks | done | arena/52d35ede-korea7 | scripts/verify_dashboard.py; tests/test_dashboard.py; tests/test_dashboard_integrity.py | Test row-level provenance, links, privacy, responsive rendering and build reproducibility. |
+| F4 — PR, merge, Pages and final record | in progress | arena/52d35ede-korea7 | COORDINATION.md; GitHub PR and deployment | Verify before merge; publish flagged items; record actual results only. |
+
+- 2026-11-08: Claim registered before substantive file edits; committing and pushing immediately. Historical logs are preserved. Archived pages from other sessions are out of scope; any issue found there will be logged as a handoff/flag rather than silently overwritten.
+
+- Concurrent-main handoff: `git pull --rebase origin main` conflicted only in this board after other sessions merged their records. Resolved by retaining the complete incoming board and re-appending this session’s claim; no other session’s entry or file was discarded. The initial claim was published at 22:56:02 UTC. Open PR #54 was board-only; the completed follow-up audit on main is preserved and incorporated.
+
+### F1–F3 progress — arena/52d35ede-korea7 (2026-11-08)
+
+- **Current-source reads:** eight CSLB License Detail records (#977638, #757796, #1024971, #959843, #1003394, #829071, #1115649, #841229), CSLB complaint disclosure #1003394, CSLB B/C-36 classifications, CSLB Check a License and hiring guidance; SF DBI plumbing/wallboard/kitchen-bath guidance and 2025 SF Plumbing Code §104.2 PDF; California BPC §7048 and Civil Code §1954; Watco trip-lever PDF and Oatey product page; company pages for General SF, Handyman Heroes, Ace, Rapid Flow, Manny's, Expert, Bay Area and Fast Response. Extracts saved in `data/canonical/evidence-2026-11-08.json`; structured candidates in `data/canonical/providers-2026-11-08.json`.
+- **Review-platform limit:** direct Yelp fetches returned HTTP 403. Search excerpts located profiles; numeric ratings/counts are blank and UNVERIFIED. Historical Angi/BuildZoom/Thumbtack/BBB/Yelp category links are preserved but excluded from the current ranking.
+- **Corrections:** removed unsupported blanket claims that the owner quotes exclude drywall and that below access is the “norm”; marked drywall inclusion and exact access route unverified. Added conditional ranking, official contact directory, occupied-entry rules, source-grade row audit, 32 flags, and hashed repository inventory. Prior canonical data preserved in `data/canonical/research-history-2026-11-07.json`; unrelated GEMS and archived pages untouched.
+- **Checks:** `python3 scripts/build_dashboard.py` → 11/11 PASS; 13 pages, 19 tables, 535 data rows, 1,105 rendered tbody rows with 0 missing source links; 1,072 canonical internal links and 0 broken anchors; full-repo HTML audit 78 pages / 2,137 internal links / 0 broken / 0 bad anchors; privacy sweep 127 files / 0 matches. `PYTHONPATH=/home/user/.local/korea7-test-deps python3 -m pytest -q tests/test_dashboard.py tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_bath_site.py tests/test_sf_overflow_audit.py tests/test_followup_audit.py` → 48 passed, 9 subtests passed. jsdom filter smoke test passed. Local static preview started on port 8000.
+- **Irregularities:** U01–U32 published on `flagged.html`; R22 marked partial/needs review because owner/third-party rows cannot be officially confirmed. Automated checks are structural/provenance checks, not proof of contractor competence or external link availability. No provider outreach or booking was performed.
+
+### Concurrent-main integration and final pre-merge checks — arena/52d35ede-korea7 (2026-11-08)
+
+- Rebased onto `origin/main` at `665f41d` after concurrent PRs #57–#59. Preserved the incoming shortlist license-scope correction, source S62 (BPC §7059), source S63 (archived verification page) and flag U22. To avoid ID collisions, this session’s General SF building/plumbing sources were remapped to S77/S78 and its drywall-inclusion flag to U33; all table/evidence/provider references were updated and the site regenerated. No concurrent board entry or archived file was discarded.
+- Re-read official [BPC §7059](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC) during integration: specialty contractors may execute multi-craft contracts when the other work is incidental and supplemental to their licensed craft. Applicability to this ceiling repair remains unverified; the dashboard does not treat B+C-36 as the only possible arrangement.
+- Final local checks after the PR #61 merge: `python3 scripts/build_dashboard.py` → 11/11 PASS; 15 pages, 25 tables, 662 data rows, 100 sources, 43 flags; 1,351 rendered tbody rows with 0 missing source links; 1,419 canonical internal links and 0 broken anchors. Privacy sweep: 132 files, 0 matches. Full-repo HTML audit: 80 pages, 2,486 internal links, 0 broken, 0 bad anchors. Site suite including `tests/test_ranking.py`, `tests/test_license_scope_followup.py` and the extended 15-page integrity tuple: **68 passed, 18 subtests passed**. jsdom table-filter smoke tests passed on contractors/ranking/contacts; local static preview returned HTTP 200 for canonical pages/assets/data.
+- F1–F3 are done. F4 remains in progress until the PR is merged and the actual Pages deployment/live content are verified. Flagged items remain non-blocking; no provider outreach, booking or job acceptance is claimed.
+
+### Concurrent PR #61 merge handoff — arena/52d35ede-korea7 (2026-11-08)
+
+- PR #60 became conflicting after PR #61 merged the 16-record CSLB ranking/contacts work (`arena/0e9ee506-korea7`). This integration merges `origin/main` rather than overwriting it. The incoming `ranking_data.py`, `ranking.html`, `contacts.html`, canonical CSLB/vendor/review datasets, S64–S88 and U23–U34 are preserved as the primary computed ranking.
+- This session's earlier 8-provider conditional ranking is retained as supplemental structured evidence (`providers-2026-11-08.json`) and audit history, not as a competing primary order. Colliding source/flag IDs are remapped to additive IDs; the drywall-inclusion flag is preserved. Generated pages are rebuilt from the merged generator.
+- The incoming request to extend `tests/test_dashboard_integrity.py` from 9 to 15 pages is handled in this integration. Final checks and the PR #60 merge/deploy record are appended after actual verification.
+
+- PR #63/#64 close-out and landing corrections from `arena/0e9ee506-korea7` were also merged into this branch before the PR #60 merge gate: the Contacts card escaping fix, the 2026-11-08 CSLB stamp note, and the complete J5 delivery/close-out board entry are preserved. The carried-forward 15-page integrity-test request is satisfied here.
