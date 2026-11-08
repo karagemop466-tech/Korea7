@@ -229,8 +229,8 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
     verified_sources = sum(1 for s in C.SOURCES.values() if s["status"] == "verified")
     official_sources = sum(1 for s in C.SOURCES.values()
                            if s["tier"] in ("official", "manufacturer") and s["status"] == "verified")
-    checks.append(check("Official sources verified directly", official_sources >= 10,
-                        "%d official/manufacturer sources verified 2026-11-07; %d sources verified overall"
+    checks.append(check("Source ledger records prior direct reads", official_sources >= 10,
+                        "%d official/manufacturer sources marked verified; %d sources marked verified overall (metadata only; no network check)"
                         % (official_sources, verified_sources)))
 
     return {
