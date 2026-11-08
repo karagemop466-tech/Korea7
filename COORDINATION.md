@@ -931,6 +931,13 @@ re-appending this session's board section and logs below it (no entry discarded)
 - **Task board:** I1–I5 **done**. Flagged items U01–U20 are published on `flagged.html` with source links and do not block. PR #32 remains OPEN/CONFLICTING and was deliberately left untouched for its owner. No manual input was requested or received.
 - This final record is published to `main` through a small follow-up integration PR; PR #46 above is the delivery PR whose link and merge result were required to be recorded here.
 
+## Follow-up audit — session `arena/60cdc184-korea7` (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Independently audit existing integration, privacy, tests, and deployment; publish follow-up findings | in progress | arena/60cdc184-korea7 | COORDINATION.md; additional scope will be claimed if needed |
+
+This session uses the fixed Arena branch rather than creating a separate session branch. Earlier integration and parallel deliverables are retained.
 ## Current session claim — arena/89ae6815-korea7 (2026-11-08)
 
 | Task | Status | Owner | File scope |
@@ -947,6 +954,82 @@ Earlier integration tasks were completed by their owners; this session will not 
 - A full repository test run could not collect unrelated scientific tests because NumPy was not installed in the audit environment; the five site modules above ran independently. The first branch-specific pull could not find a remote branch because it had not yet been created; the claim was rebased on main and pushed to the prescribed session branch.
 
 ---
+
+## Session claim — arena/e3044a3b-korea7 (2026-11-08)
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Re-verify integrated dashboard line-by-line (CSLB fresh check, links, tests), executive summary, publish via PR+merge, confirm Pages | in progress | arena/e3044a3b-korea7 | COORDINATION.md; fixes only in root dashboard pages if verifier fails |
+Prior tasks 1-10/I1-I5 done by earlier sessions (PR #46 merged). This session re-verifies independently; does not duplicate pages.
+
+### Verification record — arena/e3044a3b-korea7 (2026-11-08)
+- Status: done. Re-ran `scripts/build_dashboard.py`: 11/11 PASS (13 pages, 411 rows all source-linked, 493 internal links 0 broken, privacy sweep 121 files 0 matches). Site tests: 41 passed, 9 subtests.
+- Fresh official check 2026-11-08: CSLB License Detail #1024971 (data current 11/8/2026) — current/active C-36, expires 2027-03-31, phone (415) 596-6115, matches contractors.html incl. flagged "236 W POTRAL AVE" spelling. Other licenses on site carry 2026-11-07 CSLB stamps; re-check on hire date.
+- Estimates ($614/$550/$135, dated 2026-08-30 as provided) remain owner-supplied/UNVERIFIED with blank verified cells on estimates.html/flagged.html (U-items). No provider has confirmed accepting this specific stuck-lever job; ranking on shortlist.html/contractors.html is classification+review based only.
+- Privacy sweep: no private rationale anywhere in repo/site (grep + builder check 0 matches). Permits page is neutral official sf.gov/CSLB reporting only.
+- Irregularity: repo's legacy content is an unrelated DOE GEMS audit (flagged on flagged.html/repo-review.html); latest Pages run at audit time was queued, prior run success, live site fetched OK 2026-11-08.
+---
+### Follow-up audit result — arena/60cdc184-korea7
+
+- Status: **needs review**. This session's claim preceded discovery of PR #50 from a concurrent auditor. The conflicting appended board sections were resolved by preserving both; this audit does not replace that session's work. The first branch-specific pull found no remote ref because the branch had not yet been published.
+- Local `scripts/build_dashboard.py`: 11 checks passed; five dashboard test modules: 41 passed, 9 subtests passed. Link-presence checks are not independent verification of every claim, and the test accepts non-official links or explicit unverified markers; they do not prove the requested official-source standard for every row. No provider was contacted.
+- Independently checked [CSLB #959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843): GENERALSF, (650) 303-1515, active B and C-36, expiring 2027-04-30 as of the record dated 2026-11-08. Experience on this exact job, current availability, drywall inclusion, and cost remain unverified. [SF DBI](https://www.sf.gov/apply-plumbing-and-mechanical-permit) says a permit is required before cutting or replacing pipes, subject to exemptions; applicability depends on scope.
+- [Live site](https://karagemop466-tech.github.io/Korea7/) was fetched successfully, but [deployment for 1faccdc](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253) failed; the published site can reflect a previous successful version. Subsequent run 42532738336 was in progress during audit. External source content and all repository lines were not independently reverified.
+- The later [Pages run 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) for main commit `2fb3e81` succeeded at both build and deploy, superseding the failed deployment noted above.
+- After the merge with concurrent main, `git pull --rebase origin arena/60cdc184-korea7` attempted to replay the other session's already-merged commits and produced a conflict. The rebase was aborted without discarding work; fetch and ancestry verification confirmed the remote branch is an ancestor of this branch, permitting a normal fast-forward push that retains both sessions' records.
+### Delivery update — arena/89ae6815-korea7
+
+- Audit PR [#50](https://github.com/karagemop466-tech/Korea7/pull/50) merged at 2026-11-08T22:56:58Z as `2fb3e81270ba257a7af49b0a07d56685f3113389`. It changed only this task board, not the built site.
+- Its [Pages workflow 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) completed successfully, including the deploy job, after the prior failed deployment. The earlier failure remains documented above. [Live dashboard](https://karagemop466-tech.github.io/Korea7/).
+
+- A second concurrent-main merge conflicted in this board; both sessions’ appended delivery updates were retained.
+- Follow-up audit PR [#53](https://github.com/karagemop466-tech/Korea7/pull/53) merged 2026-11-08 as `d1bdf5a1b0b2b9ef4a026989e99cb506de775267`. Its [Pages run 42532827361](https://github.com/karagemop466-tech/Korea7/actions/runs/42532827361) built successfully but deployment failed; a failed-job rerun was rejected by GitHub as unavailable. The immediately preceding [run 42532797361](https://github.com/karagemop466-tech/Korea7/actions/runs/42532797361) succeeded, and the site remained reachable. This audit changed only the coordination board.
+
+## Follow-up audit — session `arena/13d957de-korea7` (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Independently audit current dashboard, verification claims, official contractor records and deployment; make targeted corrections and publish review findings | needs review | arena/13d957de-korea7 | COORDINATION.md; scripts/dashboard_content.py; scripts/verify_dashboard.py; scripts/build_dashboard.py; generated root dashboard HTML and data/canonical; tests/test_followup_audit.py |
+
+The prior final integration is already complete; this is a follow-up rather than a duplicate rebuild. Session is on the Arena-assigned branch, which takes precedence over the requested naming convention. Other open PRs remain with their owners.
+
+### Follow-up findings and verification — 2026-11-08
+
+- **Task status: needs review.** Historical integration was already merged in [PR #46](https://github.com/karagemop466-tech/Korea7/pull/46); this session performed a targeted audit, not a fresh verification of every historical row. U21 on the site flags that some rows lack a government source and that the automated source-link check is not fact verification; no unrelated government citations were added merely to satisfy the form of the requirement. Primary/company, publisher and platform claims remain distinguished from government confirmation.
+- Directly read CSLB records current 11/8/2026: [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638), [#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), [#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971), [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843), [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649), [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229). All six showed current and active; #757796, #959843, #1115649 and #841229 reported no-employee workers' compensation exemptions. Corrected the earlier count of two to four and cited all four records. Recheck at hiring.
+- Read [Fast Response's repair page](https://www.fastresponseplumbingsf.com/plumbing-repair-replacement), which advertises bathtub waste and overflow repairs in San Francisco and provides a phone number. Added a company-sourced lead, explicitly not a verified ability to handle the precise stuck mechanism, drywall, availability or tenant coordination. The user reported prior estimates; corrected the misleading blanket statement that no provider had been contacted to specify that this research session did not contact providers. No outreach was performed by this session.
+- Re-read [SF DBI plumbing guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit). Quoted amounts, specific scope, current availability, one-provider capability, and inaccessible Yelp ratings remain unverified. Former estimates are owner reports, not independently confirmed quotes.
+- The site's prior verifier only checks source-link presence and metadata, not external availability or claim support. Changed the metadata-only check label to avoid implying live verification; R21 now flags the policy gap. Tests: `python3 scripts/build_dashboard.py` 11/11 structural checks pass; 494 canonical internal links, 0 broken; `PYTHONPATH=/tmp/korea7-pytest python3 -m pytest -q tests/test_dashboard.py tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_bath_site.py tests/test_sf_overflow_audit.py tests/test_followup_audit.py` → 43 passed, 9 subtests passed.
+- Deployment irregularity: latest existing Pages run [42413503253](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253) for `1faccdc` failed during deploy; prior run [42413469987](https://github.com/karagemop466-tech/Korea7/actions/runs/42413469987) succeeded and the live root was readable on 2026-11-08. Logs were not retrievable from the sandbox (EOF). A new merge will trigger a fresh deploy; verify separately. This session's first branch pull found no remote branch because it had not yet been created; rebased on `origin/main` then pushed the initial claim successfully.
+- Rebase/conflict handoff: PR #50 (`arena/89ae6815-korea7`) merged to main while this audit was underway, adding a separate board entry. Rebasing onto `origin/main` conflicted only in `COORDINATION.md`; both sessions' complete appended entries were retained, without modifying the other session's work. A force-with-lease push is needed to update this session's rebased branch.
+- Second board-only conflict: PR #52 merged during the first rebase; its delivery update and this session’s claim were both retained in full.
+
+- Third concurrent board conflict with PR #51 was resolved by retaining both complete updates; its independently owned dashboard changes were not modified.
+- Follow-up audit delivery: [PR #51](https://github.com/karagemop466-tech/Korea7/pull/51) merged at 2026-11-08T22:58:22Z as `b37816ceb0f5ce5fe5ee60a2f19cdb23d81f224b`. [Pages run 42532844896](https://github.com/karagemop466-tech/Korea7/actions/runs/42532844896) succeeded for that commit; live contractor and flagged pages were fetched and showed the updated four exemptions and source caveats. A third board-only conflict from PR #53 was resolved during rebase by retaining all entries from both sessions. The earlier failure remains documented above.
+## Independent follow-up audit — session `arena/14c34f19-korea7` (2026-11-08)
+
+| Task | Status | Owner | Scope | Notes |
+|---|---|---|---|---|
+| Independently check existing published dashboard, source freshness, tests and deployment; document actionable findings | done | arena/14c34f19-korea7 | COORDINATION.md, follow-up-audit-2026-11-08.md | Existing integrated site and other sessions' files remain untouched unless a separate integration claim is recorded. Fixed Arena branch name supersedes requested session-* naming. |
+
+- Claim push note: the session branch did not yet exist remotely. The initial pull from that branch failed; pulling from main in the shallow checkout attempted to replay a merge and conflicted. That rebase was aborted without discarding work; the claim was pushed to the new prescribed branch. After unshallowing, main was merged into the session branch; the board conflict was resolved by retaining all of main's board and appending this session's claim.
+- Integration correction claim: this session also claims `shortlist.html`, `scripts/dashboard_content.py`, `data/canonical/site_data.json`, generated dashboard pages/reports and a new test, to correct potentially misleading license-scope claims and publish a review flag. Prior integration owners marked their tasks done; no active owner is displaced.
+- Additional integration scope: `scripts/verify_dashboard.py` to correct the automated report's hard-coded verification date; the previous output counted a newer checked source under an older date. `tests/test_license_scope_followup.py` covers both corrections.
+- After merging main, a plain branch pull tried to linearize its merge history and conflicted; it was aborted without loss. A subsequent `git pull --rebase=merges origin arena/14c34f19-korea7` succeeded and preserved history before pushing.
+
+### Follow-up integration results — `arena/14c34f19-korea7`
+
+- Task status: **done**, with U22 published for review. The canonical shortlist no longer asserts that B + C-36 is the only route, or that a C-36-only contractor must always hire another trade for a ceiling patch. [BPC §7059](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC) permits qualifying incidental and supplemental work; applicability to this job remains unverified. The flag also identifies categorical language on the archived `docs/overflow-verification.html` page. The shortlist now distinguishes license classifications from confirmed job acceptance.
+- Re-read official CSLB records on 2026-11-08 for [Rapid Flow #1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) and [Bay Area Plumbing #757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796): both active with C-36; Rapid Flow also B, expires 2028-01-31; Bay Area expires 2027-01-31. Both report workers' compensation exemption on the basis of no employees. The [Rapid Flow company site](https://www.rapidflowbayarea.com/) advertises SF plumbing and general contracting; [Bay Area Plumbing](https://www.bayareaplumbingsf.com/) advertises SF plumbing and lists (415) 668-8000. A [Yelp search snippet](https://www.yelp.com/search?cflt=contractors&find_loc=Excelsior%2C+San+Francisco%2C+CA) includes a customer report of retrieving a tub drain plug for Rapid Flow; it is third-party anecdotal evidence, not confirmation of this job or drywall service.
+- Build: `python3 scripts/build_dashboard.py` passes 11 checks (417 rendered rows with source links; 500 internal links, none broken; anchors pass). Verifier now describes ledger status as recorded metadata, not a live source check, and no longer misdates later checks. Tests: six site modules, including a new licensing regression test, **44 passed, 9 subtests passed** using an isolated environment. Automated checks do not prove each external claim or all historical pages accurate. This follow-up rechecked the listed sources, not every source in the repository. No provider was contacted, and no job-specific availability, full-scope price or acceptance is established.
+- Pages was previously successful for main commit `2fb3e81`: [run 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336). This follow-up's PR and deployment are recorded after merging.
+
+- Concurrent main merge: PRs #51–#56 landed during this audit, changing the shared board and canonical generator. Resolved conflicts by retaining all incoming board entries and source/flag changes, appending this audit, assigning new IDs S62/S63 and U22, and regenerating the canonical output. No session work was discarded.
+
+### Merge record — arena/e3044a3b-korea7 (2026-11-08)
+- PR https://github.com/karagemop466-tech/Korea7/pull/54 MERGED 2026-11-08T22:59:11Z, merge commit 22fe964. Pages run 42532914905 completed success (deploy included); live: https://karagemop466-tech.github.io/Korea7/
+- Two merge conflicts with concurrent sessions resolved preserving both sides' board records and incoming generated verification files; no work discarded.
+- **Delivery:** [PR #57](https://github.com/karagemop466-tech/Korea7/pull/57) merged without approval on 2026-11-08 at 23:00:36Z, merge commit `c3c01066eff7c357b45b53abb7c45f18219a121c`. Its [Pages build and deploy run 42533022816](https://github.com/karagemop466-tech/Korea7/actions/runs/42533022816) succeeded; the live flagged page was fetched and displays both U21 and U22. After the concurrent integration, the build passed 11 structural checks with 501 internal links and the site test suite passed 46 tests and 9 subtests. The Pages workflow reported a non-blocking GitHub-hosted action runtime deprecation warning. A follow-up corrects the stale flag-range label and records this delivery; it does not assert a new external re-verification.
+- A further board-only conflict with PR #58 was resolved by retaining the full incoming board and appending the PR #57 delivery record; no other work was discarded.
 
 # Session `arena/0e9ee506-korea7` — claim (2026-11-08)
 
@@ -972,3 +1055,39 @@ an active claim on the files listed below; all earlier task boards report `done`
 `bathtub-overflow/**`, `sf-overflow-audit/**`, `shortlist.html`, `verification-log.html`,
 `trip-lever/**`, `gems/**`, `evidence/**`, `registry/**`, `vendor/**`, `data/*.tif`.
 Requests affecting those files are logged here instead of edited.
+
+---
+
+# Session `arena/0e9ee506-korea7` — delivery (2026-11-08)
+
+**Scope delivered (J1–J4 complete).** J1 research: all 16 distinct CSLB license numbers cited anywhere in the
+repository re-read directly on 2026-11-08 (each printed "Data current as of 11/8/2026"), 10 official business
+sites read, the CSLB B / C-9 classification pages, the Handyman Heroes complaint disclosure, the Bernal Hill
+EDD employer listing and BPC §7059(a). J2: three canonical datasets committed
+(`data/canonical/cslb_records.json`, `vendor_sites.json`, `review_snapshots.json`), `scripts/ranking_data.py`
+computes the order from CSLB fields only, and two new pages (`ranking.html`, `contacts.html`) plus a
+`call_order`, `cslb_register`, `reviews_1108`, `scope_evidence` and `rubric` table were merged into the single
+generator. J3: `python3 scripts/build_dashboard.py` → 15 pages / 23 tables / 88 sources, **11/11 checks PASS**;
+site test modules → **63 passed + 11 subtests** (including the concurrent sessions' regression tests).
+J4: `EXECUTIVE-SUMMARY.md`, `summary.html`, `index.html` and `README.md` refreshed.
+
+**Concurrent-work merge, not overwrite.** While this session was drafting, `origin/main` gained PRs #54–#59,
+which published sources **S61–S63** and flags **U21–U22** and corrected the licensing wording (BPC §7059(a))
+and the verifier's "no network check" caveat. This session took the concurrent version of
+`scripts/dashboard_content.py` / `scripts/verify_dashboard.py`, re-applied its own edits on top, and
+**renumbered its own additions to S64–S88 and U23–U34** so nothing already published was renumbered. The
+route-2 ranking wording was updated to match the §7059(a) correction: no ceiling classification on a license is
+a scoring input, not a legal bar. `COORDINATION.md` was union-merged (concurrent records first, then this
+session's claim). Generated HTML and `data/canonical/*` were regenerated from the merged dataset.
+
+**Files owned by other sessions left untouched:** `shortlist.html`, `verification-log.html`,
+`bathtub-overflow/**`, `docs/bath/**`, `docs/overflow-*.html`, `docs/plumbing-index.html`,
+`sf-overflow-audit/**`, `tests/test_dashboard_integrity.py`, `tests/test_followup_audit.py`,
+`tests/test_license_scope_followup.py`.
+
+**Request to the next integration session (not edited here):** `tests/test_dashboard_integrity.py` pins a
+fixed 9-page `PAGES` tuple, so `ranking.html` and `contacts.html` are covered by the new
+`tests/test_ranking.py` instead. Please extend that tuple to 15 pages when you next own that file.
+
+**J5 status:** PR opened from `arena/0e9ee506-korea7` to `main`; merge and Pages deploy result recorded below
+once confirmed.

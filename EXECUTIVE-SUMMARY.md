@@ -1,5 +1,62 @@
 # Executive Summary — Bathtub Wastewater Overflow Trip Lever (San Francisco)
 
+**Project:** Free or repair a stuck bathtub wastewater overflow trip lever in concealed waste-and-overflow plumbing behind a bathroom wall, in a tenant-occupied San Francisco unit. From-above removal is preferred but the owner reports 5+ licensed plumbers declined it; the reported fallback is access from below through a storage-unit drywall ceiling. The requirement is a licensed provider that can deliver **plumbing + drywall** in an occupied unit.
+
+**Compiled:** 2026-11-08 · **Session:** `arena/0e9ee506-korea7` · **Live site:** <https://karagemop466-tech.github.io/Korea7/> · **Decision page:** [ranking.html](ranking.html) · **Contacts:** [contacts.html](contacts.html) · **Dashboard:** [index.html](index.html) · **Flagged items:** [flagged.html](flagged.html)
+
+> Every row in the published tables links the official page it was read from. Values that cannot be confirmed from an official source are **blank** and flagged UNVERIFIED; nothing is inferred. Review-platform ratings and company marketing are published as labelled third-party evidence and never enter the ranking.
+
+---
+
+## 1. Ranked decision — best choice first
+
+Sixteen CSLB license records cited anywhere in this repository were re-read directly on the official database on 2026-11-08; all sixteen print **current and active**. The order below is computed, not editorial: a disclosed 100-point rubric scores only fields on the CSLB record (trade coverage 40, workers' compensation 25, disclosure status 15, tenure 10, address 10), with ties broken by the older issue date. Route 1 is the preferred purchase — one contract covering both trades. Route 2 firms have no ceiling classification on the license; [BPC §7059(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC) still allows incidental and supplemental work in other trades, so ask for written confirmation of how the make-good is covered, or pair them with the restoration partner.
+
+| Route / rank | Company | Score | Official license record | Phone (official, on record) | Official business site |
+|---|---|---|---|---|---|
+| Route 1 #1 | **Ace Plumbing & Rooter** | 100/100 | [#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) | (415) 824-6444 | [www.aceplumbingandrooter.com](https://www.aceplumbingandrooter.com/) |
+| Route 1 #2 | **The Genteel Plumbers Inc** | 97/100 | [#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) | (833) 436-8335 | [www.genteelplumbers.com/contact](https://www.genteelplumbers.com/contact) |
+| Route 1 #3 | **Handyman Heroes Inc** | 90/100 | [#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) | (844) 382-4376 | [www.handymanhero.es](https://www.handymanhero.es/) |
+| Route 1 #4 | **General SF (GENERALSF)** | 85/100 | [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) | (650) 303-1515 | [generalsf.com](https://generalsf.com/) |
+| Route 1 #5 | **Manny's Plumbing & Rooter** | 81/100 | [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) | (650) 207-5733 | [www.mannysplumbingandremodeling.com](https://www.mannysplumbingandremodeling.com/) |
+| Route 1 #6 | **Rapid Flow Plumbing & Rooter Inc** | 79/100 | [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) | (415) 866-8401 | [www.rapidflowbayarea.com/contact](https://www.rapidflowbayarea.com/contact) |
+| Route 2 #1 | **Atlas Plumbing & Rooter** | 75/100 | [#868994](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994) | (650) 871-9863 | *blank — UNVERIFIED* |
+| Route 2 #2 | **Expert Plumbing Solutions** | 75/100 | [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) | (415) 531-5340 | [www.eplumbingsolutions.com](https://www.eplumbingsolutions.com/) |
+| Route 2 #3 | **Heises Plumbing (Taro Group Inc)** | 69/100 | [#1089561](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561) | (415) 333-0704 | *blank — UNVERIFIED* |
+| Route 2 #4 | **Discount Plumbing Rooter Services LLC** | 65/100 | [#1140843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843) | (650) 991-2100 | *blank — UNVERIFIED* |
+| Route 2 #5 | **Fast Response Plumbing & Rooter** | 62/100 | [#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) | (415) 596-6115 | [www.fastresponseplumbingsf.com](https://www.fastresponseplumbingsf.com/) |
+| Route 2 #6 | **Bay Area Mechanical** | 62/100 | [#1075566](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566) | (925) 642-9768 | *blank — UNVERIFIED* |
+| Route 2 #7 | **Calplumbing Co** | 60/100 | [#632743](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743) | (415) 221-4633 | *blank — UNVERIFIED* |
+| Route 2 #8 | **Bay Area Plumbing** | 60/100 | [#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) | (415) 668-8000 | [www.bayareaplumbingsf.com](https://www.bayareaplumbingsf.com/) |
+| Route 2 #9 | **Advanced Plumbing and Drain Inc** | 60/100 | [#1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) | (415) 744-4944 | *blank — UNVERIFIED* |
+| Restoration #1 | **Bernal Hill Drywall Inc** | 100/100 | [#995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) | (415) 533-8274 | [www.bernalhilldrywall.com](https://www.bernalhilldrywall.com/) |
+
+**Why the top three lead.** [Ace #829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) holds C-36 plus B (and A, C-4, C-16, C-10), workers' compensation insured to 2027-07-13, no disclosure, licensed since 2003, San Francisco; [its own site](https://www.aceplumbingandrooter.com/) documents direct HOA/property-manager work including insurance requirements, purchase orders and not-to-exceed limits. [Genteel #1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) matches on trades, insurance and disclosure and loses only three points on tenure; it publishes no drywall scope and two different official phone numbers. [Handyman Heroes #1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) has the strongest published evidence of the *combined* trade (its own site carries a drywall-patching review; a Yelp result quotes a crew repairing a wall after plumbing work) but loses ten points to a [CSLB complaint disclosure](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394) (citation 2 2020 001045, 07/12/2020, marked "for disclosure only"). [Bernal Hill Drywall #995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) is the verified C-9 + B ceiling partner for Route 2, with build-back after water damage advertised on [its site](https://www.bernalhilldrywall.com/).
+
+## 2. Cost position — no verified price exists for this scope
+
+**Not one of the sixteen firms publishes a price for this job**, so every cost cell in the ranking is blank and flagged UNVERIFIED. The owner's three 8/30/26 estimates — Expert Plumbing Solutions $614 (replace waste and overflow), Bay Area Plumbing $550 (lever for tub plug + spout with diverter, labor and materials), Fast Response $135 (repair/adjust the plunger handle) — have no official public source and are transcribed only on the labelled [Project brief](brief.html) and [Estimates](estimates.html) pages. They describe three different scopes, and **none includes drywall**. For orientation only, independent 2026 publisher benchmarks put bathtub/shower drain replacement at [$500–$1,020, average $700](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm) and post-leak drywall/tile follow-up at [$300–$930](https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm). Ask each shortlisted firm for **one fixed price** covering the from-above attempt, access from below, ceiling cut/patch/finish, dust containment and a fill-and-drain test; the [call order](ranking.html) page gives the exact ask for each of ten calls.
+
+## 3. What to watch before hiring
+
+- **Workers' compensation:** four records show a "no employees" exemption ([#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843), [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649), [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229)) and two insured policies expire within 60 days ([#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) 2026-12-18, [#1075566](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566) 2026-12-02). Request a current certificate for the attending crew.
+- **Additional status:** [#1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) carries a possible-future-suspension warning for unresolved final liability; it scores zero on the disclosure criterion.
+- **Marketing vs record:** Handyman Heroes advertises "Licensed C-10", which is not on its CSLB record; Manny's site says "Insured & Bonded" while the record shows a workers' compensation exemption.
+- **Contact mismatches:** Genteel and Rapid Flow each publish a company line that differs from the number on the CSLB record; both are shown side by side rather than reconciled. Six licensees have no verifiable business website in this session, so those cells are blank — use the CSLB phone.
+- **Capability:** a dual classification is a licensing fact, not proof of self-performed drywall or of experience with this concealed mechanism. No provider has been contacted and none has confirmed this job.
+
+## 4. Verification status
+
+`python3 scripts/build_dashboard.py` → 15 pages, 23 tables, 330 dataset rows, 88 source-ledger entries, **11/11 checks PASS**: 687 rendered table rows all source-linked, 0 unflagged blanks, 775 internal links resolve, 73 unique external links all in the ledger, privacy sweep 0 matches across 123 published files. Site test modules: **63 passed + 11 subtests**, including the concurrent sessions' regression tests and the new `tests/test_ranking.py` (score reproducibility, review-data exclusion, phone-match and blank-cost enforcement). Full report: [verification.html](verification.html) · [verification_report.json](data/canonical/verification_report.json). Flagged items **U01–U34** are published on [flagged.html](flagged.html) and do not block the site. Shared board: [COORDINATION.md](COORDINATION.md).
+
+*Informational only — research, not legal advice, a quote, or a contractor endorsement.*
+
+---
+
+## Prior integration executive summary (session `arena/2eb487ad-korea7`, 2026-11-07 — preserved verbatim)
+
+# Executive Summary — Bathtub Wastewater Overflow Trip Lever (San Francisco)
+
 **Project:** Remove / repair a stuck bathtub wastewater overflow trip lever located in concealed plumbing behind a bathroom wall in a tenant-occupied San Francisco unit. From-above removal is preferred but reportedly failed with 5+ licensed plumbers; the reported fallback is access from below through a storage-unit drywall ceiling. One licensed provider covering **plumbing + drywall** is wanted, with experience in delicate work in an occupied unit.
 
 **Compiled:** 2026-11-07 · **Session:** `arena/2eb487ad-korea7` (final integration) · **Live site:** <https://karagemop466-tech.github.io/Korea7/> · **Full dashboard:** [index.html](index.html) · **Shortlist:** [shortlist.html](shortlist.html) · **Preserved log:** [verification-log.html](verification-log.html) · **Flagged items:** [flagged.html](flagged.html)

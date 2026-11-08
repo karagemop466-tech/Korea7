@@ -73,15 +73,15 @@ def _cslb_source(lic, label):
 
 
 SOURCES = {
-    "S61": _cslb_source("1025814", "The Genteel Plumbers Inc"),
-    "S62": _cslb_source("1009195", "Advanced Plumbing and Drain Inc"),
-    "S63": _cslb_source("995163", "Bernal Hill Drywall Inc"),
-    "S64": _cslb_source("1089561", "Taro Group Inc dba Heises Plumbing"),
-    "S65": _cslb_source("632743", "Calplumbing Co"),
-    "S66": _cslb_source("868994", "Atlas Plumbing & Rooter"),
-    "S67": _cslb_source("1140843", "Discount Plumbing Rooter Services LLC"),
-    "S68": _cslb_source("1075566", "Bay Area Pipe & Equipment Inc dba Bay Area Mechanical"),
-    "S69": {
+    "S64": _cslb_source("1025814", "The Genteel Plumbers Inc"),
+    "S65": _cslb_source("1009195", "Advanced Plumbing and Drain Inc"),
+    "S66": _cslb_source("995163", "Bernal Hill Drywall Inc"),
+    "S67": _cslb_source("1089561", "Taro Group Inc dba Heises Plumbing"),
+    "S68": _cslb_source("632743", "Calplumbing Co"),
+    "S69": _cslb_source("868994", "Atlas Plumbing & Rooter"),
+    "S70": _cslb_source("1140843", "Discount Plumbing Rooter Services LLC"),
+    "S71": _cslb_source("1075566", "Bay Area Pipe & Equipment Inc dba Bay Area Mechanical"),
+    "S72": {
         "label": "Genteel Plumbers — official contact page",
         "publisher": "The Genteel Plumbers Inc",
         "url": "https://www.genteelplumbers.com/contact",
@@ -89,7 +89,7 @@ SOURCES = {
         "supports": "Published phone 415-465-5853, office address 1181 Revere Avenue, office hours",
         "note": "Read directly. The published phone differs from the CSLB phone on record; both are recorded, neither is reconciled.",
     },
-    "S70": {
+    "S73": {
         "label": "Bernal Hill Drywall — official site",
         "publisher": "Bernal Hill Drywall Inc",
         "url": "https://www.bernalhilldrywall.com/",
@@ -97,7 +97,7 @@ SOURCES = {
         "supports": "Drywall patching/finishing and build-back after water damage; states it also holds a general contractors license; estimate link tel:4155338274",
         "note": "Read directly. Service claims are the company's own; the C-9 and B classifications come from CSLB.",
     },
-    "S71": {
+    "S74": {
         "label": "Rapid Flow Plumbing & Rooter — official contact page",
         "publisher": "Rapid Flow Plumbing & Rooter Inc",
         "url": "https://www.rapidflowbayarea.com/contact",
@@ -105,7 +105,7 @@ SOURCES = {
         "supports": "States CA #1115649 B + C-36; primary line 844-BAY-FLOW; (415) 866-8401 for photo texts; General Contracting / Remodel offered",
         "note": "Read directly. Both numbers appear on the company's own page; the CSLB record carries (415) 866-8401.",
     },
-    "S72": {
+    "S75": {
         "label": "Manny's Plumbing & Rooters — official site",
         "publisher": "Manny's Plumbing & Rooters",
         "url": "https://www.mannysplumbingandremodeling.com/",
@@ -113,49 +113,49 @@ SOURCES = {
         "supports": "States License # 841229 and 'C-36 Plumbing / General B - Insured & Bonded'; tub install, drain replacement, kitchen/bath remodeling; service city list",
         "note": "Read directly. No phone number rendered in the content read; the CSLB phone on record is used instead.",
     },
-    "S73": {
+    "S76": {
         "label": "Yelp — Plumbing Companies in San Francisco (result snapshot)",
         "publisher": "Yelp", "url": "https://www.yelp.com/search?find_desc=Plumbing+Companies&find_loc=San+Francisco%2C+CA",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
         "supports": "Point-in-time ratings/review counts for Ace, Genteel and Fast Response read from result text",
         "note": "Yelp returns HTTP 403 to automated fetches (re-confirmed 2026-11-08). Values read from search-result text; third-party, not official, never scored.",
     },
-    "S74": {
+    "S77": {
         "label": "Yelp — Plumbing near Mission, San Francisco (result snapshot)",
         "publisher": "Yelp", "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=Mission,+San+Francisco,+CA+94110",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
         "supports": "Ace 4.7 with a portfolio caption 'Install new bathtub with a valve inside the wall'; Genteel 4.7; 'Verified License' badges",
         "note": "Third-party result text, 2026-11-08. A Yelp 'Verified License' badge is not CSLB verification.",
     },
-    "S75": {
+    "S78": {
         "label": "Yelp — Handyman Drywall near Lower Haight, San Francisco (result snapshot)",
         "publisher": "Yelp", "url": "https://www.yelp.com/search?find_desc=Handyman+Drywall&find_loc=Lower+Haight%2C+San+Francisco%2C+CA",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
         "supports": "Handyman Heroes appears in a drywall-repair category with reviews describing drywall repair and rehanging",
         "note": "Third-party result text, 2026-11-08; review counts differ between result pages captured the same day.",
     },
-    "S76": {
+    "S79": {
         "label": "Yelp — Handyman Services in San Francisco (result snapshot)",
         "publisher": "Yelp", "url": "https://www.yelp.com/search?find_desc=Handyman+Services&find_loc=San+Francisco%2C+CA",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
         "supports": "Handyman Heroes 4.7 with a review count that differs from other result pages the same day",
         "note": "Third-party result text, 2026-11-08; not official and not scored.",
     },
-    "S77": {
+    "S80": {
         "label": "Yelp — Bernal Hill Drywall business page",
         "publisher": "Yelp", "url": "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
         "supports": "Category 'Drywall Installation & Repair'; services include drywall repair, wall patching, wall finish repair, wall texturing; 4.9 with 37 reviews in the result snapshot",
         "note": "Direct fetch returned HTTP 403 on 2026-11-08; values read from search-result text. Third-party only.",
     },
-    "S78": {
+    "S81": {
         "label": "Yelp — Handyman Heroes business page",
         "publisher": "Yelp", "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco?osq=Handyman&start=60",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
         "supports": "Categories 'Handyman, Electricians, Plumbing'; a result snapshot shows 4.7 (201 reviews) while the page FAQ text shows 4.5 stars",
         "note": "Conflicting third-party values on the same business; recorded as observed, not reconciled. Not official, not scored.",
     },
-    "S79": {
+    "S82": {
         "label": "California EDD Labor Market Information — employer details, Bernal Hill Drywall Inc",
         "publisher": "CA Employment Development Department (data provided by Data Axle)",
         "url": "https://labormarketinfo.edd.ca.gov/aspdotnet/databrowsing/empDetails.aspx?menuChoice=emp&empid=432614093&geogArea=0604000075",
@@ -163,7 +163,7 @@ SOURCES = {
         "supports": "Employer name, 720 Anderson St address, telephone 415-533-8274, website BERNALHILLDRYWALL.COM, owner Jerry Calderon, NAICS 238310 drywall",
         "note": "Read directly on a ca.gov host. The page states the employer information is provided by Data Axle, so it is official-hosted third-party data, not a licensing record.",
     },
-    "S80": {
+    "S83": {
         "label": "CSLB — B General Building classification (B&P §7057)",
         "publisher": "Contractors State License Board",
         "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
@@ -171,7 +171,7 @@ SOURCES = {
         "supports": "A general building contractor may not take a prime contract for other trades unless it holds the appropriate classification or subcontracts an appropriately licensed specialty contractor",
         "note": "Statutory text read directly; this is the legal basis for the single-provider gate in the ranking.",
     },
-    "S81": {
+    "S84": {
         "label": "CSLB — C-9 Drywall classification",
         "publisher": "Contractors State License Board",
         "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
@@ -179,7 +179,7 @@ SOURCES = {
         "supports": "A drywall contractor installs gypsum wall board and assemblies and performs taping and texturing to a continuous smooth or textured surface",
         "note": "Read directly; defines the ceiling cut/patch/finish trade for the restoration partner.",
     },
-    "S82": {
+    "S85": {
         "label": "CSLB record transcriptions (this project's dataset)",
         "publisher": "This project, transcribed from CSLB",
         "url": "data/canonical/cslb_records.json",
@@ -187,7 +187,7 @@ SOURCES = {
         "supports": "16 License Detail records transcribed field by field, each with its source URL and 'Data current as of 11/8/2026' stamp",
         "note": "Machine-readable input to the ranking; every field is traceable to the linked CSLB record.",
     },
-    "S83": {
+    "S86": {
         "label": "Business-site transcriptions (this project's dataset)",
         "publisher": "This project, transcribed from each business's own site",
         "url": "data/canonical/vendor_sites.json",
@@ -195,7 +195,7 @@ SOURCES = {
         "supports": "10 official business sites read on 2026-11-08 with published phone and service statements; six license numbers have no site verified and stay blank",
         "note": "Vendor statements are verified as published, not as true. They never feed the score.",
     },
-    "S84": {
+    "S87": {
         "label": "Review-platform snapshots (this project's dataset)",
         "publisher": "This project, transcribed from platform result text",
         "url": "data/canonical/review_snapshots.json",
@@ -203,7 +203,7 @@ SOURCES = {
         "supports": "Six dated third-party snapshots with their result URLs and the observed rating/count ranges",
         "note": "Explicitly third-party and explicitly excluded from the ranking score.",
     },
-    "S85": {
+    "S88": {
         "label": "Ranking rubric and score inputs (this site)",
         "publisher": "This project's analysis",
         "url": "ranking.html",
@@ -217,13 +217,13 @@ SOURCES = {
 LICENSE_SRC = {
     "977638": "S06", "757796": "S07", "1024971": "S08", "959843": "S09",
     "1003394": "S10", "829071": "S11", "1115649": "S56", "841229": "S57",
-    "1025814": "S61", "1009195": "S62", "995163": "S63", "1089561": "S64",
-    "632743": "S65", "868994": "S66", "1140843": "S67", "1075566": "S68",
+    "1025814": "S64", "1009195": "S65", "995163": "S66", "1089561": "S67",
+    "632743": "S68", "868994": "S69", "1140843": "S70", "1075566": "S71",
 }
 SITE_SRC = {
     "977638": "S38", "757796": "S39", "1024971": "S40", "959843": "S41",
-    "1003394": "S42", "829071": "S43", "1025814": "S69", "995163": "S70",
-    "1115649": "S71", "841229": "S72",
+    "1003394": "S42", "829071": "S43", "1025814": "S72", "995163": "S73",
+    "1115649": "S74", "841229": "S75",
 }
 DISPLAY = {
     "977638": "Expert Plumbing Solutions", "757796": "Bay Area Plumbing",
@@ -242,9 +242,11 @@ DISPLAY = {
 CRITERIA = [
     ("A", "Trade coverage on one license", 40,
      "C-36 Plumbing <em>and</em> B General Building (or C-9 Drywall) on the same active license = 40. "
-     "C-36 with no building/drywall class = 15, because a second trade is needed for the ceiling. "
-     "Restoration role: C-9 + B = 40.",
-     "Classifications field on the CSLB record; legal basis is B&P §7057 as published by CSLB."),
+     "C-36 with no building/drywall class = 15, because ceiling coverage is not on that license. "
+     "This is not a legal bar: B&amp;P §7059(a) allows a specialty contractor to take work in other trades "
+     "when it is incidental and supplemental to its own licensed work, so a plumber may still be able to "
+     "make good a small access opening. Whether that applies here is unverified. Restoration role: C-9 + B = 40.",
+     "Classifications field on the CSLB record; scope rules are B&P §7057 (as published by CSLB) and §7059(a)."),
     ("B", "Workers' compensation on record", 25,
      "Insured (or an employee service group holds the policy) with more than 60 days left at 2026-11-08 = 25. "
      "Insured but expiring within 60 days = 15. Exempt, certified 'no employees at this time' = 10.",
@@ -349,16 +351,18 @@ REASON = {
                "and workers' compensation is exempt. The primary call line on its contact page differs from the "
                "number on the CSLB record; both are published by the company.",
     "868994": "Plumbing-only on the verified record (C-36 and A, no building or drywall class), so the ceiling work "
-              "needs a second trade or a subcontract. Strong on the other verified inputs: an employee service "
+              "is not classified on the license. Confirm whether the make-good is incidental work under "
+              "B&P §7059(a) or is subcontracted. Strong on the other verified inputs: an employee service "
               "group holds the workers' compensation policy, no disclosure, licensed since 2005, San Francisco "
               "address. No official business website was verified in this session, so service scope and published "
               "phone stay blank.",
-    "977638": "C-36 only, so it cannot self-perform the ceiling restoration under its own license. It is one of the "
+    "977638": "C-36 only, so no ceiling classification appears on its license; incidental make-good work may still "
+              "be permitted by B&P §7059(a), which is unverified here. It is one of the "
               "three firms the owner reports already quoted this job, and its own site publishes the same phone and "
               "license number as the CSLB record, with fixture installation and general repair services listed. "
               "Workers' compensation insured and no disclosure. Pair with a C-9/B restoration contractor if the "
               "ceiling has to be opened.",
-    "1089561": "C-36, C-10, A and C-20 but no B or C-9, so the ceiling needs a second trade. Workers' compensation "
+    "1089561": "C-36, C-10, A and C-20 but no B or C-9, so ceiling coverage is not on the license. Workers' compensation "
                "insured, no disclosure, San Francisco address; the license was issued in 2022. No official business "
                "website verified this session, so scope and published phone stay blank.",
     "1140843": "The only record in this set that publishes general liability insurance ($2,000,000) alongside a "
@@ -378,7 +382,7 @@ REASON = {
     "757796": "C-36 only, licensed since 1999, no disclosure, San Francisco address; its own site lists leak "
               "detection, pipe repair and bathroom remodeling with a photo caption describing a galvanized drain "
               "replaced with DWV copper. Points are lost for the workers' compensation exemption. One of the three "
-              "firms the owner reports quoted the job; the ceiling would need a second trade.",
+              "firms the owner reports quoted the job; ceiling coverage would need written confirmation or a second trade.",
     "632743": "C-36 only and the longest tenure in the set (first issued 1991), but workers' compensation is exempt "
               "and the address on record is a post-office box. No official business website verified this session, "
               "so service scope and published phone stay blank.",
@@ -410,8 +414,8 @@ def cost_note(lic):
         base += ("Price the ceiling opening, patch, texture-match and painting as a separate line, "
                  "and ask it to coordinate with the plumber's access opening. ")
     else:
-        base += ("Price the plumbing separately and add a ceiling-restoration line from a C-9/B contractor; "
-                 "no combined quote exists yet. ")
+        base += ("Price the plumbing and the ceiling make-good separately, or get one written price that "
+                 "states how the make-good is covered; no combined quote exists yet. ")
     return base + BENCH
 
 
@@ -453,13 +457,15 @@ def rank_rows(lics):
     rows = []
     for i, lic in enumerate(lics, 1):
         r = RECORDS[lic]
-        src = [LICENSE_SRC[lic], "S80" if SCORES[lic]["role"] != "restoration-only" else "S81", "S85", "S15", "S16"]
+        src = [LICENSE_SRC[lic], "S83" if SCORES[lic]["role"] != "restoration-only" else "S84", "S88", "S15", "S16"]
+        if SCORES[lic]["role"] == "plumbing-only":
+            src.append("S62")
         if lic in SITE_SRC:
             src.append(SITE_SRC[lic])
         if r["complaint_disclosure"]:
             src.append("S12")
         if lic == "995163":
-            src.append("S79")
+            src.append("S82")
         status = pill("current and active", "ok") + "<br><small>expires %s</small>" % esc(r["expire_date"])
         if r["complaint_disclosure"]:
             status += "<br>" + pill("complaint disclosure", "warn")
@@ -499,12 +505,16 @@ TABLES = {
                   "is what lets one firm do the plumbing and the ceiling together.",
     },
     "rank_plumbing": {
-        "title": "Route 2 — ranked plumbing-only specialists (ceiling needs a second trade)",
+        "title": "Route 2 — ranked plumbing-only specialists (no ceiling classification on the license)",
         "columns": ["Rank", "Company & contact", "CSLB license, classes, status",
                     "Score", "Why this rank (analysis)", "Cost position", "Crew cover on record", "Source"],
         "rows": rank_rows(PLUMBING_ONLY),
-        "caption": RANK_CAPTION + " None of these records carries a B or C-9 classification, so pair the chosen "
-                  "plumber with the restoration contractor below, or require a written subcontract.",
+        "caption": RANK_CAPTION + " None of these records carries a B or C-9 classification. That does not "
+                  "automatically exclude the ceiling work: B&amp;P §7059(a) permits a specialty contractor to "
+                  "perform other trades when they are incidental and supplemental to its licensed work. "
+                  "Applicability to this ceiling repair is not established, so either get written confirmation "
+                  "of how the make-good is covered, pair the plumber with the restoration contractor below, "
+                  "or require a written subcontract.",
     },
     "rank_restoration": {
         "title": "Ceiling restoration partner — ranked on the drywall/building role",
@@ -522,7 +532,7 @@ TABLES = {
                     "Where the input comes from", "Grade", "Source"],
         "rows": [{"cells": [c[0], esc(c[1]), str(c[2]), c[3], esc(c[4]),
                             pill("input verified · weight is analyst judgement", "info")],
-                  "src": ["S04", "S80", "S81", "S85"]} for c in CRITERIA],
+                  "src": ["S04", "S83", "S84", "S62", "S88"]} for c in CRITERIA],
         "caption": "Maximum 100 points. Computed at 2026-11-08 from data/canonical/cslb_records.json by "
                   "scripts/ranking_data.py, so the order is reproducible from the committed inputs. "
                   "Nothing in the score comes from a review platform, a marketing claim or an owner-supplied figure.",
@@ -591,12 +601,12 @@ for i, lic in enumerate(_order, 1):
                "who attends. Confirm the ceiling work is self-performed under the B classification.")
         why = "Rank %d on Route 1 (score %d). Both trades on one verified license." % (ALL_IN_ONE.index(lic) + 1, s["total"])
     else:
-        ask = ("Plumbing-only written scope for the waste-and-overflow, plus a named C-9/B subcontractor for the "
-               "ceiling, or accept a separate ceiling quote. Confirm whether a from-above attempt is possible "
-               "before any ceiling is opened.")
-        why = "Rank %d on Route 2 (score %d). No building class on the record, so a second trade is required." % (
+        ask = ("Written scope for the waste-and-overflow that states how the ceiling make-good is covered: "
+               "incidental work under B&P §7059(a), a named C-9/B subcontractor, or a separate ceiling quote. "
+               "Confirm whether a from-above attempt is possible before any ceiling is opened.")
+        why = "Rank %d on Route 2 (score %d). No building class on the record; ceiling coverage needs written confirmation." % (
             PLUMBING_ONLY.index(lic) + 1, s["total"])
-    src = [LICENSE_SRC[lic], "S85"]
+    src = [LICENSE_SRC[lic], "S88"] + (["S62"] if s["role"] != "all-in-one" else [])
     if lic in SITE_SRC:
         src.append(SITE_SRC[lic])
     _steps.append({"cells": [str(i), esc(DISPLAY[lic]), "<strong>%s</strong>" % esc(r["phone_on_record"]),
@@ -607,7 +617,7 @@ _steps.append({"cells": [
     esc("Separate line item for the ceiling: opening, patch, tape, texture match and paint, coordinated with the "
         "plumber's access. Ask for dust containment and a made-good finish in an occupied storage unit."),
     esc("C-9 Drywall + B General Building verified; the restoration partner if Route 2 is chosen.")],
-    "src": ["S63", "S70", "S79", "S81"]})
+    "src": ["S66", "S73", "S82", "S84"]})
 TABLES["call_order"]["rows"] = _steps
 
 # --- contacts ---------------------------------------------------------------
@@ -633,7 +643,7 @@ for lic in sorted(RECORDS, key=lambda l: (-SCORES[l]["total"], DISPLAY[l])):
     website = ext(site["official_url"], site["official_url"].replace("https://", "")) if site else BLANK + " " + UNVER
     src = [LICENSE_SRC[lic]] + ([SITE_SRC[lic]] if lic in SITE_SRC else [])
     if lic == "995163":
-        src.append("S79")
+        src.append("S82")
     _crows.append({"cells": [
         "<strong>%s</strong>" % esc(DISPLAY[lic]),
         "<strong>%s</strong><br><small>Business Phone Number on the CSLB record</small>" % esc(r["phone_on_record"]),
@@ -657,7 +667,7 @@ for lic in sorted(RECORDS, key=lambda l: DISPLAY[l].lower()):
         status += "<br>" + pill("may be suspended at a future date", "bad")
     change = ("No change to status, classes or expiry vs the 2026-11-07 reading; re-read directly today."
               if lic in _prev else "Newly transcribed in this session from the official record.")
-    src = [LICENSE_SRC[lic], "S82"]
+    src = [LICENSE_SRC[lic], "S85"]
     if r["complaint_disclosure"]:
         src.append("S12")
     _reg.append({"cells": [
@@ -669,14 +679,14 @@ TABLES["cslb_register"]["rows"] = _reg
 
 # --- reviews ----------------------------------------------------------------
 _rev_src = {
-    "829071": ["S74", "S73"], "1025814": ["S74", "S73"],
-    "1003394": ["S75", "S76", "S78"], "995163": ["S77"],
-    "959843": ["S76"], "1024971": ["S40"],
+    "829071": ["S77", "S76"], "1025814": ["S77", "S76"],
+    "1003394": ["S78", "S79", "S81"], "995163": ["S80"],
+    "959843": ["S79"], "1024971": ["S40"],
 }
 TABLES["reviews_1108"]["rows"] = [{"cells": [
     esc(s["candidate"]), esc(s["platform"]), esc(s["rating"]), esc(s["review_count"]),
     esc(s["quote"]), pill("third-party snapshot — UNVERIFIED", "warn")],
-    "src": _rev_src[s["license"]] + ["S84"]} for s in REVIEWS["snapshots"]]
+    "src": _rev_src[s["license"]] + ["S87"]} for s in REVIEWS["snapshots"]]
 
 # --- scope evidence ---------------------------------------------------------
 PLUMB_SUMMARY = {
@@ -718,7 +728,7 @@ OCCUPIED = {
 TABLES["scope_evidence"]["rows"] = [{"cells": [
     "<strong>%s</strong>" % esc(DISPLAY[lic]), esc(PLUMB_SUMMARY[lic]), esc(DRYWALL_SUMMARY[lic]),
     esc(OCCUPIED[lic]), pill("vendor statement — not independent verification", "info")],
-    "src": [SITE_SRC[lic], LICENSE_SRC[lic], "S83"]}
+    "src": [SITE_SRC[lic], LICENSE_SRC[lic], "S86"]}
     for lic in ["829071", "1025814", "1003394", "959843", "841229", "1115649",
                 "977638", "757796", "1024971", "995163"]]
 
@@ -726,93 +736,93 @@ TABLES["scope_evidence"]["rows"] = [{"cells": [
 # New flags and findings, appended to the canonical tables by the merge block.
 # ---------------------------------------------------------------------------
 NEW_FLAGS = [
-    (["U21", "Genteel Plumbers publishes two different official phone numbers",
+    (["U23", "Genteel Plumbers publishes two different official phone numbers",
       "The CSLB record for #1025814 shows (833) 436-8335; the company's own contact page shows 415-465-5853. "
       "Third-party directories show further numbers. Neither official value is inferred or reconciled.",
       "Call both numbers or ask the company which line dispatches service; keep the CSLB value as the record copy.",
-      UNVER], ["S61", "S69"]),
-    (["U22", "Advanced Plumbing and Drain #1009195 carries a CSLB additional-status warning",
+      UNVER], ["S64", "S72"]),
+    (["U24", "Advanced Plumbing and Drain #1009195 carries a CSLB additional-status warning",
       "The official record states the license may be suspended at a future date for failure to resolve an "
       "outstanding final liability from the FTB, DIR, EDD or CSLB. It is still current and active today.",
       "Re-check the record on the hire date and ask CSLB what remains outstanding before any engagement.",
-      pill("verified warning", "bad")], ["S62"]),
-    (["U23", "Handyman Heroes' site claims a C-10 classification that is not on its CSLB record",
+      pill("verified warning", "bad")], ["S65"]),
+    (["U25", "Handyman Heroes' site claims a C-10 classification that is not on its CSLB record",
       "The electrical block on the company's homepage says “Licensed C-10”; the CSLB record for #1003394 lists "
       "only B and C-36. Re-confirmed directly on both sources 2026-11-08.",
       "Ask which license the electrical work would run under; do not rely on the site claim.",
       UNVER], ["S42", "S10"]),
-    (["U24", "Yelp ratings and review counts differ between result pages captured the same day",
+    (["U26", "Yelp ratings and review counts differ between result pages captured the same day",
       "On 2026-11-08 Handyman Heroes appeared with 201, 389 and 402 reviews and one page's FAQ text said 4.5 stars "
       "while the header said 4.7; Ace appeared as both 1.4k and 1.5k; Genteel between 475 and 532.",
       "Treat platform numbers as drifting snapshots. They are excluded from the ranking score.",
-      pill("third-party — UNVERIFIED", "warn")], ["S75", "S76", "S78", "S73", "S74"]),
-    (["U25", "Two workers' compensation policies expire inside 60 days",
+      pill("third-party — UNVERIFIED", "warn")], ["S78", "S79", "S81", "S76", "S77"]),
+    (["U27", "Two workers' compensation policies expire inside 60 days",
       "#1024971 expires 2026-12-18 and #1075566 expires 2026-12-02. Both are insured today, so both lose points "
       "on criterion B rather than being excluded.",
       "If work extends past those dates, request a renewal certificate before the crew returns.",
-      pill("verified dates", "warn")], ["S08", "S68"]),
-    (["U26", "Four shortlisted firms are workers'-compensation exempt",
+      pill("verified dates", "warn")], ["S08", "S71"]),
+    (["U28", "Four shortlisted firms are workers'-compensation exempt",
       "#757796, #959843, #1115649 and #841229 certified “no employees at this time”. Manny's site nonetheless says "
       "“Insured & Bonded”. An exemption is not a statement about general liability cover.",
       "Ask who physically attends and what liability coverage applies to them in a tenant-occupied unit.",
-      pill("verified exemption", "warn")], ["S07", "S09", "S56", "S57", "S72"]),
-    (["U27", "No candidate publishes a price for this scope",
+      pill("verified exemption", "warn")], ["S07", "S09", "S56", "S57", "S75"]),
+    (["U29", "No candidate publishes a price for this scope",
       "Every cost cell on the ranking pages is blank and flagged. The only figures available are the owner's "
       "three quotes (unverified, transcribed on the brief page) and national publisher benchmarks.",
       "Obtain written fixed-price scopes; the rubric ranks verified licence facts, not price.",
-      UNVER], ["S44", "S15", "S16", "S85"]),
-    (["U28", "Dual classification does not prove the firm will self-perform the drywall",
+      UNVER], ["S44", "S15", "S16", "S88"]),
+    (["U30", "Dual classification does not prove the firm will self-perform the drywall",
       "Genteel and Ace hold B on the CSLB record but advertise no drywall or ceiling service on their own sites. "
       "CSLB verifies classes, not capability or willingness.",
       "Get written confirmation that the ceiling opening, patch, texture match and paint are in the same contract.",
-      UNVER], ["S61", "S11", "S69", "S43", "S80"]),
-    (["U29", "Six verified licensees have no official business website confirmed in this session",
+      UNVER], ["S64", "S11", "S72", "S43", "S83"]),
+    (["U31", "Six verified licensees have no official business website confirmed in this session",
       "#1009195, #1089561, #632743, #868994, #1140843 and #1075566 are verified on CSLB, but their published phone "
       "and service-scope cells stay blank rather than being filled from directories.",
       "Verify a business site and phone directly before adding them to a call list.",
-      UNVER], ["S62", "S64", "S65", "S66", "S67", "S68"]),
-    (["U30", "Ranking weights are analyst judgement",
+      UNVER], ["S65", "S67", "S68", "S69", "S70", "S71"]),
+    (["U32", "Ranking weights are analyst judgement",
       "The five criteria and their weights were chosen for this job's constraints; only the input values are "
       "official. A different weighting can reorder candidates.",
       "Recompute with scripts/ranking_data.py if the priorities change; the rubric publishes every weight.",
-      pill("analysis — disclosed", "info")], ["S85", "S82", "S80"]),
-    (["U31", "General SF describes commercial, educational and corporate clients",
+      pill("analysis — disclosed", "info")], ["S88", "S85", "S83"]),
+    (["U33", "General SF describes commercial, educational and corporate clients",
       "Its homepage does not describe small residential repairs in occupied dwellings, although the license "
       "covers building and plumbing.",
       "Ask directly whether it takes a single-unit residential repair with tenant access windows.",
       UNVER], ["S41", "S09"]),
-    (["U32", "State-hosted employer listing is third-party data",
+    (["U34", "State-hosted employer listing is third-party data",
       "The EDD Labor Market Information page used to corroborate Bernal Hill Drywall's phone and website states "
       "the employer information is provided by Data Axle. It is official-hosted, not a licensing record.",
       "Use CSLB for licence facts; use the company's own site for its published contact.",
-      pill("graded", "info")], ["S79", "S63", "S70"]),
+      pill("graded", "info")], ["S82", "S66", "S73"]),
 ]
 
 NEW_FINDINGS = [
     (["F12", "Six firms can legally do both trades under one license, not five",
       "Re-reading every cited license on 2026-11-08 added The Genteel Plumbers #1025814 (C-36 + B) to the "
       "dual-classified set already published: #829071, #959843, #1003394, #1115649, #841229.",
-      pill("verified", "ok")], ["S61", "S11", "S09", "S10", "S56", "S57", "S80"]),
+      pill("verified", "ok")], ["S64", "S11", "S09", "S10", "S56", "S57", "S83"]),
     (["F13", "A ranked, reproducible decision order now exists",
       "Scores are computed from five official CSLB fields only. Route 1 order: "
       + ", ".join("%s (%d)" % (DISPLAY[l], SCORES[l]["total"]) for l in ALL_IN_ONE)
       + ". Route 2 and the restoration partner are ranked on the same rubric.",
-      pill("analysis on verified inputs", "info")], ["S85", "S82"]),
+      pill("analysis on verified inputs", "info")], ["S88", "S85"]),
     (["F14", "Every candidate now has an officially published phone number",
       "CSLB License Detail records publish a Business Phone Number, so all 16 licensees have a verified contact "
       "number with an official source link. Company-published numbers were added where they were actually read; "
       "differences are flagged rather than reconciled.",
-      pill("verified", "ok")], ["S82", "S83", "S69", "S71"]),
+      pill("verified", "ok")], ["S85", "S86", "S72", "S74"]),
     (["F15", "A dedicated C-9 drywall partner is verified for the two-trade route",
       "Bernal Hill Drywall Inc #995163 holds C-9 and B with workers' compensation insured under a "
       "wallboard-installation class code, and its own site describes patching, texture matching and build-back "
       "after water damage.",
-      pill("verified", "ok")], ["S63", "S70", "S79", "S81"]),
+      pill("verified", "ok")], ["S66", "S73", "S82", "S84"]),
     (["F16", "Review evidence for the exact combination exists but is third-party only",
       "A Yelp result quotes a Handyman Heroes review describing a wall repair after plumbing work, and an Ace "
       "portfolio caption describes a bathtub installed with a valve inside the wall. Neither is an official "
       "source, so neither affects the score.",
-      pill("third-party — UNVERIFIED", "warn")], ["S75", "S74", "S84"]),
+      pill("third-party — UNVERIFIED", "warn")], ["S78", "S77", "S87"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -832,7 +842,7 @@ PAGES = {
             {"type": "cards", "items": [
                 {"k": "License records re-read", "v": "16", "s": "All read directly on CSLB, 2026-11-08", "tone": "ok"},
                 {"k": "All-in-one candidates", "v": str(len(ALL_IN_ONE)), "s": "C-36 + B on one active license", "tone": "ok"},
-                {"k": "Plumbing-only specialists", "v": str(len(PLUMBING_ONLY)), "s": "Need a second trade for the ceiling", "tone": "info"},
+                {"k": "Plumbing-only specialists", "v": str(len(PLUMBING_ONLY)), "s": "No ceiling classification on the license", "tone": "info"},
                 {"k": "Published prices for this scope", "v": "0", "s": "Every cost cell blank and flagged", "tone": "warn"},
             ]},
             {"type": "callout", "tone": "info", "html":

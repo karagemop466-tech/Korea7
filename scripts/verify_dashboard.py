@@ -232,8 +232,9 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
     check_dates = sorted({s["checked"] for s in C.SOURCES.values()
                           if s["tier"] in ("official", "manufacturer") and s["status"] == "verified"})
     date_text = check_dates[0] if len(check_dates) == 1 else "%s to %s" % (check_dates[0], check_dates[-1])
-    checks.append(check("Official sources verified directly", official_sources >= 10,
-                        "%d official/manufacturer sources verified %s; %d sources verified overall"
+    checks.append(check("Source ledger records prior direct reads", official_sources >= 10,
+                        "%d official/manufacturer sources marked verified (read dates %s); "
+                        "%d sources marked verified overall (metadata only; no network check)"
                         % (official_sources, date_text, verified_sources)))
 
     return {
@@ -285,9 +286,9 @@ def write_report(root: Path, report: dict) -> None:
     lines += ["", "## Notes", "",
               "- Every table row is emitted with a Source column from `data/canonical/site_data.json`.",
               "- Unverified values are blank in verified cells and published on `flagged.html`.",
-              "- Official values were read directly from the issuing site on the date shown for each source",
-              "  in the source ledger; CSLB records printed their own \"Data current as of\" stamp, which is",
-              "  transcribed per record in `data/canonical/cslb_records.json`.",
+              "- The ledger records source-specific check dates; this automated check does not re-fetch sources.",
+              "  Each CSLB record's own \"Data current as of\" stamp is transcribed in",
+              "  `data/canonical/cslb_records.json` (2026-11-08 reads printed 11/8/2026).",
               "- Yelp URLs return HTTP 403 to automated access and are flagged as platform snapshots.",
               "- Dead sources: %s (documented, never linked from a row)." % ", ".join(report["dead_sources"]),
               ""]
