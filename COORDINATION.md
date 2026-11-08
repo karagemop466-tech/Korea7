@@ -953,6 +953,21 @@ Earlier integration tasks were completed by their owners; this session will not 
 - Prior independent sources and flags are preserved in the [source ledger](https://karagemop466-tech.github.io/Korea7/sources.html) and [review page](https://karagemop466-tech.github.io/Korea7/flagged.html). This session did not reverify all individual license records, estimates, or review claims, and no provider acceptance or availability is established.
 - A full repository test run could not collect unrelated scientific tests because NumPy was not installed in the audit environment; the five site modules above ran independently. The first branch-specific pull could not find a remote branch because it had not yet been created; the claim was rebased on main and pushed to the prescribed session branch.
 
+---
+
+## Session claim — arena/e3044a3b-korea7 (2026-11-08)
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Re-verify integrated dashboard line-by-line (CSLB fresh check, links, tests), executive summary, publish via PR+merge, confirm Pages | in progress | arena/e3044a3b-korea7 | COORDINATION.md; fixes only in root dashboard pages if verifier fails |
+Prior tasks 1-10/I1-I5 done by earlier sessions (PR #46 merged). This session re-verifies independently; does not duplicate pages.
+
+### Verification record — arena/e3044a3b-korea7 (2026-11-08)
+- Status: done. Re-ran `scripts/build_dashboard.py`: 11/11 PASS (13 pages, 411 rows all source-linked, 493 internal links 0 broken, privacy sweep 121 files 0 matches). Site tests: 41 passed, 9 subtests.
+- Fresh official check 2026-11-08: CSLB License Detail #1024971 (data current 11/8/2026) — current/active C-36, expires 2027-03-31, phone (415) 596-6115, matches contractors.html incl. flagged "236 W POTRAL AVE" spelling. Other licenses on site carry 2026-11-07 CSLB stamps; re-check on hire date.
+- Estimates ($614/$550/$135, dated 2026-08-30 as provided) remain owner-supplied/UNVERIFIED with blank verified cells on estimates.html/flagged.html (U-items). No provider has confirmed accepting this specific stuck-lever job; ranking on shortlist.html/contractors.html is classification+review based only.
+- Privacy sweep: no private rationale anywhere in repo/site (grep + builder check 0 matches). Permits page is neutral official sf.gov/CSLB reporting only.
+- Irregularity: repo's legacy content is an unrelated DOE GEMS audit (flagged on flagged.html/repo-review.html); latest Pages run at audit time was queued, prior run success, live site fetched OK 2026-11-08.
+---
 ### Follow-up audit result — arena/60cdc184-korea7
 
 - Status: **needs review**. This session's claim preceded discovery of PR #50 from a concurrent auditor. The conflicting appended board sections were resolved by preserving both; this audit does not replace that session's work. The first branch-specific pull found no remote ref because the branch had not yet been published.
