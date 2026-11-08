@@ -1,38 +1,54 @@
 # Repository line-by-line audit
 
-- Tracked files: 310
-- Total bytes: 20088410
-- Text lines scanned: 61158
-- JSON files: 68; Python files: 90
+- Tracked files: 329
+- Total bytes: 21476503
+- Text lines scanned: 80782
+- JSON files: 77; Python files: 96
 - Parse failures: 0
 - Broken internal links: 0
 - Broken internal anchors: 0
-- Line flags: {'benign-placeholder-reference': 19, 'benign-privacy-pattern-definition': 1}
+- Line flags: {'benign-placeholder-reference': 35, 'benign-privacy-pattern-definition': 1}
 
 ## Flags
 
 | Path | Line | Kind | Detail |
 |---|---:|---|---|
-| assets/dashboard.js | 12 | benign-placeholder-reference | input.placeholder = "Filter rows…"; |
-| docs/overflow-verification-contractors.html | 20 | benign-placeholder-reference | <input class="filter" type="search" placeholder="Filter providers..." data-target="contr"> |
-| scripts/build_overflow_verification.py | 19 | benign-placeholder-reference | * no placeholder text remains in the repo review; |
-| scripts/build_overflow_verification.py | 125 | benign-placeholder-reference | if "PLACEHOLDER" in r["result"] or "PLACEHOLDER" in r["status"]: |
-| scripts/build_overflow_verification.py | 126 | benign-placeholder-reference | errors.append(f"repo_review {r['id']}: placeholder left in place") |
-| scripts/build_overflow_verification.py | 334 | benign-placeholder-reference | <input class="filter" type="search" placeholder="Filter providers..." data-target="contr"> |
-| scripts/build_sf_overflow_audit.py | 208 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Filter contractors by name, license #, WC status..." aria-label="Filter Tier 1 contractors"> |
-| scripts/build_sf_overflow_audit.py | 383 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search requirements by ID, category, keyword..." aria-label="Search requirements"> |
-| scripts/build_sf_overflow_audit.py | 555 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search by name, license #, B, C-36, C-9, drywall, WC..." aria-label="Search contractors"> |
-| scripts/build_sf_overflow_audit.py | 731 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search audited paths, SHA-256, GEMS, BPC 7048..." aria-label="Search repository audit"> |
-| scripts/build_sf_overflow_audit.py | 782 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Filter sources by license #, statute, manufacturer..." aria-label="Filter official sources"> |
-| scripts/build_sf_overflow_audit.py | 835 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search flags by ID, contractor, repo file..." aria-label="Search flagged items"> |
-| scripts/verify_dashboard.py | 47 | benign-placeholder-reference | PLACEHOLDER_PATTERNS = [r"\bTODO\b", r"\bTBD\b", r"\bPLACEHOLDER\b", r"example\.com", r"lorem ipsum"] |
-| sf-overflow-audit/contractors.html | 38 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search by name, license #, B, C-36, C-9, drywall, WC..." aria-label="Search contractors"> |
-| sf-overflow-audit/flagged-for-review.html | 38 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search flags by ID, contractor, repo file..." aria-label="Search flagged items"> |
-| sf-overflow-audit/index.html | 130 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Filter contractors by name, license #, WC status..." aria-label="Filter Tier 1 contractors"> |
-| sf-overflow-audit/repo-review.html | 38 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search audited paths, SHA-256, GEMS, BPC 7048..." aria-label="Search repository audit"> |
-| sf-overflow-audit/requirements.html | 35 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Search requirements by ID, category, keyword..." aria-label="Search requirements"> |
-| sf-overflow-audit/sources.html | 35 | benign-placeholder-reference | <input class="search-input" type="search" placeholder="Filter sources by license #, statute, manufacturer..." aria-label="Filter official sources"> |
-| tests/test_bath_site.py | 118 | benign-privacy-pattern-definition | r"without a permit", |
+| assets/dashboard.js | 19 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| docs/overflow-verification-contractors.html | 20 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 106 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 110 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 113 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 114 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 115 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 117 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 118 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 119 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 120 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 122 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 123 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 125 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 126 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 128 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 130 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/audit_repository.py | 206 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_overflow_verification.py | 19 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_overflow_verification.py | 125 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_overflow_verification.py | 126 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_overflow_verification.py | 334 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_sf_overflow_audit.py | 208 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_sf_overflow_audit.py | 383 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_sf_overflow_audit.py | 555 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_sf_overflow_audit.py | 731 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_sf_overflow_audit.py | 782 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/build_sf_overflow_audit.py | 835 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| scripts/verify_dashboard.py | 47 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| sf-overflow-audit/contractors.html | 38 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| sf-overflow-audit/flagged-for-review.html | 38 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| sf-overflow-audit/index.html | 130 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| sf-overflow-audit/repo-review.html | 38 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| sf-overflow-audit/requirements.html | 35 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| sf-overflow-audit/sources.html | 35 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
+| tests/test_bath_site.py | 118 | benign-privacy-pattern-definition | [redacted privacy-pattern match; see path/line for review] |
 
 ## File inventory
 
@@ -40,11 +56,11 @@
 |---|---:|---:|---|---:|
 | .gitignore | 366 | 24 | not-applicable | 0 |
 | .nojekyll | 0 | 0 | not-applicable | 0 |
-| COORDINATION.md | 141221 | 978 | not-applicable | 0 |
-| EXECUTIVE-SUMMARY.md | 13006 | 99 | not-applicable | 0 |
-| README.md | 29646 | 302 | not-applicable | 0 |
-| assets/dashboard.css | 8781 | 185 | not-applicable | 0 |
-| assets/dashboard.js | 1473 | 40 | not-applicable | 1 |
+| COORDINATION.md | 172913 | 1190 | not-applicable | 0 |
+| EXECUTIVE-SUMMARY.md | 32079 | 173 | not-applicable | 0 |
+| README.md | 30464 | 307 | not-applicable | 0 |
+| assets/dashboard.css | 9663 | 206 | not-applicable | 0 |
+| assets/dashboard.js | 1929 | 55 | not-applicable | 1 |
 | assets/site.css | 7495 | 178 | not-applicable | 0 |
 | bathtub-overflow/analysis.html | 9452 | 129 | not-applicable | 0 |
 | bathtub-overflow/assets/style.css | 4696 | 125 | not-applicable | 0 |
@@ -56,15 +72,27 @@
 | bathtub-overflow/problem-scope.html | 6512 | 100 | not-applicable | 0 |
 | bathtub-overflow/providers.html | 12123 | 143 | not-applicable | 0 |
 | bathtub-overflow/sources.html | 11839 | 121 | not-applicable | 0 |
-| brief.html | 11604 | 163 | not-applicable | 0 |
+| brief.html | 13062 | 168 | not-applicable | 0 |
 | conftest.py | 105 | 4 | pass | 0 |
-| contractors.html | 63714 | 717 | not-applicable | 0 |
+| contacts.html | 46778 | 480 | not-applicable | 0 |
+| contractors.html | 46248 | 407 | not-applicable | 0 |
 | data/bridge/existing_faults.tif | 425830 | binary | binary | 0 |
 | data/bridge/sample_submission.tif | 1599597 | binary | binary | 0 |
-| data/canonical/site_data.json | 237876 | 5129 | pass | 0 |
+| data/canonical/cslb_records.json | 25868 | 724 | pass | 0 |
+| data/canonical/decision_analysis.json | 10268 | 314 | pass | 0 |
+| data/canonical/evidence-2026-11-08.json | 16132 | 272 | pass | 0 |
+| data/canonical/providers-2026-11-08.json | 8068 | 191 | pass | 0 |
+| data/canonical/repo_audit.json | 89927 | 3151 | pass | 0 |
+| data/canonical/repo_audit.md | 25433 | 386 | not-applicable | 0 |
+| data/canonical/repo_inventory.csv | 65904 | 307 | not-applicable | 0 |
+| data/canonical/repo_inventory.json | 93413 | 2144 | pass | 0 |
+| data/canonical/research-history-2026-11-07.json | 160431 | 3362 | pass | 0 |
+| data/canonical/review_snapshots.json | 4537 | 86 | pass | 0 |
+| data/canonical/site_data.json | 530010 | 10089 | pass | 0 |
 | data/canonical/source_checks.json | 15619 | 343 | pass | 0 |
-| data/canonical/verification_report.json | 8434 | 177 | pass | 0 |
-| data/canonical/verification_report.md | 1783 | 39 | not-applicable | 0 |
+| data/canonical/vendor_sites.json | 13837 | 195 | pass | 0 |
+| data/canonical/verification_report.json | 42417 | 492 | pass | 0 |
+| data/canonical/verification_report.md | 1972 | 40 | not-applicable | 0 |
 | data/focus/GEMSDOE24.tif | 1632732 | binary | binary | 0 |
 | data/focus/GEMSDOE25.tif | 836982 | binary | binary | 0 |
 | data/focus/GEMSDOE27.tif | 1635084 | binary | binary | 0 |
@@ -180,7 +208,7 @@
 | docs/submit.html | 5982 | 86 | not-applicable | 0 |
 | docs/validation.html | 87725 | 1973 | not-applicable | 0 |
 | docs/verification.html | 8719 | 101 | not-applicable | 0 |
-| estimates.html | 21852 | 305 | not-applicable | 0 |
+| estimates.html | 18803 | 262 | not-applicable | 0 |
 | evidence/calibration.json | 1935 | 68 | pass | 0 |
 | evidence/canary.json | 3176 | 128 | pass | 0 |
 | evidence/champion_anatomy.json | 14355 | 475 | pass | 0 |
@@ -218,8 +246,8 @@
 | evidence/validate_raster_final.json | 649 | 19 | pass | 0 |
 | evidence/validate_submission_final.json | 760 | 21 | pass | 0 |
 | evidence/writer_bundle.json | 3797 | 116 | pass | 0 |
-| findings.html | 24972 | 193 | not-applicable | 0 |
-| flagged.html | 28320 | 316 | not-applicable | 0 |
+| findings.html | 23650 | 185 | not-applicable | 0 |
+| flagged.html | 44703 | 425 | not-applicable | 0 |
 | gems/__init__.py | 869 | 18 | pass | 0 |
 | gems/calibrate.py | 5278 | 127 | pass | 0 |
 | gems/emission.py | 9868 | 240 | pass | 0 |
@@ -234,12 +262,13 @@
 | gems/validate.py | 6008 | 130 | pass | 0 |
 | gems/writer.py | 4073 | 102 | pass | 0 |
 | hypotheses.md | 4103 | 27 | not-applicable | 0 |
-| index.html | 11404 | 120 | not-applicable | 0 |
-| permits.html | 16136 | 199 | not-applicable | 0 |
+| index.html | 13493 | 125 | not-applicable | 0 |
+| permits.html | 8893 | 128 | not-applicable | 0 |
+| ranking.html | 87852 | 517 | not-applicable | 0 |
 | registry/focus9_manifest.json | 3509 | 82 | pass | 0 |
 | registry/owner_score_ledger.csv | 56403 | 161 | not-applicable | 0 |
-| repo-review.html | 12719 | 158 | not-applicable | 0 |
-| requirements.html | 34227 | 387 | not-applicable | 0 |
+| repo-review.html | 206078 | 2647 | not-applicable | 0 |
+| requirements.html | 25038 | 313 | not-applicable | 0 |
 | requirements.txt | 122 | 5 | not-applicable | 0 |
 | run-card-korea7-e3.json | 5188 | 55 | pass | 0 |
 | run-card.json | 5404 | 66 | pass | 0 |
@@ -247,10 +276,11 @@
 | scripts/analyze_champion.py | 5552 | 135 | pass | 0 |
 | scripts/analyze_focus.py | 10053 | 228 | pass | 0 |
 | scripts/analyze_sites.py | 6919 | 146 | pass | 0 |
+| scripts/audit_repository.py | 9823 | 217 | pass | 16 |
 | scripts/bath_assets/bath.css | 5562 | 143 | not-applicable | 0 |
 | scripts/build_bath_site.py | 45697 | 733 | pass | 0 |
 | scripts/build_consensus.py | 23572 | 434 | pass | 0 |
-| scripts/build_dashboard.py | 14777 | 324 | pass | 0 |
+| scripts/build_dashboard.py | 19088 | 400 | pass | 0 |
 | scripts/build_e3.py | 2003 | 54 | pass | 0 |
 | scripts/build_experiments.py | 6717 | 163 | pass | 0 |
 | scripts/build_overflow_verification.py | 23745 | 465 | pass | 4 |
@@ -260,7 +290,7 @@
 | scripts/calibrate.py | 3044 | 69 | pass | 0 |
 | scripts/canary.py | 3067 | 77 | pass | 0 |
 | scripts/check_candidate.py | 671 | 19 | pass | 0 |
-| scripts/dashboard_content.py | 230761 | 3075 | pass | 0 |
+| scripts/dashboard_content.py | 149387 | 1255 | pass | 0 |
 | scripts/fleet_stats.py | 2760 | 63 | pass | 0 |
 | scripts/generate_submission.py | 12227 | 298 | pass | 0 |
 | scripts/make_demo_data.py | 2606 | 62 | pass | 0 |
@@ -268,12 +298,13 @@
 | scripts/make_report.py | 20685 | 343 | pass | 0 |
 | scripts/oof_e1.py | 1987 | 53 | pass | 0 |
 | scripts/prepare_data.py | 9029 | 176 | pass | 0 |
+| scripts/ranking_data.py | 62066 | 917 | pass | 0 |
 | scripts/restore_data.py | 7603 | 112 | pass | 0 |
 | scripts/run_experiments.py | 15510 | 321 | pass | 0 |
 | scripts/uniqueness.py | 3400 | 75 | pass | 0 |
 | scripts/validate_raster.py | 2849 | 66 | pass | 0 |
 | scripts/validate_submission.py | 4073 | 112 | pass | 0 |
-| scripts/verify_dashboard.py | 13340 | 306 | pass | 1 |
+| scripts/verify_dashboard.py | 13654 | 309 | pass | 1 |
 | sf-overflow-audit/EXECUTIVE-SUMMARY.md | 6915 | 36 | not-applicable | 0 |
 | sf-overflow-audit/REPO-AUDIT.md | 4794 | 15 | not-applicable | 0 |
 | sf-overflow-audit/assets/app.js | 1347 | 34 | not-applicable | 0 |
@@ -288,21 +319,25 @@
 | sf-overflow-audit/requirements.html | 14364 | 147 | not-applicable | 1 |
 | sf-overflow-audit/sources.html | 17927 | 190 | not-applicable | 1 |
 | sf-overflow-audit/technical-access.html | 10943 | 147 | not-applicable | 0 |
-| shortlist.html | 17274 | 244 | not-applicable | 0 |
-| sources.html | 85569 | 788 | not-applicable | 0 |
-| summary.html | 26332 | 232 | not-applicable | 0 |
-| technical.html | 14417 | 171 | not-applicable | 0 |
+| shortlist.html | 17968 | 241 | not-applicable | 0 |
+| sources.html | 102684 | 906 | not-applicable | 0 |
+| summary.html | 18870 | 111 | not-applicable | 0 |
+| technical.html | 11329 | 158 | not-applicable | 0 |
 | tests/test_bath_site.py | 6845 | 187 | pass | 1 |
-| tests/test_dashboard.py | 3839 | 95 | pass | 0 |
-| tests/test_dashboard_integrity.py | 5399 | 121 | pass | 0 |
+| tests/test_canonical_integrity.py | 3370 | 82 | pass | 0 |
+| tests/test_dashboard.py | 6570 | 148 | pass | 0 |
+| tests/test_dashboard_integrity.py | 5854 | 128 | pass | 0 |
 | tests/test_emission.py | 2290 | 66 | pass | 0 |
 | tests/test_evaluate_holdout.py | 5978 | 145 | pass | 0 |
+| tests/test_followup_audit.py | 1106 | 26 | pass | 0 |
 | tests/test_holdout_registry.py | 2927 | 82 | pass | 0 |
+| tests/test_license_scope_followup.py | 1111 | 28 | pass | 0 |
 | tests/test_metric.py | 2363 | 77 | pass | 0 |
 | tests/test_metric_official.py | 1640 | 46 | pass | 0 |
 | tests/test_network_calibrate.py | 914 | 28 | pass | 0 |
 | tests/test_overflow_site.py | 4762 | 129 | pass | 0 |
 | tests/test_project.py | 6986 | 199 | pass | 0 |
+| tests/test_ranking.py | 9351 | 215 | pass | 0 |
 | tests/test_sf_overflow_audit.py | 7834 | 191 | pass | 0 |
 | tests/test_shipped_artifacts.py | 1547 | 43 | pass | 0 |
 | tests/test_validate_raster.py | 2193 | 55 | pass | 0 |
@@ -347,6 +382,6 @@
 | vendor/gems57/uniqueness.py | 24437 | 459 | pass | 0 |
 | vendor/gems57/validate.py | 4765 | 109 | pass | 0 |
 | verification-log.html | 18693 | 282 | not-applicable | 0 |
-| verification.html | 171949 | 57 | not-applicable | 0 |
+| verification.html | 336824 | 62 | not-applicable | 0 |
 
 Full machine-readable inventory and flag list: `repo_audit.json`.

@@ -1,39 +1,40 @@
 # Dashboard verification report
 
-Generated: 2026-11-08T23:41:22+00:00
+Generated: 2026-11-08T23:54:28+00:00
 
 | Check | Result | Detail |
 |---|---|---|
-| Build output complete | PASS | 13 pages generated |
-| Every table row has a source link | PASS | 628 tbody rows checked, 0 missing links |
+| Build output complete | PASS | 15 pages generated |
+| Every table row has a source link | PASS | 1371 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
-| Internal links resolve | PASS | 570 internal links checked, 0 broken |
+| Internal links resolve | PASS | 1448 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
-| External links are in the source ledger | PASS | 77 unique external links, 0 unknown/dead |
+| External links are in the source ledger | PASS | 390 unique external links, 0 unknown/dead |
 | Navigation consistent | PASS | 0 nav issues |
-| Privacy sweep (internal-only wording) | PASS | 121 files scanned, 0 matches |
+| Privacy sweep (internal-only wording) | PASS | 136 files scanned, 0 matches |
 | No unfilled template markers | PASS | 0 template-marker matches |
 | Dead sources not linked | PASS | 0 dead-source links |
-| Official sources verified directly | PASS | 26 official/manufacturer sources verified (25 checked 2026-11-08); 75 sources verified overall |
+| Source ledger records prior direct reads | PASS | 33 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-08); 86 sources marked verified overall (metadata only; no network check) |
 
 ## Counts
 
-- pages: 13
-- tables: 19
-- rows: 289
-- source_ledger_entries: 90
-- verified_sources: 75
-- official_or_manufacturer_verified: 26
-- generated_tbody_rows: 628
-- internal_links_checked: 570
-- unique_external_links: 77
-- published_text_files_scanned: 121
+- pages: 15
+- tables: 25
+- rows: 672
+- source_ledger_entries: 104
+- verified_sources: 86
+- official_or_manufacturer_verified: 33
+- generated_tbody_rows: 1371
+- internal_links_checked: 1448
+- unique_external_links: 390
+- published_text_files_scanned: 136
 
 ## Notes
 
 - Every table row is emitted with a Source column from `data/canonical/site_data.json`.
 - Unverified values are blank in verified cells and published on `flagged.html`.
-- Official values were read directly from the issuing site on 2026-11-08; CSLB records printed
-  "Data current as of 11/8/2026".
+- The ledger records source-specific check dates; this automated check does not re-fetch sources.
+  Each CSLB record's own "Data current as of" stamp is transcribed in
+  `data/canonical/cslb_records.json` (2026-11-08 reads printed 11/8/2026).
 - Yelp URLs return HTTP 403 to automated access and are flagged as platform snapshots.
 - Dead sources: https://homeguides.sfgate.com/repair-trip-lever-tub-drain-41958.html, https://inspectandtest.net/guides/bathtub-overflow-drain/ (documented, never linked from a row).

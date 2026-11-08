@@ -1,99 +1,173 @@
 # Executive Summary — Bathtub Wastewater Overflow Trip Lever (San Francisco)
 
-**Updated:** 2026-11-08 · **Session:** `arena/6696a17e-korea7` · **Live site:** <https://karagemop466-tech.github.io/Korea7/> · **Dashboard:** [index.html](index.html) · **Contractors & ranking:** [contractors.html](contractors.html) · **Flagged for Review:** [flagged.html](flagged.html)
+**Project:** Free or repair a stuck bathtub wastewater overflow trip lever in concealed waste-and-overflow plumbing behind a bathroom wall, in a tenant-occupied San Francisco unit. From-above removal is preferred but the owner reports 5+ licensed plumbers declined it; the reported fallback is access from below through a storage-unit drywall ceiling. The requirement is a licensed provider that can deliver **plumbing + drywall** in an occupied unit.
 
-> Desk research only. No provider has been contacted and no provider has confirmed this job. Owner-reported facts and prices are labeled as such; verified job values that lack an official/public source remain blank and **UNVERIFIED**. License facts come from CSLB; permit/licensing context comes from sf.gov, CSLB and California Legislative Information; reviews are third-party evidence, not license verification.
+**Compiled:** 2026-11-08 · **Ranking session:** `arena/0e9ee506-korea7` · **Integration audit:** `arena/52d35ede-korea7` · **Supplemental field-level integration:** `arena/6696a17e-korea7` · **Live site:** <https://karagemop466-tech.github.io/Korea7/> · **Decision page:** [ranking.html](ranking.html) · **Contacts:** [contacts.html](contacts.html) · **Dashboard:** [index.html](index.html) · **Flagged items:** [flagged.html](flagged.html)
 
-## 1. Problem and decision
+> Every row in the published tables links its cited source. Official license facts are separated from company self-descriptions, owner statements, publisher/platform material and project records. Values that cannot be confirmed from an official source are **blank** and flagged UNVERIFIED; nothing is inferred. Review-platform ratings and company marketing are published as labelled third-party evidence and never enter the ranking.
 
-The owner reports a stuck bathtub wastewater overflow trip lever in concealed plumbing behind the wall of a tenant-occupied San Francisco unit. Above-access removal is preferred, but 5+ licensed plumbers reportedly could not remove it safely from above. The reported fallback is below access through a storage-unit drywall ceiling. The owner prefers one licensed provider covering plumbing and drywall, with delicate occupied-unit experience.
+---
 
-No photos, tub material, pipe material, access dimensions or on-site diagnosis were supplied. The exact failed component, safe access route, repair method, duration and combined price remain **UNVERIFIED**. Technical publishers describe above-access linkage removal/adjustment when free, and below-tub access for seized drains; they do not inspect this tub.
+## 1. Ranked decision — best choice first
 
-**Recommended decision path:**
+Sixteen CSLB license records cited anywhere in this repository were re-read directly on the official database on 2026-11-08; all sixteen print **current and active**. The order below is computed, not editorial: a disclosed 100-point rubric scores only fields on the CSLB record (trade coverage 40, workers' compensation 25, disclosure status 15, tenure 10, address 10), with ties broken by the older issue date. Route 1 is the preferred purchase — one contract covering both trades. Route 2 firms have no ceiling classification on the license; [BPC §7059(a)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC) still allows incidental and supplemental work in other trades, so ask for written confirmation of how the make-good is covered, or pair them with the restoration partner.
 
-1. Obtain at least three written bids on an identical scope: above-access attempt, below-access fallback, ceiling cut/patch/texture/paint, parts, leak test, debris removal, permits/inspections and occupied-unit protection.
-2. Start with **Ace Plumbing & Rooter** for strongest occupied-property/insurance evidence, but confirm drywall scope or pair with **Bernal Hill Drywall**.
-3. If one-company plumbing + drywall is mandatory, start with **General SF**, then **Handyman Heroes** with its official disclosure and website-classification cautions reviewed.
-4. Confirm exact permit applicability and occupancy class with SF DBI and the selected licensed contractor. Do not treat minor wallboard-repair exemption language as a plumbing exemption.
-
-## 2. Owner-reported estimates — 2026-08-30, unverified
-
-| Company | Scope as reported | Owner-reported amount | Verified job price | Official identity |
-|---|---|---:|---|---|
-| Expert Plumbing Solutions | Replacing waste and overflow | $614 — UNVERIFIED | blank — UNVERIFIED | [CSLB #977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638), active C-36, expires 2028-10-31 |
-| Bay Area Plumbing | Bathtub plug/spout diverter, labor + materials | $550 — UNVERIFIED | blank — UNVERIFIED | [CSLB #757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), active C-36, expires 2027-01-31 |
-| Fast Response Plumbing & Rooter | Repair/adjust plunger handle | $135 — UNVERIFIED | blank — UNVERIFIED | [CSLB #1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971), active C-36, expires 2027-03-31 |
-
-The spread reflects **scope, not a verified price comparison**: adjustment → plug/spout diverter → waste-and-overflow replacement. None of the reported scopes includes a confirmed drywall/ceiling restoration line. No verified combined plumbing + drywall price exists.
-
-Publisher context only: Angi reports national bathtub/shower drain replacement at **$500–$1,020** (avg $700), bathroom leak repair at **$150–$600** plus **$300–$930** drywall/tile follow-up, and new drywall about **$2,100**. This Old House lists an overflow component average of **$163**. These are not San Francisco quotes.
-
-## 3. Official license snapshot — read 2026-11-08
-
-All 11 records below printed **current and active** and carry a **$25,000 contractor bond**. Exact CSLB “Data current as of” timestamps are preserved in [source_checks.json](data/canonical/source_checks.json).
-
-| Business | CSLB | Classes | Expiry | Official phone | Workers’ compensation |
+| Route / rank | Company | Score | Official license record | Phone (official, on record) | Official business site |
 |---|---|---|---|---|---|
-| Ace Plumbing & Rooter | [#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) | C36, A, C-4, C16, B, C10 | 2027-06-30 | (415) 824-6444 | Insured through 2027-07-13 |
-| General SF | [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) | B, C10, C36 | 2027-04-30 | (650) 303-1515 | Exempt — no employees at this time |
-| Handyman Heroes Inc | [#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) | B, C36 | 2027-05-31 | (844) 382-4376 | Insured through 2027-04-25; complaint disclosure |
-| The Genteel Plumbers Inc | [#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) | C36, B | 2027-04-30 | (833) 436-8335 | Insured through 2027-01-24 |
-| Expert Plumbing Solutions | [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) | C36 | 2028-10-31 | (415) 531-5340 | Insured through 2027-07-19 |
-| Bay Area Plumbing | [#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) | C36 | 2027-01-31 | (415) 668-8000 | Exempt — no employees at this time |
-| Fast Response Plumbing & Rooter | [#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) | C36 | 2027-03-31 | (415) 596-6115 | Insured through **2026-12-18** — renewal check |
-| Rapid Flow Plumbing & Rooter Inc | [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) | B, C36 | 2028-01-31 | (415) 866-8401 | Exempt — no employees at this time |
-| Manny’s Plumbing & Rooter | [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) | C36, B | 2028-06-30 | (650) 207-5733 | Exempt — no employees at this time |
-| Bernal Hill Drywall Inc | [#995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) | C-9, B | 2028-07-31 | (415) 533-8274 | Insured through 2027-03-10; drywall partner, no C-36 |
-| Advanced Plumbing and Drain Inc | [#1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) | C36 | 2027-11-30 | (415) 744-4944 | Insured through 2027-08-21; **future-suspension additional status** |
+| Route 1 #1 | **Ace Plumbing & Rooter** | 100/100 | [#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) | (415) 824-6444 | [www.aceplumbingandrooter.com](https://www.aceplumbingandrooter.com/) |
+| Route 1 #2 | **The Genteel Plumbers Inc** | 97/100 | [#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) | (833) 436-8335 | [www.genteelplumbers.com/contact](https://www.genteelplumbers.com/contact) |
+| Route 1 #3 | **Handyman Heroes Inc** | 90/100 | [#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) | (844) 382-4376 | [www.handymanhero.es](https://www.handymanhero.es/) |
+| Route 1 #4 | **General SF (GENERALSF)** | 85/100 | [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) | (650) 303-1515 | [generalsf.com](https://generalsf.com/) |
+| Route 1 #5 | **Manny's Plumbing & Rooter** | 81/100 | [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) | (650) 207-5733 | [www.mannysplumbingandremodeling.com](https://www.mannysplumbingandremodeling.com/) |
+| Route 1 #6 | **Rapid Flow Plumbing & Rooter Inc** | 79/100 | [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) | (415) 866-8401 | [www.rapidflowbayarea.com/contact](https://www.rapidflowbayarea.com/contact) |
+| Route 2 #1 | **Atlas Plumbing & Rooter** | 75/100 | [#868994](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994) | (650) 871-9863 | *blank — UNVERIFIED* |
+| Route 2 #2 | **Expert Plumbing Solutions** | 75/100 | [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) | (415) 531-5340 | [www.eplumbingsolutions.com](https://www.eplumbingsolutions.com/) |
+| Route 2 #3 | **Heises Plumbing (Taro Group Inc)** | 69/100 | [#1089561](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561) | (415) 333-0704 | *blank — UNVERIFIED* |
+| Route 2 #4 | **Discount Plumbing Rooter Services LLC** | 65/100 | [#1140843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843) | (650) 991-2100 | *blank — UNVERIFIED* |
+| Route 2 #5 | **Fast Response Plumbing & Rooter** | 62/100 | [#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) | (415) 596-6115 | [www.fastresponseplumbingsf.com](https://www.fastresponseplumbingsf.com/) |
+| Route 2 #6 | **Bay Area Mechanical** | 62/100 | [#1075566](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566) | (925) 642-9768 | *blank — UNVERIFIED* |
+| Route 2 #7 | **Calplumbing Co** | 60/100 | [#632743](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743) | (415) 221-4633 | *blank — UNVERIFIED* |
+| Route 2 #8 | **Bay Area Plumbing** | 60/100 | [#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) | (415) 668-8000 | [www.bayareaplumbingsf.com](https://www.bayareaplumbingsf.com/) |
+| Route 2 #9 | **Advanced Plumbing and Drain Inc** | 60/100 | [#1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) | (415) 744-4944 | *blank — UNVERIFIED* |
+| Restoration #1 | **Bernal Hill Drywall Inc** | 100/100 | [#995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) | (415) 533-8274 | [www.bernalhilldrywall.com](https://www.bernalhilldrywall.com/) |
 
-## 4. Conditional ranking
+**Why the top three lead.** [Ace #829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) holds C-36 plus B (and A, C-4, C-16, C-10), workers' compensation insured to 2027-07-13, no disclosure, licensed since 2003, San Francisco; [its own site](https://www.aceplumbingandrooter.com/) documents direct HOA/property-manager work including insurance requirements, purchase orders and not-to-exceed limits. [Genteel #1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) matches on trades, insurance and disclosure and loses only three points on tenure; it publishes no drywall scope and two different official phone numbers. [Handyman Heroes #1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) has the strongest published evidence of the *combined* trade (its own site carries a drywall-patching review; a Yelp result quotes a crew repairing a wall after plumbing work) but loses ten points to a [CSLB complaint disclosure](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394) (citation 2 2020 001045, 07/12/2020, marked "for disclosure only"). [Bernal Hill Drywall #995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) is the verified C-9 + B ceiling partner for Route 2, with build-back after water damage advertised on [its site](https://www.bernalhilldrywall.com/).
 
-The dashboard ranks ten plumbing candidates with a transparent evidence-strength model: combined scope 30%, occupied/multi-unit evidence 20%, license/insurance/disclosure risk 20%, service area 10%, review quality 10%, cost transparency 10%. Scores are analyst judgment from cited sources, not official ratings or workmanship guarantees. Full model: [decision_analysis.json](data/canonical/decision_analysis.json).
+## 2. Cost position — no verified price exists for this scope
 
-| Rank | Candidate | Score | Why it ranks here | Key caution |
-|---:|---|---:|---|---|
-| 1 | Ace Plumbing & Rooter | 80 | Strongest occupied-property evidence: BBB review from a family-run SF apartment building; HOA/property-manager page; insured B+C36 | Drywall restoration not explicitly advertised; confirm or partner |
-| 2 | Handyman Heroes Inc | 70 | Explicit sheetrock/wall repair + plumbing for SF homes/apartments; B+C36; insured | CSLB complaint disclosure; website C-10 claim absent from record |
-| 3 | General SF | 65 | Building page explicitly lists rough/finish plumbing and sheetrock/tape/texture; B+C36 | Workers’ compensation exempt; no published cost; review evidence snippet-only |
-| 4 | The Genteel Plumbers Inc | 45 | Active B+C36, insured, flat-rate pricing, published $149 dispatch fee | Drywall not advertised; Financial District exclusion; WC policy expires 2027-01-24; Yelp snippet conflicts |
-| 5 | Rapid Flow Plumbing & Rooter Inc | 40 | B+C36; plumbing + general contracting/remodels advertised | WC exempt; drywall/occupied-unit evidence limited |
-| 6 | Fast Response Plumbing & Rooter | 40 | Apartments/HOAs advertised; free per-job quotes; company-selected testimonials; active insured C-36 | Adjustment-only reported scope; WC expires 2026-12-18; company review aggregate unverified |
-| 7 | Expert Plumbing Solutions | 35 | Owner-reported full waste-and-overflow quote; active insured C-36 | C-36 only; quote unverified; drywall partner likely needed |
-| 8 | Manny’s Plumbing & Rooter | 30 | C-36+B; tub/drain/remodel services advertised | WC exempt; Daly City address; exact SF service/drywall unconfirmed |
-| 9 | Bay Area Plumbing | 25 | Active C-36; SF residential/commercial plumbing advertised | Reported diverter scope differs; WC exempt; license expires 2027-01-31; no drywall class |
-| 10 | Advanced Plumbing and Drain Inc | 5 | Active C-36 and insured | Future-suspension warning; similarly named website is a New Jersey business and not matched |
+**Not one of the sixteen firms publishes a price for this job**, so every cost cell in the ranking is blank and flagged UNVERIFIED. The owner's three 8/30/26 estimates — Expert Plumbing Solutions $614 (replace waste and overflow), Bay Area Plumbing $550 (lever for tub plug + spout with diverter, labor and materials), Fast Response $135 (repair/adjust the plunger handle) — have no official public source and are transcribed only on the labelled [Project brief](brief.html) and [Estimates](estimates.html) pages. They describe three different scopes. The supplied wording does **not** state whether drywall/ceiling patch and finish is included; inclusion/exclusion remains unverified, and no combined plumbing + drywall quote is confirmed. For orientation only, independent 2026 publisher benchmarks put bathtub/shower drain replacement at [$500–$1,020, average $700](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm) and post-leak drywall/tile follow-up at [$300–$930](https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm). Ask each shortlisted firm for **one fixed price** covering the from-above attempt, access from below, ceiling cut/patch/finish, dust containment and a fill-and-drain test; the [call order](ranking.html) page gives the exact ask for each of ten calls.
 
-**Drywall specialist partner:** Bernal Hill Drywall Inc — [CSLB #995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163), (415) 533-8274, C-9 + B, insured. It is not a plumber; plumbing must be performed by a C-36 contractor or appropriately licensed prime/subcontractor.
+## 3. What to watch before hiring
 
-## 5. Official compliance context — neutral
+- **Workers' compensation:** four records show a "no employees" exemption ([#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796), [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843), [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649), [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229)) and two insured policies expire within 60 days ([#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) 2026-12-18, [#1075566](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566) 2026-12-02). Request a current certificate for the attending crew.
+- **Additional status:** [#1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) carries a possible-future-suspension warning for unresolved final liability; it scores zero on the disclosure criterion.
+- **Marketing vs record:** Handyman Heroes advertises "Licensed C-10", which is not on its CSLB record; Manny's site says "Insured & Bonded" while the record shows a workers' compensation exemption.
+- **Contact mismatches:** Genteel and Rapid Flow each publish a company line that differs from the number on the CSLB record; both are shown side by side rather than reconciled. Six licensees have no verifiable business website in this session, so those cells are blank — use the CSLB phone.
+- **Capability:** a dual classification is a licensing fact, not proof of self-performed drywall or of experience with this concealed mechanism. No provider has been contacted and none has confirmed this job.
 
-- sf.gov: “You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.” After permit issuance, work must be inspected before covering pipes. [Plumbing permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit).
-- sf.gov lists minor repairs to existing interior plaster or wallboard, unless required for fire protection, among work that does not need a permit. That does **not** establish a plumbing exemption. [Permit checklist](https://www.sf.gov/information--check-if-your-construction-project-needs-permit).
-- For R-2 apartment buildings, owners may apply to do sheetrock/drywall/cabinetry themselves but must hire contractors for electrical or plumbing work. [Kitchen/bath permit guidance](https://www.sf.gov/apply-kitchen-or-bath-remodel-permit).
-- Current BPC §7048 is a small-job licensing exemption under $1,000 aggregate, casual/minor/inconsequential, and where no building permit is required, with exclusions. It is not permit-bypass advice. [Leginfo](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048).
-- Confirm exact scope, occupancy class and inspection sequence with SF DBI: 628-652-4900, permitsf@sfgov.org.
+## 4. Verification status
 
-## 6. Key flags
+`python3 scripts/build_dashboard.py` → 15 pages, 25 tables, 672 dataset rows, 104 source-ledger entries, **11/11 checks PASS**: 1,371 rendered table rows all source-linked, 0 unflagged blanks, 1,448 internal links resolve, 390 unique external links all in the ledger, privacy sweep 0 matches across 136 published files. Site test modules: **76 passed + 18 subtests**, including the concurrent sessions' regression tests, `tests/test_ranking.py` (score reproducibility, review-data exclusion, phone-match and blank-cost enforcement) and `tests/test_canonical_integrity.py` (supplemental field-level checks). Full report: [verification.html](verification.html) · [verification_report.json](data/canonical/verification_report.json). Flagged items **U01–U44** are published on [flagged.html](flagged.html) and do not block the site. Shared board: [COORDINATION.md](COORDINATION.md).
 
-Full list: [flagged.html](flagged.html) (U01–U31). Headlines:
-
-- Owner facts, estimate amounts/scopes/dates, photos, tub layout, job capability, availability and combined price are **UNVERIFIED**.
-- Yelp direct fetches return HTTP 403; search-index snippets and prior snapshots are third-party, date-variable and sometimes conflict with official addresses/phones.
-- Handyman Heroes: CSLB citation 2 2020 001045, 07/12/2020, “FOR DISCLOSURE ONLY PER B&P CODE 7124.6”; website C-10 claim not on CSLB record; address mismatch.
-- Advanced #1009195: active but future-suspension additional-status warning; fetched similarly named website is a New Jersey business, not matched.
-- Fast Response: workers’ compensation policy expires 2026-12-18; CSLB address spelling “POTRAL” transcribed as shown; company review aggregate unverified. Genteel’s workers’ compensation policy expires 2027-01-24; Bay Area’s license expires 2027-01-31.
-- Workers’ compensation exemptions: General SF, Bay Area, Rapid Flow, Manny’s. Exemption is not general liability coverage.
-- Genteel: Financial District exclusion; Yelp snippet address/phone conflicts with CSLB/company page.
-- Ace: Diamond Certified lists (415) 523-0012 / (415) 797-4197, while CSLB and the company site list (415) 824-6444; treat as a third-party contact discrepancy.
-- Repository: unrelated legacy GEMS/scientific content and archived plumbing microsites preserved; stale PRs #32 and #42 remain open/conflicting and untouched.
-
-## 7. Verification artifacts
-
-- Canonical dataset: [scripts/dashboard_content.py](scripts/dashboard_content.py) → generated root pages + [site_data.json](data/canonical/site_data.json).
-- Build/link/privacy verifier: [verification.html](verification.html), [verification_report.json](data/canonical/verification_report.json), [verification_report.md](data/canonical/verification_report.md).
-- Field-level official checks: [source_checks.json](data/canonical/source_checks.json).
-- Line-by-line repository audit: [repo_audit.md](data/canonical/repo_audit.md), [repo_audit.json](data/canonical/repo_audit.json).
-- Shared coordination board: [COORDINATION.md](COORDINATION.md).
+Supplemental artifacts from `arena/6696a17e-korea7`: [source_checks.json](data/canonical/source_checks.json) preserves exact CSLB timestamps and official contact fields for 11 re-read records; [decision_analysis.json](data/canonical/decision_analysis.json) is a labeled evidence-strength inquiry model, not the primary computed CSLB ranking; [repo_audit.md](data/canonical/repo_audit.md) is the line-by-line structural repository audit. The Angi SF bathtub-restoration category was corrected to 17 verified reviews / last update October 14, 2024, and the similarly named Advanced Plumbing website was flagged as a New Jersey business not matched to CSLB #1009195.
 
 *Informational only — research, not legal advice, a quote, or a contractor endorsement.*
+
+---
+
+## Prior integration executive summary (session `arena/2eb487ad-korea7`, 2026-11-07 — preserved verbatim)
+
+# Executive Summary — Bathtub Wastewater Overflow Trip Lever (San Francisco)
+
+**Project:** Remove / repair a stuck bathtub wastewater overflow trip lever located in concealed plumbing behind a bathroom wall in a tenant-occupied San Francisco unit. From-above removal is preferred but reportedly failed with 5+ licensed plumbers; the reported fallback is access from below through a storage-unit drywall ceiling. One licensed provider covering **plumbing + drywall** is wanted, with experience in delicate work in an occupied unit.
+
+**Compiled:** 2026-11-07 · **Session:** `arena/2eb487ad-korea7` (final integration) · **Live site:** <https://karagemop466-tech.github.io/Korea7/> · **Full dashboard:** [index.html](index.html) · **Shortlist:** [shortlist.html](shortlist.html) · **Preserved log:** [verification-log.html](verification-log.html) · **Flagged items:** [flagged.html](flagged.html)
+
+> Every fact below links to the official page it was read from, or to the project's own primary record when no public source exists. Values that cannot be confirmed from an official source are **blank** in the verified data tables and flagged. No value is inferred.
+
+---
+
+## 1. The three quotes (2026-08-30, owner-provided — unverified)
+
+| Company | Scope as quoted | Verified amount | Company identity (official) |
+|---|---|---|---|
+| Expert Plumbing Solutions | Remove trip lever / replacing waste and overflow | *blank — UNVERIFIED* | [CSLB #977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) — active C-36, expires 2028-10-31 |
+| Bay Area Plumbing | Replace lever for bathtub plug and spout with diverter, labor + materials | *blank — UNVERIFIED* | [CSLB #757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) — active C-36, expires 2027-01-31 |
+| Fast Response Plumbing & Rooter | Repair or adjust bathtub wastewater plunger handle | *blank — UNVERIFIED* | [CSLB #1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) — active C-36, expires 2027-03-31 |
+
+No official source publishes private quotes. The owner's figures are transcribed only on the clearly labeled [Project brief](brief.html) page and on [Flagged for Review](flagged.html). The spread reflects **scope, not price**: adjustment → stopper/spout replacement → concealed waste-and-overflow replacement. None of the three scopes includes drywall; no combined quote exists yet. Full table: [estimates.html](estimates.html).
+
+## 2. Verified findings (official sources, read 2026-11-07)
+
+1. **Five candidates hold one license covering both building/drywall and plumbing** — [Ace Plumbing & Rooter #829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) (A, B, C-4, C-10, C-16, C-36), [GENERALSF #959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) (B, C-10, C-36), [Handyman Heroes #1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) (B, C-36), [Rapid Flow Plumbing & Rooter #1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) (B, C-36) and [Manny's Plumbing & Rooter #841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) (C-36, B; Daly City address). Eight candidates in total carry active CSLB licenses re-read 2026-11-07; a ninth lead (Szeto) could not be matched. CSLB verifies license classes, not job-specific capability — the ability to perform this delicate repair remains unverified and flagged. The ranked [shortlist](shortlist.html) from a parallel session is preserved and linked.
+2. **Below access is a publisher-described fallback for stubborn drains, not a verified project-specific norm.** [This Old House](https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain) describes removing the overflow-plate screws from above, then accessing plumbing from below for stubborn drains; [Hunker](https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/) and [Family Handyman](https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/) describe the hidden linkage. [Oatey](https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste) publishes the standard trip-lever bath-waste kit.
+3. **Official permit/licensing rules (neutral).** SF.gov: "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground" ([sf.gov](https://www.sf.gov/apply-plumbing-and-mechanical-permit)); [sf.gov](https://www.sf.gov/information--check-if-your-construction-project-needs-permit) lists minor interior plaster/wallboard repair among work not needing a permit. Plumbing permits require C-4, C-16, C-20, C-36, C-54, B or A classifications. California [B&P §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048) (as amended by AB 1170, effective 2026-01-01) exempts only work under $1,000 that is casual/minor and does not require a building permit. Confirm applicability for the exact scope with SF DBI and the contractor. Details: [permits.html](permits.html).
+4. **Independent 2026 benchmarks.** Bathtub/shower drain replacement $500–$1,020 (avg $700); labor $45–$200/hr; new drywall ≈ $2,100 ([Angi, 2026-09-18](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm)); bathroom leak repair $150–$600 plus $300–$930 drywall/tile follow-up ([Angi, 2026-10-28](https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm)); overflow component $163 ([This Old House, 2026-03-05](https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost)). National figures, not quotes for this job.
+5. **Review platforms for this specific work in San Francisco** — Yelp category searches (HTTP 403 to automated fetch, provided for manual review), [Angi SF plumbers](https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm), [Angi SF bathtub](https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm), [BuildZoom SF plumbers](https://www.buildzoom.com/san-francisco-ca/plumbers), [BuildZoom SF drywall](https://www.buildzoom.com/san-francisco-ca/drywall-contractors), [Thumbtack SF bathtub](https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing) and [BBB](https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492). Platform badges and review counts are not CSLB license verification. Full table: [contractors.html](contractors.html).
+
+## 3. Recommendation
+
+1. **Shortlist the dual-classified firms first** — #829071, #959843, #1003394, #1115649, #841229 — and request one contingent written scope covering an above-attempt, below access, ceiling cut/patch/finish, dust protection, a fill-and-inspect test, and tenant access windows.
+2. **Confirm crew coverage**: CSLB shows workers'-compensation "no employees" exemptions on #757796 and #959843, and a policy expiring 2026-12-18 on #1024971. Request current certificates.
+3. **Ask for references on concealed waste-and-overflow work in occupied units** — company sites ([Fast Response](https://www.fastresponseplumbingsf.com/), [Ace](https://www.aceplumbingandrooter.com/)) and customer reviews are statements, not official capability findings.
+4. **Re-verify the chosen license on the hire date** at [CSLB Check a License](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx), and review the [20 flagged items](flagged.html) before hiring. No provider has been contacted and none has confirmed this job.
+
+## 4. Flagged for review (full list: [flagged.html](flagged.html))
+
+U01–U02 three quote amounts and brief facts · U03 Yelp ratings (HTTP 403 on re-check) · U04 Fast Response address mismatch · U05 expiring workers'-comp policy · U06 workers'-comp exemptions · U07 CSLB complaint disclosure (#1003394, citation 2 2020 001045, "for disclosure only") · U08 Handyman Heroes site claims C-10 not on its CSLB record · U09 Fast Response aggregate review claim · U10 Szeto license not found · U11 two dead sources (SFGate redirect, InspectAndTest HTTP 500) removed from active citations · U12 unrelated legacy GEMS project in this repo · U13 stale conflicting PR #32 left untouched · U14 no combined plumbing+drywall quote · U15 job-specific capability and occupied-unit experience not officially confirmable · U16 Yelp badges are third-party · U17 Handyman Heroes address mismatch · U18 outdated $500 licensing-threshold references · U19 archived research sets / legacy link re-check · U20 no provider contacted or confirmed. Flagged items do not block the site or the merge.
+
+## 5. Verification and sources
+
+- **Line-by-line verification:** [verification.html](verification.html), machine-readable [verification_report.json](data/canonical/verification_report.json) and [site_data.json](data/canonical/site_data.json). 409 rendered table rows, 0 rows without a source link; 486 internal links checked, 0 broken; a full-repo audit found 0 broken internal links across 1,196 links; 50 unique external links, all in the [Source ledger](sources.html); privacy sweep 0 matches; `python3 -m pytest -q` → 37 passed + 9 subtests passed, including the parallel sessions' integrity tests.
+- **Official:** sf.gov (2 pages), SF code library §104.0, CSLB (Check a License, C-36 classification, 6 license records, complaint disclosure), California Legislative Information BPC §7048 · **Manufacturer:** Oatey · **Publisher pages:** Angi (3), This Old House (2), Family Handyman, Hunker, The Overall Plumber · **Platforms:** Yelp, Angi, BuildZoom, Thumbtack, BBB · **Company sites:** 6 · **Primary records:** brief.html, COORDINATION.md, README.md, Pages site.
+- **Shared task board:** [COORDINATION.md](COORDINATION.md).
+
+*Informational only — research, not legal advice, a quote, or a contractor endorsement.*
+
+---
+
+## Earlier-session executive summary (session `6a266fca`, 2026-11-07 — preserved verbatim)
+
+# Executive Summary — Bathtub Wastewater Overflow Trip Lever (San Francisco)
+
+**Project:** Free/repair a seized bathtub overflow trip lever that sits in concealed waste-and-overflow plumbing behind a bathroom wall, in a tenant-occupied San Francisco unit. Access from above has been declined by 5+ licensed plumbers (owner-reported); the reported fallback is working from below, which may require opening the storage-unit ceiling drywall. The requirement is **one licensed provider who can do the plumbing and the drywall**.
+
+**Compiled:** 2026-11-07 · **Session:** `6a266fca` · **Live site:** https://karagemop466-tech.github.io/Korea7/ (dashboard, shortlist, verification log, flagged items).
+
+---
+
+## 1. The three quotes received (2026-08-30 — amounts owner-provided, no official source exists)
+
+| Company | Quoted scope | Amount | License cross-check (official CSLB, read 2026-11-07) |
+|---|---|---:|---|
+| Fast Response Plumbing & Rooter | Repair or adjust bathtub wastewater plunger handle | $135 | [#1024971](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) — current and active, C-36 Plumbing, expires 2027-03-31 |
+| Bay Area Plumbing | Replace lever for bathtub plug and spout with diverter (labor + materials) | $550 | [#757796](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) — current and active, C-36 Plumbing, expires 2027-01-31, workers'-comp exempt |
+| Expert Plumbing Solutions | Remove trip lever — "replacing waste and overflow" | $614 | [#977638](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) — current and active, C-36 Plumbing, expires 2028-10-31 |
+
+The spread reflects **scope, not price**: adjustment attempt → stopper/spout replacement → concealed waste-and-overflow replacement. **None of the three includes the drywall/ceiling work.** Every amount is flagged unverified on the site — no official or public source publishes them ([Flagged item 1–2](flagged.html)).
+
+## 2. Who can actually do the work (the answer to the search)
+
+Five San Francisco-area firms hold **B General Building + C-36 Plumbing on the same CSLB licence**, which is what allows one company to take the plumbing and the drywall restoration together (CSLB B classification text requires the appropriate classification or a subcontract for the other trade):
+
+| Firm | Licence | Status on CSLB (2026-11-07) | Notes |
+|---|---|---|---|
+| **General SF** | [#959843](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) — B + C-36 + C-10 | Active · expires 2027-04-30 · $25k bond | Workers'-comp exempt ("no employees") |
+| **Ace Plumbing & Rooter** | [#829071](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) — B + C-36 + A, C-4, C-16, C-10 | Active · expires 2027-06-30 · $25k bond · WC insured | Widest classification set |
+| **Handyman Heroes Inc** | [#1003394](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) — B + C-36 | Active · expires 2027-05-31 · $25k bond · WC insured | Complaint disclosure on record |
+| **Rapid Flow Plumbing & Rooter Inc** | [#1115649](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) — B + C-36 | Active · expires 2028-01-31 · $25k bond | Workers'-comp exempt; small review count |
+| **Manny's Plumbing & Rooter** | [#841229](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) — C-36 + B | Active · expires 2028-06-30 · $25k bond | Daly City (adjacent); workers'-comp exempt |
+
+Three further candidates were reviewed: the three quoting plumbers above (C-36 only) and **Szeto Plumbing and Handyman**, whose licence stays **blank/unverified** — the CSLB name search returns other Szeto-named licensees but no record matching that business. Ranked shortlist, requirement matrix and a call script: [shortlist.html](shortlist.html).
+
+## 3. Key verified findings (official sources only)
+
+1. **Licensing scope is verified; job experience is not.** CSLB confirms licence status, classification, bond and workers' comp for eight candidates ([CSLB Check a License](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx)). No official source rates anyone's experience with this exact repair — that stays flagged.
+2. **San Francisco permit rule (official):** "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground" ([sf.gov](https://www.sf.gov/apply-plumbing-and-mechanical-permit)). The local exemptions are narrow — §104.2 exempts, e.g., "Repair of leaks not requiring cutting into or removing piping" ([2025 SF Plumbing Code PDF](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf)). DBI lists the licence types it accepts on a plumbing permit: **A; B after scope approval; C-4 or C-36 for plumbing; C-16 sprinklers; C-20 mechanical; C-54 shower pan only** (same sf.gov page).
+3. **California licensing threshold changed 2026-01-01:** B&P Code §7048 (as amended by AB 1170, Stats. 2025 ch. 67) exempts only jobs **under $1,000 that do not require a building permit** ([leginfo](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048)). Widely cited "$500" references are out of date — four legacy pages on this site were corrected during this pass.
+4. **Cost context (national, 2026):** bathtub/shower drain replacement $500–$1,020, average $700 ([Angi, updated 2026-09-18](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm)); new drywall ≈$2,100 and water-damage repair $1,350–$6,100 if the ceiling has to be opened. The $550 and $614 quotes sit inside the replacement range; the $135 quote is scoped as an adjustment.
+
+## 4. Recommendation
+
+1. **Call the two strongest documented fits first:** General SF (#959843) and Ace Plumbing & Rooter (#829071) — both B + C-36, both bonded; Ace also shows current workers'-comp insurance.
+2. **Ask for one written scope** covering: first attempt from above, the below-access ceiling cut (location/size), plumbing, drywall patch and finish, containment, water test before the ceiling is closed, and tenant scheduling windows.
+3. **Confirm crewing and insurance** for the firms whose CSLB record shows a "no employees" exemption (Bay Area Plumbing, General SF, Rapid Flow, Manny's).
+4. **Decide the permit question with the contractor and DBI** — official guidance is linked; this site takes no position and publishes no instruction either way.
+5. **Re-verify the chosen licence on the hire date** at [cslb.ca.gov](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx); statuses and policies change.
+
+## 5. Flags / unverified items
+
+Full list with sources: [flagged.html](flagged.html) (10 items). Headlines: all three amounts and every problem fact are owner-provided; Yelp ratings are third-party and cannot be officially verified; Handyman Heroes and Fast Response addresses differ between Yelp and CSLB; four licences show workers'-comp "no employees" exemptions; Handyman Heroes carries a CSLB complaint disclosure; Szeto has no matching CSLB record; no quote includes drywall; job-specific experience is unverified everywhere.
+
+## 6. Sources
+
+Official: [CSLB Check a License](https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx) · CSLB licence-detail records #977638, #757796, #1024971, #959843, #829071, #1003394, #1115649, #841229 (each read 2026-11-07, data-current stamp 11/7/2026) · [CSLB B classification](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B) · [CSLB C-36 classification](https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36) · [sf.gov — plumbing and mechanical permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit) · [2025 SF Plumbing Code, §104.2](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf) · [B&P §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048).
+Third-party (context only): [Angi](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm), [This Old House](https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain), Yelp listings (linked per contractor).
+Full source table and the correction log: [sources.html](sources.html) · [verification.html](verification.html).
+
+*Informational only — not legal advice.*
+
+
+## Integration audit addendum — 2026-11-08
+
+The PR #60/#61 merge preserves the computed 16-record ranking as the primary hiring decision and adds the fuller 30-row requirements register, access-options table, source-grade row audit, canonical-data privacy sweep, hashed repository inventory, and supplemental evidence files: [evidence extracts](data/canonical/evidence-2026-11-08.json), [supplemental 8-provider records](data/canonical/providers-2026-11-08.json), [prior canonical snapshot](data/canonical/research-history-2026-11-07.json), [inventory CSV](data/canonical/repo_inventory.csv). The earlier drywall-inclusion flag is preserved as U35; the primary ranking remains [ranking.html](ranking.html).

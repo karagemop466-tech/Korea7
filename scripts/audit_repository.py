@@ -107,6 +107,9 @@ def main() -> int:
                     break
             for kind in kinds:
                 detail = line.strip()[:160]
+                if kind in {'privacy-pattern', 'placeholder'}:
+                    # Do not republish the matched internal-only/template wording in a public audit artifact.
+                    detail = '[redacted %s match; see path/line for review]' % kind
                 if kind == 'placeholder' and (
                     'placeholder=' in line.lower()
                     or 'input.placeholder' in line.lower()
@@ -118,6 +121,11 @@ def main() -> int:
                     or 'template-marker scan' in line.lower()
                     or 'placeholder text' in line.lower()
                     or 'placeholder left' in line.lower()
+                    or (rel == 'scripts/audit_repository.py'
+                        and re.search(r'placeholder', line, re.I)
+                        and not re.search(r'\bTODO\b|\bTBD\b|example\.com|lorem ipsum', line, re.I))
+                    or (rel == 'scripts/audit_repository.py'
+                        and all(token in line for token in ('TODO', 'TBD', 'example', 'lorem')))
                 ):
                     kind = 'benign-placeholder-reference'
                 elif kind == 'privacy-pattern' and rel.startswith('tests/') and ('r"' in line or "r'" in line):

@@ -27,6 +27,73 @@ import verify_dashboard as V  # noqa: E402
 DATA_DIR = ROOT / "data" / "canonical"
 
 
+GENERATED_OUTPUTS = {
+    "data/canonical/site_data.json",
+    "data/canonical/verification_report.json",
+    "data/canonical/verification_report.md",
+    "data/canonical/repo_inventory.json",
+    "data/canonical/repo_inventory.csv",
+    "data/canonical/repo_audit.json",
+    "data/canonical/repo_audit.md",
+    "COORDINATION.md",
+}
+INVENTORY_SKIP_DIRS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", "node_modules", ".venv"}
+
+
+def refresh_repo_inventory():
+    """Hash source/preserved artifacts; exclude generated pages and self-referential reports."""
+    import csv
+    import hashlib
+    from urllib.parse import quote
+
+    rows = []
+    generated_pages = set(C.PAGES)
+    for path in sorted(ROOT.rglob("*")):
+        if not path.is_file() or any(part in INVENTORY_SKIP_DIRS for part in path.relative_to(ROOT).parts):
+            continue
+        rel = path.relative_to(ROOT).as_posix()
+        if rel in GENERATED_OUTPUTS or rel in generated_pages:
+            continue
+        data = path.read_bytes()
+        current = rel.startswith((
+            "scripts/dashboard_content.py", "scripts/build_dashboard.py", "scripts/verify_dashboard.py",
+            "assets/dashboard", "tests/test_dashboard", "tests/test_dashboard_integrity.py",
+            "tests/test_followup_audit.py", "tests/test_canonical_integrity.py", "scripts/audit_repository.py",
+            "data/canonical/evidence-", "data/canonical/providers-", "data/canonical/source_checks.json",
+            "data/canonical/decision_analysis.json",
+        ))
+        rows.append({
+            "path": rel,
+            "bytes": len(data),
+            "sha256": hashlib.sha256(data).hexdigest(),
+            "category": "current-plumbing-source" if current else "preserved-archive-or-unrelated",
+            "review": "hashed source/artifact inventory; external factual claims not verified by this hash",
+        })
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    (DATA_DIR / "repo_inventory.json").write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    with (DATA_DIR / "repo_inventory.csv").open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.DictWriter(fh, fieldnames=["path", "bytes", "sha256", "category", "review"], lineterminator="\n")
+        writer.writeheader(); writer.writerows(rows)
+    table_rows = []
+    branch = quote(C.META["session"], safe="/")
+    for item in rows:
+        url = C.META["repo_url"] + "/blob/" + branch + "/" + quote(item["path"], safe="/")
+        table_rows.append({"cells": [
+            '<a href="%s" target="_blank" rel="noopener noreferrer"><code>%s</code></a>' % (esc(url), esc(item["path"])),
+            str(item["bytes"]),
+            '<code class="hash">%s</code>' % item["sha256"],
+            esc(item["category"]),
+            esc(item["review"]),
+        ], "src": ["S98"]})
+    C.TABLES["repo_inventory"] = {
+        "title": "Line-by-line source/artifact inventory (%d files)" % len(rows),
+        "columns": ["Path", "Bytes", "SHA-256", "Category", "Review scope", "Source"],
+        "rows": table_rows,
+        "caption": "Hashed at build time. Generated dashboard pages/reports, this inventory and the post-deploy coordination log are excluded to avoid self-reference. Hashing verifies file identity, not external factual claims. Unrelated GEMS content is preserved, not plumbing evidence.",
+    }
+    return rows
+
+
 def esc(s: str) -> str:
     return html.escape(str(s), quote=True)
 
@@ -38,7 +105,7 @@ def validate() -> list[str]:
             if key not in src:
                 errors.append("source %s missing %s" % (sid, key))
         if not (src["url"].startswith("https://") or src["url"].startswith("http://")
-                or src["url"].endswith((".html", ".md", ".json"))):
+                or src["url"].endswith((".html", ".json", ".csv", ".md"))):
             errors.append("source %s has an unexpected url %r" % (sid, src["url"]))
     for tid, table in C.TABLES.items():
         if tid == "source_ledger":
@@ -135,7 +202,7 @@ def render_table(tid: str, title: str | None = None) -> str:
     t = C.TABLES[tid]
     out = ['<section class="section">',
            '<h2>%s</h2>' % esc(title or t["title"]),
-           '<div class="table-wrap"><table class="data-table">',
+           '<div class="table-wrap" tabindex="0" role="region" aria-label="%s table"><table class="data-table">' % esc(title or t["title"]),
            '<thead><tr>']
     for col in t["columns"]:
         out.append('<th>%s</th>' % col)
@@ -177,25 +244,33 @@ def render_row_audit(report: dict | None) -> str:
     for tid, table in C.TABLES.items():
         for i, row in enumerate(table["rows"], 1):
             srcs = [s for s in row["src"] if C.SOURCES[s]["status"] != "dead"]
-            official = any(C.SOURCES[s]["tier"] in ("official", "manufacturer") for s in srcs)
+            tiers = {C.SOURCES[s]["tier"] for s in srcs}
+            statuses = {C.SOURCES[s]["status"] for s in srcs}
+            text = re.sub(r"<[^>]+>", " ", " ".join(row["cells"])).lower()
+            if tiers & {"official", "manufacturer", "company"} and "verified" in statuses:
+                grade, tone, state = "official / company / manufacturer", "ok", "SOURCE PRESENT"
+            elif "primary" in tiers:
+                grade, tone, state = "project primary record", "info", "SOURCE PRESENT"
+            elif "historical" in statuses or "historical" in text:
+                grade, tone, state = "historical — not current verification", "warn", "FLAGGED"
+            elif tiers & {"publisher", "platform"}:
+                grade, tone, state = "publisher / platform — third-party", "warn", "UNVERIFIED" if "unverified" in text else "REVIEW"
+            else:
+                grade, tone, state = "other", "warn", "REVIEW"
             preview = re.sub(r"<[^>]+>", " ", row["cells"][0])
             preview = html.unescape(preview).strip()[:70] or "(row %d)" % i
             rows.append('<tr><td><code>%s</code></td><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>'
-                        % (esc(tid), i, esc(preview),
-                           C.pill("official link" if official else "primary / platform / publisher",
-                                  "ok" if official else "info"),
-                           C.pill("PASS", "ok"),
-                           source_cell(row)))
+                        % (esc(tid), i, esc(preview), C.pill(grade, tone), C.pill(state, tone), source_cell(row)))
     total = len(rows)
     return ('<section class="section"><h2>Line-by-line row audit (%d rows)</h2>'
-            '<p class="sub">One row per table row in the combined dataset. "Official link" means the row cites '
-            'at least one government or manufacturer source; a blank verified value is still flagged on the '
-            'Flagged for Review page. Every row has at least one source link.</p>'
+            '<p class="sub">One row per table row in the combined dataset. “Source present” means a cited source exists in the ledger; '
+            'it is not independent proof of every claim. Owner, publisher, platform and historical rows are labeled rather than '
+            'called officially verified. Blank verified values are flagged on the Flagged for Review page.</p>'
             '<div class="table-wrap"><table class="data-table"><thead><tr><th>Table</th><th>Row</th>'
-            '<th>First cell</th><th>Source grade</th><th>Link check</th><th>Source</th></tr></thead><tbody>'
+            '<th>First cell</th><th>Strongest source grade</th><th>Audit label</th><th>Source</th></tr></thead><tbody>'
             % total) + "".join(rows) + ('</tbody><caption>Row audit generated from '
-            '<code>data/canonical/site_data.json</code>; the same data file renders every table on this site. '
-            'Verification method: <a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" '
+            '<code>data/canonical/site_data.json</code>. Current ranking sources were read 2026-11-08; historical sources are excluded '
+            'from the current ranking. Verification method: <a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" '
             'target="_blank" rel="noopener noreferrer">CSLB Check a License</a> and '
             '<a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" '
             'rel="noopener noreferrer">sf.gov permit guidance</a>.</caption></table></div></section>')
@@ -290,6 +365,7 @@ def write_data_snapshot():
 
 
 def main() -> int:
+    refresh_repo_inventory()
     errors = validate()
     if errors:
         print("CONTENT VALIDATION FAILED:")

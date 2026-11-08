@@ -1,152 +1,248 @@
 {
   "generated_by": "scripts/audit_repository.py",
-  "tracked_files": 310,
-  "total_bytes": 20088410,
-  "text_lines": 61158,
+  "tracked_files": 329,
+  "total_bytes": 21476503,
+  "text_lines": 80782,
   "extension_counts": {
     "(none)": 3,
     ".css": 9,
-    ".csv": 2,
-    ".html": 78,
+    ".csv": 3,
+    ".html": 80,
     ".js": 4,
-    ".json": 68,
-    ".md": 24,
+    ".json": 77,
+    ".md": 25,
     ".png": 1,
-    ".py": 90,
+    ".py": 96,
     ".sha256": 1,
     ".tif": 26,
     ".txt": 2,
     ".zip": 2
   },
-  "json_files": 68,
-  "python_files": 90,
+  "json_files": 77,
+  "python_files": 96,
   "parse_failures": [],
   "broken_internal_links": [],
   "broken_internal_anchors": [],
   "flag_counts": {
-    "benign-placeholder-reference": 19,
+    "benign-placeholder-reference": 35,
     "benign-privacy-pattern-definition": 1
   },
   "flags": [
     {
       "path": "assets/dashboard.js",
-      "line": 12,
+      "line": 19,
       "kind": "benign-placeholder-reference",
-      "detail": "input.placeholder = \"Filter rows…\";"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "docs/overflow-verification-contractors.html",
       "line": 20,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"filter\" type=\"search\" placeholder=\"Filter providers...\" data-target=\"contr\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 106,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 110,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 113,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 114,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 115,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 117,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 118,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 119,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 120,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 122,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 123,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 125,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 126,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 128,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 130,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
+    },
+    {
+      "path": "scripts/audit_repository.py",
+      "line": 206,
+      "kind": "benign-placeholder-reference",
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_overflow_verification.py",
       "line": 19,
       "kind": "benign-placeholder-reference",
-      "detail": "* no placeholder text remains in the repo review;"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_overflow_verification.py",
       "line": 125,
       "kind": "benign-placeholder-reference",
-      "detail": "if \"PLACEHOLDER\" in r[\"result\"] or \"PLACEHOLDER\" in r[\"status\"]:"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_overflow_verification.py",
       "line": 126,
       "kind": "benign-placeholder-reference",
-      "detail": "errors.append(f\"repo_review {r['id']}: placeholder left in place\")"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_overflow_verification.py",
       "line": 334,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"filter\" type=\"search\" placeholder=\"Filter providers...\" data-target=\"contr\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_sf_overflow_audit.py",
       "line": 208,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Filter contractors by name, license #, WC status...\" aria-label=\"Filter Tier 1 contractors\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_sf_overflow_audit.py",
       "line": 383,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search requirements by ID, category, keyword...\" aria-label=\"Search requirements\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_sf_overflow_audit.py",
       "line": 555,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search by name, license #, B, C-36, C-9, drywall, WC...\" aria-label=\"Search contractors\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_sf_overflow_audit.py",
       "line": 731,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search audited paths, SHA-256, GEMS, BPC 7048...\" aria-label=\"Search repository audit\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_sf_overflow_audit.py",
       "line": 782,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Filter sources by license #, statute, manufacturer...\" aria-label=\"Filter official sources\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/build_sf_overflow_audit.py",
       "line": 835,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search flags by ID, contractor, repo file...\" aria-label=\"Search flagged items\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "scripts/verify_dashboard.py",
       "line": 47,
       "kind": "benign-placeholder-reference",
-      "detail": "PLACEHOLDER_PATTERNS = [r\"\\bTODO\\b\", r\"\\bTBD\\b\", r\"\\bPLACEHOLDER\\b\", r\"example\\.com\", r\"lorem ipsum\"]"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "sf-overflow-audit/contractors.html",
       "line": 38,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search by name, license #, B, C-36, C-9, drywall, WC...\" aria-label=\"Search contractors\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "sf-overflow-audit/flagged-for-review.html",
       "line": 38,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search flags by ID, contractor, repo file...\" aria-label=\"Search flagged items\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "sf-overflow-audit/index.html",
       "line": 130,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Filter contractors by name, license #, WC status...\" aria-label=\"Filter Tier 1 contractors\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "sf-overflow-audit/repo-review.html",
       "line": 38,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search audited paths, SHA-256, GEMS, BPC 7048...\" aria-label=\"Search repository audit\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "sf-overflow-audit/requirements.html",
       "line": 35,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Search requirements by ID, category, keyword...\" aria-label=\"Search requirements\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "sf-overflow-audit/sources.html",
       "line": 35,
       "kind": "benign-placeholder-reference",
-      "detail": "<input class=\"search-input\" type=\"search\" placeholder=\"Filter sources by license #, statute, manufacturer...\" aria-label=\"Filter official sources\">"
+      "detail": "[redacted placeholder match; see path/line for review]"
     },
     {
       "path": "tests/test_bath_site.py",
       "line": 118,
       "kind": "benign-privacy-pattern-definition",
-      "detail": "r\"without a permit\","
+      "detail": "[redacted privacy-pattern match; see path/line for review]"
     }
   ],
   "inventory": [
@@ -170,46 +266,46 @@
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 141221,
-      "sha256": "6819ace2d61592118fe65190d0787cac094659ba9e240d10800e2f1c08e204eb",
+      "bytes": 172913,
+      "sha256": "a547aba3638cb449aa0a7c95069e3813d37cb65c44003607c9ef4ff6f756e8e5",
       "text": true,
-      "lines": 978,
+      "lines": 1190,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "EXECUTIVE-SUMMARY.md",
-      "bytes": 13006,
-      "sha256": "f5725d85c73b4496218941db30f4d9ce205f7a2a8a39be3a4fdbb643df3d5213",
+      "bytes": 32079,
+      "sha256": "805d6d6c205b9b55ee740a8cc4947c076da3f32700a64f1124770dd78f68b4dd",
       "text": true,
-      "lines": 99,
+      "lines": 173,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "README.md",
-      "bytes": 29646,
-      "sha256": "ac871d8e7113da21b427775c1d53306f0d1f92755df68753805552ea66b9e010",
+      "bytes": 30464,
+      "sha256": "9a43c31e3155d2323ce3636b16dd98e2f7ff569e518bbad8d592012b3486586c",
       "text": true,
-      "lines": 302,
+      "lines": 307,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "assets/dashboard.css",
-      "bytes": 8781,
-      "sha256": "c568ed7d710a314f14b74ca66a6bfdef4e3665d6660ce0c33621c63853e7c54c",
+      "bytes": 9663,
+      "sha256": "095b67314133eaea9cf601cde4251685ccb1b09e7ec0ae8e3ee5de5fab44b3f9",
       "text": true,
-      "lines": 185,
+      "lines": 206,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "assets/dashboard.js",
-      "bytes": 1473,
-      "sha256": "0982d8812dbba684242a60ded0ba94065f16515c823abaf043f0f81252dc9dc5",
+      "bytes": 1929,
+      "sha256": "f7432873690398085c0b3c355dbb04b0a4f30c142189f02769ec4dee618ab122",
       "text": true,
-      "lines": 40,
+      "lines": 55,
       "parse": "not-applicable",
       "line_flags": 1
     },
@@ -314,10 +410,10 @@
     },
     {
       "path": "brief.html",
-      "bytes": 11604,
-      "sha256": "8bd20188b1711624d033632afb5e4c8642f0717664c78d1f57995d5fd956e764",
+      "bytes": 13062,
+      "sha256": "8087675acd306b3fa92a040369e851cf5f164190d892b49b73700c5d2c0ddf46",
       "text": true,
-      "lines": 163,
+      "lines": 168,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -331,11 +427,20 @@
       "line_flags": 0
     },
     {
-      "path": "contractors.html",
-      "bytes": 63714,
-      "sha256": "e7402aa242018f9016c6d26c8647148348e6f3f26ea7f442d6fe1e2c53d6efbf",
+      "path": "contacts.html",
+      "bytes": 46778,
+      "sha256": "dfd2af6603e1b779d6a6cb6b6c397331c255ef142a813f468047c9b2a5d5a919",
       "text": true,
-      "lines": 717,
+      "lines": 480,
+      "parse": "not-applicable",
+      "line_flags": 0
+    },
+    {
+      "path": "contractors.html",
+      "bytes": 46248,
+      "sha256": "800cd8e02f5f4d99ca5c8fa34b858ec11f7be9dab5ee19f3bee5a8912f360f62",
+      "text": true,
+      "lines": 407,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -354,11 +459,103 @@
       "lines": null
     },
     {
-      "path": "data/canonical/site_data.json",
-      "bytes": 237876,
-      "sha256": "8b10b29573a6e6dbcfbe840df98805a45a20db0506e933c53d11c42895977b74",
+      "path": "data/canonical/cslb_records.json",
+      "bytes": 25868,
+      "sha256": "53ed81dd21635e7b4d30815b89ef978a687b579f2ea601d5e75a24afc877cc21",
       "text": true,
-      "lines": 5129,
+      "lines": 724,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/decision_analysis.json",
+      "bytes": 10268,
+      "sha256": "8cd35e53ca82105672b8ec9eca0cc927be9ed4c19cc28c3d41023ef39eaaecce",
+      "text": true,
+      "lines": 314,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/evidence-2026-11-08.json",
+      "bytes": 16132,
+      "sha256": "94796d030041cdd48629952cf93ef246fe514173f19751e82b2be7c87a248677",
+      "text": true,
+      "lines": 272,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/providers-2026-11-08.json",
+      "bytes": 8068,
+      "sha256": "f7671a168dd98648da691265c97a7fcd79eb10b8c4db7c040fd2698f001d5122",
+      "text": true,
+      "lines": 191,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/repo_audit.json",
+      "bytes": 89927,
+      "sha256": null,
+      "text": true,
+      "lines": 3151,
+      "parse": "pass",
+      "generated": true,
+      "note": "Generated audit output; final bytes are written after this scan."
+    },
+    {
+      "path": "data/canonical/repo_audit.md",
+      "bytes": 25433,
+      "sha256": null,
+      "text": true,
+      "lines": 386,
+      "parse": "not-applicable",
+      "generated": true,
+      "note": "Generated audit output; final bytes are written after this scan."
+    },
+    {
+      "path": "data/canonical/repo_inventory.csv",
+      "bytes": 65904,
+      "sha256": "04c03ca4a902c929b3266992f4bc815274a19cf54ccd363a94c2392dc2d740e0",
+      "text": true,
+      "lines": 307,
+      "parse": "not-applicable",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/repo_inventory.json",
+      "bytes": 93413,
+      "sha256": "dd51d58f770f5da2dac669388e233d518a44c939b64a783c7a68b1589c4d7e23",
+      "text": true,
+      "lines": 2144,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/research-history-2026-11-07.json",
+      "bytes": 160431,
+      "sha256": "57535181d5dc5791b7ef0f99cf2dc74347f830cf1bd1157258a34e3e8f2f63f0",
+      "text": true,
+      "lines": 3362,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/review_snapshots.json",
+      "bytes": 4537,
+      "sha256": "76195a7812d4879f282e5b580637e4239d47fecff508634c1021c553689a9470",
+      "text": true,
+      "lines": 86,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/site_data.json",
+      "bytes": 530010,
+      "sha256": "dd5044e4836e1c55cc98b811dbcced5f98071cdeaa42a05e50475a0e4fdaa834",
+      "text": true,
+      "lines": 10089,
       "parse": "pass",
       "line_flags": 0
     },
@@ -372,20 +569,29 @@
       "line_flags": 0
     },
     {
-      "path": "data/canonical/verification_report.json",
-      "bytes": 8434,
-      "sha256": "ed92901b38c8a49818a91132ee16ffecdab010be1dd604a8a6d1bee63d423e57",
+      "path": "data/canonical/vendor_sites.json",
+      "bytes": 13837,
+      "sha256": "1693e630f40275788b4eb4c76e022295496818d066843bb1a711eac2557951f6",
       "text": true,
-      "lines": 177,
+      "lines": 195,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/verification_report.json",
+      "bytes": 42417,
+      "sha256": "96fd715f899e071d90bea3a4e0aa6fa7ea76100681effce9bfee1635a7156e7c",
+      "text": true,
+      "lines": 492,
       "parse": "pass",
       "line_flags": 0
     },
     {
       "path": "data/canonical/verification_report.md",
-      "bytes": 1783,
-      "sha256": "253b7f74857354a1b85debe2cde749a0e8ea7eb4f99e742363e0892f83b9462e",
+      "bytes": 1972,
+      "sha256": "4fc59ce78c83c06aea091dcf66f76340a15ca91f26344498851dca820f730c91",
       "text": true,
-      "lines": 39,
+      "lines": 40,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1372,10 +1578,10 @@
     },
     {
       "path": "estimates.html",
-      "bytes": 21852,
-      "sha256": "5da7ffd3e4d6dab184f0920ac6ffba01aaf56718e7a0f7c867134f203629ff99",
+      "bytes": 18803,
+      "sha256": "c172e19541e30665d967aa9ccb4aa91dd9ccdc2c4146b3ae1e8e21d3bca860f0",
       "text": true,
-      "lines": 305,
+      "lines": 262,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1714,19 +1920,19 @@
     },
     {
       "path": "findings.html",
-      "bytes": 24972,
-      "sha256": "4b547d6c1289f65bd226f9ff8586cb0a4d81ee58c3320ea980a13780f90a0bab",
+      "bytes": 23650,
+      "sha256": "9a35b74b238911cbc04f275dcdc33f56450f0d1499dc935e5cc3a1b972f88d9c",
       "text": true,
-      "lines": 193,
+      "lines": 185,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "flagged.html",
-      "bytes": 28320,
-      "sha256": "cf3f770d7d08ff0e04ffb3a5efebb39b424b458c795d0755174c16901f5b4ab5",
+      "bytes": 44703,
+      "sha256": "768c720444a3303ec054e5851a77323c3f1418ff751976492ea8dc55072d512d",
       "text": true,
-      "lines": 316,
+      "lines": 425,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1858,19 +2064,28 @@
     },
     {
       "path": "index.html",
-      "bytes": 11404,
-      "sha256": "241a028afe223d299860dfaaff207ee5f6e1683ff34520ad5b1446c845755a95",
+      "bytes": 13493,
+      "sha256": "317cecd9fd795456eba9498396a12d8cfa18a185b83573b56b4f232f2ad4deae",
       "text": true,
-      "lines": 120,
+      "lines": 125,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "permits.html",
-      "bytes": 16136,
-      "sha256": "9121653f31e6c35c31f9d3c423104c8686745268c395dd090dac268c876eeb6a",
+      "bytes": 8893,
+      "sha256": "8a8059715c39be36478f946a365f19f61706d8d83f7933185bccc63bfb1ef1a5",
       "text": true,
-      "lines": 199,
+      "lines": 128,
+      "parse": "not-applicable",
+      "line_flags": 0
+    },
+    {
+      "path": "ranking.html",
+      "bytes": 87852,
+      "sha256": "2310c4bfadf9c768b4bcef55d2a358511fa6640cfbf3466bb6946fb31ae68b4d",
+      "text": true,
+      "lines": 517,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1894,19 +2109,19 @@
     },
     {
       "path": "repo-review.html",
-      "bytes": 12719,
-      "sha256": "c22b526e193906b3ad5bc8c9f05deaa07fe195cdd7309332c5c28b89e07722a2",
+      "bytes": 206078,
+      "sha256": "6c2119273526a012a0121684138692ccb1880768f40e2407d09abdb8ab33eaa8",
       "text": true,
-      "lines": 158,
+      "lines": 2647,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "requirements.html",
-      "bytes": 34227,
-      "sha256": "c9e6b6895e5cf42949ba3c06b8eb1e6a7d71a0ee86cd670026071b673bb9863c",
+      "bytes": 25038,
+      "sha256": "791c73b8b07aac65c54f21f0c3a14bf9274eb9acfcf010db09eafa11745cadbc",
       "text": true,
-      "lines": 387,
+      "lines": 313,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1974,6 +2189,15 @@
       "line_flags": 0
     },
     {
+      "path": "scripts/audit_repository.py",
+      "bytes": 9823,
+      "sha256": "6e1c45d7e144f3b87cd1892cd5f4942886b077792bcfb50f10fb68301d9c2eae",
+      "text": true,
+      "lines": 217,
+      "parse": "pass",
+      "line_flags": 16
+    },
+    {
       "path": "scripts/bath_assets/bath.css",
       "bytes": 5562,
       "sha256": "37b49fed4fdc714a45925cd94d8d5bd72813288ede56e102d03d9012c4ffd81c",
@@ -2002,10 +2226,10 @@
     },
     {
       "path": "scripts/build_dashboard.py",
-      "bytes": 14777,
-      "sha256": "faa80610887f1ddc4f4c1717c73851688a78058a743977100ae1435d45039552",
+      "bytes": 19088,
+      "sha256": "1930f7a4a935f4066391cae85a826325b5de6dbf0a6f3bbf0f8f659bb7a8833a",
       "text": true,
-      "lines": 324,
+      "lines": 400,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2092,10 +2316,10 @@
     },
     {
       "path": "scripts/dashboard_content.py",
-      "bytes": 230761,
-      "sha256": "b6b009519f05d95b000c8e6d5cc4c10afff316f715b634335e5528f79cf8602a",
+      "bytes": 149387,
+      "sha256": "9bf17ca386aa6fa6467e2624c3f47eb450c18baf10f69385864c78818b339c74",
       "text": true,
-      "lines": 3075,
+      "lines": 1255,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2163,6 +2387,15 @@
       "line_flags": 0
     },
     {
+      "path": "scripts/ranking_data.py",
+      "bytes": 62066,
+      "sha256": "2aa8b829b080f3e5422f5b43f889dabd7a3a2271394177664a4419cae7ceef9b",
+      "text": true,
+      "lines": 917,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
       "path": "scripts/restore_data.py",
       "bytes": 7603,
       "sha256": "65219638fc0cbc330eb1ac290661f83bf9e58ac35ec26df8e276943c79f6330d",
@@ -2209,10 +2442,10 @@
     },
     {
       "path": "scripts/verify_dashboard.py",
-      "bytes": 13340,
-      "sha256": "cc23586379cad805b27ed8dad0b4270071fe8d768d518f61d53d0ec80280d93b",
+      "bytes": 13654,
+      "sha256": "abdaf83712a2151cc1862dc357499a357a4ef3771fc038788a9244c61e90d410",
       "text": true,
-      "lines": 306,
+      "lines": 309,
       "parse": "pass",
       "line_flags": 1
     },
@@ -2344,37 +2577,37 @@
     },
     {
       "path": "shortlist.html",
-      "bytes": 17274,
-      "sha256": "5f4b510bfbc9990dd6105b158c866ffee0fe5c43e31d9fc8f367a8f54615f57d",
+      "bytes": 17968,
+      "sha256": "e9956947aa8de9e2ad976463dcef956ebc00731a3d8a597a4c00eddf59fa3510",
       "text": true,
-      "lines": 244,
+      "lines": 241,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "sources.html",
-      "bytes": 85569,
-      "sha256": "dc5be2300373f537281df388cd5ba1a6000f08a3ec8b1206d3c97e11156ee43b",
+      "bytes": 102684,
+      "sha256": "94a7aa816b3b8f58c31c7377ecfd8858da9b42be33c882f8d3a850c626524f3d",
       "text": true,
-      "lines": 788,
+      "lines": 906,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "summary.html",
-      "bytes": 26332,
-      "sha256": "f1a8b9132cd3588c41bf3829c70e7e159e166a3bee423796b11bd035e5611036",
+      "bytes": 18870,
+      "sha256": "745e1dccd1c5c031693dc52548908244a4d01b10b9f1bd207d07258ddc005751",
       "text": true,
-      "lines": 232,
+      "lines": 111,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "technical.html",
-      "bytes": 14417,
-      "sha256": "d1de67906573253603dfcff2947f63b8ddb345866358ac17b073f05aaeb5a51b",
+      "bytes": 11329,
+      "sha256": "7addfb1af68ceff8cba885a7a89e339afc4b4e4e3017691e7c52ce4e3e503232",
       "text": true,
-      "lines": 171,
+      "lines": 158,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2388,20 +2621,29 @@
       "line_flags": 1
     },
     {
-      "path": "tests/test_dashboard.py",
-      "bytes": 3839,
-      "sha256": "e5266577b32fdb83a38f0b5a7a61e0b38f2d1af73e0276e1bef21683e5e97680",
+      "path": "tests/test_canonical_integrity.py",
+      "bytes": 3370,
+      "sha256": "3fb8f17e721a793f4c05b2348047eadd3608b755a3206c0fb702219642a1f12e",
       "text": true,
-      "lines": 95,
+      "lines": 82,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "tests/test_dashboard.py",
+      "bytes": 6570,
+      "sha256": "92c32f218e95b86c371e4cb26563048f0265fef11f2180170d495355196e9a84",
+      "text": true,
+      "lines": 148,
       "parse": "pass",
       "line_flags": 0
     },
     {
       "path": "tests/test_dashboard_integrity.py",
-      "bytes": 5399,
-      "sha256": "8d03cf2e498ee58acb48b56c50cecf9094795376eedfbd48eb7a37c708184f59",
+      "bytes": 5854,
+      "sha256": "4571159b6e9228c27221caab22951272563a12af93f8d1bdde1379982bca20c3",
       "text": true,
-      "lines": 121,
+      "lines": 128,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2424,11 +2666,29 @@
       "line_flags": 0
     },
     {
+      "path": "tests/test_followup_audit.py",
+      "bytes": 1106,
+      "sha256": "34289d6145e01465692dac044263018c92205df384edf3ff957673b1073d2227",
+      "text": true,
+      "lines": 26,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
       "path": "tests/test_holdout_registry.py",
       "bytes": 2927,
       "sha256": "51dd4ab95c10031215676d40bd81957540237e7458f94b998abe5582c40c3e23",
       "text": true,
       "lines": 82,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "tests/test_license_scope_followup.py",
+      "bytes": 1111,
+      "sha256": "971030d10670ae18bd140afcbabfcb77dc66c310d997c5d236892426d26c3f6a",
+      "text": true,
+      "lines": 28,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2474,6 +2734,15 @@
       "sha256": "84da7f2b2a9cb9b4732e8d491f284f91742ee1746b6a8836b06663198097e54b",
       "text": true,
       "lines": 199,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "tests/test_ranking.py",
+      "bytes": 9351,
+      "sha256": "bbfc34953d767439fff4e2e70aa1d309a7ae60025be74ebc5ccd80a9f6da321a",
+      "text": true,
+      "lines": 215,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2875,10 +3144,10 @@
     },
     {
       "path": "verification.html",
-      "bytes": 171949,
-      "sha256": "62aee818b171b6ea48008d1760a2b8bd35f8367fc55d8988874bd8bc87f99488",
+      "bytes": 336824,
+      "sha256": "200b7cbbb3fda2c35477712dbe3b995fdce52b1a0fb9802db8fc41a605f3323c",
       "text": true,
-      "lines": 57,
+      "lines": 62,
       "parse": "not-applicable",
       "line_flags": 0
     }

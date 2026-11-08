@@ -46,7 +46,7 @@ PRIVACY_PATTERNS = [
 ]
 PLACEHOLDER_PATTERNS = [r"\bTODO\b", r"\bTBD\b", r"\bPLACEHOLDER\b", r"example\.com", r"lorem ipsum"]
 
-EXTENSIONS = {".html", ".md", ".json", ".css", ".js"}
+EXTENSIONS = {".html", ".md", ".json", ".csv", ".css", ".js"}
 SKIP_DIRS = {".git", "node_modules", "__pycache__", "vendor", "gems", "evidence", "registry", "data"}
 
 
@@ -185,7 +185,8 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
         if not path.is_file() or path.suffix not in EXTENSIONS:
             continue
         rel = path.relative_to(root)
-        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]):
+        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]) \
+                and not rel.as_posix().startswith("data/canonical/"):
             continue
         if rel.as_posix().startswith("data/canonical/verification_report"):
             continue
@@ -229,12 +230,13 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
     verified_sources = sum(1 for s in C.SOURCES.values() if s["status"] == "verified")
     official_sources = sum(1 for s in C.SOURCES.values()
                            if s["tier"] in ("official", "manufacturer") and s["status"] == "verified")
-    official_today = sum(1 for s in C.SOURCES.values()
-                         if s["tier"] in ("official", "manufacturer") and s["status"] == "verified"
-                         and s["checked"] == C.META["updated"])
-    checks.append(check("Official sources verified directly", official_sources >= 10,
-                        "%d official/manufacturer sources verified (%d checked %s); %d sources verified overall"
-                        % (official_sources, official_today, C.META["updated"], verified_sources)))
+    check_dates = sorted({s["checked"] for s in C.SOURCES.values()
+                          if s["tier"] in ("official", "manufacturer") and s["status"] == "verified"})
+    date_text = check_dates[0] if len(check_dates) == 1 else "%s to %s" % (check_dates[0], check_dates[-1])
+    checks.append(check("Source ledger records prior direct reads", official_sources >= 10,
+                        "%d official/manufacturer sources marked verified (read dates %s); "
+                        "%d sources marked verified overall (metadata only; no network check)"
+                        % (official_sources, date_text, verified_sources)))
 
     return {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
@@ -285,8 +287,9 @@ def write_report(root: Path, report: dict) -> None:
     lines += ["", "## Notes", "",
               "- Every table row is emitted with a Source column from `data/canonical/site_data.json`.",
               "- Unverified values are blank in verified cells and published on `flagged.html`.",
-              "- Official values were read directly from the issuing site on %s; CSLB records printed" % C.META["updated"],
-              "  \"Data current as of 11/8/2026\".",
+              "- The ledger records source-specific check dates; this automated check does not re-fetch sources.",
+              "  Each CSLB record's own \"Data current as of\" stamp is transcribed in",
+              "  `data/canonical/cslb_records.json` (2026-11-08 reads printed 11/8/2026).",
               "- Yelp URLs return HTTP 403 to automated access and are flagged as platform snapshots.",
               "- Dead sources: %s (documented, never linked from a row)." % ", ".join(report["dead_sources"]),
               ""]

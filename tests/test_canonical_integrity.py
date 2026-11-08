@@ -1,4 +1,4 @@
-"""Regression checks for the 2026-11-08 canonical overflow refresh."""
+"""Regression checks for the 2026-11-08 supplemental canonical overflow integration."""
 from __future__ import annotations
 
 import json
@@ -38,19 +38,19 @@ def test_source_checks_cover_eleven_active_licenses():
         assert f"LicNum={lic['number']}" in lic['source']
 
 
-def test_contractors_table_matches_license_register():
+def test_source_check_licenses_are_in_canonical_register():
     checks = json.loads((ROOT / 'data/canonical/source_checks.json').read_text())
     numbers = {lic['number'] for lic in checks['licenses']}
-    rows = C.TABLES['contractors']['rows']
-    assert len(rows) == 11
-    rendered = ' '.join(' '.join(r['cells']) for r in rows)
+    rendered = ' '.join(' '.join(r['cells']) for tid in ('contractors', 'cslb_register', 'contacts') for r in C.TABLES[tid]['rows'])
     for number in numbers:
         assert f'LicNum={number}' in rendered
 
 
-def test_flagged_ids_are_sequential():
+def test_flag_ids_are_unique_and_include_supplemental_flag():
     rows = C.TABLES['flagged']['rows']
-    assert [r['cells'][0] for r in rows] == [f'U{i:02d}' for i in range(1, len(rows) + 1)]
+    ids = [r['cells'][0] for r in rows]
+    assert len(ids) == len(set(ids))
+    assert 'U44' in ids
 
 
 def test_angi_bathtub_category_correction():
@@ -59,9 +59,24 @@ def test_angi_bathtub_category_correction():
     assert 'October 14, 2024' in s24['supports']
     assert '873' not in s24['supports']
     assert '2026-08-01' not in s24['supports']
+    for row in C.TABLES['findings']['rows']:
+        if row['cells'][0] == 'F08':
+            assert 'S24' not in row['src']
 
 
 def test_texas_publisher_not_used_for_sf_permits():
     assert 'Houston' in C.SOURCES['S22']['note'] or 'Texas' in C.SOURCES['S22']['note']
     for row in C.TABLES['permits']['rows']:
         assert 'S22' not in row['src']
+
+
+def test_advanced_identity_mismatch_is_flagged():
+    assert C.SOURCES['S101']['url'] == 'https://advancedplumbinganddrain.com/'
+    assert 'NOT matched' in C.SOURCES['S101']['note']
+    assert any(r['cells'][0] == 'U44' and 'S101' in r['src'] for r in C.TABLES['flagged']['rows'])
+
+
+def test_supplemental_artifacts_are_cited():
+    for sid in ('S102', 'S103', 'S104'):
+        assert sid in C.SOURCES
+    assert any('S102' in r['src'] and 'S103' in r['src'] and 'S104' in r['src'] for r in C.TABLES['repo_review']['rows'])
