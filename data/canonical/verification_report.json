@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T23:01:20+00:00",
+  "generated_at": "2026-11-08T23:21:40+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -13,30 +13,32 @@
     "sources.html",
     "verification.html",
     "repo-review.html",
-    "flagged.html"
+    "flagged.html",
+    "ranking.html",
+    "contacts.html"
   ],
   "counts": {
-    "pages": 13,
-    "tables": 14,
-    "rows": 197,
-    "source_ledger_entries": 63,
-    "verified_sources": 52,
-    "official_or_manufacturer_verified": 17,
-    "generated_tbody_rows": 421,
-    "internal_links_checked": 501,
-    "unique_external_links": 52,
-    "published_text_files_scanned": 121
+    "pages": 15,
+    "tables": 23,
+    "rows": 330,
+    "source_ledger_entries": 88,
+    "verified_sources": 71,
+    "official_or_manufacturer_verified": 28,
+    "generated_tbody_rows": 687,
+    "internal_links_checked": 775,
+    "unique_external_links": 73,
+    "published_text_files_scanned": 123
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "13 pages generated"
+      "detail": "15 pages generated"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "421 tbody rows checked, 0 missing links"
+      "detail": "687 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -46,7 +48,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "501 internal links checked, 0 broken"
+      "detail": "775 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -56,7 +58,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "52 unique external links, 0 unknown/dead"
+      "detail": "73 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -66,7 +68,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "121 files scanned, 0 matches"
+      "detail": "123 files scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -81,7 +83,7 @@
     {
       "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "17 official/manufacturer sources marked verified; 52 sources marked verified overall (metadata only; no network check)"
+      "detail": "28 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-08); 71 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -103,6 +105,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/main/README.md",
     "https://github.com/karagemop466-tech/Korea7/pull/32",
     "https://karagemop466-tech.github.io/Korea7/",
+    "https://labormarketinfo.edd.ca.gov/aspdotnet/databrowsing/empDetails.aspx?menuChoice=emp&empid=432614093&geogArea=0604000075",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
     "https://www.aceplumbingandrooter.com/",
@@ -113,15 +116,19 @@
     "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
     "https://www.bayareaplumbingsf.com/",
     "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+    "https://www.bernalhilldrywall.com/",
     "https://www.buildzoom.com/san-francisco-ca/drywall-contractors",
     "https://www.buildzoom.com/san-francisco-ca/plumbers",
     "https://www.eplumbingsolutions.com/",
     "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
     "https://www.fastresponseplumbingsf.com/",
     "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+    "https://www.genteelplumbers.com/contact",
     "https://www.handymanhero.es/",
     "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
+    "https://www.mannysplumbingandremodeling.com/",
     "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+    "https://www.rapidflowbayarea.com/contact",
     "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
     "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
     "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
@@ -129,24 +136,40 @@
     "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
     "https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing",
     "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+    "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
     "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
     "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
     "https://www.yelp.com/biz/general-sf-san-francisco-2",
     "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+    "https://www.yelp.com/biz/handyman-heroes-san-francisco?osq=Handyman&start=60",
     "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
+    "https://www.yelp.com/search?cflt=plumbing&find_loc=Mission,+San+Francisco,+CA+94110",
     "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
     "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Handyman+Drywall&find_loc=Lower+Haight%2C+San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Handyman+Services&find_loc=San+Francisco%2C+CA",
     "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Plumbing+Companies&find_loc=San+Francisco%2C+CA",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
     "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163"
   ]
 }

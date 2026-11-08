@@ -17,6 +17,10 @@
 <a href="summary.html">Executive summary</a>
 <a href="requirements.html">Requirements</a>
 </div>
+<div class="nav-group"><div class="nav-group-title">Decision</div>
+<a href="ranking.html">Ranked hiring decision</a>
+<a href="contacts.html">Contacts &amp; licenses</a>
+</div>
 <div class="nav-group"><div class="nav-group-title">Data</div>
 <a href="estimates.html">Estimates &amp; costs</a>
 <a href="contractors.html">Contractors &amp; reviews</a>
@@ -35,7 +39,7 @@
 <a href="verification-log.html">Prior verification log</a>
 <a href="flagged.html">Flagged for review</a>
 </div>
-<div class="side-foot">Updated 2026-11-08<br>Session <span class="mono">arena/13d957de-korea7</span></div>
+<div class="side-foot">Updated 2026-11-08<br>Session <span class="mono">arena/0e9ee506-korea7</span></div>
 </aside>
 <main id="main" class="content">
 <header class="page-head">
@@ -130,12 +134,40 @@
 <td><span class="pill ok">preserved</span></td>
 <td class="src-col"><span class="src-ids"><a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a> · <a href="verification-log.html" title="Verification log — earlier session">S59</a> · <a href="sf-overflow-audit/index.html" title="SF overflow audit — parallel session dashboard">S60</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
+<tr>
+<td>Prior Pages deployment</td>
+<td>The pages build/deploy run for main commit 1faccdc failed at the deploy step; the preceding run succeeded, so the live site served the earlier deployment. Recorded as an open item by session arena/89ae6815-korea7 and taken over by this session.</td>
+<td>Checked with gh run list / gh api repos/.../pages on 2026-11-08: later runs for main completed successfully and the Pages status returned to built. The live dashboard was fetched and matched the repository content.</td>
+<td><span class="pill ok">resolved by later runs</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+</tr>
+<tr>
+<td>New verified datasets</td>
+<td>data/canonical/cslb_records.json (16 records), vendor_sites.json (10 business sites) and review_snapshots.json (6 dated platform snapshots) added, each field carrying its source URL and retrieval date. scripts/ranking_data.py computes the ranking from the CSLB fields only.</td>
+<td>Every CSLB record and every business site was fetched and read directly on 2026-11-08; no value was inferred and unconfirmed cells are blank.</td>
+<td><span class="pill ok">added</span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/cslb_records.json" title="CSLB record transcriptions (this project&#x27;s dataset)">S85</a> · <a href="data/canonical/vendor_sites.json" title="Business-site transcriptions (this project&#x27;s dataset)">S86</a> · <a href="data/canonical/review_snapshots.json" title="Review-platform snapshots (this project&#x27;s dataset)">S87</a> · <a href="ranking.html" title="Ranking rubric and score inputs (this site)">S88</a></span></td>
+</tr>
+<tr>
+<td>Candidate pool completeness</td>
+<td>Every CSLB license number cited anywhere in the repository (16 distinct numbers across the root dashboard, shortlist.html, sf-overflow-audit/ and docs/ archives) was re-verified, so the canonical tables now cover the union of all parallel sessions' candidates.</td>
+<td>License numbers extracted by grep across all HTML/JSON/MD files, then each record read on CSLB.</td>
+<td><span class="pill ok">verified</span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/cslb_records.json" title="CSLB record transcriptions (this project&#x27;s dataset)">S85</a> · <a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a> · <a href="sf-overflow-audit/index.html" title="SF overflow audit — parallel session dashboard">S60</a></span></td>
+</tr>
+<tr>
+<td>Concurrent ID collision</td>
+<td>A concurrent session published sources S61-S63 and flags U21-U22 while this session was drafting S61-S85 / U21-U32. This session renumbered its own additions to S64-S88 and U23-U34 rather than overwriting the published ids.</td>
+<td>Merge resolved by taking the concurrent version of the generator and re-applying this session's edits on top; the concurrent session's regression tests still pass.</td>
+<td><span class="pill ok">resolved</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+</tr>
 </tbody>
 <caption>Repo review was performed by reading the files in the checkout and querying the GitHub API. Links point to the repository files and Pages site for manual review. Irregularities are also published on the Flagged for Review page.</caption>
 </table></div></section>
 <div class="callout info"><div class="icon">i</div><p>Links for manual review: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">README</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer">COORDINATION.md</a> · <a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer">live Pages site</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer">open PR #32</a>, <a href="shortlist.html">shortlist.html</a>, <a href="verification-log.html">verification-log.html</a>, <a href="sf-overflow-audit/index.html">sf-overflow-audit/</a>. Archived parallel work: <a href="bathtub-overflow/executive-summary.html">bathtub-overflow/</a>, <a href="docs/bath/index.html">docs/bath/</a>, <a href="docs/plumbing-index.html">docs/plumbing-index.html</a>.</p></div>
 <footer class="site">
-  <span>Research dashboard · San Francisco · updated 2026-11-08 · session <span class="mono">arena/13d957de-korea7</span></span>
+  <span>Research dashboard · San Francisco · updated 2026-11-08 · session <span class="mono">arena/0e9ee506-korea7</span></span>
   <span><a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="https://github.com/karagemop466-tech/Korea7">Repository</a></span>
 </footer>
 </main>

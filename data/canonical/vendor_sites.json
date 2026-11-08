@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "retrieved_utc": "2026-11-08",
+    "method": "Each business's own website fetched and read directly on 2026-11-08. Statements are transcribed as published. A published phone is recorded only when it appeared in the page content actually read.",
+    "not_checked": [
+      "1009195",
+      "1089561",
+      "632743",
+      "868994",
+      "1140843",
+      "1075566"
+    ],
+    "not_checked_note": "No official business website was verified for these six license numbers in this session. Their published-phone and service-scope cells stay blank and flagged UNVERIFIED; their CSLB records are verified."
+  },
+  "sites": {
+    "977638": {
+      "business": "Expert Plumbing Solutions",
+      "official_url": "https://www.eplumbingsolutions.com/",
+      "published_phone": "415-531-5340",
+      "phone_note": "Matches the CSLB phone on record.",
+      "statements_as_published": [
+        "Site header and footer state “License # 977638”.",
+        "Address shown: 1465 44th Avenue, San Francisco, California 94122.",
+        "“For nearly 20 years, we've helped homeowners in San Francisco and nearby cities with reliable, honest plumbing service.”",
+        "Service list: General Plumbing Repairs & Maintenance; Drain & Clog Solutions; Water Heater Installations & Repairs; Sewer Line Services; Fixture Installations.",
+        "Open Monday-Friday 8:00 AM - 4:00 PM."
+      ],
+      "drywall_or_building_service_listed": "No — no drywall, ceiling or building service is listed on the page read.",
+      "extra": [],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "757796": {
+      "business": "Bay Area Plumbing",
+      "official_url": "https://www.bayareaplumbingsf.com/",
+      "published_phone": "(415) 668-8000",
+      "phone_note": "Matches the CSLB phone on record.",
+      "statements_as_published": [
+        "“24/7 Emergency Plumbing • Residential & Commercial • Same-Day Service”.",
+        "“Licensed plumbers serving San Francisco homes and businesses since 1995”.",
+        "Service list includes Leak Detection and Pipe Repair and “Kitchen and Bathroom Remodeling”.",
+        "Project photo captions read “Replacing old galvanized drain pipe to DWV copper pipe in Outer Richmond San Francisco” and “Bathtub and faucet installation in Inner Richmond, San Francisco 94118”."
+      ],
+      "drywall_or_building_service_listed": "No — bathroom plumbing remodeling is listed, but no drywall or ceiling restoration service.",
+      "extra": [],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "1024971": {
+      "business": "Fast Response Plumbing & Rooter",
+      "official_url": "https://www.fastresponseplumbingsf.com/",
+      "published_phone": "(415) 596-6115",
+      "phone_note": "Matches the CSLB phone on record.",
+      "statements_as_published": [
+        "Footer states “CSLB #1024971”, “C-36 Licensed”, “Bonded & Insured”, “Over 25 Years Serving SF”.",
+        "“For houses, apartments, and HOAs across San Francisco.”",
+        "“Most of our work is residential for homeowners, HOAs, and property managers.”",
+        "“Free in-person estimates and per-job quotes. No hourly surprises and no pressure sales tactics.”",
+        "Company claim: “4.9 • 1,500 Reviews” / “Over 1,500 Reviews on Yelp & Google”."
+      ],
+      "drywall_or_building_service_listed": "No — plumbing services only on the page read.",
+      "extra": [
+        "The aggregate review claim is a company statement, not a Yelp reading; flagged."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "959843": {
+      "business": "General SF",
+      "official_url": "https://generalsf.com/",
+      "published_phone": "(650)-303-1515",
+      "phone_note": "Matches the CSLB phone on record.",
+      "statements_as_published": [
+        "Footer states “CSLB. 959843”.",
+        "Navigation offers Electrical, Plumbing, Building and Bathroom & Kitchen pages.",
+        "“General SF is a family-owned and operated construction business serving the San Francisco Bay Area since 1991. Our clients come to us for electrical, plumbing, and building services for commercial properties, educational institutions, and corporate offices.”"
+      ],
+      "drywall_or_building_service_listed": "Yes — a Building service category and a Bathroom & Kitchen category are listed.",
+      "extra": [
+        "The homepage describes commercial, educational and corporate clients; residential tenant-occupied work is not described on the page read. Ask about small residential jobs."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "1003394": {
+      "business": "Handyman Heroes Inc",
+      "official_url": "https://www.handymanhero.es/",
+      "published_phone": null,
+      "phone_note": "No phone number was shown on the homepage sections read (the site routes visitors to a Request Service form). The CSLB phone on record is verified instead.",
+      "statements_as_published": [
+        "Headline: “Your Marin & SF County Plumbing, Electrical and Handyman Service Pros”.",
+        "Construction block lists “Kitchens & Bathrooms” and “Licensed GC”; Plumbing block lists “New Water & Waste Lines” and “Licensed C-36”; Electrical block claims “Licensed C-10”.",
+        "Company-published customer review: “Alexis arrived promptly and started working on patching my dry wall and recaulking my kitchen/ bathroom.”",
+        "Company-published customer review: “they have an excellent team of highly qualified handymen, including plumbers, electricians, carpenters.”",
+        "Service city list includes San Francisco and Daly City."
+      ],
+      "drywall_or_building_service_listed": "Yes — construction/handyman services and a company-published drywall-patching review.",
+      "extra": [
+        "The site's “Licensed C-10” claim does not match the CSLB record, which lists only B and C-36. Flagged."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "829071": {
+      "business": "Ace Plumbing & Rooter",
+      "official_url": "https://www.aceplumbingandrooter.com/",
+      "published_phone": "(415) 824-6444",
+      "phone_note": "Matches the CSLB phone on record.",
+      "statements_as_published": [
+        "“For over 25 years, Ace Plumbing & Rooter Inc. has provided quality plumbing, sewer, water heater and fire sprinkler services to San Francisco neighborhoods and surrounding cities. Licensed, bonded and insured…”",
+        "Certifications block lists Contractors License #829071 with A, B, C4, C10, C16 and C36 — the same set as the CSLB record — and links to the CSLB record.",
+        "“After over two decades of delivering plumbing services directly to HOA's and property management companies around San Francisco, we are familiar and adapt in the special needs and requirements … Whether it be insurance requirements, purchase orders, or working within NTE's…”",
+        "Residential services include Emergency Plumbing, Sewer & Drain Repair, Leak Detection; commercial list includes “Plumbing fixture replacement/repair”."
+      ],
+      "drywall_or_building_service_listed": "Not listed as a service — but the B General Building classification is on the CSLB record and on the company's own certification list.",
+      "extra": [
+        "HOA / property-management workflow statement is the closest published match to a tenant-occupied, managed building."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "1025814": {
+      "business": "The Genteel Plumbers Inc",
+      "official_url": "https://www.genteelplumbers.com/contact",
+      "published_phone": "415-465-5853",
+      "phone_note": "DIFFERS from the CSLB phone on record, which is (833) 436-8335. Both are published by their respective official sources; the difference is flagged, not reconciled.",
+      "statements_as_published": [
+        "Contact page address: 1181 Revere Avenue, San Francisco, CA 94124 — matches the CSLB address.",
+        "Office hours Monday-Friday 8 AM to 5 PM, answering service available 24/7.",
+        "Homepage service list: Water Heaters, Toilets, Hydro Jetting, Leak Detection, Drain and Sewer Services, Trenchless Sewer Replacement.",
+        "“GENTEEL Plumbers was founded in 2016 by Graham W. Jones in San Francisco's Outer Sunset district”; the qualifying individual on the CSLB record is GRAHAM WINSOR JONES.",
+        "Service area list includes San Francisco, Daly City and South San Francisco."
+      ],
+      "drywall_or_building_service_listed": "No — the pages read list plumbing services only, although the CSLB record also carries the B classification.",
+      "extra": [
+        "Third-party directories list further different numbers, e.g. (415) 484-3631; those are not official sources and are not used."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "1115649": {
+      "business": "Rapid Flow Plumbing & Rooter Inc",
+      "official_url": "https://www.rapidflowbayarea.com/contact",
+      "published_phone": "844-BAY-FLOW (844) 229-3569",
+      "phone_note": "The contact page's primary call line is 844-BAY-FLOW; the same page also publishes (415) 866-8401 for texting photos, which is the number on the CSLB record.",
+      "statements_as_published": [
+        "“CA #1115649 · B General Building · C-36 Plumbing”.",
+        "Address: 230 Edinburgh St, San Francisco, CA 94112 — matches the CSLB record.",
+        "Hours: Mon-Fri 7am-7pm, 24/7 emergency. Service area: “San Francisco Bay Area — SF, Oakland, San Jose & beyond”.",
+        "Estimate form service list includes “Fixture Installation” and “General Contracting / Remodel”."
+      ],
+      "drywall_or_building_service_listed": "Yes — “General Contracting / Remodel” is an offered service category, consistent with the B classification.",
+      "extra": [],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "841229": {
+      "business": "Manny's Plumbing & Rooters",
+      "official_url": "https://www.mannysplumbingandremodeling.com/",
+      "published_phone": null,
+      "phone_note": "No phone number rendered in the page content read (the site uses a contact form). The CSLB phone on record is verified instead.",
+      "statements_as_published": [
+        "Header states “License # 841229” and “C-36 Plumbing / General B - Insured & Bonded”.",
+        "Service list includes “Tub Install & Lavy Sink”, “Drain Clean & Drain Replacement”, “Kitchen Remodeling / Bathroom Remodeling”, “Faucets, Sinks, Toilets, Commercial / Residential”.",
+        "“We Proudly Serve” lists Millbrae, San Mateo, Redwood City, South San Francisco, San Bruno, Foster City, Pacifica, Daly City, San Carlos “And Surrounding Areas of San Mateo & San Francisco Counties”.",
+        "“New Customers Get 5% Off!” and “10% Senior Citizen Discount!”"
+      ],
+      "drywall_or_building_service_listed": "Yes — kitchen/bathroom remodeling is listed and the B classification is on the CSLB record.",
+      "extra": [
+        "The site says “Insured & Bonded” while the CSLB record shows a workers' compensation exemption (“no employees at this time”). Ask what coverage applies to the crew who attend."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "995163": {
+      "business": "Bernal Hill Drywall Inc",
+      "official_url": "https://www.bernalhilldrywall.com/",
+      "published_phone": "(415) 533-8274",
+      "phone_note": "Matches the CSLB phone on record; the site's estimate link is tel:4155338274.",
+      "statements_as_published": [
+        "“Specialist in drywall, patching, painting & Sound proof solutions”.",
+        "“We also hold a General Contractors license, which means we can manage full renovation projects from start to finish.”",
+        "“From small wall repairs to complete build-back after water, mold or fire remediation, we deliver smooth, seamless results.”",
+        "Core specialties: drywall installation and finishing; patching and painting; level 5 smooth finish; level 4 smooth and texture finishes; acoustic & soundproofing; complete build-back after water, fire, or mold remediation.",
+        "“Fully licensed, bonded and insured.”"
+      ],
+      "drywall_or_building_service_listed": "Yes — drywall patching and ceiling/wall finishing is the core business; C-9 and B are on the CSLB record.",
+      "extra": [
+        "No C-36 plumbing classification on the CSLB record, so this firm is the ceiling-restoration partner, not the plumber."
+      ],
+      "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    }
+  }
+}

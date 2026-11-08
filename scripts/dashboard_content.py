@@ -12,7 +12,7 @@ agency; CSLB License Detail pages printed "Data current as of 11/7/2026".
 
 META = {
     "updated": "2026-11-08",
-    "session": "arena/13d957de-korea7",
+    "session": "arena/0e9ee506-korea7",
     "title": "Bathtub overflow trip lever — repair research dashboard",
     "pages_url": "https://karagemop466-tech.github.io/Korea7/",
     "repo_url": "https://github.com/karagemop466-tech/Korea7",
@@ -23,6 +23,10 @@ NAV = [
         ("index.html", "Dashboard"),
         ("summary.html", "Executive summary"),
         ("requirements.html", "Requirements"),
+    ]},
+    {"group": "Decision", "links": [
+        ("ranking.html", "Ranked hiring decision"),
+        ("contacts.html", "Contacts & licenses"),
     ]},
     {"group": "Data", "links": [
         ("estimates.html", "Estimates & costs"),
@@ -126,6 +130,13 @@ def slink(sid, label=None):
     return '<a href="%s">%s</a>' % (url, text)
 
 
+# New sources for the 2026-11-08 ranking/contact integration are registered here,
+# before TABLES and PAGES are defined, so slink() can reference them. The tables,
+# pages and appended rows are merged at the end of this file.
+import ranking_data as R  # noqa: E402
+
+SOURCES.update(R.SOURCES)
+
 UNVERIFIED = pill("UNVERIFIED", "warn")
 BLANK = '<span class="blank" aria-label="blank — unverified">—</span>'
 SNAPSHOT = pill("platform snapshot — not re-verified", "warn")
@@ -202,7 +213,7 @@ TABLES = {
             {"cells": ["<strong>Rapid Flow Plumbing &amp; Rooter Inc</strong><br>" + slink("S58", "shortlist"), slink("S56", "#1115649"), "B General Building · C-36 Plumbing", pill("current and active", "ok") + "<br>expires 2028-01-31", pill("exempt — “no employees at this time”", "warn") + "; $25,000 bond", "230 Edinburgh St, San Francisco, CA 94112", "One license lists building + plumbing; added from the concurrent shortlist session and re-verified here", pill("CSLB verified", "ok") + " " + pill("WC exemption flagged", "warn")], "src": ["S56", "S05", "S58"]},
             {"cells": ["<strong>Manny's Plumbing &amp; Rooter</strong><br>" + slink("S58", "shortlist"), slink("S57", "#841229"), "C-36 Plumbing · B General Building", pill("current and active", "ok") + "<br>expires 2028-06-30", pill("exempt — “no employees at this time”", "warn") + "; $25,000 bond", "41 Midvale Drive, Daly City, CA 94015", "One license lists plumbing + building; address is outside San Francisco proper — confirm service area", pill("CSLB verified", "ok") + " " + pill("service area flagged", "warn")], "src": ["S57", "S05", "S58"]},
         ],
-        "caption": "Every license fact (status, classifications, expiry, bond, workers' compensation, address) was read from the linked official CSLB License Detail page on 2026-11-07; each record printed a 'Data current as of 11/7/2026' stamp. The Analysis column is this site's reasoning from those verified classifications — not a vendor promise and not a finding that any firm can perform this specific repair. C-36 definition: " + slink("S05", "CSLB C-36") + ". Re-check any license at " + slink("S04", "CSLB Check a License") + " on the hire date.",
+        "caption": "Every license fact (status, classifications, expiry, bond, workers' compensation, address) was read from the linked official CSLB License Detail page on 2026-11-07; each record printed a 'Data current as of 11/7/2026' stamp. The Analysis column is this site's reasoning from those verified classifications — not a vendor promise and not a finding that any firm can perform this specific repair. C-36 definition: " + slink("S05", "CSLB C-36") + ". Re-check any license at " + slink("S04", "CSLB Check a License") + " on the hire date. <strong>Update 2026-11-08:</strong> all sixteen license records cited in this project were re-read directly on CSLB and every one is current and active; eight further licensees are added below, and the full field-by-field transcription with the official business phone numbers is on <a href=\"contacts.html\">Contacts &amp; licenses</a>. The computed order is on <a href=\"ranking.html\">Ranked hiring decision</a>.",
     },
     "review_snapshots": {
         "title": "Review-platform snapshots (not independently verified)",
@@ -378,18 +389,20 @@ PAGES = {
         "sections": [
             {"type": "cards", "items": [
                 {"k": "Estimates received", "v": "3", "s": "2026-08-30 · amounts owner-provided (unverified)", "tone": "warn"},
-                {"k": "Contractor candidates", "v": "9", "s": "8 with active CSLB licenses verified 2026-11-07 + 1 unverified lead", "tone": "ok"},
-                {"k": "Verified official sources", "v": "AUTO_OFFICIAL", "s": "Government + manufacturer sources read 2026-11-07", "tone": "info"},
-                {"k": "Flagged for review", "v": "21", "s": "Unverified values and irregularities — none blocking", "tone": "warn"},
+                {"k": "Verified license records", "v": "16", "s": "All re-read on CSLB 2026-11-08 · 6 hold plumbing + building", "tone": "ok"},
+                {"k": "Verified official sources", "v": "AUTO_OFFICIAL", "s": "Ledger entries graded official/manufacturer; direct reads dated per source", "tone": "info"},
+                {"k": "Flagged for review", "v": "AUTO_FLAGS", "s": "Unverified values and irregularities — none blocking", "tone": "warn"},
             ]},
             {"type": "table", "title": "Problem snapshot", "ref": "problem"},
             {"type": "quick", "title": "Browse by category", "items": [
+                {"href": "ranking.html", "t": "Ranked hiring decision", "d": "Every candidate ranked best-to-worst on verified CSLB facts, with reasoning and cost position."},
+                {"href": "contacts.html", "t": "Contacts &amp; licenses", "d": "Official business links, verified phone numbers and all 16 license records."},
                 {"href": "summary.html", "t": "Executive summary", "d": "Important details, key findings and next steps."},
                 {"href": "requirements.html", "t": "Requirements", "d": "The full brief, line by line, with verification status."},
                 {"href": "estimates.html", "t": "Estimates & costs", "d": "The three quotes, blank verified cells, and 2026 cost benchmarks."},
                 {"href": "contractors.html", "t": "Contractors & reviews", "d": "CSLB-verified licenses, Yelp/Angi/BuildZoom/Thumbtack/BBB discovery links."},
                 {"href": "findings.html", "t": "Findings & analysis", "d": "Access options, one-provider shortlist, cost and occupied-unit analysis."},
-                {"href": "shortlist.html", "t": "Shortlist", "d": "Ranked dual-classified firms and vetting script from a parallel session."},
+                {"href": "shortlist.html", "t": "Shortlist (prior session)", "d": "Earlier ranked dual-classified list and vetting script, preserved unchanged."},
                 {"href": "technical.html", "t": "Technical background", "d": "How a trip-lever waste-and-overflow assembly works and how it is accessed."},
                 {"href": "permits.html", "t": "Permits & licensing", "d": "Neutral, official sf.gov / CSLB / state-law references."},
                 {"href": "brief.html", "t": "Project brief", "d": "Owner-provided primary record and quoted amounts (unverified)."},
@@ -414,9 +427,9 @@ PAGES = {
             {"type": "prose", "title": "1. The problem", "html": "<p>The bathtub's waste-and-overflow trip lever is " + pill("owner-provided", "info") + " stuck inside hidden plumbing behind the wall, in a hard-to-access area. More than five licensed plumbers reportedly declined to remove it from above because of the risk of damaging concealed plumbing, and recommended working from below — where a storage unit sits beneath the unit, so the drywall ceiling may need to be opened. The unit is tenant-occupied, so the owner wants one provider able to do both drywall and plumbing in a sensitive environment. Removing the overflow from above remains preferred if it can be done safely. None of these facts can be confirmed from a public source; see the " + "<a href=\"brief.html\">Project brief</a>" + " and " + "<a href=\"flagged.html\">Flagged for Review</a>" + " page. Context: " + slink("S18", "This Old House on below access") + ", " + slink("S17", "Angi on overflow function") + ".</p>"},
             {"type": "table", "title": "2. Estimates at a glance", "ref": "estimates"},
             {"type": "prose", "title": "3. What the numbers mean", "html": "<p>The three quotes describe three different scopes — an adjustment, a spout/lever replacement, and a full waste-and-overflow replacement. Independent 2026 publisher benchmarks put bathtub/shower drain replacement at <strong>$500–$1,020 (avg $700)</strong> (" + slink("S15", "Angi, 2026-09-18") + "), bathroom leak repair at <strong>$150–$600</strong> plus <strong>$300–$930</strong> for drywall/tile follow-up (" + slink("S16", "Angi, 2026-10-28") + "), and new drywall at about <strong>$2,100</strong> (" + slink("S15", "Angi") + "). Drywall is not included in any of the three quoted scopes. The quote amounts themselves are owner-provided and unverified, so this comparison is directional only. Full table: <a href=\"estimates.html\">Estimates &amp; costs</a>.</p>"},
-            {"type": "prose", "title": "4. Who can do the work", "html": "<p>Eight San Francisco-area candidates were verified against the official CSLB database on 2026-11-07 (plus one unverified lead). All eight hold <strong>current and active</strong> licenses. Five hold both a building classification and C-36 Plumbing on one license — " + slink("S11", "Ace #829071") + ", " + slink("S09", "GENERALSF #959843") + ", " + slink("S10", "Handyman Heroes #1003394") + ", " + slink("S56", "Rapid Flow #1115649") + " and " + slink("S57", "Manny's #841229") + " — which makes them useful candidates for a single-provider request. Classifications do not establish that they will perform all work or that other arrangements are excluded; see " + slink("S62", "BPC §7059") + ". CSLB verifies license classes, not the ability to perform this specific delicate repair; that remains unverified and flagged. " + slink("S05", "C-36 classification definition") + ". Full table: <a href=\"contractors.html\">Contractors &amp; reviews</a>.</p>"},
+            {"type": "prose", "title": "4. Who can do the work", "html": "<p>Sixteen license records were re-read directly on the official CSLB database on 2026-11-08 (eight of them previously published on 2026-11-07, plus one unverified lead that still has no license number). All sixteen hold <strong>current and active</strong> licenses. Six hold both a building classification and C-36 Plumbing on one license — " + slink("S64", "Genteel #1025814") + ", " + slink("S11", "Ace #829071") + ", " + slink("S09", "GENERALSF #959843") + ", " + slink("S10", "Handyman Heroes #1003394") + ", " + slink("S56", "Rapid Flow #1115649") + " and " + slink("S57", "Manny's #841229") + " — which makes them useful candidates for a single-provider request. Classifications do not establish that they will perform all work or that other arrangements are excluded; see " + slink("S62", "BPC §7059") + ". CSLB verifies license classes, not the ability to perform this specific delicate repair; that remains unverified and flagged. " + slink("S05", "C-36 classification definition") + ". A dedicated C-9 drywall contractor, " + slink("S66", "Bernal Hill Drywall #995163") + ", is verified for a two-trade arrangement. Full tables: <a href=\"contractors.html\">Contractors &amp; reviews</a> and <a href=\"contacts.html\">Contacts &amp; licenses</a>.</p>"},
             {"type": "prose", "title": "5. Official rules (neutral)", "html": "<p>SF.gov states: “You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground” (" + slink("S01", "sf.gov") + "), and lists “minor repairs to existing interior plaster or wallboard” among work that does not need a permit (" + slink("S02", "sf.gov") + "). Contractors applying for a plumbing permit must hold C-4, C-16, C-20, C-36, C-54, B or A classifications (" + slink("S01", "sf.gov") + "). California B&amp;P §7048 sets the current small-job licensing exemption at under $1,000 for casual/minor work that does not require a building permit, effective 2026-01-01 (" + slink("S13", "leginfo") + "). The hiring party should confirm applicability for the exact scope with SF DBI and the selected contractor. Full table: <a href=\"permits.html\">Permits &amp; licensing</a>.</p>"},
-            {"type": "prose", "title": "6. Recommended next steps", "html": "<ol class=\"tight\"><li><strong>Shortlist the dual-classified firms first</strong> — " + slink("S11", "#829071") + ", " + slink("S09", "#959843") + ", " + slink("S10", "#1003394") + ", " + slink("S56", "#1115649") + ", " + slink("S57", "#841229") + " — and ask for one written scope covering an above-attempt, below access, ceiling cut/patch/finish, a fill-and-inspect water test, and tenant access windows.</li><li><strong>Confirm crew coverage in writing</strong>: four CSLB records show a workers'-compensation “no employees” exemption and one policy expires 2026-12-18 (" + slink("S07", "#757796") + ", " + slink("S09", "#959843") + ", " + slink("S56", "#1115649") + ", " + slink("S57", "#841229") + ", " + slink("S08", "#1024971") + ").</li><li><strong>Ask for references on concealed waste-and-overflow work in occupied units</strong>; no official source confirms job-specific capability (" + slink("S04", "CSLB Check a License") + ", " + slink("S24", "Angi SF bathtub reviews") + ").</li><li><strong>Re-verify the chosen license on the hire date</strong> at " + slink("S04", "cslb.ca.gov") + " and review the " + "<a href=\"flagged.html\">22 flagged items</a>" + ".</li></ol>"},
+            {"type": "prose", "title": "6. Recommended next steps", "html": "<ol class=\"tight\"><li><strong>Work down the computed ranking</strong> — <a href=\"ranking.html\">Ranked hiring decision</a> orders every candidate on verified CSLB facts; the top three are " + slink("S11", "Ace #829071") + ", " + slink("S64", "Genteel #1025814") + " and " + slink("S10", "Handyman Heroes #1003394") + ", ahead of " + slink("S09", "#959843") + ", " + slink("S57", "#841229") + " and " + slink("S56", "#1115649") + ". Ask for one written scope covering an above-attempt, below access, ceiling cut/patch/finish, a fill-and-inspect water test, and tenant access windows.</li><li><strong>Confirm crew coverage in writing</strong>: four CSLB records show a workers'-compensation “no employees” exemption and one policy expires 2026-12-18 (" + slink("S07", "#757796") + ", " + slink("S09", "#959843") + ", " + slink("S56", "#1115649") + ", " + slink("S57", "#841229") + ", " + slink("S08", "#1024971") + ").</li><li><strong>Ask for references on concealed waste-and-overflow work in occupied units</strong>; no official source confirms job-specific capability (" + slink("S04", "CSLB Check a License") + ", " + slink("S24", "Angi SF bathtub reviews") + ").</li><li><strong>Re-verify the chosen license on the hire date</strong> at " + slink("S04", "cslb.ca.gov") + " and review the " + "<a href=\"flagged.html\">34 flagged items</a>" + ".</li></ol>"},
             {"type": "callout", "tone": "warn", "html": "<strong>Informational only.</strong> This summary is research, not legal advice, a quote, or a contractor endorsement. Every unverified value is blank in the data tables and listed on the Flagged for Review page."},
         ],
     },
@@ -452,7 +465,7 @@ PAGES = {
             {"type": "table", "ref": "contractors"},
             {"type": "table", "ref": "review_snapshots"},
             {"type": "table", "ref": "platforms"},
-            {"type": "callout", "tone": "info", "html": "<strong>No provider has been contacted by the research session, and none has confirmed this job to that session. The owner reported prior estimates; current job acceptance and availability remain unconfirmed.</strong> This dashboard is desk research only. All review-platform ratings, counts and badges are third-party data and are unverified where they could not be re-checked on 2026-11-07; only " + slink("S04", "CSLB") + " verifies a California contractor license. See " + slink("S58", "the shortlist") + " and <a href=\"flagged.html\">Flagged for Review</a>."},
+            {"type": "callout", "tone": "info", "html": "<strong>No provider has been contacted by the research session, and none has confirmed this job to that session. The owner reported prior estimates; current job acceptance and availability remain unconfirmed.</strong> This dashboard is desk research only. All review-platform ratings, counts and badges are third-party data and are unverified where they could not be re-checked on 2026-11-08; only " + slink("S04", "CSLB") + " verifies a California contractor license. See " + slink("S58", "the shortlist") + " and <a href=\"flagged.html\">Flagged for Review</a>."},
             {"type": "callout", "tone": "info", "html": "<strong>Relevant advertised scope:</strong> " + slink("S61", "Fast Response’s own repair page") + " lists bathtub waste and overflow repair in San Francisco and gives (415) 596-6115; its " + slink("S08", "CSLB record") + " shows active C-36 status on 2026-11-08. This is a company claim, not proof it can safely extract this stuck lever or arrange drywall repair. Request one written scope including patching and occupied-unit precautions."},
             {"type": "prose", "title": "How to re-verify a license", "html": "<ol class=\"tight\"><li>Open " + slink("S04", "CSLB Check a License") + " and enter the 7-digit number from the table (or the business name).</li><li>Confirm <strong>current and active</strong> status, that the classification covers the work (" + slink("S05", "C-36 Plumbing") + "), the bond, and workers' compensation coverage.</li><li>Open the complaint-disclosure section of the record before signing anything — see " + slink("S12", "the official disclosure for #1003394") + ".</li></ol><p class=\"src\">CSLB's own page recommends reading its hiring guidance and checking complaint disclosure before hiring. Records on this site were read 2026-11-07; statuses change.</p>"},
         ],
@@ -518,7 +531,7 @@ PAGES = {
         "sections": [
             {"type": "verification_summary"},
             {"type": "row_audit"},
-            {"type": "prose", "title": "Method", "html": "<ol class=\"tight\"><li>Each table row is emitted with a Source column built from its source ids. The build script aborts if any row has no source, cites an unknown source, or cites a source marked dead.</li><li>The prior integration reported reading official values directly on 2026-11-07; the 2026-11-08 follow-up rechecked six CSLB records and the SF plumbing guidance, not every row; CSLB License Detail pages printed a “Data current as of 11/7/2026” stamp.</li><li>The verifier parses every generated HTML file: every <code>&lt;tbody&gt;</code> row must contain a link; every internal link (pages, CSS, JS, anchors) must resolve to an existing file; every external link must exist in the source ledger; no dead source may be linked from a row.</li><li>A privacy sweep greps all published HTML/MD/JSON/CSS/JS for internal-only hiring-constraint wording and returns zero matches.</li><li>After merge, the live GitHub Pages URL is fetched and the Pages build status is checked with the GitHub API.</li></ol>"},
+            {"type": "prose", "title": "Method", "html": "<ol class=\"tight\"><li>Each table row is emitted with a Source column built from its source ids. The build script aborts if any row has no source, cites an unknown source, or cites a source marked dead.</li><li>Source reads are dated per source in the ledger. The 2026-11-08 integration re-read all sixteen CSLB License Detail records (each printing “Data current as of 11/8/2026”), ten official business websites, the CSLB B and C-9 classification pages and the Handyman Heroes complaint disclosure. Earlier sessions' reads keep their own dates. The automated verifier itself performs no network check.</li><li>The verifier parses every generated HTML file: every <code>&lt;tbody&gt;</code> row must contain a link; every internal link (pages, CSS, JS, anchors) must resolve to an existing file; every external link must exist in the source ledger; no dead source may be linked from a row.</li><li>A privacy sweep greps all published HTML/MD/JSON/CSS/JS for internal-only hiring-constraint wording and returns zero matches.</li><li>After merge, the live GitHub Pages URL is fetched and the Pages build status is checked with the GitHub API.</li></ol>"},
             {"type": "callout", "tone": "ok", "html": "<strong>Interpretation of “blank”.</strong> Owner-provided values (the three quotes and the problem description) have no official public source. Their <em>verified</em> value cells are blank and flagged; the original figures are transcribed only on the explicitly labeled <a href=\"brief.html\">Project brief</a> page and on <a href=\"flagged.html\">Flagged for Review</a>. This preserves all entries without presenting an unverified value as confirmed."},
         ],
     },
@@ -539,7 +552,127 @@ PAGES = {
         "lede": "Every value that could not be confirmed from an official source, and every irregularity found during repo and source review. None of these items blocks the site, the analysis, or the merge — they are published here, with source links, for review after the site is live.",
         "sections": [
             {"type": "table", "ref": "flagged"},
-            {"type": "callout", "tone": "warn", "html": "To request a change, note the item ID (U01–U22) and the correction. Unverified values are blank in the data tables; nothing was inferred to fill a gap. Full source ledger: <a href=\"sources.html\">Sources</a>."},
+            {"type": "callout", "tone": "warn", "html": "To request a change, note the item ID (U01–U34) and the correction. Unverified values are blank in the data tables; nothing was inferred to fill a gap. Full source ledger: <a href=\"sources.html\">Sources</a>."},
         ],
     },
 }
+
+
+# ===========================================================================
+# Integration merge — session arena/0e9ee506-korea7, 2026-11-08.
+#
+# Adds the ranked hiring decision and the verified contact directory built by
+# scripts/ranking_data.py from three committed, source-traceable datasets:
+#   data/canonical/cslb_records.json      16 official CSLB records, read 2026-11-08
+#   data/canonical/vendor_sites.json      10 official business sites, read 2026-11-08
+#   data/canonical/review_snapshots.json  dated third-party snapshots (never scored)
+# Existing rows from prior sessions are preserved; new rows are appended.
+# Source ids S64-S88 and flag ids U23-U34 were allocated after the concurrent
+# session's S61-S63 / U21-U22 so nothing already published is renumbered.
+# ===========================================================================
+TABLES.update(R.TABLES)
+PAGES.update(R.PAGES)
+
+# Sources re-read directly during this session: refresh the retrieval date and
+# record the new "Data current as of" stamp instead of leaving a stale date.
+for _lic, _sid in R.LICENSE_SRC.items():
+    if _sid in SOURCES and _sid not in R.SOURCES:
+        _rec = R.RECORDS[_lic]
+        SOURCES[_sid]["checked"] = R.CHECKED
+        SOURCES[_sid]["supports"] = (
+            "Business name, address, business phone number on record, entity, issue/expiry dates, "
+            "status, classifications, bond, workers' compensation")
+        SOURCES[_sid]["note"] = (
+            "Re-read directly on cslb.ca.gov on 2026-11-08; record printed '%s'. "
+            "Previously read 2026-11-07: no change to status, classifications or expiry."
+            % _rec["record_stamp"])
+for _sid in ("S12", "S38", "S39", "S40", "S41", "S42", "S43", "S61", "S62"):
+    SOURCES[_sid]["checked"] = R.CHECKED
+    if "Re-read directly on 2026-11-08." not in SOURCES[_sid]["note"]:
+        SOURCES[_sid]["note"] = SOURCES[_sid]["note"].rstrip() + " Re-read directly on 2026-11-08."
+
+# Eight further licensees, appended to the existing contractor table.
+_PREV_LIC = ("977638", "757796", "1024971", "959843", "1003394", "829071", "1115649", "841229")
+for _lic in sorted(R.RECORDS, key=lambda l: R.DISPLAY[l].lower()):
+    if _lic in _PREV_LIC:
+        continue
+    _rec = R.RECORDS[_lic]
+    _src = [R.LICENSE_SRC[_lic], "S85"]
+    _site = R.SITES.get(_lic)
+    if _site:
+        _src.append(R.SITE_SRC[_lic])
+    _company = "<strong>%s</strong>" % R.esc(R.DISPLAY[_lic])
+    if _site:
+        _company += "<br>" + R.ext(_site["official_url"], "site")
+    else:
+        _company += "<br><small>official site %s %s</small>" % (BLANK, UNVERIFIED)
+    _company += "<br><small>CSLB phone: %s</small>" % R.esc(_rec["phone_on_record"])
+    _status = pill("current and active", "ok") + "<br>expires %s" % R.esc(_rec["expire_date"])
+    if _rec["additional_status"]:
+        _status += "<br>" + pill("additional status — read the record", "bad")
+    _ver = pill("CSLB verified 2026-11-08", "ok")
+    if _rec["additional_status"]:
+        _ver += " " + pill("status warning flagged", "warn")
+    if not _site:
+        _ver += " " + pill("no business site verified", "warn")
+    TABLES["contractors"]["rows"].append({"cells": [
+        _company,
+        R.ext(_rec["source_url"], "#%s" % _lic),
+        R.esc(R.cls_text(_rec)),
+        _status,
+        R.wc_text(_rec) + "<br><small>$25,000 bond</small>",
+        R.esc("%s, %s %s" % (_rec["street"].title(), _rec["city"].title(), _rec["zip"])),
+        R.esc(R.REASON[_lic]),
+        _ver,
+    ], "src": _src})
+
+# New flagged items and findings (existing IDs are never renumbered).
+for _cells, _src in R.NEW_FLAGS:
+    TABLES["flagged"]["rows"].append({"cells": _cells, "src": _src})
+for _cells, _src in R.NEW_FINDINGS:
+    TABLES["findings"]["rows"].append({"cells": _cells, "src": _src})
+
+# Repo-review rows for this session's audit.
+TABLES["repo_review"]["rows"].append({"cells": [
+    "Prior Pages deployment",
+    "The pages build/deploy run for main commit 1faccdc failed at the deploy step; the preceding run "
+    "succeeded, so the live site served the earlier deployment. Recorded as an open item by session "
+    "arena/89ae6815-korea7 and taken over by this session.",
+    "Checked with gh run list / gh api repos/.../pages on 2026-11-08: later runs for main completed "
+    "successfully and the Pages status returned to built. The live dashboard was fetched and matched "
+    "the repository content.",
+    pill("resolved by later runs", "ok")], "src": ["S46", "S45"]})
+TABLES["repo_review"]["rows"].append({"cells": [
+    "New verified datasets",
+    "data/canonical/cslb_records.json (16 records), vendor_sites.json (10 business sites) and "
+    "review_snapshots.json (6 dated platform snapshots) added, each field carrying its source URL and "
+    "retrieval date. scripts/ranking_data.py computes the ranking from the CSLB fields only.",
+    "Every CSLB record and every business site was fetched and read directly on 2026-11-08; "
+    "no value was inferred and unconfirmed cells are blank.",
+    pill("added", "ok")], "src": ["S85", "S86", "S87", "S88"]})
+TABLES["repo_review"]["rows"].append({"cells": [
+    "Candidate pool completeness",
+    "Every CSLB license number cited anywhere in the repository (16 distinct numbers across the root "
+    "dashboard, shortlist.html, sf-overflow-audit/ and docs/ archives) was re-verified, so the canonical "
+    "tables now cover the union of all parallel sessions' candidates.",
+    "License numbers extracted by grep across all HTML/JSON/MD files, then each record read on CSLB.",
+    pill("verified", "ok")], "src": ["S85", "S58", "S60"]})
+TABLES["repo_review"]["rows"].append({"cells": [
+    "Concurrent ID collision",
+    "A concurrent session published sources S61-S63 and flags U21-U22 while this session was drafting "
+    "S61-S85 / U21-U32. This session renumbered its own additions to S64-S88 and U23-U34 rather than "
+    "overwriting the published ids.",
+    "Merge resolved by taking the concurrent version of the generator and re-applying this session's "
+    "edits on top; the concurrent session's regression tests still pass.",
+    pill("resolved", "ok")], "src": ["S45"]})
+
+# Executive summary: insert the ranked recommendation before the closing callout.
+_sections = PAGES["summary.html"]["sections"]
+_sections.insert(len(_sections) - 1, R.SUMMARY_BLOCK)
+
+# Keep the flagged-count card in step with the table.
+for _block in PAGES["index.html"]["sections"]:
+    if _block["type"] == "cards":
+        for _card in _block["items"]:
+            if _card["v"] == "AUTO_FLAGS":
+                _card["v"] = str(len(TABLES["flagged"]["rows"]))

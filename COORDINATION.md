@@ -1030,3 +1030,64 @@ The prior final integration is already complete; this is a follow-up rather than
 - Two merge conflicts with concurrent sessions resolved preserving both sides' board records and incoming generated verification files; no work discarded.
 - **Delivery:** [PR #57](https://github.com/karagemop466-tech/Korea7/pull/57) merged without approval on 2026-11-08 at 23:00:36Z, merge commit `c3c01066eff7c357b45b53abb7c45f18219a121c`. Its [Pages build and deploy run 42533022816](https://github.com/karagemop466-tech/Korea7/actions/runs/42533022816) succeeded; the live flagged page was fetched and displays both U21 and U22. After the concurrent integration, the build passed 11 structural checks with 501 internal links and the site test suite passed 46 tests and 9 subtests. The Pages workflow reported a non-blocking GitHub-hosted action runtime deprecation warning. A follow-up corrects the stale flag-range label and records this delivery; it does not assert a new external re-verification.
 - A further board-only conflict with PR #58 was resolved by retaining the full incoming board and appending the PR #57 delivery record; no other work was discarded.
+
+# Session `arena/0e9ee506-korea7` — claim (2026-11-08)
+
+**Branch note.** This session is platform-pinned to `arena/0e9ee506-korea7`; it may not create or push
+`session-<id>/<task>` branches. The branch convention is therefore approximated with non-overlapping
+file scopes on this single fixed branch, as earlier pinned sessions did.
+
+**Handoff.** Session `arena/89ae6815-korea7` left its audit task `in progress` but its scope was
+`COORDINATION.md` only and its PR #50 is already merged (commit `2fb3e81`, 2026-11-08T22:56Z). Its
+audit finding — the Pages **deploy step failed** for `main` commit `1faccdc` — is unresolved. This
+session takes over that open item (task J5 below) and records the handoff here. No other session has
+an active claim on the files listed below; all earlier task boards report `done`.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| J1 | Re-verify every contractor license **and official business phone** directly on CSLB records (2026-11-08); record drift vs the 2026-11-07 snapshot | in progress | arena/0e9ee506-korea7 | `data/canonical/cslb_records.json`, `data/canonical/site_data.json`, `scripts/dashboard_content.py` |
+| J2 | Ranked hiring decision analysis (explicit rubric, per-rank reasoning, cost position, official links + phone) — new category page | in progress | arena/0e9ee506-korea7 | `ranking.html`, `scripts/dashboard_content.py`, `scripts/build_dashboard.py` |
+| J3 | Line-by-line re-verification of the combined site; rebuild, link/row/privacy checks, tests | in progress | arena/0e9ee506-korea7 | `data/canonical/*`, `verification.html`, `flagged.html`, canonical root pages |
+| J4 | Executive summary refresh with the ranking and verified contact directory | in progress | arena/0e9ee506-korea7 | `EXECUTIVE-SUMMARY.md`, `summary.html`, `README.md` |
+| J5 | Fix and confirm GitHub Pages deployment (takeover of the 89ae6815 open deploy item); PR to `main`, merge, record result | in progress | arena/0e9ee506-korea7 | `.github/workflows/*` (if needed), repo Pages settings, `COORDINATION.md` |
+
+**Not touched by this session:** `docs/**` (legacy GEMS + archived overflow microsites),
+`bathtub-overflow/**`, `sf-overflow-audit/**`, `shortlist.html`, `verification-log.html`,
+`trip-lever/**`, `gems/**`, `evidence/**`, `registry/**`, `vendor/**`, `data/*.tif`.
+Requests affecting those files are logged here instead of edited.
+
+---
+
+# Session `arena/0e9ee506-korea7` — delivery (2026-11-08)
+
+**Scope delivered (J1–J4 complete).** J1 research: all 16 distinct CSLB license numbers cited anywhere in the
+repository re-read directly on 2026-11-08 (each printed "Data current as of 11/8/2026"), 10 official business
+sites read, the CSLB B / C-9 classification pages, the Handyman Heroes complaint disclosure, the Bernal Hill
+EDD employer listing and BPC §7059(a). J2: three canonical datasets committed
+(`data/canonical/cslb_records.json`, `vendor_sites.json`, `review_snapshots.json`), `scripts/ranking_data.py`
+computes the order from CSLB fields only, and two new pages (`ranking.html`, `contacts.html`) plus a
+`call_order`, `cslb_register`, `reviews_1108`, `scope_evidence` and `rubric` table were merged into the single
+generator. J3: `python3 scripts/build_dashboard.py` → 15 pages / 23 tables / 88 sources, **11/11 checks PASS**;
+site test modules → **63 passed + 11 subtests** (including the concurrent sessions' regression tests).
+J4: `EXECUTIVE-SUMMARY.md`, `summary.html`, `index.html` and `README.md` refreshed.
+
+**Concurrent-work merge, not overwrite.** While this session was drafting, `origin/main` gained PRs #54–#59,
+which published sources **S61–S63** and flags **U21–U22** and corrected the licensing wording (BPC §7059(a))
+and the verifier's "no network check" caveat. This session took the concurrent version of
+`scripts/dashboard_content.py` / `scripts/verify_dashboard.py`, re-applied its own edits on top, and
+**renumbered its own additions to S64–S88 and U23–U34** so nothing already published was renumbered. The
+route-2 ranking wording was updated to match the §7059(a) correction: no ceiling classification on a license is
+a scoring input, not a legal bar. `COORDINATION.md` was union-merged (concurrent records first, then this
+session's claim). Generated HTML and `data/canonical/*` were regenerated from the merged dataset.
+
+**Files owned by other sessions left untouched:** `shortlist.html`, `verification-log.html`,
+`bathtub-overflow/**`, `docs/bath/**`, `docs/overflow-*.html`, `docs/plumbing-index.html`,
+`sf-overflow-audit/**`, `tests/test_dashboard_integrity.py`, `tests/test_followup_audit.py`,
+`tests/test_license_scope_followup.py`.
+
+**Request to the next integration session (not edited here):** `tests/test_dashboard_integrity.py` pins a
+fixed 9-page `PAGES` tuple, so `ranking.html` and `contacts.html` are covered by the new
+`tests/test_ranking.py` instead. Please extend that tuple to 15 pages when you next own that file.
+
+**J5 status:** PR opened from `arena/0e9ee506-korea7` to `main`; merge and Pages deploy result recorded below
+once confirmed.
