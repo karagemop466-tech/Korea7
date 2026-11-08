@@ -38,7 +38,7 @@ def validate() -> list[str]:
             if key not in src:
                 errors.append("source %s missing %s" % (sid, key))
         if not (src["url"].startswith("https://") or src["url"].startswith("http://")
-                or src["url"].endswith(".html")):
+                or any(src["url"].endswith(ext) for ext in (".html", ".md", ".json"))):
             errors.append("source %s has an unexpected url %r" % (sid, src["url"]))
     for tid, table in C.TABLES.items():
         if tid == "source_ledger":
@@ -72,7 +72,7 @@ def build_source_ledger_rows():
     for sid in sorted(C.SOURCES, key=lambda x: int(x[1:])):
         s = C.SOURCES[sid]
         url_cell = esc(s["url"])
-        if s["status"] in ("verified", "blocked-403"):
+        if s["status"] in ("verified", "blocked-403", "indexed-snapshot"):
             url_cell = '<a href="%s" target="_blank" rel="noopener noreferrer" class="src-url">%s</a>' % (
                 esc(s["url"]), esc(s["url"]))
         else:
@@ -80,11 +80,12 @@ def build_source_ledger_rows():
         status = {
             "verified": C.pill("verified " + s["checked"], "ok"),
             "blocked-403": C.pill("HTTP 403 — manual review", "warn"),
+            "indexed-snapshot": C.pill("search-index snapshot — manual review", "warn"),
             "dead": C.pill("DEAD — removed from citations", "bad"),
             "removed": C.pill("removed", "mute"),
         }.get(s["status"], C.pill(s["status"], "mute"))
         # Dead sources are never linked from a row; link the flagged page instead.
-        src_ids = [sid] if s["status"] != "dead" else ["S45"]
+        src_ids = [sid] if s["status"] != "dead" else ["S58"]
         rows.append({
             "cells": [
                 "<code>%s</code>" % sid,
@@ -138,7 +139,7 @@ def render_table(tid: str, title: str | None = None) -> str:
            '<div class="table-wrap"><table class="data-table">',
            '<thead><tr>']
     for col in t["columns"]:
-        out.append('<th>%s</th>' % col)
+        out.append('<th>%s</th>' % esc(col))
     out.append('</tr></thead><tbody>')
     for row in t["rows"]:
         out.append('<tr>')
@@ -161,7 +162,7 @@ def render_verification_summary(report: dict | None) -> str:
         tone = "ok" if c["status"] == "PASS" else "bad"
         rows.append('<tr><td><strong>%s</strong></td><td>%s</td><td>%s</td><td>%s</td></tr>'
                     % (esc(c["name"]), C.pill(c["status"], tone),
-                       esc(c["detail"]), C.slink("S45", "task board")))
+                       esc(c["detail"]), C.slink("S58", "task board")))
     return ('<section class="section"><h2>Build &amp; link checks</h2>'
             '<div class="table-wrap"><table class="data-table"><thead><tr>'
             '<th>Check</th><th>Result</th><th>Detail</th><th>Source</th></tr></thead><tbody>'
@@ -189,8 +190,8 @@ def render_row_audit(report: dict | None) -> str:
     total = len(rows)
     return ('<section class="section"><h2>Line-by-line row audit (%d rows)</h2>'
             '<p class="sub">One row per table row in the combined dataset. "Official link" means the row cites '
-            'at least one government or manufacturer source; a blank verified value is still flagged on the '
-            'Flagged for Review page. Every row has at least one source link.</p>'
+            'at least one government or manufacturer source; it does not mean every value in the row is verified. '
+            'Blank verified values are still flagged on the Flagged for Review page. Every row has at least one source link.</p>'
             '<div class="table-wrap"><table class="data-table"><thead><tr><th>Table</th><th>Row</th>'
             '<th>First cell</th><th>Source grade</th><th>Link check</th><th>Source</th></tr></thead><tbody>'
             % total) + "".join(rows) + ('</tbody><caption>Row audit generated from '
@@ -304,6 +305,7 @@ def main() -> int:
     # Create the report artifacts early so the Verification page links resolve.
     V.write_report(ROOT, report1)
     report2 = V.analyze(ROOT, list(C.PAGES.keys()))
+    V.write_report(ROOT, report2)
     write_pages(report2)
     report3 = V.analyze(ROOT, list(C.PAGES.keys()))
     V.write_report(ROOT, report3)

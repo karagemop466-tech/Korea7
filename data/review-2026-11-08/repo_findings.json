@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-11-08T23:20:42+00:00",
+  "tracked_files": 317,
+  "text_files": 288,
+  "text_lines": 61082,
+  "html_links_checked": 1525,
+  "json_errors": [],
+  "python_errors": [],
+  "privacy_hits": [],
+  "compliance_test_fixture_matches": [],
+  "broken_file_links": [],
+  "directory_links_without_index": [
+    {
+      "page": "docs/parallel-index.html",
+      "url": "results/",
+      "target": "docs/results"
+    }
+  ],
+  "repo_flags": [
+    {
+      "id": "F18",
+      "severity": "Repository irregularity",
+      "item": "Unrelated legacy GEMS project shares the repository",
+      "detail": "The repo contains a geothermal fault-prospectivity audit alongside plumbing dashboards. Legacy science was preserved, not revalidated as part of this plumbing project.",
+      "action": "Use the canonical root dashboard for this project; treat docs/index.html as unrelated archive.",
+      "src": [
+        "S60",
+        "S65",
+        "S72"
+      ]
+    },
+    {
+      "id": "F19",
+      "severity": "Repository irregularity",
+      "item": "Multiple archived overflow dashboards",
+      "detail": "Earlier page sets under bathtub-overflow/, docs/bath/, docs/overflow-* and sf-overflow-audit/ contain older quote/review presentation and provider lists.",
+      "action": "Canonical root pages control; archived pages are labeled historical and were not edited.",
+      "src": [
+        "S63",
+        "S64",
+        "S66",
+        "S67",
+        "S68",
+        "S69",
+        "S70"
+      ]
+    },
+    {
+      "id": "F20",
+      "severity": "Coordination",
+      "item": "Stale open PRs #32 and #42",
+      "detail": "Both overlap earlier dashboard work and are stale. They were left open and untouched; this session logged a bounded takeover under the 60-minute rule.",
+      "action": "Owner may close or reconcile later; they do not block this integration.",
+      "src": [
+        "S61",
+        "S62",
+        "S58"
+      ]
+    },
+    {
+      "id": "F21",
+      "severity": "Legacy link irregularity",
+      "item": "docs/parallel-index.html links to a directory without an index",
+      "detail": "docs/results/ exists as a data directory but has no index.html, so a GitHub Pages directory request can fail even though a filesystem link check passes.",
+      "action": "Legacy page left untouched; canonical navigation does not use that directory link.",
+      "src": [
+        "S65",
+        "S72"
+      ]
+    },
+    {
+      "id": "F22",
+      "severity": "Legacy artifact irregularity",
+      "item": "Run-card schema drift and stale README leaderboard figures",
+      "detail": "Multiple run-card JSON schemas and historical GEMS leaderboard statements coexist. They are unrelated to the plumbing decision and were not rewritten.",
+      "action": "Preserve as legacy research; do not use them for contractor selection.",
+      "src": [
+        "S60",
+        "S64",
+        "S72"
+      ]
+    }
+  ],
+  "scope_note": "Legacy GEMS scientific claims are inventoried and preserved, not revalidated by this plumbing audit."
+}

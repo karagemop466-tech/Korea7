@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-08T23:01:20+00:00",
+  "generated_at": "2026-11-08T23:21:12+00:00",
   "pages": [
     "index.html",
     "summary.html",
     "requirements.html",
     "estimates.html",
     "contractors.html",
+    "findings.html",
     "technical.html",
     "permits.html",
     "brief.html",
-    "findings.html",
     "sources.html",
     "verification.html",
     "repo-review.html",
@@ -17,14 +17,14 @@
   ],
   "counts": {
     "pages": 13,
-    "tables": 14,
-    "rows": 197,
-    "source_ledger_entries": 63,
-    "verified_sources": 52,
-    "official_or_manufacturer_verified": 17,
-    "generated_tbody_rows": 421,
-    "internal_links_checked": 501,
-    "unique_external_links": 52,
+    "tables": 17,
+    "rows": 213,
+    "source_ledger_entries": 75,
+    "verified_sources": 63,
+    "official_or_manufacturer_verified": 22,
+    "generated_tbody_rows": 444,
+    "internal_links_checked": 518,
+    "unique_external_links": 64,
     "published_text_files_scanned": 121
   },
   "checks": [
@@ -36,7 +36,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "421 tbody rows checked, 0 missing links"
+      "detail": "444 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -46,7 +46,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "501 internal links checked, 0 broken"
+      "detail": "518 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -56,7 +56,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "52 unique external links, 0 unknown/dead"
+      "detail": "64 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -79,9 +79,9 @@
       "detail": "0 dead-source links"
     },
     {
-      "name": "Source ledger records prior direct reads",
+      "name": "Official sources recorded verified (metadata)",
       "status": "PASS",
-      "detail": "17 official/manufacturer sources marked verified; 52 sources marked verified overall (metadata only; no network check)"
+      "detail": "22 official/manufacturer sources recorded verified 2026-11-08; 63 sources verified overall. This is ledger metadata; no network check of every URL is performed by this script."
     }
   ],
   "broken_internal": [],
@@ -91,61 +91,70 @@
   "unflagged_blanks": [],
   "privacy_matches": [],
   "nav_issues": [],
-  "dead_sources": [
-    "https://homeguides.sfgate.com/repair-trip-lever-tub-drain-41958.html",
-    "https://inspectandtest.net/guides/bathtub-overflow-drain/"
-  ],
+  "dead_sources": [],
   "external_links": [
-    "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
     "https://generalsf.com/",
+    "https://generalsf.com/building",
+    "https://generalsf.com/plumbing",
     "https://github.com/karagemop466-tech/Korea7",
     "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
     "https://github.com/karagemop466-tech/Korea7/blob/main/README.md",
     "https://github.com/karagemop466-tech/Korea7/pull/32",
+    "https://github.com/karagemop466-tech/Korea7/pull/42",
     "https://karagemop466-tech.github.io/Korea7/",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
+    "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
     "https://www.aceplumbingandrooter.com/",
     "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
-    "https://www.angi.com/articles/what-is-overflow-drain.htm",
     "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
     "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
-    "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
+    "https://www.angi.com/companylist/us/ca/south-san-francisco/sugar-bear-plumbing-inc-reviews-53506127.htm",
     "https://www.bayareaplumbingsf.com/",
     "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
     "https://www.buildzoom.com/san-francisco-ca/drywall-contractors",
     "https://www.buildzoom.com/san-francisco-ca/plumbers",
+    "https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
     "https://www.eplumbingsolutions.com/",
-    "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
     "https://www.fastresponseplumbingsf.com/",
     "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+    "https://www.genteelplumbers.com/",
+    "https://www.genteelplumbers.com/plumbing-service",
     "https://www.handymanhero.es/",
-    "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
-    "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+    "https://www.handymanhero.es/handyman-services/",
+    "https://www.mannysplumbingandremodeling.com/",
+    "https://www.oatey.com/products/bath-waste-overflow/bath-waste-overflow",
+    "https://www.rapidflowbayarea.com/",
+    "https://www.rapidflowbayarea.com/contact",
     "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
     "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
-    "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
-    "https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost",
-    "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
+    "https://www.sugarbearhomeservices.com/",
     "https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing",
+    "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
+    "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
     "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
     "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
     "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
     "https://www.yelp.com/biz/general-sf-san-francisco-2",
+    "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
     "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+    "https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city",
+    "https://www.yelp.com/biz/sugar-bear-home-services-south-san-francisco-2",
     "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
-    "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
-    "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
-    "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Bathtub+Drain+Repair&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Drywall+Contractors&find_loc=San+Francisco,+CA",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
     "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=946657",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
   ]

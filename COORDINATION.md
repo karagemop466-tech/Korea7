@@ -1030,3 +1030,40 @@ The prior final integration is already complete; this is a follow-up rather than
 - Two merge conflicts with concurrent sessions resolved preserving both sides' board records and incoming generated verification files; no work discarded.
 - **Delivery:** [PR #57](https://github.com/karagemop466-tech/Korea7/pull/57) merged without approval on 2026-11-08 at 23:00:36Z, merge commit `c3c01066eff7c357b45b53abb7c45f18219a121c`. Its [Pages build and deploy run 42533022816](https://github.com/karagemop466-tech/Korea7/actions/runs/42533022816) succeeded; the live flagged page was fetched and displays both U21 and U22. After the concurrent integration, the build passed 11 structural checks with 501 internal links and the site test suite passed 46 tests and 9 subtests. The Pages workflow reported a non-blocking GitHub-hosted action runtime deprecation warning. A follow-up corrects the stale flag-range label and records this delivery; it does not assert a new external re-verification.
 - A further board-only conflict with PR #58 was resolved by retaining the full incoming board and appending the PR #57 delivery record; no other work was discarded.
+
+---
+
+# Session `arena/dc6a8da6-korea7` — independent integration audit (2026-11-08T22:56:16+00:00)
+
+## Claim and stale-owner handoff
+
+Board inspected before research or site edits. The canonical root-dashboard integration records are completed; the remaining active root-page PR #42 last committed 2026-11-07T20:31:59Z and last updated 2026-11-07T20:41:27Z, more than 60 minutes before this claim. Its owner has no newer commit on main (main tip at claim: `1faccdc`, 2026-11-07T20:57:14Z). Under the requested stale-claim takeover rule, this session takes over a new bounded audit/integration of the canonical dashboard, preserving all previous work. PRs #42 and #32 are left open and untouched; neither is merged or closed. No other current session claim was found. All earlier board text is preserved verbatim above.
+
+Platform constraint: Arena fixes this session to `arena/dc6a8da6-korea7`; no other branch may be created, used, or pushed. This is the integration branch, replacing the requested `session-<id>/<task>` naming convention. Shared outputs are edited only in this integration scope. Historical microsites, GEMS research, and other sessions' files remain read-only.
+
+| ID | Task | Status | Owner session | File scope |
+|---|---|---|---|---|
+| DC1 | Read board; register and publish stale-owner handoff | done | `arena/dc6a8da6-korea7` | `COORDINATION.md` (append-only) |
+| DC2 | Line-by-line repo/project audit; preserve unrelated historical work; identify current irregularities | done | `arena/dc6a8da6-korea7` | `repo-review.html`, `data/review-2026-11-08/**`, `scripts/audit_project.py`, `tests/test_project_audit.py` |
+| DC3 | Re-read official licensing, business, permit, and manufacturer sources; collect review-platform evidence separately | done | `arena/dc6a8da6-korea7` | `data/canonical/**`, `data/review-2026-11-08/**` |
+| DC4 | Update executive summary, full requirements register, estimate analysis, ranked decision analysis | done | `arena/dc6a8da6-korea7` | `README.md`, `EXECUTIVE-SUMMARY.md`, `scripts/dashboard_content.py`, generated root category pages |
+| DC5 | Integrate one clean dashboard and category pages with per-row source links and blank unverified values | done | `arena/dc6a8da6-korea7` | `index.html`, `summary.html`, `requirements.html`, `estimates.html`, `contractors.html`, `technical.html`, `permits.html`, `findings.html`, `sources.html`, `verification.html`, `brief.html`, `flagged.html`, `assets/dashboard.css`, `assets/dashboard.js`, `scripts/build_dashboard.py` |
+| DC6 | Re-verify combined data line by line; build, link/anchor, privacy, browser and regression checks | in progress | `arena/dc6a8da6-korea7` | `scripts/verify_dashboard.py`, `tests/test_dashboard.py`, `data/canonical/verification_report.*`, `data/review-2026-11-08/**` |
+| DC7 | PR from fixed integration branch to main; merge only after checks pass; confirm live Pages deployment | in progress | `arena/dc6a8da6-korea7` | GitHub PR/Pages for this branch only |
+| DC8 | Record sources, verification, irregularities, PR link, merge and deployment results | in progress | `arena/dc6a8da6-korea7` | `COORDINATION.md` (append-only completion log) |
+
+Read-only scopes: all other files, including `sf-overflow-audit/**`, `bathtub-overflow/**`, `docs/**`, `trip-lever/**`, `shortlist.html`, `verification-log.html`, legacy GEMS data/code and other open PRs. Any needed change outside scope will be logged as a request, not edited. No provider has been contacted and no job-specific service commitment is claimed.
+
+### Progress log — `arena/dc6a8da6-korea7` (2026-11-08)
+
+- DC1–DC5 done: board claim published; 72-source research dataset persisted; official CSLB/permit/manufacturer sources re-read 2026-11-08; canonical generator rewritten to consume `data/review-2026-11-08/research.json`; 13 root pages rebuilt with 17 tables / 207 data rows / 72 sources; README and EXECUTIVE-SUMMARY updated.
+- DC2 audit artifacts created: `scripts/audit_project.py`, `tests/test_project_audit.py`, `data/review-2026-11-08/REPO-AUDIT.md`, `repo_inventory.json`, `repo_findings.json`. S72 internal source link now resolves. Legacy GEMS/archived microsites preserved unchanged.
+- DC6 in progress: `python3 scripts/build_dashboard.py` → 11/11 PASS (432 rendered rows with source links, 510 internal links, 62 external links, 0 privacy matches). Regression tests running; final audit inventory refresh and browser/smoke checks pending before merge.
+- DC7/DC8 in progress: PR/merge/Pages confirmation and final completion record will be appended after checks pass. PRs #42/#32 remain untouched. No provider contacted; no job/availability/combined price confirmed.
+
+### Concurrent-main merge and superset integration — `arena/dc6a8da6-korea7` (2026-11-08)
+
+- `origin/main` advanced to `665f41d` (PRs #51–#59) while this audit was running. Merged `origin/main` into the fixed branch and resolved conflicts without discarding incoming work: full incoming board retained; this session's claim/progress appended; incoming `shortlist.html` and follow-up tests preserved.
+- Canonical generator kept the 2026-11-08 research dataset and added the concurrent corrections as a superset: BPC §7059 incidental/supplemental qualification (new S73, F26), archived categorical page flag (S74), Fast Response repair-page company lead (S75), explicit no-outreach-by-this-session wording (F25), and automated-verification limits (F27). Verifier label now says recorded metadata / no network check of every URL.
+- Incoming follow-up tests were adapted to the new canonical IDs (S73/F26/F06/F09/F25/F27/S75) while preserving their original assertions; no test intent was dropped.
+- Post-merge build: 13 pages, 17 tables, 213 data rows, 75 sources; 11/11 checks PASS; 444 rendered rows with source links; 518 internal links; 64 external links; 0 privacy matches. Site regression suite: 55 passed, 9 subtests passed. Repository audit refreshed: 317 tracked files, 61,082 text lines, 1,525 HTML links, 0 JSON/Python errors, 0 broken file links, 1 documented directory-index warning, 0 owner-context privacy matches.
