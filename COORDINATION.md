@@ -950,3 +950,19 @@ Earlier integration tasks were completed by their owners; this session will not 
 
 - Audit PR [#50](https://github.com/karagemop466-tech/Korea7/pull/50) merged at 2026-11-08T22:56:58Z as `2fb3e81270ba257a7af49b0a07d56685f3113389`. It changed only this task board, not the built site.
 - Its [Pages workflow 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) completed successfully, including the deploy job, after the prior failed deployment. The earlier failure remains documented above. [Live dashboard](https://karagemop466-tech.github.io/Korea7/).
+
+---
+
+## Session `arena/6696a17e-korea7` — current integration takeover (2026-11-08)
+
+The preceding root-dashboard and audit claims have no activity within the last 60 minutes. This session takes over the remaining canonical integration work and records the handoff here. The Arena runtime fixes this session's branch to `arena/6696a17e-korea7`; no other branch will be created or pushed. Other sessions' archived page sets and unrelated legacy GEMS files are preserved. Open PRs #42 and #32 predate this handoff and are not edited or merged by this session.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| C1 — Claim integration and review current repository/live site | in progress | arena/6696a17e-korea7 | COORDINATION.md; read-only repository review |
+| C2 — Reverify contractor identities, licenses, phones, technical and regulatory sources; record evidence | unclaimed | arena/6696a17e-korea7 | data/canonical/site_data.json, data/canonical/source_checks.json, scripts/dashboard_content.py |
+| C3 — Refresh requirements, executive summary, transparent decision ranking and canonical dashboard | unclaimed | arena/6696a17e-korea7 | root canonical HTML pages, assets/dashboard.css, assets/dashboard.js, scripts/build_dashboard.py, EXECUTIVE-SUMMARY.md, README.md (project section only) |
+| C4 — Line-by-line source/blank/link/privacy audit and regression tests | unclaimed | arena/6696a17e-korea7 | scripts/verify_dashboard.py, data/canonical/verification_report.json, data/canonical/verification_report.md, tests/test_dashboard.py |
+| C5 — Final integration PR, merge, confirm the exact deployed revision, record result | unclaimed | arena/6696a17e-korea7 | COORDINATION.md, GitHub PR/Pages |
+
+Binding checks: every data-table row has a source link; an official source supports only the specific fact it actually establishes, not an entire row by association. Unconfirmed official-value cells stay blank and are flagged. Owner reports and historical review snapshots are clearly distinguished from verified facts. Rankings are explicit analytical judgments, not verified contractor capabilities. No provider is represented as contacted, available or accepting the job. Public content uses neutral official permit guidance and contains no private scheduling rationale.
