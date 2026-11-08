@@ -967,3 +967,11 @@ Earlier integration tasks were completed by their owners; this session will not 
 - Its [Pages workflow 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) completed successfully, including the deploy job, after the prior failed deployment. The earlier failure remains documented above. [Live dashboard](https://karagemop466-tech.github.io/Korea7/).
 
 - A second concurrent-main merge conflicted in this board; both sessions’ appended delivery updates were retained.
+
+## Follow-up audit — session `arena/13d957de-korea7` (2026-11-08)
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Independently audit current dashboard, verification claims, official contractor records and deployment; make targeted corrections and publish review findings | in progress | arena/13d957de-korea7 | COORDINATION.md; scripts/dashboard_content.py; scripts/verify_dashboard.py; scripts/build_dashboard.py; generated root dashboard HTML and data/canonical; tests/test_followup_audit.py |
+
+The prior final integration is already complete; this is a follow-up rather than a duplicate rebuild. Session is on the Arena-assigned branch, which takes precedence over the requested naming convention. Other open PRs remain with their owners.
