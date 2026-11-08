@@ -68,7 +68,7 @@ def refresh_repo_inventory():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "repo_inventory.json").write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     with (DATA_DIR / "repo_inventory.csv").open("w", newline="", encoding="utf-8") as fh:
-        writer = csv.DictWriter(fh, fieldnames=["path", "bytes", "sha256", "category", "review"])
+        writer = csv.DictWriter(fh, fieldnames=["path", "bytes", "sha256", "category", "review"], lineterminator="\n")
         writer.writeheader(); writer.writerows(rows)
     table_rows = []
     branch = quote(C.META["session"], safe="/")
