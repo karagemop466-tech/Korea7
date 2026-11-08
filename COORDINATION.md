@@ -1000,3 +1000,61 @@ Scope note: this session edits only the files listed above. The legacy GEMS file
 10. **No privacy leakage found.** Re-ran the privacy pattern sweep over the repository: 0 matches for the
     internal-only permit rationale. The public pages state the official permit rule neutrally and contain no
     reference to the owner's private reason. This session adds no such wording.
+
+### Scope addition — session `arena/4676216c-korea7` (2026-11-08)
+
+Added to this session's file scope: `EXECUTIVE-SUMMARY.md`, `README.md` (bathtub section only), `shortlist.html`
+(converted to a generated page so one script owns it), `data/canonical/*`, `data/overflow` (not present) and
+`scripts/build_dashboard.py` (dynamic check count only). Reason: T1–T3 corrections must stay consistent across
+every published page that states a candidate count. No other session's files are touched.
+
+### Official records re-read for T1 — CSLB, 2026-11-08 (stamp printed on each page)
+
+| Licence | Business as printed | Phone on record | Entity | Issued | Expires | Classifications | Bond | Workers' comp |
+|---|---|---|---|---|---|---|---|---|
+| [977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) | EXPERT PLUMBING SOLUTIONS, 1465 44th Avenue, SF 94122 | (415) 531-5340 | Corporation | 2012-10-09 | 2028-10-31 | C36 | $25,000 | insured, 2026-07-19 → 2027-07-19 |
+| [757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) | BAY AREA PLUMBING, 335 14th Avenue, SF 94118 | (415) 668-8000 | Sole ownership | 1999-01-07 | 2027-01-31 | C36 | $25,000 | exempt, no employees (eff. 2024-12-11) |
+| [1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) | JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER, 236 W Potral Ave #459, SF 94127 | (415) 596-6115 | Sole ownership | 2017-03-20 | 2027-03-31 | C36 | $25,000 | insured, 2025-12-18 → 2026-12-18 |
+| [959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) | GENERALSF, 3624 Irving Street Ste A, SF 94122 | (650) 303-1515 | Sole ownership | 2011-04-12 | 2027-04-30 | B, C10, C36 | $25,000 | exempt, no employees (eff. 2025-03-10) |
+| [1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) | HANDYMAN HEROES INC, 912 Cole St #202, SF 94117 | (844) 382-4376 | Corporation | 2015-05-05 | 2027-05-31 | B, C36 | $25,000 + BQI | insured, 2026-04-25 → 2027-04-25; complaint disclosure citation 2 2020 001045 (2020-07-12) |
+| [829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) | ACE PLUMBING & ROOTER, 1090 Bryant Street, SF 94103-4417 | (415) 824-6444 | Corporation | 2003-12-18 (reissued 2007-06-07) | 2027-06-30 | C36, A, C-4, C16, B, C10 | $25,000 | insured, 2026-07-13 → 2027-07-13 |
+| [1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) | RAPID FLOW PLUMBING & ROOTER INC, 230 Edinburgh St, SF 94112 | (415) 866-8401 | Corporation | 2024-01-29 | 2028-01-31 | B, C36 | $25,000 | exempt, no employees (eff. 2026-02-03) |
+| [841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) | MANNY'S PLUMBING & ROOTER, 41 Midvale Drive, Daly City 94015 | (650) 207-5733 | Sole ownership | 2004-06-21 | 2028-06-30 | C36, B | $25,000 | exempt, no employees (eff. 2026-06-28) |
+| [1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) | THE GENTEEL PLUMBERS INC, 1181 Revere Ave, SF 94124 | (833) 436-8335 | Corporation | 2017-04-14 | 2027-04-30 | C36, B | $25,000 | insured, 2026-01-24 → 2027-01-24 |
+| [995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) | BERNAL HILL DRYWALL INC, 720 Anderson St, SF 94110 | (415) 533-8274 | Corporation | 2014-07-28 | 2028-07-31 | C-9 Drywall, B | $25,000 | insured, 2026-03-10 → 2027-03-10 |
+| [1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) | ADVANCED PLUMBING AND DRAIN INC, 3450 Sacramento St 204, SF 94118 | (415) 744-4944 | Corporation | 2015-11-24 | 2027-11-30 | C36 | $25,000 | insured, 2026-08-21 → 2027-08-21; **additional status: may be suspended for an outstanding final liability** |
+
+Notes on this round:
+- #1025814, #995163 and #1009195 were **not** in this dashboard before; they were named in the parallel
+  `sf-overflow-audit` set. They are added here only because this session read each record directly today.
+- The `www.cslb.ca.gov` host (without `2`) also served the #959843 record today at 3:01:23 PM and printed the
+  same values, so links on either host resolve to the same official record.
+- All eleven records printed *"This license is current and active."*  None of the previously published values
+  changed. The newly available fact is the **CSLB business phone number** on each record, which this session
+  now publishes as a verified value.
+
+### Official code text re-read for T2 (2026-11-08)
+
+- [2025 San Francisco Plumbing Code, §104.2 Exempt Work](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf)
+  — official City PDF, read directly. It prints: *"A permit shall not be required for the following: (1) Repair of
+  leaks not requiring cutting into or removing piping. (2) Unstopping of traps, sewers, vents or waste pipes not
+  requiring cutting into or removal of traps or piping. (3) Replacement, repair or maintenance of faucets, angle
+  stops, hose bibbs or roof drain not requiring cutting into or removal of piping. (4) Replacement of toilets
+  except in structures with alternate water piping. (5) Replacement of furnace filters. …"*  **Every one of the
+  nine exemptions depends on not cutting into or removing piping**, so a waste-and-overflow replacement is not
+  covered by them. This is now cited instead of the JavaScript-only amlegal page, which could not be parsed.
+- [CSLB "Hire a Licensed Contractor"](https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/) — official consumer
+  hub; it links Check a License, "What Type of Contractor Do I Need?" and "Do I Need a Building Permit?".
+  Previously the site linked `www.cslb.ca.gov/Consumers/Hire_A_Contractor/`, which also resolves today.
+
+### Publisher sources re-read for T2 (2026-11-08)
+
+- [This Old House — How To Replace a Tub Drain](https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain):
+  *"For stubborn drains, you may need to access the plumbing from below the tub"* and *"In extreme cases, you
+  might need to cut out the old drain from below"*; installation aligns the gasket and elbow from below.
+- [Hunker — The Trip Lever In My Bathtub Is Stuck](https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/):
+  removing the cover plate and cleaning the link system can free a stuck lever; a broken link means replacing the
+  assembly. Both statements are unchanged from what the site already published.
+- [Oatey — Dearborn Plastic Tubular Trip-Lever Bath Waste](https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste):
+  product page confirmed; the kit "features a chrome-finish stopper" and is available in two variations
+  (A9226 / P9226).
