@@ -1030,3 +1030,19 @@ The prior final integration is already complete; this is a follow-up rather than
 - Two merge conflicts with concurrent sessions resolved preserving both sides' board records and incoming generated verification files; no work discarded.
 - **Delivery:** [PR #57](https://github.com/karagemop466-tech/Korea7/pull/57) merged without approval on 2026-11-08 at 23:00:36Z, merge commit `c3c01066eff7c357b45b53abb7c45f18219a121c`. Its [Pages build and deploy run 42533022816](https://github.com/karagemop466-tech/Korea7/actions/runs/42533022816) succeeded; the live flagged page was fetched and displays both U21 and U22. After the concurrent integration, the build passed 11 structural checks with 501 internal links and the site test suite passed 46 tests and 9 subtests. The Pages workflow reported a non-blocking GitHub-hosted action runtime deprecation warning. A follow-up corrects the stale flag-range label and records this delivery; it does not assert a new external re-verification.
 - A further board-only conflict with PR #58 was resolved by retaining the full incoming board and appending the PR #57 delivery record; no other work was discarded.
+---
+
+# Follow-up integration — session `arena/52d35ede-korea7` (2026-11-08)
+
+Read the complete existing board before editing. Earlier delivery/integration tasks are recorded as done; the claims below cover a new current-date follow-up, not a takeover of active work. The Arena session branch is fixed: all work, commits and the delivery PR stay on `arena/52d35ede-korea7`; no extra `session-*` branch is created. Starting revision: `1faccdc3a99b209b7630d02470aebc816d2b1104`, identical to `origin/main`. Existing open PRs belong to other sessions and will not be merged or closed by this session.
+
+| Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|
+| F1 — current-source and decision audit | in progress | arena/52d35ede-korea7 | scripts/dashboard_content.py; data/canonical/* | Re-read official evidence, correct unsupported claims, preserve provenance and explicit unverified values. |
+| F2 — dashboard usability and requirements coverage | in progress | arena/52d35ede-korea7 | root canonical HTML; assets/dashboard.css; assets/dashboard.js; scripts/build_dashboard.py; EXECUTIVE-SUMMARY.md; README.md | Build on the existing canonical dashboard; do not duplicate archives or unrelated GEMS content. |
+| F3 — independent integration checks | in progress | arena/52d35ede-korea7 | scripts/verify_dashboard.py; tests/test_dashboard.py; tests/test_dashboard_integrity.py | Test row-level provenance, links, privacy, responsive rendering and build reproducibility. |
+| F4 — PR, merge, Pages and final record | in progress | arena/52d35ede-korea7 | COORDINATION.md; GitHub PR and deployment | Verify before merge; publish flagged items; record actual results only. |
+
+- 2026-11-08: Claim registered before substantive file edits; committing and pushing immediately. Historical logs are preserved. Archived pages from other sessions are out of scope; any issue found there will be logged as a handoff/flag rather than silently overwritten.
+
+- Concurrent-main handoff: `git pull --rebase origin main` conflicted only in this board after other sessions merged their records. Resolved by retaining the complete incoming board and re-appending this session’s claim; no other session’s entry or file was discarded. The initial claim was published at 22:56:02 UTC. Open PR #54 was board-only; the completed follow-up audit on main is preserved and incorporated.
