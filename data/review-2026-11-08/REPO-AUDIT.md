@@ -1,6 +1,6 @@
 # Repository audit — 2026-11-08
 
-Generated: 2026-11-08T23:17:38+00:00
+Generated: 2026-11-08T23:20:42+00:00
 
 ## Method and scope
 
@@ -17,10 +17,10 @@ Generated: 2026-11-08T23:17:38+00:00
 | canonical-dashboard | 22 | [repository](https://github.com/karagemop466-tech/Korea7) |
 | coordination | 1 | [repository](https://github.com/karagemop466-tech/Korea7) |
 | current-audit | 6 | [repository](https://github.com/karagemop466-tech/Korea7) |
-| legacy-or-other | 224 | [repository](https://github.com/karagemop466-tech/Korea7) |
+| legacy-or-other | 226 | [repository](https://github.com/karagemop466-tech/Korea7) |
 | shared-summary | 2 | [repository](https://github.com/karagemop466-tech/Korea7) |
 
-Total tracked files: **315**. Text files: **286**. Text lines scanned: **58918**. HTML links checked: **1517**.
+Total tracked files: **317**. Text files: **288**. Text lines scanned: **61082**. HTML links checked: **1525**.
 
 ## Integrity results
 

@@ -801,6 +801,36 @@
       "checked": "2026-11-08",
       "supports": "Line-by-line inventory, hash checks, link scan and irregularity register.",
       "note": "Automated inventory plus manual source review; legacy GEMS science is not revalidated here."
+    },
+    "S73": {
+      "label": "California BPC §7059 — specialty contractor incidental and supplemental work",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "A specialty contractor may take a contract involving two or more crafts/trades when the other work is incidental and supplemental to the licensed craft; applicability to this ceiling repair is not established.",
+      "note": "Read directly 2026-11-08. Amended by Stats. 2024, Ch. 485 (SB 1455), effective 2025-01-01. Carried forward from concurrent follow-up audit and re-read here."
+    },
+    "S74": {
+      "label": "Archived overflow verification page",
+      "publisher": "This repository (parallel session)",
+      "url": "docs/overflow-verification.html",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Historical page with categorical licensing statements that omit the BPC §7059 qualification; preserved unchanged and flagged.",
+      "note": "Read-only historical artifact; current canonical pages supersede it. See F26."
+    },
+    "S75": {
+      "label": "Fast Response — plumbing repair & replacement",
+      "publisher": "Fast Response Plumbing & Rooter (company site)",
+      "url": "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Company page advertises bathtub waste & overflow repair/replacement in San Francisco and provides (415) 596-6115.",
+      "note": "Self-published service list; not proof of ability to handle this precise stuck mechanism, drywall restoration, availability or tenant coordination. Aggregate review claim is not used as a verified rating."
     }
   },
   "tables": {
@@ -1532,7 +1562,7 @@
             "<span class=\"blank\" aria-label=\"blank — unverified\"></span> <span class=\"pill warn\">UNVERIFIED</span>",
             "Official site advertises houses, apartments, HOAs and property managers.<br><span class=\"pill mute\">self-published / platform lead</span> <a href=\"https://www.fastresponseplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">source</a>",
             "<span class=\"blank\" aria-label=\"blank — unverified\"></span> <span class=\"pill warn\">UNVERIFIED</span>",
-            "Active C-36 with apartment/HOA service advertised and a reported adjustment-only estimate.<br><strong>Cost:</strong> Reported $135 (owner-provided, unverified) to repair/adjust plunger handle; replacement/access/drywall price unknown.<br><strong>Caution:</strong> Adjustment quote is not comparable to replacement plus ceiling restoration. Workers&#x27; compensation expires 2026-12-18; CSLB address spelling is flagged."
+            "Active C-36 with apartment/HOA service advertised and a reported adjustment-only estimate. Company repair page advertises bathtub waste &amp; overflow work, but combined drywall scope remains unconfirmed.<br><strong>Cost:</strong> Reported $135 (owner-provided, unverified) to repair/adjust plunger handle; replacement/access/drywall price unknown.<br><strong>Caution:</strong> Adjustment quote is not comparable to replacement plus ceiling restoration. Workers&#x27; compensation expires 2026-12-18; CSLB address spelling is flagged."
           ],
           "src": [
             "S08",
@@ -1540,6 +1570,7 @@
             "S54",
             "S05",
             "S55",
+            "S75",
             "S57"
           ]
         }
@@ -1831,6 +1862,17 @@
           "src": [
             "S13",
             "S55"
+          ]
+        },
+        {
+          "cells": [
+            "Specialty incidental/supplemental work",
+            "BPC §7059 allows a specialty contractor to take a contract involving other crafts/trades when that work is incidental and supplemental to the licensed craft; applicability to this ceiling repair is not established.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\"></span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S73",
+            "S54"
           ]
         }
       ],
@@ -2676,7 +2718,7 @@
             "F25",
             "<span class=\"pill info\">Outreach boundary</span>",
             "No provider contacted or booked",
-            "Research and publication were completed autonomously; no call, email, form submission or booking was made.",
+            "The owner reported prior estimates; this research session did not contact providers, confirm availability, accept a job, or book work. No call, email, form submission or booking was made by this session.",
             "Use the published contact links and vetting checklist when ready to request quotes.",
             "<span class=\"pill warn\">needs review — non-blocking</span>"
           ],
@@ -2684,6 +2726,37 @@
             "S57",
             "S58",
             "S55"
+          ]
+        },
+        {
+          "cells": [
+            "F26",
+            "<span class=\"pill info\">Scope-dependent compliance</span>",
+            "License classifications are a screening signal, not an exclusive route",
+            "B + C-36 is useful for a single prime contract but does not prove job acceptance or exclude other lawful arrangements. BPC §7059 allows qualifying incidental and supplemental work by specialty contractors; application to this ceiling repair is not established. The archived docs/overflow-verification.html contains more categorical statements.",
+            "Ask each contractor for a written scope, responsible trades and confirmation of applicable requirements; do not treat a license class as the only possible arrangement.",
+            "<span class=\"pill warn\">needs review — non-blocking</span>"
+          ],
+          "src": [
+            "S73",
+            "S54",
+            "S05",
+            "S74"
+          ]
+        },
+        {
+          "cells": [
+            "F27",
+            "<span class=\"pill info\">Review limitation</span>",
+            "Source-link checks do not prove every claim or live availability",
+            "Automated verification checks row source-link presence, blank flags, internal links and privacy patterns. It does not independently re-fetch every external URL or prove that a generic official link supports unrelated owner facts. Some rows cite only company, platform, publisher or primary records, not government sources.",
+            "Review each row and cited source manually; treat official/manufacturer status as recorded evidence, not a blanket truth guarantee.",
+            "<span class=\"pill warn\">needs review — non-blocking</span>"
+          ],
+          "src": [
+            "S04",
+            "S58",
+            "S71"
           ]
         }
       ],
@@ -2775,11 +2848,12 @@
         {
           "cells": [
             "License fit",
-            "Prefer one current/active CSLB record carrying both B General Building and C-36 Plumbing for a single prime contract covering plumbing and wallboard restoration."
+            "Prefer one current/active CSLB record carrying both B General Building and C-36 Plumbing as a screening signal for a single prime contract. This is not an exclusive route: BPC §7059 allows qualifying incidental and supplemental work, and applicability to this job is unverified."
           ],
           "src": [
             "S54",
-            "S05"
+            "S05",
+            "S73"
           ]
         },
         {
@@ -3791,6 +3865,42 @@
           ],
           "src": [
             "S72"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S73</code>",
+            "<strong>California BPC §7059 — specialty contractor incidental and supplemental work</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC</a></small>",
+            "California Legislative Information<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "A specialty contractor may take a contract involving two or more crafts/trades when the other work is incidental and supplemental to the licensed craft; applicability to this ceiling repair is not established.<br><small>Read directly 2026-11-08. Amended by Stats. 2024, Ch. 485 (SB 1455), effective 2025-01-01. Carried forward from concurrent follow-up audit and re-read here.</small>"
+          ],
+          "src": [
+            "S73"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S74</code>",
+            "<strong>Archived overflow verification page</strong><br><small><a href=\"docs/overflow-verification.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">docs/overflow-verification.html</a></small>",
+            "This repository (parallel session)<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Historical page with categorical licensing statements that omit the BPC §7059 qualification; preserved unchanged and flagged.<br><small>Read-only historical artifact; current canonical pages supersede it. See F26.</small>"
+          ],
+          "src": [
+            "S74"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S75</code>",
+            "<strong>Fast Response — plumbing repair &amp; replacement</strong><br><small><a href=\"https://www.fastresponseplumbingsf.com/plumbing-repair-replacement\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.fastresponseplumbingsf.com/plumbing-repair-replacement</a></small>",
+            "Fast Response Plumbing &amp; Rooter (company site)<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Company page advertises bathtub waste &amp; overflow repair/replacement in San Francisco and provides (415) 596-6115.<br><small>Self-published service list; not proof of ability to handle this precise stuck mechanism, drywall restoration, availability or tenant coordination. Aggregate review claim is not used as a verified rating.</small>"
+          ],
+          "src": [
+            "S75"
           ]
         }
       ],

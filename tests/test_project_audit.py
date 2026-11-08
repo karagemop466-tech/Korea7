@@ -20,11 +20,11 @@ def test_research_dataset_loads_and_is_canonical_source():
     data = json.loads((OUT / "research.json").read_text(encoding="utf-8"))
     assert data == C.DATA
     assert data["meta"]["updated"] == "2026-11-08"
-    assert len(data["sources"]) == 72
+    assert len(data["sources"]) == 75
     assert len(data["contractors"]) == 11
     assert len(data["estimates"]) == 3
     assert len(data["requirements"]) == 34
-    assert len(data["flags"]) == 25
+    assert len(data["flags"]) == 27
 
 
 def test_source_ids_are_unique_and_statuses_are_bounded():

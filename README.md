@@ -162,7 +162,7 @@ The current canonical site is [index.html](index.html), updated 2026-11-08. It c
 | Source ledger | [sources.html](sources.html) |
 | Verification and row audit | [verification.html](verification.html) |
 | Repository review | [repo-review.html](repo-review.html) |
-| Flagged for Review (25 non-blocking items) | [flagged.html](flagged.html) |
+| Flagged for Review (27 non-blocking items) | [flagged.html](flagged.html) |
 
 Canonical data: [data/review-2026-11-08/research.json](data/review-2026-11-08/research.json). Repository audit: [data/review-2026-11-08/REPO-AUDIT.md](data/review-2026-11-08/REPO-AUDIT.md). Build: `python3 scripts/build_dashboard.py`; verify: `python3 scripts/verify_dashboard.py`; audit: `python3 scripts/audit_project.py`; tests: `python3 -m pytest -q tests/test_dashboard.py tests/test_dashboard_integrity.py tests/test_overflow_site.py tests/test_project_audit.py`.
 

@@ -48,8 +48,8 @@ Installed model/seized component, pipe material, ceiling fire-rating, need/size 
 
 ## 6. Verification and repository audit
 
-- Build/verify: 13 pages, 17 tables, 207 data rows, 72 sources; 432 rendered table rows with source links; 510 internal links checked; 62 unique external links in the source ledger; privacy sweep 0 matches. [verification.html](verification.html) · [verification_report.json](data/canonical/verification_report.json)
-- Repository audit: 315 tracked files inventoried; 58,918 text lines scanned; 1,517 HTML links checked; 0 JSON/Python parse errors; 0 broken file links; 1 documented directory-index warning; 0 owner-context privacy matches. [REPO-AUDIT.md](data/review-2026-11-08/REPO-AUDIT.md) · [repo-review.html](repo-review.html)
+- Build/verify: 13 pages, 17 tables, 213 data rows, 75 sources; 444 rendered table rows with source links; 518 internal links checked; 64 unique external links in the source ledger; privacy sweep 0 matches. [verification.html](verification.html) · [verification_report.json](data/canonical/verification_report.json)
+- Repository audit: 317 tracked files inventoried; 61,082 text lines scanned; 1,525 HTML links checked; 0 JSON/Python parse errors; 0 broken file links; 1 documented directory-index warning; 0 owner-context privacy matches. [REPO-AUDIT.md](data/review-2026-11-08/REPO-AUDIT.md) · [repo-review.html](repo-review.html)
 - Canonical dataset: [research.json](data/review-2026-11-08/research.json). Shared board: [COORDINATION.md](COORDINATION.md).
 
 *Informational only — research, not legal advice, a quote, or a contractor endorsement. Owner-only context is omitted; permit discussion is neutral and official-source-based.*
