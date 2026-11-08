@@ -972,3 +972,9 @@ Handoff rule: unverified facts remain blank and published under Flagged for Revi
 ### Claim-push conflict resolution
 
 `git pull --rebase` hit an append/add conflict because PRs #50 and #52 landed concurrently. Resolved by retaining every incoming audit/deployment entry verbatim and appending this session claim below; no work discarded. The claim now correctly records #50 as merged. Rebase continued and the prescribed branch was pushed.
+
+### Research checkpoint and stale-test handoff — `arena/3a4a1788-korea7`
+
+Direct official-source reads completed for 12 CSLB records, the Handyman Heroes disclosure, CSLB B/C-36/C-9 scopes, SF DBI guidance, current BPC 7048, Watco instructions/specifications and Oatey's live bath-waste FAQ/product pages. Business sites were read separately; self-published services are not independent proof of exact-job competence. Yelp detail fetches returned 403; search excerpts are discovery only and current ratings/counts stay blank. No provider contacted or job accepted.
+
+Full tracked-text inventory: 55,222 lines; all JSON parsed and all Python AST-parsed; no merge markers. Baseline full suite in a new ignored `.venv`: 124 passed, 1 failed, 9 subtests passed. The failure is the stale-owned `tests/test_overflow_site.py` walker scanning matplotlib HTML inside `.venv`, not a published-page link. That test's last claim/commit is over 60 minutes old; this session takes over only that file to exclude hidden/environment directories, preserving all published-page checks. This adds `tests/test_overflow_site.py` to A3/A5 scope. No scientific artifact or other session's microsite is changed.
