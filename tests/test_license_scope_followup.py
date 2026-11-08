@@ -17,12 +17,12 @@ def test_shortlist_does_not_exclude_incidental_work():
 
 
 def test_review_flag_and_source_are_in_generator():
-    assert content.SOURCES["S61"]["checked"] == "2026-11-08"
-    assert any(row["cells"][0] == "U21" and "S61" in row["src"]
+    assert content.SOURCES["S62"]["checked"] == "2026-11-08"
+    assert any(row["cells"][0] == "U22" and "S62" in row["src"]
                for row in content.TABLES["flagged"]["rows"])
 
 
 def test_verifier_does_not_claim_to_recheck_sources():
     verifier = (ROOT / "scripts" / "verify_dashboard.py").read_text(encoding="utf-8")
-    assert "not live checks" in verifier
+    assert "no network check" in verifier
     assert "verified 2026-11-07; %d sources verified overall" not in verifier

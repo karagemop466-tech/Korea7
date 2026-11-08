@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T22:59:16+00:00",
+  "generated_at": "2026-11-08T23:00:11+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -18,13 +18,13 @@
   "counts": {
     "pages": 13,
     "tables": 14,
-    "rows": 195,
-    "source_ledger_entries": 62,
-    "verified_sources": 51,
+    "rows": 197,
+    "source_ledger_entries": 63,
+    "verified_sources": 52,
     "official_or_manufacturer_verified": 17,
-    "generated_tbody_rows": 417,
-    "internal_links_checked": 500,
-    "unique_external_links": 51,
+    "generated_tbody_rows": 421,
+    "internal_links_checked": 501,
+    "unique_external_links": 52,
     "published_text_files_scanned": 121
   },
   "checks": [
@@ -36,7 +36,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "417 tbody rows checked, 0 missing links"
+      "detail": "421 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -46,7 +46,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "500 internal links checked, 0 broken"
+      "detail": "501 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -56,7 +56,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "51 unique external links, 0 unknown/dead"
+      "detail": "52 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -79,9 +79,9 @@
       "detail": "0 dead-source links"
     },
     {
-      "name": "Official source ledger entries",
+      "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "17 official/manufacturer sources marked verified in the ledger; 51 sources marked verified overall (not live checks)"
+      "detail": "17 official/manufacturer sources marked verified; 52 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -118,6 +118,7 @@
     "https://www.eplumbingsolutions.com/",
     "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
     "https://www.fastresponseplumbingsf.com/",
+    "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
     "https://www.handymanhero.es/",
     "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
     "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
