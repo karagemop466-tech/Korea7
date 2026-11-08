@@ -1,7 +1,7 @@
 {
   "meta": {
-    "updated": "2026-11-07",
-    "session": "arena/2eb487ad-korea7",
+    "updated": "2026-11-08",
+    "session": "arena/e070be24-korea7",
     "title": "Bathtub overflow trip lever — repair research dashboard",
     "pages_url": "https://karagemop466-tech.github.io/Korea7/",
     "repo_url": "https://github.com/karagemop466-tech/Korea7"
@@ -38,6 +38,10 @@
         [
           "findings.html",
           "Findings & analysis"
+        ],
+        [
+          "ranking.html",
+          "Decision ranking"
         ],
         [
           "shortlist.html",
@@ -95,9 +99,9 @@
       "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Permit requirement for cutting into/replacing pipes; license classes allowed to apply; inspection before covering pipes; homeowner R-3 restriction",
-      "note": "Read directly on sf.gov, 2026-11-07."
+      "note": "Read directly on sf.gov, 2026-11-07; re-read 2026-11-08 — text unchanged (permit trigger, C4/C16/C20/C36/C54/B/A list, inspection before covering, R-3 homeowner rule, Permit Center 628-652-4900)."
     },
     "S02": {
       "label": "SF.gov — Check if your construction project needs a permit",
@@ -135,9 +139,9 @@
       "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Official definition of the C-36 Plumbing classification (16 CCR, Div. 8, Art. 3)",
-      "note": "Read directly on cslb.ca.gov, 2026-11-07."
+      "note": "Read directly on cslb.ca.gov, 2026-11-07; re-read 2026-11-08 — text unchanged (16 CCR Div. 8 Art. 3)."
     },
     "S06": {
       "label": "CSLB License Detail #977638 — Expert Plumbing Solutions",
@@ -145,9 +149,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, address, entity, issue/expiry dates, status, classification, bond, workers' compensation",
-      "note": "Record printed 'Data current as of 11/7/2026 12:22:23 PM'."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:22 PM'; all values unchanged from the 2026-11-07 read. Business phone on record (415) 531-5340."
     },
     "S07": {
       "label": "CSLB License Detail #757796 — Bay Area Plumbing",
@@ -155,9 +159,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, address, entity, issue/expiry dates, status, classification, bond, workers' compensation exemption",
-      "note": "Record printed 'Data current as of 11/7/2026 12:22:25 PM'."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:52 PM'; all values unchanged. Business phone on record (415) 668-8000. Bond effective 2026-09-01."
     },
     "S08": {
       "label": "CSLB License Detail #1024971 — Fast Response Plumbing and Rooter",
@@ -165,9 +169,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, address, entity, issue/expiry dates, status, classification, bond, workers' compensation policy dates",
-      "note": "Record printed 'Data current as of 11/7/2026 12:22:23 PM'."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:34 PM'; all values unchanged. Business phone on record (415) 596-6115. Workers' comp policy still shows expiry 12/18/2026."
     },
     "S09": {
       "label": "CSLB License Detail #959843 — GENERALSF",
@@ -175,9 +179,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, address, entity, issue/expiry dates, status, B/C10/C36 classifications, bond, workers' compensation exemption",
-      "note": "Record printed 'Data current as of 11/7/2026 12:21:47 PM'."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:52 PM'; all values unchanged. Business phone on record (650) 303-1515."
     },
     "S10": {
       "label": "CSLB License Detail #1003394 — Handyman Heroes Inc",
@@ -185,9 +189,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, address, entity, issue/expiry dates, status, B/C36 classifications, bond, workers' compensation, complaint-disclosure flag",
-      "note": "Record printed 'Data current as of 11/7/2026 12:21:47 PM'."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:52 PM'; all values unchanged, complaint-disclosure link still present. Business phone on record (844) 382-4376."
     },
     "S11": {
       "label": "CSLB License Detail #829071 — Ace Plumbing & Rooter",
@@ -195,9 +199,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, address, entity, issue/reissue/expiry dates, status, A/B/C-4/C10/C16/C36 classifications, bond, workers' compensation",
-      "note": "Record printed 'Data current as of 11/7/2026 12:23:38 PM'."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:57 PM'; all values unchanged. Business phone on record (415) 824-6444. Bond effective 2026-09-04."
     },
     "S12": {
       "label": "CSLB Complaint Disclosure #1003394",
@@ -205,9 +209,9 @@
       "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Citation 2 2020 001045, dated 07/12/2020, 'FOR DISCLOSURE ONLY PER B&P CODE 7124.6'",
-      "note": "Read directly on cslb.ca.gov, 2026-11-07. Reported verbatim, no interpretation."
+      "note": "Read directly on cslb.ca.gov, 2026-11-07 and again 2026-11-08: one citation, 2 2020 001045, dated 07/12/2020, status 'FOR DISCLOSURE ONLY PER B&P CODE 7124.6'. Reported verbatim, no interpretation."
     },
     "S13": {
       "label": "California Business & Professions Code §7048",
@@ -215,9 +219,9 @@
       "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Current small-job licensing exemption: aggregate price under $1,000, casual/minor/inconsequential, and no building permit required; amended by Stats. 2025 ch. 67 (AB 1170), effective 2026-01-01",
-      "note": "Read directly on leginfo, 2026-11-07."
+      "note": "Read directly on leginfo, 2026-11-07; re-read 2026-11-08 — text unchanged: '(Amended by Stats. 2025, Ch. 67, Sec. 12. (AB 1170) Effective January 1, 2026.)'."
     },
     "S14": {
       "label": "Oatey — Dearborn Plastic Tubular Trip-Lever Bath Waste",
@@ -425,9 +429,9 @@
       "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
       "tier": "platform",
       "status": "blocked-403",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business review page for one of the three quoting companies",
-      "note": "HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 906 reviews) exists in prior-session notes; not re-verified — flagged."
+      "note": "HTTP 403 on automated fetch (2026-11-07 and 2026-11-08). A 2026-11-06 snapshot (4.8, 906 reviews) exists in prior-session notes; Yelp search-result text seen on 2026-11-08 showed 4.8 ★ (870). Neither value is verified on the listing page — flagged."
     },
     "S35": {
       "label": "Yelp — General SF",
@@ -625,9 +629,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, 230 Edinburgh St SF 94112, corporation, issued 2024-01-29, expires 2028-01-31, B + C-36 classifications, $25,000 bond, workers'-compensation exemption",
-      "note": "Record printed 'Data current as of 11/7/2026 12:46:25 PM'. Added from the concurrent shortlist session, re-read directly here."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:34 PM'; all values unchanged. Business phone on record (415) 866-8401."
     },
     "S57": {
       "label": "CSLB License Detail #841229 — Manny's Plumbing & Rooter",
@@ -635,9 +639,9 @@
       "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
       "tier": "official",
       "status": "verified",
-      "checked": "2026-11-07",
+      "checked": "2026-11-08",
       "supports": "Business name, 41 Midvale Drive Daly City CA 94015, sole ownership, issued 2004-06-21, expires 2028-06-30, C-36 + B classifications, $25,000 bond, workers'-compensation exemption",
-      "note": "Record printed 'Data current as of 11/7/2026 12:46:25 PM'. Daly City address — service area to be confirmed. Added from the concurrent shortlist session, re-read directly here."
+      "note": "Re-read 2026-11-08: record printed 'Data current as of 11/8/2026 2:55:34 PM'; all values unchanged. Business phone on record (650) 207-5733. Daly City address — service area to be confirmed."
     },
     "S58": {
       "label": "Shortlist — who can do the plumbing and the drywall",
@@ -688,6 +692,166 @@
       "checked": "2026-11-07",
       "supports": "Removed from all active citations",
       "note": "HTTP 500 on 2026-11-07. Not linked from any table row; retained here as a labeled documentation row."
+    },
+    "S61": {
+      "label": "CSLB License Detail #1025814 — The Genteel Plumbers Inc",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Corporation, 1181 Revere Ave, San Francisco, CA 94124, business phone (833) 436-8335; issued 2017-04-14, expires 2027-04-30; current and active; C-36 Plumbing + B General Building; $25,000 bond (American Contractors Indemnity, eff. 2023-01-01); workers' compensation insured (Technology Insurance Co., 2026-01-24 → 2027-01-24); no complaint-disclosure or additional-status line",
+      "note": "Record printed 'Data current as of 11/8/2026 2:56:58 PM'. Candidate first identified by the sf-overflow-audit session; read directly here before inclusion."
+    },
+    "S62": {
+      "label": "CSLB License Detail #995163 — Bernal Hill Drywall Inc",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Corporation, 720 Anderson St, San Francisco, CA 94110, business phone (415) 533-8274; issued 2014-07-28, expires 2028-07-31; current and active; C-9 Drywall + B General Building; $25,000 bond; workers' compensation insured (Endurance Assurance, 2026-03-10 → 2027-03-10, class 5447 wallboard installation); no disclosure line",
+      "note": "Record printed 'Data current as of 11/8/2026 2:58:18 PM'. Drywall specialist — not a plumbing candidate; listed as a ceiling-restoration partner option."
+    },
+    "S63": {
+      "label": "CSLB License Detail #1009195 — Advanced Plumbing and Drain Inc",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Corporation, 3450 Sacramento St 204, San Francisco, CA 94118, business phone (415) 744-4944; expires 2027-11-30; current and active; C-36 only; Additional Status printed verbatim: 'The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.'; workers' comp insured (Hartford, 2026-08-21 → 2027-08-21)",
+      "note": "Record printed 'Data current as of 11/8/2026 2:58:23 PM'. Screened out of the ranking because of the official notice; reported verbatim, no interpretation."
+    },
+    "S64": {
+      "label": "CSLB — B General Building classification (B&P §7057)",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "§7057(b): a general building contractor shall not take a prime contract for a project involving trades other than framing or carpentry unless it requires at least two unrelated trades, or unless the contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor",
+      "note": "Read directly on cslb.ca.gov, 2026-11-08. Basis for weighting B + C-36 on one license as the single-provider criterion."
+    },
+    "S65": {
+      "label": "CSLB — C-9 Drywall classification",
+      "publisher": "Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "A drywall contractor lays out and installs gypsum wall board and assemblies and performs taping and texturing (16 CCR Div. 8 Art. 3)",
+      "note": "Read directly on cslb.ca.gov, 2026-11-08."
+    },
+    "S66": {
+      "label": "Genteel Plumbers — official site",
+      "publisher": "The Genteel Plumbers Inc",
+      "url": "https://www.genteelplumbers.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Company states: office at 1181 Revere Avenue, San Francisco (matches CSLB); phone 415-465-5853; dispatch fee $149 applied to the cost of services; same-day service in San Francisco and San Mateo County; does not cross the Golden Gate or Bay Bridge and does not serve the Financial District; founded 2016 by Graham W. Jones",
+      "note": "Read directly. Company self-description is not independent verification; the license number was not printed on the fetched home page — license facts come from CSLB #1025814. Phone differs from the CSLB record — flagged."
+    },
+    "S67": {
+      "label": "Rapid Flow Plumbing & Rooter — official site",
+      "publisher": "Rapid Flow Plumbing & Rooter Inc",
+      "url": "https://www.rapidflowbayarea.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Company prints 'CA License #1115649 · B General Building · C-36 Plumbing', 230 Edinburgh St, San Francisco 94112, phones 844-BAY-FLOW and (415) 866-8401; lists general contracting (remodels, renovations), leak detection and repair, 'residential and commercial expertise', 'fully bonded'",
+      "note": "Read directly. Company self-description is not independent verification; license, address and phone match CSLB #1115649."
+    },
+    "S68": {
+      "label": "Manny's Plumbing & Rooters — official site",
+      "publisher": "Manny's Plumbing & Rooter",
+      "url": "https://www.mannysplumbingandremodeling.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Company prints 'License # 841229', 'C-36 Plumbing / General B - Insured & Bonded'; services include tub install, drain clean and drain replacement, kitchen and bathroom remodeling, residential and commercial; serves nine San Mateo County cities 'and surrounding areas of San Mateo & San Francisco Counties'",
+      "note": "Read directly. 'Insured' is a company statement; the CSLB record shows a workers'-compensation exemption ('no employees') — flagged for a certificate request."
+    },
+    "S69": {
+      "label": "General SF — Building services page",
+      "publisher": "General SF",
+      "url": "https://generalsf.com/building",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Building page lists 'Sheetrock/Tape and Texture' and 'Rough and Finish Plumbing' among services; footer prints 'CSLB. 959843' and phone (650)-303-1515",
+      "note": "Read directly. Company self-description is not independent verification; license and phone match CSLB #959843."
+    },
+    "S70": {
+      "label": "Handyman Heroes — Handyman services page",
+      "publisher": "Handyman Heroes Inc",
+      "url": "https://www.handymanhero.es/handyman-services/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Page states 'sheetrock and wall repairs', 'plumbing and electrical services', service to 'San Francisco homes and apartments', bathroom remodeling including tub and shower upgrades, license #1003394 and phone 1-844-382-4376; lists dated customer testimonials (latest 2026-11-06)",
+      "note": "Read directly. Company self-description and testimonials are not independent verification; license and phone match CSLB #1003394."
+    },
+    "S71": {
+      "label": "Yelp — Genteel Plumbers (two listings)",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-08",
+      "supports": "Search-result snapshot 2026-11-08: listing '-7' shows 4.7 ★ (519 reviews) at 1314 22nd Ave Ste 007, phone (415) 598-0562; a second listing '-8' shows 4.6 ★ (17 reviews) at 1181 Revere Ave, phone (415) 484-3631",
+      "note": "Direct page fetch returned HTTP 403 on 2026-11-08; values come from Yelp search-result text and are third-party, point-in-time and unverified. Two listings for one company — flagged."
+    },
+    "S72": {
+      "label": "Yelp — Ace Plumbing & Rooter",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-08",
+      "supports": "Search-result snapshot 2026-11-08: 4.7 ★ with 1.4k–1.5k reviews, 'Verified License', 'Serving San Francisco and the Surrounding Area'",
+      "note": "Direct page fetch is blocked (HTTP 403); values are third-party and unverified. 'Verified License' is a platform badge, not CSLB verification."
+    },
+    "S73": {
+      "label": "Yelp — Manny's Plumbing & Rooters",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-08",
+      "supports": "Search-result snapshot 2026-11-08: 4.7 ★ (175 reviews), 41 Midvale Dr, Daly City, (650) 207-5733; the business's own specialties text lists 'tub and shower valve repair and install' and 'tub overflow repair and replacement'; 'Bathtub repair' appears under services 'Verified by Business'",
+      "note": "Direct page fetch is blocked (HTTP 403); values are third-party and unverified. The specialties text is the business's own description on the platform."
+    },
+    "S74": {
+      "label": "Yelp — Rapid Flow Plumbing (search)",
+      "publisher": "Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&find_loc=San+Francisco%2C+CA",
+      "tier": "platform",
+      "status": "blocked-403",
+      "checked": "2026-11-08",
+      "supports": "Prior-session snapshot 2026-11-07: 5.0 ★ (8 reviews); not re-seen in 2026-11-08 search results",
+      "note": "Direct fetch blocked (HTTP 403). Third-party, thin evidence (8 reviews) — treated as a low score on the review criterion, not as verification."
+    },
+    "S75": {
+      "label": "GitHub Actions — Pages run 42413503253 for main @ 1faccdc (deploy failed)",
+      "publisher": "GitHub (this repository)",
+      "url": "https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "'pages build and deployment' for commit 1faccdc: build job success, deploy job failure; deployment 7626930247 went in_progress 2026-11-07T20:57:32Z and failure at 21:08:10Z",
+      "note": "Checked with gh run view / gh api on 2026-11-08. The live site kept serving the previous successful deploy (08fa03b). Re-triggered by this session's merge."
+    },
+    "S76": {
+      "label": "Open PR #42 (stale parallel session)",
+      "publisher": "GitHub",
+      "url": "https://github.com/karagemop466-tech/Korea7/pull/42",
+      "tier": "primary",
+      "status": "verified",
+      "checked": "2026-11-08",
+      "supports": "Open, mergeable=CONFLICTING, last updated 2026-11-08T20:41:27Z, branch arena/7e5f723c-korea7, overlaps the root dashboard pages",
+      "note": "Checked with gh pr list on 2026-11-08. Not merged, closed or edited by this session (owned by another session). Four older GEMS-era PRs (#20, #18, #15, #2) are also open and conflicting."
     }
   },
   "tables": {
@@ -1092,9 +1256,9 @@
             "C-36 Plumbing",
             "<span class=\"pill ok\">current and active</span><br>expires 2028-10-31",
             "Insured, policy effective 2026-07-19 → 2027-07-19; $25,000 bond",
-            "1465 44th Avenue, San Francisco, CA 94122",
+            "1465 44th Avenue, San Francisco, CA 94122<br><small>Tel on CSLB record: (415) 531-5340</small>",
             "Quoted the full waste-and-overflow scope; C-36 covers plumbing work",
-            "<span class=\"pill ok\">CSLB verified</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span>"
           ],
           "src": [
             "S06",
@@ -1109,9 +1273,9 @@
             "C-36 Plumbing",
             "<span class=\"pill ok\">current and active</span><br>expires 2027-01-31",
             "<span class=\"pill warn\">exempt — “no employees at this time”</span>; $25,000 bond",
-            "335 14th Avenue, San Francisco, CA 94118",
+            "335 14th Avenue, San Francisco, CA 94118<br><small>Tel on CSLB record: (415) 668-8000</small>",
             "Quoted lever + spout/diverter scope; C-36 covers plumbing work",
-            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">WC exemption flagged</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">WC exemption flagged</span>"
           ],
           "src": [
             "S07",
@@ -1126,9 +1290,9 @@
             "C-36 Plumbing",
             "<span class=\"pill ok\">current and active</span><br>expires 2027-03-31",
             "Insured, policy effective 2025-12-18 → <span class=\"pill warn\">expires 2026-12-18</span>; $25,000 bond",
-            "236 W POTRAL AVE #459, San Francisco, CA 94127",
+            "236 W POTRAL AVE #459, San Francisco, CA 94127<br><small>Tel on CSLB record: (415) 596-6115</small>",
             "Quoted the adjustment scope; site states service to apartments, HOAs and property managers",
-            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">address mismatch flagged</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">address mismatch flagged</span>"
           ],
           "src": [
             "S08",
@@ -1143,9 +1307,9 @@
             "B General Building · C-10 Electrical · C-36 Plumbing",
             "<span class=\"pill ok\">current and active</span><br>expires 2027-04-30",
             "<span class=\"pill warn\">exempt — “no employees at this time”</span>; $25,000 bond",
-            "3624 Irving Street Ste A, San Francisco, CA 94122",
+            "3624 Irving Street Ste A, San Francisco, CA 94122<br><small>Tel on CSLB record: (650) 303-1515</small>",
             "One license lists both building and plumbing classifications — matches the single-provider requirement",
-            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">WC exemption flagged</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">WC exemption flagged</span>"
           ],
           "src": [
             "S09",
@@ -1160,9 +1324,9 @@
             "B General Building · C-36 Plumbing",
             "<span class=\"pill ok\">current and active</span><br>expires 2027-05-31",
             "Insured, policy effective 2026-04-25 → 2027-04-25; $25,000 bond",
-            "912 Cole St # 202, San Francisco, CA 94117",
+            "912 Cole St # 202, San Francisco, CA 94117<br><small>Tel on CSLB record: (844) 382-4376</small>",
             "One license lists building + plumbing; official CSLB complaint disclosure exists",
-            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">disclosure flagged</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">disclosure flagged</span>"
           ],
           "src": [
             "S10",
@@ -1172,14 +1336,14 @@
         },
         {
           "cells": [
-            "<strong>Ace Plumbing &amp; Rooter Inc</strong><br><a href=\"https://www.aceplumbingandrooter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a>",
+            "<strong>Ace Plumbing &amp; Rooter Inc</strong><br><a href=\"https://www.aceplumbingandrooter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
             "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">#829071</a>",
             "A · B · C-4 · C-10 · C-16 · C-36",
             "<span class=\"pill ok\">current and active</span><br>expires 2027-06-30",
             "Insured, policy effective 2026-07-13 → 2027-07-13; $25,000 bond",
-            "1090 Bryant Street, San Francisco, CA 94103-4417",
+            "1090 Bryant Street, San Francisco, CA 94103-4417<br><small>Tel on CSLB record: (415) 824-6444</small>",
             "Broadest verified classification set including B + C-36; site describes HOA/property-manager service",
-            "<span class=\"pill ok\">CSLB verified</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span>"
           ],
           "src": [
             "S11",
@@ -1189,14 +1353,14 @@
         },
         {
           "cells": [
-            "<strong>Rapid Flow Plumbing &amp; Rooter Inc</strong><br><a href=\"shortlist.html\">shortlist</a>",
+            "<strong>Rapid Flow Plumbing &amp; Rooter Inc</strong><br><a href=\"https://www.rapidflowbayarea.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a> · <a href=\"shortlist.html\">shortlist</a>",
             "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\">#1115649</a>",
             "B General Building · C-36 Plumbing",
             "<span class=\"pill ok\">current and active</span><br>expires 2028-01-31",
             "<span class=\"pill warn\">exempt — “no employees at this time”</span>; $25,000 bond",
-            "230 Edinburgh St, San Francisco, CA 94112",
+            "230 Edinburgh St, San Francisco, CA 94112<br><small>Tel on CSLB record: (415) 866-8401</small>",
             "One license lists building + plumbing; added from the concurrent shortlist session and re-verified here",
-            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">WC exemption flagged</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">WC exemption flagged</span>"
           ],
           "src": [
             "S56",
@@ -1206,30 +1370,81 @@
         },
         {
           "cells": [
-            "<strong>Manny's Plumbing &amp; Rooter</strong><br><a href=\"shortlist.html\">shortlist</a>",
+            "<strong>Manny's Plumbing &amp; Rooter</strong><br><a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a> · <a href=\"shortlist.html\">shortlist</a>",
             "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\">#841229</a>",
             "C-36 Plumbing · B General Building",
             "<span class=\"pill ok\">current and active</span><br>expires 2028-06-30",
             "<span class=\"pill warn\">exempt — “no employees at this time”</span>; $25,000 bond",
-            "41 Midvale Drive, Daly City, CA 94015",
+            "41 Midvale Drive, Daly City, CA 94015<br><small>Tel on CSLB record: (650) 207-5733</small>",
             "One license lists plumbing + building; address is outside San Francisco proper — confirm service area",
-            "<span class=\"pill ok\">CSLB verified</span> <span class=\"pill warn\">service area flagged</span>"
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">service area flagged</span>"
           ],
           "src": [
             "S57",
             "S05",
             "S58"
           ]
+        },
+        {
+          "cells": [
+            "<strong>The Genteel Plumbers Inc</strong><br><a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a> · <a href=\"https://www.yelp.com/biz/genteel-plumbers-san-francisco-7\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp</a>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\">#1025814</a>",
+            "C-36 Plumbing · B General Building",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-04-30",
+            "Insured, policy effective 2026-01-24 → 2027-01-24; $25,000 bond",
+            "1181 Revere Ave, San Francisco, CA 94124<br><small>Tel on CSLB record: (833) 436-8335</small>",
+            "One license lists plumbing + building and workers' comp is insured; company site confirms the Revere Ave office, states a $149 dispatch fee credited to the work, and says it does not serve the Financial District; company phone differs from the CSLB record",
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill warn\">phone mismatch flagged</span>"
+          ],
+          "src": [
+            "S61",
+            "S66",
+            "S05",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>Bernal Hill Drywall Inc</strong> — drywall partner option, not a plumber",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163\" target=\"_blank\" rel=\"noopener noreferrer\">#995163</a>",
+            "C-9 Drywall · B General Building",
+            "<span class=\"pill ok\">current and active</span><br>expires 2028-07-31",
+            "Insured, policy effective 2026-03-10 → 2027-03-10 (class 5447 wallboard); $25,000 bond",
+            "720 Anderson St, San Francisco, CA 94110<br><small>Tel on CSLB record: (415) 533-8274</small>",
+            "No plumbing classification — cannot do the trip-lever work; listed only as a licensed, insured ceiling cut/patch/finish partner if a C-36-only plumber is chosen",
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill info\">not a plumbing candidate</span>"
+          ],
+          "src": [
+            "S62",
+            "S65",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>Advanced Plumbing and Drain Inc</strong> — screened out",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195\" target=\"_blank\" rel=\"noopener noreferrer\">#1009195</a>",
+            "C-36 Plumbing",
+            "<span class=\"pill ok\">current and active</span><br>expires 2027-11-30<br><span class=\"pill bad\">official notice: may be suspended at a future date</span>",
+            "Insured, policy effective 2026-08-21 → 2027-08-21; $25,000 bond",
+            "3450 Sacramento St 204, San Francisco, CA 94118<br><small>Tel on CSLB record: (415) 744-4944</small>",
+            "Excluded from the ranking: the CSLB record carries an 'Additional Status' notice about an unresolved final liability (quoted verbatim on the source ledger); C-36 only",
+            "<span class=\"pill ok\">CSLB verified 2026-11-08</span> <span class=\"pill bad\">screened out</span>"
+          ],
+          "src": [
+            "S63",
+            "S05"
+          ]
         }
       ],
-      "caption": "Every license fact (status, classifications, expiry, bond, workers' compensation, address) was read from the linked official CSLB License Detail page on 2026-11-07; each record printed a 'Data current as of 11/7/2026' stamp. The Analysis column is this site's reasoning from those verified classifications — not a vendor promise and not a finding that any firm can perform this specific repair. C-36 definition: <a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB C-36</a>. Re-check any license at <a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB Check a License</a> on the hire date."
+      "caption": "Every license fact (status, classifications, expiry, bond, workers' compensation, address, business phone) was read from the linked official CSLB License Detail page; the first eight records were read on 2026-11-07 and re-read on 2026-11-08 with no changes, and the last three were read on 2026-11-08 — each record printed a 'Data current as of 11/8/2026' stamp. Phone numbers are the business phone printed on the CSLB record; company-site or platform phones that differ are flagged. The Analysis column is this site's reasoning from those verified classifications — not a vendor promise and not a finding that any firm can perform this specific repair. C-36 definition: <a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB C-36</a>. Re-check any license at <a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB Check a License</a> on the hire date."
     },
     "review_snapshots": {
       "title": "Review-platform snapshots (not independently verified)",
       "columns": [
         "Candidate",
         "Prior-session Yelp snapshot (2026-11-06)",
-        "Re-check 2026-11-07",
+        "Re-check 2026-11-07 / 2026-11-08 (search-result text only)",
         "Official license source",
         "Status",
         "Source"
@@ -1265,7 +1480,7 @@
           "cells": [
             "Fast Response Plumbing &amp; Rooter",
             "4.8 ★ (906 reviews)",
-            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "2026-11-08 search-result text: 4.8 ★ (870) <span class=\"pill warn\">third-party, unverified</span>",
             "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1024971</a>",
             "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
           ],
@@ -1302,6 +1517,58 @@
         },
         {
           "cells": [
+            "Ace Plumbing &amp; Rooter Inc",
+            "4.7 ★ (1.4k reviews)",
+            "2026-11-08 search-result text: 4.7 ★ (1.5k) <span class=\"pill warn\">third-party, unverified</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #829071</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S72",
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "The Genteel Plumbers Inc",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> (not in the 2026-11-06 snapshot)",
+            "2026-11-08 search-result text: listing '-7' 4.7 ★ (519); listing '-8' 4.6 ★ (17) <span class=\"pill warn\">two listings — flagged</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1025814</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S71",
+            "S61"
+          ]
+        },
+        {
+          "cells": [
+            "Manny's Plumbing &amp; Rooters",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> (not in the 2026-11-06 snapshot)",
+            "2026-11-08 search-result text: 4.7 ★ (175); business's own specialties text lists 'tub overflow repair and replacement' <span class=\"pill warn\">third-party, unverified</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #841229</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S73",
+            "S57"
+          ]
+        },
+        {
+          "cells": [
+            "Rapid Flow Plumbing &amp; Rooter Inc",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> (not in the 2026-11-06 snapshot)",
+            "2026-11-07 shortlist-session snapshot: 5.0 ★ (8); not re-seen 2026-11-08 <span class=\"pill warn\">thin evidence</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1115649</a>",
+            "<span class=\"pill warn\">platform snapshot — not re-verified</span>"
+          ],
+          "src": [
+            "S74",
+            "S56"
+          ]
+        },
+        {
+          "cells": [
             "Szeto Plumbing and Handyman (Daly City)",
             "4.8 ★ (89 reviews)",
             "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
@@ -1327,7 +1594,7 @@
           ]
         }
       ],
-      "caption": "Yelp blocks automated access with HTTP 403 in this environment, so no rating could be confirmed from the platform on 2026-11-07. The left column reproduces a 2026-11-06 snapshot recorded by an earlier session; the re-check column is blank and flagged. Review counts change daily. Platform badges and company aggregates are not CSLB license verification. See the Flagged for Review page."
+      "caption": "Yelp blocks direct page access with HTTP 403 in this environment, so no rating could be confirmed from a listing page on 2026-11-07 or 2026-11-08. The left column reproduces a 2026-11-06 snapshot recorded by an earlier session; the re-check column is blank where nothing new was seen and otherwise quotes Yelp search-result text captured on 2026-11-08 — third-party, point-in-time and unverified. Review counts change daily. Platform badges and company aggregates are not CSLB license verification. See the Flagged for Review page."
     },
     "platforms": {
       "title": "Where to look for reviews of this specific work in San Francisco",
@@ -2048,8 +2315,8 @@
         {
           "cells": [
             "F04",
-            "All eight verified candidates hold active CSLB licenses checked 2026-11-07",
-            "Eight official License Detail pages each print 'current and active'",
+            "All nine plumbing candidates hold active CSLB licenses, re-verified 2026-11-08 with no changes since 2026-11-07",
+            "Nine official License Detail pages each print 'current and active' and a 'Data current as of 11/8/2026' stamp; the ninth (#1025814) was added on 2026-11-08",
             "<span class=\"pill ok\">verified</span>"
           ],
           "src": [
@@ -2060,7 +2327,8 @@
             "S10",
             "S11",
             "S56",
-            "S57"
+            "S57",
+            "S61"
           ]
         },
         {
@@ -2144,16 +2412,74 @@
           "cells": [
             "F11",
             "Recommended shortlist order: firms whose verified classes cover both building and plumbing first",
-            "Five verified B + C-36 licenses: <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">#829071</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">#959843</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">#1003394</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\">#1115649</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\">#841229</a>",
+            "Six verified B + C-36 licenses: <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">#829071</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\">#1025814</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">#1003394</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">#959843</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\">#841229</a>, <a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\">#1115649</a>; B&amp;P §7057(b) is why one license covering both trades matters",
             "<span class=\"pill info\">recommendation</span>"
           ],
           "src": [
             "S11",
-            "S09",
+            "S61",
             "S10",
-            "S56",
+            "S09",
             "S57",
+            "S56",
+            "S64",
             "S58"
+          ]
+        },
+        {
+          "cells": [
+            "F12",
+            "Decision ranking (1–9): Ace, Genteel, Handyman Heroes, General SF, Manny's, Rapid Flow, then the three C-36-only firms Fast Response, Expert, Bay Area",
+            "Weighted score out of 100 over seven published criteria (license coverage 30, workers' comp 15, official record 15, address 10, cost evidence 10, company-page statements 10, review snapshot 10); every input is cited on the <a href=\"ranking.html\">Decision ranking</a> page",
+            "<span class=\"pill info\">analysis</span> <span class=\"pill warn\">weights are this site's own; no provider contacted</span>"
+          ],
+          "src": [
+            "S11",
+            "S61",
+            "S10",
+            "S09",
+            "S57",
+            "S56",
+            "S08",
+            "S06",
+            "S07",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "F13",
+            "One C-36-only candidate carries an official CSLB notice and was screened out",
+            "CSLB #1009195 prints 'The license may be suspended at a future date for failure to resolve an outstanding final liability…' (quoted verbatim, no interpretation)",
+            "<span class=\"pill ok\">verified on CSLB</span> <span class=\"pill bad\">screened out</span>"
+          ],
+          "src": [
+            "S63"
+          ]
+        },
+        {
+          "cells": [
+            "F14",
+            "Genteel's phone and Yelp presence are inconsistent across sources",
+            "CSLB business phone (833) 436-8335; company site 415-465-5853; Yelp shows two listings with two more numbers and two addresses",
+            "<span class=\"pill warn\">irregularity — flagged</span>"
+          ],
+          "src": [
+            "S61",
+            "S66",
+            "S71"
+          ]
+        },
+        {
+          "cells": [
+            "F15",
+            "The previous main deploy (1faccdc) failed at the deploy step while the build succeeded; the live site kept serving the prior deploy",
+            "GitHub Actions run 42413503253: build success, deploy failure 2026-11-07T21:08:10Z; resolved by re-deploying from this session's merge (see Verification)",
+            "<span class=\"pill warn\">irregularity — flagged</span>"
+          ],
+          "src": [
+            "S75",
+            "S45"
           ]
         }
       ],
@@ -2242,14 +2568,17 @@
         {
           "cells": [
             "U06",
-            "Workers'-compensation exemptions on #757796 and #959843",
-            "Both CSLB records state the licensee certified 'no employees at this time'",
-            "Confirm in writing who will be on site and what coverage applies to the crew",
+            "Workers'-compensation exemptions on #757796, #959843, #1115649 and #841229",
+            "All four CSLB records state the licensee certified 'no employees at this time' (re-read 2026-11-08); Manny's company site nevertheless says 'Insured &amp; Bonded'",
+            "Confirm in writing who will be on site and what coverage applies to the crew; request a certificate of insurance",
             "<span class=\"pill warn\">verified fact / needs review</span>"
           ],
           "src": [
             "S07",
-            "S09"
+            "S09",
+            "S56",
+            "S57",
+            "S68"
           ]
         },
         {
@@ -2359,6 +2688,21 @@
         },
         {
           "cells": [
+            "U15",
+            "Job-specific capability, tenant-occupied experience and service-area confirmation",
+            "CSLB verifies license classes, not the ability to perform this specific delicate repair; company sites and reviews are self- or customer statements",
+            "Ask each shortlisted firm for references on concealed waste-and-overflow work in occupied units",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S04",
+            "S24",
+            "S40",
+            "S43"
+          ]
+        },
+        {
+          "cells": [
             "U16",
             "Yelp “Verified License” badges are third-party",
             "A platform badge is not CSLB verification; Yelp returned HTTP 403 on re-check",
@@ -2426,17 +2770,99 @@
         },
         {
           "cells": [
-            "U15",
-            "Job-specific capability, tenant-occupied experience and service-area confirmation",
-            "CSLB verifies license classes, not the ability to perform this specific delicate repair; company sites and reviews are self- or customer statements",
-            "Ask each shortlisted firm for references on concealed waste-and-overflow work in occupied units",
-            "<span class=\"pill warn\">UNVERIFIED</span>"
+            "U21",
+            "Previous Pages deploy of main failed",
+            "Run 42413503253 for main @ 1faccdc: build success, deploy failure (2026-11-07T21:08:10Z); the live site kept serving the earlier deploy 08fa03b",
+            "Re-deploy from the next merge to main and confirm the Actions run and the deployment status both succeed — recorded on the Verification page and the coordination board",
+            "<span class=\"pill warn\">irregularity</span>"
           ],
           "src": [
-            "S04",
-            "S24",
-            "S40",
-            "S43"
+            "S75",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "U22",
+            "Genteel Plumbers phone and Yelp listings inconsistent",
+            "CSLB #1025814 business phone (833) 436-8335; company site prints 415-465-5853; Yelp shows two listings (4.7 ★/519 at 1314 22nd Ave with (415) 598-0562, and 4.6 ★/17 at 1181 Revere Ave with (415) 484-3631)",
+            "Call the CSLB-record number first and ask the company which listing and number are current",
+            "<span class=\"pill warn\">irregularity</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S61",
+            "S66",
+            "S71"
+          ]
+        },
+        {
+          "cells": [
+            "U23",
+            "Advanced Plumbing and Drain Inc — official CSLB notice",
+            "CSLB #1009195 prints an 'Additional Status' line stating the license may be suspended at a future date for failure to resolve an outstanding final liability",
+            "Screened out of the ranking; re-read the record before any contact",
+            "<span class=\"pill bad\">irregularity</span>"
+          ],
+          "src": [
+            "S63"
+          ]
+        },
+        {
+          "cells": [
+            "U24",
+            "Five stale open pull requests, all conflicting",
+            "PR #42 (parallel dashboard session, updated 2026-11-08) and GEMS-era PRs #20, #18, #15, #2 are open with mergeable=CONFLICTING; none was merged, closed or edited by this session",
+            "Owners of those branches should rebase onto main or close them; the canonical dashboard is on main",
+            "<span class=\"pill warn\">irregularity</span>"
+          ],
+          "src": [
+            "S76",
+            "S45",
+            "S47"
+          ]
+        },
+        {
+          "cells": [
+            "U25",
+            "Decision ranking is documentation-based",
+            "Weights (30/15/15/10/10/10/10) are this site's own; company-page and review criteria rest on self-statements and third-party snapshots; no provider was contacted, no site visit occurred and no combined plumbing + drywall quote exists",
+            "Treat the ranking as a calling order, not a selection; re-score after written quotes arrive",
+            "<span class=\"pill info\">analysis</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S64",
+            "S11",
+            "S61",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "U26",
+            "Time-sensitive expiries among candidates",
+            "Fast Response workers' comp policy expires 2026-12-18 (#1024971); Bay Area Plumbing license expires 2027-01-31 (#757796); Genteel workers' comp expires 2027-01-24 (#1025814)",
+            "Re-read each CSLB record on the hire date and request a current certificate of insurance",
+            "<span class=\"pill ok\">verified on CSLB</span> <span class=\"pill warn\">time-sensitive</span>"
+          ],
+          "src": [
+            "S08",
+            "S07",
+            "S61"
+          ]
+        },
+        {
+          "cells": [
+            "U27",
+            "Review-platform figures are search-result text, not listing pages",
+            "Every 2026-11-08 review figure (Ace 4.7/1.5k, Genteel 4.7/519, Manny's 4.7/175, Fast Response 4.8/870) was read from Yelp search-result text because listing pages return HTTP 403",
+            "Open each linked listing manually on the decision date",
+            "<span class=\"pill warn\">third-party</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S72",
+            "S71",
+            "S73",
+            "S34"
           ]
         }
       ],
@@ -2526,13 +2952,62 @@
         },
         {
           "cells": [
-            "Open PR",
-            "PR #32 from a parallel session is open and conflicting",
-            "Checked with gh; not merged, not closed, not edited",
+            "Open PRs",
+            "PR #32 (parallel session) was open and conflicting on 2026-11-07; on 2026-11-08 PR #42 (parallel dashboard session) plus GEMS-era #20, #18, #15 and #2 are open, all mergeable=CONFLICTING",
+            "Checked with gh pr list on 2026-11-07 and 2026-11-08; none merged, closed or edited by either integration session",
             "<span class=\"pill warn\">needs review</span>"
           ],
           "src": [
-            "S52"
+            "S52",
+            "S76"
+          ]
+        },
+        {
+          "cells": [
+            "Pages deploy history",
+            "The 2026-11-07 merge of PR #46 → main @ 1faccdc built successfully but its deploy job failed after about 11 minutes; GitHub kept serving the previous deploy (08fa03b) and the Pages API reported status 'errored'",
+            "Checked with gh run view 42413503253 and gh api repos/…/pages on 2026-11-08; job logs could not be downloaded from this sandbox",
+            "<span class=\"pill warn\">irregularity — re-deployed by this session</span>"
+          ],
+          "src": [
+            "S75",
+            "S45"
+          ]
+        },
+        {
+          "cells": [
+            "Re-verification 2026-11-08",
+            "All eight CSLB records cited on 2026-11-07 were re-read on 2026-11-08 (stamp 'Data current as of 11/8/2026'): no change in status, classifications, expiry, bond, workers' comp or address; three further records (#1025814, #995163, #1009195) were read and added; sf.gov, CSLB classification pages and B&amp;P §7048 re-read unchanged",
+            "Per-source dates and notes are on the Sources page; the Verification page's checks were re-run after the content update",
+            "<span class=\"pill ok\">re-verified</span>"
+          ],
+          "src": [
+            "S06",
+            "S07",
+            "S08",
+            "S09",
+            "S10",
+            "S11",
+            "S56",
+            "S57",
+            "S61",
+            "S62",
+            "S63",
+            "S01",
+            "S13"
+          ]
+        },
+        {
+          "cells": [
+            "Decision ranking page",
+            "No formal scored ranking existed: shortlist.html lists dual-classified firms without weights or cost explanations and the findings table gave an unscored order",
+            "ranking.html was added, generated from the same data file as every other page; its criteria, weights, scores and cost notes are in tables with source links and its limitations are flagged (U25)",
+            "<span class=\"pill ok\">added 2026-11-08</span>"
+          ],
+          "src": [
+            "S58",
+            "S64",
+            "S45"
           ]
         },
         {
@@ -2585,6 +3060,560 @@
       ],
       "caption": "Repo review was performed by reading the files in the checkout and querying the GitHub API. Links point to the repository files and Pages site for manual review. Irregularities are also published on the Flagged for Review page."
     },
+    "ranking_criteria": {
+      "title": "Ranking criteria and weights (this site's own decision model)",
+      "columns": [
+        "ID",
+        "Criterion",
+        "Weight",
+        "Scoring rule",
+        "Why it matters (basis)",
+        "Input quality",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "C1",
+            "Both trades on one license",
+            "30",
+            "B General Building + C-36 Plumbing on the same CSLB record = 30 · C-36 only = 5 · no C-36 = not ranked",
+            "The brief asks for one provider covering plumbing and drywall. B&amp;P §7057(b) limits a general building contractor's prime contracts to projects with two or more unrelated trades unless it holds the specialty classification or subcontracts it; C-36 covers the trip-lever work itself",
+            "<span class=\"pill ok\">official basis</span>"
+          ],
+          "src": [
+            "S64",
+            "S05",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "C2",
+            "Workers' compensation on record",
+            "15",
+            "Insured policy on the CSLB record = 15 · exemption 'no employees' = 5",
+            "Work in an occupied building with a ceiling opening is more than a one-person task; an exemption means any helper on site is not covered by a policy CSLB knows about",
+            "<span class=\"pill ok\">official basis</span>"
+          ],
+          "src": [
+            "S04",
+            "S07",
+            "S09",
+            "S56",
+            "S57"
+          ]
+        },
+        {
+          "cells": [
+            "C3",
+            "Official record",
+            "15",
+            "No disclosure or additional-status line = 15 · complaint disclosure only (B&amp;P §7124.6) = 7 · suspension notice = 0 and screened out",
+            "Read verbatim from CSLB; the 2020 disclosure on #1003394 is reported, not interpreted",
+            "<span class=\"pill ok\">official basis</span>"
+          ],
+          "src": [
+            "S12",
+            "S10",
+            "S63"
+          ]
+        },
+        {
+          "cells": [
+            "C4",
+            "Address on record",
+            "10",
+            "San Francisco address on the CSLB record = 10 · adjacent (Daly City) = 7",
+            "Proximity for a repeat-visit job (above attempt, below access, patch, finish, water test) in a tenant-occupied unit",
+            "<span class=\"pill ok\">official basis</span>"
+          ],
+          "src": [
+            "S06",
+            "S57",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "C5",
+            "Cost evidence for this job",
+            "10",
+            "Owner-held quote for the full waste-and-overflow scope = 10 · quote for a different scope = 8 · adjust-only quote = 4 · published dispatch fee only = 3 · nothing = 0",
+            "Rewards firms whose price for this job is at least partly known; quote amounts are owner-provided and unverified, so this criterion scores the existence and scope of evidence, not its accuracy",
+            "<span class=\"pill warn\">owner-provided inputs</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S44",
+            "S66",
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "C6",
+            "Company-page statements",
+            "10",
+            "Page states apartments / HOAs / property managers = 10 · states residential + commercial = 5 · page read, trades listed, no occupancy statement = 3 · no page = 0",
+            "Closest available proxy for occupied-unit experience; every value is a self-statement and is labeled as such",
+            "<span class=\"pill warn\">company statements</span>"
+          ],
+          "src": [
+            "S40",
+            "S43",
+            "S70",
+            "S39",
+            "S67",
+            "S68",
+            "S38",
+            "S69",
+            "S66"
+          ]
+        },
+        {
+          "cells": [
+            "C7",
+            "Third-party review snapshot",
+            "10",
+            "≥ 4.5 ★ with ≥ 300 reviews = 10 · 100–299 reviews = 8 · fewer than 100 = 4 · none = 0",
+            "Volume-weighted customer feedback; all figures are point-in-time Yelp search-result or prior-session snapshots because listing pages return HTTP 403 — third-party and unverified",
+            "<span class=\"pill warn\">third-party</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S72",
+            "S71",
+            "S36",
+            "S35",
+            "S73",
+            "S74",
+            "S34",
+            "S32",
+            "S33"
+          ]
+        }
+      ],
+      "caption": "Weights sum to 100 and are this site's own judgment for this brief; they are not an official or industry standard. Ties are broken by the first differing criterion in the order C1 → C7. Change the weights and the order can change — see the sensitivity notes below the tables."
+    },
+    "ranking_scores": {
+      "title": "Score sheet — points per criterion (computed from the inputs above)",
+      "columns": [
+        "Rank",
+        "Company",
+        "C1 license (30)",
+        "C2 workers' comp (15)",
+        "C3 record (15)",
+        "C4 address (10)",
+        "C5 cost evidence (10)",
+        "C6 company page (10)",
+        "C7 reviews (10)",
+        "Total / 100",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "1",
+            "Ace Plumbing &amp; Rooter Inc<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">#829071</a>",
+            "30",
+            "15",
+            "15",
+            "10",
+            "0",
+            "10",
+            "10",
+            "<strong>90</strong>"
+          ],
+          "src": [
+            "S11",
+            "S43",
+            "S72",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "2",
+            "The Genteel Plumbers Inc<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\">#1025814</a>",
+            "30",
+            "15",
+            "15",
+            "10",
+            "3",
+            "3",
+            "10",
+            "<strong>86</strong>"
+          ],
+          "src": [
+            "S61",
+            "S66",
+            "S71",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "3",
+            "Handyman Heroes Inc<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">#1003394</a>",
+            "30",
+            "15",
+            "7",
+            "10",
+            "0",
+            "10",
+            "10",
+            "<strong>82</strong>"
+          ],
+          "src": [
+            "S10",
+            "S70",
+            "S36",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "4",
+            "GENERALSF (General SF)<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">#959843</a>",
+            "30",
+            "5",
+            "15",
+            "10",
+            "0",
+            "3",
+            "10",
+            "<strong>73</strong>"
+          ],
+          "src": [
+            "S09",
+            "S69",
+            "S35",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "5",
+            "Manny's Plumbing &amp; Rooters<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\">#841229</a>",
+            "30",
+            "5",
+            "15",
+            "7",
+            "0",
+            "5",
+            "8",
+            "<strong>70</strong>"
+          ],
+          "src": [
+            "S57",
+            "S68",
+            "S73",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "6",
+            "Rapid Flow Plumbing &amp; Rooter Inc<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\">#1115649</a>",
+            "30",
+            "5",
+            "15",
+            "10",
+            "0",
+            "5",
+            "4",
+            "<strong>69</strong>"
+          ],
+          "src": [
+            "S56",
+            "S67",
+            "S74",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "7",
+            "Fast Response Plumbing &amp; Rooter<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">#1024971</a>",
+            "5",
+            "15",
+            "15",
+            "10",
+            "4",
+            "10",
+            "10",
+            "<strong>69</strong>"
+          ],
+          "src": [
+            "S08",
+            "S40",
+            "S34",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "8",
+            "Expert Plumbing Solutions<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">#977638</a>",
+            "5",
+            "15",
+            "15",
+            "10",
+            "10",
+            "3",
+            "4",
+            "<strong>62</strong>"
+          ],
+          "src": [
+            "S06",
+            "S38",
+            "S32",
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "9",
+            "Bay Area Plumbing<br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\">#757796</a>",
+            "5",
+            "5",
+            "15",
+            "10",
+            "8",
+            "5",
+            "8",
+            "<strong>56</strong>"
+          ],
+          "src": [
+            "S07",
+            "S39",
+            "S33",
+            "S64"
+          ]
+        }
+      ],
+      "caption": "Each cell shows the points awarded under the rule in the criteria table. Inputs: CSLB License Detail pages (C1–C4), the owner's brief and company pricing statements (C5), company pages (C6) and review snapshots (C7). C5–C7 rest on owner-provided, self-stated or third-party inputs and are flagged as such."
+    },
+    "ranking": {
+      "title": "Decision ranking — best choice first, with reasoning and cost per rank",
+      "columns": [
+        "Rank",
+        "Company · CSLB license · phone on record",
+        "Score",
+        "Why this rank",
+        "Cost position for this job",
+        "Caveats",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "<strong>1</strong>",
+            "<strong>Ace Plumbing &amp; Rooter Inc</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #829071</a> · <a href=\"https://www.aceplumbingandrooter.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (415) 824-6444</small><br><span class=\"pill ok\">B + C-36 on one license</span>",
+            "<strong>90</strong> / 100",
+            "Only candidate with the full set: B + C-36 (plus A, C-4, C-10, C-16) on one current license, an insured workers'-comp policy to 2027-07-13, a clean record, a San Francisco address, a company page that names HOAs and property managers, and the largest review volume in the set (4.7 ★, 1.4–1.5k, third-party).",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Benchmarks: drain replacement $500–$1,020 (avg $700), new drywall ≈ $2,100 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>); leak repair $150–$600 plus $300–$930 drywall/tile follow-up (<a href=\"https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
+            "Capability for this specific concealed repair is unverified (U15); Yelp figures are search-result text (U27). Ask for a single written scope covering above-attempt, below access, ceiling patch/finish and a water test."
+          ],
+          "src": [
+            "S11",
+            "S43",
+            "S72",
+            "S64",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>2</strong>",
+            "<strong>The Genteel Plumbers Inc</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1025814</a> · <a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (833) 436-8335 (CSLB) · 415-465-5853 (company site)</small><br><span class=\"pill ok\">B + C-36 on one license</span>",
+            "<strong>86</strong> / 100",
+            "B + C-36 on one license, insured workers' comp (to 2027-01-24), clean record and a San Francisco office. The company publishes its pricing model — a $149 dispatch fee credited to the work — which is the only published price evidence among the dual-classified firms. Loses points because its page makes no occupied-unit statement.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Company states a $149 dispatch fee applied to the cost of services and flat-rate pricing (<a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">company statement</a>). Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
+            "Phone differs between CSLB and the company site, and Yelp shows two listings (U22); the company says it does not serve the Financial District (<a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a>). If only the 17-review Yelp listing is current, C7 would be 4 and the firm would score 80 (rank 3)."
+          ],
+          "src": [
+            "S61",
+            "S66",
+            "S71",
+            "S64",
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>3</strong>",
+            "<strong>Handyman Heroes Inc</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1003394</a> · <a href=\"https://www.handymanhero.es/handyman-services/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (844) 382-4376</small><br><span class=\"pill ok\">B + C-36 on one license</span>",
+            "<strong>82</strong> / 100",
+            "B + C-36 on one license, insured workers' comp to 2027-04-25, San Francisco office, and a company page that explicitly offers 'sheetrock and wall repairs' plus plumbing for 'San Francisco homes and apartments'. Ranks below Genteel only because the CSLB record carries a 2020 complaint disclosure (reported verbatim, disclosure only).",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>, <a href=\"https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
+            "Complaint disclosure 2 2020 001045 (<a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB</a>) — read it before calling; company site also states 'Licensed C-10', which the CSLB record does not list (U08). Prior Yelp address differs from CSLB (U17)."
+          ],
+          "src": [
+            "S10",
+            "S70",
+            "S36",
+            "S64",
+            "S12",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>4</strong>",
+            "<strong>GENERALSF (General SF)</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #959843</a> · <a href=\"https://generalsf.com/building\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (650) 303-1515</small><br><span class=\"pill ok\">B + C-36 on one license</span>",
+            "<strong>73</strong> / 100",
+            "B + C-10 + C-36 on one license with a clean record and a San Francisco address; the company's Building page lists 'Sheetrock/Tape and Texture' and 'Rough and Finish Plumbing', i.e. both halves of this job. Marked down because the CSLB record shows a workers'-comp exemption ('no employees') (U06).",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
+            "Workers'-comp exemption (U06) — confirm in writing who will be on site and under what coverage; company page makes no occupied-unit statement."
+          ],
+          "src": [
+            "S09",
+            "S69",
+            "S35",
+            "S64",
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>5</strong>",
+            "<strong>Manny's Plumbing &amp; Rooters</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #841229</a> · <a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (650) 207-5733</small><br><span class=\"pill ok\">B + C-36 on one license</span>",
+            "<strong>70</strong> / 100",
+            "C-36 + B on one license with a clean record and a license running to 2028-06-30; the business's own Yelp specialties text names 'tub overflow repair and replacement' and its site lists drain replacement and bathroom remodeling. Loses points for the Daly City address, the workers'-comp exemption and a smaller review base (175).",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Company page advertises 5% new-customer / 10% senior discounts (<a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\">company statement</a>). Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
+            "Service area is stated as San Mateo County cities 'and surrounding areas of San Mateo &amp; San Francisco Counties' (<a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a>) — confirm the SF address is covered (U15); 'Insured' on the site vs workers'-comp exemption on CSLB (U06)."
+          ],
+          "src": [
+            "S57",
+            "S68",
+            "S73",
+            "S64",
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>6</strong>",
+            "<strong>Rapid Flow Plumbing &amp; Rooter Inc</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1115649</a> · <a href=\"https://www.rapidflowbayarea.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (415) 866-8401</small><br><span class=\"pill ok\">B + C-36 on one license</span>",
+            "<strong>69</strong> / 100",
+            "B + C-36 on one license (valid to 2028-01-31), clean record, San Francisco address, and a site that lists general contracting/remodels and leak repair with 'residential and commercial expertise'. The newest license in the set with only an 8-review snapshot and a workers'-comp exemption, so it ranks last among the dual-classified firms.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span> — no quote on file. Benchmarks as for rank 1 (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>).",
+            "Thin review evidence (8 reviews, prior-session snapshot) (U27) and a workers'-comp exemption (U06)."
+          ],
+          "src": [
+            "S56",
+            "S67",
+            "S74",
+            "S64",
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>7</strong>",
+            "<strong>Fast Response Plumbing &amp; Rooter</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1024971</a> · <a href=\"https://www.fastresponseplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (415) 596-6115</small><br><span class=\"pill warn\">C-36 only — needs a drywall partner</span>",
+            "<strong>69</strong> / 100",
+            "Best of the plumbing-only firms: insured, clean record, San Francisco address, a page that names apartments, HOAs and property managers, strong review volume, and the cheapest quote on file ($135, adjust/repair). Cannot satisfy the one-provider requirement alone — a C-9 drywall partner (e.g. Bernal Hill #995163) or a subcontract would be needed for the ceiling.",
+            "$135 repair/adjust plunger handle (owner-provided quote, <span class=\"pill warn\">UNVERIFIED</span>) — covers an adjustment only, not removal via the ceiling or drywall; add drywall patch $300–$930 (<a href=\"https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>) if below access is needed.",
+            "Workers'-comp policy expires 2026-12-18 (U05/U26); company aggregate '4.9 · 1,500 reviews' is a company claim (U09); address mismatch between CSLB and the company site (U04)."
+          ],
+          "src": [
+            "S08",
+            "S40",
+            "S34",
+            "S64",
+            "S44",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>8</strong>",
+            "<strong>Expert Plumbing Solutions</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #977638</a> · <a href=\"https://www.eplumbingsolutions.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (415) 531-5340</small><br><span class=\"pill warn\">C-36 only — needs a drywall partner</span>",
+            "<strong>62</strong> / 100",
+            "Holds the only quote on file for the full waste-and-overflow replacement ($614), is insured with a clean record and the longest license term in the set (to 2028-10-31). Plumbing-only, so the ceiling work would need a drywall partner; small review base.",
+            "$614 replace waste and overflow (owner-provided quote, <span class=\"pill warn\">UNVERIFIED</span>) — within Angi's $500–$1,020 replacement range (<a href=\"https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Angi</a>); drywall not included.",
+            "Quote scope does not mention below access or drywall (U14); review snapshot 81 reviews (U03)."
+          ],
+          "src": [
+            "S06",
+            "S38",
+            "S32",
+            "S64",
+            "S44",
+            "S15"
+          ]
+        },
+        {
+          "cells": [
+            "<strong>9</strong>",
+            "<strong>Bay Area Plumbing</strong><br><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #757796</a> · <a href=\"https://www.bayareaplumbingsf.com/\" target=\"_blank\" rel=\"noopener noreferrer\">site</a><br><small>Tel: (415) 668-8000</small><br><span class=\"pill warn\">C-36 only — needs a drywall partner</span>",
+            "<strong>56</strong> / 100",
+            "Plumbing-only sole owner with a workers'-comp exemption and a license that expires 2027-01-31 (about 12 weeks after this review); its $550 quote covers a different scope (lever + spout/diverter) rather than the stuck-lever removal itself.",
+            "$550 replace lever for tub plug and spout with diverter, labor + materials (owner-provided quote, <span class=\"pill warn\">UNVERIFIED</span>) — scope differs from the other two quotes; drywall not included.",
+            "License expiry 2027-01-31 and workers'-comp exemption (U06/U26); quote scope differs from the other two (U02/U14)."
+          ],
+          "src": [
+            "S07",
+            "S39",
+            "S33",
+            "S64",
+            "S44"
+          ]
+        }
+      ],
+      "caption": "Phone numbers are the business phone printed on the official CSLB record (a company-site number that differs is noted). 'Cost position' repeats the owner-held quotes (unverified) and the published 2026 benchmarks; where no quote exists the cell is blank and marked UNVERIFIED — nothing is estimated. This is a calling order from desk research, not a selection; no provider has been contacted."
+    },
+    "ranking_excluded": {
+      "title": "Not ranked — and why",
+      "columns": [
+        "Company",
+        "Reason",
+        "Official source",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Advanced Plumbing and Drain Inc (#1009195)",
+            "CSLB record prints an 'Additional Status' notice that the license may be suspended at a future date for failure to resolve an outstanding final liability; C-36 only",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #1009195</a>",
+            "<span class=\"pill bad\">screened out</span>"
+          ],
+          "src": [
+            "S63"
+          ]
+        },
+        {
+          "cells": [
+            "Bernal Hill Drywall Inc (#995163)",
+            "C-9 Drywall + B, no C-36 — cannot do the trip-lever work; listed as a licensed, insured ceiling cut/patch/finish partner if a C-36-only plumber is chosen (ranks 7–9)",
+            "<a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB #995163</a> · <a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9\" target=\"_blank\" rel=\"noopener noreferrer\">C-9 definition</a>",
+            "<span class=\"pill info\">partner option, not a candidate</span>"
+          ],
+          "src": [
+            "S62",
+            "S65"
+          ]
+        },
+        {
+          "cells": [
+            "Szeto Plumbing and Handyman (Daly City)",
+            "Appears only in a 2026-11-06 Yelp snapshot (4.8 ★, 89 reviews); no CSLB record was found under that name, so no license fact can be cited",
+            "<a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">CSLB Check a License</a> · <a href=\"https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2\" target=\"_blank\" rel=\"noopener noreferrer\">Yelp snapshot</a>",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S37",
+            "S04"
+          ]
+        }
+      ],
+      "caption": "Exclusions are based on the cited official record or on the absence of one. Nothing here is a finding of wrongdoing; the CSLB notice is quoted verbatim on the Sources page."
+    },
     "source_ledger": {
       "title": "Source ledger — all sources with verification status",
       "columns": [
@@ -2601,8 +3630,8 @@
             "<code>S01</code>",
             "<strong>SF.gov — Apply for a plumbing and mechanical permit</strong><br><small><a href=\"https://www.sf.gov/apply-plumbing-and-mechanical-permit\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.sf.gov/apply-plumbing-and-mechanical-permit</a></small>",
             "SF Dept. of Building Inspection<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Permit requirement for cutting into/replacing pipes; license classes allowed to apply; inspection before covering pipes; homeowner R-3 restriction<br><small>Read directly on sf.gov, 2026-11-07.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Permit requirement for cutting into/replacing pipes; license classes allowed to apply; inspection before covering pipes; homeowner R-3 restriction<br><small>Read directly on sf.gov, 2026-11-07; re-read 2026-11-08 — text unchanged (permit trigger, C4/C16/C20/C36/C54/B/A list, inspection before covering, R-3 homeowner rule, Permit Center 628-652-4900).</small>"
           ],
           "src": [
             "S01"
@@ -2649,8 +3678,8 @@
             "<code>S05</code>",
             "<strong>CSLB — C-36 Plumbing classification</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Official definition of the C-36 Plumbing classification (16 CCR, Div. 8, Art. 3)<br><small>Read directly on cslb.ca.gov, 2026-11-07.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Official definition of the C-36 Plumbing classification (16 CCR, Div. 8, Art. 3)<br><small>Read directly on cslb.ca.gov, 2026-11-07; re-read 2026-11-08 — text unchanged (16 CCR Div. 8 Art. 3).</small>"
           ],
           "src": [
             "S05"
@@ -2661,8 +3690,8 @@
             "<code>S06</code>",
             "<strong>CSLB License Detail #977638 — Expert Plumbing Solutions</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation<br><small>Record printed &#x27;Data current as of 11/7/2026 12:22:23 PM&#x27;.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:22 PM&#x27;; all values unchanged from the 2026-11-07 read. Business phone on record (415) 531-5340.</small>"
           ],
           "src": [
             "S06"
@@ -2673,8 +3702,8 @@
             "<code>S07</code>",
             "<strong>CSLB License Detail #757796 — Bay Area Plumbing</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation exemption<br><small>Record printed &#x27;Data current as of 11/7/2026 12:22:25 PM&#x27;.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation exemption<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:52 PM&#x27;; all values unchanged. Business phone on record (415) 668-8000. Bond effective 2026-09-01.</small>"
           ],
           "src": [
             "S07"
@@ -2685,8 +3714,8 @@
             "<code>S08</code>",
             "<strong>CSLB License Detail #1024971 — Fast Response Plumbing and Rooter</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation policy dates<br><small>Record printed &#x27;Data current as of 11/7/2026 12:22:23 PM&#x27;.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, address, entity, issue/expiry dates, status, classification, bond, workers&#x27; compensation policy dates<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:34 PM&#x27;; all values unchanged. Business phone on record (415) 596-6115. Workers&#x27; comp policy still shows expiry 12/18/2026.</small>"
           ],
           "src": [
             "S08"
@@ -2697,8 +3726,8 @@
             "<code>S09</code>",
             "<strong>CSLB License Detail #959843 — GENERALSF</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, address, entity, issue/expiry dates, status, B/C10/C36 classifications, bond, workers&#x27; compensation exemption<br><small>Record printed &#x27;Data current as of 11/7/2026 12:21:47 PM&#x27;.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, address, entity, issue/expiry dates, status, B/C10/C36 classifications, bond, workers&#x27; compensation exemption<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:52 PM&#x27;; all values unchanged. Business phone on record (650) 303-1515.</small>"
           ],
           "src": [
             "S09"
@@ -2709,8 +3738,8 @@
             "<code>S10</code>",
             "<strong>CSLB License Detail #1003394 — Handyman Heroes Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, address, entity, issue/expiry dates, status, B/C36 classifications, bond, workers&#x27; compensation, complaint-disclosure flag<br><small>Record printed &#x27;Data current as of 11/7/2026 12:21:47 PM&#x27;.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, address, entity, issue/expiry dates, status, B/C36 classifications, bond, workers&#x27; compensation, complaint-disclosure flag<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:52 PM&#x27;; all values unchanged, complaint-disclosure link still present. Business phone on record (844) 382-4376.</small>"
           ],
           "src": [
             "S10"
@@ -2721,8 +3750,8 @@
             "<code>S11</code>",
             "<strong>CSLB License Detail #829071 — Ace Plumbing &amp; Rooter</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, address, entity, issue/reissue/expiry dates, status, A/B/C-4/C10/C16/C36 classifications, bond, workers&#x27; compensation<br><small>Record printed &#x27;Data current as of 11/7/2026 12:23:38 PM&#x27;.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, address, entity, issue/reissue/expiry dates, status, A/B/C-4/C10/C16/C36 classifications, bond, workers&#x27; compensation<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:57 PM&#x27;; all values unchanged. Business phone on record (415) 824-6444. Bond effective 2026-09-04.</small>"
           ],
           "src": [
             "S11"
@@ -2733,8 +3762,8 @@
             "<code>S12</code>",
             "<strong>CSLB Complaint Disclosure #1003394</strong><br><small><a href=\"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&amp;LicNum=1003394\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&amp;LicNum=1003394</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Citation 2 2020 001045, dated 07/12/2020, &#x27;FOR DISCLOSURE ONLY PER B&amp;P CODE 7124.6&#x27;<br><small>Read directly on cslb.ca.gov, 2026-11-07. Reported verbatim, no interpretation.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Citation 2 2020 001045, dated 07/12/2020, &#x27;FOR DISCLOSURE ONLY PER B&amp;P CODE 7124.6&#x27;<br><small>Read directly on cslb.ca.gov, 2026-11-07 and again 2026-11-08: one citation, 2 2020 001045, dated 07/12/2020, status &#x27;FOR DISCLOSURE ONLY PER B&amp;P CODE 7124.6&#x27;. Reported verbatim, no interpretation.</small>"
           ],
           "src": [
             "S12"
@@ -2745,8 +3774,8 @@
             "<code>S13</code>",
             "<strong>California Business &amp; Professions Code §7048</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048</a></small>",
             "California Legislative Information (leginfo)<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Current small-job licensing exemption: aggregate price under $1,000, casual/minor/inconsequential, and no building permit required; amended by Stats. 2025 ch. 67 (AB 1170), effective 2026-01-01<br><small>Read directly on leginfo, 2026-11-07.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Current small-job licensing exemption: aggregate price under $1,000, casual/minor/inconsequential, and no building permit required; amended by Stats. 2025 ch. 67 (AB 1170), effective 2026-01-01<br><small>Read directly on leginfo, 2026-11-07; re-read 2026-11-08 — text unchanged: &#x27;(Amended by Stats. 2025, Ch. 67, Sec. 12. (AB 1170) Effective January 1, 2026.)&#x27;.</small>"
           ],
           "src": [
             "S13"
@@ -2998,7 +4027,7 @@
             "<strong>Yelp — Fast Response Plumbing &amp; Rooter</strong><br><small><a href=\"https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3</a></small>",
             "Yelp<br><span class=\"pill info\">platform</span>",
             "<span class=\"pill warn\">HTTP 403 — manual review</span>",
-            "Business review page for one of the three quoting companies<br><small>HTTP 403 on automated fetch. A 2026-11-06 snapshot (4.8, 906 reviews) exists in prior-session notes; not re-verified — flagged.</small>"
+            "Business review page for one of the three quoting companies<br><small>HTTP 403 on automated fetch (2026-11-07 and 2026-11-08). A 2026-11-06 snapshot (4.8, 906 reviews) exists in prior-session notes; Yelp search-result text seen on 2026-11-08 showed 4.8 ★ (870). Neither value is verified on the listing page — flagged.</small>"
           ],
           "src": [
             "S34"
@@ -3261,8 +4290,8 @@
             "<code>S56</code>",
             "<strong>CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, 230 Edinburgh St SF 94112, corporation, issued 2024-01-29, expires 2028-01-31, B + C-36 classifications, $25,000 bond, workers&#x27;-compensation exemption<br><small>Record printed &#x27;Data current as of 11/7/2026 12:46:25 PM&#x27;. Added from the concurrent shortlist session, re-read directly here.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, 230 Edinburgh St SF 94112, corporation, issued 2024-01-29, expires 2028-01-31, B + C-36 classifications, $25,000 bond, workers&#x27;-compensation exemption<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:34 PM&#x27;; all values unchanged. Business phone on record (415) 866-8401.</small>"
           ],
           "src": [
             "S56"
@@ -3273,8 +4302,8 @@
             "<code>S57</code>",
             "<strong>CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229</a></small>",
             "Contractors State License Board<br><span class=\"pill info\">official</span>",
-            "<span class=\"pill ok\">verified 2026-11-07</span>",
-            "Business name, 41 Midvale Drive Daly City CA 94015, sole ownership, issued 2004-06-21, expires 2028-06-30, C-36 + B classifications, $25,000 bond, workers&#x27;-compensation exemption<br><small>Record printed &#x27;Data current as of 11/7/2026 12:46:25 PM&#x27;. Daly City address — service area to be confirmed. Added from the concurrent shortlist session, re-read directly here.</small>"
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Business name, 41 Midvale Drive Daly City CA 94015, sole ownership, issued 2004-06-21, expires 2028-06-30, C-36 + B classifications, $25,000 bond, workers&#x27;-compensation exemption<br><small>Re-read 2026-11-08: record printed &#x27;Data current as of 11/8/2026 2:55:34 PM&#x27;; all values unchanged. Business phone on record (650) 207-5733. Daly City address — service area to be confirmed.</small>"
           ],
           "src": [
             "S57"
@@ -3314,6 +4343,198 @@
           ],
           "src": [
             "S60"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S61</code>",
+            "<strong>CSLB License Detail #1025814 — The Genteel Plumbers Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Corporation, 1181 Revere Ave, San Francisco, CA 94124, business phone (833) 436-8335; issued 2017-04-14, expires 2027-04-30; current and active; C-36 Plumbing + B General Building; $25,000 bond (American Contractors Indemnity, eff. 2023-01-01); workers&#x27; compensation insured (Technology Insurance Co., 2026-01-24 → 2027-01-24); no complaint-disclosure or additional-status line<br><small>Record printed &#x27;Data current as of 11/8/2026 2:56:58 PM&#x27;. Candidate first identified by the sf-overflow-audit session; read directly here before inclusion.</small>"
+          ],
+          "src": [
+            "S61"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S62</code>",
+            "<strong>CSLB License Detail #995163 — Bernal Hill Drywall Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Corporation, 720 Anderson St, San Francisco, CA 94110, business phone (415) 533-8274; issued 2014-07-28, expires 2028-07-31; current and active; C-9 Drywall + B General Building; $25,000 bond; workers&#x27; compensation insured (Endurance Assurance, 2026-03-10 → 2027-03-10, class 5447 wallboard installation); no disclosure line<br><small>Record printed &#x27;Data current as of 11/8/2026 2:58:18 PM&#x27;. Drywall specialist — not a plumbing candidate; listed as a ceiling-restoration partner option.</small>"
+          ],
+          "src": [
+            "S62"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S63</code>",
+            "<strong>CSLB License Detail #1009195 — Advanced Plumbing and Drain Inc</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Corporation, 3450 Sacramento St 204, San Francisco, CA 94118, business phone (415) 744-4944; expires 2027-11-30; current and active; C-36 only; Additional Status printed verbatim: &#x27;The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board.&#x27;; workers&#x27; comp insured (Hartford, 2026-08-21 → 2027-08-21)<br><small>Record printed &#x27;Data current as of 11/8/2026 2:58:23 PM&#x27;. Screened out of the ranking because of the official notice; reported verbatim, no interpretation.</small>"
+          ],
+          "src": [
+            "S63"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S64</code>",
+            "<strong>CSLB — B General Building classification (B&amp;P §7057)</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "§7057(b): a general building contractor shall not take a prime contract for a project involving trades other than framing or carpentry unless it requires at least two unrelated trades, or unless the contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor<br><small>Read directly on cslb.ca.gov, 2026-11-08. Basis for weighting B + C-36 on one license as the single-provider criterion.</small>"
+          ],
+          "src": [
+            "S64"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S65</code>",
+            "<strong>CSLB — C-9 Drywall classification</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9</a></small>",
+            "Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "A drywall contractor lays out and installs gypsum wall board and assemblies and performs taping and texturing (16 CCR Div. 8 Art. 3)<br><small>Read directly on cslb.ca.gov, 2026-11-08.</small>"
+          ],
+          "src": [
+            "S65"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S66</code>",
+            "<strong>Genteel Plumbers — official site</strong><br><small><a href=\"https://www.genteelplumbers.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.genteelplumbers.com/</a></small>",
+            "The Genteel Plumbers Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Company states: office at 1181 Revere Avenue, San Francisco (matches CSLB); phone 415-465-5853; dispatch fee $149 applied to the cost of services; same-day service in San Francisco and San Mateo County; does not cross the Golden Gate or Bay Bridge and does not serve the Financial District; founded 2016 by Graham W. Jones<br><small>Read directly. Company self-description is not independent verification; the license number was not printed on the fetched home page — license facts come from CSLB #1025814. Phone differs from the CSLB record — flagged.</small>"
+          ],
+          "src": [
+            "S66"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S67</code>",
+            "<strong>Rapid Flow Plumbing &amp; Rooter — official site</strong><br><small><a href=\"https://www.rapidflowbayarea.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.rapidflowbayarea.com/</a></small>",
+            "Rapid Flow Plumbing &amp; Rooter Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Company prints &#x27;CA License #1115649 · B General Building · C-36 Plumbing&#x27;, 230 Edinburgh St, San Francisco 94112, phones 844-BAY-FLOW and (415) 866-8401; lists general contracting (remodels, renovations), leak detection and repair, &#x27;residential and commercial expertise&#x27;, &#x27;fully bonded&#x27;<br><small>Read directly. Company self-description is not independent verification; license, address and phone match CSLB #1115649.</small>"
+          ],
+          "src": [
+            "S67"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S68</code>",
+            "<strong>Manny&#x27;s Plumbing &amp; Rooters — official site</strong><br><small><a href=\"https://www.mannysplumbingandremodeling.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.mannysplumbingandremodeling.com/</a></small>",
+            "Manny&#x27;s Plumbing &amp; Rooter<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Company prints &#x27;License # 841229&#x27;, &#x27;C-36 Plumbing / General B - Insured &amp; Bonded&#x27;; services include tub install, drain clean and drain replacement, kitchen and bathroom remodeling, residential and commercial; serves nine San Mateo County cities &#x27;and surrounding areas of San Mateo &amp; San Francisco Counties&#x27;<br><small>Read directly. &#x27;Insured&#x27; is a company statement; the CSLB record shows a workers&#x27;-compensation exemption (&#x27;no employees&#x27;) — flagged for a certificate request.</small>"
+          ],
+          "src": [
+            "S68"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S69</code>",
+            "<strong>General SF — Building services page</strong><br><small><a href=\"https://generalsf.com/building\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://generalsf.com/building</a></small>",
+            "General SF<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Building page lists &#x27;Sheetrock/Tape and Texture&#x27; and &#x27;Rough and Finish Plumbing&#x27; among services; footer prints &#x27;CSLB. 959843&#x27; and phone (650)-303-1515<br><small>Read directly. Company self-description is not independent verification; license and phone match CSLB #959843.</small>"
+          ],
+          "src": [
+            "S69"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S70</code>",
+            "<strong>Handyman Heroes — Handyman services page</strong><br><small><a href=\"https://www.handymanhero.es/handyman-services/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.handymanhero.es/handyman-services/</a></small>",
+            "Handyman Heroes Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Page states &#x27;sheetrock and wall repairs&#x27;, &#x27;plumbing and electrical services&#x27;, service to &#x27;San Francisco homes and apartments&#x27;, bathroom remodeling including tub and shower upgrades, license #1003394 and phone 1-844-382-4376; lists dated customer testimonials (latest 2026-11-06)<br><small>Read directly. Company self-description and testimonials are not independent verification; license and phone match CSLB #1003394.</small>"
+          ],
+          "src": [
+            "S70"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S71</code>",
+            "<strong>Yelp — Genteel Plumbers (two listings)</strong><br><small><a href=\"https://www.yelp.com/biz/genteel-plumbers-san-francisco-7\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/genteel-plumbers-san-francisco-7</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Search-result snapshot 2026-11-08: listing &#x27;-7&#x27; shows 4.7 ★ (519 reviews) at 1314 22nd Ave Ste 007, phone (415) 598-0562; a second listing &#x27;-8&#x27; shows 4.6 ★ (17 reviews) at 1181 Revere Ave, phone (415) 484-3631<br><small>Direct page fetch returned HTTP 403 on 2026-11-08; values come from Yelp search-result text and are third-party, point-in-time and unverified. Two listings for one company — flagged.</small>"
+          ],
+          "src": [
+            "S71"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S72</code>",
+            "<strong>Yelp — Ace Plumbing &amp; Rooter</strong><br><small><a href=\"https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Search-result snapshot 2026-11-08: 4.7 ★ with 1.4k–1.5k reviews, &#x27;Verified License&#x27;, &#x27;Serving San Francisco and the Surrounding Area&#x27;<br><small>Direct page fetch is blocked (HTTP 403); values are third-party and unverified. &#x27;Verified License&#x27; is a platform badge, not CSLB verification.</small>"
+          ],
+          "src": [
+            "S72"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S73</code>",
+            "<strong>Yelp — Manny&#x27;s Plumbing &amp; Rooters</strong><br><small><a href=\"https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/biz/mannys-plumbing-and-rooter-daly-city</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Search-result snapshot 2026-11-08: 4.7 ★ (175 reviews), 41 Midvale Dr, Daly City, (650) 207-5733; the business&#x27;s own specialties text lists &#x27;tub and shower valve repair and install&#x27; and &#x27;tub overflow repair and replacement&#x27;; &#x27;Bathtub repair&#x27; appears under services &#x27;Verified by Business&#x27;<br><small>Direct page fetch is blocked (HTTP 403); values are third-party and unverified. The specialties text is the business&#x27;s own description on the platform.</small>"
+          ],
+          "src": [
+            "S73"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S74</code>",
+            "<strong>Yelp — Rapid Flow Plumbing (search)</strong><br><small><a href=\"https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&amp;find_loc=San+Francisco%2C+CA\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.yelp.com/search?find_desc=Rapid+Flow+Plumbing&amp;find_loc=San+Francisco%2C+CA</a></small>",
+            "Yelp<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill warn\">HTTP 403 — manual review</span>",
+            "Prior-session snapshot 2026-11-07: 5.0 ★ (8 reviews); not re-seen in 2026-11-08 search results<br><small>Direct fetch blocked (HTTP 403). Third-party, thin evidence (8 reviews) — treated as a low score on the review criterion, not as verification.</small>"
+          ],
+          "src": [
+            "S74"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S75</code>",
+            "<strong>GitHub Actions — Pages run 42413503253 for main @ 1faccdc (deploy failed)</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253</a></small>",
+            "GitHub (this repository)<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "&#x27;pages build and deployment&#x27; for commit 1faccdc: build job success, deploy job failure; deployment 7626930247 went in_progress 2026-11-07T20:57:32Z and failure at 21:08:10Z<br><small>Checked with gh run view / gh api on 2026-11-08. The live site kept serving the previous successful deploy (08fa03b). Re-triggered by this session&#x27;s merge.</small>"
+          ],
+          "src": [
+            "S75"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S76</code>",
+            "<strong>Open PR #42 (stale parallel session)</strong><br><small><a href=\"https://github.com/karagemop466-tech/Korea7/pull/42\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://github.com/karagemop466-tech/Korea7/pull/42</a></small>",
+            "GitHub<br><span class=\"pill info\">primary</span>",
+            "<span class=\"pill ok\">verified 2026-11-08</span>",
+            "Open, mergeable=CONFLICTING, last updated 2026-11-08T20:41:27Z, branch arena/7e5f723c-korea7, overlaps the root dashboard pages<br><small>Checked with gh pr list on 2026-11-08. Not merged, closed or edited by this session (owned by another session). Four older GEMS-era PRs (#20, #18, #15, #2) are also open and conflicting.</small>"
+          ],
+          "src": [
+            "S76"
           ]
         }
       ],

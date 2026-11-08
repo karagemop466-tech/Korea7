@@ -229,9 +229,14 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
     verified_sources = sum(1 for s in C.SOURCES.values() if s["status"] == "verified")
     official_sources = sum(1 for s in C.SOURCES.values()
                            if s["tier"] in ("official", "manufacturer") and s["status"] == "verified")
+    latest_read = max(s["checked"] for s in C.SOURCES.values() if s["status"] == "verified")
+    official_latest = sum(1 for s in C.SOURCES.values()
+                          if s["tier"] in ("official", "manufacturer") and s["status"] == "verified"
+                          and s["checked"] == latest_read)
     checks.append(check("Official sources verified directly", official_sources >= 10,
-                        "%d official/manufacturer sources verified 2026-11-07; %d sources verified overall"
-                        % (official_sources, verified_sources)))
+                        "%d official/manufacturer sources verified directly (%d of them re-read %s); "
+                        "%d sources verified overall"
+                        % (official_sources, official_latest, latest_read, verified_sources)))
 
     return {
         "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
