@@ -1091,3 +1091,23 @@ fixed 9-page `PAGES` tuple, so `ranking.html` and `contacts.html` are covered by
 
 **J5 status:** PR opened from `arena/0e9ee506-korea7` to `main`; merge and Pages deploy result recorded below
 once confirmed.
+
+**J5 complete — merged and live.**
+
+- PR: <https://github.com/karagemop466-tech/Korea7/pull/61> — "Ranked hiring decision + verified contacts:
+  16 CSLB records re-read 2026-11-08", `arena/0e9ee506-korea7` → `main`.
+- Merged without waiting for review at **2026-11-08T23:21:47Z**, merge commit
+  **`442b9f0e771c4eec04cf75d7a8381373ce46ddd5`**. Mergeable state was `CLEAN` before merging.
+- Pages deploy: run **42534814537** (`pages build and deployment`, branch `main`) completed **success**;
+  `gh api repos/.../pages` returned `status: built`.
+- Live verification by fetch after deploy: <https://karagemop466-tech.github.io/Korea7/ranking.html> serves the
+  new decision page (cards 16 / 6 / 9 / 0, Route 1 order Ace → Genteel → Handyman Heroes → GeneralSF, every cost
+  cell blank + UNVERIFIED, every row source-linked to CSLB). Landing page and
+  <https://karagemop466-tech.github.io/Korea7/contacts.html> also checked.
+- Pre-merge gate: build 11/11 PASS; site tests 63 passed + 11 subtests. Nothing broken was merged.
+- The earlier failed deploy for `1faccdc` (run 42413503253) is closed out: later `main` runs succeeded and the
+  site serves current content. Recorded on `repo-review.html`.
+
+**Open request carried forward:** extend the fixed 9-page `PAGES` tuple in
+`tests/test_dashboard_integrity.py` to the current 15 pages (this session did not edit that file; the new pages
+are covered by `tests/test_ranking.py` in the meantime).
