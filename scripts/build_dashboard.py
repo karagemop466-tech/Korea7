@@ -80,7 +80,7 @@ def refresh_repo_inventory():
             '<code class="hash">%s</code>' % item["sha256"],
             esc(item["category"]),
             esc(item["review"]),
-        ], "src": ["S76"]})
+        ], "src": ["S98"]})
     C.TABLES["repo_inventory"] = {
         "title": "Line-by-line source/artifact inventory (%d files)" % len(rows),
         "columns": ["Path", "Bytes", "SHA-256", "Category", "Review scope", "Source"],

@@ -61,34 +61,39 @@ class TestContent(unittest.TestCase):
             self.assertIsNone(re.search(pat, blob, re.I), "private wording matched: %s" % pat)
 
 
-    def test_current_ranking_sources_are_fresh_and_official_or_company(self):
-        for row in C.TABLES["ranking"]["rows"]:
-            self.assertTrue(row["src"])
-            for sid in row["src"]:
-                src = C.SOURCES[sid]
-                self.assertIn(src["tier"], ("official", "company"))
-                self.assertEqual(src["status"], "verified")
-                self.assertEqual(src["checked"], C.META["updated"])
-            self.assertIn(C.BLANK, row["cells"][-1])
-            self.assertIn(C.UNVERIFIED, row["cells"][-1])
+    def test_primary_ranking_rows_cite_fresh_official_cslb_and_blank_cost(self):
+        for tid in ("rank_allinone", "rank_plumbing", "rank_restoration"):
+            table = C.TABLES[tid]
+            cost_idx = table["columns"].index("Cost position")
+            for row in table["rows"]:
+                self.assertTrue(row["src"])
+                self.assertTrue(any(
+                    C.SOURCES[s]["tier"] == "official"
+                    and C.SOURCES[s]["status"] == "verified"
+                    and C.SOURCES[s]["checked"] == "2026-11-08"
+                    and "LicNum=" in C.SOURCES[s]["url"]
+                    for s in row["src"]
+                ), (tid, row["src"]))
+                self.assertIn(C.BLANK, row["cells"][cost_idx])
+                self.assertIn(C.UNVERIFIED, row["cells"][cost_idx])
 
     def test_top_pick_and_contacts_are_source_linked(self):
-        top = C.TABLES["top_picks"]["rows"][0]
-        self.assertIn("General SF", top["cells"][1])
-        self.assertIn("(650) 303-1515", top["cells"][2])
-        self.assertIn("S09", top["src"])
-        self.assertEqual(len(C.TABLES["contacts"]["rows"]), 8)
+        top = C.TABLES["rank_allinone"]["rows"][0]
+        self.assertIn("Ace Plumbing", top["cells"][1])
+        self.assertIn("(415) 824-6444", top["cells"][1])
+        self.assertIn("S11", top["src"])
+        self.assertEqual(len(C.TABLES["contacts"]["rows"]), 16)
         for row in C.TABLES["contacts"]["rows"]:
             self.assertRegex(row["cells"][1], r"\(\d{3}\) \d{3}-\d{4}")
             self.assertTrue(any(C.SOURCES[s]["tier"] == "official" for s in row["src"]))
 
     def test_review_numbers_and_drywall_inclusion_remain_unverified(self):
         for row in C.TABLES["review_snapshots"]["rows"]:
-            self.assertIn(C.BLANK, row["cells"][3])
-            self.assertIn(C.UNVERIFIED, row["cells"][3])
+            self.assertIn(C.BLANK, row["cells"][2])
+            self.assertIn(C.UNVERIFIED, row["cells"][2])
         flags = {r["cells"][0]: r for r in C.TABLES["flagged"]["rows"]}
-        self.assertIn("U33", flags)
-        self.assertIn("does not state", flags["U33"]["cells"][2])
+        self.assertIn("U35", flags)
+        self.assertIn("does not state", flags["U35"]["cells"][2])
         requirements = {r["cells"][0]: r for r in C.TABLES["requirements"]["rows"]}
         self.assertIn("partial", requirements["R22"]["cells"][4])
 

@@ -6,8 +6,8 @@
     "cslb": "S09",
     "company": [
       "S41",
-      "S77",
-      "S78"
+      "S99",
+      "S100"
     ],
     "yelp": "S35",
     "phone": "(650) 303-1515",
@@ -31,7 +31,7 @@
     "cslb": "S10",
     "company": [
       "S42",
-      "S64"
+      "S89"
     ],
     "yelp": "S36",
     "phone": "(844) 382-4376",
@@ -56,7 +56,7 @@
     "company": [
       "S43"
     ],
-    "yelp": "S73",
+    "yelp": "S95",
     "phone": "(415) 824-6444",
     "address": "1090 Bryant Street, San Francisco, CA 94103-4417",
     "classes": "A · B · C-4 · C-10 · C-16 · C-36",
@@ -77,8 +77,8 @@
     "license": "1115649",
     "cslb": "S56",
     "company": [
-      "S65",
-      "S66"
+      "S90",
+      "S74"
     ],
     "yelp": "",
     "phone": "(415) 866-8401",
@@ -101,7 +101,7 @@
     "license": "841229",
     "cslb": "S57",
     "company": [
-      "S67"
+      "S75"
     ],
     "yelp": "",
     "phone": "(650) 207-5733",

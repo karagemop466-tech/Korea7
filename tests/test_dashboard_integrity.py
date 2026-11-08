@@ -18,9 +18,11 @@ from pathlib import Path
 from urllib.parse import urlparse, unquote
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = ('index.html', 'summary.html', 'shortlist.html', 'estimates.html',
-         'contractors.html', 'findings.html', 'verification.html',
-         'sources.html', 'flagged.html')
+PAGES = ('index.html', 'summary.html', 'requirements.html', 'estimates.html',
+         'contractors.html', 'technical.html', 'permits.html', 'brief.html',
+         'findings.html', 'sources.html', 'verification.html', 'repo-review.html',
+         'flagged.html', 'ranking.html', 'contacts.html')
+EXTRA_PAGES = ('shortlist.html',)
 OFFICIAL_HOSTS = {
     'www2.cslb.ca.gov', 'www.cslb.ca.gov', 'cslb.ca.gov',
     'www.sf.gov', 'sf.gov', 'media.api.sf.gov',
@@ -30,6 +32,11 @@ OFFICIAL_HOSTS = {
     'www.bayareaplumbingsf.com', 'bayareaplumbingsf.com',
     'www.fastresponseplumbingsf.com', 'fastresponseplumbingsf.com',
     'www.rapidflowbayarea.com', 'rapidflowbayarea.com',
+    'www.aceplumbingandrooter.com', 'aceplumbingandrooter.com',
+    'www.genteelplumbers.com', 'genteelplumbers.com',
+    'www.bernalhilldrywall.com', 'bernalhilldrywall.com',
+    'www.mannysplumbingandremodeling.com', 'mannysplumbingandremodeling.com',
+    'www.watcomfg.com', 'watcomfg.com',
     'www.oatey.com', 'github.com',
 }
 UNVERIFIED_MARKERS = (
@@ -74,7 +81,7 @@ class Scan(HTMLParser):
 
 class DashboardTest(unittest.TestCase):
     def test_links_and_row_sources(self):
-        for name in PAGES:
+        for name in PAGES + EXTRA_PAGES:
             with self.subTest(page=name):
                 scan = Scan()
                 scan.feed((ROOT / name).read_text(encoding='utf-8'))

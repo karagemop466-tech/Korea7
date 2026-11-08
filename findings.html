@@ -18,9 +18,14 @@
 <a href="requirements.html">Requirements</a>
 </div>
 <div class="nav-group"><div class="nav-group-title">Decision</div>
-<a href="contractors.html">Hiring ranking &amp; contacts</a>
+<a href="ranking.html">Ranked hiring decision</a>
+<a href="contacts.html">Contacts &amp; licenses</a>
+</div>
+<div class="nav-group"><div class="nav-group-title">Data</div>
 <a href="estimates.html">Estimates &amp; costs</a>
+<a href="contractors.html">Contractors &amp; reviews</a>
 <a href="findings.html" aria-current="page" class="active">Findings &amp; analysis</a>
+<a href="shortlist.html">Shortlist</a>
 </div>
 <div class="nav-group"><div class="nav-group-title">Reference</div>
 <a href="technical.html">Technical background</a>
@@ -31,222 +36,144 @@
 <div class="nav-group"><div class="nav-group-title">Audit</div>
 <a href="verification.html">Verification</a>
 <a href="repo-review.html">Repo review</a>
+<a href="verification-log.html">Prior verification log</a>
 <a href="flagged.html">Flagged for review</a>
 </div>
 <div class="side-foot">Updated 2026-11-08<br>Session <span class="mono">arena/52d35ede-korea7</span></div>
 </aside>
 <main id="main" class="content">
 <header class="page-head">
-  <div class="eyebrow">Decision · evidence and limits</div>
+  <div class="eyebrow">Data · analysis · updated 2026-11-07</div>
   <h1>Findings & analysis</h1>
-  <p class="lede">What the sources support, what remains unverified, and how the conditional ranking was derived.</p>
+  <p class="lede">What the verified data supports, what it does not, and the resulting shortlist rationale.</p>
 </header>
 <section class="section">
-<h2>Findings and decision analysis</h2>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Findings and decision analysis table"><table class="data-table">
+<h2>Analysis and findings</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Analysis and findings table"><table class="data-table">
 <thead><tr>
 <th>#</th>
 <th>Finding</th>
-<th>Basis</th>
+<th>Basis (verified sources)</th>
 <th>Status</th>
 <th>Source</th>
 </tr></thead><tbody>
 <tr>
 <td>F01</td>
-<td>The three owner-reported estimates describe different scopes and are not comparable all-in prices</td>
-<td>Adjustment vs lever/spout/diverter vs waste-and-overflow replacement; drywall inclusion is not stated</td>
+<td>Three quotes bracket three different scopes: adjustment, stopper/spout replacement, and full waste-and-overflow replacement</td>
+<td>Owner brief scopes; Angi's replacement range $500–$1,020 and leak-repair range $150–$600</td>
+<td><span class="pill info">analysis</span> <span class="pill warn">amounts unverified</span></td>
+<td class="src-col"><span class="src-ids"><a href="brief.html" title="Project brief (owner-provided primary record)">S44</a> · <a href="https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm" target="_blank" rel="noopener noreferrer" title="Angi — Cost to Replace a Bathtub or Shower Drain (2026)">S15</a> · <a href="https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm" target="_blank" rel="noopener noreferrer" title="Angi — Bathroom Leak Repair Cost (2026)">S16</a></span></td>
+</tr>
+<tr>
+<td>F02</td>
+<td>Below access is a publisher-described fallback for stubborn drains, not a verified project-specific norm</td>
+<td>This Old House describes below access for stubborn drains; the exact access route for this tub remains unverified</td>
+<td><span class="pill warn">publisher guidance / project unverified</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain" target="_blank" rel="noopener noreferrer" title="This Old House — How To Replace a Tub Drain">S18</a> · <a href="https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/" target="_blank" rel="noopener noreferrer" title="Hunker — The Trip Lever In My Bathtub Is Stuck">S21</a></span></td>
+</tr>
+<tr>
+<td>F03</td>
+<td>A single license can cover both building/drywall and plumbing work</td>
+<td>CSLB #959843 (B + C10 + C36), #1003394 (B + C36), #829071 (A + B + C36 among others)</td>
+<td><span class="pill ok">license classes verified</span> <span class="pill warn">job capability unverified</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1003394 — Handyman Heroes Inc">S10</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #829071 — Ace Plumbing &amp; Rooter">S11</a></span></td>
+</tr>
+<tr>
+<td>F04</td>
+<td>All sixteen canonical candidates hold active CSLB licenses checked 2026-11-08</td>
+<td>The canonical CSLB dataset transcribes each official record and its retrieval stamp</td>
+<td><span class="pill ok">verified</span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/cslb_records.json" title="CSLB record transcriptions (this project&#x27;s dataset)">S85</a></span></td>
+</tr>
+<tr>
+<td>F05</td>
+<td>Drywall inclusion in the three owner-reported estimates is not stated</td>
+<td>The supplied wording does not confirm inclusion or exclusion; no combined plumbing + drywall quote is verified</td>
 <td><span class="pill warn">owner-provided / unverified</span></td>
 <td class="src-col"><span class="src-ids"><a href="brief.html" title="Project brief (owner-provided primary record)">S44</a></span></td>
 </tr>
 <tr>
-<td>F02</td>
-<td>General SF is the best documented combined-scope inquiry</td>
-<td>Company advertises plumbing and sheetrock/tape/texture; CSLB B+C-36 active</td>
-<td><span class="pill info">conditional recommendation</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://generalsf.com/building" target="_blank" rel="noopener noreferrer" title="General SF — Building services">S77</a> · <a href="https://generalsf.com/plumbing" target="_blank" rel="noopener noreferrer" title="General SF — Plumbing services">S78</a></span></td>
-</tr>
-<tr>
-<td>F03</td>
-<td>Handyman Heroes is the second documented combined-scope inquiry</td>
-<td>Company advertises wall repair and plumbing; CSLB B+C-36 active; disclosure exists</td>
-<td><span class="pill info">conditional recommendation</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1003394 — Handyman Heroes Inc">S10</a> · <a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&amp;LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB Complaint Disclosure #1003394">S12</a> · <a href="https://www.handymanhero.es/handyman-services/" target="_blank" rel="noopener noreferrer" title="Handyman Heroes — Handyman services">S64</a></span></td>
-</tr>
-<tr>
-<td>F04</td>
-<td>Ace has a strong license/insurance profile but drywall self-performance is unconfirmed</td>
-<td>CSLB B+C-36 and workers’ compensation policy; company property-manager work</td>
-<td><span class="pill warn">license verified; scope unverified</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #829071 — Ace Plumbing &amp; Rooter">S11</a> · <a href="https://www.aceplumbingandrooter.com/" target="_blank" rel="noopener noreferrer" title="Ace Plumbing &amp; Rooter — official site">S43</a></span></td>
-</tr>
-<tr>
-<td>F05</td>
-<td>Eight candidate licenses are current and active on CSLB</td>
-<td>Eight official records read 2026-11-08</td>
-<td><span class="pill ok">verified</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #977638 — Expert Plumbing Solutions">S06</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #757796 — Bay Area Plumbing">S07</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1024971 — Fast Response Plumbing and Rooter">S08</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1003394 — Handyman Heroes Inc">S10</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #829071 — Ace Plumbing &amp; Rooter">S11</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc">S56</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter">S57</a></span></td>
-</tr>
-<tr>
 <td>F06</td>
-<td>Four records show no-employee workers’ compensation exemptions; Fast Response policy expires 2026-12-18</td>
-<td>CSLB #757796, #959843, #1115649, #841229; #1024971 policy dates</td>
-<td><span class="pill warn">verified / time-sensitive</span></td>
+<td>Four licenses show a workers'-compensation exemption 'no employees', and one policy expires 2026-12-18</td>
+<td>CSLB #757796, #959843, #1115649, #841229, #1024971</td>
+<td><span class="pill ok">verified on CSLB</span> <span class="pill warn">flagged</span></td>
 <td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #757796 — Bay Area Plumbing">S07</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc">S56</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter">S57</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1024971 — Fast Response Plumbing and Rooter">S08</a></span></td>
 </tr>
 <tr>
 <td>F07</td>
-<td>Yelp numeric ratings/counts are not verified</td>
-<td>Direct fetch HTTP 403; search excerpts only; numeric cells blank</td>
-<td><span class="pill warn">unverified</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco" target="_blank" rel="noopener noreferrer" title="Yelp — Expert Plumbing Solutions">S32</a> · <a href="https://www.yelp.com/biz/bay-area-plumbing-san-francisco" target="_blank" rel="noopener noreferrer" title="Yelp — Bay Area Plumbing">S33</a> · <a href="https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3" target="_blank" rel="noopener noreferrer" title="Yelp — Fast Response Plumbing &amp; Rooter">S34</a> · <a href="https://www.yelp.com/biz/general-sf-san-francisco-2" target="_blank" rel="noopener noreferrer" title="Yelp — General SF">S35</a> · <a href="https://www.yelp.com/biz/handyman-heroes-san-francisco-5" target="_blank" rel="noopener noreferrer" title="Yelp — Handyman Heroes">S36</a> · <a href="https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco?start=160" target="_blank" rel="noopener noreferrer" title="Yelp — Ace Plumbing &amp; Rooter profile">S73</a></span></td>
+<td>Review counts and badges are not license verification</td>
+<td>Yelp HTTP 403; Thumbtack 'Licensed pro' badge; BBB states it does not verify third-party information; CSLB is the authority</td>
+<td><span class="pill ok">verified sources</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener noreferrer" title="CSLB — Check a License">S04</a> · <a href="https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing" target="_blank" rel="noopener noreferrer" title="Thumbtack — Bathtub services near San Francisco, CA">S27</a> · <a href="https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492" target="_blank" rel="noopener noreferrer" title="BBB — Expert Plumbing Solutions business profile">S28</a> · <a href="https://www.yelp.com/search?find_desc=Bathtub+Repair&amp;find_loc=San+Francisco%2C+CA" target="_blank" rel="noopener noreferrer" title="Yelp — Bathtub Repair in San Francisco">S29</a></span></td>
 </tr>
 <tr>
 <td>F08</td>
-<td>Exact concealed waste-and-overflow experience in an occupied unit is unverified for every candidate</td>
-<td>License records and company service claims do not establish this job capability</td>
-<td><span class="pill warn">unverified</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener noreferrer" title="CSLB — Check a License">S04</a> · <a href="https://www.fastresponseplumbingsf.com/" target="_blank" rel="noopener noreferrer" title="Fast Response Plumbing &amp; Rooter — official site">S40</a> · <a href="https://www.aceplumbingandrooter.com/" target="_blank" rel="noopener noreferrer" title="Ace Plumbing &amp; Rooter — official site">S43</a> · <a href="https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx" target="_blank" rel="noopener noreferrer" title="CSLB — How to find the right licensed contractor">S69</a></span></td>
+<td>Occupied-unit / property-manager experience is only partially documented</td>
+<td>Fast Response site (apartments, HOAs, property managers), Ace site (HOAs/property managers), Angi SF review mentions a tenant-occupied multi-unit project</td>
+<td><span class="pill warn">company/review statements only</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www.fastresponseplumbingsf.com/" target="_blank" rel="noopener noreferrer" title="Fast Response Plumbing &amp; Rooter — official site">S40</a> · <a href="https://www.aceplumbingandrooter.com/" target="_blank" rel="noopener noreferrer" title="Ace Plumbing &amp; Rooter — official site">S43</a> · <a href="https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm" target="_blank" rel="noopener noreferrer" title="Angi — Bathtub restoration pros in San Francisco, CA">S24</a></span></td>
 </tr>
 <tr>
 <td>F09</td>
-<td>Access route cannot be determined from the description alone</td>
-<td>Manufacturer instructions are model-specific; no photos/model/inspection supplied</td>
-<td><span class="pill warn">unverified</span></td>
-<td class="src-col"><span class="src-ids"><a href="brief.html" title="Project brief (owner-provided primary record)">S44</a> · <a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf" target="_blank" rel="noopener noreferrer" title="Watco — Trip Lever Installation Instructions (PDF)">S71</a> · <a href="https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste" target="_blank" rel="noopener noreferrer" title="Oatey — Dearborn Plastic Tubular Trip-Lever Bath Waste">S14</a></span></td>
+<td>Two previously cited sources are dead and were removed from all active claims</td>
+<td>SFGate redirect to empty page; InspectAndTest HTTP 500 — both re-checked 2026-11-07</td>
+<td><span class="pill warn">irregularity — flagged</span></td>
+<td class="src-col"><span class="src-ids"><a href="sources.html" title="Source ledger (this site)">S55</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
 <tr>
 <td>F10</td>
-<td>Permit applicability depends on the exact plumbing and ceiling scope</td>
-<td>SF DBI rules and §104.2 exemptions cited; no project determination made</td>
-<td><span class="pill ok">official context</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Apply for a plumbing and mechanical permit">S01</a> · <a href="https://www.sf.gov/information--check-if-your-construction-project-needs-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Check if your construction project needs a permit">S02</a> · <a href="https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf" target="_blank" rel="noopener noreferrer" title="2025 San Francisco Plumbing Code PDF — §104.2">S74</a> · <a href="https://www.sf.gov/apply-kitchen-or-bath-remodel-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Apply for a kitchen or bath remodel permit">S72</a></span></td>
+<td>The repository's root content belongs to an unrelated legacy project</td>
+<td>README describes a DOE GEMS fault-prospectivity audit; legacy site remains under docs/</td>
+<td><span class="pill warn">irregularity — flagged</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a> · <a href="docs/index.html" title="Legacy GEMS site (archived)">S48</a></span></td>
 </tr>
 <tr>
 <td>F11</td>
-<td>No combined written quote or provider acceptance exists in this research</td>
-<td>Owner reported prior estimates; this session did not contact providers</td>
-<td><span class="pill warn">unverified</span></td>
-<td class="src-col"><span class="src-ids"><a href="brief.html" title="Project brief (owner-provided primary record)">S44</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td>Recommended shortlist order: firms whose verified classes cover both building and plumbing first</td>
+<td>Five verified B + C-36 licenses: <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer">#829071</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer">#959843</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer">#1003394</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer">#1115649</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer">#841229</a></td>
+<td><span class="pill info">recommendation</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #829071 — Ace Plumbing &amp; Rooter">S11</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1003394 — Handyman Heroes Inc">S10</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc">S56</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter">S57</a> · <a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a></span></td>
 </tr>
 <tr>
 <td>F12</td>
-<td>Unrelated GEMS material and earlier dashboards are preserved, not treated as plumbing evidence</td>
-<td>Repository inventory and historical snapshot</td>
-<td><span class="pill warn">irregularity / flagged</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a> · <a href="data/canonical/research-history-2026-11-07.json" title="Prior canonical research snapshot (2026-11-07/08)">S75</a> · <a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S76</a></span></td>
+<td>Six firms can legally do both trades under one license, not five</td>
+<td>Re-reading every cited license on 2026-11-08 added The Genteel Plumbers #1025814 (C-36 + B) to the dual-classified set already published: #829071, #959843, #1003394, #1115649, #841229.</td>
+<td><span class="pill ok">verified</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1025814 — The Genteel Plumbers Inc">S64</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #829071 — Ace Plumbing &amp; Rooter">S11</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1003394 — Handyman Heroes Inc">S10</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc">S56</a> · <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter">S57</a> · <a href="https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B" target="_blank" rel="noopener noreferrer" title="CSLB — B General Building classification (B&amp;P §7057)">S83</a></span></td>
+</tr>
+<tr>
+<td>F13</td>
+<td>A ranked, reproducible decision order now exists</td>
+<td>Scores are computed from five official CSLB fields only. Route 1 order: Ace Plumbing & Rooter (100), The Genteel Plumbers Inc (97), Handyman Heroes Inc (90), General SF (GENERALSF) (85), Manny's Plumbing & Rooter (81), Rapid Flow Plumbing & Rooter Inc (79). Route 2 and the restoration partner are ranked on the same rubric.</td>
+<td><span class="pill info">analysis on verified inputs</span></td>
+<td class="src-col"><span class="src-ids"><a href="ranking.html" title="Ranking rubric and score inputs (this site)">S88</a> · <a href="data/canonical/cslb_records.json" title="CSLB record transcriptions (this project&#x27;s dataset)">S85</a></span></td>
+</tr>
+<tr>
+<td>F14</td>
+<td>Every candidate now has an officially published phone number</td>
+<td>CSLB License Detail records publish a Business Phone Number, so all 16 licensees have a verified contact number with an official source link. Company-published numbers were added where they were actually read; differences are flagged rather than reconciled.</td>
+<td><span class="pill ok">verified</span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/cslb_records.json" title="CSLB record transcriptions (this project&#x27;s dataset)">S85</a> · <a href="data/canonical/vendor_sites.json" title="Business-site transcriptions (this project&#x27;s dataset)">S86</a> · <a href="https://www.genteelplumbers.com/contact" target="_blank" rel="noopener noreferrer" title="Genteel Plumbers — official contact page">S72</a> · <a href="https://www.rapidflowbayarea.com/contact" target="_blank" rel="noopener noreferrer" title="Rapid Flow Plumbing &amp; Rooter — official contact page">S74</a></span></td>
+</tr>
+<tr>
+<td>F15</td>
+<td>A dedicated C-9 drywall partner is verified for the two-trade route</td>
+<td>Bernal Hill Drywall Inc #995163 holds C-9 and B with workers' compensation insured under a wallboard-installation class code, and its own site describes patching, texture matching and build-back after water damage.</td>
+<td><span class="pill ok">verified</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #995163 — Bernal Hill Drywall Inc">S66</a> · <a href="https://www.bernalhilldrywall.com/" target="_blank" rel="noopener noreferrer" title="Bernal Hill Drywall — official site">S73</a> · <a href="https://labormarketinfo.edd.ca.gov/aspdotnet/databrowsing/empDetails.aspx?menuChoice=emp&amp;empid=432614093&amp;geogArea=0604000075" target="_blank" rel="noopener noreferrer" title="California EDD Labor Market Information — employer details, Bernal Hill Drywall Inc">S82</a> · <a href="https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9" target="_blank" rel="noopener noreferrer" title="CSLB — C-9 Drywall classification">S84</a></span></td>
+</tr>
+<tr>
+<td>F16</td>
+<td>Review evidence for the exact combination exists but is third-party only</td>
+<td>A Yelp result quotes a Handyman Heroes review describing a wall repair after plumbing work, and an Ace portfolio caption describes a bathtub installed with a valve inside the wall. Neither is an official source, so neither affects the score.</td>
+<td><span class="pill warn">third-party — UNVERIFIED</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://www.yelp.com/search?find_desc=Handyman+Drywall&amp;find_loc=Lower+Haight%2C+San+Francisco%2C+CA" target="_blank" rel="noopener noreferrer" title="Yelp — Handyman Drywall near Lower Haight, San Francisco (result snapshot)">S78</a> · <a href="https://www.yelp.com/search?cflt=plumbing&amp;find_loc=Mission,+San+Francisco,+CA+94110" target="_blank" rel="noopener noreferrer" title="Yelp — Plumbing near Mission, San Francisco (result snapshot)">S77</a> · <a href="data/canonical/review_snapshots.json" title="Review-platform snapshots (this project&#x27;s dataset)">S87</a></span></td>
 </tr>
 </tbody>
-<caption>Analysis is explicitly separated from verified license facts, company self-descriptions, owner statements and third-party reviews.</caption>
+<caption>Findings marked 'analysis' are this site's reasoning from the cited verified sources; they are not vendor claims, quotes, or official determinations. Values that could not be confirmed from an official source remain blank on the data pages and are listed on the Flagged for Review page.</caption>
 </table></div></section>
-<section class="section">
-<h2>Hiring priority — conditional, evidence-based ranking</h2>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Hiring priority — conditional, evidence-based ranking table"><table class="data-table">
-<thead><tr>
-<th>Rank</th>
-<th>Company / evidence tier</th>
-<th>Why this rank</th>
-<th>Conditions before hiring</th>
-<th>Combined quote</th>
-<th>Source</th>
-</tr></thead><tbody>
-<tr>
-<td>1</td>
-<td><strong>General SF</strong><br><small>A — both trades advertised</small></td>
-<td>Best documented single-provider fit: the same company advertises plumbing and sheetrock/tape/texture, and CSLB confirms B + C-36 on one license.</td>
-<td>Workers' compensation exemption; confirm who attends, insurance, exact access method, tenant precautions and a combined written price.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #959843 — GENERALSF">S09</a> · <a href="https://generalsf.com/" target="_blank" rel="noopener noreferrer" title="General SF — official site">S41</a> · <a href="https://generalsf.com/building" target="_blank" rel="noopener noreferrer" title="General SF — Building services">S77</a> · <a href="https://generalsf.com/plumbing" target="_blank" rel="noopener noreferrer" title="General SF — Plumbing services">S78</a></span></td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>Handyman Heroes Inc</strong><br><small>A — both trades advertised</small></td>
-<td>Second documented combined-scope fit, with wall repair and plumbing advertised by the same licensed company.</td>
-<td>CSLB complaint disclosure must be reviewed; site claims C-10 but CSLB #1003394 lists only B/C-36; listed workers' compensation codes are carpentry/clerical, so confirm coverage for the actual crew.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1003394 — Handyman Heroes Inc">S10</a> · <a href="https://www.handymanhero.es/" target="_blank" rel="noopener noreferrer" title="Handyman Heroes — official site">S42</a> · <a href="https://www.handymanhero.es/handyman-services/" target="_blank" rel="noopener noreferrer" title="Handyman Heroes — Handyman services">S64</a></span></td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>Ace Plumbing & Rooter Inc</strong><br><small>B — dual license, drywall unconfirmed</small></td>
-<td>Strong license/insurance profile and documented property-manager work; B + C-36 supports a combined contract, but drywall self-performance was not found on the reviewed page.</td>
-<td>Ask whether drywall patch/finish is self-performed or subcontracted and for concealed waste-and-overflow references.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #829071 — Ace Plumbing &amp; Rooter">S11</a> · <a href="https://www.aceplumbingandrooter.com/" target="_blank" rel="noopener noreferrer" title="Ace Plumbing &amp; Rooter — official site">S43</a></span></td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>Rapid Flow Plumbing & Rooter Inc</strong><br><small>B — dual license, drywall unconfirmed</small></td>
-<td>Dual B + C-36 license and advertised remodeling support a combined-scope inquiry.</td>
-<td>Workers' compensation exemption; no directly verified Yelp profile in this pass; confirm crew, insurance, drywall scope and exact repair experience.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1115649 — Rapid Flow Plumbing &amp; Rooter Inc">S56</a> · <a href="https://www.rapidflowbayarea.com/" target="_blank" rel="noopener noreferrer" title="Rapid Flow Plumbing &amp; Rooter — home">S65</a> · <a href="https://www.rapidflowbayarea.com/contact" target="_blank" rel="noopener noreferrer" title="Rapid Flow Plumbing &amp; Rooter — contact">S66</a></span></td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>Manny's Plumbing & Rooter</strong><br><small>B — dual license, drywall unconfirmed</small></td>
-<td>Dual license and tub/drain/remodel services make it a reasonable backup inquiry.</td>
-<td>Daly City address, workers' compensation exemption and exact service-area availability require confirmation.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #841229 — Manny&#x27;s Plumbing &amp; Rooter">S57</a> · <a href="https://www.mannysplumbingandremodeling.com/" target="_blank" rel="noopener noreferrer" title="Manny&#x27;s Plumbing &amp; Rooters — home">S67</a></span></td>
-</tr>
-<tr>
-<td>6</td>
-<td><strong>Expert Plumbing Solutions</strong><br><small>C — plumbing-only license</small></td>
-<td>Broadest owner-reported quote scope (waste-and-overflow replacement) and current workers' compensation policy, but only C-36 is verified.</td>
-<td>Drywall scope/arrangement is unconfirmed; ask whether patch/finish is included and who performs it. BPC §7059 may allow qualifying incidental/supplemental work, but applicability here is unverified. owner-reported $614 is unverified and not a combined quote.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #977638 — Expert Plumbing Solutions">S06</a> · <a href="https://www.eplumbingsolutions.com/" target="_blank" rel="noopener noreferrer" title="Expert Plumbing Solutions — official site">S38</a></span></td>
-</tr>
-<tr>
-<td>7</td>
-<td><strong>Fast Response Plumbing & Rooter</strong><br><small>C — plumbing-only license</small></td>
-<td>Company explicitly advertises bathtub waste-and-overflow repair and has a current workers' compensation policy; owner-reported adjustment quote is the lowest of the three.</td>
-<td>Only C-36 verified; policy expires 2026-12-18; CSLB/Yelp/site addresses differ; $135 is owner-reported and not a combined quote.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #1024971 — Fast Response Plumbing and Rooter">S08</a> · <a href="https://www.fastresponseplumbingsf.com/" target="_blank" rel="noopener noreferrer" title="Fast Response Plumbing &amp; Rooter — official site">S40</a> · <a href="https://www.fastresponseplumbingsf.com/plumbing-repair-replacement" target="_blank" rel="noopener noreferrer" title="Fast Response — plumbing repair and replacement">S61</a></span></td>
-</tr>
-<tr>
-<td>8</td>
-<td><strong>Bay Area Plumbing</strong><br><small>C — plumbing-only license</small></td>
-<td>Relevant plumbing/tub experience is advertised and an owner-reported quote exists, but the verified license is C-36 only.</td>
-<td>Workers' compensation exemption; drywall requires another appropriately licensed provider/subcontractor; $550 is owner-reported and not a combined quote.</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796" target="_blank" rel="noopener noreferrer" title="CSLB License Detail #757796 — Bay Area Plumbing">S07</a> · <a href="https://www.bayareaplumbingsf.com/" target="_blank" rel="noopener noreferrer" title="Bay Area Plumbing — official site">S39</a></span></td>
-</tr>
-</tbody>
-<caption>Editorial decision analysis, not a contractor endorsement. Tier A: both trades advertised + B/C-36 license. Tier B: B/C-36 license but drywall self-performance unconfirmed. Tier C: C-36-only verified license. Within tiers, documented scope, insurance/disclosure and service-area evidence break ties. No numeric quality score is invented. All combined quotes are blank/unverified.</caption>
-</table></div></section>
-<section class="section">
-<h2>Access options — what is and is not established</h2>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Access options — what is and is not established table"><table class="data-table">
-<thead><tr>
-<th>Route</th>
-<th>Evidence</th>
-<th>Project-specific conclusion</th>
-<th>Source</th>
-</tr></thead><tbody>
-<tr>
-<td>From above (preferred)</td>
-<td>Watco instructions show overflow plate/linkage removal and adjustment for its models; this tub model is unknown</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf" target="_blank" rel="noopener noreferrer" title="Watco — Trip Lever Installation Instructions (PDF)">S71</a> · <a href="brief.html" title="Project brief (owner-provided primary record)">S44</a></span></td>
-</tr>
-<tr>
-<td>From below (reported fallback)</td>
-<td>This Old House describes below access for stubborn drains; SF rules govern any cutting/replacement and covering</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain" target="_blank" rel="noopener noreferrer" title="This Old House — How To Replace a Tub Drain">S18</a> · <a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Apply for a plumbing and mechanical permit">S01</a> · <a href="brief.html" title="Project brief (owner-provided primary record)">S44</a></span></td>
-</tr>
-<tr>
-<td>Ceiling drywall opening</td>
-<td>SF DBI lists minor wallboard repairs as exempt unless fire-protection related; exact ceiling assembly/scope unknown</td>
-<td><span class="blank" aria-label="blank — unverified">—</span> <span class="pill warn">UNVERIFIED</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://www.sf.gov/information--check-if-your-construction-project-needs-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Check if your construction project needs a permit">S02</a> · <a href="https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf" target="_blank" rel="noopener noreferrer" title="2025 San Francisco Plumbing Code PDF — §104.2">S74</a> · <a href="brief.html" title="Project brief (owner-provided primary record)">S44</a></span></td>
-</tr>
-</tbody>
-<caption>No access method, opening size or permit exemption is inferred. A licensed site assessment is required.</caption>
-</table></div></section>
-<section class="section"><h2>Ranking method</h2><p>Tier A requires both trades advertised by the company and a verified B+C-36 license. Tier B has B+C-36 but drywall self-performance unconfirmed. Tier C has only C-36 verified. Within tiers, documented scope, workers’ compensation/disclosure and service-area evidence break ties. Costs are not scored because no comparable combined quote exists. This transparent ordering avoids invented numeric scores. <a href="https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B" target="_blank" rel="noopener noreferrer">B classification</a> · <a href="https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36" target="_blank" rel="noopener noreferrer">C-36 classification</a> · <a href="https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx" target="_blank" rel="noopener noreferrer">hiring guidance</a>.</p> <p><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC" target="_blank" rel="noopener noreferrer">BPC §7059</a> allows qualifying incidental and supplemental work by specialty contractors; dual classification is a screening signal, not the only possible arrangement or proof of job acceptance.</p></section>
+<section class="section"><h2>Access decision matrix</h2><div class="table-wrap"><table><thead><tr><th>Route</th><th>What the sources say</th><th>Verified?</th><th>Source</th></tr></thead><tbody><tr><td><strong>From above (preferred)</strong></td><td>Remove the overflow-plate screws and withdraw the upper linkage; cleaning or adjusting the link can free a stuck mechanism</td><td><span class="pill warn">procedure documented; outcome for this tub unverified</span></td><td><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain" target="_blank" rel="noopener noreferrer">This Old House — How To Replace a Tub Drain</a> · <a href="https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/" target="_blank" rel="noopener noreferrer">Hunker — The Trip Lever In My Bathtub Is Stuck</a> · <a href="https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/" target="_blank" rel="noopener noreferrer">Family Handyman — Replace a bathtub drain stopper</a></td></tr><tr><td><strong>From below (reported fallback)</strong></td><td>Stubborn/seized drains may require access from below; new waste-and-overflow kits are aligned from below while a helper holds the shoe from above</td><td><span class="pill warn">procedure documented; this tub's layout unverified</span></td><td><a href="https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain" target="_blank" rel="noopener noreferrer">This Old House — How To Replace a Tub Drain</a> · <a href="https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste" target="_blank" rel="noopener noreferrer">Oatey — Dearborn Plastic Tubular Trip-Lever Bath Waste</a></td></tr><tr><td><strong>Drywall ceiling opening</strong></td><td>SF.gov lists minor interior plaster/wallboard repair among work not needing a building permit; the plumbing scope is governed by the plumbing-permit rule</td><td><span class="pill warn">official rules cited; applicability to this scope to be confirmed with SF DBI</span></td><td><a href="https://www.sf.gov/information--check-if-your-construction-project-needs-permit" target="_blank" rel="noopener noreferrer">SF.gov — Check if your construction project needs a permit</a> · <a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener noreferrer">SF.gov — Apply for a plumbing and mechanical permit</a></td></tr></tbody><caption>Each row links the source it was read from. This matrix is analysis, not a scope of work or a legal determination.</caption></table></div></section>
+<section class="section"><h2>Shortlist rationale</h2><p>Start with firms whose single verified license lists both a building classification and C-36 Plumbing: <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071" target="_blank" rel="noopener noreferrer">Ace #829071</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843" target="_blank" rel="noopener noreferrer">GENERALSF #959843</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394" target="_blank" rel="noopener noreferrer">Handyman Heroes #1003394</a>, <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649" target="_blank" rel="noopener noreferrer">Rapid Flow #1115649</a> and <a href="https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229" target="_blank" rel="noopener noreferrer">Manny's #841229</a>. This follows from the CSLB classifications themselves, not from any company claim. Watch items: workers'-compensation exemptions on #959843, #757796, #1115649 and #841229, a policy expiring 2026-12-18 on #1024971, and the official complaint disclosure on #1003394 — all listed on the <a href="flagged.html">Flagged for Review</a> page. Re-check every license at <a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener noreferrer">CSLB</a> on the hire date.</p></section>
 <footer class="site">
   <span>Research dashboard · San Francisco · updated 2026-11-08 · session <span class="mono">arena/52d35ede-korea7</span></span>
   <span><a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="https://github.com/karagemop466-tech/Korea7">Repository</a></span>

@@ -1030,6 +1030,68 @@ The prior final integration is already complete; this is a follow-up rather than
 - Two merge conflicts with concurrent sessions resolved preserving both sides' board records and incoming generated verification files; no work discarded.
 - **Delivery:** [PR #57](https://github.com/karagemop466-tech/Korea7/pull/57) merged without approval on 2026-11-08 at 23:00:36Z, merge commit `c3c01066eff7c357b45b53abb7c45f18219a121c`. Its [Pages build and deploy run 42533022816](https://github.com/karagemop466-tech/Korea7/actions/runs/42533022816) succeeded; the live flagged page was fetched and displays both U21 and U22. After the concurrent integration, the build passed 11 structural checks with 501 internal links and the site test suite passed 46 tests and 9 subtests. The Pages workflow reported a non-blocking GitHub-hosted action runtime deprecation warning. A follow-up corrects the stale flag-range label and records this delivery; it does not assert a new external re-verification.
 - A further board-only conflict with PR #58 was resolved by retaining the full incoming board and appending the PR #57 delivery record; no other work was discarded.
+
+# Session `arena/0e9ee506-korea7` — claim (2026-11-08)
+
+**Branch note.** This session is platform-pinned to `arena/0e9ee506-korea7`; it may not create or push
+`session-<id>/<task>` branches. The branch convention is therefore approximated with non-overlapping
+file scopes on this single fixed branch, as earlier pinned sessions did.
+
+**Handoff.** Session `arena/89ae6815-korea7` left its audit task `in progress` but its scope was
+`COORDINATION.md` only and its PR #50 is already merged (commit `2fb3e81`, 2026-11-08T22:56Z). Its
+audit finding — the Pages **deploy step failed** for `main` commit `1faccdc` — is unresolved. This
+session takes over that open item (task J5 below) and records the handoff here. No other session has
+an active claim on the files listed below; all earlier task boards report `done`.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| J1 | Re-verify every contractor license **and official business phone** directly on CSLB records (2026-11-08); record drift vs the 2026-11-07 snapshot | in progress | arena/0e9ee506-korea7 | `data/canonical/cslb_records.json`, `data/canonical/site_data.json`, `scripts/dashboard_content.py` |
+| J2 | Ranked hiring decision analysis (explicit rubric, per-rank reasoning, cost position, official links + phone) — new category page | in progress | arena/0e9ee506-korea7 | `ranking.html`, `scripts/dashboard_content.py`, `scripts/build_dashboard.py` |
+| J3 | Line-by-line re-verification of the combined site; rebuild, link/row/privacy checks, tests | in progress | arena/0e9ee506-korea7 | `data/canonical/*`, `verification.html`, `flagged.html`, canonical root pages |
+| J4 | Executive summary refresh with the ranking and verified contact directory | in progress | arena/0e9ee506-korea7 | `EXECUTIVE-SUMMARY.md`, `summary.html`, `README.md` |
+| J5 | Fix and confirm GitHub Pages deployment (takeover of the 89ae6815 open deploy item); PR to `main`, merge, record result | in progress | arena/0e9ee506-korea7 | `.github/workflows/*` (if needed), repo Pages settings, `COORDINATION.md` |
+
+**Not touched by this session:** `docs/**` (legacy GEMS + archived overflow microsites),
+`bathtub-overflow/**`, `sf-overflow-audit/**`, `shortlist.html`, `verification-log.html`,
+`trip-lever/**`, `gems/**`, `evidence/**`, `registry/**`, `vendor/**`, `data/*.tif`.
+Requests affecting those files are logged here instead of edited.
+
+---
+
+# Session `arena/0e9ee506-korea7` — delivery (2026-11-08)
+
+**Scope delivered (J1–J4 complete).** J1 research: all 16 distinct CSLB license numbers cited anywhere in the
+repository re-read directly on 2026-11-08 (each printed "Data current as of 11/8/2026"), 10 official business
+sites read, the CSLB B / C-9 classification pages, the Handyman Heroes complaint disclosure, the Bernal Hill
+EDD employer listing and BPC §7059(a). J2: three canonical datasets committed
+(`data/canonical/cslb_records.json`, `vendor_sites.json`, `review_snapshots.json`), `scripts/ranking_data.py`
+computes the order from CSLB fields only, and two new pages (`ranking.html`, `contacts.html`) plus a
+`call_order`, `cslb_register`, `reviews_1108`, `scope_evidence` and `rubric` table were merged into the single
+generator. J3: `python3 scripts/build_dashboard.py` → 15 pages / 23 tables / 88 sources, **11/11 checks PASS**;
+site test modules → **63 passed + 11 subtests** (including the concurrent sessions' regression tests).
+J4: `EXECUTIVE-SUMMARY.md`, `summary.html`, `index.html` and `README.md` refreshed.
+
+**Concurrent-work merge, not overwrite.** While this session was drafting, `origin/main` gained PRs #54–#59,
+which published sources **S61–S63** and flags **U21–U22** and corrected the licensing wording (BPC §7059(a))
+and the verifier's "no network check" caveat. This session took the concurrent version of
+`scripts/dashboard_content.py` / `scripts/verify_dashboard.py`, re-applied its own edits on top, and
+**renumbered its own additions to S64–S88 and U23–U34** so nothing already published was renumbered. The
+route-2 ranking wording was updated to match the §7059(a) correction: no ceiling classification on a license is
+a scoring input, not a legal bar. `COORDINATION.md` was union-merged (concurrent records first, then this
+session's claim). Generated HTML and `data/canonical/*` were regenerated from the merged dataset.
+
+**Files owned by other sessions left untouched:** `shortlist.html`, `verification-log.html`,
+`bathtub-overflow/**`, `docs/bath/**`, `docs/overflow-*.html`, `docs/plumbing-index.html`,
+`sf-overflow-audit/**`, `tests/test_dashboard_integrity.py`, `tests/test_followup_audit.py`,
+`tests/test_license_scope_followup.py`.
+
+**Request to the next integration session (not edited here):** `tests/test_dashboard_integrity.py` pins a
+fixed 9-page `PAGES` tuple, so `ranking.html` and `contacts.html` are covered by the new
+`tests/test_ranking.py` instead. Please extend that tuple to 15 pages when you next own that file.
+
+**J5 status:** PR opened from `arena/0e9ee506-korea7` to `main`; merge and Pages deploy result recorded below
+once confirmed.
+
 ---
 
 # Follow-up integration — session `arena/52d35ede-korea7` (2026-11-08)
@@ -1059,5 +1121,11 @@ Read the complete existing board before editing. Earlier delivery/integration ta
 
 - Rebased onto `origin/main` at `665f41d` after concurrent PRs #57–#59. Preserved the incoming shortlist license-scope correction, source S62 (BPC §7059), source S63 (archived verification page) and flag U22. To avoid ID collisions, this session’s General SF building/plumbing sources were remapped to S77/S78 and its drywall-inclusion flag to U33; all table/evidence/provider references were updated and the site regenerated. No concurrent board entry or archived file was discarded.
 - Re-read official [BPC §7059](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC) during integration: specialty contractors may execute multi-craft contracts when the other work is incidental and supplemental to their licensed craft. Applicability to this ceiling repair remains unverified; the dashboard does not treat B+C-36 as the only possible arrangement.
-- Final local checks: `python3 scripts/build_dashboard.py` → 11/11 PASS; 13 pages, 19 tables, 540 data rows, 78 sources, 33 flags; 1,115 rendered tbody rows with 0 missing source links; 1,081 canonical internal links and 0 broken anchors. Full-repo HTML audit: 78 pages, 2,146 internal links, 0 broken, 0 bad anchors. Privacy sweep: 127 files, 0 matches. Site suite including `tests/test_license_scope_followup.py`: **51 passed, 9 subtests passed**. jsdom table-filter smoke test passed; local static preview returned HTTP 200 for all canonical pages/assets/data.
+- Final local checks after the PR #61 merge: `python3 scripts/build_dashboard.py` → 11/11 PASS; 15 pages, 25 tables, 662 data rows, 100 sources, 43 flags; 1,351 rendered tbody rows with 0 missing source links; 1,419 canonical internal links and 0 broken anchors. Privacy sweep: 132 files, 0 matches. Full-repo HTML audit: 80 pages, 2,486 internal links, 0 broken, 0 bad anchors. Site suite including `tests/test_ranking.py`, `tests/test_license_scope_followup.py` and the extended 15-page integrity tuple: **68 passed, 18 subtests passed**. jsdom table-filter smoke tests passed on contractors/ranking/contacts; local static preview returned HTTP 200 for canonical pages/assets/data.
 - F1–F3 are done. F4 remains in progress until the PR is merged and the actual Pages deployment/live content are verified. Flagged items remain non-blocking; no provider outreach, booking or job acceptance is claimed.
+
+### Concurrent PR #61 merge handoff — arena/52d35ede-korea7 (2026-11-08)
+
+- PR #60 became conflicting after PR #61 merged the 16-record CSLB ranking/contacts work (`arena/0e9ee506-korea7`). This integration merges `origin/main` rather than overwriting it. The incoming `ranking_data.py`, `ranking.html`, `contacts.html`, canonical CSLB/vendor/review datasets, S64–S88 and U23–U34 are preserved as the primary computed ranking.
+- This session's earlier 8-provider conditional ranking is retained as supplemental structured evidence (`providers-2026-11-08.json`) and audit history, not as a competing primary order. Colliding source/flag IDs are remapped to additive IDs; the drywall-inclusion flag is preserved. Generated pages are rebuilt from the merged generator.
+- The incoming request to extend `tests/test_dashboard_integrity.py` from 9 to 15 pages is handled in this integration. Final checks and the PR #60 merge/deploy record are appended after actual verification.

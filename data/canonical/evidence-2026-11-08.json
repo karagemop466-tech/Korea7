@@ -191,79 +191,79 @@
       "extract": "Company lists Bathtubs (waste & overflow), phone (415) 596-6115, San Francisco service, and working alongside a general contractor for remodels. Not proof of drywall self-performance or this stuck mechanism."
     },
     {
-      "source_id": "S77",
+      "source_id": "S99",
       "url": "https://generalsf.com/building",
       "method": "direct fetch",
       "extract": "Company lists Rough and Finish Plumbing; Sheetrock/Tape and Texture; phone (650)-303-1515; CSLB 959843."
     },
     {
-      "source_id": "S78",
+      "source_id": "S100",
       "url": "https://generalsf.com/plumbing",
       "method": "direct fetch",
       "extract": "Company lists plumbing installation/repair, sewer/water lines, faucet/toilet/tub/shower replacement; phone (650)-303-1515; CSLB 959843."
     },
     {
-      "source_id": "S64",
+      "source_id": "S89",
       "url": "https://www.handymanhero.es/handyman-services/",
       "method": "direct fetch",
       "extract": "Company lists sheetrock and wall repairs, plumbing and electrical services, San Francisco homes and apartments; phone 1-844-382-4376; license #1003394."
     },
     {
-      "source_id": "S65",
+      "source_id": "S90",
       "url": "https://www.rapidflowbayarea.com/",
       "method": "direct fetch",
       "extract": "Company lists B and C-36 license #1115649, plumbing and general contracting/remodels, San Francisco Bay Area service; marketing phone 844-BAY-FLOW."
     },
     {
-      "source_id": "S66",
+      "source_id": "S74",
       "url": "https://www.rapidflowbayarea.com/contact",
       "method": "direct fetch",
       "extract": "Company contact page lists 230 Edinburgh St, San Francisco; SF Bay Area service; license #1115649; phone/text (415) 866-8401 and marketing line 844-BAY-FLOW."
     },
     {
-      "source_id": "S67",
+      "source_id": "S75",
       "url": "https://www.mannysplumbingandremodeling.com/",
       "method": "direct fetch",
       "extract": "Company lists license #841229, C-36/B, tub installation, drain replacement, kitchen/bathroom remodeling; named service list includes Daly City and San Mateo County cities plus surrounding San Mateo & San Francisco Counties. Exact SF address availability unconfirmed."
     },
     {
-      "source_id": "S68",
+      "source_id": "S83",
       "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
       "method": "direct fetch",
       "extract": "B General Building definition and BPC 7057 limits: non-framing/carpentry trades require appropriate classification or appropriately licensed subcontractor, subject to the stated multi-trade rules."
     },
     {
-      "source_id": "S69",
+      "source_id": "S91",
       "url": "https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx",
       "method": "direct fetch",
       "extract": "CSLB advises at least three written bids on identical scope, checking license/personnel, address/phone, workers' compensation and general liability insurance; bond is not a competency guarantee."
     },
     {
-      "source_id": "S70",
+      "source_id": "S92",
       "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
       "method": "direct fetch",
       "extract": "Civil Code 1954 limits landlord entry, generally requires reasonable written notice with date/approximate time/purpose and normal business hours; 24 hours is presumed reasonable absent contrary evidence; exceptions include emergency, consent at entry and agreed repair entry within one week."
     },
     {
-      "source_id": "S71",
+      "source_id": "S93",
       "url": "https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf",
       "method": "direct fetch",
       "extract": "Watco trip-lever instructions: drain elbow/gasket secured under tub; overflow elbow aligned behind tub; overflow plate and drop cylinder installed with screws; linkage must not be kinked; readjust to ensure drain stops water. Model-specific instructions, not identification of this tub."
     },
     {
-      "source_id": "S72",
+      "source_id": "S94",
       "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
       "method": "direct fetch",
       "extract": "SF DBI kitchen/bath permit guidance for in-kind fixture renovation with no structural work; online route limited to no wall removal/moving and R-2/R-3 legally permitted kitchens/baths; related plumbing/electrical permits and inspections are separate."
     },
     {
-      "source_id": "S73",
+      "source_id": "S95",
       "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco?start=160",
       "method": "web_search excerpt; direct Yelp fetch HTTP 403",
       "extract": "Search excerpt located Ace Plumbing & Rooter's Yelp profile and plumbing categories. Numeric rating/count not used as verified evidence."
     },
     {
-      "source_id": "S74",
+      "source_id": "S96",
       "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
       "method": "direct fetch, chunk 1, printed pages 4-5",
       "extract": "SF Plumbing Code 104.2 exempt work includes repair of leaks not requiring cutting into or removing piping, and unstopping traps/sewers/vents/waste pipes not requiring cutting into or removal of traps or piping."
