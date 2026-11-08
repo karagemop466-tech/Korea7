@@ -945,3 +945,30 @@ Earlier integration tasks were completed by their owners; this session will not 
 - The [live dashboard](https://karagemop466-tech.github.io/Korea7/) is reachable and displays the previously published delivery. The latest Pages run for main commit `1faccdc` [failed at the deploy step](https://github.com/karagemop466-tech/Korea7/actions/runs/42413503253); its build step succeeded. The preceding [run](https://github.com/karagemop466-tech/Korea7/actions/runs/42413469987) succeeded. Attempting to rerun the failed run returned “cannot be rerun; its workflow file may be broken”. The currently live site may therefore reflect the earlier successful deployment; do not describe the latest deployment as successful without checking the next run.
 - Prior independent sources and flags are preserved in the [source ledger](https://karagemop466-tech.github.io/Korea7/sources.html) and [review page](https://karagemop466-tech.github.io/Korea7/flagged.html). This session did not reverify all individual license records, estimates, or review claims, and no provider acceptance or availability is established.
 - A full repository test run could not collect unrelated scientific tests because NumPy was not installed in the audit environment; the five site modules above ran independently. The first branch-specific pull could not find a remote branch because it had not yet been created; the claim was rebased on main and pushed to the prescribed session branch.
+
+---
+
+# Session `arena/0e9ee506-korea7` — claim (2026-11-08)
+
+**Branch note.** This session is platform-pinned to `arena/0e9ee506-korea7`; it may not create or push
+`session-<id>/<task>` branches. The branch convention is therefore approximated with non-overlapping
+file scopes on this single fixed branch, as earlier pinned sessions did.
+
+**Handoff.** Session `arena/89ae6815-korea7` left its audit task `in progress` but its scope was
+`COORDINATION.md` only and its PR #50 is already merged (commit `2fb3e81`, 2026-11-08T22:56Z). Its
+audit finding — the Pages **deploy step failed** for `main` commit `1faccdc` — is unresolved. This
+session takes over that open item (task J5 below) and records the handoff here. No other session has
+an active claim on the files listed below; all earlier task boards report `done`.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| J1 | Re-verify every contractor license **and official business phone** directly on CSLB records (2026-11-08); record drift vs the 2026-11-07 snapshot | in progress | arena/0e9ee506-korea7 | `data/canonical/cslb_records.json`, `data/canonical/site_data.json`, `scripts/dashboard_content.py` |
+| J2 | Ranked hiring decision analysis (explicit rubric, per-rank reasoning, cost position, official links + phone) — new category page | in progress | arena/0e9ee506-korea7 | `ranking.html`, `scripts/dashboard_content.py`, `scripts/build_dashboard.py` |
+| J3 | Line-by-line re-verification of the combined site; rebuild, link/row/privacy checks, tests | in progress | arena/0e9ee506-korea7 | `data/canonical/*`, `verification.html`, `flagged.html`, canonical root pages |
+| J4 | Executive summary refresh with the ranking and verified contact directory | in progress | arena/0e9ee506-korea7 | `EXECUTIVE-SUMMARY.md`, `summary.html`, `README.md` |
+| J5 | Fix and confirm GitHub Pages deployment (takeover of the 89ae6815 open deploy item); PR to `main`, merge, record result | in progress | arena/0e9ee506-korea7 | `.github/workflows/*` (if needed), repo Pages settings, `COORDINATION.md` |
+
+**Not touched by this session:** `docs/**` (legacy GEMS + archived overflow microsites),
+`bathtub-overflow/**`, `sf-overflow-audit/**`, `shortlist.html`, `verification-log.html`,
+`trip-lever/**`, `gems/**`, `evidence/**`, `registry/**`, `vendor/**`, `data/*.tif`.
+Requests affecting those files are logged here instead of edited.
