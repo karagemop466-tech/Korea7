@@ -1429,8 +1429,8 @@
   },
   {
     "path": "scripts/build_dashboard.py",
-    "bytes": 18823,
-    "sha256": "b7ac266cda377698e039bae18892b7f7d1df8263972e2bf44b2afe59427f508b",
+    "bytes": 18844,
+    "sha256": "24392d767fa7700e029a4685c761bf5255fc7956e6726e5608e4dfd157343b78",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1499,8 +1499,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 142638,
-    "sha256": "e6a76cda7b58aa882238a39c5d095627c253df2ba1ed8009682845dde16fb933",
+    "bytes": 142672,
+    "sha256": "6b4b2ea87df748fbdd7952a4d2de068c3fed34801c8cf3200127c87e7c3fe895",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

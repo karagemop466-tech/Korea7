@@ -396,7 +396,7 @@ PAGES = {
             {"type": "table", "title": "Problem snapshot", "ref": "problem"},
             {"type": "quick", "title": "Browse by category", "items": [
                 {"href": "ranking.html", "t": "Ranked hiring decision", "d": "Every candidate ranked best-to-worst on verified CSLB facts, with reasoning and cost position."},
-                {"href": "contacts.html", "t": "Contacts &amp; licenses", "d": "Official business links, verified phone numbers and all 16 license records."},
+                {"href": "contacts.html", "t": "Contacts & licenses", "d": "Official business links, verified phone numbers and all 16 license records."},
                 {"href": "summary.html", "t": "Executive summary", "d": "Important details, key findings and next steps."},
                 {"href": "requirements.html", "t": "Requirements", "d": "The full brief, line by line, with verification status."},
                 {"href": "estimates.html", "t": "Estimates & costs", "d": "The three quotes, blank verified cells, and 2026 cost benchmarks."},
@@ -413,7 +413,7 @@ PAGES = {
                 {"href": "sf-overflow-audit/index.html", "t": "Parallel SF overflow audit", "d": "Independent audit dashboard from another session, merged unchanged."},
                 {"href": "flagged.html", "t": "Flagged for review", "d": "Everything unverified or irregular, with source links."},
             ]},
-            {"type": "callout", "tone": "ok", "html": "<strong>Source links are provided, but not every row has a government source.</strong> The automated check tests link presence, not whether a source proves every claim; see <a href=\"flagged.html\">U21</a>. License facts come from the official CSLB database (records printed “Data current as of 11/7/2026”); permit and licensing rules come from sf.gov and California Legislative Information; technical and cost claims link to the manufacturer or publisher page they were read from."},
+            {"type": "callout", "tone": "ok", "html": "<strong>Source links are provided, but not every row has a government source.</strong> The automated check tests link presence, not whether a source proves every claim; see <a href=\"flagged.html\">U21</a>. License facts come from the official CSLB database (all sixteen records re-read 2026-11-08, each printing “Data current as of 11/8/2026”); permit and licensing rules come from sf.gov and California Legislative Information; technical and cost claims link to the manufacturer or publisher page they were read from."},
             {"type": "callout", "tone": "warn", "html": "<strong>Blank means unconfirmed.</strong> Where a value cannot be confirmed from an official source, the verified value cell is left blank and marked UNVERIFIED. Owner-provided figures appear only on the clearly labeled " + slink("S44", "Project brief") + " page, in the explicitly labeled Brief transcription table on <a href=\"estimates.html\">Estimates</a>, and on the <a href=\"flagged.html\">Flagged for Review</a> page. Nothing is inferred or filled in."},
             {"type": "callout", "tone": "info", "html": "Archived material from earlier sessions remains published at " + slink("S49", "bathtub-overflow/") + ", " + slink("S50", "docs/bath/") + ", " + slink("S51", "docs/plumbing-index.html") + " and the unrelated legacy GEMS site at " + slink("S48", "docs/index.html") + ". Those files were not edited by this integration session. Shared task board: " + slink("S45", "COORDINATION.md") + "."},
         ],

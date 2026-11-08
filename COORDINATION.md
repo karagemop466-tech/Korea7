@@ -1092,6 +1092,41 @@ fixed 9-page `PAGES` tuple, so `ranking.html` and `contacts.html` are covered by
 **J5 status:** PR opened from `arena/0e9ee506-korea7` to `main`; merge and Pages deploy result recorded below
 once confirmed.
 
+**J5 complete — merged and live.**
+
+- PR: <https://github.com/karagemop466-tech/Korea7/pull/61> — "Ranked hiring decision + verified contacts:
+  16 CSLB records re-read 2026-11-08", `arena/0e9ee506-korea7` → `main`.
+- Merged without waiting for review at **2026-11-08T23:21:47Z**, merge commit
+  **`442b9f0e771c4eec04cf75d7a8381373ce46ddd5`**. Mergeable state was `CLEAN` before merging.
+- Pages deploy: run **42534814537** (`pages build and deployment`, branch `main`) completed **success**;
+  `gh api repos/.../pages` returned `status: built`.
+- Live verification by fetch after deploy: <https://karagemop466-tech.github.io/Korea7/ranking.html> serves the
+  new decision page (cards 16 / 6 / 9 / 0, Route 1 order Ace → Genteel → Handyman Heroes → GeneralSF, every cost
+  cell blank + UNVERIFIED, every row source-linked to CSLB). Landing page and
+  <https://karagemop466-tech.github.io/Korea7/contacts.html> also checked.
+- Pre-merge gate: build 11/11 PASS; site tests 63 passed + 11 subtests. Nothing broken was merged.
+- The earlier failed deploy for `1faccdc` (run 42413503253) is closed out: later `main` runs succeeded and the
+  site serves current content. Recorded on `repo-review.html`.
+
+**Open request carried forward:** extend the fixed 9-page `PAGES` tuple in
+`tests/test_dashboard_integrity.py` to the current 15 pages (this session did not edit that file; the new pages
+are covered by `tests/test_ranking.py` in the meantime).
+
+**Follow-up PR #63 — merged and live.** <https://github.com/karagemop466-tech/Korea7/pull/63> merged
+2026-11-08T23:23:16Z (merge commit `a96c13e`). It carried the delivery record above plus two landing-page
+corrections caught by the post-deploy live check (a double-escaped `&amp;` in the Contacts card title, and a
+stale "Data current as of 11/7/2026" note now stating the 2026-11-08 re-read of all sixteen records).
+Pages run **42534934083** completed **success**, `pages status: built`, and
+<https://karagemop466-tech.github.io/Korea7/contacts.html> was fetched live and shows all 16 official phone
+numbers with blanks/UNVERIFIED where nothing was published. Build 11/11 PASS, tests 63 passed + 11 subtests
+before merge.
+
+**Session close-out.** All claimed tasks J1–J5 are complete. This final board entry ships in the session's
+last PR; that PR's own merge and deploy result is recorded in the PR thread and the Actions run rather than in
+a further self-referential board commit. Nothing is left claimed or in progress by
+`arena/0e9ee506-korea7`. The one carried-forward request (extend `tests/test_dashboard_integrity.py` to
+15 pages) is unclaimed and available to the next session that owns that file.
+
 ---
 
 # Follow-up integration — session `arena/52d35ede-korea7` (2026-11-08)
@@ -1129,3 +1164,5 @@ Read the complete existing board before editing. Earlier delivery/integration ta
 - PR #60 became conflicting after PR #61 merged the 16-record CSLB ranking/contacts work (`arena/0e9ee506-korea7`). This integration merges `origin/main` rather than overwriting it. The incoming `ranking_data.py`, `ranking.html`, `contacts.html`, canonical CSLB/vendor/review datasets, S64–S88 and U23–U34 are preserved as the primary computed ranking.
 - This session's earlier 8-provider conditional ranking is retained as supplemental structured evidence (`providers-2026-11-08.json`) and audit history, not as a competing primary order. Colliding source/flag IDs are remapped to additive IDs; the drywall-inclusion flag is preserved. Generated pages are rebuilt from the merged generator.
 - The incoming request to extend `tests/test_dashboard_integrity.py` from 9 to 15 pages is handled in this integration. Final checks and the PR #60 merge/deploy record are appended after actual verification.
+
+- PR #63/#64 close-out and landing corrections from `arena/0e9ee506-korea7` were also merged into this branch before the PR #60 merge gate: the Contacts card escaping fix, the 2026-11-08 CSLB stamp note, and the complete J5 delivery/close-out board entry are preserved. The carried-forward 15-page integrity-test request is satisfied here.
