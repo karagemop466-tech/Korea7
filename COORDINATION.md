@@ -950,3 +950,25 @@ Earlier integration tasks were completed by their owners; this session will not 
 
 - Audit PR [#50](https://github.com/karagemop466-tech/Korea7/pull/50) merged at 2026-11-08T22:56:58Z as `2fb3e81270ba257a7af49b0a07d56685f3113389`. It changed only this task board, not the built site.
 - Its [Pages workflow 42532738336](https://github.com/karagemop466-tech/Korea7/actions/runs/42532738336) completed successfully, including the deploy job, after the prior failed deployment. The earlier failure remains documented above. [Live dashboard](https://karagemop466-tech.github.io/Korea7/).
+---
+
+# Session `arena/3a4a1788-korea7` — fresh integration, 2026-11-08
+
+Platform binding: all work and the delivery PR remain on `arena/3a4a1788-korea7`; no other branch is created or pushed. The requested `session-<id>/<task>` naming cannot override this fixed session branch.
+
+Board reviewed before claiming. The last root-dashboard commits and claims are from 2026-11-07, more than 60 minutes old. This session takes over the stale root integration/verification claims, preserving their historical records. PR #50 (`arena/89ae6815-korea7`) merged during the initial claim push; its complete append-only section and follow-up deployment record are preserved above. Its subsequent PR #52 recovered the failed Pages deployment. Conflicting older PRs are left for their owners and flagged. No other session's standalone audit/microsite files are edited. Shared landing/data/navigation edits are reserved until this session's research and audit tasks finish.
+
+| ID | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| A1 | Claim handoff and inspect active work | in progress | `arena/3a4a1788-korea7` | `COORDINATION.md` append only |
+| A2 | Independently re-read official sources; research exact repair, drywall coordination, service area and reviews | in progress | `arena/3a4a1788-korea7` | `data/canonical/source_evidence.json` (new) |
+| A3 | Review repository content and code; record irregularities without altering unrelated artifacts | in progress | `arena/3a4a1788-korea7` | `data/canonical/repo_audit.json` (new) |
+| A4 | Final integration: consolidate canonical dashboard, requirements, estimates, rankings, summary and flags | unclaimed | `arena/3a4a1788-korea7` | root canonical HTML; `assets/dashboard.*`; `data/canonical/site_data.json`; `data/canonical/verification_report.*`; `scripts/build_dashboard.py`; `scripts/dashboard_content.py`; `scripts/verify_dashboard.py`; `tests/test_dashboard*.py`; `README.md`; `EXECUTIVE-SUMMARY.md` |
+| A5 | Rebuild, line-by-line data/source checks, links and tests; fix deployment | unclaimed | `arena/3a4a1788-korea7` | A4 scope; `.github/workflows/pages-check.yml` (new) |
+| A6 | PR to main, merge only after validation, confirm live Pages, record result | unclaimed | `arena/3a4a1788-korea7` | GitHub PR/Pages; `COORDINATION.md` append only |
+
+Handoff rule: unverified facts remain blank and published under Flagged for Review. Owner statements are labeled as such, not official verification. Review-platform evidence never substitutes for a CSLB record. No private hiring context or rationale will be published. Claims are released when complete; no manual input is requested.
+
+### Claim-push conflict resolution
+
+`git pull --rebase` hit an append/add conflict because PRs #50 and #52 landed concurrently. Resolved by retaining every incoming audit/deployment entry verbatim and appending this session claim below; no work discarded. The claim now correctly records #50 as merged. Rebase continued and the prescribed branch was pushed.
