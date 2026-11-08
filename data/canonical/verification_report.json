@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T20:53:44+00:00",
+  "generated_at": "2026-11-08T23:41:22+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -17,14 +17,14 @@
   ],
   "counts": {
     "pages": 13,
-    "tables": 14,
-    "rows": 192,
-    "source_ledger_entries": 60,
-    "verified_sources": 49,
-    "official_or_manufacturer_verified": 16,
-    "generated_tbody_rows": 411,
-    "internal_links_checked": 493,
-    "unique_external_links": 50,
+    "tables": 19,
+    "rows": 289,
+    "source_ledger_entries": 90,
+    "verified_sources": 75,
+    "official_or_manufacturer_verified": 26,
+    "generated_tbody_rows": 628,
+    "internal_links_checked": 570,
+    "unique_external_links": 77,
     "published_text_files_scanned": 121
   },
   "checks": [
@@ -36,7 +36,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "411 tbody rows checked, 0 missing links"
+      "detail": "628 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -46,7 +46,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "493 internal links checked, 0 broken"
+      "detail": "570 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -56,7 +56,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "50 unique external links, 0 unknown/dead"
+      "detail": "77 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -81,7 +81,7 @@
     {
       "name": "Official sources verified directly",
       "status": "PASS",
-      "detail": "16 official/manufacturer sources verified 2026-11-07; 49 sources verified overall"
+      "detail": "26 official/manufacturer sources verified (25 checked 2026-11-08); 75 sources verified overall"
     }
   ],
   "broken_internal": [],
@@ -96,55 +96,82 @@
     "https://inspectandtest.net/guides/bathtub-overflow-drain/"
   ],
   "external_links": [
+    "https://advancedplumbinganddrain.com/",
     "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+    "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
     "https://generalsf.com/",
+    "https://generalsf.com/building",
     "https://github.com/karagemop466-tech/Korea7",
     "https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md",
     "https://github.com/karagemop466-tech/Korea7/blob/main/README.md",
     "https://github.com/karagemop466-tech/Korea7/pull/32",
+    "https://github.com/karagemop466-tech/Korea7/pull/42",
     "https://karagemop466-tech.github.io/Korea7/",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
     "https://www.aceplumbingandrooter.com/",
+    "https://www.aceplumbingandrooter.com/commercial-plumber/hoa-property-managers/",
     "https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm",
     "https://www.angi.com/articles/what-is-overflow-drain.htm",
     "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
     "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
     "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
     "https://www.bayareaplumbingsf.com/",
+    "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941/customer-reviews",
     "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
+    "https://www.bernalhilldrywall.com/",
+    "https://www.bernalhilldrywall.com/reviews.html",
     "https://www.buildzoom.com/san-francisco-ca/drywall-contractors",
     "https://www.buildzoom.com/san-francisco-ca/plumbers",
+    "https://www.diamondcertified.org/report/ace-plumbing-and-rooter/",
     "https://www.eplumbingsolutions.com/",
     "https://www.familyhandyman.com/project/how-to-convert-bathtub-drain-lever-to-a-lift-and-turn-drain/",
     "https://www.fastresponseplumbingsf.com/",
+    "https://www.genteelplumbers.com/",
     "https://www.handymanhero.es/",
+    "https://www.handymanhero.es/handyman-services/",
     "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
+    "https://www.mannysplumbingandremodeling.com/",
     "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+    "https://www.rapidflowbayarea.com/",
+    "https://www.rapidflowbayarea.com/contact",
+    "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
     "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+    "https://www.sf.gov/departments--department-building-inspection",
     "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
     "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
     "https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost",
     "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
     "https://www.thumbtack.com/ca/san-francisco/bathtub-refinishing",
+    "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
     "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+    "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
     "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
     "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
     "https://www.yelp.com/biz/general-sf-san-francisco-2",
+    "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
     "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
     "https://www.yelp.com/biz/szeto-plumbing-and-handyman-daly-city-2",
     "https://www.yelp.com/search?find_desc=Bathtub+Repair&find_loc=San+Francisco%2C+CA",
+    "https://www.yelp.com/search?find_desc=Drywall+Contractors&find_loc=San+Francisco%2C+CA",
     "https://www.yelp.com/search?find_desc=Drywall+Installation+%26+Repair&find_loc=San+Francisco%2C+CA",
     "https://www.yelp.com/search?find_desc=Plumbers&find_loc=San+Francisco%2C+CA",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+    "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
     "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+    "https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+    "https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx",
     "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
-    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638"
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163"
   ]
 }

@@ -19,9 +19,8 @@
 </div>
 <div class="nav-group"><div class="nav-group-title">Data</div>
 <a href="estimates.html">Estimates &amp; costs</a>
-<a href="contractors.html">Contractors &amp; reviews</a>
+<a href="contractors.html">Contractors &amp; ranking</a>
 <a href="findings.html">Findings &amp; analysis</a>
-<a href="shortlist.html">Shortlist</a>
 </div>
 <div class="nav-group"><div class="nav-group-title">Reference</div>
 <a href="technical.html">Technical background</a>
@@ -35,107 +34,121 @@
 <a href="verification-log.html">Prior verification log</a>
 <a href="flagged.html">Flagged for review</a>
 </div>
-<div class="side-foot">Updated 2026-11-07<br>Session <span class="mono">arena/2eb487ad-korea7</span></div>
+<div class="side-foot">Updated 2026-11-08<br>Session <span class="mono">arena/6696a17e-korea7</span></div>
 </aside>
 <main id="main" class="content">
 <header class="page-head">
-  <div class="eyebrow">Audit · line-by-line repository review</div>
+  <div class="eyebrow">San Francisco repair research</div>
   <h1>Repository review</h1>
-  <p class="lede">What is in this checkout, what prior sessions produced, what was verified against official sources, and every irregularity found.</p>
+  <p class="lede">What is in this checkout, what prior sessions produced, what was verified against official sources, and every irregularity found. Full per-file line audit is linked below.</p>
 </header>
 <section class="section">
-<h2>Repository review — line by line</h2>
+<h2>Repository review summary</h2>
 <div class="table-wrap"><table class="data-table">
 <thead><tr>
 <th>Area</th>
 <th>What was found</th>
-<th>Verification</th>
+<th>Verification / action</th>
 <th>Result</th>
 <th>Source</th>
 </tr></thead><tbody>
 <tr>
-<td>Root</td>
-<td>A prior session published a 7-page dashboard (index, summary, estimates, contractors, findings, sources, flagged) at the site root</td>
-<td>Files read locally 2026-11-07; this integration replaces them with a 13-page canonical dashboard</td>
+<td>Canonical dataset</td>
+<td>scripts/dashboard_content.py is the single source of truth; build writes 13 root pages, source ledger and site_data.json</td>
+<td>Read generator/verifier/tests; refreshed content and regenerated</td>
+<td><span class="pill ok">reviewed / refreshed</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a></span></td>
+</tr>
+<tr>
+<td>Line-by-line audit</td>
+<td>Every tracked text file scanned line by line for merge markers, privacy patterns, template markers, JSON/Python parse errors and internal link targets</td>
+<td>scripts/audit_repository.py writes repo_audit.json/md; canonical row audit also generated</td>
+<td><span class="pill ok">implemented</span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/repo_audit.md" title="Repository line-by-line audit artifact">S87</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+</tr>
+<tr>
+<td>Inventory</td>
+<td>309 tracked files at session start; 67 JSON and 90 Python files parsed successfully before refresh</td>
+<td>Inventory rerun after refresh; counts recorded in audit artifact</td>
 <td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/repo_audit.md" title="Repository line-by-line audit artifact">S87</a></span></td>
 </tr>
 <tr>
 <td>Legacy project</td>
-<td>README documents a DOE GEMS geothermal fault-prospectivity submission audit with GeoTIFF datasets under data/, docs/, vendor/, gems/, evidence/, registry/</td>
-<td>README read locally; legacy content is unrelated to the bathtub project and is untouched</td>
-<td><span class="pill warn">irregularity</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a> · <a href="docs/index.html" title="Legacy GEMS site (archived)">S48</a></span></td>
+<td>README previously led with unrelated DOE GEMS audit; scientific data/vendor/gems/evidence/registry remain in repo</td>
+<td>README refreshed to point to canonical dashboard; legacy files untouched</td>
+<td><span class="pill warn">irregularity documented</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a> · <a href="docs/index.html" title="Legacy GEMS site (archived)">S48</a> · <a href="data/canonical/repo_audit.md" title="Repository line-by-line audit artifact">S87</a></span></td>
 </tr>
 <tr>
-<td>Parallel microsites</td>
-<td>bathtub-overflow/, docs/bath/, docs/overflow-*.html and docs/plumbing-index.html contain earlier, partly overlapping research</td>
-<td>Linked as archive; files not edited</td>
-<td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="bathtub-overflow/executive-summary.html" title="Parallel microsite (archived)">S49</a> · <a href="docs/bath/index.html" title="Parallel microsite (archived)">S50</a> · <a href="docs/plumbing-index.html" title="Parallel dashboard (archived)">S51</a></span></td>
+<td>Archived plumbing sets</td>
+<td>bathtub-overflow/, docs/bath/, docs/overflow-*.html, sf-overflow-audit/, trip-lever/ and historical shortlist/verification-log contain earlier overlapping research</td>
+<td>Preserved unchanged; canonical root is the current publication source</td>
+<td><span class="pill ok">preserved</span></td>
+<td class="src-col"><span class="src-ids"><a href="bathtub-overflow/executive-summary.html" title="Parallel microsite (archived)">S49</a> · <a href="docs/bath/index.html" title="Parallel microsite (archived)">S50</a> · <a href="docs/plumbing-index.html" title="Parallel dashboard (archived)">S51</a> · <a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a> · <a href="verification-log.html" title="Verification log — earlier session">S59</a> · <a href="sf-overflow-audit/index.html" title="SF overflow audit — parallel session dashboard">S60</a></span></td>
 </tr>
 <tr>
 <td>Coordination board</td>
-<td>COORDINATION.md contains 548 lines from six prior sessions with claims, handoffs and a verification log</td>
-<td>Read at session start; this session appended its own board section and pushed the claim</td>
+<td>COORDINATION.md contains prior-session claims/handoffs; this session appended C1–C5 takeover and progress logs</td>
+<td>Claim commit b2fd513 pushed; subsequent evidence/content commits pushed</td>
 <td><span class="pill ok">reviewed</span></td>
 <td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
 <tr>
-<td>Prior compliance gap</td>
-<td>The earlier root estimates table displayed owner-provided amounts in value cells and had rows with no source links</td>
-<td>Reproduced by a local row-link audit; fixed in this build (blank verified cells, every row linked)</td>
+<td>Row-link / blank compliance</td>
+<td>Earlier tables sometimes attached official context links to owner facts and left stale counts/phones</td>
+<td>Refresh maps sources per claim; verified cells blank/UNVERIFIED; every row has a Source link</td>
 <td><span class="pill ok">fixed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="brief.html" title="Project brief (owner-provided primary record)">S44</a></span></td>
+<td class="src-col"><span class="src-ids"><a href="brief.html" title="Project brief (owner-provided primary record)">S44</a> · <a href="data/canonical/source_checks.json" title="Field-level source checks (JSON)">S89</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
 <tr>
-<td>Dead external links</td>
-<td>Earlier pages cited homeguides.sfgate.com and inspectandtest.net; both fail on re-check</td>
-<td>Removed from active citations; retained as labeled documentation rows</td>
-<td><span class="pill warn">fixed / flagged</span></td>
-<td class="src-col"><span class="src-ids"><a href="sources.html" title="Source ledger (this site)">S55</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td>Dead sources</td>
+<td>SFGate Home Guides and InspectAndTest were previously marked dead</td>
+<td>Retained as labeled ledger documentation only; never linked from active rows</td>
+<td><span class="pill ok">resolved / documented</span></td>
+<td class="src-col"><span class="src-ids"><a href="sources.html" title="Source ledger (this site)">S55</a></span></td>
 </tr>
 <tr>
-<td>Open PR</td>
-<td>PR #32 from a parallel session is open and conflicting</td>
-<td>Checked with gh; not merged, not closed, not edited</td>
-<td><span class="pill warn">needs review</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer" title="Open PR #32 (stale parallel session)">S52</a></span></td>
+<td>Stale PRs</td>
+<td>#32 and #42 remain OPEN and CONFLICTING</td>
+<td>Checked with gh 2026-11-08; left untouched</td>
+<td><span class="pill warn">needs review / nonblocking</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer" title="Open PR #32 (stale parallel session)">S52</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/42" target="_blank" rel="noopener noreferrer" title="Open PR #42 (stale parallel session)">S88</a></span></td>
 </tr>
 <tr>
 <td>Pages configuration</td>
-<td>GitHub Pages builds from branch main, path / (legacy build type); .nojekyll is present at the repo root</td>
-<td>Confirmed with gh api repos/.../pages on 2026-11-07</td>
-<td><span class="pill ok">verified</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a></span></td>
+<td>GitHub Pages legacy build from main, path /; .nojekyll at root and docs/</td>
+<td>Prior deploy failure/success history preserved; final SHA deployment confirmed after merge</td>
+<td><span class="pill ok">verified after integration</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer" title="Published GitHub Pages site">S46</a> · <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site" target="_blank" rel="noopener noreferrer" title="GitHub Docs — Creating a GitHub Pages site">S81</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
 <tr>
-<td>Tests / scripts</td>
-<td>Existing Python scripts and tests belong to the legacy GEMS project; pytest is not installed in this sandbox</td>
-<td>This session added standalone unittest-based dashboard checks runnable with python3</td>
-<td><span class="pill ok">reviewed</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer" title="Repository README">S47</a></span></td>
+<td>Tests / dependencies</td>
+<td>Full suite requires pytest/numpy/scipy/rasterio/matplotlib; system Python is externally managed</td>
+<td>External virtual environment used; full suite and canonical build/verifier run before merge</td>
+<td><span class="pill ok">pass recorded in board</span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="data/canonical/repo_audit.md" title="Repository line-by-line audit artifact">S87</a></span></td>
 </tr>
 <tr>
 <td>Privacy sweep</td>
-<td>A grep for internal-only hiring constraints across all published HTML/MD/JSON/CSS/JS returned zero matches</td>
-<td>See the Verification page for the exact pattern list and result</td>
+<td>Published HTML/MD/JSON/CSS/JS scanned for internal-only wording and permit-strategy phrases</td>
+<td>Verifier privacy sweep plus line-by-line audit; zero matches required</td>
 <td><span class="pill ok">pass</span></td>
-<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
+<td class="src-col"><span class="src-ids"><a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a> · <a href="data/canonical/repo_audit.md" title="Repository line-by-line audit artifact">S87</a></span></td>
 </tr>
 <tr>
-<td>Concurrent session output</td>
-<td>shortlist.html (ranked B + C-36 candidates and vetting script), verification-log.html (earlier line-by-line log) and sf-overflow-audit/ (independent 9-page audit) were merged and preserved unchanged</td>
-<td>All three are linked from the dashboard navigation, quick links and this review page</td>
+<td>Concurrent outputs</td>
+<td>shortlist.html, verification-log.html and sf-overflow-audit/ were merged from parallel sessions</td>
+<td>Preserved unchanged and linked as historical/archival material</td>
 <td><span class="pill ok">preserved</span></td>
 <td class="src-col"><span class="src-ids"><a href="shortlist.html" title="Shortlist — who can do the plumbing and the drywall">S58</a> · <a href="verification-log.html" title="Verification log — earlier session">S59</a> · <a href="sf-overflow-audit/index.html" title="SF overflow audit — parallel session dashboard">S60</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer" title="COORDINATION.md — shared task board">S45</a></span></td>
 </tr>
 </tbody>
-<caption>Repo review was performed by reading the files in the checkout and querying the GitHub API. Links point to the repository files and Pages site for manual review. Irregularities are also published on the Flagged for Review page.</caption>
+<caption>Repo review combines a reproducible per-file text-line audit with manual reading of the canonical generator/verifier/tests. Full artifact: <a href="data/canonical/repo_audit.md">repo_audit.md</a>. Irregularities are also published on Flagged for Review.</caption>
 </table></div></section>
-<div class="callout info"><div class="icon">i</div><p>Links for manual review: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">README</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer">COORDINATION.md</a> · <a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer">live Pages site</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer">open PR #32</a>, <a href="shortlist.html">shortlist.html</a>, <a href="verification-log.html">verification-log.html</a>, <a href="sf-overflow-audit/index.html">sf-overflow-audit/</a>. Archived parallel work: <a href="bathtub-overflow/executive-summary.html">bathtub-overflow/</a>, <a href="docs/bath/index.html">docs/bath/</a>, <a href="docs/plumbing-index.html">docs/plumbing-index.html</a>.</p></div>
+<div class="callout info"><div class="icon">i</div><p>Links for manual review: <a href="https://github.com/karagemop466-tech/Korea7/blob/main/README.md" target="_blank" rel="noopener noreferrer">README</a> · <a href="https://github.com/karagemop466-tech/Korea7/blob/main/COORDINATION.md" target="_blank" rel="noopener noreferrer">COORDINATION.md</a> · <a href="data/canonical/repo_audit.md">repo_audit.md</a> · <a href="https://karagemop466-tech.github.io/Korea7/" target="_blank" rel="noopener noreferrer">live Pages site</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/32" target="_blank" rel="noopener noreferrer">PR #32</a> · <a href="https://github.com/karagemop466-tech/Korea7/pull/42" target="_blank" rel="noopener noreferrer">PR #42</a>. Historical outputs: <a href="shortlist.html">shortlist.html</a>, <a href="verification-log.html">verification-log.html</a>, <a href="sf-overflow-audit/index.html">sf-overflow-audit/</a>, <a href="bathtub-overflow/executive-summary.html">bathtub-overflow/</a>, <a href="docs/bath/index.html">docs/bath/</a>, <a href="docs/plumbing-index.html">docs/plumbing-index.html</a>.</p></div>
 <footer class="site">
-  <span>Research dashboard · San Francisco · updated 2026-11-07 · session <span class="mono">arena/2eb487ad-korea7</span></span>
+  <span>Research dashboard · San Francisco · updated 2026-11-08 · session <span class="mono">arena/6696a17e-korea7</span></span>
   <span><a href="index.html">Dashboard</a> · <a href="sources.html">Sources</a> · <a href="flagged.html">Flagged for review</a> · <a href="https://github.com/karagemop466-tech/Korea7">Repository</a></span>
 </footer>
 </main>

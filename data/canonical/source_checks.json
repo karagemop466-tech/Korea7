@@ -2,45 +2,342 @@
   "checked_date": "2026-11-08",
   "method": "Direct page fetch and line-by-line transcription. Government records establish only the fields they state. Company pages establish only what the company advertises. Review platforms are third-party evidence, not license verification. No provider was contacted.",
   "licenses": [
-    {"number":"829071","name":"ACE PLUMBING & ROOTER","status":"current and active","classifications":["C36","A","C-4","C16","B","C10"],"expiry":"2027-06-30","phone":"(415) 824-6444","address":"1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417","bond":"$25,000","workers_compensation":"Insured; expires 2027-07-13","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071","data_current":"11/8/2026 2:55:57 PM"},
-    {"number":"959843","name":"GENERALSF","status":"current and active","classifications":["B","C10","C36"],"expiry":"2027-04-30","phone":"(650) 303-1515","address":"3624 IRVING STREET STE A, SAN FRANCISCO, CA 94122","bond":"$25,000","workers_compensation":"Exempt; certified no employees at this time","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843","data_current":"11/8/2026 2:55:52 PM"},
-    {"number":"1003394","name":"HANDYMAN HEROES INC","status":"current and active","classifications":["B","C36"],"expiry":"2027-05-31","phone":"(844) 382-4376","address":"912 COLE ST # 202, SAN FRANCISCO, CA 94117","bond":"$25,000","workers_compensation":"Insured; expires 2027-04-25","disclosure":"Citation 2 2020 001045, 07/12/2020, FOR DISCLOSURE ONLY PER B&P CODE 7124.6","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394","disclosure_source":"https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394","data_current":"11/8/2026 2:55:52 PM"},
-    {"number":"1025814","name":"THE GENTEEL PLUMBERS INC","status":"current and active","classifications":["C36","B"],"expiry":"2027-04-30","phone":"(833) 436-8335","address":"1181 REVERE AVE, SAN FRANCISCO, CA 94124","bond":"$25,000","workers_compensation":"Insured; expires 2027-01-24","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814","data_current":"11/8/2026 2:56:58 PM"},
-    {"number":"977638","name":"EXPERT PLUMBING SOLUTIONS","status":"current and active","classifications":["C36"],"expiry":"2028-10-31","phone":"(415) 531-5340","address":"1465 44TH AVENUE, SAN FRANCISCO, CA 94122","bond":"$25,000","workers_compensation":"Insured; expires 2027-07-19","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638","data_current":"11/8/2026 2:55:22 PM"},
-    {"number":"757796","name":"BAY AREA PLUMBING","status":"current and active","classifications":["C36"],"expiry":"2027-01-31","phone":"(415) 668-8000","address":"335 14TH AVENUE, SAN FRANCISCO, CA 94118","bond":"$25,000","workers_compensation":"Exempt; certified no employees at this time","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796","data_current":"11/8/2026 2:55:52 PM"},
-    {"number":"1024971","name":"JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER","status":"current and active","classifications":["C36"],"expiry":"2027-03-31","phone":"(415) 596-6115","address":"236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127","bond":"$25,000","workers_compensation":"Insured; expires 2026-12-18","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971","data_current":"11/8/2026 2:55:34 PM","note":"Street spelling POTRAL is transcribed exactly as shown by CSLB; not corrected."},
-    {"number":"1115649","name":"RAPID FLOW PLUMBING & ROOTER INC","status":"current and active","classifications":["B","C36"],"expiry":"2028-01-31","phone":"(415) 866-8401","address":"230 EDINBURGH ST, SAN FRANCISCO, CA 94112","bond":"$25,000","workers_compensation":"Exempt; certified no employees at this time","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649","data_current":"11/8/2026 2:55:34 PM"},
-    {"number":"841229","name":"MANNY'S PLUMBING & ROOTER","status":"current and active","classifications":["C36","B"],"expiry":"2028-06-30","phone":"(650) 207-5733","address":"41 MIDVALE DRIVE, DALY CITY, CA 94015","bond":"$25,000","workers_compensation":"Exempt; certified no employees at this time","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229","data_current":"11/8/2026 2:55:34 PM"},
-    {"number":"995163","name":"BERNAL HILL DRYWALL INC","status":"current and active","classifications":["C-9","B"],"expiry":"2028-07-31","phone":"(415) 533-8274","address":"720 ANDERSON ST, SAN FRANCISCO, CA 94110","bond":"$25,000","workers_compensation":"Insured; expires 2027-03-10","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163","data_current":"11/8/2026 2:58:18 PM"},
-    {"number":"1009195","name":"ADVANCED PLUMBING AND DRAIN INC","status":"current and active","classifications":["C36"],"expiry":"2027-11-30","phone":"(415) 744-4944","address":"3450 SACRAMENTO ST 204, SAN FRANCISCO, CA 94118","bond":"$25,000","workers_compensation":"Insured; expires 2027-08-21","additional_status":"May be suspended at a future date for failure to resolve an outstanding final liability","source":"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195","data_current":"11/8/2026 2:58:23 PM"}
+    {
+      "number": "829071",
+      "name": "ACE PLUMBING & ROOTER",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "A",
+        "C-4",
+        "C16",
+        "B",
+        "C10"
+      ],
+      "expiry": "2027-06-30",
+      "phone": "(415) 824-6444",
+      "address": "1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2027-07-13",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "data_current": "11/8/2026 2:55:57 PM"
+    },
+    {
+      "number": "959843",
+      "name": "GENERALSF",
+      "status": "current and active",
+      "classifications": [
+        "B",
+        "C10",
+        "C36"
+      ],
+      "expiry": "2027-04-30",
+      "phone": "(650) 303-1515",
+      "address": "3624 IRVING STREET STE A, SAN FRANCISCO, CA 94122",
+      "bond": "$25,000",
+      "workers_compensation": "Exempt; certified no employees at this time",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "data_current": "11/8/2026 2:55:52 PM"
+    },
+    {
+      "number": "1003394",
+      "name": "HANDYMAN HEROES INC",
+      "status": "current and active",
+      "classifications": [
+        "B",
+        "C36"
+      ],
+      "expiry": "2027-05-31",
+      "phone": "(844) 382-4376",
+      "address": "912 COLE ST # 202, SAN FRANCISCO, CA 94117",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2027-04-25",
+      "disclosure": "Citation 2 2020 001045, 07/12/2020, FOR DISCLOSURE ONLY PER B&P CODE 7124.6",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "disclosure_source": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "data_current": "11/8/2026 2:55:52 PM"
+    },
+    {
+      "number": "1025814",
+      "name": "THE GENTEEL PLUMBERS INC",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "B"
+      ],
+      "expiry": "2027-04-30",
+      "phone": "(833) 436-8335",
+      "address": "1181 REVERE AVE, SAN FRANCISCO, CA 94124",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2027-01-24",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "data_current": "11/8/2026 2:56:58 PM"
+    },
+    {
+      "number": "977638",
+      "name": "EXPERT PLUMBING SOLUTIONS",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "expiry": "2028-10-31",
+      "phone": "(415) 531-5340",
+      "address": "1465 44TH AVENUE, SAN FRANCISCO, CA 94122",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2027-07-19",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "data_current": "11/8/2026 2:55:22 PM"
+    },
+    {
+      "number": "757796",
+      "name": "BAY AREA PLUMBING",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "expiry": "2027-01-31",
+      "phone": "(415) 668-8000",
+      "address": "335 14TH AVENUE, SAN FRANCISCO, CA 94118",
+      "bond": "$25,000",
+      "workers_compensation": "Exempt; certified no employees at this time",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "data_current": "11/8/2026 2:55:52 PM"
+    },
+    {
+      "number": "1024971",
+      "name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "expiry": "2027-03-31",
+      "phone": "(415) 596-6115",
+      "address": "236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2026-12-18",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "data_current": "11/8/2026 2:55:34 PM",
+      "note": "Street spelling POTRAL is transcribed exactly as shown by CSLB; not corrected."
+    },
+    {
+      "number": "1115649",
+      "name": "RAPID FLOW PLUMBING & ROOTER INC",
+      "status": "current and active",
+      "classifications": [
+        "B",
+        "C36"
+      ],
+      "expiry": "2028-01-31",
+      "phone": "(415) 866-8401",
+      "address": "230 EDINBURGH ST, SAN FRANCISCO, CA 94112",
+      "bond": "$25,000",
+      "workers_compensation": "Exempt; certified no employees at this time",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "data_current": "11/8/2026 2:55:34 PM"
+    },
+    {
+      "number": "841229",
+      "name": "MANNY'S PLUMBING & ROOTER",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "B"
+      ],
+      "expiry": "2028-06-30",
+      "phone": "(650) 207-5733",
+      "address": "41 MIDVALE DRIVE, DALY CITY, CA 94015",
+      "bond": "$25,000",
+      "workers_compensation": "Exempt; certified no employees at this time",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "data_current": "11/8/2026 2:55:34 PM"
+    },
+    {
+      "number": "995163",
+      "name": "BERNAL HILL DRYWALL INC",
+      "status": "current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "expiry": "2028-07-31",
+      "phone": "(415) 533-8274",
+      "address": "720 ANDERSON ST, SAN FRANCISCO, CA 94110",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2027-03-10",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "data_current": "11/8/2026 2:58:18 PM"
+    },
+    {
+      "number": "1009195",
+      "name": "ADVANCED PLUMBING AND DRAIN INC",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "expiry": "2027-11-30",
+      "phone": "(415) 744-4944",
+      "address": "3450 SACRAMENTO ST 204, SAN FRANCISCO, CA 94118",
+      "bond": "$25,000",
+      "workers_compensation": "Insured; expires 2027-08-21",
+      "additional_status": "May be suspended at a future date for failure to resolve an outstanding final liability",
+      "source": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "data_current": "11/8/2026 2:58:23 PM"
+    }
   ],
   "company_pages": [
-    {"name":"Ace Plumbing & Rooter","url":"https://www.aceplumbingandrooter.com/","observed":"Lists license #829071 and A/B/C4/C10/C16/C36; residential/commercial plumbing; HOA and property-manager service. Drywall restoration is not advertised on the fetched page."},
-    {"name":"General SF","url":"https://generalsf.com/building","observed":"Advertises rough and finish plumbing AND sheetrock/tape and texture; prints CSLB 959843 and (650) 303-1515."},
-    {"name":"Handyman Heroes","url":"https://www.handymanhero.es/handyman-services/","observed":"Advertises sheetrock and wall repairs plus plumbing for San Francisco homes and apartments; prints license #1003394 and 1-844-382-4376."},
-    {"name":"Genteel Plumbers","url":"https://genteelplumbers.com/","observed":"Advertises San Francisco plumbing, drain and leak services; FAQ states $149 dispatch fee applied to services; states it does not serve the Financial District. Drywall restoration is not advertised on the fetched page."},
-    {"name":"Expert Plumbing Solutions","url":"https://www.eplumbingsolutions.com/","observed":"Prints license #977638, phone 415-531-5340 and San Francisco address; advertises plumbing repairs and fixture installation."},
-    {"name":"Bay Area Plumbing","url":"https://www.bayareaplumbingsf.com/","observed":"Advertises San Francisco residential/commercial plumbing, leak detection and pipe repair; phone (415) 668-8000."},
-    {"name":"Fast Response Plumbing & Rooter","url":"https://www.fastresponseplumbingsf.com/","observed":"Prints CSLB #1024971, C-36 and phone 415-596-6115; advertises service for houses, apartments and HOAs. Review aggregate is a company claim."},
-    {"name":"Rapid Flow Plumbing & Rooter","url":"https://www.rapidflowbayarea.com/","observed":"Prints license #1115649 B/C-36; advertises plumbing and general contracting/remodels. Contact page also lists (415) 866-8401 for photos/texts.","contact_url":"https://www.rapidflowbayarea.com/contact"},
-    {"name":"Manny's Plumbing & Rooters","url":"https://www.mannysplumbingandremodeling.com/","observed":"Prints license #841229; advertises tub installation, drain replacement and kitchen/bath remodeling; states service to surrounding areas of San Mateo & San Francisco Counties."},
-    {"name":"Bernal Hill Drywall","url":"https://www.bernalhilldrywall.com/","observed":"Advertises drywall installation, patching, painting and texture matching; small wall repairs through water-damage build-backs. Plumbing is not advertised."},
-    {"name":"Advanced Plumbing and Drain","url":"https://www.advancedplumbinganddrain.com/","observed":"Not used for capability claims; CSLB additional-status warning governs the screening decision."}
+    {
+      "name": "Ace Plumbing & Rooter",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "observed": "Lists license #829071 and A/B/C4/C10/C16/C36; residential/commercial plumbing; HOA and property-manager service. Drywall restoration is not advertised on the fetched page."
+    },
+    {
+      "name": "General SF",
+      "url": "https://generalsf.com/building",
+      "observed": "Advertises rough and finish plumbing AND sheetrock/tape and texture; prints CSLB 959843 and (650) 303-1515."
+    },
+    {
+      "name": "Handyman Heroes",
+      "url": "https://www.handymanhero.es/handyman-services/",
+      "observed": "Advertises sheetrock and wall repairs plus plumbing for San Francisco homes and apartments; prints license #1003394 and 1-844-382-4376."
+    },
+    {
+      "name": "Genteel Plumbers",
+      "url": "https://www.genteelplumbers.com/",
+      "observed": "Advertises San Francisco plumbing, drain and leak services; FAQ states $149 dispatch fee applied to services; states it does not serve the Financial District. Drywall restoration is not advertised on the fetched page."
+    },
+    {
+      "name": "Expert Plumbing Solutions",
+      "url": "https://www.eplumbingsolutions.com/",
+      "observed": "Prints license #977638, phone 415-531-5340 and San Francisco address; advertises plumbing repairs and fixture installation."
+    },
+    {
+      "name": "Bay Area Plumbing",
+      "url": "https://www.bayareaplumbingsf.com/",
+      "observed": "Advertises San Francisco residential/commercial plumbing, leak detection and pipe repair; phone (415) 668-8000."
+    },
+    {
+      "name": "Fast Response Plumbing & Rooter",
+      "url": "https://www.fastresponseplumbingsf.com/",
+      "observed": "Prints CSLB #1024971, C-36 and phone 415-596-6115; advertises service for houses, apartments and HOAs. Review aggregate is a company claim."
+    },
+    {
+      "name": "Rapid Flow Plumbing & Rooter",
+      "url": "https://www.rapidflowbayarea.com/",
+      "observed": "Prints license #1115649 B/C-36; advertises plumbing and general contracting/remodels. Contact page also lists (415) 866-8401 for photos/texts.",
+      "contact_url": "https://www.rapidflowbayarea.com/contact"
+    },
+    {
+      "name": "Manny's Plumbing & Rooters",
+      "url": "https://www.mannysplumbingandremodeling.com/",
+      "observed": "Prints license #841229; advertises tub installation, drain replacement and kitchen/bath remodeling; states service to surrounding areas of San Mateo & San Francisco Counties."
+    },
+    {
+      "name": "Bernal Hill Drywall",
+      "url": "https://www.bernalhilldrywall.com/",
+      "observed": "Advertises drywall installation, patching, painting and texture matching; small wall repairs through water-damage build-backs. Plumbing is not advertised."
+    }
   ],
   "rules": [
-    {"url":"https://www.sf.gov/apply-plumbing-and-mechanical-permit","observed":"Permit required before cutting into or replacing pipes, particularly pipes covered by a wall; inspected before covering pipes; license scopes listed."},
-    {"url":"https://www.sf.gov/information--check-if-your-construction-project-needs-permit","observed":"Minor repairs to existing interior plaster or wallboard are listed as not needing a permit unless required for fire protection. This does not establish an exemption for the plumbing work."},
-    {"url":"https://www.sf.gov/apply-kitchen-or-bath-remodel-permit","observed":"Online kitchen/bath path is for in-kind fixture replacement with no structural work; R-2 apartment owners must hire contractors for electrical or plumbing work."},
-    {"url":"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048","observed":"Current small-job exemption is under $1,000 aggregate, casual/minor/inconsequential, and no building permit required; amended by AB 1170 effective 2026-01-01."},
-    {"url":"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B","observed":"B general building definition and limits; appropriate specialty classification or appropriately licensed subcontractor required where applicable."},
-    {"url":"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36","observed":"C-36 covers proper disposal of fluid waste and maintenance/replacement of described items."},
-    {"url":"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9","observed":"C-9 covers gypsum wallboard assemblies, taping and texturing."},
-    {"url":"https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx","observed":"Get at least three written bids on identical scope; do not automatically accept lowest bid; verify license, address, phone, workers' compensation and general liability insurance."},
-    {"url":"https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx","observed":"Written contract should detail work, price, payments, permits and completion; down payment no more than 10% or $1,000, whichever is less, subject to stated bond exception."}
+    {
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "observed": "Permit required before cutting into or replacing pipes, particularly pipes covered by a wall; inspected before covering pipes; license scopes listed."
+    },
+    {
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "observed": "Minor repairs to existing interior plaster or wallboard are listed as not needing a permit unless required for fire protection. This does not establish an exemption for the plumbing work."
+    },
+    {
+      "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+      "observed": "Online kitchen/bath path is for in-kind fixture replacement with no structural work; R-2 apartment owners must hire contractors for electrical or plumbing work."
+    },
+    {
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "observed": "Current small-job exemption is under $1,000 aggregate, casual/minor/inconsequential, and no building permit required; amended by AB 1170 effective 2026-01-01."
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "observed": "B general building definition and limits; appropriate specialty classification or appropriately licensed subcontractor required where applicable."
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "observed": "C-36 covers proper disposal of fluid waste and maintenance/replacement of described items."
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "observed": "C-9 covers gypsum wallboard assemblies, taping and texturing."
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx",
+      "observed": "Get at least three written bids on identical scope; do not automatically accept lowest bid; verify license, address, phone, workers' compensation and general liability insurance."
+    },
+    {
+      "url": "https://www2.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx",
+      "observed": "Written contract should detail work, price, payments, permits and completion; down payment no more than 10% or $1,000, whichever is less, subject to stated bond exception."
+    }
   ],
   "blocked": [
-    {"url":"https://www.yelp.com/biz/general-sf-san-francisco-2","result":"HTTP 403 on direct fetch 2026-11-08; search-result snippets only, not used as official verification."},
-    {"url":"https://www.yelp.com/biz/handyman-heroes-san-francisco-5","result":"HTTP 403 on direct fetch 2026-11-08."},
-    {"url":"https://www.yelp.com/search?find_desc=Drywall+Contractors&find_loc=San+Francisco%2C+CA","result":"HTTP 403 on direct fetch 2026-11-08; search snippets mention General SF drywall/ceiling services but are third-party and date-variable."}
+    {
+      "url": "https://www.yelp.com/biz/general-sf-san-francisco-2",
+      "result": "HTTP 403 on direct fetch 2026-11-08; search-result snippets only, not used as official verification."
+    },
+    {
+      "url": "https://www.yelp.com/biz/handyman-heroes-san-francisco-5",
+      "result": "HTTP 403 on direct fetch 2026-11-08."
+    },
+    {
+      "url": "https://www.yelp.com/search?find_desc=Drywall+Contractors&find_loc=San+Francisco%2C+CA",
+      "result": "HTTP 403 on direct fetch 2026-11-08; search snippets mention General SF drywall/ceiling services but are third-party and date-variable."
+    },
+    {
+      "url": "https://www.yelp.com/biz/ace-plumbing-and-rooter-san-francisco",
+      "result": "HTTP 403 on direct fetch 2026-11-08; no current rating asserted."
+    },
+    {
+      "url": "https://www.yelp.com/biz/genteel-plumbers-san-francisco-7",
+      "result": "HTTP 403 on direct fetch 2026-11-08; search-index snippet only, third-party and conflicting with CSLB/company contact details."
+    },
+    {
+      "url": "https://www.yelp.com/biz/bernal-hill-drywall-san-francisco",
+      "result": "HTTP 403 on direct fetch 2026-11-08; no current rating asserted."
+    },
+    {
+      "url": "https://www.yelp.com/biz/expert-plumbing-solutions-san-francisco",
+      "result": "HTTP 403 on direct fetch 2026-11-08; prior 2026-11-06 snapshot is historical only."
+    },
+    {
+      "url": "https://www.yelp.com/biz/bay-area-plumbing-san-francisco",
+      "result": "HTTP 403 on direct fetch 2026-11-08; prior 2026-11-06 snapshot is historical only."
+    },
+    {
+      "url": "https://www.yelp.com/biz/fast-response-plumbing-and-rooter-san-francisco-3",
+      "result": "HTTP 403 on direct fetch 2026-11-08; prior 2026-11-06 snapshot is historical only."
+    }
+  ],
+  "identity_mismatches": [
+    {
+      "license": "1009195",
+      "cslb_name": "ADVANCED PLUMBING AND DRAIN INC",
+      "cslb_address": "3450 SACRAMENTO ST 204, SAN FRANCISCO, CA 94118",
+      "fetched_url": "https://advancedplumbinganddrain.com/",
+      "fetched_identity": "AAA Advanced Plumbing & Drain Cleaning, Inc., Totowa, New Jersey; phone (973) 278-1948",
+      "resolution": "Not matched. Do not use the New Jersey website for CSLB #1009195 capability claims."
+    }
+  ],
+  "review_platform_observations": [
+    {
+      "name": "Ace Plumbing & Rooter — Diamond Certified",
+      "url": "https://www.diamondcertified.org/report/ace-plumbing-and-rooter/",
+      "observed": "July 2026 summary update; 220 surveys; 4.6; 20 consecutive years; listed phones (415) 523-0012 and (415) 797-4197 differ from CSLB (415) 824-6444."
+    },
+    {
+      "name": "Ace Plumbing & Rooter — BBB customer reviews",
+      "url": "https://www.bbb.org/us/ca/san-francisco/profile/plumber/ace-plumbing-and-rooter-inc-1116-58941/customer-reviews",
+      "observed": "4.76/5 from 51 reviews; 04/06/2025 review describes a family-run San Francisco apartment building using Ace."
+    },
+    {
+      "name": "Angi — SF bathtub restoration",
+      "url": "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
+      "observed": "17 verified reviews; last update October 14, 2024. Not 873 reviews and not a 2026-08-01 update; those figures belong to the separate Angi plumbing category page."
+    }
   ]
 }
