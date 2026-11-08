@@ -46,7 +46,7 @@ PRIVACY_PATTERNS = [
 ]
 PLACEHOLDER_PATTERNS = [r"\bTODO\b", r"\bTBD\b", r"\bPLACEHOLDER\b", r"example\.com", r"lorem ipsum"]
 
-EXTENSIONS = {".html", ".md", ".json", ".css", ".js"}
+EXTENSIONS = {".html", ".md", ".json", ".csv", ".css", ".js"}
 SKIP_DIRS = {".git", "node_modules", "__pycache__", "vendor", "gems", "evidence", "registry", "data"}
 
 
@@ -185,7 +185,8 @@ def analyze(root: Path, pages: list[str] | None = None) -> dict:
         if not path.is_file() or path.suffix not in EXTENSIONS:
             continue
         rel = path.relative_to(root)
-        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]):
+        if any(part in SKIP_DIRS or part.startswith(".") for part in rel.parts[:-1]) \
+                and not rel.as_posix().startswith("data/canonical/"):
             continue
         if rel.as_posix().startswith("data/canonical/verification_report"):
             continue
@@ -282,8 +283,9 @@ def write_report(root: Path, report: dict) -> None:
     lines += ["", "## Notes", "",
               "- Every table row is emitted with a Source column from `data/canonical/site_data.json`.",
               "- Unverified values are blank in verified cells and published on `flagged.html`.",
-              "- The ledger records source-specific check dates; this automated check does not re-fetch sources. Prior CSLB checks printed",
-              "  \"Data current as of 11/7/2026\".",
+              "- The ledger records source-specific check dates; this automated check does not re-fetch sources.",
+              "  Current ranking sources were read directly on 2026-11-08; CSLB records printed \"Data current as of 11/8/2026\".",
+              "  Historical sources are labeled and excluded from the current ranking.",
               "- Yelp URLs return HTTP 403 to automated access and are flagged as platform snapshots.",
               "- Dead sources: %s (documented, never linked from a row)." % ", ".join(report["dead_sources"]),
               ""]
