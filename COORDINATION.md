@@ -1049,4 +1049,19 @@ The incoming `main` board above was retained verbatim; this session’s claim se
 | E4 | PR from this branch to `main`, merge without waiting, confirm successful Pages deployment, record links/results | unclaimed | `arena/e7305a26-korea7` | GitHub PR/Pages, `COORDINATION.md` |
 
 **Handoff rule applied:** open PR #42 (`arena/7e5f723c-korea7`) and the root-page claims in prior board sections are more than 60 minutes old with no later commits; all earlier delivery PRs are merged. Under the board’s stale-claim rule this session takes over the integration/root-page scope only. PR #42 is left untouched and is flagged for its owner’s reconciliation; its content is not discarded.
->>>>>>> 811088d (Claim final dashboard integration and audit scope)
+
+### Second rebase conflict resolution — session `arena/e7305a26-korea7` (2026-11-08)
+
+A second board-only conflict arose while applying the scope-adjustment commit. The complete incoming `main` board and this session’s claim were retained; the scope adjustment is appended below. No entry from any other session was removed.
+
+### Scope adjustment — session `arena/e7305a26-korea7` (2026-11-08)
+
+Concurrent session `arena/13d957de-korea7` completed a targeted correction to the canonical generator; PR #54 and #55 are board-only. To avoid overlap, E2/E3 are now **in progress** on an additive, non-conflicting scope; canonical generated pages are reserved for the final integration step after `main` is merged.
+
+- New files: `data/decision_matrix.json`, `scripts/build_decision_matrix.py`, `decision-matrix.html`, `tests/test_decision_matrix.py`, `trip-lever/e7305a26-verification.md`.
+- Stale-claim handoff files: `shortlist.html` (open PR #42, no commits for more than 24 hours), plus the banner-only first paragraph of `README.md`.
+- `EXECUTIVE-SUMMARY.md`: reconcile stale counts and link the ranked decision analysis.
+- `COORDINATION.md`: this board only.
+- Final integration only, if no later active claim appears: add one nav link and the new review flags through `scripts/dashboard_content.py`, then regenerate and re-run all checks.
+- Official records independently read on 2026-11-08: eight CSLB License Detail pages, CSLB B/C-36 classifications and hiring guidance, two SF.gov permit pages, California BPC §7048, Oatey trip-lever kit, and six official company sites. Yelp and other platform values remain blank/UNVERIFIED; no rating or private quote amount is presented as an official value.
+>>>>>>> 485e0be (Narrow active scope and record official source reads)
