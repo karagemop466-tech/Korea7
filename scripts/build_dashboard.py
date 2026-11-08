@@ -38,7 +38,7 @@ def validate() -> list[str]:
             if key not in src:
                 errors.append("source %s missing %s" % (sid, key))
         if not (src["url"].startswith("https://") or src["url"].startswith("http://")
-                or src["url"].endswith(".html")):
+                or src["url"].endswith((".html", ".json"))):
             errors.append("source %s has an unexpected url %r" % (sid, src["url"]))
     for tid, table in C.TABLES.items():
         if tid == "source_ledger":
