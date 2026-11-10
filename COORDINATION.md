@@ -1288,3 +1288,31 @@ Company pages re-read: [Fast Response repair page](https://www.fastresponseplumb
 - Nonblocking platform notices: GitHub-managed upload-artifact action Node 20 deprecation/Node 24 migration and ubuntu-latest image migration. No application check failed. F1 and F2 are done; outstanding contractor evidence gaps remain published on Flagged for Review. No booking or current availability confirmation.
 
 - Final documentation rebase encountered a concurrent append from arena/86db387f-korea7; preserved its complete incoming board section and this delivery record. No concurrent implementation files edited.
+
+---
+
+
+---
+
+
+Branch `arena/cbeddf30-korea7` is at `c9a5d3e`, identical to `origin/main` (integration PR #68 already merged; no separate branch exists to re-PR). All project work is complete, verified, and live.
+
+| Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|
+| V1 Executive summary (important details) | done | arena/cbeddf30-korea7 | summary.html, EXECUTIVE-SUMMARY.md, brief.html | Problem, 3 owner-supplied 2026-08-30 estimates ($614/$550/$135), access constraints, tenant-occupied unit; all amounts blank/UNVERIFIED with official-source context links |
+| V2 Contractor research & ranked hiring decision | done | arena/cbeddf30-korea7 | ranking.html, contacts.html, contractors.html | 16 CSLB license records re-read 2026-11-08; 6 all-in-one (C-36+B) and 9 plumbing-only candidates ranked with reasoning, cost position blank/UNVERIFIED, official CSLB links + business phone numbers; Yelp HTTP 403 (third-party discovery only, flagged) |
+| V3 GitHub Pages live site | done | arena/cbeddf30-korea7 | index.html + 15 category subpages, assets/ | Clean dashboard UI, one table per category, source link on every row; Pages status `built`, live at https://karagemop466-tech.github.io/Korea7/ |
+| V4 Line-by-line verification | done | arena/cbeddf30-korea7 | verification.html, verification_report.json, flagged.html | `build_dashboard.py` 11/11 PASS — see verification record below |
+| V5 PR + merge + Pages deploy record | done | arena/cbeddf30-korea7 | COORDINATION.md | No new PR/merge required: integration branch already at `main` (`c9a5d3e`, PR #68). GitHub Pages status `built`; live site confirmed. Recorded here. |
+
+### Verification record (`arena/cbeddf30-korea7`, 2026-11-10)
+
+- `python3 scripts/build_dashboard.py`: **11/11 PASS** — 16 pages, 26 tables, 688 tbody rows all carrying a source link (0 missing), 0 unflagged blank values, 1,500 internal links checked 0 broken, 0 broken anchors, 393 unique external links all present in the source ledger, navigation consistent, privacy sweep 138 files / 0 matches, 0 unfilled template markers, 0 dead-source links. Source ledger: 92 sources marked verified (metadata), 36 official/manufacturer sources with direct read dates 2026-11-07 to 2026-11-10.
+- `gh api repos/karagemop466-tech/Korea7/pages`: status `built`, source `main` at `/`, live URL https://karagemop466-tech.github.io/Korea7/.
+- PR/merge: none required for this session — `arena/cbeddf30-korea7` == `origin/main` at `c9a5d3e` (PR #68 already merged; the delivered state is live). A future PR from this branch against `main` would compare equal (no changes to merge).
+
+### Irregularities (published on `flagged.html`, nonblocking)
+
+- U45 source freshness / model limits; Yelp returns HTTP 403 to automated fetch so direct Yelp verification is blocked (third-party discovery links only, never presented as license evidence); owner-provided estimates ($614/$550/$135, dated 2026-08-30) left blank and flagged UNVERIFIED — no official source exists; problem-description facts are owner-provided and flagged; no contractor has been contacted, booked, or confirmed for this stuck-lever job; repository contains unrelated legacy GEMS content (archived, untouched).
+
+Nothing is left in progress by `arena/cbeddf30-korea7`.
