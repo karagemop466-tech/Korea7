@@ -1,0 +1,184 @@
+{
+  "audit_id": "audit-94dfc24b-2026-11-10",
+  "audit_date": "2026-11-10",
+  "session": "arena/94dfc24b-korea7",
+  "cslb_data_current_as_of": "2026-11-09",
+  "summary": {
+    "cslb_licenses_reverified": 16,
+    "all_cslb_active": true,
+    "workers_comp_exempt_licenses": [
+      "757796",
+      "959843",
+      "1115649",
+      "841229",
+      "632743"
+    ],
+    "cslb_legal_disclosure_licenses": [
+      "1003394",
+      "1009195"
+    ],
+    "first_party_websites_verified_total": 15,
+    "first_party_websites_newly_verified_2026_11_10": 5,
+    "first_party_websites_unverified_total": 1,
+    "yelp_direct_fetch_status": "HTTP 403 on direct automated fetch on 2026-11-10; all Yelp star ratings and review counts remain blank and flagged UNVERIFIED"
+  },
+  "newly_verified_first_party_websites": [
+    {
+      "source_id": "S160",
+      "license": "1089561",
+      "cslb_business_name": "HEISE'S PLUMBING INC",
+      "website_url": "https://www.heisesplumbing.com/",
+      "checked": "2026-11-10",
+      "license_printed_on_site": "Lic: 1089561",
+      "phone_on_site": "(415) 333-0704",
+      "cslb_phone": "(415) 333-0704",
+      "phone_match": true,
+      "address_on_site": "260 Ocean Ave, San Francisco, CA 94112 (listed on service subpages)",
+      "cslb_address": "1610 EVANS AVE, SAN FRANCISCO, CA 94124",
+      "address_match": false,
+      "advertised_scope": "Residential and commercial San Francisco plumbing repairs, drain cleaning, water heaters, and sewer replacement; drywall/ceiling patch not advertised.",
+      "irregularity_note": "Website service subpages print 260 Ocean Ave, SF 94112 whereas CSLB lists 1610 EVANS AVE, SF 94124; license #1089561 and phone (415) 333-0704 match CSLB."
+    },
+    {
+      "source_id": "S161",
+      "license": "1140843",
+      "cslb_business_name": "DISCOUNT PLUMBING AND ROOTER CO LLC",
+      "website_url": "https://discountplumbingrooterinc.com/",
+      "checked": "2026-11-10",
+      "license_printed_on_site": "License# 1140843",
+      "phone_on_site": "(650) 991-2100",
+      "cslb_phone": "(650) 991-2100",
+      "phone_match": true,
+      "address_on_site": "570 Sylvan St., Daly City, CA 94014; 203 E Blithedale Ave STE B, Mill Valley, CA 94941",
+      "cslb_address": "1325 HOWARD AVE BLDG 710, BURLINGAME, CA 94010",
+      "address_match": false,
+      "advertised_scope": "24/7 emergency residential and commercial plumbing, drain cleaning, hydro-jetting, and trenchless sewer service across San Francisco and San Mateo County; drywall/ceiling patch not advertised.",
+      "irregularity_note": "Website lists Daly City and Mill Valley street offices whereas CSLB lists 1325 HOWARD AVE BLDG 710, BURLINGAME, CA 94010; license #1140843 and phone (650) 991-2100 match CSLB."
+    },
+    {
+      "source_id": "S162",
+      "license": "632743",
+      "cslb_business_name": "CALPLUMBING",
+      "website_url": "https://www.calplumbing.com/",
+      "checked": "2026-11-10",
+      "license_printed_on_site": "Licensed #632743",
+      "phone_on_site": null,
+      "cslb_phone": "(415) 221-4633",
+      "phone_match": null,
+      "address_on_site": "San Francisco and Peninsula service area (no street address printed on homepage)",
+      "cslb_address": "2269 CHESTNUT ST #144, SAN FRANCISCO, CA 94123",
+      "address_match": null,
+      "advertised_scope": "Residential and commercial plumbing, fixtures, leaks, drains, water heaters, and kitchen/bath remodeling in San Francisco and the Peninsula (owner Mike Barbieri); drywall/ceiling patch not advertised.",
+      "irregularity_note": "Root domain https://www.calplumbing.com/ resolves and prints Licensed #632743 (while legacy subpage /commercial-plumbing-services-pacifica-ca/ remains HTTP 404). Homepage states 'licensed, bonded, and insured' while CSLB records a workers'-compensation exemption ('certified that they have no employees at this time', 06/04/2026); homepage uses a quote form rather than printing CSLB phone (415) 221-4633."
+    },
+    {
+      "source_id": "S163",
+      "license": "1075566",
+      "cslb_business_name": "BAY AREA PLUMBING AND ENGINEERING INC",
+      "website_url": "https://sfbape.com/",
+      "checked": "2026-11-10",
+      "license_printed_on_site": "C20 & C36 (matched via 1320 Underwood Ave SF 94124 address and RMO email jkitching@sfbape.com for CSLB RMO Joshua Donald Kitching)",
+      "phone_on_site": "(209) 810-4823",
+      "cslb_phone": "(925) 642-9768",
+      "phone_match": false,
+      "address_on_site": "1320 Underwood Avenue, San Francisco, CA 94124",
+      "cslb_address": "1320 UNDERWOOD AVE, SAN FRANCISCO, CA 94124",
+      "address_match": true,
+      "advertised_scope": "UA Local 38 union commercial/industrial prefabrication shop manufacturing engineered boiler systems, domestic hot water systems, and booster pump skids for mechanical contractors; not a residential bathtub/drain service plumber.",
+      "irregularity_note": "Material practical-scope mismatch: sfbape.com shows #1075566 is a commercial/industrial mechanical prefabrication shop for contractors rather than a residential service plumber, and its footer phone (209) 810-4823 differs from CSLB phone (925) 642-9768. Keep excluded from residential tub-overflow dispatch."
+    },
+    {
+      "source_id": "S164",
+      "license": "1009195",
+      "cslb_business_name": "ADVANCED PLUMBING AND ROOTER SERVICE",
+      "website_url": "https://advancedplumbingsf.com/",
+      "checked": "2026-11-10",
+      "license_printed_on_site": "License#1009195",
+      "phone_on_site": "(415) 744-4944",
+      "cslb_phone": "(415) 744-4944",
+      "phone_match": true,
+      "address_on_site": "3450 Sacramento St #204, San Francisco, CA 94118",
+      "cslb_address": "3450 SACRAMENTO STREET #204, SAN FRANCISCO, CA 94118",
+      "address_match": true,
+      "advertised_scope": "Residential and commercial San Francisco plumbing, drain cleaning, leak detection, pipe repair, and fixture replacement; drywall/ceiling patch not advertised (CSLB license #1009195 also carries an unresolved final-liability future-suspension notice).",
+      "irregularity_note": "Earlier audit checked unrelated New Jersey site advancedplumbinganddrain.com (S70); SF first-party site https://advancedplumbingsf.com/ matches CSLB phone (415) 744-4944, address 3450 Sacramento St #204, and License#1009195. CSLB future-suspension notice on #1009195 remains active."
+    }
+  ],
+  "remaining_unverified_first_party_websites": [
+    {
+      "license": "868994",
+      "cslb_business_name": "ATLAS PLUMBING & ROOTER",
+      "cslb_phone": "(415) 387-1960",
+      "cslb_address": "328 24TH AVENUE #3, SAN FRANCISCO, CA 94121",
+      "checked": "2026-11-10",
+      "status": "unverified",
+      "note": "No verified first-party company domain found on 2026-11-10 (only third-party directory pages appear in search results); website remains blank and flagged UNVERIFIED."
+    }
+  ],
+  "newly_flagged_irregularities": [
+    {
+      "key": "bape_commercial_prefab_scope_mismatch",
+      "license": "1075566",
+      "title": "BAY AREA PLUMBING AND ENGINEERING INC (#1075566) first-party site sfbape.com shows commercial/industrial prefabrication scope and different phone",
+      "detail": "Official CSLB record #1075566 (1320 UNDERWOOD AVE, SF 94124; RMO Joshua Donald Kitching; phone (925) 642-9768) corresponds to https://sfbape.com/ (1320 Underwood Avenue, SF 94124; jkitching@sfbape.com; footer phone (209) 810-4823). The site describes a UA Local 38 commercial/industrial boiler, domestic hot-water, and pump-skid prefabrication shop for contractors rather than residential bathroom service, confirming #1075566 is not a residential substitute for quote #2 issuer Bay Area Plumbing (#757796)."
+    },
+    {
+      "key": "handyman_heroes_c10_claim_mismatch",
+      "license": "1003394",
+      "title": "Handyman Heroes (#1003394) homepage claims 'Licensed C-10' electrical classification not shown on CSLB",
+      "detail": "Direct 2026-11-10 read of https://www.handymanhero.es/ shows a homepage card stating 'Licensed C-10' for electrical work, whereas official CSLB License Detail #1003394 lists only B (General Building) and C36 (Plumbing) classifications. While B + C36 covers plumbing and drywall ceiling restoration, any standalone C-10 claim does not match CSLB."
+    },
+    {
+      "key": "calplumbing_insured_vs_wc_exempt",
+      "license": "632743",
+      "title": "Calplumbing (#632743) root site calplumbing.com states 'licensed, bonded, and insured' while CSLB records workers'-comp exemption",
+      "detail": "Direct 2026-11-10 read of https://www.calplumbing.com/ confirms License #632743 (Mike Barbieri) and advertises 'licensed, bonded, and insured', while official CSLB License Detail #632743 records a no-employees workers'-compensation exemption (effective 06/04/2026, expiring 09/30/2027). As with #841229, confirm general liability insurance and solo-owner dispatch if ever engaged."
+    },
+    {
+      "key": "vendor_site_address_differences_1110",
+      "licenses": [
+        "1024971",
+        "1089561",
+        "1140843"
+      ],
+      "title": "Website-versus-CSLB street/suite differences on three verified contractor sites (#1024971, #1089561, #1140843)",
+      "detail": "Direct 2026-11-10 comparison of contractor websites against official CSLB records found suite/address differences on three active licenses: Fast Response (#1024971) FAQ text lists 1459 18th St #259 vs CSLB #459; Heise's Plumbing (#1089561) service subpages list 260 Ocean Ave, SF 94112 vs CSLB 1610 EVANS AVE, SF 94124; Discount Plumbing and Rooter (#1140843) lists 570 Sylvan St., Daly City and 203 E Blithedale Ave STE B, Mill Valley vs CSLB 1325 HOWARD AVE BLDG 710, BURLINGAME. Rely on the CSLB address of record for formal contracting."
+    }
+  ],
+  "repository_post_merge_fixes": [
+    {
+      "id": "FIX-1",
+      "files": [
+        "scripts/dashboard_content.py"
+      ],
+      "issue": "PR #74 (commit 0dbe481) merge resolution dropped the recheck_data.build hook from scripts/dashboard_content.py and ran Final normalisation before supplement hooks, removing recheck.html from PAGES and failing 6 tests in tests/test_recheck.py.",
+      "resolution": "Restored recheck_data.build alongside reread_1110.integrate and website_audit_94dfc24b.integrate, and moved Final normalisation to run after all supplement modules so all 18 generated pages (including both recheck.html and exempt-work.html) build cleanly."
+    },
+    {
+      "id": "FIX-2",
+      "files": [
+        "scripts/dashboard_content.py"
+      ],
+      "issue": "verification.html table #1 (verified_facts) rendered 3 <th> headers over 4 <td> cells because scripts/build_dashboard.py overrode columns without appending 'Source'.",
+      "resolution": "Aligned verified_facts columns with rendered cells and added automated <thead>/<tbody> column-count parity tests across all canonical HTML pages."
+    },
+    {
+      "id": "FIX-3",
+      "files": [
+        "scripts/dashboard_content.py"
+      ],
+      "issue": "repo_review row for docs/plumbing-index.html referenced (U45) instead of (U46) for the dead calplumbing subpage URL (S71).",
+      "resolution": "Updated text reference to (U46) matching the flagged registry."
+    },
+    {
+      "id": "FIX-4",
+      "files": [
+        "EXECUTIVE-SUMMARY.md",
+        "README.md",
+        "scripts/build_dashboard.py"
+      ],
+      "issue": "EXECUTIVE-SUMMARY.md listed 4 workers'-comp exemptions (omitting #632743) and 17 generated pages; README.md omitted exempt-work.html from its root page list; repo_inventory blob URLs pointed to an older session branch instead of main.",
+      "resolution": "Synchronized EXECUTIVE-SUMMARY.md and README.md with all 18 generated pages, 5 workers'-comp exemptions, and 2026-11-10 website/scope findings, and pointed repo_inventory GitHub blob links to main."
+    }
+  ]
+}
