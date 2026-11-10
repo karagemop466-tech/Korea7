@@ -1,8 +1,8 @@
 # Repository line-by-line audit
 
 - Tracked files: 343
-- Total bytes: 21940509
-- Text lines scanned: 86860
+- Total bytes: 21945224
+- Text lines scanned: 86920
 - JSON files: 81; Python files: 103
 - Parse failures: 0
 - Broken internal links: 0
@@ -57,7 +57,7 @@
 |---|---:|---:|---|---:|
 | .gitignore | 366 | 24 | not-applicable | 0 |
 | .nojekyll | 0 | 0 | not-applicable | 0 |
-| COORDINATION.md | 224422 | 1533 | not-applicable | 0 |
+| COORDINATION.md | 226759 | 1564 | not-applicable | 0 |
 | EXECUTIVE-SUMMARY.md | 35933 | 188 | not-applicable | 0 |
 | README.md | 30883 | 306 | not-applicable | 0 |
 | assets/dashboard.css | 9663 | 206 | not-applicable | 0 |
@@ -88,15 +88,15 @@
 | data/canonical/recheck-2026-11-10.json | 24048 | 655 | pass | 0 |
 | data/canonical/repo_audit.json | 93817 | 3289 | pass | 0 |
 | data/canonical/repo_audit.md | 26494 | 402 | not-applicable | 0 |
-| data/canonical/repo_inventory.csv | 68035 | 317 | not-applicable | 0 |
-| data/canonical/repo_inventory.json | 96444 | 2214 | pass | 0 |
+| data/canonical/repo_inventory.csv | 68274 | 318 | not-applicable | 0 |
+| data/canonical/repo_inventory.json | 96773 | 2221 | pass | 0 |
 | data/canonical/research-history-2026-11-07.json | 160431 | 3362 | pass | 0 |
 | data/canonical/reverification-2026-11-10.json | 11732 | 327 | pass | 0 |
 | data/canonical/review_snapshots.json | 4537 | 86 | pass | 0 |
-| data/canonical/site_data.json | 628133 | 11714 | pass | 0 |
+| data/canonical/site_data.json | 628777 | 11726 | pass | 0 |
 | data/canonical/source_checks.json | 15619 | 343 | pass | 0 |
 | data/canonical/vendor_sites.json | 13837 | 195 | pass | 0 |
-| data/canonical/verification_report.json | 43614 | 506 | pass | 0 |
+| data/canonical/verification_report.json | 43745 | 507 | pass | 0 |
 | data/canonical/verification_report.md | 1974 | 40 | not-applicable | 0 |
 | data/focus/GEMSDOE24.tif | 1632732 | binary | binary | 0 |
 | data/focus/GEMSDOE25.tif | 836982 | binary | binary | 0 |
@@ -275,7 +275,7 @@
 | recheck.html | 21837 | 317 | not-applicable | 0 |
 | registry/focus9_manifest.json | 3509 | 82 | pass | 0 |
 | registry/owner_score_ledger.csv | 56403 | 161 | not-applicable | 0 |
-| repo-review.html | 215482 | 2744 | not-applicable | 0 |
+| repo-review.html | 216148 | 2752 | not-applicable | 0 |
 | requirements.html | 25185 | 316 | not-applicable | 0 |
 | requirements.txt | 122 | 5 | not-applicable | 0 |
 | run-card-korea7-e3.json | 5188 | 55 | pass | 0 |
@@ -397,6 +397,6 @@
 | vendor/gems57/uniqueness.py | 24437 | 459 | pass | 0 |
 | vendor/gems57/validate.py | 4765 | 109 | pass | 0 |
 | verification-log.html | 18693 | 282 | not-applicable | 0 |
-| verification.html | 395899 | 66 | not-applicable | 0 |
+| verification.html | 396268 | 66 | not-applicable | 0 |
 
 Full machine-readable inventory and flag list: `repo_audit.json`.

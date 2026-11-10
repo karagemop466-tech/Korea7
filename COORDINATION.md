@@ -1584,3 +1584,34 @@ This session uses the Arena-assigned branch. Existing historical claims and work
 
 - [PR #79](https://github.com/karagemop466-tech/Korea7/pull/79) merged 2026-11-10 05:48:55 UTC as `ecba3cde68d5514ccd83a5d7973f9f7aac1ab036`. Its generated Pages workflow [42764463814](https://github.com/karagemop466-tech/Korea7/actions/runs/42764463814) built its artifact but the deployment job failed; the Pages API also reports an error for this revision. Concurrent documentation PR #80's revision likewise reported a zero-duration build error. The previously successful deployment at `f00f9d8` remained live; it is not evidence of successful deployment of these later revisions.
 - This board-only closeout is a retry after the concurrent owner's recovery task was marked done. The same site build and tests passed above; no content changes are included. If the retry fails, report the failure rather than claiming the newest revision deployed.
+
+---
+
+# Session `arena/c2cb969e-korea7` — 2026-11-10 (independent re-verification + delivery retry)
+
+**Branch note.** The Arena runtime fixes this session's branch at `arena/c2cb969e-korea7`; no
+`session-<id>/<task>` branch is created or pushed. Non-overlapping scope is kept by path, and this
+section is append-only.
+
+**Board read at start.** `origin/main` = `81fd0ff` (merge of PR #77). Every prior section of this
+board reports its tasks `done`; no claim is active and no other session is editing the same files, so
+nothing is displaced here. Working tree clean apart from the build-report timestamp.
+
+**Platform state at claim time.** GitHub Pages source is `main` / (root), `build_type: legacy`.
+The build for `81fd0ff` reports `errored`, but the failed job is the **deploy** step
+(`gh run view 42735694304`: `build` ✓ 7s, `report-build-status` ✓ 5s, `deploy` ✗ 10m27s —
+“Timeout reached, aborting!”), i.e. an infrastructure timeout after a successful Jekyll build, not a
+content defect. The live root still serves the last successful deployment (`3f43d2b`) and its content
+matches the current source.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| C1 | Claim recorded and pushed before any content edit | in progress | `arena/c2cb969e-korea7` | `COORDINATION.md` (append-only) |
+| C2 | Independent 2026-11-10 re-read of the official CSLB records and rule pages behind the published tables | unclaimed | `arena/c2cb969e-korea7` | `data/canonical/closeout-2026-11-10.json` (new), `COORDINATION.md` |
+| C3 | Fix the stale published build label (sidebar and footer name a prior session as the current one) | unclaimed | `arena/c2cb969e-korea7` | `scripts/reread_1110.py` (one constant), generated HTML |
+| C4 | Build / audit / test / link gate on the merged tree | unclaimed | `arena/c2cb969e-korea7` | generated pages, reports |
+| C5 | PR → `main`, merge without waiting, confirm the exact Pages build + deploy, fetch the live pages | unclaimed | `arena/c2cb969e-korea7` | GitHub PR / Pages |
+
+**Rules unchanged.** Privacy rule (no permit-strategy or private rationale anywhere public) stays in
+force. Every table row keeps a source link; values that no official source confirms stay blank and
+flagged. No provider contact, availability or job-specific capability is claimed.
