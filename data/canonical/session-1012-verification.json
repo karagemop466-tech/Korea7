@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "session": "arena/1012d038-korea7",
+    "retrieved_utc": "2026-11-10",
+    "scope": "A separately identified candidate and decision-relevant review and company-page checks; this does not replace the original 16-record scored dataset.",
+    "method": "License and complaint pages were fetched directly from CSLB. Company pages were read directly. The HomeAdvisor profile was fetched directly; Yelp search-result text was obtained via web search because direct Yelp access returned HTTP 403. Reviews and vendor claims are not independent proof of performance, job acceptance, price or availability.",
+    "outreach_performed": false
+  },
+  "additional_candidate": {
+    "license": "1034873",
+    "name_on_record": "PLUMBING 1 BUILDER'S INC",
+    "record_stamp": "Data current as of 11/9/2026 9:51:51 PM",
+    "status": "current and active",
+    "classifications": ["C36", "B"],
+    "business_phone": "(650) 868-8059",
+    "address": "25125 SANTA CLARA STREET E106, HAYWARD, CA 94544",
+    "issue_date": "2018-01-16",
+    "reissue_date": "2021-12-14",
+    "license_expiry": "2027-12-31",
+    "contractor_bond_usd": 25000,
+    "workers_compensation": {
+      "carrier": "PACIFIC COMPENSATION INSURANCE COMPANY",
+      "effective": "2025-12-30",
+      "expires": "2026-12-30"
+    },
+    "other": "CSLB states that personnel on this license are listed on other licenses; it notes a 2021 reissue to another entity.",
+    "complaint_disclosure_observation": "The separately fetched CSLB complaint-disclosure page displayed the license number and company name but no Citations table. This is not a guarantee that no complaint exists.",
+    "official_website_verified": null,
+    "previously_listed_domain": "https://www.plumbing1builders.com/",
+    "website_observation": "The previously listed domain returned a 'Site not found' page when fetched on 2026-11-10; a current company site was not verified.",
+    "san_francisco_service_confirmed_by_company": null,
+    "trip_lever_experience_confirmed": null,
+    "single_contract_ceiling_restoration_confirmed": null,
+    "availability_confirmed": null,
+    "job_price_confirmed": null,
+    "sources": {
+      "license": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "complaint_disclosure": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1034873",
+      "review_profile": "https://www.homeadvisor.com/rated.LeosPlumbingService.43539804.html",
+      "previously_listed_domain": "https://www.plumbing1builders.com/"
+    }
+  },
+  "review_evidence": {
+    "atlas": {
+      "platform": "Yelp search-result excerpt, third-party and unverified",
+      "url": "https://www.yelp.com/search?find_desc=Plumber&find_loc=Bernal+Heights%2C+San+Francisco%2C+CA",
+      "observation": "An indexed review attributed to Atlas describes two stuck bathtub drain levers and replacement of their lever assemblies. The excerpt does not establish the same concealed-pipe condition, ceiling work, a current price or willingness to accept this job.",
+      "direct_fetch": "HTTP 403"
+    },
+    "plumbing_1_builders": {
+      "platform": "HomeAdvisor customer review, third-party and unverified",
+      "url": "https://www.homeadvisor.com/rated.LeosPlumbingService.43539804.html",
+      "observation": "An October 2025 customer review describes a larger project including a bathtub installation and separate leak and ceiling repair. It does not establish that the ceiling was below that tub or that a seized trip lever was repaired.",
+      "direct_fetch": "profile read successfully"
+    }
+  },
+  "corrections": [
+    "Withdrew the previous Ace bathtub portfolio-caption attribution because concatenated search results did not support it reliably; a later Bay Area Plumbing result contains similar text.",
+    "Removed a Mikhail drywall excerpt from the Handyman Heroes snapshot after separate search results associated it with Handlify; retained the separately attributable Handyman Heroes excerpts as third-party and unverified."
+  ]
+}

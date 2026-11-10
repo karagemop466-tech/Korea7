@@ -1498,3 +1498,9 @@ _reread.integrate(__import__(__name__))
 # rewritten; it appends tables, a finding, a flag and two sections.
 import disclosure_1110 as _disclosure
 _disclosure.integrate(__import__(__name__))
+
+# --- 2026-11-10 job-fit source audit — arena/1012d038-korea7 -------------------
+# Adds a practical call priority and one separately checked CSLB record, while
+# retaining the historical 16-record, CSLB-only scores and disclosure audit.
+import session_1012_verification as _job_fit
+_job_fit.integrate(__import__(__name__))
