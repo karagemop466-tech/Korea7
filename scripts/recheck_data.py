@@ -476,7 +476,7 @@ def build(c):
     stored = _stored_records()
     deltas = dict(compare())
     source_map = {}
-    next_id = 111
+    next_id = 133  # 111-120 are used by concurrent sessions; allocate above them to avoid collisions
     for read in READS:
         sid = "S%d" % next_id
         next_id += 1
@@ -655,6 +655,13 @@ def build(c):
                 "in an occupied unit, will include drywall restoration in one contract, or will accept this job at any "
                 "price. No provider was contacted and nothing was booked. Yelp and other review platforms remain "
                 "third-party material and are never used as licence evidence.</p>"},
+            {"type": "prose", "title": "Same result, independently reached", "html":
+                "<p>A concurrent session re-read the same sixteen CSLB records on the same day and published its own "
+                "field-by-field result on the <a href=\"verification.html\">Verification</a> page "
+                "(<a href=\"data/canonical/reverification-2026-11-10.json\">reverification-2026-11-10.json</a>). "
+                "Its finding — no drift against the 2026-11-08 transcription — matches this page's computed delta table. "
+                "Two independent transcriptions agreeing is stronger evidence than either alone, but it is still only "
+                "evidence about licence records, not about this repair.</p>"},
             {"type": "prose", "title": "How to use it before hiring", "html":
                 "<p>Re-open the <a href=\"ranking.html\">ranked decision</a> and the "
                 "<a href=\"contacts.html\">contact directory</a>, then confirm the chosen licence again on "
@@ -675,7 +682,7 @@ def build(c):
 
     c.TABLES["flagged"]["rows"].append({
         "cells": [
-            "U46",
+            "U47",
             "CSLB database stamp lags the read date",
             "Every record read on 2026-11-10 printed a database stamp of 11/9/2026. The stamp is preserved exactly as "
             "returned, so this page cannot claim same-minute freshness, and a change made after the CSLB database "

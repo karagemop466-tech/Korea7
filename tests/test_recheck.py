@@ -79,7 +79,7 @@ class RecheckChecks(unittest.TestCase):
 
     def test_flag_added_for_database_stamp_lag(self):
         ids = [r["cells"][0] for r in C.TABLES["flagged"]["rows"]]
-        self.assertIn("U46", ids)
+        self.assertIn("U47", ids)
 
 
 if __name__ == "__main__":
