@@ -1257,3 +1257,6 @@ PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated
 # Dated delivery supplement; original model inputs and archived pages preserved.
 import delivery_data as _delivery
 _delivery.integrate(__import__(__name__))
+# Dated 2026-11-10 re-read of every licence record and rule page; historical inputs preserved.
+import recheck_data as _recheck
+_recheck.build(__import__(__name__))
