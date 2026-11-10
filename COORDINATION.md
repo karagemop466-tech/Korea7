@@ -1249,3 +1249,19 @@ Fixed Arena branch takes precedence over requested alternative branch naming. Pr
 - Build: 16 pages, 27 tables, 694 dataset rows, 111 sources; 1,415 rendered rows with zero missing links; 1,505 internal links and zero broken links/anchors; privacy sweep zero matches. Structural external-link ledger checks are not live reachability checks.
 - Full regression in a fresh ignored virtual environment: 165 passed, 18 subtests passed, 34 existing rasterio deprecation warnings. Initial system-Python test attempt had no pytest installed; resolved using the isolated environment. Repository audit: zero parse failures or broken internal links/anchors. No outreach or booking performed.
 - F1 status: done. F2 pending PR/merge/deploy confirmation.
+
+## Session `arena/33211fbf-korea7` — 2026-11-10 independent delivery audit and close-out
+
+Read this complete board before editing. Branch is platform-fixed to `arena/33211fbf-korea7`; no `session-<id>/<task>` branch is created, and no other branch is pushed. Starting revision `37c0f11` equals `origin/main` (PR #68 and PR #70 both merged). Prior sessions N1/N2 and F1/F2 are recorded as done; the claims below are a fresh independent audit at the current date, not a takeover of unfinished work. Other open PRs are not touched.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| G1 Claim + repo review, line by line, flag irregularities | in progress | arena/33211fbf-korea7 | COORDINATION.md; read-only review; audit outputs |
+| G2 Independent official-source re-verification (CSLB, sf.gov, CSLB classifications) | in progress | arena/33211fbf-korea7 | data/canonical/audit-2026-11-10-g1.json (new); scripts/audit_data.py (new) |
+| G3 Executive summary refresh + full-site verification gate | in progress | arena/33211fbf-korea7 | EXECUTIVE-SUMMARY.md; summary.html (generated) |
+| G4 Integration: build, tests, link audit, privacy sweep | in progress | arena/33211fbf-korea7 | generated canonical outputs; scripts/build_dashboard.py; tests |
+| G5 PR to main, merge, confirm Pages deploy live, record result | in progress | arena/33211fbf-korea7 | COORDINATION.md; GitHub PR/Pages |
+
+Privacy rule remains in force: no permit strategy, no private scheduling rationale, and no client-only wording in any public artifact. External-link ledger checks are structural; they are not live reachability proof. No provider is contacted and no availability is claimed.
+
+- 2026-11-10: Claim registered before substantive edits; commit and push issued immediately. Incoming PR #68 and PR #70 close-out entries preserved verbatim.
