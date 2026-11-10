@@ -1464,3 +1464,20 @@ Final gate on the merged tree:
 ### P5 — delivery record
 
 Pending: PR, merge, Pages run, and a fetch of the live `exempt-work.html`.
+
+---
+
+# Session `arena/94dfc24b-korea7` — 2026-11-10 (independent verification + post-merge regression fix + integration)
+
+**Branch note.** The Arena runtime fixes this session's branch at `arena/94dfc24b-korea7`; creating or pushing to any other branch is prohibited by the platform, so non-overlapping scope is maintained by file path on this branch.
+
+**Board check before claiming.** All prior implementation tasks (`P1–P4`, `N1–N2`, `F1–F2`, `V1–V4`, `C1–C4`, `J1–J5`) are marked `done` and their PRs (#61–#75) are already merged to `main` (`a6c74a7`). No open 2026-11-10 PR is active; older stale open PRs (#2, #15, #18, #20, #32, #42, #62, #65) belong to earlier sessions and are left untouched.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| Q1 | Claim registration and initial repository/test diagnostic audit | in progress | `arena/94dfc24b-korea7` | `COORDINATION.md` (append-only); read-only scan of repo |
+| Q2 | Independent 2026-11-10 verification of official CSLB records, SF.gov / statutory rules, manufacturer specs, and first-party contractor sites | unclaimed | `arena/94dfc24b-korea7` | `data/canonical/audit-94dfc24b-2026-11-10.json` |
+| Q3 | Fix post-merge integration regressions on `main` (dropped `recheck_data` hook breaking `tests/test_recheck.py` and orphaning `recheck.html`, 3-`<th>`/4-`<td>` table header defect on `verification.html`, stale `U45`->`U46` flag reference, stale `EXECUTIVE-SUMMARY.md` / `README.md` counts) and add regression tests | unclaimed | `arena/94dfc24b-korea7` | `scripts/dashboard_content.py`, `scripts/build_dashboard.py`, `EXECUTIVE-SUMMARY.md`, `README.md`, `tests/test_integration_94dfc24b.py`, regenerated canonical HTML & `data/canonical/*` |
+| Q4 | Full line-by-line verification, full test suite (site + legacy GEMS in isolated venv), link/anchor/table/privacy gates | unclaimed | `arena/94dfc24b-korea7` | read-only verification + `data/canonical/verification_report.*`, `data/canonical/repo_audit.*` |
+| Q5 | Pull request `arena/94dfc24b-korea7` → `main`, merge without waiting, verify GitHub Pages deployment and live routes, record PR & merge result | unclaimed | `arena/94dfc24b-korea7` | `COORDINATION.md`; GitHub PR & Pages |
+
