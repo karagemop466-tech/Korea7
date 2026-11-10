@@ -124,14 +124,14 @@ SOURCES = {
         "label": "Yelp — Plumbing near Mission, San Francisco (result snapshot)",
         "publisher": "Yelp", "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=Mission,+San+Francisco,+CA+94110",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
-        "supports": "Ace 4.7 with a portfolio caption 'Install new bathtub with a valve inside the wall'; Genteel 4.7; 'Verified License' badges",
+        "supports": "Ace and Genteel result snapshots and 'Verified License' badges; the bathtub caption formerly attributed to Ace was withdrawn",
         "note": "Third-party result text, 2026-11-08. A Yelp 'Verified License' badge is not CSLB verification.",
     },
     "S78": {
         "label": "Yelp — Handyman Drywall near Lower Haight, San Francisco (result snapshot)",
         "publisher": "Yelp", "url": "https://www.yelp.com/search?find_desc=Handyman+Drywall&find_loc=Lower+Haight%2C+San+Francisco%2C+CA",
         "tier": "platform", "status": "blocked-403", "checked": CHECKED,
-        "supports": "Handyman Heroes appears in a drywall-repair category with reviews describing drywall repair and rehanging",
+        "supports": "Handyman Heroes appears in a drywall-repair result; a review excerpt mentions Andres and drywall repair",
         "note": "Third-party result text, 2026-11-08; review counts differ between result pages captured the same day.",
     },
     "S79": {
@@ -192,7 +192,7 @@ SOURCES = {
         "publisher": "This project, transcribed from each business's own site",
         "url": "data/canonical/vendor_sites.json",
         "tier": "primary", "status": "verified", "checked": CHECKED,
-        "supports": "10 official business sites read on 2026-11-08 with published phone and service statements; six license numbers have no site verified and stay blank",
+        "supports": "Ten company sites read on 2026-11-08, plus Atlas and Handyman Heroes updates read on 2026-11-10; five scored licensees still have no verified company site",
         "note": "Vendor statements are verified as published, not as true. They never feed the score.",
     },
     "S87": {
@@ -202,6 +202,54 @@ SOURCES = {
         "tier": "primary", "status": "verified", "checked": CHECKED,
         "supports": "Six dated third-party snapshots with their result URLs and the observed rating/count ranges",
         "note": "Explicitly third-party and explicitly excluded from the ranking score.",
+    },
+    "S200": {
+        "label": "Atlas Plumbing & Rooter — official site",
+        "publisher": "Atlas Plumbing & Rooter",
+        "url": "https://www.atlasplumbingandrooter.com/",
+        "tier": "company", "status": "verified", "checked": "2026-11-10",
+        "supports": "Company publishes (415) 849-2346 and advertises plumbing, drains, fixtures and repair in San Francisco",
+        "note": "Direct read. Company contact differs from CSLB's phone; claims are not proof of particular job experience or ceiling restoration.",
+    },
+    "S201": {
+        "label": "Handyman Heroes — official plumbing services",
+        "publisher": "Handyman Heroes Inc",
+        "url": "https://www.handymanhero.es/plumbing-services/plumbing/",
+        "tier": "company", "status": "verified", "checked": "2026-11-10",
+        "supports": "Company publishes (844) 382-4376 and lists showers and bathtubs among plumbing installations and replacements",
+        "note": "Direct read. A service listing is not proof of a seized trip-lever repair or a quote for this job.",
+    },
+    "S202": {
+        "label": "Handyman Heroes — official sheetrock and wall repairs",
+        "publisher": "Handyman Heroes Inc",
+        "url": "https://www.handymanhero.es/handyman-services/sheetrock-and-wall-repairs/",
+        "tier": "company", "status": "verified", "checked": "2026-11-10",
+        "supports": "Advertises wall repair after plumbing holes, patching, joint taping, texture matching, and optional priming and painting",
+        "note": "Direct read. It refers to walls; a ceiling repair and one-contract scope remain unconfirmed.",
+    },
+    "S203": {
+        "label": "Handyman Heroes — company-published rental-project testimonial",
+        "publisher": "Handyman Heroes Inc",
+        "url": "https://www.handymanhero.es/testimonial/construction-handyman-plumbing-installation-repair-in-daly-city-ca-94014/",
+        "tier": "company", "status": "verified", "checked": "2026-11-10",
+        "supports": "Company-published 2024 testimonial describes small projects including plumbing in a small multifamily rental",
+        "note": "Company-selected testimonial, not independent confirmation that this site was occupied or this trip-lever job was performed.",
+    },
+    "S204": {
+        "label": "Atlas Plumbing & Rooter — official plumbing repairs page",
+        "publisher": "Atlas Plumbing & Rooter",
+        "url": "https://www.atlasplumbingandrooter.com/plumbing-services/plumbing-repairs/",
+        "tier": "company", "status": "verified", "checked": "2026-11-10",
+        "supports": "Advertises repairs for homes and businesses and flexible scheduling to reduce impact on tenants",
+        "note": "Direct read. Vendor statement only; this specific repair, availability, price and drywall scope are not confirmed.",
+    },
+    "S206": {
+        "label": "Yelp — Handyman Heroes wall-repair search-result excerpt",
+        "publisher": "Yelp",
+        "url": "https://yelp.com/search?amp=&find_desc=in+and+out+plumbing&find_loc=San+Francisco%2C+CA",
+        "tier": "platform", "status": "blocked-403", "checked": "2026-11-10",
+        "supports": "Search-result excerpt attributes a customer account of wall repair after plumbing work to Handyman Heroes",
+        "note": "Third-party indexed excerpt; direct Yelp fetch blocked. It does not identify the original plumber, a ceiling, this trip lever or the work outcome independently.",
     },
     "S88": {
         "label": "Ranking rubric and score inputs (this site)",
@@ -222,8 +270,8 @@ LICENSE_SRC = {
 }
 SITE_SRC = {
     "977638": "S38", "757796": "S39", "1024971": "S40", "959843": "S41",
-    "1003394": "S42", "829071": "S43", "1025814": "S72", "995163": "S73",
-    "1115649": "S74", "841229": "S75",
+    "1003394": "S201", "829071": "S43", "1025814": "S72", "995163": "S73",
+    "1115649": "S74", "841229": "S75", "868994": "S200",
 }
 DISPLAY = {
     "977638": "Expert Plumbing Solutions", "757796": "Bay Area Plumbing",
@@ -324,17 +372,16 @@ REASON = {
     "829071": "Highest verified score. The CSLB record carries B and C-36 plus A, C-4, C-16 and C-10, "
               "an active workers' compensation policy and no disclosure. Its own site documents two decades of "
               "work directly for HOAs and property managers, including insurance requirements, purchase orders and "
-              "not-to-exceed limits — the closest published match to a managed, tenant-occupied building. A Yelp "
-              "result portfolio caption shows a bathtub installed with a valve inside the wall (third-party). "
-              "Drywall self-performance is not advertised, so confirm it in writing.",
+              "not-to-exceed limits — relevant to a managed building. The company does not advertise drywall "
+              "self-performance on the pages read, so confirm it in writing.",
     "1025814": "B and C-36 on one active license, workers' compensation insured, no disclosure, San Francisco "
                "address. Three points behind the leader on tenure only (first licensed 2017). Its own pages list "
                "plumbing services and make no mention of drywall or ceiling restoration, so the B classification is "
                "verified while the ceiling capability is not. Two different official phone numbers exist "
                "(CSLB record vs the company contact page) — confirm which line to call.",
     "1003394": "B and C-36 with workers' compensation insured, and the strongest published evidence of the "
-               "combined trade: its own site carries a customer review describing drywall patching, and a Yelp "
-               "result quotes a review where the crew repaired a wall after plumbing work. Ten points are lost "
+               "combined trade: its own site advertises wall patching and plumbing, and a third-party Yelp "
+               "excerpt describes a wall repaired after plumbing work. Ten points are lost "
                "because CSLB shows a complaint disclosure (citation 2 2020 001045, 07/12/2020, marked for "
                "disclosure only) — read it before hiring. The site's “Licensed C-10” claim is not on the CSLB record.",
     "959843": "One license carries B, C-10 and C-36, and the site offers Building and Bathroom & Kitchen work, so "
@@ -347,15 +394,15 @@ REASON = {
               "address on record — confirm San Francisco service. The site says “Insured & Bonded” while the "
               "record shows a workers' compensation exemption; ask what coverage applies to the attending crew.",
     "1115649": "B and C-36 on one license and a “General Contracting / Remodel” service category, so the combined "
-               "scope is available. Lowest of the dual-classified set because the license was first issued in 2024 "
+               "scope is a candidate, not a confirmed commitment. Lowest of the dual-classified set because the license was first issued in 2024 "
                "and workers' compensation is exempt. The primary call line on its contact page differs from the "
                "number on the CSLB record; both are published by the company.",
     "868994": "Plumbing-only on the verified record (C-36 and A, no building or drywall class), so the ceiling work "
               "is not classified on the license. Confirm whether the make-good is incidental work under "
               "B&P §7059(a) or is subcontracted. Strong on the other verified inputs: an employee service "
               "group holds the workers' compensation policy, no disclosure, licensed since 2005, San Francisco "
-              "address. No official business website was verified in this session, so service scope and published "
-              "phone stay blank.",
+              "address. Its own site advertises plumbing repairs and a different phone number; the two published "
+              "numbers have not been reconciled. Specific ceiling work remains unconfirmed.",
     "977638": "C-36 only, so no ceiling classification appears on its license; incidental make-good work may still "
               "be permitted by B&P §7059(a), which is unverified here. It is one of the "
               "three firms the owner reports already quoted this job, and its own site publishes the same phone and "
@@ -372,7 +419,8 @@ REASON = {
                "because CSLB only requires it of LLC licensees.",
     "1024971": "C-36 only. The owner reports this firm quoted an adjust/repair scope rather than a replacement, and "
                "its own site says most of its work is residential for homeowners, HOAs and property managers, with "
-               "free in-person estimates and per-job quotes — a good fit for a first, least-invasive attempt. "
+               "free in-person estimates and per-job quotes. Its repair page explicitly lists bathtub waste and "
+               "overflow; this is a company service statement, not proof of success or ceiling coverage. "
                "Points are lost because the workers' compensation policy expires 2026-12-18, inside the 60-day "
                "window; ask for a renewal certificate if work runs past that date.",
     "1075566": "C-36 and C-20, no building or drywall class. Workers' compensation expires 2026-12-02, inside the "
@@ -462,6 +510,8 @@ def rank_rows(lics):
             src.append("S62")
         if lic in SITE_SRC:
             src.append(SITE_SRC[lic])
+        if lic == "1003394":
+            src.extend(["S202", "S206"])
         if r["complaint_disclosure"]:
             src.append("S12")
         if lic == "995163":
@@ -553,7 +603,7 @@ TABLES = {
         "rows": [],
         "caption": "The CSLB License Detail record publishes a Business Phone Number for every licensee; that is "
                   "the official value in column 2. Column 3 is filled only where the number appeared in the "
-                  "business's own page content read on 2026-11-08; otherwise it is blank and flagged. "
+                  "business's own page content read on 2026-11-08 or 2026-11-10; otherwise it is blank and flagged. "
                   "Third-party directory numbers are not used.",
     },
     "cslb_register": {
@@ -582,7 +632,7 @@ TABLES = {
         "columns": ["Company", "Plumbing scope as published", "Drywall / building scope as published",
                     "Occupied-unit or managed-building statement", "Grade", "Source"],
         "rows": [],
-        "caption": "Transcribed from each business's own website on 2026-11-08. These are vendor statements: "
+        "caption": "Transcribed from company websites in 2026-11-08 and 2026-11-10 reads. These are vendor statements: "
                   "verified as published, not verified as true, and not score inputs. Where no site was verified "
                   "the cells are blank and flagged. No official source rates job-specific experience.",
     },
@@ -680,21 +730,22 @@ TABLES["cslb_register"]["rows"] = _reg
 # --- reviews ----------------------------------------------------------------
 _rev_src = {
     "829071": ["S77", "S76"], "1025814": ["S77", "S76"],
-    "1003394": ["S78", "S79", "S81"], "995163": ["S80"],
+    "1003394": ["S78", "S79", "S81", "S206"], "995163": ["S80"],
     "959843": ["S79"], "1024971": ["S40"],
 }
 TABLES["reviews_1108"]["rows"] = [{"cells": [
     esc(s["candidate"]), esc(s["platform"]), esc(s["rating"]), esc(s["review_count"]),
     esc(s["quote"]), pill("third-party snapshot — UNVERIFIED", "warn")],
-    "src": _rev_src[s["license"]] + ["S87"]} for s in REVIEWS["snapshots"]]
+    "src": [LICENSE_SRC[s["license"]]] + _rev_src[s["license"]] + ["S87"]} for s in REVIEWS["snapshots"]]
 
 # --- scope evidence ---------------------------------------------------------
 PLUMB_SUMMARY = {
     "977638": "General plumbing repairs, drain and clog work, water heaters, sewer lines, fixture installations.",
     "757796": "Leak detection and pipe repair, drain cleaning, kitchen and bathroom remodeling; photo captions describe a galvanized drain replaced with DWV copper and a bathtub/faucet installation.",
-    "1024971": "Plumbing repair and replacement, sewer line service, water heaters, hydro jetting, drain cleaning, leak detection.",
+    "1024971": "Plumbing repair and replacement; the company's repair page explicitly lists bathtubs (waste & overflow).",
     "959843": "Plumbing is one of four service categories (Electrical, Plumbing, Building, Bathroom & Kitchen).",
-    "1003394": "Plumbing block lists leaky faucets, water heaters, toilets and “New Water & Waste Lines”, labelled Licensed C-36.",
+    "1003394": "Plumbing page lists showers and bathtubs under installations and replacements; the company also advertises plumbing repairs.",
+    "868994": "The company advertises residential and commercial plumbing repairs, drains and fixtures in San Francisco.",
     "829071": "Residential and commercial plumbing, sewer and drain repair, leak detection, fixture replacement/repair, water heaters, backflow, fire protection.",
     "1025814": "Water heaters, toilets, hydro jetting, leak detection, drain and sewer services, trenchless sewer replacement.",
     "1115649": "Estimate form lists drain cleaning, water heaters, leak detection, sewer line, pipe repair/repiping and fixture installation.",
@@ -706,7 +757,8 @@ DRYWALL_SUMMARY = {
     "757796": "Bathroom plumbing remodeling listed; no drywall or ceiling restoration service listed.",
     "1024971": "No drywall or building service listed.",
     "959843": "Building and Bathroom & Kitchen categories offered; B classification on the CSLB record.",
-    "1003394": "Construction block lists Kitchens & Bathrooms and Licensed GC; a company-published review describes drywall patching.",
+    "1003394": "Company sheetrock page advertises repair of wall holes from plumbing, patching, taping, texture matching and optional painting; ceiling scope unconfirmed.",
+    "868994": "No drywall or ceiling restoration service listed on the company pages read.",
     "829071": "No drywall service advertised; B General Building is on the CSLB record and on the company's own certification list.",
     "1025814": "No drywall or building service listed, although B is on the CSLB record.",
     "1115649": "“General Contracting / Remodel” is an offered service category; B is on the CSLB record.",
@@ -718,19 +770,23 @@ OCCUPIED = {
     "757796": "Residential and commercial, 24/7 emergency, same-day service; no managed-building statement.",
     "1024971": "“For houses, apartments, and HOAs across San Francisco”; “Most of our work is residential for homeowners, HOAs, and property managers.”",
     "959843": "Clients described as commercial properties, educational institutions and corporate offices.",
-    "1003394": "Marin & SF County home services; company-published reviews describe work inside occupied homes.",
+    "1003394": "A company-published testimonial describes projects including plumbing in a small multifamily rental; occupancy and independence are not established.",
+    "868994": "Company advertises residential/commercial repairs and flexible scheduling to reduce impact on tenants.",
     "829071": "Two decades serving HOAs and property management companies, including insurance requirements, purchase orders and not-to-exceed limits.",
     "1025814": "Same-day service, office hours Mon–Fri 8–5 with a 24/7 answering service; no managed-building statement.",
     "1115649": "Mon–Fri 7am–7pm with 24/7 emergency; service area SF, Oakland, San Jose and beyond.",
     "841229": "Residential and commercial; service city list covers San Mateo and San Francisco counties.",
-    "995163": "Residential and commercial drywall; build-back after remediation implies work in occupied properties, but no tenant statement is published.",
+    "995163": "Residential and commercial drywall; work in an occupied storage area or tenant coordination is not confirmed.",
 }
 TABLES["scope_evidence"]["rows"] = [{"cells": [
     "<strong>%s</strong>" % esc(DISPLAY[lic]), esc(PLUMB_SUMMARY[lic]), esc(DRYWALL_SUMMARY[lic]),
     esc(OCCUPIED[lic]), pill("vendor statement — not independent verification", "info")],
-    "src": [SITE_SRC[lic], LICENSE_SRC[lic], "S86"]}
+    "src": [SITE_SRC[lic], LICENSE_SRC[lic], "S86"]
+           + (["S202", "S203"] if lic == "1003394" else [])
+           + (["S204"] if lic == "868994" else [])
+           + (["S61"] if lic == "1024971" else [])}
     for lic in ["829071", "1025814", "1003394", "959843", "841229", "1115649",
-                "977638", "757796", "1024971", "995163"]]
+                "868994", "977638", "757796", "1024971", "995163"]]
 
 # ---------------------------------------------------------------------------
 # New flags and findings, appended to the canonical tables by the merge block.
@@ -776,11 +832,12 @@ NEW_FLAGS = [
       "CSLB verifies classes, not capability or willingness.",
       "Get written confirmation that the ceiling opening, patch, texture match and paint are in the same contract.",
       UNVER], ["S64", "S11", "S72", "S43", "S83"]),
-    (["U31", "Six verified licensees have no official business website confirmed in this session",
-      "#1009195, #1089561, #632743, #868994, #1140843 and #1075566 are verified on CSLB, but their published phone "
-      "and service-scope cells stay blank rather than being filled from directories.",
+    (["U31", "Five scored licensees have no official business website confirmed",
+      "#1009195, #1089561, #632743, #1140843 and #1075566 are verified on CSLB, but their published phone "
+      "and service-scope cells stay blank rather than being filled from directories. Atlas's own site was read "
+      "on 2026-11-10; its different company phone remains flagged.",
       "Verify a business site and phone directly before adding them to a call list.",
-      UNVER], ["S65", "S67", "S68", "S69", "S70", "S71"]),
+      UNVER], ["S65", "S67", "S68", "S69", "S70", "S71", "S200"]),
     (["U32", "Ranking weights are analyst judgement",
       "The five criteria and their weights were chosen for this job's constraints; only the input values are "
       "official. A different weighting can reorder candidates.",
@@ -799,7 +856,7 @@ NEW_FLAGS = [
 ]
 
 NEW_FINDINGS = [
-    (["F12", "Six firms can legally do both trades under one license, not five",
+    (["F12", "Six firms in the original scored pool hold both plumbing and building classifications",
       "Re-reading every cited license on 2026-11-08 added The Genteel Plumbers #1025814 (C-36 + B) to the "
       "dual-classified set already published: #829071, #959843, #1003394, #1115649, #841229.",
       pill("verified", "ok")], ["S64", "S11", "S09", "S10", "S56", "S57", "S83"]),
@@ -818,11 +875,11 @@ NEW_FINDINGS = [
       "wallboard-installation class code, and its own site describes patching, texture matching and build-back "
       "after water damage.",
       pill("verified", "ok")], ["S66", "S73", "S82", "S84"]),
-    (["F16", "Review evidence for the exact combination exists but is third-party only",
-      "A Yelp result quotes a Handyman Heroes review describing a wall repair after plumbing work, and an Ace "
-      "portfolio caption describes a bathtub installed with a valve inside the wall. Neither is an official "
-      "source, so neither affects the score.",
-      pill("third-party — UNVERIFIED", "warn")], ["S78", "S77", "S87"]),
+    (["F16", "A wall-repair review is relevant but does not confirm this exact job",
+      "A third-party Yelp result quotes a Handyman Heroes customer describing wall repair after plumbing work; "
+      "the excerpt does not identify the original plumber or a ceiling. The firm's own sheetrock page advertises "
+      "wall patching after plumbing holes. Neither confirms this trip-lever job or affects the license-only score.",
+      pill("third-party and company statements — UNVERIFIED", "warn")], ["S10", "S202", "S206", "S87"]),
 ]
 
 # ---------------------------------------------------------------------------
@@ -890,9 +947,9 @@ PAGES = {
 
 SUMMARY_BLOCK = {
     "type": "prose",
-    "title": "Ranked recommendation (added 2026-11-08)",
+    "title": "License-record ranking (added 2026-11-08)",
     "html": (
-        "<p>All sixteen license records cited anywhere in this project were re-read directly on CSLB on "
+        "<p>All sixteen license records in the original scored pool were re-read directly on CSLB on "
         "2026-11-08, and every one is <strong>current and active</strong>. Six firms hold C-36 Plumbing "
         "<em>and</em> B General Building on a single license, which is what lets one contractor perform the "
         "plumbing and the ceiling restoration under one contract. The ranking is computed from five official "

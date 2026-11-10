@@ -3,7 +3,8 @@
     "retrieved_utc": "2026-11-08",
     "method": "Yelp blocks automated page fetches (HTTP 403 confirmed again on 2026-11-08 for the Bernal Hill Drywall business page). Values below were read from Yelp result text returned by web search on 2026-11-08 and are point-in-time platform snapshots.",
     "grade": "third-party platform snapshot — NOT an official source; never used as license evidence and never used as an input to the ranking score.",
-    "caveat": "Ratings and review counts differ between Yelp result pages captured on the same day. Counts are reported as observed ranges rather than a single reconciled number."
+    "caveat": "Ratings and review counts differ between Yelp result pages captured on the same day. Counts are reported as observed ranges rather than a single reconciled number.",
+    "correction_2026-11-10": "Removed two misattributions discovered by comparing search-result snippets: a bathtub portfolio caption was not reliably attributable to Ace, and a drywall review mentioning Mikhail appeared under another business. Direct Yelp access returned HTTP 403; snippets remain third-party and unverified."
   },
   "snapshots": [
     {
@@ -13,7 +14,7 @@
       "rating": "4.7",
       "review_count": "1.4k–1.5k (varies by result page)",
       "snapshot": "2026-11-08",
-      "quote": "Portfolio caption on the Yelp result: “Install new bathtub with a valve inside the wall”. Result also shows “Verified License”, “Free estimates”, “Locally owned & operated”.",
+      "quote": "The earlier bathtub portfolio caption was withdrawn because its attribution was ambiguous in concatenated search results. The result also showed ‘Verified License’, ‘Free estimates’ and ‘Locally owned & operated’; these are third-party platform statements.",
       "urls": [
         "https://www.yelp.com/search?cflt=plumbing&find_loc=Mission,+San+Francisco,+CA+94110",
         "https://www.yelp.com/search?find_desc=Plumbing+Companies&find_loc=San+Francisco%2C+CA"
@@ -39,11 +40,12 @@
       "rating": "4.7",
       "review_count": "201–402 (varies sharply by result page)",
       "snapshot": "2026-11-08",
-      "quote": "Handyman/drywall result quotes a review: “Andres did a great job with drywall repair” and “Mikhail … did an amazing job on our drywall repair and rehanging”. A handyman-plumbing result quotes: “After having the plumbing repaired, the Heroes (Ron & Mike) came to repair a wall behind our …”.",
+      "quote": "A handyman/drywall result quotes a review: ‘Andres did a great job with drywall repair’. A separate search result quotes a wall repair after plumbing work; the excerpt does not say who performed the plumbing or establish a ceiling repair. Third-party snippets, not independently verified.",
       "urls": [
         "https://www.yelp.com/search?find_desc=Handyman+Drywall&find_loc=Lower+Haight%2C+San+Francisco%2C+CA",
         "https://www.yelp.com/search?find_desc=Handyman+Services&find_loc=San+Francisco%2C+CA",
-        "https://www.yelp.com/biz/handyman-heroes-san-francisco?osq=Handyman&start=60"
+        "https://www.yelp.com/biz/handyman-heroes-san-francisco?osq=Handyman&start=60",
+        "https://yelp.com/search?amp=&find_desc=in+and+out+plumbing&find_loc=San+Francisco%2C+CA"
       ]
     },
     {

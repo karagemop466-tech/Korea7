@@ -1,16 +1,15 @@
 {
   "meta": {
     "retrieved_utc": "2026-11-08",
-    "method": "Each business's own website fetched and read directly on 2026-11-08. Statements are transcribed as published. A published phone is recorded only when it appeared in the page content actually read.",
+    "method": "Each business's own website fetched and read directly on 2026-11-08. Statements are transcribed as published. A published phone is recorded only when it appeared in the page content actually read. Atlas and Handyman Heroes service pages were directly re-read on 2026-11-10; the original ten-site 2026-11-08 snapshot remains identified by each site’s retrieval date.",
     "not_checked": [
       "1009195",
       "1089561",
       "632743",
-      "868994",
       "1140843",
       "1075566"
     ],
-    "not_checked_note": "No official business website was verified for these six license numbers in this session. Their published-phone and service-scope cells stay blank and flagged UNVERIFIED; their CSLB records are verified."
+    "not_checked_note": "No official business website was verified for these five license numbers; published-phone and service-scope cells stay blank and flagged UNVERIFIED. Their CSLB records are verified."
   },
   "sites": {
     "977638": {
@@ -85,8 +84,8 @@
     "1003394": {
       "business": "Handyman Heroes Inc",
       "official_url": "https://www.handymanhero.es/",
-      "published_phone": null,
-      "phone_note": "No phone number was shown on the homepage sections read (the site routes visitors to a Request Service form). The CSLB phone on record is verified instead.",
+      "published_phone": "(844) 382-4376",
+      "phone_note": "Directly published on the company’s plumbing and sheetrock pages, re-read 2026-11-10; matches CSLB.",
       "statements_as_published": [
         "Headline: “Your Marin & SF County Plumbing, Electrical and Handyman Service Pros”.",
         "Construction block lists “Kitchens & Bathrooms” and “Licensed GC”; Plumbing block lists “New Water & Waste Lines” and “Licensed C-36”; Electrical block claims “Licensed C-10”.",
@@ -99,7 +98,12 @@
         "The site's “Licensed C-10” claim does not match the CSLB record, which lists only B and C-36. Flagged."
       ],
       "retrieved_utc": "2026-11-08",
-      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB",
+      "retrieved_updates_2026-11-10": [
+        "The plumbing page lists showers and bathtubs under installations and replacements and gives (844) 382-4376.",
+        "The sheetrock page advertises patching, joint taping, texture matching, optional priming and painting for walls, including holes from plumbing; no specific ceiling job is promised.",
+        "A company-published 2024 testimonial describes plumbing and other projects in a small multifamily rental; independently unverified."
+      ]
     },
     "829071": {
       "business": "Ace Plumbing & Rooter",
@@ -189,6 +193,22 @@
         "No C-36 plumbing classification on the CSLB record, so this firm is the ceiling-restoration partner, not the plumber."
       ],
       "retrieved_utc": "2026-11-08",
+      "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
+    },
+    "868994": {
+      "business": "Atlas Plumbing & Rooter",
+      "official_url": "https://www.atlasplumbingandrooter.com/",
+      "published_phone": "(415) 849-2346",
+      "phone_note": "The company site publishes (415) 849-2346; CSLB lists (650) 871-9863. Both are published, but whether either is the best line is unconfirmed.",
+      "statements_as_published": [
+        "The homepage advertises residential and commercial plumbing services in San Francisco, including drains, fixtures and plumbing repair.",
+        "The plumbing-repairs page advertises flexible scheduling to reduce impact on tenants and business hours."
+      ],
+      "drywall_or_building_service_listed": "No drywall or ceiling restoration service is stated on the two pages read.",
+      "extra": [
+        "Company statements are not independent verification; exact trip-lever repair and ceiling restoration remain unconfirmed."
+      ],
+      "retrieved_utc": "2026-11-10",
       "grade": "business primary source — verified as published, not verified as true; license facts come only from CSLB"
     }
   }
