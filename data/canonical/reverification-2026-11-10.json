@@ -1,0 +1,327 @@
+{
+ "meta": {
+  "publisher": "California Contractors State License Board (CSLB) \u2014 records read directly",
+  "observed_on": "2026-11-10",
+  "method": "Each License Detail page was fetched and read directly on 2026-11-10; every record printed 'Data current as of 11/9/2026'. Business name, business phone, status, classifications, expiry, workers' compensation class and any additional status / complaint disclosure were compared with data/canonical/cslb_records.json (read 2026-11-08). No field drift was found in any of the 16 records.",
+  "record_count": 16,
+  "result": "no drift \u2014 all 16 licences current and active",
+  "scope_limit": "A licence record does not establish ability to perform this specific repair, drywall scope, current availability, price or acceptance of the job. No provider was contacted."
+ },
+ "licenses": [
+  {
+   "license": "977638",
+   "name_on_record": "EXPERT PLUMBING SOLUTIONS",
+   "phone_on_record": "(415) 531-5340",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "expire_date": "2028-10-31",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:38 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "757796",
+   "name_on_record": "BAY AREA PLUMBING",
+   "phone_on_record": "(415) 668-8000",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "expire_date": "2027-01-31",
+   "workers_comp_kind": "exempt",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:41 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1024971",
+   "name_on_record": "JOSEPH TINSLEY",
+   "phone_on_record": "(415) 596-6115",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "expire_date": "2027-03-31",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:26 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "959843",
+   "name_on_record": "GENERALSF",
+   "phone_on_record": "(650) 303-1515",
+   "status": "current and active",
+   "classifications": [
+    "B",
+    "C10",
+    "C36"
+   ],
+   "expire_date": "2027-04-30",
+   "workers_comp_kind": "exempt",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:38 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1003394",
+   "name_on_record": "HANDYMAN HEROES INC",
+   "phone_on_record": "(844) 382-4376",
+   "status": "current and active",
+   "classifications": [
+    "B",
+    "C36"
+   ],
+   "expire_date": "2027-05-31",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": true,
+   "record_stamp": "Data current as of 11/9/2026 4:51:42 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "829071",
+   "name_on_record": "ACE PLUMBING & ROOTER",
+   "phone_on_record": "(415) 824-6444",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "A",
+    "C-4",
+    "C16",
+    "B",
+    "C10"
+   ],
+   "expire_date": "2027-06-30",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:45 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1115649",
+   "name_on_record": "RAPID FLOW PLUMBING & ROOTER INC",
+   "phone_on_record": "(415) 866-8401",
+   "status": "current and active",
+   "classifications": [
+    "B",
+    "C36"
+   ],
+   "expire_date": "2028-01-31",
+   "workers_comp_kind": "exempt",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:45 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "841229",
+   "name_on_record": "MANNY'S PLUMBING & ROOTER",
+   "phone_on_record": "(650) 207-5733",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "B"
+   ],
+   "expire_date": "2028-06-30",
+   "workers_comp_kind": "exempt",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:49 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1025814",
+   "name_on_record": "THE GENTEEL PLUMBERS INC",
+   "phone_on_record": "(833) 436-8335",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "B"
+   ],
+   "expire_date": "2027-04-30",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:49 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1009195",
+   "name_on_record": "ADVANCED PLUMBING AND DRAIN INC",
+   "phone_on_record": "(415) 744-4944",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "expire_date": "2027-11-30",
+   "workers_comp_kind": "insured",
+   "additional_status_present": true,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:52 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "995163",
+   "name_on_record": "BERNAL HILL DRYWALL INC",
+   "phone_on_record": "(415) 533-8274",
+   "status": "current and active",
+   "classifications": [
+    "C-9",
+    "B"
+   ],
+   "expire_date": "2028-07-31",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:53 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1089561",
+   "name_on_record": "TARO GROUP INC",
+   "phone_on_record": "(415) 333-0704",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "C10",
+    "A",
+    "C20"
+   ],
+   "expire_date": "2028-04-30",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:58 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "632743",
+   "name_on_record": "CALPLUMBING CO",
+   "phone_on_record": "(415) 221-4633",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "expire_date": "2027-12-31",
+   "workers_comp_kind": "exempt",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:51:57 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "868994",
+   "name_on_record": "ATLAS PLUMBING & ROOTER",
+   "phone_on_record": "(650) 871-9863",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "A"
+   ],
+   "expire_date": "2028-03-31",
+   "workers_comp_kind": "employee_service_group",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:52:02 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1140843",
+   "name_on_record": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+   "phone_on_record": "(650) 991-2100",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "A"
+   ],
+   "expire_date": "2027-07-31",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:52:02 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  },
+  {
+   "license": "1075566",
+   "name_on_record": "BAY AREA PIPE & EQUIPMENT INC",
+   "phone_on_record": "(925) 642-9768",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "C20"
+   ],
+   "expire_date": "2027-05-31",
+   "workers_comp_kind": "insured",
+   "additional_status_present": false,
+   "complaint_disclosure_present": false,
+   "record_stamp": "Data current as of 11/9/2026 4:52:06 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566",
+   "observed_on": "2026-11-10",
+   "field_drift_vs_2026_11_08_record": []
+  }
+ ],
+ "company_pages": [
+  {
+   "source_id": "S61",
+   "url": "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
+   "observed_on": "2026-11-10",
+   "observations": [
+    "Lists 'Bathtubs (waste & overflow)' under bathroom fixtures",
+    "Publishes (415) 596-6115 and states 'CSLB #1024971 \u00b7 C-36 Licensed'",
+    "Payment FAQ gives mailing address '236 W Portal Ave #259, San Francisco, CA 94127' \u2014 suite number differs from the CSLB record ('236 W POTRAL AVE #459')",
+    "Advertises '4.9 \u00b7 1,500 Reviews' on Yelp & Google \u2014 company marketing, not independently verified"
+   ],
+   "limit": "Company self-description. Not proof of experience with this stuck mechanism, drywall scope, availability or acceptance of this job."
+  },
+  {
+   "source_id": "S72",
+   "url": "https://www.genteelplumbers.com/contact",
+   "observed_on": "2026-11-10",
+   "observations": [
+    "Publishes 415-465-5853, 1181 Revere Avenue, San Francisco, CA 94124",
+    "Office hours Monday-Friday 8 AM-5 PM, 24/7 answering service",
+    "Office address matches the CSLB record; the published phone differs from the CSLB business phone (833) 436-8335"
+   ],
+   "limit": "Company self-description; a published phone is not a licence fact and neither number is reconciled here."
+  }
+ ]
+}

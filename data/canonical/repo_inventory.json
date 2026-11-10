@@ -22,8 +22,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 30464,
-    "sha256": "9a43c31e3155d2323ce3636b16dd98e2f7ff569e518bbad8d592012b3486586c",
+    "bytes": 30670,
+    "sha256": "6a4ca650d034e3c534bb670b950da31c059229e740dba02eefc5ca11aa1169e8",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -185,6 +185,13 @@
     "path": "data/canonical/research-history-2026-11-07.json",
     "bytes": 160431,
     "sha256": "57535181d5dc5791b7ef0f99cf2dc74347f830cf1bd1157258a34e3e8f2f63f0",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "data/canonical/reverification-2026-11-10.json",
+    "bytes": 11732,
+    "sha256": "728242a845ac9d1b5d8204805a4838f7f74d72a58ded75be3055eb23f6ff91b6",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1534,8 +1541,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 149545,
-    "sha256": "0258637f6a7bf7fe9f2ce181af134a1a4c3cddfe5507f2e2d017c2d05e111312",
+    "bytes": 162980,
+    "sha256": "b6297925d2254f6b7430be56a63f7837baca2e769672837ddbd6342b11efdd46",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1807,8 +1814,8 @@
   },
   {
     "path": "tests/test_followup_audit.py",
-    "bytes": 1106,
-    "sha256": "34289d6145e01465692dac044263018c92205df384edf3ff957673b1073d2227",
+    "bytes": 1938,
+    "sha256": "93acb18b59696f397ee0d5fce08d4ae381f08240af8fb429ad552d508e3dcf41",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

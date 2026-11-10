@@ -1,15 +1,15 @@
 {
   "generated_by": "scripts/audit_repository.py",
-  "tracked_files": 335,
-  "total_bytes": 21565502,
-  "text_lines": 81814,
+  "tracked_files": 336,
+  "total_bytes": 21648079,
+  "text_lines": 82580,
   "extension_counts": {
     "(none)": 3,
     ".css": 9,
     ".csv": 3,
     ".html": 81,
     ".js": 4,
-    ".json": 79,
+    ".json": 80,
     ".md": 25,
     ".png": 1,
     ".py": 99,
@@ -18,7 +18,7 @@
     ".txt": 2,
     ".zip": 2
   },
-  "json_files": 79,
+  "json_files": 80,
   "python_files": 99,
   "parse_failures": [],
   "broken_internal_links": [],
@@ -266,10 +266,10 @@
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 183005,
-      "sha256": "3687a197aa852bbb8ea41069b1d3f5fe3eb7cc06fa5388bbaa4635ee628b7617",
+      "bytes": 189934,
+      "sha256": "c505c81d9adb3a8978b1c6476c575f8fd54f93673c6b767f8c3483146520548b",
       "text": true,
-      "lines": 1251,
+      "lines": 1282,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -284,8 +284,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 30464,
-      "sha256": "9a43c31e3155d2323ce3636b16dd98e2f7ff569e518bbad8d592012b3486586c",
+      "bytes": 30670,
+      "sha256": "6a4ca650d034e3c534bb670b950da31c059229e740dba02eefc5ca11aa1169e8",
       "text": true,
       "lines": 307,
       "parse": "not-applicable",
@@ -411,7 +411,7 @@
     {
       "path": "brief.html",
       "bytes": 13110,
-      "sha256": "5690153603a4b868b7b643bf711d6f37e5c4cc26b06ed0adb3da1c944a92a236",
+      "sha256": "fd3c1e4a9af43593296d4e5acff80080b4c4ff3f28379808bb2feaf4ade3c3b8",
       "text": true,
       "lines": 169,
       "parse": "not-applicable",
@@ -429,7 +429,7 @@
     {
       "path": "contacts.html",
       "bytes": 46826,
-      "sha256": "28afec4a5afbd4d8c267076feb6e469b58bde3abdf93846411c4a52cb0cf27ca",
+      "sha256": "1485bd0821e5746932a5148afbe9bc7bdc70d473384e00bb132233d7a2c3111a",
       "text": true,
       "lines": 481,
       "parse": "not-applicable",
@@ -438,7 +438,7 @@
     {
       "path": "contractors.html",
       "bytes": 46296,
-      "sha256": "2ba7a173ee4375d3818031870520aa61dabae6daf88ba14915fc9a38c098e3b0",
+      "sha256": "c7f5c4de39db9fd264ae0ab08b9f1ac1413807fc8833baa4c296ea7f51402835",
       "text": true,
       "lines": 408,
       "parse": "not-applicable",
@@ -514,39 +514,39 @@
     },
     {
       "path": "data/canonical/repo_audit.json",
-      "bytes": 91108,
+      "bytes": 91609,
       "sha256": null,
       "text": true,
-      "lines": 3192,
+      "lines": 3210,
       "parse": "pass",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
     },
     {
       "path": "data/canonical/repo_audit.md",
-      "bytes": 25780,
+      "bytes": 25897,
       "sha256": null,
       "text": true,
-      "lines": 391,
+      "lines": 393,
       "parse": "not-applicable",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
     },
     {
       "path": "data/canonical/repo_inventory.csv",
-      "bytes": 66980,
-      "sha256": "bf3e92ed3fc517c1e475d944a1ffdd5c562aa81e94d7c95a472629b81513ebde",
+      "bytes": 67212,
+      "sha256": "fe44ff5e868fa157cd1f1f667358228492cc078b1f38fe074ab0ed9f7ee06216",
       "text": true,
-      "lines": 312,
+      "lines": 313,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "data/canonical/repo_inventory.json",
-      "bytes": 94939,
-      "sha256": "23516dd7513927c54ec9f2a758a1622b8b7df9d6ad95c9651a2124620c2c5784",
+      "bytes": 95261,
+      "sha256": "de3f785b59001c4b08d956be275a751ecb10fc06dd1ea10580a3a630cb623c6b",
       "text": true,
-      "lines": 2179,
+      "lines": 2186,
       "parse": "pass",
       "line_flags": 0
     },
@@ -556,6 +556,15 @@
       "sha256": "57535181d5dc5791b7ef0f99cf2dc74347f830cf1bd1157258a34e3e8f2f63f0",
       "text": true,
       "lines": 3362,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/reverification-2026-11-10.json",
+      "bytes": 11732,
+      "sha256": "728242a845ac9d1b5d8204805a4838f7f74d72a58ded75be3055eb23f6ff91b6",
+      "text": true,
+      "lines": 327,
       "parse": "pass",
       "line_flags": 0
     },
@@ -570,10 +579,10 @@
     },
     {
       "path": "data/canonical/site_data.json",
-      "bytes": 550481,
-      "sha256": "807ff17c433862fc0f7f83fd3292fd736fb600b230048eb5988d9ef0bfe4d630",
+      "bytes": 566939,
+      "sha256": "2b8e5aac94761fb300e171e31682d858c1e03ba14d12371f168719fe138096f1",
       "text": true,
-      "lines": 10456,
+      "lines": 10554,
       "parse": "pass",
       "line_flags": 0
     },
@@ -597,17 +606,17 @@
     },
     {
       "path": "data/canonical/verification_report.json",
-      "bytes": 43037,
-      "sha256": "f29c81c1b305f4f021ed359c35c4874742f73c992b9af8f70184ce623c69713b",
+      "bytes": 43161,
+      "sha256": "65eb1fa9b7ed07dfa20755c4ff86c7b5445d73ad0b004007542977ac8240c742",
       "text": true,
-      "lines": 499,
+      "lines": 500,
       "parse": "pass",
       "line_flags": 0
     },
     {
       "path": "data/canonical/verification_report.md",
       "bytes": 1972,
-      "sha256": "a09034bf43cee1e571dab7078e7f56016b6c06360c7e8d6c5a53c0918eadb542",
+      "sha256": "81fa63dbfb5a2e28da58b8faf673af6cd245980afbd435cf066c64f15153c3cc",
       "text": true,
       "lines": 40,
       "parse": "not-applicable",
@@ -742,7 +751,7 @@
     {
       "path": "delivery.html",
       "bytes": 14514,
-      "sha256": "9941cca934a6a213e1718bea9032300f77879763f59cba4b75f6c8679b4652ae",
+      "sha256": "43388d5e6ef2f48d98d3d12a69a7610e4d660e6b7816d17499ad3304caab988a",
       "text": true,
       "lines": 160,
       "parse": "not-applicable",
@@ -1606,7 +1615,7 @@
     {
       "path": "estimates.html",
       "bytes": 18851,
-      "sha256": "68a5d1e5e8caa2642706230cee127b3324847cfa3d6761835fbe9faa7694dae9",
+      "sha256": "f5ae9c30018378f08868ad7abf174abd4b4932768db7f58488acd03a2a95977f",
       "text": true,
       "lines": 263,
       "parse": "not-applicable",
@@ -1947,19 +1956,19 @@
     },
     {
       "path": "findings.html",
-      "bytes": 23698,
-      "sha256": "a11a5849dec36095b4db4352388c19cd8e642488fa6d87fc0cdd622277bf4e9e",
+      "bytes": 26464,
+      "sha256": "66eaf791f85f3fbadcaadec5ea80cdd81187977d7673015ee95a49f75b34a6ca",
       "text": true,
-      "lines": 186,
+      "lines": 193,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "flagged.html",
-      "bytes": 45857,
-      "sha256": "a11cd926fafac7e7964fea9d5b7972929ed4561cd278ec0975d5312b6913ddff",
+      "bytes": 47450,
+      "sha256": "9381b6d4fcb0c878fa1e63585144c00b51c9c6462d3223dc4d617de7013c7d13",
       "text": true,
-      "lines": 434,
+      "lines": 442,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2091,8 +2100,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 13865,
-      "sha256": "3301e654d167a3ac8e7e761c49356b0e688217568b3455f8290e9fb090f9c155",
+      "bytes": 13947,
+      "sha256": "a945cdde0816f427dc2b1c89713704ff13b66a49c405401f21b0894ae5488907",
       "text": true,
       "lines": 127,
       "parse": "not-applicable",
@@ -2101,7 +2110,7 @@
     {
       "path": "permits.html",
       "bytes": 8941,
-      "sha256": "c8f3c0c208c49ee46c24c119b480eec22c0acbc142ecf30011b1b25f08062a67",
+      "sha256": "09371f5fcff0ab7c66869381d02beed0482f35cd8f5a7080e98e27cf85ddc789",
       "text": true,
       "lines": 129,
       "parse": "not-applicable",
@@ -2110,7 +2119,7 @@
     {
       "path": "ranking.html",
       "bytes": 87900,
-      "sha256": "65aa4584b9a23d31d70e43576e5f777b2d1663d3996c3de379a9cb1828a007b8",
+      "sha256": "62a4266024e2198c75dc85ef4d094670903f49b35418f2835421e307e95d1e4b",
       "text": true,
       "lines": 518,
       "parse": "not-applicable",
@@ -2136,17 +2145,17 @@
     },
     {
       "path": "repo-review.html",
-      "bytes": 209223,
-      "sha256": "a57fb9fb66a4e857ec8fccce348c0de5369c62a6791123eb7bc6fc59e1833117",
+      "bytes": 212969,
+      "sha256": "e1e7a5146ae5fe39607c059748f093a5f4b9225c44a7347eac0c8d3ee971adea",
       "text": true,
-      "lines": 2688,
+      "lines": 2710,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "requirements.html",
       "bytes": 25086,
-      "sha256": "3ae2ac4967df6cac6994c9417e9b613c705ed9f9618dffe9252d57a109a4534c",
+      "sha256": "693ce632a9479b899ab69d247937093652eec41f929536702f93b5377de73a82",
       "text": true,
       "lines": 314,
       "parse": "not-applicable",
@@ -2343,10 +2352,10 @@
     },
     {
       "path": "scripts/dashboard_content.py",
-      "bytes": 149545,
-      "sha256": "0258637f6a7bf7fe9f2ce181af134a1a4c3cddfe5507f2e2d017c2d05e111312",
+      "bytes": 162980,
+      "sha256": "b6297925d2254f6b7430be56a63f7837baca2e769672837ddbd6342b11efdd46",
       "text": true,
-      "lines": 1259,
+      "lines": 1481,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2622,17 +2631,17 @@
     },
     {
       "path": "sources.html",
-      "bytes": 110120,
-      "sha256": "bd45100b6f84b2db3dcb2f1568102a79aa2a4a1bf26759438bc75f7142e70e07",
+      "bytes": 116181,
+      "sha256": "d5bdef378cc819f017f3b36fc4b3c8f13a80600f1d159d8c4a5e2fc798e4cb09",
       "text": true,
-      "lines": 963,
+      "lines": 971,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "summary.html",
       "bytes": 19242,
-      "sha256": "1254d83157cdd397ba043fad53eebc0f10378fff069c4f8aad83dcd931aa75b6",
+      "sha256": "014beded37696823d53abfcad6b5cc538ff5e1a838080f1a123e37187bfc8615",
       "text": true,
       "lines": 113,
       "parse": "not-applicable",
@@ -2641,7 +2650,7 @@
     {
       "path": "technical.html",
       "bytes": 11377,
-      "sha256": "1ced5b4226b318ff3c3e1811d54fdfb26e7ab8f2cf65f5c2f80499e78a5d84a7",
+      "sha256": "967a6b2aa24c5319b146d1de16d810691a639653cb00e211478b3c674136ec88",
       "text": true,
       "lines": 159,
       "parse": "not-applicable",
@@ -2721,10 +2730,10 @@
     },
     {
       "path": "tests/test_followup_audit.py",
-      "bytes": 1106,
-      "sha256": "34289d6145e01465692dac044263018c92205df384edf3ff957673b1073d2227",
+      "bytes": 1938,
+      "sha256": "93acb18b59696f397ee0d5fce08d4ae381f08240af8fb429ad552d508e3dcf41",
       "text": true,
-      "lines": 26,
+      "lines": 39,
       "parse": "pass",
       "line_flags": 0
     },
@@ -3198,10 +3207,10 @@
     },
     {
       "path": "verification.html",
-      "bytes": 347894,
-      "sha256": "b6e93815845aff29dcb5cc1547ecaa460f5507c6d5f406afffb0b51a268ce7f8",
+      "bytes": 365335,
+      "sha256": "c3a2167b46fc9a857f6f65a13f399d03ebd0a1fb44eb5952eb3b80a1d2620979",
       "text": true,
-      "lines": 63,
+      "lines": 64,
       "parse": "not-applicable",
       "line_flags": 0
     }
