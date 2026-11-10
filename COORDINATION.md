@@ -1230,3 +1230,16 @@ Existing source checks are historical snapshots, not new live verification. No c
 - Actual live [dated verification page](https://karagemop466-tech.github.io/Korea7/delivery.html) fetched after deployment: six rows, November 10 read dates, exact November 9 database timestamps, correct source links and blank UNVERIFIED prices. Live dashboard: https://karagemop466-tech.github.io/Korea7/ . No unqualified claim of exhaustive current source verification is made.
 - Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
 - N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
+
+---
+
+## Session arena/2a57ff73-korea7 — 2026-11-10 (delivery verification + dated re-read)
+
+Runtime requires the fixed Arena branch `arena/2a57ff73-korea7`; no additional branch is created. Prior integration (PR #67/#68, sessions `arena/ccf3d3c5-korea7`, `arena/6696a17e-korea7`) is merged and its claims are closed. This session does not modify other open PRs (#65, #62, #42, #32) and does not touch archived sites (`docs/`, `bathtub-overflow/`, `sf-overflow-audit/`, `trip-lever/`, `vendor/`, `gems/`).
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| M1 | Claim board and record scope | in progress | arena/2a57ff73-korea7 | COORDINATION.md | Claim committed and pushed before any other edit. |
+| M2 | Dated official re-read of every CSLB record in the ranking plus the SF permit and state-law rule pages; record exact returned timestamps and any delta | in progress | arena/2a57ff73-korea7 | data/canonical/recheck-2026-11-10.json; scripts/recheck_data.py; recheck.html; scripts/dashboard_content.py (new page/source rows only) | Re-reads supplement, never replace, the 2026-11-07/08/09 snapshots. |
+| M3 | Rebuild, line-by-line audit, full test suite, link/anchor/privacy gates | in progress | arena/2a57ff73-korea7 | generated HTML/data outputs; verification reports | No claim is relabelled as newly checked without a direct read. |
+| M4 | Integration PR to `main`, merge, confirm exact Pages run and live content | in progress | arena/2a57ff73-korea7 | GitHub PR/Pages | Merge only if the site builds clean. |
