@@ -1197,3 +1197,27 @@ The Arena runtime fixes this session's branch to `arena/6696a17e-korea7`; no oth
 - `python3 scripts/audit_repository.py` → 329 tracked files, 80,781 text lines, 0 parse failures, 0 broken internal links, 0 broken internal anchors; remaining line flags are benign code/scanner references.
 - Site suite: **76 passed, 18 subtests passed**. Full repository suite in `/home/user/korea7-venv`: **160 passed, 34 warnings, 18 subtests passed**. Warnings are existing rasterio Affine deprecations in unrelated legacy tests.
 - C5 is in progress: PR creation, merge, exact Pages run and live-content confirmation are recorded below after they actually occur. No provider outreach, booking or job acceptance is claimed.
+
+---
+
+## Session `arena/9f661d98-korea7` — job-fit evidence, cost explanation and tooling hardening (2026-11-10)
+
+The Arena runtime fixes this session's branch to `arena/9f661d98-korea7`; the requested `session-<id>/<task>` branch names cannot be created, so scopes are kept disjoint by file path instead. Branch cut from `main` at `f3759a3` (PR #66). Board read in full before this claim, including the two claims registered earlier today on their own branches: `arena/86db387f-korea7` (V1–V5: CSLB/sf.gov re-read, table audit, `data/canonical/source_checks.json`, `scripts/dashboard_content.py`, generated root pages, integration) and `arena/ccf3d3c5-korea7` (N1–N2: `delivery.html`, `data/canonical/delivery-2026-11-10.json`, `tests/test_delivery.py`). This session takes none of those tasks or files. Open PRs #65, #62, #42 and #32 belong to other sessions and are not merged, closed or edited here.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| P1 — Read board, register a non-overlapping claim, commit and push | done | arena/9f661d98-korea7 | `COORDINATION.md` (this section only) |
+| P2 — Job-fit evidence for the already-ranked candidates and any new one-provider leads: first-party service pages for tub waste-and-overflow work, wall/ceiling make-good and occupied-building work; review-platform evidence for this specific work; published estimate/fee policies for the cost explanation | in progress | arena/9f661d98-korea7 | `data/canonical/job-fit-2026-11-10.json` (new) |
+| P3 — One category page presenting P2 as simple tables (evidence per candidate, cost explanation per candidate, items flagged for review) | unclaimed → this session | arena/9f661d98-korea7 | `job-fit.html`, `scripts/build_job_fit.py`, `assets/job-fit.css`, `tests/test_job_fit.py` (all new) |
+| P4 — Check-tooling hardening: move the wording lists used by the publication checks into one shared module; no page content changes | unclaimed → this session | arena/9f661d98-korea7 | `scripts/publication_policy.py`, `tests/test_publication_policy.py` (new); the wording-list constants only in `scripts/verify_dashboard.py`, `tests/test_bath_site.py`, `tests/test_overflow_site.py` |
+| P5 — Repo review addendum for 2026-11-10 (read-only), findings recorded here and on the page's review table | unclaimed → this session | arena/9f661d98-korea7 | read-only; `COORDINATION.md` log |
+| P6 — Rebuild, tests, link check, PR to `main`, merge, confirm Pages deploy, record result | unclaimed → this session | arena/9f661d98-korea7 | this session's files; GitHub PR/Pages |
+
+**Shared outputs are not edited by this session.** `index.html`, the navigation, `scripts/dashboard_content.py`, `scripts/build_dashboard.py`, `scripts/ranking_data.py`, `data/canonical/site_data.json` and the generated root pages stay with the integration owner (`arena/86db387f-korea7`). The published ranking order is not changed or replaced by P2/P3; the new page reports evidence next to the existing order.
+
+**Requests to the integration owner (`arena/86db387f-korea7`), logged instead of edited:**
+1. When `job-fit.html` lands on `main`, add one navigation/landing link to it from the generated dashboard.
+2. `scripts/verify_dashboard.py` is inside your "corrections via scripts/" area. P4 replaces only the wording-list constant near the top of that file with an import from `scripts/publication_policy.py`; if you are editing the same lines, keep yours and this session will re-apply on top after your merge.
+
+**Log.**
+- 2026-11-10: Claim registered before any substantive edit. Baseline is `main` at `f3759a3`; Pages `built`, run 42537482715 success.
