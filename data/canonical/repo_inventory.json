@@ -15,8 +15,8 @@
   },
   {
     "path": "EXECUTIVE-SUMMARY.md",
-    "bytes": 35933,
-    "sha256": "0431958378966fcba963946da6ff26b05c4754f50522382ef7effcc479e3e50e",
+    "bytes": 43110,
+    "sha256": "64bf00b872dd1c27f45b7ffeefe1f458b4695db48332fe4221ea866962a1c4be",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -143,6 +143,13 @@
     "path": "data/canonical/closeout-2026-11-10.json",
     "bytes": 1146,
     "sha256": "2c01f3ff4bc61c4fecde386cd7885db11e022efd005842dac415984b3aeb914a",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "data/canonical/complaint-disclosures-2026-11-10.json",
+    "bytes": 20099,
+    "sha256": "6e1ad513ad931e07085711c273d379fba9417a1a9efab12ca794ccd62bc31203",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1548,8 +1555,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 163702,
-    "sha256": "7e23111584df14a3a0409f87a7aa738639ac2da3d4bc67cd96ab81941539cd0a",
+    "bytes": 164101,
+    "sha256": "8945e8c0a8718d6e7bee06d17d7967ccf9903f3bb615b31b485b2787a427a67f",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1557,6 +1564,13 @@
     "path": "scripts/delivery_data.py",
     "bytes": 8528,
     "sha256": "8c29982e8a54a5afa0400a8ec906276e4031cb69a251c11469b95a013fb8d83e",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/disclosure_1110.py",
+    "bytes": 23694,
+    "sha256": "25432245e47e4072f4a441431d04d01b51f23b970df805c0de254b6d7085a7eb",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

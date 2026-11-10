@@ -1615,3 +1615,17 @@ matches the current source.
 **Rules unchanged.** Privacy rule (no permit-strategy or private rationale anywhere public) stays in
 force. Every table row keeps a source link; values that no official source confirms stay blank and
 flagged. No provider contact, availability or job-specific capability is claimed.
+
+---
+
+# Session `arena/4c075a93-korea7` — 2026-11-10 (complaint-disclosure audit)
+
+Platform fixes this session's branch. This session claims one narrow, additive task and does not edit any other session's rows, rankings or pages beyond appending to them.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| CSLB complaint-disclosure audit: read the official disclosure page for all 16 published licences, publish the per-licence result and the verbatim citation detail | in progress | arena/4c075a93-korea7 | `scripts/disclosure_1110.py` (new), `data/canonical/complaint-disclosures-2026-11-10.json` (new), two import lines at the end of `scripts/dashboard_content.py`, regenerated dashboard pages/data, `EXECUTIVE-SUMMARY.md`, this board |
+
+**Why this task.** The published ranking told the owner to "read the disclosure before hiring" but reproduced only the citation number for #1003394, and no session had read the disclosure page for the other fifteen licences. The ranking decision therefore rested on an unread citation.
+
+**Claim.** `arena/4c075a93-korea7`, 2026-11-10, file scope as above. No existing claim is displaced: the module only appends two tables, one finding, one flag, one call-order step, one ranking-rationale sentence and two page sections.
