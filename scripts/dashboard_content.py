@@ -1253,3 +1253,7 @@ for _b in PAGES["index.html"]["sections"]:
                 _card["v"] = str(len(TABLES["flagged"]["rows"]))
 META["session"] = "arena/6696a17e-korea7"
 PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated 2026-11-08"
+
+# Dated delivery supplement; original model inputs and archived pages preserved.
+import delivery_data as _delivery
+_delivery.integrate(__import__(__name__))
