@@ -476,7 +476,10 @@ def build(c):
     stored = _stored_records()
     deltas = dict(compare())
     source_map = {}
-    next_id = 133  # 111-120 are used by concurrent sessions; allocate above them to avoid collisions
+    # Allocate above every id already claimed by any other module in this build, so concurrent
+    # sessions cannot collide with this supplement whatever numbering they use.
+    _used = [int(k[1:]) for k in c.SOURCES if k[0] == "S" and k[1:].isdigit()]
+    next_id = (max(_used) + 1) if _used else 1
     for read in READS:
         sid = "S%d" % next_id
         next_id += 1
@@ -680,9 +683,14 @@ def build(c):
             "were read directly again today (%d field-level differences, all listed). "
             "<a href=\"recheck.html\">See the dated re-check</a>." % change_count})
 
+    import re as _re
+
+    _existing = [int(r["cells"][0][1:]) for r in c.TABLES["flagged"]["rows"]
+                 if _re.fullmatch(r"U\d+", str(r["cells"][0]))]
+    _flag_id = "U%d" % ((max(_existing) + 1) if _existing else 1)
     c.TABLES["flagged"]["rows"].append({
         "cells": [
-            "U47",
+            _flag_id,
             "CSLB database stamp lags the read date",
             "Every record read on 2026-11-10 printed a database stamp of 11/9/2026. The stamp is preserved exactly as "
             "returned, so this page cannot claim same-minute freshness, and a change made after the CSLB database "
@@ -692,6 +700,15 @@ def build(c):
         ],
         "src": [source_map["829071"], artifact_sid],
     })
+    # Publish flags in ID order and refresh the dashboard counter now that the last flag exists.
+    c.TABLES["flagged"]["rows"].sort(
+        key=lambda r: (int(_re.fullmatch(r"U(\d+)", str(r["cells"][0])).group(1))
+                       if _re.fullmatch(r"U\d+", str(r["cells"][0])) else 10 ** 6))
+    for _b in c.PAGES["index.html"]["sections"]:
+        if _b["type"] == "cards":
+            for _card in _b["items"]:
+                if _card["k"] == "Flagged for review":
+                    _card["v"] = str(len(c.TABLES["flagged"]["rows"]))
     c.META["updated"] = READ_DATE
     c.META["session"] = "arena/2a57ff73-korea7"
 
@@ -704,6 +721,7 @@ def build(c):
                     for r in READS],
         "rule_checks": [dict(r, source_id=rule_sources[r["id"]]) for r in RULE_READS],
         "company_checks": [dict(r, source_id=company_sources[r["id"]]) for r in COMPANY_READS],
+        "flag_id": _flag_id,
         "limits": {
             "provider_contacted": False,
             "booking_confirmed": False,

@@ -1,32 +1,32 @@
 # Dashboard verification report
 
-Generated: 2026-11-10T01:04:13+00:00
+Generated: 2026-11-10T01:06:57+00:00
 
 | Check | Result | Detail |
 |---|---|---|
-| Build output complete | PASS | 17 pages generated |
-| Every table row has a source link | PASS | 1498 tbody rows checked, 0 missing links |
+| Build output complete | PASS | 18 pages generated |
+| Every table row has a source link | PASS | 1586 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
-| Internal links resolve | PASS | 1584 internal links checked, 0 broken |
+| Internal links resolve | PASS | 1640 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
-| External links are in the source ledger | PASS | 402 unique external links, 0 unknown/dead |
+| External links are in the source ledger | PASS | 401 unique external links, 0 unknown/dead |
 | Navigation consistent | PASS | 0 nav issues |
 | Privacy sweep (internal-only wording) | PASS | 143 files scanned, 0 matches |
 | No unfilled template markers | PASS | 0 template-marker matches |
 | Dead sources not linked | PASS | 0 dead-source links |
-| Source ledger records prior direct reads | PASS | 38 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 96 sources marked verified overall (metadata only; no network check) |
+| Source ledger records prior direct reads | PASS | 57 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 118 sources marked verified overall (metadata only; no network check) |
 
 ## Counts
 
-- pages: 17
-- tables: 30
-- rows: 724
-- source_ledger_entries: 114
-- verified_sources: 96
-- official_or_manufacturer_verified: 38
-- generated_tbody_rows: 1498
-- internal_links_checked: 1584
-- unique_external_links: 402
+- pages: 18
+- tables: 34
+- rows: 768
+- source_ledger_entries: 136
+- verified_sources: 118
+- official_or_manufacturer_verified: 57
+- generated_tbody_rows: 1586
+- internal_links_checked: 1640
+- unique_external_links: 401
 - published_text_files_scanned: 143
 
 ## Notes

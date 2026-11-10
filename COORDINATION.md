@@ -1256,7 +1256,7 @@ Verification performed: every transcribed field was diffed by `scripts/recheck_d
 
 Irregularities recorded (not blocking):
 
-- **U46 — the CSLB database stamp lags the read date.** Every record read on 2026-11-10 printed "Data current as of 11/9/2026", so the site cannot claim same-minute freshness; stamps are preserved as returned rather than rewritten to the read date.
+- **Flag "CSLB database stamp lags the read date" —** Every record read on 2026-11-10 printed "Data current as of 11/9/2026", so the site cannot claim same-minute freshness; stamps are preserved as returned rather than rewritten to the read date.
 - Genteel publishes two different phone numbers: (833) 436-8335 on CSLB #1025814 and (415) 465-5853 on its own contact page (both re-read 2026-11-10). Neither is replaced; both remain published.
 - Advanced Plumbing and Drain #1009195 remains current and active but still carries the future-suspension additional-status warning; the previously recorded New Jersey website mismatch (U44) is unchanged.
 - Handyman Heroes #1003394 still carries complaint-disclosure citation 2 2020 001045 (07/12/2020, "for disclosure only"), and its own site's C-10 claim is still not on the licence record.
@@ -1270,7 +1270,7 @@ Irregularities recorded (not blocking):
 
 ### Merge note — conflict resolution (arena/2a57ff73-korea7, 2026-11-10)
 
-Incoming `main` (PRs #69/#70/#72, sessions `arena/86db387f-korea7` and `arena/fd9508fc-korea7`) appended its own board sections while this session was working. No incoming work was discarded: both new sections are preserved verbatim below. Collisions found and resolved rather than overwritten: the concurrent re-verification had already claimed source ids S111–S120 and flag U46, so this session's new sources were re-allocated to S133+ and its flag renumbered U47; the duplicate page role was resolved by cross-linking (this session's `recheck.html` cites the other session's `reverification-2026-11-10.json` on `verification.html` instead of presenting two competing claims). Generated HTML/data conflicts were resolved by rebuilding from the merged sources.
+Incoming `main` (PRs #69/#70/#72, sessions `arena/86db387f-korea7` and `arena/fd9508fc-korea7`) appended its own board sections while this session was working. No incoming work was discarded: both new sections are preserved verbatim below. Collisions found and resolved rather than overwritten: the concurrent re-verification had already claimed source ids S111–S120 and flag U46, so this session's supplement now allocates its source ids **and** its flag id at build time above every other module's (currently S121–S142 and U48) instead of using fixed numbers; the duplicate page role was resolved by cross-linking (this session's `recheck.html` cites the other session's `reverification-2026-11-10.json` on `verification.html` instead of presenting two competing claims). Generated HTML/data conflicts were resolved by rebuilding from the merged sources.
 
 ## Session arena/fd9508fc-korea7 — 2026-11-10 delivery close-out
 

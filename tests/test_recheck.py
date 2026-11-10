@@ -78,8 +78,15 @@ class RecheckChecks(unittest.TestCase):
         self.assertIn(("recheck.html", "Live re-check 2026-11-10"), C.NAV[-1]["links"])
 
     def test_flag_added_for_database_stamp_lag(self):
-        ids = [r["cells"][0] for r in C.TABLES["flagged"]["rows"]]
-        self.assertIn("U47", ids)
+        # The id is allocated at build time above every other module's flag, so assert on content,
+        # then check the id the artifact reports really exists and is unique.
+        rows = C.TABLES["flagged"]["rows"]
+        matches = [r for r in rows if "CSLB database stamp lags the read date" in r["cells"][1]]
+        self.assertEqual(len(matches), 1)
+        ids = [r["cells"][0] for r in rows]
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertIn(self.artifact["flag_id"], ids)
+        self.assertEqual(matches[0]["cells"][0], self.artifact["flag_id"])
 
 
 if __name__ == "__main__":

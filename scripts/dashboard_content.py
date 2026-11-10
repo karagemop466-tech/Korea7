@@ -1485,3 +1485,11 @@ META["session"] = "arena/86db387f-korea7"
 # module appends its own rows/flags and does not rewrite existing content.
 import reread_1110 as _reread
 _reread.integrate(__import__(__name__))
+
+# --- Final integration (arena/2a57ff73-korea7): dated 2026-11-10 re-check supplement ---
+# Deliberately last: it allocates its source ids and its flag id above every other module's,
+# so a concurrent session adding pages or flags cannot orphan or collide with this supplement.
+import recheck_data as _recheck
+_recheck.build(__import__(__name__))
+META["updated"] = "2026-11-10"
+META["session"] = "arena/2a57ff73-korea7"
