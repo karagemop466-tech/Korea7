@@ -1531,3 +1531,37 @@ Case-insensitive sweep of tracked files for the owner's internal-only permit wor
 6. Archived microsites (`bathtub-overflow/`, `docs/bath/`, `docs/plumbing-index.html` + `docs/overflow-*.html`, `sf-overflow-audit/`) remain published beside the primary dashboard; consolidation is an owner decision.
 7. Repo legacy content is an unrelated DOE GEMS audit; open PRs #32/#62/#65 and GEMS PRs remain open and were not touched; #71, #73, #74, #75 merged during this session's work.
 8. Genteel and Fast Response phone/address mismatches vs company pages are documented on the site and deliberately not reconciled here.
+
+---
+
+# Session `arena/ebab7513-korea7` — 2026-11-10 (delivery re-verification, Pages recovery, PR + merge)
+
+Runtime pins this session to the fixed Arena branch `arena/ebab7513-korea7`; no other branch is created.
+The branch was created from `main` at `81fd0ffd305e6cfd39efd2536b755eef5a3e6646` (PR #77 merge) with a clean
+tree. Before any work this session read this board end to end, `README.md`, `EXECUTIVE-SUMMARY.md`,
+`index.html`, and the GitHub PR / Pages state. Eight PRs remain open (#65, #62, #42, #32, #20, #18, #15, #2);
+none is touched, their scopes are respected, and no branch other than this one is created or pushed.
+
+**State found at session start (verified directly, not assumed):** the live site
+<https://karagemop466-tech.github.io/Korea7/> serves the 2026-11-10 dashboard, but
+`GET /repos/karagemop466-tech/Korea7/pages` reports `"status": "errored"` and the Pages build for the
+current `main` revision `81fd0ff` failed with `duration: 0`, error "Page build failed." (created
+2026-11-10T01:25:34Z). The last three successful builds are `3f43d2b` (01:23:07Z, 37.9 s),
+`a6c74a7` (01:06:23Z, 83.3 s); six earlier failures in the same hour also had `duration: 0`, the
+signature the prior session recorded as a platform-side flake. The owner-visible site is therefore
+still serving an *older* successful deployment, not the current `main` tree.
+
+## Claims
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| E1 | Board entry + claim, committed and pushed before substantive work | done | `arena/ebab7513-korea7` | `COORDINATION.md` |
+| E2 | Local build / audit / full test-suite re-run on the exact `main` tree | in progress | `arena/ebab7513-korea7` | read-only |
+| E3 | Independent re-read of the official records behind the published ranking and rule pages | in progress | `arena/ebab7513-korea7` | read-only (`data/canonical/` only if drift is found) |
+| E4 | Site/link/privacy audit of the published tree; flag any drift | in progress | `arena/ebab7513-korea7` | `COORDINATION.md`, `flagged.html` via generator only |
+| E5 | Pages recovery: get a green build for the merged revision and confirm the live site | in progress | `arena/ebab7513-korea7` | GitHub PR/Pages + `COORDINATION.md` |
+| E6 | PR to `main`, merge without waiting for approval, record PR link + deploy result | in progress | `arena/ebab7513-korea7` | GitHub PR + `COORDINATION.md` |
+
+File scopes are disjoint from every prior session's finished work: this session does not edit any
+generated page by hand and does not rewrite another session's board section. Results are recorded
+under this heading as they are produced.
