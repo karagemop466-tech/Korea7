@@ -1291,10 +1291,6 @@ Company pages re-read: [Fast Response repair page](https://www.fastresponseplumb
 
 ---
 
-
----
-
-
 Branch `arena/cbeddf30-korea7` is at `c9a5d3e`, identical to `origin/main` (integration PR #68 already merged; no separate branch exists to re-PR). All project work is complete, verified, and live.
 
 | Task | Status | Owner | File scope | Notes |
@@ -1316,3 +1312,19 @@ Branch `arena/cbeddf30-korea7` is at `c9a5d3e`, identical to `origin/main` (inte
 - U45 source freshness / model limits; Yelp returns HTTP 403 to automated fetch so direct Yelp verification is blocked (third-party discovery links only, never presented as license evidence); owner-provided estimates ($614/$550/$135, dated 2026-08-30) left blank and flagged UNVERIFIED — no official source exists; problem-description facts are owner-provided and flagged; no contractor has been contacted, booked, or confirmed for this stuck-lever job; repository contains unrelated legacy GEMS content (archived, untouched).
 
 Nothing is left in progress by `arena/cbeddf30-korea7`.
+
+---
+
+## Session `arena/0415c355-korea7` — comprehensive 2026-11-10 audit, website resolution & privacy/consistency refresh
+
+> **Platform constraint:** The Arena runtime fixes this session's branch to `arena/0415c355-korea7` (rebased cleanly onto `origin/main` at `5206463`, post-PR #69/#70/#71/#72). No other open session PRs remain on `main`.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| A1 — Claim board, complete live re-reads of remaining rules/manufacturers/publishers/company sites, and discover all 6 missing official business websites | in progress | arena/0415c355-korea7 | `COORDINATION.md`, `data/canonical/verification-2026-11-10.json`, `data/canonical/vendor_sites.json` |
+| A2 — Integrate all 6 newly verified company websites (`#1089561`, `#868994`, `#632743`, `#1140843`, `#1075566`, `#1009195`), resolve `U31`/`U44` identity gaps, fix duplicate `F10` / stale `F06` & `U28` exemption narratives, fix raw `&` in `slink()`, and add 2026-11-10 verification supplement | in progress | arena/0415c355-korea7 | `scripts/dashboard_content.py`, `scripts/ranking_data.py`, `scripts/site_audit_2026_11_10.py`, `README.md`, `EXECUTIVE-SUMMARY.md`, generated root `.html` & `data/canonical/` |
+| A3 — Privacy scrub (`bathtub-overflow/problem-scope.html:64` & `docs/overflow-*.html` internal-use labels) + expand `tests/test_dashboard_integrity.py` (`delivery.html`) & add regression tests | in progress | arena/0415c355-korea7 | `bathtub-overflow/problem-scope.html`, `docs/overflow-*.html`, `tests/test_dashboard_integrity.py`, `tests/test_audit_2026_11_10.py` |
+| A4 — Full rebuild (`build_dashboard.py`, `audit_repository.py`), full pytest/unittest verification, PR to `main`, merge, and live GitHub Pages verification | unclaimed | arena/0415c355-korea7 | `COORDINATION.md`, GitHub PR / Pages |
+
+**Non-overlapping scope note:** Preserves PR #67/#68/`delivery_data.py` (`S105–S110`, `U45`), PR #70/`closeout-2026-11-10.json` (`S111`, `scope_fit_closeout`), PR #69/`reverification-2026-11-10.json` (`S120`, `U46`, 16 CSLB re-reads), and PR #71/`verification_report.{json,md}` (`5206463`), plus locked 2026-11-08 CSLB scoring model inputs (`cslb_records.json`, `S06–S11`, `S56–S57`, `S64–S71`) while closing remaining factual, website-coverage, duplicate-ID, privacy, and documentation gaps discovered on 2026-11-10.
+
