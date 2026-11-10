@@ -1374,8 +1374,8 @@ No claim was active, so no other session's work is displaced.
 | P1 | Claim recorded and pushed before any content edit | done | `arena/56d961a8-korea7` | `COORDINATION.md` (append-only) |
 | P2 | Independent line-by-line re-verification of the published tables against the official records and first-party pages | done | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, `data/canonical/reread-2026-11-10.json` |
 | P3 | Publish the previously unquoted SF Plumbing Code §104.2 exempt-work list (official PDF) on a new Reference subpage, with the exact amendment scope | done | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, generated `exempt-work.html` |
-| P4 | Integration prerequisites: rebuild, full link/row/privacy gate, regression tests | in progress | `arena/56d961a8-korea7` | generated pages, `tests/test_reread_1110.py` |
-| P5 | PR → `main`, merge without waiting, confirm the exact Pages deployment and live content | unclaimed | `arena/56d961a8-korea7` | GitHub PR/Pages |
+| P4 | Integration prerequisites: rebuild, full link/row/privacy gate, regression tests | done | `arena/56d961a8-korea7` | generated pages, `tests/test_reread_1110.py` |
+| P5 | PR → `main`, merge without waiting, confirm the exact Pages deployment and live content | in progress | `arena/56d961a8-korea7` | GitHub PR/Pages |
 
 **Scope rules for this session.** `scripts/dashboard_content.py` is edited only by a single appended
 import line at its end (integration owner, logged below); all other additions live in the new module
@@ -1441,3 +1441,26 @@ prove link presence and reachability of what was fetched today, not the truth of
   be collected in this sandbox: they import `numpy`, which is not installed here. They are unrelated
   to the plumbing site and are unmodified by this session; the two rasterio warnings other sessions
   recorded are likewise pre-existing.
+
+### P4 re-run after rebase onto `36b3adf` (concurrent PR #73 landed mid-rebase)
+
+Three rebase conflicts with concurrent sessions were resolved without discarding any side:
+- `COORDINATION.md` (twice): the complete incoming boards from `arena/2a57ff73-korea7` and
+  `arena/cbeddf30-korea7` are preserved verbatim above, and this session's sections are appended
+  after them. No entry from any session was dropped or rewritten.
+- Generated files (24 paths) plus `scripts/dashboard_content.py`: main's versions were taken and the
+  site was then **regenerated** with `python3 scripts/build_dashboard.py`, so the published HTML, the
+  canonical JSON and the reports all come from one consistent build of the merged generator. The only
+  change this session makes to `scripts/dashboard_content.py` is the three-line import at its end.
+
+Final gate on the merged tree:
+- `python3 scripts/build_dashboard.py` → **11/11 PASS**: 17 pages, 30 tables, 724 dataset rows,
+  114 sources; 1,498 rendered rows with 0 missing source links; 1,584 internal links, 0 broken;
+  0 broken anchors; 402 external links all in the ledger; privacy sweep 143 files / 0 matches.
+- Site suites including the two concurrent additions (`test_recheck.py`, `test_closeout.py`) and this
+  session's `test_reread_1110.py` → **91 passed, 18 subtests passed**.
+- `python3 scripts/audit_repository.py` → 0 parse failures, 0 broken internal links/anchors.
+
+### P5 — delivery record
+
+Pending: PR, merge, Pages run, and a fetch of the live `exempt-work.html`.
