@@ -1371,13 +1371,73 @@ No claim was active, so no other session's work is displaced.
 
 | # | Task | Status | Owner | File scope |
 |---|------|--------|-------|------------|
-| P1 | Claim recorded and pushed before any content edit | in progress | `arena/56d961a8-korea7` | `COORDINATION.md` (append-only) |
-| P2 | Independent line-by-line re-verification of the published tables against the official records and first-party pages | in progress | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, `data/canonical/reread-2026-11-10.json` |
-| P3 | Publish the previously unquoted SF Plumbing Code §104.2 exempt-work list (official PDF) on a new Reference subpage, with the exact amendment scope | in progress | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, generated `exempt-work.html` |
-| P4 | Integration prerequisites: rebuild, full link/row/privacy gate, regression tests | unclaimed | `arena/56d961a8-korea7` | generated pages, `tests/test_reread_1110.py` |
+| P1 | Claim recorded and pushed before any content edit | done | `arena/56d961a8-korea7` | `COORDINATION.md` (append-only) |
+| P2 | Independent line-by-line re-verification of the published tables against the official records and first-party pages | done | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, `data/canonical/reread-2026-11-10.json` |
+| P3 | Publish the previously unquoted SF Plumbing Code §104.2 exempt-work list (official PDF) on a new Reference subpage, with the exact amendment scope | done | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, generated `exempt-work.html` |
+| P4 | Integration prerequisites: rebuild, full link/row/privacy gate, regression tests | in progress | `arena/56d961a8-korea7` | generated pages, `tests/test_reread_1110.py` |
 | P5 | PR → `main`, merge without waiting, confirm the exact Pages deployment and live content | unclaimed | `arena/56d961a8-korea7` | GitHub PR/Pages |
 
 **Scope rules for this session.** `scripts/dashboard_content.py` is edited only by a single appended
 import line at its end (integration owner, logged below); all other additions live in the new module
 `scripts/reread_1110.py` and its data file. No other session's rows, rankings or archived pages are
 removed or rewritten. Privacy rule unchanged: no permit-strategy or private rationale anywhere.
+
+### P2 record — independent re-read 2026-11-10 (sources, what was checked, what was not)
+
+**Official records read directly in this session** (fetched, not quoted from earlier sessions):
+[CSLB #829071 Ace](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071),
+[#1025814 Genteel](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814),
+[#1003394 Handyman Heroes](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394),
+[#977638 Expert Plumbing Solutions](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638),
+[#1024971 Fast Response](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971),
+[sf.gov plumbing/mechanical permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit),
+[sf.gov no-permit list](https://www.sf.gov/information--check-if-your-construction-project-needs-permit),
+[BPC §7048 (leginfo)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048),
+[2025 SF Plumbing Code PDF](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf),
+[Watco trip-lever instructions](https://www.watcomfg.com/watco/Instructions/500-501-600TL_Instructions_Bath_Waste_Sheet.pdf),
+[Ace homepage](https://www.aceplumbingandrooter.com/),
+[Genteel contact](https://www.genteelplumbers.com/contact),
+[This Old House tub drain](https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain),
+[Angi drain-replacement cost](https://www.angi.com/articles/how-much-does-it-cost-repair-bathtub-drain-leak.htm).
+
+**Result: no drift.** Every published field re-read today matches the site. Each CSLB page printed
+`Data current as of 11/9/2026`; the five records checked are still *current and active* with the same
+classifications, phone numbers, expiry dates, workers'-compensation carriers and (for #1003394) the
+same complaint-disclosure notice. #977638 expiry remains 2028-10-31, #757796 2027-01-31,
+#1024971 2027-03-31. Genteel still publishes 415-465-5853 on its own contact page against the
+(833) 436-8335 on CSLB — the existing U23 flag stands. Yelp still returns **HTTP 403** on direct
+fetch, so platform ratings remain unscored third-party snapshots (U03/U16 unchanged).
+
+**Gap found and fixed (P3).** The permits table said §104.2 was available only as a "link provided
+for manual review of exemption wording" — the exempt-work text itself was never published. The
+official PDF was read on 2026-11-10 and the nine items are now transcribed verbatim on the new
+`exempt-work.html` page, together with the amendment scope printed on the same page ("Replace
+Section 104.2(1) and the first paragraph of Section 104.2(2)") and the §104.5 fee rule, which is a
+fee provision and not an exemption. The one judgement on that page — whether each item could cover
+this repair — is labelled "this project’s reading" and job applicability is left UNVERIFIED.
+
+**What this session did not do.** No provider was contacted, no quote was obtained, no availability
+or job-specific capability was confirmed, and no external link was re-fetched other than those
+listed above. The remaining 106 ledger entries keep their historical read dates. Structural checks
+prove link presence and reachability of what was fetched today, not the truth of every external page.
+
+### P4 record — build gate and tests
+
+- `python3 scripts/build_dashboard.py` → **11/11 PASS**: 17 pages, 30 tables, 720 dataset rows,
+  114 sources; 1,490 rendered rows with 0 missing source links; 1,576 internal links and 0 broken;
+  0 broken anchors; 398 external links all in the ledger; privacy sweep 141 files / 0 matches;
+  0 template markers; 0 dead-source links; two consecutive builds are byte-stable apart from the
+  report timestamp.
+- `python3 scripts/audit_repository.py` → 336 tracked files, 82,982 text lines, 0 parse failures,
+  0 broken internal links, 0 broken anchors; flags are benign scanner/code references only.
+- Site test suites (`tests/test_dashboard.py`, `test_dashboard_integrity`, `test_overflow_site`,
+  `test_bath_site`, `test_sf_overflow_audit`, `test_followup_audit`, `test_canonical_integrity`,
+  `test_delivery`, `test_license_scope_followup`, `test_ranking`, `test_reread_1110`) →
+  **89 passed, 18 subtests passed**. New file `tests/test_reread_1110.py` (10 tests) enforces the
+  verbatim items, the official-PDF citation on every row, the "reading vs code" separation, the
+  amendment wording, the navigation slot, the open-question flag and the privacy wording.
+- Legacy GEMS modules (`test_emission`, `test_metric*`, `test_validate_*`, `test_writer_validate`,
+  `test_project`, `test_holdout_registry`, `test_network_calibrate`, `test_evaluate_holdout`) cannot
+  be collected in this sandbox: they import `numpy`, which is not installed here. They are unrelated
+  to the plumbing site and are unmodified by this session; the two rasterio warnings other sessions
+  recorded are likewise pre-existing.
