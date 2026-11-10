@@ -1629,3 +1629,34 @@ Platform fixes this session's branch. This session claims one narrow, additive t
 **Why this task.** The published ranking told the owner to "read the disclosure before hiring" but reproduced only the citation number for #1003394, and no session had read the disclosure page for the other fifteen licences. The ranking decision therefore rested on an unread citation.
 
 **Claim.** `arena/4c075a93-korea7`, 2026-11-10, file scope as above. No existing claim is displaced: the module only appends two tables, one finding, one flag, one call-order step, one ranking-rationale sentence and two page sections.
+
+### Result — complaint-disclosure audit (done, 2026-11-10)
+
+**What changed (additive only).**
+- New module `scripts/disclosure_1110.py`, imported at the end of `scripts/dashboard_content.py` (two lines). It appends, and rewrites no existing row:
+  - table `disclosure_check` — the official complaint-disclosure result for each of the 16 published licence numbers;
+  - table `citation_violations` — the 34 violation entries CSLB publishes for the one citation found, transcribed verbatim;
+  - finding `F18`, flag `U49` (needs review, non-blocking), one `call_order` step ("3 — ask before booking"), and one sentence appended to the #3 ranking rationale (score unchanged);
+  - a dated section on `ranking.html`, `summary.html` and `verification.html`, plus a line in the dashboard callout and a `repo_review` provenance row.
+- New evidence file `data/canonical/complaint-disclosures-2026-11-10.json` (all 16 reads, incl. the citation and its 34 entries).
+- `EXECUTIVE-SUMMARY.md` gains a dated section with the 16-row table and the citation summary.
+- Rebuilt dashboard (regenerated pages, `site_data.json`, verification and audit reports).
+
+**Sources read directly this session (official only).**
+- CSLB complaint-disclosure page for each licence: `https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=<number>` — 16 fetches (829071, 1025814, 1003394, 995163, 959843, 841229, 1115649, 868994, 977638, 1089561, 1024971, 757796, 632743, 1075566, 1140843, 1009195).
+- CSLB Citation Violation Disclosure for the single citation: [citation 2 2020 1045](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=LIC&LicNum=1003394&LmfPre=&Class=2&FiscalYear=2020&SeqNbr=1045&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=HANDYMAN+HEROES+INC&StatusDt=07/12/2020).
+- CSLB License Detail #829071 and #1003394 re-read to confirm business name, phone, classes and status against the published rows (both printed "Data current as of 11/9/2026"; no drift).
+- Company site `https://www.handymanhero.es/` re-read, because the odd ccTLD is legitimate: it is Handyman Heroes' own San Francisco site (title "California Handyman Services — Plumbing, Electrical & More"; content names Marin & SF County). The published link is correct; `handymanheroes.com` is a parked for-sale domain. No change made.
+
+**Verification performed.**
+- `python3 scripts/build_dashboard.py` → **11/11 PASS**: 18 pages, 36 tables, 826 dataset rows, 1,702 rendered rows with source links (0 missing), 1,696 internal links (0 broken), 0 broken anchors, 404 unique external links all in the ledger, privacy sweep 144 files / 0 matches.
+- `python3 -m pytest tests/ -q` (isolated venv, pytest only) → **103 passed, 18 subtests passed** for every site/data test. Ten legacy scientific test modules were not run because numpy/scipy/rasterio are not installed in this sandbox (same limitation recorded by earlier sessions); they do not touch the dashboard.
+- `python3 scripts/audit_repository.py` → 345 tracked files, 88,997 text lines, 0 broken internal links, 0 broken anchors, 0 parse failures; the single "privacy-pattern" hit is the pre-existing test assertion in `tests/test_reread_1110.py`.
+- Row-level integrity: the counts in the published text ("34 entries", "31 entries citing §7159", "fifteen with no citation") were computed from the transcribed list, not estimated. A first draft said "27" and was corrected against the data before publishing.
+
+**Findings / irregularities (non-blocking, published on the site).**
+1. Only #1003394 publishes any citation disclosure: citation 2 2020 001045, 07/12/2020, status "FOR DISCLOSURE ONLY PER B&P CODE 7124.6", **34 violation entries** (B&P 7109.A departed from trade standards; 7113 exceeded contract amount; 7154.D employed non-registered salesperson; 31 entries citing §7159). The disclosure page prints no penalty and no outcome; nothing is inferred from it. Published as flag **U49** and finding **F18**.
+2. The ranking scores do **not** change: the published rubric already scores "complaint disclosure present = 5 of 15". Published explicitly so the audit cannot be mistaken for a silent re-ranking.
+3. Yelp/Angi/BuildZoom/Thumbtack/BBB values were not re-checked this session (Yelp returns HTTP 403 to automated fetches); nothing new is claimed from them.
+4. No provider was contacted; job-specific capability, drywall scope, availability and price remain unconfirmed for every candidate.
+5. Direct `curl` from this sandbox reaches only an allowlist of hosts, so external pages were read through the fetch tool rather than shell HTTP; CSLB pages are reachable that way and each disclosure page was read line by line.
