@@ -175,6 +175,13 @@
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
+    "path": "data/canonical/reverification-2026-11-10.json",
+    "bytes": 11732,
+    "sha256": "728242a845ac9d1b5d8204805a4838f7f74d72a58ded75be3055eb23f6ff91b6",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
     "path": "data/canonical/review_snapshots.json",
     "bytes": 4537,
     "sha256": "76195a7812d4879f282e5b580637e4239d47fecff508634c1021c553689a9470",
@@ -1520,8 +1527,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 149387,
-    "sha256": "9bf17ca386aa6fa6467e2624c3f47eb450c18baf10f69385864c78818b339c74",
+    "bytes": 161836,
+    "sha256": "3f48750842a0889d791786c379f7e6414b774188468f50274b1cfb088c4b8a95",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1772,8 +1779,8 @@
   },
   {
     "path": "tests/test_followup_audit.py",
-    "bytes": 1106,
-    "sha256": "34289d6145e01465692dac044263018c92205df384edf3ff957673b1073d2227",
+    "bytes": 1938,
+    "sha256": "6f60e072ac4a40993db6a18481f32e4f87fe7db8a6240b83c7d4844911b76727",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

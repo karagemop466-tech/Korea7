@@ -1253,3 +1253,206 @@ for _b in PAGES["index.html"]["sections"]:
                 _card["v"] = str(len(TABLES["flagged"]["rows"]))
 META["session"] = "arena/6696a17e-korea7"
 PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated 2026-11-08"
+
+# --- Independent re-verification — session arena/86db387f-korea7 (2026-11-10) ---
+# This session did not rebuild the dashboard. It re-read every official record cited
+# for the contractor decision directly on 2026-11-10, found no field drift, corrected one
+# exemption count that had gone stale when the candidate set grew from 11 to 16 records,
+# and published the result on the Verification page.
+import json as _json
+from pathlib import Path as _Path
+
+_ROOT = _Path(__file__).resolve().parent.parent
+_REVERIFY = _json.loads((_ROOT / "data/canonical/reverification-2026-11-10.json").read_text(encoding="utf-8")) \
+    if (_ROOT / "data/canonical/reverification-2026-11-10.json").exists() else {"licenses": []}
+
+SOURCES["S105"] = {
+    "label": "Re-verification log 2026-11-10 (JSON)",
+    "publisher": "This repository — direct CSLB reads",
+    "url": "data/canonical/reverification-2026-11-10.json",
+    "tier": "primary",
+    "status": "verified",
+    "checked": "2026-11-10",
+    "supports": "Field-by-field result of the 2026-11-10 re-read of all sixteen CSLB License Detail records, each with its official stamp and source URL",
+    "note": "Every field compared with the 2026-11-08 transcription: no drift. A licence record is not evidence of job-specific capability, drywall scope, availability or price.",
+}
+
+_REVERIFY_NOTE = (" Independently re-checked 2026-11-10 (record printed 'Data current as of 11/9/2026'); "
+                  "business name, phone, status, classifications, expiry, workers' compensation and any "
+                  "additional status/disclosure unchanged.")
+for _lic in R.LICENSE_SRC:
+    _sid = R.LICENSE_SRC[_lic]
+    if _sid in SOURCES and _REVERIFY_NOTE.strip() not in SOURCES[_sid]["note"]:
+        SOURCES[_sid]["note"] = SOURCES[_sid]["note"].rstrip() + _REVERIFY_NOTE
+
+_RE_RULES = {
+    "S01": "Re-read 2026-11-10; permit wording and the list of licence classes allowed to apply are unchanged.",
+    "S02": "Re-read 2026-11-10; 'minor repairs to existing interior plaster or wallboard' remains on the no-permit list.",
+    "S05": "Re-read 2026-11-10; C-36 definition unchanged.",
+    "S13": "Re-read 2026-11-10; §7048 still sets the exemption at under $1,000, casual/minor, no building permit (AB 1170).",
+    "S62": "Re-read 2026-11-10; the incidental-and-supplemental sentence is unchanged.",
+    "S83": "Re-read 2026-11-10; §7057(b) text unchanged.",
+    "S84": "Re-read 2026-11-10; C-9 definition unchanged.",
+}
+for _sid, _txt in _RE_RULES.items():
+    if _sid in SOURCES and _txt not in SOURCES[_sid]["note"]:
+        SOURCES[_sid]["note"] = SOURCES[_sid]["note"].rstrip() + " " + _txt
+
+# U06: the candidate set grew from 11 to 16 records after this flag was written; five of the
+# sixteen records now carry the 'no employees at this time' workers'-compensation exemption.
+for _r in TABLES["flagged"]["rows"]:
+    if _r["cells"][0] == "U06":
+        _r["cells"][1] = ("Workers'-compensation 'no employees' exemptions on #757796, #959843, "
+                          "#1115649, #841229 and #632743")
+        _r["cells"][2] = ("All five CSLB records state the licensee certified 'no employees at this time' "
+                          "(corrected 2026-11-10: #632743 was added to the candidate set after this flag "
+                          "was first written, when four exemptions were recorded)")
+        _r["src"] = ["S07", "S09", "S56", "S57", "S68", "S105"]
+
+for _page in PAGES.values():
+    for _b in _page["sections"]:
+        for _k, _v in list(_b.items()):
+            if isinstance(_v, str):
+                _b[_k] = (_v
+                          .replace("four CSLB records show a workers'-compensation “no employees” exemption",
+                                   "five CSLB records show a workers'-compensation “no employees” exemption")
+                          .replace("exemptions on #959843, #757796, #1115649 and #841229",
+                                   "exemptions on #959843, #757796, #1115649, #841229 and #632743"))
+
+TABLES["findings"]["rows"].append({
+    "cells": [
+        "F10",
+        "Five of the sixteen verified records carry a workers'-compensation 'no employees' exemption",
+        "CSLB records for " + slink("S07", "#757796") + ", " + slink("S09", "#959843") + ", "
+        + slink("S56", "#1115649") + ", " + slink("S57", "#841229") + " and " + slink("S68", "#632743")
+        + " each state the licensee certified no employees; one further policy expires 2026-12-18 "
+        + "(" + slink("S08", "#1024971") + "). An exemption is a licensed-status fact, not a finding about crew cover.",
+        pill("verified 2026-11-10", "ok"),
+    ],
+    "src": ["S07", "S09", "S56", "S57", "S68", "S08", "S105"],
+})
+
+TABLES["flagged"]["rows"].append({
+    "cells": [
+        "U45",
+        "Exemption count on this page had gone stale",
+        "This page said four records carried the workers'-compensation 'no employees' exemption. After the "
+        "candidate pool grew to sixteen records, five carry it (#632743 was missed). Corrected 2026-11-10 from "
+        "the official records; see F10.",
+        "No action needed — corrected and re-published; re-check every record on the hire date",
+        pill("resolved / documented", "ok"),
+    ],
+    "src": ["S68", "S105"],
+})
+
+for _page in PAGES.values():
+    for _b in _page["sections"]:
+        for _k, _v in list(_b.items()):
+            if isinstance(_v, str):
+                _b[_k] = _v.replace("U01–U44", "U01–U45").replace("44 flagged items", "45 flagged items")
+for _b in PAGES["index.html"]["sections"]:
+    if _b["type"] == "cards":
+        for _card in _b["items"]:
+            if _card["k"] == "Flagged for review":
+                _card["v"] = str(len(TABLES["flagged"]["rows"]))
+            if _card["k"] == "Verified license records":
+                _card["s"] = "Re-read on CSLB 2026-11-08 · re-checked 2026-11-10 · 6 hold plumbing + building"
+    if _b["type"] == "callout" and "all sixteen records re-read 2026-11-08" in _b.get("html", ""):
+        _b["html"] = _b["html"].replace(
+            "all sixteen records re-read 2026-11-08, each printing “Data current as of 11/8/2026”",
+            "all sixteen records re-read 2026-11-08 and independently re-checked 2026-11-10, each printing "
+            "“Data current as of 11/9/2026” with no field change",
+        )
+
+_re_rows = []
+for _rec in _REVERIFY["licenses"]:
+    _lic = _rec["license"]
+    _re_rows.append(
+        "<tr><td><code>#%s</code></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"
+        % (
+            R.esc(_lic), R.esc(_rec["name_on_record"]), R.esc(_rec["phone_on_record"]),
+            pill("current and active", "ok"),
+            R.esc(" · ".join(_rec["classifications"])),
+            R.esc(_rec["expire_date"]),
+            slink(R.LICENSE_SRC[_lic], _rec["record_stamp"]),
+        )
+    )
+_rules_rows = "".join([
+    "<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>"
+    % (slink(_sid), R.esc(SOURCES[_sid]["publisher"]), R.esc(_txt), slink(_sid, "official page — read 2026-11-10"))
+    for _sid, _txt in _RE_RULES.items()
+])
+PAGES["verification.html"]["sections"].insert(0, {
+    "type": "prose",
+    "title": "Independent re-verification — 2026-11-10",
+    "html": (
+        "<p>This page was independently re-verified on <strong>2026-11-10</strong> by session "
+        "<code>arena/86db387f-korea7</code>, which did not rebuild the dashboard. All sixteen CSLB License Detail "
+        "records were fetched and read again; each printed “Data current as of 11/9/2026”. "
+        "<strong>No field drift was found</strong> in any record — business name, business phone, status, "
+        "classifications, expiry, workers' compensation and any additional status or complaint disclosure are "
+        "unchanged from the 2026-11-08 transcription (" + slink("S105", "re-verification log") + "). The official "
+        "rule pages cited for the decision were re-read the same day and their wording is unchanged.</p>"
+        "<div class=\"table-wrap\"><table><thead><tr><th>License</th><th>Business on record</th>"
+        "<th>Phone on record</th><th>Status 2026-11-10</th><th>Classes</th><th>Expires</th>"
+        "<th>Record stamp</th></tr></thead><tbody>" + "".join(_re_rows) +
+        "</tbody><caption>Every row was read from its own official CSLB License Detail page on 2026-11-10; the "
+        "record stamp column links to that page. A license record does not establish ability to perform this "
+        "specific repair, drywall scope, price or availability, and no provider was contacted.</caption></table></div>"
+        "<div class=\"table-wrap\"><table><thead><tr><th>Rule source re-read 2026-11-10</th><th>Publisher</th>"
+        "<th>Result of the re-read</th></tr></thead><tbody>" + _rules_rows +
+        "</tbody><caption>Official and statutory pages only. These rules describe permits and licence scope in "
+        "general terms; whether they apply to this particular repair is a question for SF DBI and the selected "
+        "contractor, not a conclusion of this dashboard.</caption></table></div>"
+        "<p class=\"src\">Correction made in this pass: the workers'-compensation exemption count on the "
+        "Flagged for Review page and in the executive summary said four; five of the sixteen records carry it "
+        "(" + slink("S68", "#632743") + " was missed). See U45 and F10.</p>"
+    ),
+})
+
+META["updated"] = "2026-11-10"
+META["session"] = "arena/86db387f-korea7"
+PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated 2026-11-10"
+
+# 2026-11-10 company-page re-reads: Fast Response's own site gives a mailing address whose
+# suite number differs from the CSLB record, so the existing address flag is widened rather
+# than left describing only the Yelp variant.
+for _r in TABLES["flagged"]["rows"]:
+    if _r["cells"][0] == "U04":
+        _r["cells"][2] = ("Three different addresses appear: the Yelp listing shows 4444 Geary Blvd Ste 203 "
+                          "(prior snapshot); the official CSLB #1024971 record shows 236 W POTRAL AVE #459 "
+                          "(the misspelling is CSLB's own); the company's payment FAQ (re-read 2026-11-10) gives "
+                          "236 W Portal Ave #259")
+        _r["src"] = ["S08", "S34", "S40", "S105"]
+SOURCES["S61"]["note"] = (SOURCES["S61"]["note"].rstrip()
+                          + " Re-read 2026-11-10: still lists bathtubs (waste & overflow) and (415) 596-6115; "
+                            "its payment FAQ gives a mailing suite (#259) that differs from the CSLB record (#459).")
+SOURCES["S72"]["note"] = (SOURCES["S72"]["note"].rstrip()
+                          + " Re-read 2026-11-10: phone 415-465-5853 and 1181 Revere Avenue unchanged.")
+
+TABLES["repo_review"]["rows"].append({
+    "cells": [
+        "Independent re-verification 2026-11-10",
+        "Session arena/86db387f-korea7 re-read all sixteen CSLB License Detail records, the sf.gov permit pages, "
+        "the CSLB C-36 / B / C-9 classification pages, BPC §7048 and §7059, and two contractor sites, then "
+        "re-ran the build, the site tests and the repository audit. It found no licence drift and corrected one "
+        "stale exemption count (U45).",
+        "16/16 records current and active with unchanged fields (records printed 'Data current as of 11/9/2026'); "
+        "build 11/11 PASS; full suite 160 passed, 18 subtests; repository audit 0 broken links, 0 broken anchors, "
+        "0 parse failures. This is desk verification — no provider was contacted and no quote was confirmed.",
+        pill("reviewed 2026-11-10", "ok"),
+    ],
+    "src": ["S105", "S01", "S02", "S04", "S13", "S62"],
+})
+TABLES["repo_review"]["rows"].append({
+    "cells": [
+        "Archived duplicate plumbing sites still in the tree",
+        "Four earlier plumbing microsites remain published alongside the primary dashboard: bathtub-overflow/, "
+        "docs/bath/, docs/plumbing-index.html (+ docs/overflow-*.html) and sf-overflow-audit/. They are linked "
+        "from the dashboard as archived material and were not edited.",
+        "Confirmed by path scan of the checkout and by the internal-link audit (0 broken). Consolidating or "
+        "removing them is an owner decision, not something this session changes.",
+        pill("flagged for owner decision", "warn"),
+    ],
+    "src": ["S49", "S50", "S51", "S60", "S105"],
+})

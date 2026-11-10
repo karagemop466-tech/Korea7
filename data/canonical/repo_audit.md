@@ -1,8 +1,8 @@
 # Repository line-by-line audit
 
 - Tracked files: 329
-- Total bytes: 21476503
-- Text lines scanned: 80782
+- Total bytes: 21529423
+- Text lines scanned: 81094
 - JSON files: 77; Python files: 96
 - Parse failures: 0
 - Broken internal links: 0
@@ -56,7 +56,7 @@
 |---|---:|---:|---|---:|
 | .gitignore | 366 | 24 | not-applicable | 0 |
 | .nojekyll | 0 | 0 | not-applicable | 0 |
-| COORDINATION.md | 172913 | 1190 | not-applicable | 0 |
+| COORDINATION.md | 176758 | 1216 | not-applicable | 0 |
 | EXECUTIVE-SUMMARY.md | 32079 | 173 | not-applicable | 0 |
 | README.md | 30464 | 307 | not-applicable | 0 |
 | assets/dashboard.css | 9663 | 206 | not-applicable | 0 |
@@ -82,16 +82,16 @@
 | data/canonical/decision_analysis.json | 10268 | 314 | pass | 0 |
 | data/canonical/evidence-2026-11-08.json | 16132 | 272 | pass | 0 |
 | data/canonical/providers-2026-11-08.json | 8068 | 191 | pass | 0 |
-| data/canonical/repo_audit.json | 89927 | 3151 | pass | 0 |
-| data/canonical/repo_audit.md | 25433 | 386 | not-applicable | 0 |
-| data/canonical/repo_inventory.csv | 65904 | 307 | not-applicable | 0 |
-| data/canonical/repo_inventory.json | 93413 | 2144 | pass | 0 |
+| data/canonical/repo_audit.json | 90118 | 3156 | pass | 0 |
+| data/canonical/repo_audit.md | 25558 | 387 | not-applicable | 0 |
+| data/canonical/repo_inventory.csv | 66136 | 308 | not-applicable | 0 |
+| data/canonical/repo_inventory.json | 93735 | 2151 | pass | 0 |
 | data/canonical/research-history-2026-11-07.json | 160431 | 3362 | pass | 0 |
 | data/canonical/review_snapshots.json | 4537 | 86 | pass | 0 |
-| data/canonical/site_data.json | 530010 | 10089 | pass | 0 |
+| data/canonical/site_data.json | 542571 | 10155 | pass | 0 |
 | data/canonical/source_checks.json | 15619 | 343 | pass | 0 |
 | data/canonical/vendor_sites.json | 13837 | 195 | pass | 0 |
-| data/canonical/verification_report.json | 42417 | 492 | pass | 0 |
+| data/canonical/verification_report.json | 42541 | 493 | pass | 0 |
 | data/canonical/verification_report.md | 1972 | 40 | not-applicable | 0 |
 | data/focus/GEMSDOE24.tif | 1632732 | binary | binary | 0 |
 | data/focus/GEMSDOE25.tif | 836982 | binary | binary | 0 |
@@ -246,8 +246,8 @@
 | evidence/validate_raster_final.json | 649 | 19 | pass | 0 |
 | evidence/validate_submission_final.json | 760 | 21 | pass | 0 |
 | evidence/writer_bundle.json | 3797 | 116 | pass | 0 |
-| findings.html | 23650 | 185 | not-applicable | 0 |
-| flagged.html | 44703 | 425 | not-applicable | 0 |
+| findings.html | 26416 | 192 | not-applicable | 0 |
+| flagged.html | 46025 | 433 | not-applicable | 0 |
 | gems/__init__.py | 869 | 18 | pass | 0 |
 | gems/calibrate.py | 5278 | 127 | pass | 0 |
 | gems/emission.py | 9868 | 240 | pass | 0 |
@@ -262,12 +262,12 @@
 | gems/validate.py | 6008 | 130 | pass | 0 |
 | gems/writer.py | 4073 | 102 | pass | 0 |
 | hypotheses.md | 4103 | 27 | not-applicable | 0 |
-| index.html | 13493 | 125 | not-applicable | 0 |
+| index.html | 13575 | 125 | not-applicable | 0 |
 | permits.html | 8893 | 128 | not-applicable | 0 |
 | ranking.html | 87852 | 517 | not-applicable | 0 |
 | registry/focus9_manifest.json | 3509 | 82 | pass | 0 |
 | registry/owner_score_ledger.csv | 56403 | 161 | not-applicable | 0 |
-| repo-review.html | 206078 | 2647 | not-applicable | 0 |
+| repo-review.html | 206730 | 2655 | not-applicable | 0 |
 | requirements.html | 25038 | 313 | not-applicable | 0 |
 | requirements.txt | 122 | 5 | not-applicable | 0 |
 | run-card-korea7-e3.json | 5188 | 55 | pass | 0 |
@@ -290,7 +290,7 @@
 | scripts/calibrate.py | 3044 | 69 | pass | 0 |
 | scripts/canary.py | 3067 | 77 | pass | 0 |
 | scripts/check_candidate.py | 671 | 19 | pass | 0 |
-| scripts/dashboard_content.py | 149387 | 1255 | pass | 0 |
+| scripts/dashboard_content.py | 158993 | 1415 | pass | 0 |
 | scripts/fleet_stats.py | 2760 | 63 | pass | 0 |
 | scripts/generate_submission.py | 12227 | 298 | pass | 0 |
 | scripts/make_demo_data.py | 2606 | 62 | pass | 0 |
@@ -320,7 +320,7 @@
 | sf-overflow-audit/sources.html | 17927 | 190 | not-applicable | 1 |
 | sf-overflow-audit/technical-access.html | 10943 | 147 | not-applicable | 0 |
 | shortlist.html | 17968 | 241 | not-applicable | 0 |
-| sources.html | 102684 | 906 | not-applicable | 0 |
+| sources.html | 107753 | 914 | not-applicable | 0 |
 | summary.html | 18870 | 111 | not-applicable | 0 |
 | technical.html | 11329 | 158 | not-applicable | 0 |
 | tests/test_bath_site.py | 6845 | 187 | pass | 1 |
@@ -329,7 +329,7 @@
 | tests/test_dashboard_integrity.py | 5854 | 128 | pass | 0 |
 | tests/test_emission.py | 2290 | 66 | pass | 0 |
 | tests/test_evaluate_holdout.py | 5978 | 145 | pass | 0 |
-| tests/test_followup_audit.py | 1106 | 26 | pass | 0 |
+| tests/test_followup_audit.py | 1938 | 39 | pass | 0 |
 | tests/test_holdout_registry.py | 2927 | 82 | pass | 0 |
 | tests/test_license_scope_followup.py | 1111 | 28 | pass | 0 |
 | tests/test_metric.py | 2363 | 77 | pass | 0 |
@@ -382,6 +382,6 @@
 | vendor/gems57/uniqueness.py | 24437 | 459 | pass | 0 |
 | vendor/gems57/validate.py | 4765 | 109 | pass | 0 |
 | verification-log.html | 18693 | 282 | not-applicable | 0 |
-| verification.html | 336824 | 62 | not-applicable | 0 |
+| verification.html | 352015 | 63 | not-applicable | 0 |
 
 Full machine-readable inventory and flag list: `repo_audit.json`.
