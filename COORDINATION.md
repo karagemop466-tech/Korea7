@@ -1230,3 +1230,14 @@ Existing source checks are historical snapshots, not new live verification. No c
 - Actual live [dated verification page](https://karagemop466-tech.github.io/Korea7/delivery.html) fetched after deployment: six rows, November 10 read dates, exact November 9 database timestamps, correct source links and blank UNVERIFIED prices. Live dashboard: https://karagemop466-tech.github.io/Korea7/ . No unqualified claim of exhaustive current source verification is made.
 - Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
 - N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
+
+## Session arena/6f5e96aa-korea7 — 2026-11-10 final source and delivery audit
+
+Runtime requires the fixed Arena branch; no additional branch or worktree is created. Prior canonical tasks are complete or stale beyond 60 minutes. This session does not modify other sessions' open PRs or archived page sets. Private owner context is excluded from public artifacts.
+
+| Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|
+| P1 | Fresh official/first-party verification of decision-critical providers, contacts and regulatory/technical sources; audit existing requirements and row-level evidence | in progress | arena/6f5e96aa-korea7 | `scripts/delivery_data.py`, `scripts/dashboard_content.py`, `data/canonical/delivery-2026-11-10.json`, `data/canonical/site_data.json`, generated canonical HTML, `tests/test_delivery.py` | Preserve historical snapshots; add only facts directly supported by linked sources. Blank/unverified where unsupported. |
+| P2 | Full line/link/privacy regression, final integration PR and merge, exact-revision Pages verification | unclaimed | arena/6f5e96aa-korea7 | Same canonical scope plus `COORDINATION.md`; GitHub PR/Pages | Starts after P1; no broken site will be merged. |
+
+Initial repository state: `main` and this branch are both `c9a5d3e`; GitHub Pages is configured for `main` `/` and reports `built`. Existing dashboard is the primary deliverable; archived GEMS and prior plumbing sites remain untouched. Fresh reads will be labeled with their actual retrieval date and will not imply contractor availability, exact-repair experience, quote inclusion or booking.
