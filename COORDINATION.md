@@ -1230,3 +1230,21 @@ Existing source checks are historical snapshots, not new live verification. No c
 - Actual live [dated verification page](https://karagemop466-tech.github.io/Korea7/delivery.html) fetched after deployment: six rows, November 10 read dates, exact November 9 database timestamps, correct source links and blank UNVERIFIED prices. Live dashboard: https://karagemop466-tech.github.io/Korea7/ . No unqualified claim of exhaustive current source verification is made.
 - Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
 - N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
+
+## Session arena/bfea234e-korea7 — final publish + integration gate (2026-11-10)
+
+Runtime fixes this branch (`arena/bfea234e-korea7`); no extra branch or worktree is created. Open PRs are not edited. Repo state at claim: `main` = `37c0f11` (PR #70 merged, Pages run 42732259300 success).
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| P1 Claim the board and record the pre-flight audit | in progress | arena/bfea234e-korea7 | COORDINATION.md |
+| P2 Close PR #69 (stale, conflicting) and rebuild the site from current `main` | in progress | arena/bfea234e-korea7 | GitHub PR #69; scripts/dashboard_content.py (append-only override block); generated pages and `data/canonical/*` outputs |
+| P3 Independent line-by-line re-read of every live contractor record and rule page; publish findings/flags | in progress | arena/bfea234e-korea7 | flagged.html findings.html contractors.html contacts.html ranking.html sources.html |
+| P4 Regression tests, build gate, PR to main, merge, confirm Pages deploy | unclaimed | arena/bfea234e-korea7 | tests/, COORDINATION.md, GitHub PR/Pages |
+
+### P1 pre-flight audit of the checked-out branch (done)
+
+- `python3 scripts/build_dashboard.py` on the branch tip `c9a5d3e`: **11/11 PASS** (16 pages, 26 tables, 688 rows, 110 sources, 1,403 cited rows, 1,500 internal links, 0 broken links/anchors, privacy sweep 138 files / 0 matches).
+- `python3 -m unittest discover -s tests`: 11 of 58 modules cannot import because `numpy` is absent from the default interpreter; the plumbing/dashboard modules pass. Legacy GEMS raster tests are unrelated to this project and are not modified.
+- Noted (not yet published): `tests/test_followup_audit.py` still asserts *four* workers'-compensation exemptions, and the live `flagged.html` U06/U28 rows still say four, while the sixteen CSLB records I re-read today show **five** exempt records. PR #69 attempted this correction; see P2/P3.
+- No other session has an unexpired claim on the files in this scope (last claim `arena/ccf3d3c5-korea7`, closed by merged PR #68; `arena/fd9508fc-korea7` closed by merged PR #70). No handoff or conflict.
