@@ -11,8 +11,8 @@ agency; CSLB License Detail pages printed "Data current as of 11/7/2026".
 """
 
 META = {
-    "updated": "2026-11-08",
-    "session": "arena/0e9ee506-korea7",
+    "updated": "2026-11-10",
+    "session": "arena/33211fbf-korea7",
     "title": "Bathtub overflow trip lever — repair research dashboard",
     "pages_url": "https://karagemop466-tech.github.io/Korea7/",
     "repo_url": "https://github.com/karagemop466-tech/Korea7",
@@ -1252,7 +1252,7 @@ for _b in PAGES["index.html"]["sections"]:
             if _card["k"] == "Flagged for review":
                 _card["v"] = str(len(TABLES["flagged"]["rows"]))
 META["session"] = "arena/6696a17e-korea7"
-PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated 2026-11-08"
+PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated 2026-11-10"
 
 # Dated delivery supplement; original model inputs and archived pages preserved.
 import delivery_data as _delivery
