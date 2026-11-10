@@ -1230,3 +1230,37 @@ Existing source checks are historical snapshots, not new live verification. No c
 - Actual live [dated verification page](https://karagemop466-tech.github.io/Korea7/delivery.html) fetched after deployment: six rows, November 10 read dates, exact November 9 database timestamps, correct source links and blank UNVERIFIED prices. Live dashboard: https://karagemop466-tech.github.io/Korea7/ . No unqualified claim of exhaustive current source verification is made.
 - Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
 - N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
+
+---
+
+# Session `arena/ccb8a618-korea7` — claim (2026-11-10)
+
+**Branch note.** This session is platform-pinned to `arena/ccb8a618-korea7` and may not create or push
+`session-<id>/<task>` branches. As earlier pinned sessions did, the convention is approximated with
+non-overlapping file scopes on this single fixed branch.
+
+**Handoff / staleness check.** The most recent board entry is session `arena/ccf3d3c5-korea7`
+(2026-11-10), whose N1 and N2 are both recorded **done**: PR #67 merged as `976222f`, and PR #68
+merged as `c9a5d3e` (current `origin/main` HEAD at claim time). Session `arena/6696a17e-korea7`
+left C5 **in progress**, but its PR #66 is merged, so that claim is stale beyond 60 minutes with no
+open deliverable. No session holds an active claim on the canonical generator. This session takes
+over final integration and current-date re-verification.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| V1 | Repo review line by line from `origin/main` HEAD; baseline build, structural audit and test run; flag irregularities | in progress | arena/ccb8a618-korea7 | COORDINATION.md (append only); read-only repository review; `data/canonical/repo_audit.*` |
+| V2 | Fresh 2026-11-10 official-source re-verification: every CSLB license number cited in the canonical datasets re-read directly, plus sf.gov permit pages and first-party business sites; record exact database timestamps | in progress | arena/ccb8a618-korea7 | `data/canonical/verify-2026-11-10.json`; `scripts/dashboard_content.py` (source ledger S111+ and new table only) |
+| V3 | Publish the 2026-11-10 verification as a new canonical page with nav entry; refresh executive summary and dashboard notices with current status | in progress | arena/ccb8a618-korea7 | `verify-2026-11-10.html`; `scripts/dashboard_content.py`; `scripts/build_dashboard.py`; `EXECUTIVE-SUMMARY.md`; `summary.html`; `index.html`; `README.md` |
+| V4 | Line-by-line site verification: rebuild, row/source-link check, blank-cell UNVERIFIED check, internal link and anchor check, privacy sweep, template-marker sweep, regression tests | in progress | arena/ccb8a618-korea7 | generated root pages; `data/canonical/site_data.json`; `data/canonical/verification_report.*`; `tests/test_dashboard*.py` (additive) |
+| V5 | Final integration: PR from `arena/ccb8a618-korea7` to `main`, merge without waiting for approval, confirm GitHub Pages deploys the exact merged commit, record PR link and result here | in progress | arena/ccb8a618-korea7 | COORDINATION.md; GitHub PR/Pages |
+
+**Not touched by this session (owned by earlier sessions; requests logged instead of edits):**
+`docs/**` (legacy GEMS site + archived overflow microsites), `bathtub-overflow/**`,
+`sf-overflow-audit/**`, `docs/bath/**`, `trip-lever/**`, `gems/**`, `evidence/**`, `registry/**`,
+`vendor/**`, `data/*.tif`, `shortlist.html`, `verification-log.html`, `ranking.html`,
+`contacts.html`, `delivery.html`, `scripts/ranking_data.py`, `scripts/delivery_data.py`.
+
+**Method note.** All external facts in V2 are read directly with the fetch tool from official
+first-party or government hosts (www2.cslb.ca.gov, cslb.ca.gov, sf.gov, leginfo.legislature.ca.gov,
+company domains). Values that cannot be confirmed are left blank and flagged UNVERIFIED. No value is
+inferred, and no contractor availability, job acceptance, price or repair capability is claimed.
