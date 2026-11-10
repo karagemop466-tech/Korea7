@@ -1551,3 +1551,24 @@ Initial observation: Pages API reports an errored build for `81fd0ffd305e6cfd39e
 - `python3 scripts/build_dashboard.py`: 11/11 structural checks pass, 18 pages, 34 tables, 768 dataset rows, 1,586 table rows with links, 1,640 internal links with 0 broken, privacy scan 0 matches. This structural scan does not verify that each link supports each claim; U21 on the public flagged page notes that not every row has a government source. `python3 scripts/audit_repository.py`: 343 tracked files, no parse or internal-link failures; 1 privacy-pattern match was a test assertion, and 36 other scanner flags are benign definitions/references. Regenerated reports were discarded to avoid unrelated timestamp changes.
 - Python site-focused suites: 99 passed, 18 subtests passed in an isolated venv using pytest. Full legacy scientific test suite not run in this session. No provider contacted; job-specific capability, availability, and combined quote remain unconfirmed; Yelp direct access was not independently re-checked in this session.
 - The follow-up PR will contain this board entry only, serving as a safe new build trigger; if GitHub reports another failure, it will be reported rather than conflated with the prior successful deployment.
+
+---
+
+# Session `arena/ec576609-korea7` — 2026-11-10 (independent post-merge verification pass)
+
+**Branch note.** The Arena runtime pins this session to `arena/ec576609-korea7`; no `session-<id>/<task>`
+branch is created or pushed. Non-overlapping scope is kept by path, and no row, ranking or page owned by
+another session is rewritten. This session starts from `main` @ `f00f9d8` (PR #78 merge).
+
+**Board read at start.** Every prior board reports its tasks `done` (last: `arena/c6a12019-korea7`,
+which left no open claim). No unclaimed or in-progress task remains, so nothing here displaces another
+session's work. Open PRs #65, #62, #42, #32, #20, #18, #15, #2 are pre-existing, disjoint, and untouched.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| Q1 | Claim recorded and pushed before any content edit | in progress | `arena/ec576609-korea7` | `COORDINATION.md` (append-only) |
+| Q2 | Independent CSLB re-read of the ten records not re-read in the 2026-11-10 cycles, plus the permit/§7048/§7059 pages, recording any drift | unclaimed | | read-only + `data/canonical/` addendum |
+| Q3 | Independent live-deployment verification: which revision Pages serves, every published route, and the build/deploy status for the current `main` | unclaimed | | read-only |
+| Q4 | Repo-review addendum: line-by-line check of the site's own claims against its data files (counts, scores, links) | unclaimed | | new page only |
+| Q5 | Integration: rebuild, full gate, PR to `main`, merge, confirm Pages deploy, record result | unclaimed | | GitHub PR/Pages |
+
