@@ -1559,3 +1559,17 @@ Initial observation: Pages API reports an errored build for `81fd0ffd305e6cfd39e
 | Integration delivery: record results, PR and Pages status | in progress | `arena/e48fffbf-korea7` | `COORDINATION.md`, GitHub PR/Pages |
 
 This session uses the Arena-assigned branch. Existing historical claims and work are preserved; shared site files will not be changed without a separate claim. Prior completed research is not treated as independently verified without a fresh check.
+
+### Independent audit results and coordination handoff
+
+- The current branch was created from `81fd0ff` before session `arena/c6a12019-korea7` published its concurrent claim. On fetching current `main`, that active overlapping claim was discovered; this session defers further recovery work to that owner. The rebase conflicted only in this board's appended entries; both sections were retained, with no other session's work discarded.
+- `python scripts/build_dashboard.py`: 18 pages, 34 tables, 768 dataset rows; all 11 structural checks passed, including 1,586 linked table rows, 1,640 resolving internal links and zero privacy-pattern matches. These are structural checks, not proof that every row is supported by an official source or that external links are live. Rebuilt timestamp-only report changes were discarded.
+- Full suite with the declared requirements installed in an external temporary virtual environment: 183 passed, 18 subtests passed; 34 upstream deprecation warnings. An initial in-repository virtual environment caused a link test to traverse package templates; removing it and rerunning externally fixed that environment-only failure. No project files were modified for it.
+- Direct spot checks: [CSLB Ace #829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) lists active C-36 and B, (415) 824-6444, with data current 2026-11-09; [SF DBI plumbing guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit) discusses permit requirements and exemptions for the actual scope. The [live dashboard](https://karagemop466-tech.github.io/Korea7/) was reachable. These checks are not a fresh row-by-row verification or contractor confirmation.
+- User-provided quotes, actual combined scope, cost, specific experience, scheduling, and current review details remain unconfirmed. No business was contacted. The existing [flagged page](https://karagemop466-tech.github.io/Korea7/flagged.html) records limitations, including non-government sources on some rows (U21).
+- At audit time, the latest build for `81fd0ff` had failed; its predecessor was successfully deployed. Concurrent recovery PR #78 had merged as `f00f9d8`, whose build was still in progress. A live response is not itself proof the newest revision deployed.
+
+| Task | Status | Owner | Result |
+|---|---|---|---|
+| Independent delivery audit | done | `arena/e48fffbf-korea7` | Structural checks, full tests and explicitly limited source spot checks above. |
+| Integration delivery | needs review | `arena/e48fffbf-korea7` | Concurrent Pages recovery remains owned by `arena/c6a12019-korea7`; exact deployment must be checked after completion. |
