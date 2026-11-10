@@ -1,8 +1,8 @@
 {
   "generated_by": "scripts/audit_repository.py",
   "tracked_files": 340,
-  "total_bytes": 21843668,
-  "text_lines": 85543,
+  "total_bytes": 21848152,
+  "text_lines": 85611,
   "extension_counts": {
     "(none)": 3,
     ".css": 9,
@@ -266,10 +266,10 @@
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 198844,
-      "sha256": "f34fa1fb9aef82cf1f7ee41bbcc99c098d272991ea1679a8af9f528251ed0f98",
+      "bytes": 202111,
+      "sha256": "a91bcd55fed0cb53fadb1b0eaf308361e8aa05cb89e61ae384bae88d2a164eb7",
       "text": true,
-      "lines": 1331,
+      "lines": 1359,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -523,20 +523,20 @@
     },
     {
       "path": "data/canonical/repo_audit.json",
-      "bytes": 91876,
+      "bytes": 92869,
       "sha256": null,
       "text": true,
-      "lines": 3219,
+      "lines": 3255,
       "parse": "pass",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
     },
     {
       "path": "data/canonical/repo_audit.md",
-      "bytes": 25972,
+      "bytes": 26196,
       "sha256": null,
       "text": true,
-      "lines": 394,
+      "lines": 398,
       "parse": "not-applicable",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
@@ -616,7 +616,7 @@
     {
       "path": "data/canonical/verification_report.json",
       "bytes": 43385,
-      "sha256": "30cd7375248ae2ad6fb941c9e997f0330610e12ab9526bf9261055284eddf81b",
+      "sha256": "1b72ecbdeadab431975a5e9dac3d36c1ff2af50e3570137aeacce2b1ec43fb78",
       "text": true,
       "lines": 503,
       "parse": "pass",
@@ -625,7 +625,7 @@
     {
       "path": "data/canonical/verification_report.md",
       "bytes": 1974,
-      "sha256": "75c71eedac8357e99b1059aa4b87a177c55a2945e50a576582ac7c7e5c2c2f0a",
+      "sha256": "4b6435132107f9a48fc7a1e06b5ea40b0fafc5a464fbe8a30060f451c5a11cf2",
       "text": true,
       "lines": 40,
       "parse": "not-applicable",

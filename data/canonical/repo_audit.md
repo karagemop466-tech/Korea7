@@ -1,8 +1,8 @@
 # Repository line-by-line audit
 
 - Tracked files: 340
-- Total bytes: 21843668
-- Text lines scanned: 85543
+- Total bytes: 21848152
+- Text lines scanned: 85611
 - JSON files: 81; Python files: 101
 - Parse failures: 0
 - Broken internal links: 0
@@ -56,7 +56,7 @@
 |---|---:|---:|---|---:|
 | .gitignore | 366 | 24 | not-applicable | 0 |
 | .nojekyll | 0 | 0 | not-applicable | 0 |
-| COORDINATION.md | 198844 | 1331 | not-applicable | 0 |
+| COORDINATION.md | 202111 | 1359 | not-applicable | 0 |
 | EXECUTIVE-SUMMARY.md | 35933 | 188 | not-applicable | 0 |
 | README.md | 30883 | 306 | not-applicable | 0 |
 | assets/dashboard.css | 9663 | 206 | not-applicable | 0 |
@@ -85,8 +85,8 @@
 | data/canonical/evidence-2026-11-08.json | 16132 | 272 | pass | 0 |
 | data/canonical/providers-2026-11-08.json | 8068 | 191 | pass | 0 |
 | data/canonical/recheck-2026-11-10.json | 24048 | 655 | pass | 0 |
-| data/canonical/repo_audit.json | 91876 | 3219 | pass | 0 |
-| data/canonical/repo_audit.md | 25972 | 394 | not-applicable | 0 |
+| data/canonical/repo_audit.json | 92869 | 3255 | pass | 0 |
+| data/canonical/repo_audit.md | 26196 | 398 | not-applicable | 0 |
 | data/canonical/repo_inventory.csv | 67615 | 315 | not-applicable | 0 |
 | data/canonical/repo_inventory.json | 95844 | 2200 | pass | 0 |
 | data/canonical/research-history-2026-11-07.json | 160431 | 3362 | pass | 0 |
