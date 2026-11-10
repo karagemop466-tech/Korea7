@@ -23,7 +23,7 @@
   {
     "path": "README.md",
     "bytes": 30670,
-    "sha256": "6a4ca650d034e3c534bb670b950da31c059229e740dba02eefc5ca11aa1169e8",
+    "sha256": "0828416d842870e5b9fbd3fe83fcda53087138d32da4da5931c79985b356766a",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1541,8 +1541,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 162980,
-    "sha256": "b6297925d2254f6b7430be56a63f7837baca2e769672837ddbd6342b11efdd46",
+    "bytes": 175066,
+    "sha256": "79b6f316fc05c51ed8dc8df6df6d34ae36c02127a246c9451324b9417ceb0cd5",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1809,6 +1809,13 @@
     "path": "tests/test_evaluate_holdout.py",
     "bytes": 5978,
     "sha256": "2e354c977536dcf85dd6230420c1ca2ffec525f7068941e1206736b73061cf68",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_final_gate_1110.py",
+    "bytes": 4257,
+    "sha256": "7982a7c7e840be6463ea9d530dd8e0d9f1f95d3d764b58e204960779fe6d2c6e",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

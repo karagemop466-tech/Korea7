@@ -1479,3 +1479,182 @@ for _b in PAGES["index.html"]["sections"]:
                 _card["v"] = str(len(TABLES["flagged"]["rows"]))
 META["updated"] = "2026-11-10"
 META["session"] = "arena/86db387f-korea7"
+
+# --- Final integration corrections — session arena/bfea234e-korea7 (2026-11-10) ---
+# Independent gate after PR #69-#72 merged. Every value below was re-read directly on the
+# official page named in the row's source column during this session; the two other sessions
+# that re-read the same records today (PR #69, PR #73) are acknowledged, not duplicated.
+import json as _j2
+from pathlib import Path as _P2
+
+_ROOT2 = _P2(__file__).resolve().parent.parent
+_RECHECK2 = _j2.loads((_ROOT2 / "data/canonical/reverification-2026-11-10.json").read_text(encoding="utf-8"))
+
+
+def _dash(text, stamp):
+    """Official CSLB field -> display, with the database stamp kept in the tooltip."""
+    return R.esc(text) + ' <span class="src" title="' + R.esc(stamp) + '">' + R.esc(stamp.split(" as of ")[1].split(" ")[0]) + '</span>'
+
+
+_re_rows = []
+for _rec in sorted(_RECHECK2["licenses"], key=lambda r: r["license"]):
+    _wc = {"insured": "insured", "exempt": "exempt — “no employees at this time”",
+           "employee_service_group": "employee service group holds the policy"}.get(_rec["workers_comp_kind"], _rec["workers_comp_kind"])
+    _notes = []
+    if _rec.get("additional_status_present"):
+        _notes.append("additional status warning on the record")
+    if _rec.get("complaint_disclosure_present"):
+        _notes.append("complaint disclosure on the record")
+    _re_rows.append({"cells": [
+        "<code>#" + R.esc(_rec["license"]) + "</code>",
+        R.esc(_rec["name_on_record"]),
+        R.esc(_rec["phone_on_record"]),
+        _dash(_rec["status"], _rec["record_stamp"]),
+        R.esc(" · ".join(_rec["classifications"])),
+        R.esc(_rec["expire_date"]),
+        R.esc(_wc),
+        R.esc("; ".join(_notes)) if _notes else "none listed on the record",
+        pill("re-read 2026-11-10", "ok"),
+    ], "src": [R.LICENSE_SRC[_rec["license"]], "S120"]})
+
+TABLES["reread_1110"] = {
+    "title": "All sixteen CSLB records — fields re-read 2026-11-10 (current session)",
+    "caption": ("Each row was read on its own official CSLB License Detail page on 2026-11-10. The small grey date after "
+                "a status is the database stamp the page itself printed; the full stamp is in the cell tooltip and in "
+                "S120. A licence record proves licensing status only — not repair skill, drywall scope, price or "
+                "availability, and no provider has been contacted."),
+    "columns": ["License", "Business on record", "Phone on record", "Status", "Classifications", "Expires",
+                "Workers' compensation", "Notices on record", "Verification", "Source"],
+    "rows": _re_rows,
+}
+
+TABLES["rules_reread_1110"] = {
+    "title": "Official rule pages re-read 2026-11-10",
+    "caption": ("Official and statutory pages only, read directly in this session. They describe permits and licence "
+                "scope in general terms. Whether a permit is required for this particular repair is a question for "
+                "San Francisco DBI and the selected contractor, not a conclusion of this dashboard."),
+    "columns": ["Official page", "What it says (as read)", "Why it matters here", "Verification", "Source"],
+    "rows": [
+        {"cells": ["sf.gov — Apply for a plumbing and mechanical permit",
+                   "“You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground”; contractors need C-4, C-16, C-20, C-36, C-54, B or A to apply; work must be inspected before pipes are covered",
+                   "The scope described (replacing concealed waste-and-overflow piping behind a wall) is exactly what this rule covers",
+                   pill("official — read 2026-11-10", "ok")], "src": ["S01"]},
+        {"cells": ["sf.gov — Check if your construction project needs a permit",
+                   "“Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection” are listed as work that does not need a building permit",
+                   "Only the ceiling patch/finish piece; it says nothing about the plumbing permit",
+                   pill("official — read 2026-11-10", "ok")], "src": ["S02"]},
+        {"cells": ["CSLB — C-36 Plumbing classification",
+                   "A plumbing contractor provides safe water supply and “the proper disposal of fluid waste”, including “the maintenance and replacement of all items described above”",
+                   "Supports, but does not by itself prove, that a C-36 licensee can replace this waste-and-overflow assembly",
+                   pill("official — read 2026-11-10", "ok")], "src": ["S05"]},
+        {"cells": ["California B&amp;P §7048",
+                   "Licensing exemption only when the aggregate contract price is under $1,000, the work is casual/minor/inconsequential, no building permit is required, and the person neither advertises as a contractor nor employs anyone",
+                   "Sets the current statutory small-job threshold; older $500 figures are out of date",
+                   pill("official — read 2026-11-10", "ok")], "src": ["S13"]},
+        {"cells": ["California B&amp;P §7059(a)",
+                   "“Nothing … shall prohibit a specialty contractor from taking and executing a contract involving the use of two or more crafts or trades, if the performance of the work in the crafts or trades, other than in which they are licensed, is incidental and supplemental to the performance of the work in the craft for which the specialty contractor is licensed.”",
+                   "This is the sentence that would let a C-36-only plumber patch a small ceiling opening; it does not cover a large separate drywall job, so the split of scope must be written down",
+                   pill("official — read 2026-11-10", "ok")], "src": ["S83"]},
+    ],
+}
+
+# --- corrections to rows other sessions left stale or duplicated ---
+for _r in TABLES["findings"]["rows"]:
+    if _r["cells"][0] == "F04":
+        _r["cells"][1] = "All sixteen canonical candidates hold active CSLB licenses checked 2026-11-08 and re-read 2026-11-10"
+        _r["cells"][2] = ("Each of the sixteen official License Detail pages printed “current and active”; the stored "
+                          "retrievals keep their own database stamps")
+        _r["src"] = ["S85", "S120"]
+
+for _r in TABLES["findings"]["rows"]:
+    if _r["cells"][0] == "F10" and "unrelated legacy project" not in _r["cells"][1]:
+        _r["cells"][0] = "F17"
+
+TABLES["findings"]["rows"].append({"cells": [
+    "F18",
+    "Manny's quotes the workers'-compensation exemption as a selling point",
+    "its own site advertises “Insured &amp; Bonded” while CSLB " + slink("S57", "#841229")
+    + " shows the licence is exempt from workers' compensation because the licensee certified no employees (exemption effective 2026-06-28). "
+    "An exemption is a licensing-status fact; a company insurance claim is not the same thing as workers' compensation cover for a crew.",
+    pill("flagged — U48", "warn"),
+], "src": ["S57", "S75", "S120"]})
+
+TABLES["flagged"]["rows"].append({"cells": [
+    "U48",
+    "Manny's “Insured &amp; Bonded” wording against an exempt CSLB record",
+    "The company site states “Insured &amp; Bonded”. The official CSLB record for " + slink("S57", "#841229")
+    + " shows a workers'-compensation exemption (“no employees at this time”, effective 2026-06-28) and a $25,000 contractor's bond. "
+    "General liability cover is not published on the CSLB record, so “insured” cannot be confirmed from an official source.",
+    "Ask for the certificate of general liability insurance, who will physically attend, and what cover applies to them. Leave the value blank until an official document is produced.",
+    pill("UNVERIFIED", "warn"),
+], "src": ["S57", "S75", "S85"]})
+
+TABLES["flagged"]["rows"].append({"cells": [
+    "U49",
+    "Two finding rows carried the same ID (F10) after the 2026-11-10 merges",
+    "Two rows were published under the same ID: the legacy row “The repository's root content belongs to an unrelated "
+    "legacy project” and the 2026-11-10 row on the workers'-compensation exemptions. A duplicated row ID makes any "
+    "cross-reference ambiguous. The legacy row keeps F10; the exemption row is re-labelled F17. No live page cited the "
+    "exemption row by ID, so no link is broken — recorded here rather than silently renumbered.",
+    "Both rows kept; only the second row's ID changed from F10 to F17. The exemption itself is documented under U06.",
+    pill("irregularity — documented", "warn"),
+], "src": ["S120"]})
+
+# README consistency: count pages from the generator instead of a stale literal.
+_readme = _ROOT2 / "README.md"
+if _readme.exists():
+    _txt = _readme.read_text(encoding="utf-8")
+    _new = _txt.replace("with 14 category subpages including a computed",
+                        "with %d category subpages including a computed" % len(PAGES))
+    if _new != _txt:
+        _readme.write_text(_new, encoding="utf-8")
+
+PAGES["verification.html"]["sections"].insert(0, {
+    "type": "prose",
+    "title": "Independent re-read and corrections — session arena/bfea234e-korea7 (2026-11-10)",
+    "html": (
+        "<p>After PR #69–#72 merged, this session re-read <strong>all sixteen</strong> CSLB License Detail records and the "
+        "cited rule pages directly and compared them with what the site publishes. <strong>No licence field had drifted</strong>: "
+        "every record still prints “current and active” with the same classes, expiry, address, phone, workers'-compensation "
+        "status, and the same notices. Two corrections were needed in the site's own text, not in the licence data: the "
+        "workers'-compensation exemption count (five of sixteen records, " + slink("S68", "#632743") + " included) and one "
+        "duplicated finding ID (see U49). One new flag was added for Manny's “Insured &amp; Bonded” wording (U48). "
+        "Two other sessions re-read the same records on the same day; this page states only what this session saw itself.</p>"
+        "<p class=\"src\">A licence record is not evidence of repair skill, drywall scope, price or availability, and no "
+        "provider was contacted in this session.</p>"
+    ),
+})
+PAGES["verification.html"]["sections"].insert(1, {
+    "type": "table", "title": "Fields re-read on 2026-11-10 — all sixteen records", "ref": "reread_1110",
+})
+PAGES["verification.html"]["sections"].insert(2, {
+    "type": "table", "title": "Rule pages re-read on 2026-11-10", "ref": "rules_reread_1110",
+})
+
+SOURCES["S112"] = {
+    "label": "Re-verification log 2026-11-10 (JSON, PR #69)",
+    "publisher": "This repository — direct CSLB reads",
+    "url": "data/canonical/reverification-2026-11-10.json",
+    "tier": "primary", "status": "verified", "checked": "2026-11-10",
+    "supports": "Field-by-field transcription of the sixteen CSLB License Detail records read on 2026-11-10, each with its database stamp and source URL",
+    "note": "Read by this session at build time to render the re-read table. A licence record is not evidence of job-specific capability.",
+}
+
+META["updated"] = "2026-11-10"
+META["session"] = "arena/bfea234e-korea7"
+PAGES["index.html"]["eyebrow"] = "Research dashboard · San Francisco · updated 2026-11-10"
+
+
+# Cross-reference fix: the older U46 row cited the exemption finding as F10; that row is now F17.
+for _r in TABLES["flagged"]["rows"]:
+    if _r["cells"][0] == "U46":
+        _r["cells"][2] = _r["cells"][2].replace("see F10", "see F17")
+
+# Final label normalisation after every module has run (flag range + counts on the pages).
+_flag_ids = [r["cells"][0] for r in TABLES["flagged"]["rows"] if _re.fullmatch(r"U\d+", str(r["cells"][0]))]
+_max_flag = max(int(f[1:]) for f in _flag_ids)
+for _page in PAGES.values():
+    for _b in _page["sections"]:
+        for _k, _v in list(_b.items()):
+            if isinstance(_v, str):
+                _b[_k] = _re.sub(r"U01–U\d+", "U01–U%d" % _max_flag, _v)
