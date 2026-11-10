@@ -1,8 +1,8 @@
 {
   "generated_by": "scripts/audit_repository.py",
   "tracked_files": 334,
-  "total_bytes": 21627533,
-  "text_lines": 82462,
+  "total_bytes": 21622605,
+  "text_lines": 82286,
   "extension_counts": {
     "(none)": 3,
     ".css": 9,
@@ -20,19 +20,11 @@
   },
   "json_files": 79,
   "python_files": 98,
-  "parse_failures": [
-    {
-      "path": "data/canonical/repo_audit.json",
-      "line": null,
-      "kind": "json-parse",
-      "detail": "Expecting property name enclosed in double quotes: line 3 column 1 (char 51)"
-    }
-  ],
+  "parse_failures": [],
   "broken_internal_links": [],
   "broken_internal_anchors": [],
   "flag_counts": {
     "benign-placeholder-reference": 35,
-    "json-parse": 1,
     "benign-privacy-pattern-definition": 1
   },
   "flags": [
@@ -41,12 +33,6 @@
       "line": 19,
       "kind": "benign-placeholder-reference",
       "detail": "[redacted placeholder match; see path/line for review]"
-    },
-    {
-      "path": "data/canonical/repo_audit.json",
-      "line": null,
-      "kind": "json-parse",
-      "detail": "Expecting property name enclosed in double quotes: line 3 column 1 (char 51)"
     },
     {
       "path": "docs/overflow-verification-contractors.html",
@@ -519,20 +505,20 @@
     },
     {
       "path": "data/canonical/repo_audit.json",
-      "bytes": 95176,
+      "bytes": 91806,
       "sha256": null,
       "text": true,
-      "lines": 3340,
-      "parse": "fail",
+      "lines": 3215,
+      "parse": "pass",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
     },
     {
       "path": "data/canonical/repo_audit.md",
-      "bytes": 27560,
+      "bytes": 26002,
       "sha256": null,
       "text": true,
-      "lines": 444,
+      "lines": 393,
       "parse": "not-applicable",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
@@ -612,7 +598,7 @@
     {
       "path": "data/canonical/verification_report.json",
       "bytes": 42884,
-      "sha256": "57590e175a643d5a89cfa1ac852df536e35957c61c075003c7d5ac09f73156bb",
+      "sha256": "7451f538b153ef1ead968b583f5174abf6b8b4fb78dcf4360e90bbae36b987d0",
       "text": true,
       "lines": 497,
       "parse": "pass",
@@ -621,7 +607,7 @@
     {
       "path": "data/canonical/verification_report.md",
       "bytes": 1972,
-      "sha256": "ec95c87b19661dd298c2db0289c646c7593ef0996a76e770809c7e9052232eec",
+      "sha256": "7ef8d98c5264d7798a9e00554b84b328d74a49eb9cbf2da9b73305289ddca9e3",
       "text": true,
       "lines": 40,
       "parse": "not-applicable",

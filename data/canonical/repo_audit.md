@@ -1,20 +1,19 @@
 # Repository line-by-line audit
 
 - Tracked files: 334
-- Total bytes: 21627533
-- Text lines scanned: 82462
+- Total bytes: 21622605
+- Text lines scanned: 82286
 - JSON files: 79; Python files: 98
-- Parse failures: 1
+- Parse failures: 0
 - Broken internal links: 0
 - Broken internal anchors: 0
-- Line flags: {'benign-placeholder-reference': 35, 'json-parse': 1, 'benign-privacy-pattern-definition': 1}
+- Line flags: {'benign-placeholder-reference': 35, 'benign-privacy-pattern-definition': 1}
 
 ## Flags
 
 | Path | Line | Kind | Detail |
 |---|---:|---|---|
 | assets/dashboard.js | 19 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
-| data/canonical/repo_audit.json |  | json-parse | Expecting property name enclosed in double quotes: line 3 column 1 (char 51) |
 | docs/overflow-verification-contractors.html | 20 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
 | scripts/audit_repository.py | 106 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
 | scripts/audit_repository.py | 110 | benign-placeholder-reference | [redacted placeholder match; see path/line for review] |
@@ -84,8 +83,8 @@
 | data/canonical/delivery-2026-11-10.json | 2709 | 72 | pass | 0 |
 | data/canonical/evidence-2026-11-08.json | 16132 | 272 | pass | 0 |
 | data/canonical/providers-2026-11-08.json | 8068 | 191 | pass | 0 |
-| data/canonical/repo_audit.json | 95176 | 3340 | fail | 0 |
-| data/canonical/repo_audit.md | 27560 | 444 | not-applicable | 0 |
+| data/canonical/repo_audit.json | 91806 | 3215 | pass | 0 |
+| data/canonical/repo_audit.md | 26002 | 393 | not-applicable | 0 |
 | data/canonical/repo_inventory.csv | 66779 | 311 | not-applicable | 0 |
 | data/canonical/repo_inventory.json | 94648 | 2172 | pass | 0 |
 | data/canonical/research-history-2026-11-07.json | 160431 | 3362 | pass | 0 |
