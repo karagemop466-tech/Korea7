@@ -1,33 +1,34 @@
 # Dashboard verification report
 
-Generated: 2026-11-10T05:49:24+00:00
+Generated: 2026-11-10T05:53:35+00:00
 
 | Check | Result | Detail |
 |---|---|---|
-| Build output complete | PASS | 18 pages generated |
-| Every table row has a source link | PASS | 1588 tbody rows checked, 0 missing links |
+| Build output complete | PASS | 19 pages generated |
+| Every table row has a source link | PASS | 1661 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
-| Internal links resolve | PASS | 1642 internal links checked, 0 broken |
+| Internal links resolve | PASS | 1731 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
-| External links are in the source ledger | PASS | 402 unique external links, 0 unknown/dead |
+| External links are in the source ledger | PASS | 406 unique external links, 0 unknown/dead |
 | Navigation consistent | PASS | 0 nav issues |
-| Privacy sweep (internal-only wording) | PASS | 144 files scanned, 0 matches |
+| Privacy sweep (internal-only wording) | PASS | 146 files scanned, 0 matches |
+| Archived microsites privacy sweep (scheduling context) | PASS | 40 archived files in bathtub-overflow, sf-overflow-audit, docs/bath scanned, 0 matches |
 | No unfilled template markers | PASS | 0 template-marker matches |
 | Dead sources not linked | PASS | 0 dead-source links |
-| Source ledger records prior direct reads | PASS | 57 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 118 sources marked verified overall (metadata only; no network check) |
+| Source ledger records prior direct reads | PASS | 65 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 126 sources marked verified overall (metadata only; no network check) |
 
 ## Counts
 
-- pages: 18
-- tables: 34
-- rows: 769
-- source_ledger_entries: 136
-- verified_sources: 118
-- official_or_manufacturer_verified: 57
-- generated_tbody_rows: 1588
-- internal_links_checked: 1642
-- unique_external_links: 402
-- published_text_files_scanned: 144
+- pages: 19
+- tables: 36
+- rows: 805
+- source_ledger_entries: 144
+- verified_sources: 126
+- official_or_manufacturer_verified: 65
+- generated_tbody_rows: 1661
+- internal_links_checked: 1731
+- unique_external_links: 406
+- published_text_files_scanned: 146
 
 ## Notes
 

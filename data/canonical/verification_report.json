@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T05:49:24+00:00",
+  "generated_at": "2026-11-10T05:53:35+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -18,30 +18,31 @@
     "contacts.html",
     "delivery.html",
     "recheck.html",
-    "exempt-work.html"
+    "exempt-work.html",
+    "reverify.html"
   ],
   "counts": {
-    "pages": 18,
-    "tables": 34,
-    "rows": 769,
-    "source_ledger_entries": 136,
-    "verified_sources": 118,
-    "official_or_manufacturer_verified": 57,
-    "generated_tbody_rows": 1588,
-    "internal_links_checked": 1642,
-    "unique_external_links": 402,
-    "published_text_files_scanned": 144
+    "pages": 19,
+    "tables": 36,
+    "rows": 805,
+    "source_ledger_entries": 144,
+    "verified_sources": 126,
+    "official_or_manufacturer_verified": 65,
+    "generated_tbody_rows": 1661,
+    "internal_links_checked": 1731,
+    "unique_external_links": 406,
+    "published_text_files_scanned": 146
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "18 pages generated"
+      "detail": "19 pages generated"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1588 tbody rows checked, 0 missing links"
+      "detail": "1661 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -51,7 +52,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1642 internal links checked, 0 broken"
+      "detail": "1731 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -61,7 +62,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "402 unique external links, 0 unknown/dead"
+      "detail": "406 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -71,7 +72,12 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "144 files scanned, 0 matches"
+      "detail": "146 files scanned, 0 matches"
+    },
+    {
+      "name": "Archived microsites privacy sweep (scheduling context)",
+      "status": "PASS",
+      "detail": "40 archived files in bathtub-overflow, sf-overflow-audit, docs/bath scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -86,7 +92,7 @@
     {
       "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "57 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 118 sources marked verified overall (metadata only; no network check)"
+      "detail": "65 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 126 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -135,6 +141,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/providers-2026-11-08.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/research-history-2026-11-07.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/reverification-2026-11-10.json",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/reverify-2026-11-10b.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/review_snapshots.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/source_checks.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/vendor_sites.json",
@@ -341,6 +348,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/recheck_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/reread_1110.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/restore_data.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/reverify_b.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/run_experiments.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/uniqueness.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/validate_raster.py",
@@ -380,6 +388,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_ranking.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_recheck.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_reread_1110.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_reverify_b.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_sf_overflow_audit.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_shipped_artifacts.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_validate_raster.py",
@@ -431,6 +440,7 @@
     "https://labormarketinfo.edd.ca.gov/aspdotnet/databrowsing/empDetails.aspx?menuChoice=emp&empid=432614093&geogArea=0604000075",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+    "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7048.&lawCode=BPC",
     "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
     "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
     "https://www.aceplumbingandrooter.com/",

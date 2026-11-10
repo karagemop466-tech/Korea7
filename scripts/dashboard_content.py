@@ -1491,3 +1491,9 @@ META["session"] = "arena/86db387f-korea7"
 # module appends its own rows/flags and does not rewrite existing content.
 import reread_1110 as _reread
 _reread.integrate(__import__(__name__))
+
+# --- 2026-11-10 independent second re-read — arena/860ca261-korea7 ------------
+# Second, separate pass over the sixteen CSLB records and the rule pages.
+# Additive only: appends its own page, tables and flag; rewrites nothing.
+import reverify_b as _reverify_b
+_reverify_b.integrate(__import__(__name__))

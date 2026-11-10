@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "owner": "arena/860ca261-korea7",
+    "read_date": "2026-11-10",
+    "method": "Each CSLB License Detail page was opened individually at www2.cslb.ca.gov and its printed fields were transcribed, then compared field by field with data/canonical/cslb_records.json. Rule pages were read at the issuing agency.",
+    "database_timestamp_printed": "Data current as of 11/9/2026 (all sixteen pages)",
+    "licenses_re_read": 16,
+    "field_differences_found": 0,
+    "rule_pages_re_read": 8,
+    "what_this_proves": "Source fidelity: the published values still match the issuing agency's record.",
+    "what_this_does_not_prove": "Firm competence on a seized trip-lever assembly, one-contract ceiling restoration, prior experience of this exact repair, availability, or price. No contractor was contacted."
+  },
+  "licenses": [
+    {
+      "license": "977638",
+      "name_as_printed": "EXPERT PLUMBING SOLUTIONS",
+      "entity": "Corporation",
+      "issue_date": "2012-10-09",
+      "expire_date": "2028-10-31",
+      "status": "current and active",
+      "classifications": "C36",
+      "phone": "(415) 531-5340",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "matches_published_data": true
+    },
+    {
+      "license": "757796",
+      "name_as_printed": "BAY AREA PLUMBING",
+      "entity": "Sole Ownership",
+      "issue_date": "1999-01-07",
+      "expire_date": "2027-01-31",
+      "status": "current and active",
+      "classifications": "C36",
+      "phone": "(415) 668-8000",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "matches_published_data": true
+    },
+    {
+      "license": "1024971",
+      "name_as_printed": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "entity": "Sole Ownership",
+      "issue_date": "2017-03-20",
+      "expire_date": "2027-03-31",
+      "status": "current and active",
+      "classifications": "C36",
+      "phone": "(415) 596-6115",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "matches_published_data": true
+    },
+    {
+      "license": "959843",
+      "name_as_printed": "GENERALSF",
+      "entity": "Sole Ownership",
+      "issue_date": "2011-04-12",
+      "expire_date": "2027-04-30",
+      "status": "current and active",
+      "classifications": "B · C10 · C36",
+      "phone": "(650) 303-1515",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "matches_published_data": true
+    },
+    {
+      "license": "1003394",
+      "name_as_printed": "HANDYMAN HEROES INC",
+      "entity": "Corporation",
+      "issue_date": "2015-05-05",
+      "expire_date": "2027-05-31",
+      "status": "current and active",
+      "classifications": "B · C36",
+      "phone": "(844) 382-4376",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "matches_published_data": true
+    },
+    {
+      "license": "829071",
+      "name_as_printed": "ACE PLUMBING & ROOTER",
+      "entity": "Corporation",
+      "issue_date": "2003-12-18",
+      "expire_date": "2027-06-30",
+      "status": "current and active",
+      "classifications": "C36 · A · C-4 · C16 · B · C10",
+      "phone": "(415) 824-6444",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "matches_published_data": true
+    },
+    {
+      "license": "1115649",
+      "name_as_printed": "RAPID FLOW PLUMBING & ROOTER INC",
+      "entity": "Corporation",
+      "issue_date": "2024-01-29",
+      "expire_date": "2028-01-31",
+      "status": "current and active",
+      "classifications": "B · C36",
+      "phone": "(415) 866-8401",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "matches_published_data": true
+    },
+    {
+      "license": "841229",
+      "name_as_printed": "MANNY'S PLUMBING & ROOTER",
+      "entity": "Sole Ownership",
+      "issue_date": "2004-06-21",
+      "expire_date": "2028-06-30",
+      "status": "current and active",
+      "classifications": "C36 · B",
+      "phone": "(650) 207-5733",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "matches_published_data": true
+    },
+    {
+      "license": "1025814",
+      "name_as_printed": "THE GENTEEL PLUMBERS INC",
+      "entity": "Corporation",
+      "issue_date": "2017-04-14",
+      "expire_date": "2027-04-30",
+      "status": "current and active",
+      "classifications": "C36 · B",
+      "phone": "(833) 436-8335",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "matches_published_data": true
+    },
+    {
+      "license": "1009195",
+      "name_as_printed": "ADVANCED PLUMBING AND DRAIN INC",
+      "entity": "Corporation",
+      "issue_date": "2015-11-24",
+      "expire_date": "2027-11-30",
+      "status": "current and active",
+      "classifications": "C36",
+      "phone": "(415) 744-4944",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "matches_published_data": true
+    },
+    {
+      "license": "995163",
+      "name_as_printed": "BERNAL HILL DRYWALL INC",
+      "entity": "Corporation",
+      "issue_date": "2014-07-28",
+      "expire_date": "2028-07-31",
+      "status": "current and active",
+      "classifications": "C-9 · B",
+      "phone": "(415) 533-8274",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "matches_published_data": true
+    },
+    {
+      "license": "1089561",
+      "name_as_printed": "TARO GROUP INC dba HEISES PLUMBING",
+      "entity": "Corporation",
+      "issue_date": "2022-04-06",
+      "expire_date": "2028-04-30",
+      "status": "current and active",
+      "classifications": "C36 · C10 · A · C20",
+      "phone": "(415) 333-0704",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "matches_published_data": true
+    },
+    {
+      "license": "632743",
+      "name_as_printed": "CALPLUMBING CO",
+      "entity": "Sole Ownership",
+      "issue_date": "1991-12-06",
+      "expire_date": "2027-12-31",
+      "status": "current and active",
+      "classifications": "C36",
+      "phone": "(415) 221-4633",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743",
+      "matches_published_data": true
+    },
+    {
+      "license": "868994",
+      "name_as_printed": "ATLAS PLUMBING & ROOTER",
+      "entity": "Corporation",
+      "issue_date": "2005-12-08",
+      "expire_date": "2028-03-31",
+      "status": "current and active",
+      "classifications": "C36 · A",
+      "phone": "(650) 871-9863",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "matches_published_data": true
+    },
+    {
+      "license": "1140843",
+      "name_as_printed": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "entity": "Ltd Liability",
+      "issue_date": "2025-07-22",
+      "expire_date": "2027-07-31",
+      "status": "current and active",
+      "classifications": "C36 · A",
+      "phone": "(650) 991-2100",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "matches_published_data": true
+    },
+    {
+      "license": "1075566",
+      "name_as_printed": "BAY AREA PIPE & EQUIPMENT INC dba BAY AREA MECHANICAL",
+      "entity": "Corporation",
+      "issue_date": "2021-05-07",
+      "expire_date": "2027-05-31",
+      "status": "current and active",
+      "classifications": "C36 · C20",
+      "phone": "(925) 642-9768",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566",
+      "cslb_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566",
+      "matches_published_data": true
+    }
+  ],
+  "rules": [
+    {
+      "source": "S164",
+      "page": "SF.gov plumbing/mechanical permit",
+      "what_it_says": "“You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.” C-4, C-16, C-20, C-36, C-54, B and A license holders may apply; scope may be limited by licence type; inspection is required before pipes are covered.",
+      "bearing_on_this_job": "The trip-lever assembly sits behind a wall, so any work that cuts or replaces its piping falls inside this sentence.",
+      "read_note": "Quoted text matches the page as read 2026-11-10.",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit"
+    },
+    {
+      "source": "S165",
+      "page": "SF.gov — which projects need a permit",
+      "what_it_says": "Exempt list includes “Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection.”",
+      "bearing_on_this_job": "Bears on patching the ceiling only; it says nothing about the concealed plumbing.",
+      "read_note": "Quoted text matches the page as read 2026-11-10.",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit"
+    },
+    {
+      "source": "S166",
+      "page": "SF Building Code §104.0 (Permits)",
+      "what_it_says": "The code-library page for §104.0 was reachable and is the section sf.gov cites for permit procedure.",
+      "bearing_on_this_job": "Procedural reference only.",
+      "read_note": "Page read; §104.2 wording itself was taken from the City PDF (S167), not from this page.",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830"
+    },
+    {
+      "source": "S167",
+      "page": "2025 SF Plumbing Code PDF — §104.2",
+      "what_it_says": "“104.2 Exempt Work. A permit shall not be required for the following:” followed by the nine listed items (leak repair, unstopping, faucets/angle stops/hose bibbs/roof drains, toilet replacement, furnace filters, piping removal after approved disconnection, display set-up, water conservation devices, State and Federal buildings).",
+      "bearing_on_this_job": "None of the nine items names a trip lever, overflow plate or waste-and-overflow assembly.",
+      "read_note": "The nine items on the Code exemptions page were compared word for word with pages 4–5 of this PDF: they match.",
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf"
+    },
+    {
+      "source": "S162",
+      "page": "Business & Professions Code §7048",
+      "what_it_says": "The licensing exemption applies only where the aggregate contract price is under $1,000, the work is casual/minor/inconsequential, AND the work does not require a building permit. It does not apply where the person advertises as a contractor or employs others.",
+      "bearing_on_this_job": "All three quoted prices ($135, $550, $614) are below $1,000, but the price test is only one of the conditions and this site does not determine the others.",
+      "read_note": "Full subdivision text read 2026-11-10.",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7048.&lawCode=BPC"
+    },
+    {
+      "source": "S163",
+      "page": "Business & Professions Code §7059",
+      "what_it_says": "A specialty contractor may take and execute a contract using two or more crafts or trades where the other work is “incidental and supplemental” to the craft for which the contractor is licensed.",
+      "bearing_on_this_job": "Relevant to a C-36 plumber patching drywall as an incidental part of the repair; whether a ceiling opening and its restoration is “incidental and supplemental” has not been determined here.",
+      "read_note": "Text read 2026-11-10; no determination made.",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC"
+    },
+    {
+      "source": "S168",
+      "page": "California Civil Code §1954",
+      "what_it_says": "A landlord may enter to make necessary or agreed repairs; except in an emergency, entry is during normal business hours with reasonable written notice stating date, approximate time and purpose; 24 hours is presumed reasonable.",
+      "bearing_on_this_job": "Bears on giving the tenant notice before a contractor visits an occupied unit.",
+      "read_note": "Full text read 2026-11-10.",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954"
+    },
+    {
+      "source": "S161",
+      "page": "CSLB C-36 classification",
+      "what_it_says": "A C-36 plumbing contractor provides a safe water supply and proper disposal of fluid waste, including maintenance and replacement of the items described.",
+      "bearing_on_this_job": "Confirms C-36 is the plumbing classification; it does not certify skill on a seized concealed assembly.",
+      "read_note": "Definition read 2026-11-10.",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36"
+    }
+  ]
+}

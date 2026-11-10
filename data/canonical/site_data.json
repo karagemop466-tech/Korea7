@@ -91,6 +91,10 @@
           "Live re-check 2026-11-10"
         ],
         [
+          "reverify.html",
+          "Independent re-check (B)"
+        ],
+        [
           "delivery.html",
           "Latest verification"
         ],
@@ -1473,6 +1477,86 @@
       "checked": "2026-11-10",
       "supports": "Joseph Tinsley dba Fast Response Plumbing and Rooter, C36 only, current and active, workers' compensation policy expiring 2026-12-18",
       "note": "Independent 2026-11-10 re-read for this session; the record printed the November 9 database timestamp."
+    },
+    "S161": {
+      "label": "CSLB — C-36 Plumbing classification (read 2026-11-10)",
+      "publisher": "California Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S162": {
+      "label": "California Business & Professions Code §7048 (read 2026-11-10)",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7048.&lawCode=BPC",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S163": {
+      "label": "California Business & Professions Code §7059 (read 2026-11-10)",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S164": {
+      "label": "SF.gov — Apply for a plumbing and mechanical permit (read 2026-11-10)",
+      "publisher": "San Francisco Department of Building Inspection",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S165": {
+      "label": "SF.gov — Check if your construction project needs a permit (read 2026-11-10)",
+      "publisher": "San Francisco Department of Building Inspection",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S166": {
+      "label": "SF Building Code §104.0 Permits (code library, read 2026-11-10)",
+      "publisher": "American Legal Publishing — City and County of San Francisco",
+      "url": "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S167": {
+      "label": "2025 San Francisco Plumbing Code — §104.2 Exempt Work, pages 4–5 (read 2026-11-10)",
+      "publisher": "City and County of San Francisco (official PDF)",
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S168": {
+      "label": "California Civil Code §1954 — landlord entry (read 2026-11-10)",
+      "publisher": "California Legislative Information",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Read directly at the issuing agency during this session's re-check.",
+      "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
     }
   },
   "tables": {
@@ -3931,6 +4015,20 @@
             "S96",
             "S01"
           ]
+        },
+        {
+          "cells": [
+            "U49",
+            "What the 2026-11-10 session-B re-check does and does not prove",
+            "Sixteen CSLB records and eight official rule pages were re-read directly and matched the published data with no field-level difference. That establishes source fidelity only. It does not establish that any firm can free a seized trip-lever assembly from above or below, will open and restore a ceiling under one contract, has done this exact repair before, is available, or will charge any particular amount. Review-platform ratings could not be re-read: Yelp returned HTTP 403 to this environment.",
+            "Ask each shortlisted firm for a written scope covering the access route, ceiling restoration and occupied-unit handling, then compare on identical scope.",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S164",
+            "S167",
+            "S85"
+          ]
         }
       ],
       "caption": "Flagged items do not block the site, the analysis, or the merge. They are published here, with their source links, so they can be reviewed after the site is live. Blank means unconfirmed — nothing was inferred to fill a gap."
@@ -4157,8 +4255,8 @@
         {
           "cells": [
             "Archived duplicate plumbing sites still in the tree",
-            "Four earlier plumbing microsites remain published alongside the primary dashboard: bathtub-overflow/, docs/bath/, docs/plumbing-index.html (+ docs/overflow-*.html) and sf-overflow-audit/. They are linked from the dashboard as archived material and were not edited.",
-            "Confirmed by path scan of the checkout and by the internal-link audit (0 broken). Consolidating or removing them is an owner decision, not something this session changes.",
+            "Four earlier plumbing microsites remain published alongside the primary dashboard: bathtub-overflow/, docs/bath/, docs/plumbing-index.html (+ docs/overflow-*.html) and sf-overflow-audit/. They are linked from the dashboard as archived material and were not edited. Privacy correction 2026-11-10 (session B): bathtub-overflow/problem-scope.html published a scheduling line (“owner wants the work done this week”). It was replaced with a neutral statement that no deadline is recorded. No other archive content was altered. The verifier now scans all published archives for scheduling context on every build.",
+            "Confirmed by path scan of the checkout and by the internal-link audit (0 broken). Consolidating or removing them is an owner decision, not something this session changes. The archived-sites privacy sweep added 2026-11-10 scans 40 archived files and fails the build on any scheduling-context match.",
             "<span class=\"pill warn\">flagged for owner decision</span>"
           ],
           "src": [
@@ -5814,6 +5912,102 @@
           "src": [
             "S154"
           ]
+        },
+        {
+          "cells": [
+            "<code>S161</code>",
+            "<strong>CSLB — C-36 Plumbing classification (read 2026-11-10)</strong><br><small><a href=\"https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36</a></small>",
+            "California Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S161"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S162</code>",
+            "<strong>California Business &amp; Professions Code §7048 (read 2026-11-10)</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7048.&amp;lawCode=BPC\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7048.&amp;lawCode=BPC</a></small>",
+            "California Legislative Information<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S162"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S163</code>",
+            "<strong>California Business &amp; Professions Code §7059 (read 2026-11-10)</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC</a></small>",
+            "California Legislative Information<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S163"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S164</code>",
+            "<strong>SF.gov — Apply for a plumbing and mechanical permit (read 2026-11-10)</strong><br><small><a href=\"https://www.sf.gov/apply-plumbing-and-mechanical-permit\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.sf.gov/apply-plumbing-and-mechanical-permit</a></small>",
+            "San Francisco Department of Building Inspection<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S164"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S165</code>",
+            "<strong>SF.gov — Check if your construction project needs a permit (read 2026-11-10)</strong><br><small><a href=\"https://www.sf.gov/information--check-if-your-construction-project-needs-permit\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.sf.gov/information--check-if-your-construction-project-needs-permit</a></small>",
+            "San Francisco Department of Building Inspection<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S165"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S166</code>",
+            "<strong>SF Building Code §104.0 Permits (code library, read 2026-11-10)</strong><br><small><a href=\"https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830</a></small>",
+            "American Legal Publishing — City and County of San Francisco<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S166"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S167</code>",
+            "<strong>2025 San Francisco Plumbing Code — §104.2 Exempt Work, pages 4–5 (read 2026-11-10)</strong><br><small><a href=\"https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf</a></small>",
+            "City and County of San Francisco (official PDF)<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S167"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S168</code>",
+            "<strong>California Civil Code §1954 — landlord entry (read 2026-11-10)</strong><br><small><a href=\"https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1954\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1954</a></small>",
+            "California Legislative Information<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Read directly at the issuing agency during this session&#x27;s re-check.<br><small>Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page.</small>"
+          ],
+          "src": [
+            "S168"
+          ]
         }
       ],
       "caption": "Every external URL used on this dashboard is listed here with its publisher, tier, retrieval date and verification status. 'dead' sources are never linked from a table row; their URL is shown as plain text for documentation only."
@@ -7244,7 +7438,7 @@
       "caption": "No access method, opening size or permit exemption is inferred. A licensed site assessment is required."
     },
     "repo_inventory": {
-      "title": "Line-by-line source/artifact inventory (317 files)",
+      "title": "Line-by-line source/artifact inventory (320 files)",
       "columns": [
         "Path",
         "Bytes",
@@ -7425,8 +7619,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/bathtub-overflow/problem-scope.html\" target=\"_blank\" rel=\"noopener noreferrer\"><code>bathtub-overflow/problem-scope.html</code></a>",
-            "6512",
-            "<code class=\"hash\">0cf36034ca539c1906bf90d181cab02f7e5310d475b46de3145cb7aa3905ca24</code>",
+            "6572",
+            "<code class=\"hash\">03d995d9ff9d2f4bb869590485e2779fc95bd4732efc86d348a23f2e89147c7d</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -7583,6 +7777,18 @@
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/reverification-2026-11-10.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>data/canonical/reverification-2026-11-10.json</code></a>",
             "11732",
             "<code class=\"hash\">728242a845ac9d1b5d8204805a4838f7f74d72a58ded75be3055eb23f6ff91b6</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/data/canonical/reverify-2026-11-10b.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>data/canonical/reverify-2026-11-10b.json</code></a>",
+            "14926",
+            "<code class=\"hash\">dae15f57ac5795ce77adad3546365472b59ebe24282470b4ad5ea7a20e13d1c2</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -9909,8 +10115,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/dashboard_content.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dashboard_content.py</code></a>",
-            "163702",
-            "<code class=\"hash\">7e23111584df14a3a0409f87a7aa738639ac2da3d4bc67cd96ab81941539cd0a</code>",
+            "164011",
+            "<code class=\"hash\">13bbcd00ee09033b1b9ce3b63cd2524fb1c7a16c424211c85f99e89a0f300cb1</code>",
             "current-plumbing-source",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -10064,6 +10270,18 @@
         },
         {
           "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/reverify_b.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/reverify_b.py</code></a>",
+            "19174",
+            "<code class=\"hash\">e19c6a6e2d03f5c1cbbcd8ecfcb019008a62c5749d568bdaf1e76919aa2969ac</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/run_experiments.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/run_experiments.py</code></a>",
             "15510",
             "<code class=\"hash\">2d9e916bbd129603e2b2d6a69f870e9ee6bd0f52ab3eaa6c7c7be519906d63f9</code>",
@@ -10113,8 +10331,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/verify_dashboard.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/verify_dashboard.py</code></a>",
-            "13654",
-            "<code class=\"hash\">abdaf83712a2151cc1862dc357499a357a4ef3771fc038788a9244c61e90d410</code>",
+            "15558",
+            "<code class=\"hash\">bb066982e4816ad2855b315d9aa21facf4c723af4bd736282b669fb1bb2265ff</code>",
             "current-plumbing-source",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -10523,6 +10741,18 @@
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_reread_1110.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>tests/test_reread_1110.py</code></a>",
             "5054",
             "<code class=\"hash\">2a134cd41feaee2c0ff6cc907eba0ed1c981b0fcb10691415e2650b3017b4300</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/tests/test_reverify_b.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>tests/test_reverify_b.py</code></a>",
+            "4063",
+            "<code class=\"hash\">5ba2a3f84c10f376b7fedee238a811513f3a2f9bed7976ef7b9c29a50e9bad98</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -11721,6 +11951,380 @@
         }
       ],
       "caption": "None of these official pages contains a plumbing-specific exemption for repairing or replacing a trip-lever waste-and-overflow assembly. That is a statement about the text of the code, not a determination for any individual job."
+    },
+    "reverify_licenses": {
+      "title": "All sixteen CSLB records re-read 2026-11-10 (session B)",
+      "caption": "Every field below was transcribed from the licence page as printed during this session's own read. Each page carried a “Data current as of 11/9/2026” database timestamp. No value was copied from an earlier snapshot.",
+      "columns": [
+        "Licence",
+        "Business as printed",
+        "Entity",
+        "Issued",
+        "Expires",
+        "Status",
+        "Classifications",
+        "Phone on record",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "977638",
+            "EXPERT PLUMBING SOLUTIONS",
+            "Corporation",
+            "2012-10-09",
+            "2028-10-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36",
+            "(415) 531-5340"
+          ],
+          "src": [
+            "S06",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "757796",
+            "BAY AREA PLUMBING",
+            "Sole Ownership",
+            "1999-01-07",
+            "2027-01-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36",
+            "(415) 668-8000"
+          ],
+          "src": [
+            "S07",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1024971",
+            "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+            "Sole Ownership",
+            "2017-03-20",
+            "2027-03-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36",
+            "(415) 596-6115"
+          ],
+          "src": [
+            "S08",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "959843",
+            "GENERALSF",
+            "Sole Ownership",
+            "2011-04-12",
+            "2027-04-30",
+            "<span class=\"pill ok\">current and active</span>",
+            "B · C10 · C36",
+            "(650) 303-1515"
+          ],
+          "src": [
+            "S09",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1003394",
+            "HANDYMAN HEROES INC",
+            "Corporation",
+            "2015-05-05",
+            "2027-05-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "B · C36",
+            "(844) 382-4376"
+          ],
+          "src": [
+            "S10",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "829071",
+            "ACE PLUMBING & ROOTER",
+            "Corporation",
+            "2003-12-18",
+            "2027-06-30",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · A · C-4 · C16 · B · C10",
+            "(415) 824-6444"
+          ],
+          "src": [
+            "S11",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1115649",
+            "RAPID FLOW PLUMBING & ROOTER INC",
+            "Corporation",
+            "2024-01-29",
+            "2028-01-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "B · C36",
+            "(415) 866-8401"
+          ],
+          "src": [
+            "S56",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "841229",
+            "MANNY'S PLUMBING & ROOTER",
+            "Sole Ownership",
+            "2004-06-21",
+            "2028-06-30",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · B",
+            "(650) 207-5733"
+          ],
+          "src": [
+            "S57",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1025814",
+            "THE GENTEEL PLUMBERS INC",
+            "Corporation",
+            "2017-04-14",
+            "2027-04-30",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · B",
+            "(833) 436-8335"
+          ],
+          "src": [
+            "S64",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1009195",
+            "ADVANCED PLUMBING AND DRAIN INC",
+            "Corporation",
+            "2015-11-24",
+            "2027-11-30",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36",
+            "(415) 744-4944"
+          ],
+          "src": [
+            "S65",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "995163",
+            "BERNAL HILL DRYWALL INC",
+            "Corporation",
+            "2014-07-28",
+            "2028-07-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C-9 · B",
+            "(415) 533-8274"
+          ],
+          "src": [
+            "S66",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1089561",
+            "TARO GROUP INC dba HEISES PLUMBING",
+            "Corporation",
+            "2022-04-06",
+            "2028-04-30",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · C10 · A · C20",
+            "(415) 333-0704"
+          ],
+          "src": [
+            "S67",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "632743",
+            "CALPLUMBING CO",
+            "Sole Ownership",
+            "1991-12-06",
+            "2027-12-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36",
+            "(415) 221-4633"
+          ],
+          "src": [
+            "S68",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "868994",
+            "ATLAS PLUMBING & ROOTER",
+            "Corporation",
+            "2005-12-08",
+            "2028-03-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · A",
+            "(650) 871-9863"
+          ],
+          "src": [
+            "S69",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1140843",
+            "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+            "Ltd Liability",
+            "2025-07-22",
+            "2027-07-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · A",
+            "(650) 991-2100"
+          ],
+          "src": [
+            "S70",
+            "S85"
+          ]
+        },
+        {
+          "cells": [
+            "1075566",
+            "BAY AREA PIPE & EQUIPMENT INC dba BAY AREA MECHANICAL",
+            "Corporation",
+            "2021-05-07",
+            "2027-05-31",
+            "<span class=\"pill ok\">current and active</span>",
+            "C36 · C20",
+            "(925) 642-9768"
+          ],
+          "src": [
+            "S71",
+            "S85"
+          ]
+        }
+      ]
+    },
+    "reverify_rules": {
+      "title": "Official rule pages re-read 2026-11-10 (session B)",
+      "caption": "Each row quotes or closely paraphrases the page named in the Source column. Where a determination about this job would be required, the row says so instead of deciding it.",
+      "columns": [
+        "Official page",
+        "What the page says",
+        "How it bears on this job",
+        "Read note",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "SF.gov plumbing/mechanical permit",
+            "“You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.” C-4, C-16, C-20, C-36, C-54, B and A license holders may apply; scope may be limited by licence type; inspection is required before pipes are covered.",
+            "The trip-lever assembly sits behind a wall, so any work that cuts or replaces its piping falls inside this sentence.",
+            "Quoted text matches the page as read 2026-11-10."
+          ],
+          "src": [
+            "S164"
+          ]
+        },
+        {
+          "cells": [
+            "SF.gov — which projects need a permit",
+            "Exempt list includes “Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection.”",
+            "Bears on patching the ceiling only; it says nothing about the concealed plumbing.",
+            "Quoted text matches the page as read 2026-11-10."
+          ],
+          "src": [
+            "S165"
+          ]
+        },
+        {
+          "cells": [
+            "SF Building Code §104.0 (Permits)",
+            "The code-library page for §104.0 was reachable and is the section sf.gov cites for permit procedure.",
+            "Procedural reference only.",
+            "Page read; §104.2 wording itself was taken from the City PDF (S167), not from this page."
+          ],
+          "src": [
+            "S166"
+          ]
+        },
+        {
+          "cells": [
+            "2025 SF Plumbing Code PDF — §104.2",
+            "“104.2 Exempt Work. A permit shall not be required for the following:” followed by the nine listed items (leak repair, unstopping, faucets/angle stops/hose bibbs/roof drains, toilet replacement, furnace filters, piping removal after approved disconnection, display set-up, water conservation devices, State and Federal buildings).",
+            "None of the nine items names a trip lever, overflow plate or waste-and-overflow assembly.",
+            "The nine items on the Code exemptions page were compared word for word with pages 4–5 of this PDF: they match."
+          ],
+          "src": [
+            "S167"
+          ]
+        },
+        {
+          "cells": [
+            "Business & Professions Code §7048",
+            "The licensing exemption applies only where the aggregate contract price is under $1,000, the work is casual/minor/inconsequential, AND the work does not require a building permit. It does not apply where the person advertises as a contractor or employs others.",
+            "All three quoted prices ($135, $550, $614) are below $1,000, but the price test is only one of the conditions and this site does not determine the others.",
+            "Full subdivision text read 2026-11-10."
+          ],
+          "src": [
+            "S162"
+          ]
+        },
+        {
+          "cells": [
+            "Business & Professions Code §7059",
+            "A specialty contractor may take and execute a contract using two or more crafts or trades where the other work is “incidental and supplemental” to the craft for which the contractor is licensed.",
+            "Relevant to a C-36 plumber patching drywall as an incidental part of the repair; whether a ceiling opening and its restoration is “incidental and supplemental” has not been determined here.",
+            "Text read 2026-11-10; no determination made."
+          ],
+          "src": [
+            "S163"
+          ]
+        },
+        {
+          "cells": [
+            "California Civil Code §1954",
+            "A landlord may enter to make necessary or agreed repairs; except in an emergency, entry is during normal business hours with reasonable written notice stating date, approximate time and purpose; 24 hours is presumed reasonable.",
+            "Bears on giving the tenant notice before a contractor visits an occupied unit.",
+            "Full text read 2026-11-10."
+          ],
+          "src": [
+            "S168"
+          ]
+        },
+        {
+          "cells": [
+            "CSLB C-36 classification",
+            "A C-36 plumbing contractor provides a safe water supply and proper disposal of fluid waste, including maintenance and replacement of the items described.",
+            "Confirms C-36 is the plumbing classification; it does not certify skill on a seized concealed assembly.",
+            "Definition read 2026-11-10."
+          ],
+          "src": [
+            "S161"
+          ]
+        }
+      ]
     }
   }
 }
