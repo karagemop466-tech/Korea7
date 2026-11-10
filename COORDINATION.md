@@ -1357,3 +1357,27 @@ Branch `arena/cbeddf30-korea7` is at `c9a5d3e`, identical to `origin/main` (inte
 - U45 source freshness / model limits; Yelp returns HTTP 403 to automated fetch so direct Yelp verification is blocked (third-party discovery links only, never presented as license evidence); owner-provided estimates ($614/$550/$135, dated 2026-08-30) left blank and flagged UNVERIFIED — no official source exists; problem-description facts are owner-provided and flagged; no contractor has been contacted, booked, or confirmed for this stuck-lever job; repository contains unrelated legacy GEMS content (archived, untouched).
 
 Nothing is left in progress by `arena/cbeddf30-korea7`.
+
+---
+
+# Session `arena/56d961a8-korea7` — 2026-11-10 (independent re-verification + publication)
+
+**Branch note.** The Arena runtime fixes this session's branch at `arena/56d961a8-korea7`; no
+`session-<id>/<task>` branch is created or pushed. Non-overlapping scope is kept by path.
+
+**Board read at start.** Every prior task board reports `done` (last: N1/N2, session
+`arena/ccf3d3c5-korea7`, PRs #67/#68 merged; Pages build for `c9a5d3e` in progress at session start).
+No claim was active, so no other session's work is displaced.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| P1 | Claim recorded and pushed before any content edit | in progress | `arena/56d961a8-korea7` | `COORDINATION.md` (append-only) |
+| P2 | Independent line-by-line re-verification of the published tables against the official records and first-party pages | in progress | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, `data/canonical/reread-2026-11-10.json` |
+| P3 | Publish the previously unquoted SF Plumbing Code §104.2 exempt-work list (official PDF) on a new Reference subpage, with the exact amendment scope | in progress | `arena/56d961a8-korea7` | `scripts/reread_1110.py`, generated `exempt-work.html` |
+| P4 | Integration prerequisites: rebuild, full link/row/privacy gate, regression tests | unclaimed | `arena/56d961a8-korea7` | generated pages, `tests/test_reread_1110.py` |
+| P5 | PR → `main`, merge without waiting, confirm the exact Pages deployment and live content | unclaimed | `arena/56d961a8-korea7` | GitHub PR/Pages |
+
+**Scope rules for this session.** `scripts/dashboard_content.py` is edited only by a single appended
+import line at its end (integration owner, logged below); all other additions live in the new module
+`scripts/reread_1110.py` and its data file. No other session's rows, rankings or archived pages are
+removed or rewritten. Privacy rule unchanged: no permit-strategy or private rationale anywhere.
