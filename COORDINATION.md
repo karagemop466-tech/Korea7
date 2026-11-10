@@ -1615,3 +1615,18 @@ matches the current source.
 **Rules unchanged.** Privacy rule (no permit-strategy or private rationale anywhere public) stays in
 force. Every table row keeps a source link; values that no official source confirms stay blank and
 flagged. No provider contact, availability or job-specific capability is claimed.
+## Session `arena/860ca261-korea7` — independent re-verification, Pages recovery, final integration (2026-11-10)
+
+The Arena runtime fixes this session's branch to `arena/860ca261-korea7`; no other branch is created or pushed. The complete incoming board above is preserved verbatim. Starting revision: `81fd0ffd305e6cfd39efd2536b755eef5a3e6646` (identical to `origin/main` at claim time — no divergence).
+
+| # | Task | Status | Owner | File scope |
+|---|---|---|---|---|
+| G1 — Baseline build + suite reproduction, line-by-line re-verification of every published official record against the issuing agency | in progress | arena/860ca261-korea7 | `data/canonical/reverify-2026-11-10b.json`, `scripts/reverify_b.py`, `tests/test_reverify_b.py` |
+| G2 — Diagnose and recover the failed GitHub Pages build for `81fd0ff`; confirm the deploy of the exact merged revision | in progress | arena/860ca261-korea7 | Pages/PR operations; `COORDINATION.md` (record only) |
+| G3 — Review every open plumbing PR, integrate what is not yet on `main`, publish the consolidated site, PR + merge, record result | in progress | arena/860ca261-korea7 | Integration files owned by no active session; `COORDINATION.md`, `flagged.html` |
+
+**Baseline reproduced by this session before any edit:** `python3 scripts/build_dashboard.py` → 11/11 PASS (18 pages, 34 tables, 768 rows, 136 sources, 1,586 rendered rows with 0 missing source links). Plumbing-lane suite (`test_dashboard`, `test_dashboard_integrity`, `test_canonical_integrity`, `test_ranking`, `test_recheck`, `test_delivery`, `test_closeout`, `test_license_scope_followup`, `test_followup_audit`, `test_overflow_site`, `test_bath_site`, `test_sf_overflow_audit`, `test_reread_1110`, `test_shipped_artifacts`) → **103 passed, 18 subtests passed**. The 7 collection errors in the repo-wide run are the unrelated GEMS lane requiring `rasterio`, which is not installed here and is out of this project's scope.
+
+**Observed irregularity at claim time (G2 seed):** the GitHub Pages build for `81fd0ff` (build `1355857564`) is `errored` with `"Page build failed."` and `duration: 0`, and its `github-pages` deployment status is `failure`. The immediately preceding build (`3f43d2b`) succeeded; the repo publishes 23 MB with `.nojekyll` present at both root and `docs/`. This repeats the duration-0 flake pattern recorded in the P3 entry above. Direct `curl` to `karagemop466-tech.github.io` is blocked by this sandbox's egress allowlist (`SSL_ERROR_SYSCALL`), so live-page checks use the deployment/build APIs and the fetch tool.
+
+**Recorded, not acted on:** the open PRs #65, #62, #42, #32 and the GEMS PRs #20, #18, #15, #2 predate this session. Each will be reviewed for whether its content is already on `main` before any decision; nothing is closed or merged silently.
