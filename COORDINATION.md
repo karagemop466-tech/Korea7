@@ -1573,3 +1573,9 @@ This session uses the Arena-assigned branch. Existing historical claims and work
 |---|---|---|---|
 | Independent delivery audit | done | `arena/e48fffbf-korea7` | Structural checks, full tests and explicitly limited source spot checks above. |
 | Integration delivery | needs review | `arena/e48fffbf-korea7` | Concurrent Pages recovery remains owned by `arena/c6a12019-korea7`; exact deployment must be checked after completion. |
+
+### Delivery outcome
+
+- Integration retry [PR #78](https://github.com/karagemop466-tech/Korea7/pull/78) merged 2026-11-10 05:47:56 UTC as `f00f9d81d1e84d95621e6c37b1b7279b90c342fb`.
+- GitHub Pages built that exact commit successfully (43.4 seconds), and [deployment workflow 42764363485](https://github.com/karagemop466-tech/Korea7/actions/runs/42764363485) finished successfully. Pages API reports `built`; the dashboard is at <https://karagemop466-tech.github.io/Korea7/>. The earlier `81fd0ff` failure was not a successful deployment and is retained above for context.
+- This session's scoped audit and recovery task is **done**. Unverified items and non-government sources remain identified on the [Flagged for Review](https://karagemop466-tech.github.io/Korea7/flagged.html) page; no claim is made that every external link was re-fetched or that any provider has accepted the job.
