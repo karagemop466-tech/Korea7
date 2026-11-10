@@ -1453,6 +1453,12 @@ TABLES["repo_review"]["rows"].append({
 # Dated delivery supplement; original model inputs and archived pages preserved.
 import delivery_data as _delivery
 _delivery.integrate(__import__(__name__))
+# Dated 2026-11-10 re-read of every licence record and rule page; historical inputs preserved.
+# (Restored 2026-11-10 by arena/348dd85b-korea7: the PR #74 merge in 0dbe481 accidentally
+# dropped this import during conflict resolution, orphaning the recheck.html page from the
+# dataset and navigation and leaving the main-branch test suite red.)
+import recheck_data as _recheck
+_recheck.build(__import__(__name__))
 
 # --- Final normalisation — arena/86db387f-korea7 (2026-11-10) ---
 # Other sessions' modules run above and each may add a page, a table or a flag. Recompute the
