@@ -1334,7 +1334,7 @@ TABLES["findings"]["rows"].append({
 
 TABLES["flagged"]["rows"].append({
     "cells": [
-        "U45",
+        "U46",
         "Exemption count on this page had gone stale",
         "This page said four records carried the workers'-compensation 'no employees' exemption. After the "
         "candidate pool grew to sixteen records, five carry it (#632743 was missed). Corrected 2026-11-10 from "
@@ -1345,16 +1345,9 @@ TABLES["flagged"]["rows"].append({
     "src": ["S68", "S105"],
 })
 
-for _page in PAGES.values():
-    for _b in _page["sections"]:
-        for _k, _v in list(_b.items()):
-            if isinstance(_v, str):
-                _b[_k] = _v.replace("U01–U44", "U01–U45").replace("44 flagged items", "45 flagged items")
 for _b in PAGES["index.html"]["sections"]:
     if _b["type"] == "cards":
         for _card in _b["items"]:
-            if _card["k"] == "Flagged for review":
-                _card["v"] = str(len(TABLES["flagged"]["rows"]))
             if _card["k"] == "Verified license records":
                 _card["s"] = "Re-read on CSLB 2026-11-08 · re-checked 2026-11-10 · 6 hold plumbing + building"
     if _b["type"] == "callout" and "all sixteen records re-read 2026-11-08" in _b.get("html", ""):
@@ -1406,7 +1399,7 @@ PAGES["verification.html"]["sections"].insert(0, {
         "contractor, not a conclusion of this dashboard.</caption></table></div>"
         "<p class=\"src\">Correction made in this pass: the workers'-compensation exemption count on the "
         "Flagged for Review page and in the executive summary said four; five of the sixteen records carry it "
-        "(" + slink("S68", "#632743") + " was missed). See U45 and F10.</p>"
+        "(" + slink("S68", "#632743") + " was missed). See U46 and F10.</p>"
     ),
 })
 
@@ -1456,3 +1449,28 @@ TABLES["repo_review"]["rows"].append({
     ],
     "src": ["S49", "S50", "S51", "S60", "S105"],
 })
+
+# Dated delivery supplement; original model inputs and archived pages preserved.
+import delivery_data as _delivery
+_delivery.integrate(__import__(__name__))
+
+# --- Final normalisation — arena/86db387f-korea7 (2026-11-10) ---
+# Other sessions' modules run above and each may add a page, a table or a flag. Recompute the
+# published flag range/count and the page date so the published text cannot go stale.
+import re as _re
+_flag_ids = [r["cells"][0] for r in TABLES["flagged"]["rows"] if _re.fullmatch(r"U\d+", str(r["cells"][0]))]
+_max_flag = max(int(f[1:]) for f in _flag_ids)
+for _page in PAGES.values():
+    for _b in _page["sections"]:
+        for _k, _v in list(_b.items()):
+            if isinstance(_v, str):
+                _v = _re.sub(r"U01–U\d+", "U01–U%d" % _max_flag, _v)
+                _v = _re.sub(r"\b\d+ flagged items\b", "%d flagged items" % len(TABLES["flagged"]["rows"]), _v)
+                _b[_k] = _v
+for _b in PAGES["index.html"]["sections"]:
+    if _b["type"] == "cards":
+        for _card in _b["items"]:
+            if _card["k"] == "Flagged for review":
+                _card["v"] = str(len(TABLES["flagged"]["rows"]))
+META["updated"] = "2026-11-10"
+META["session"] = "arena/86db387f-korea7"

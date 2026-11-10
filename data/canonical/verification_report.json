@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T00:56:25+00:00",
+  "generated_at": "2026-11-10T00:57:53+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -15,30 +15,31 @@
     "repo-review.html",
     "flagged.html",
     "ranking.html",
-    "contacts.html"
+    "contacts.html",
+    "delivery.html"
   ],
   "counts": {
-    "pages": 15,
-    "tables": 25,
-    "rows": 678,
-    "source_ledger_entries": 105,
-    "verified_sources": 87,
-    "official_or_manufacturer_verified": 33,
-    "generated_tbody_rows": 1406,
-    "internal_links_checked": 1474,
-    "unique_external_links": 391,
-    "published_text_files_scanned": 137
+    "pages": 16,
+    "tables": 26,
+    "rows": 693,
+    "source_ledger_entries": 110,
+    "verified_sources": 92,
+    "official_or_manufacturer_verified": 36,
+    "generated_tbody_rows": 1436,
+    "internal_links_checked": 1511,
+    "unique_external_links": 394,
+    "published_text_files_scanned": 139
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "15 pages generated"
+      "detail": "16 pages generated"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1406 tbody rows checked, 0 missing links"
+      "detail": "1436 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -48,7 +49,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1474 internal links checked, 0 broken"
+      "detail": "1511 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -58,7 +59,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "391 unique external links, 0 unknown/dead"
+      "detail": "394 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -68,7 +69,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "137 files scanned, 0 matches"
+      "detail": "139 files scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -83,7 +84,7 @@
     {
       "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "33 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-08); 87 sources marked verified overall (metadata only; no network check)"
+      "detail": "36 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 92 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -126,6 +127,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/bridge/sample_submission.tif",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/canonical/cslb_records.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/canonical/decision_analysis.json",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/canonical/delivery-2026-11-10.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/canonical/evidence-2026-11-08.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/canonical/providers-2026-11-08.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/data/canonical/research-history-2026-11-07.json",
@@ -323,6 +325,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/canary.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/check_candidate.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/dashboard_content.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/delivery_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/fleet_stats.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/generate_submission.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/scripts/make_demo_data.py",
@@ -356,6 +359,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_canonical_integrity.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_dashboard.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_dashboard_integrity.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_delivery.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_emission.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_evaluate_holdout.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/86db387f-korea7/tests/test_followup_audit.py",

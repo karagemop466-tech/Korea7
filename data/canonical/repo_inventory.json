@@ -22,8 +22,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 30464,
-    "sha256": "9a43c31e3155d2323ce3636b16dd98e2f7ff569e518bbad8d592012b3486586c",
+    "bytes": 30670,
+    "sha256": "6a4ca650d034e3c534bb670b950da31c059229e740dba02eefc5ca11aa1169e8",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -151,6 +151,13 @@
     "bytes": 10268,
     "sha256": "8cd35e53ca82105672b8ec9eca0cc927be9ed4c19cc28c3d41023ef39eaaecce",
     "category": "current-plumbing-source",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "data/canonical/delivery-2026-11-10.json",
+    "bytes": 2709,
+    "sha256": "1797f7b8f181af22ad1b79cda1669d799e5641da31a53863d4b0a19bcc14b5a1",
+    "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
@@ -1527,9 +1534,16 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 161836,
-    "sha256": "3f48750842a0889d791786c379f7e6414b774188468f50274b1cfb088c4b8a95",
+    "bytes": 162700,
+    "sha256": "8ae7e520a4a8b711e77cea60fd5b802597206128c11a84daa8e0f35ea9dbd3d2",
     "category": "current-plumbing-source",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/delivery_data.py",
+    "bytes": 5387,
+    "sha256": "f00b640d8eec2278c83f91d2d2dc3b7529d6d5cc00cf0cc92488aa5ec3c433b8",
+    "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
@@ -1761,6 +1775,13 @@
     "bytes": 5854,
     "sha256": "4571159b6e9228c27221caab22951272563a12af93f8d1bdde1379982bca20c3",
     "category": "current-plumbing-source",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_delivery.py",
+    "bytes": 1525,
+    "sha256": "25f109868dda42d1f204efe01cccefeae4f68becbe0165f0c26286303a6afa80",
+    "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {

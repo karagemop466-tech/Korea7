@@ -1198,6 +1198,39 @@ The Arena runtime fixes this session's branch to `arena/6696a17e-korea7`; no oth
 - Site suite: **76 passed, 18 subtests passed**. Full repository suite in `/home/user/korea7-venv`: **160 passed, 34 warnings, 18 subtests passed**. Warnings are existing rasterio Affine deprecations in unrelated legacy tests.
 - C5 is in progress: PR creation, merge, exact Pages run and live-content confirmation are recorded below after they actually occur. No provider outreach, booking or job acceptance is claimed.
 
+## Session arena/ccf3d3c5-korea7 — 2026-11-10
+
+Runtime requires the fixed Arena branch; no additional branch is created. Previous integration C5 is stale beyond 60 minutes and PR #66 is already merged. This session takes over delivery verification without modifying other open PRs.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| N1 Current evidence/accessibility audit and delivery status | in progress | arena/ccf3d3c5-korea7 | COORDINATION.md; data/canonical/delivery-2026-11-10.json; delivery.html; tests/test_delivery.py |
+| N2 Final regression, PR merge and Pages deployment verification | in progress | arena/ccf3d3c5-korea7 | Same scope; GitHub PR/Pages |
+
+Existing source checks are historical snapshots, not new live verification. No claim of current contractor availability or job acceptance will be made. Canonical generator/data files owned by previous integrations are read-only for this scoped delivery audit.
+
+### N1 scope extension and direct reads
+
+- No active owner is editing canonical generation in this checkout; prior claims date from November 8 or earlier. Integration scope extended to `scripts/delivery_data.py`, one import in `scripts/dashboard_content.py`, and generated canonical HTML/data outputs so the new dated audit is included in navigation and all structural checks. Existing ranking inputs and archived sites remain unchanged.
+- Direct official reads on 2026-11-10: CSLB #829071, #1025814, #1003394 (all returned database timestamps 2026-11-09, preserved exactly); Ace homepage, Handyman Heroes homepage, Genteel contact page. These checks corroborate license status/classifications/contact facts, not availability or project-specific capability. The other historical source checks are not relabeled as newly checked.
+- Initial claim push: remote session branch did not yet exist, so pull from that ref failed. Pulled/rebased from main instead, then successfully pushed only the assigned Arena branch. No conflict or discarded work.
+
+### N1 complete — sources, verification and irregularities
+
+- Added `delivery.html` to canonical navigation plus executive-summary/dashboard notices. Six source rows each cite the exact official record or first-party business page; new ledger S105–S110 preserve November 10 selected-field reads separately from November 8 model inputs. Database timestamps remain November 9 as returned, not falsely rewritten.
+- Sources: [Ace CSLB](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Genteel CSLB](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814), [Handyman Heroes CSLB](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394), [Ace business](https://www.aceplumbingandrooter.com/), [Genteel contact](https://www.genteelplumbers.com/contact), [Handyman Heroes business](https://www.handymanhero.es/).
+- Corroborated active top-three records and published contacts. Retained Handyman Heroes complaint-notice and C-10 marketing/record discrepancy and Genteel phone discrepancy. Added U45 on Flagged for Review for source freshness and model limits. No current job price or exact repair experience confirmed; blank price cells carry UNVERIFIED. No outreach, availability confirmation or booking claimed.
+- Build: 16 pages, 26 tables, 687 dataset rows, 110 sources; 1,401 rendered rows with no missing source links, 1,498 internal links / zero broken, zero broken anchors, privacy sweep zero matches. Full suite: 163 passed, 18 subtests passed; 34 pre-existing rasterio deprecation warnings. Initial supplement schema errors were corrected before this passing gate; historical ranking source dates preserved rather than changing fixed model snapshots.
+- N1 status: done. N2: integration/deployment in progress; actual PR and deployment results follow.
+
+### N2 done — actual merge and live deployment
+
+- Integration PR [#67](https://github.com/karagemop466-tech/Korea7/pull/67) merged successfully without waiting for review; merge commit `976222f466524d3761499b7681ca2be5e3c13ea5`.
+- GitHub Pages run [42731828305](https://github.com/karagemop466-tech/Korea7/actions/runs/42731828305) completed successfully for that exact commit; build, deploy and report-build-status all passed. Nonblocking platform annotations concern Node 20 action compatibility and ubuntu-latest migration, not site failure.
+- Actual live [dated verification page](https://karagemop466-tech.github.io/Korea7/delivery.html) fetched after deployment: six rows, November 10 read dates, exact November 9 database timestamps, correct source links and blank UNVERIFIED prices. Live dashboard: https://karagemop466-tech.github.io/Korea7/ . No unqualified claim of exhaustive current source verification is made.
+- Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
+- N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
+
 ---
 
 ## Session `arena/86db387f-korea7` — independent re-verification + final integration (2026-11-10)
