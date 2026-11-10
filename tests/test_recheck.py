@@ -57,6 +57,15 @@ class RecheckChecks(unittest.TestCase):
             self.assertTrue(rule["quote"])
             self.assertEqual(rule["consistent"], "yes")
 
+    def test_company_page_reads_are_company_tier(self):
+        rows = C.TABLES["recheck_company"]["rows"]
+        self.assertEqual(len(rows), 2)
+        for check in self.artifact["company_checks"]:
+            source = C.SOURCES[check["source_id"]]
+            self.assertEqual(source["tier"], "company")
+            self.assertEqual(source["checked"], "2026-11-10")
+            self.assertTrue(check["check"])
+
     def test_no_booking_or_capability_claim(self):
         limits = self.artifact["limits"]
         self.assertFalse(limits["provider_contacted"])

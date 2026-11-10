@@ -15,15 +15,15 @@
   },
   {
     "path": "EXECUTIVE-SUMMARY.md",
-    "bytes": 32079,
-    "sha256": "805d6d6c205b9b55ee740a8cc4947c076da3f32700a64f1124770dd78f68b4dd",
+    "bytes": 35933,
+    "sha256": "0431958378966fcba963946da6ff26b05c4754f50522382ef7effcc479e3e50e",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
     "path": "README.md",
-    "bytes": 30464,
-    "sha256": "9a43c31e3155d2323ce3636b16dd98e2f7ff569e518bbad8d592012b3486586c",
+    "bytes": 30796,
+    "sha256": "0687c0530856a7523285b5c24fb111d89cf1ddced5242448faac8d8b9ac83f1d",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1597,8 +1597,8 @@
   },
   {
     "path": "scripts/recheck_data.py",
-    "bytes": 33209,
-    "sha256": "fe7fd3f3eed793c2023dd80970b97dd0eea8509362a9582d99b5cfd47e56144a",
+    "bytes": 35751,
+    "sha256": "a8fc8bc176ea3b72b86f04f0f14cc3ba101bfd829d9c33b11383bb9ac04e7e20",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1863,8 +1863,8 @@
   },
   {
     "path": "tests/test_recheck.py",
-    "bytes": 3517,
-    "sha256": "ec86e33d287690d65e45e0ef4b2daa5a95c3d019c2a48212123230f2dbd575ce",
+    "bytes": 3931,
+    "sha256": "6579f1576718ae87ce1b12de4dba17f7233659c3d427ad332985a6f6db264f74",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

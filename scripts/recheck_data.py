@@ -387,6 +387,26 @@ RULE_READS = [
     },
 ]
 
+# First-party company pages re-read on 2026-11-10 (corroboration of published contact facts only).
+COMPANY_READS = [
+    {
+        "id": "C1",
+        "page": "Ace Plumbing & Rooter — company homepage",
+        "url": "https://www.aceplumbingandrooter.com/",
+        "tier": "company",
+        "fact": "Publishes (415) 824-6444 and \"Contractors License #829071\" with A, B, C4, C10, C16 and C36 listed; describes HOA and property-manager work.",
+        "check": "Phone and licence number match CSLB record #829071 read the same day.",
+    },
+    {
+        "id": "C2",
+        "page": "The Genteel Plumbers — contact page",
+        "url": "https://www.genteelplumbers.com/contact",
+        "tier": "company",
+        "fact": "Prints 415-465-5853, 1181 Revere Avenue, San Francisco CA 94124, office Monday-Friday 8 AM-5 PM and a 24/7 answering service.",
+        "check": "Address matches CSLB #1025814; the published phone differs from the CSLB business number (833) 436-8335, so both are kept and neither is silently replaced.",
+    },
+]
+
 COMPARE_FIELDS = (
     "name_on_record", "dba", "street", "city", "zip", "phone_on_record", "entity",
     "issue_date", "reissue_date", "expire_date", "status", "classifications",
@@ -487,6 +507,21 @@ def build(c):
             "supports": rule["quote"],
             "note": "Direct read 2026-11-10; quoted text transcribed verbatim from the page.",
         }
+    company_sources = {}
+    for item in COMPANY_READS:
+        sid = "S%d" % next_id
+        next_id += 1
+        company_sources[item["id"]] = sid
+        c.SOURCES[sid] = {
+            "label": "%s — November 10 re-read" % item["page"],
+            "publisher": "Company website (first-party)",
+            "url": item["url"],
+            "tier": item["tier"],
+            "status": "verified",
+            "checked": READ_DATE,
+            "supports": item["fact"],
+            "note": "Company self-description read 2026-11-10; corroborates published contact facts only, not skill, availability or price.",
+        }
     artifact_sid = "S%d" % next_id
     c.SOURCES[artifact_sid] = {
         "label": "Dated re-read transcription — 2026-11-10",
@@ -582,6 +617,16 @@ def build(c):
     }
 
     change_count = sum(1 for v in deltas.values() if v)
+    c.TABLES["recheck_company"] = {
+        "title": "First-party company pages read 2026-11-10",
+        "columns": ["Company page", "What the page publishes", "Cross-check against the official record", "Source"],
+        "rows": [{"cells": ["<strong>%s</strong>" % item["page"], item["fact"], item["check"]],
+                  "src": [company_sources[item["id"]]]} for item in COMPANY_READS],
+        "caption": "Company pages corroborate what a business publishes about itself — phone, address, licence number. "
+                   "They are not independent evidence of workmanship, of experience with this repair, of insurance cover "
+                   "for a specific job, or of willingness to take it.",
+    }
+
     c.PAGES["recheck.html"] = {
         "title": "Live re-check",
         "eyebrow": "Dated evidence · re-read 2026-11-10",
@@ -600,6 +645,7 @@ def build(c):
             {"type": "table", "ref": "recheck_licenses"},
             {"type": "table", "ref": "recheck_deltas"},
             {"type": "table", "ref": "recheck_rules"},
+            {"type": "table", "ref": "recheck_company"},
             {"type": "prose", "title": "What this re-check does and does not prove", "html":
                 "<p>These are direct reads of government pages on 2026-11-10: CSLB License Detail pages for all sixteen "
                 "licences used by the ranking, the sf.gov plumbing/mechanical permit page, California Business &amp; "
@@ -650,6 +696,7 @@ def build(c):
                          deltas=deltas[r["license"]], delta_summary=summary_text(deltas[r["license"]]))
                     for r in READS],
         "rule_checks": [dict(r, source_id=rule_sources[r["id"]]) for r in RULE_READS],
+        "company_checks": [dict(r, source_id=company_sources[r["id"]]) for r in COMPANY_READS],
         "limits": {
             "provider_contacted": False,
             "booking_confirmed": False,

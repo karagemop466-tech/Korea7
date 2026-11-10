@@ -625,6 +625,26 @@
       "source_id": "S129"
     }
   ],
+  "company_checks": [
+    {
+      "id": "C1",
+      "page": "Ace Plumbing & Rooter — company homepage",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "tier": "company",
+      "fact": "Publishes (415) 824-6444 and \"Contractors License #829071\" with A, B, C4, C10, C16 and C36 listed; describes HOA and property-manager work.",
+      "check": "Phone and licence number match CSLB record #829071 read the same day.",
+      "source_id": "S130"
+    },
+    {
+      "id": "C2",
+      "page": "The Genteel Plumbers — contact page",
+      "url": "https://www.genteelplumbers.com/contact",
+      "tier": "company",
+      "fact": "Prints 415-465-5853, 1181 Revere Avenue, San Francisco CA 94124, office Monday-Friday 8 AM-5 PM and a 24/7 answering service.",
+      "check": "Address matches CSLB #1025814; the published phone differs from the CSLB business number (833) 436-8335, so both are kept and neither is silently replaced.",
+      "source_id": "S131"
+    }
+  ],
   "limits": {
     "provider_contacted": false,
     "booking_confirmed": false,
