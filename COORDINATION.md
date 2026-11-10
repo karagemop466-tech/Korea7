@@ -1671,3 +1671,60 @@ Platform fixes this session's branch. This session claims one narrow, additive t
 - **GitHub Pages build for `7225b0a`: `built`** (21.2 s, no error) — `gh api repos/.../pages/builds`. Deployment record **7674752201** for `7225b0a` reports state **`success`** at 2026-11-10T05:54:52Z with `environment_url` https://karagemop466-tech.github.io/Korea7/.
 - **Live verification after deploy:** `https://karagemop466-tech.github.io/Korea7/ranking.html` was fetched and serves the new content — the #3 row now carries "34 citation entries — see the audit below" and the appended rationale naming B&P 7109.A and 7113, and the page title/nav are the merged build. A live response is evidence of delivery, not proof every claim was independently re-checked; the limits stated in the audit section above still apply.
 - This closes the task: **done**. Flag **U49** and finding **F18** remain published as "needs review" and do not block anything. Nothing about the owner's internal-only permit reasoning, timing or private rationale appears in any published file; the privacy sweep in the merged build reported 0 matches across 144 files.
+
+### C2–C5 record — verification, build gate and delivery
+
+**C2 — official records re-read directly in this session (2026-11-10).** Seven CSLB License Detail
+pages: [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638),
+[#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796),
+[#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971),
+[#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071),
+[#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814),
+[#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394),
+[#995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) — plus the
+[complaint-disclosure page for #1003394](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394),
+[sf.gov plumbing & mechanical permits](https://www.sf.gov/apply-plumbing-and-mechanical-permit), the
+[2025 SF Plumbing Code PDF](https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf) (§104.2 items (1)–(9)
+and the amendment-scope sentence, transcribed verbatim and identical to `exempt-work.html`),
+[BPC §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048),
+the [CSLB C-36](https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36)
+and [B](https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B)
+classifications, and the [Ace](https://www.aceplumbingandrooter.com/) and
+[Genteel contact](https://www.genteelplumbers.com/contact) pages. Every field still matches the published
+tables; **no drift**. Machine-readable record: `data/canonical/verification-2026-11-10-c2cb969e.json`,
+which also lists what was *not* re-read (the other nine CSLB records, all review platforms, and every
+provider's availability, price and drywall scope). Genteel's company phone (415-465-5853) still differs
+from CSLB's (833) 436-8335 — existing flag U23 stands.
+
+**C3 — defect found and fixed.** The published sidebar and page footers named
+`arena/56d961a8-korea7` as the current build even though three later sessions had rebuilt the site.
+`scripts/reread_1110.py` was edited by one constant (`META['session']`) and the site regenerated. No
+table, row, score, source or flagged item changed. A later concurrent session (PR #83) then rebuilt the
+site and stamped its own session id (`arena/4c075a93-korea7`), which is the intended behaviour: the footer
+names the session that produced the current build. Nothing in this session's work is lost — the
+verification record is cited from `verification.html` and `repo-review.html`.
+
+**C4 — gate on the merged tree.** `python3 scripts/build_dashboard.py` → **11/11 PASS**: 18 pages,
+34 tables, 769 rows, 136 sources; 1,588 rendered rows with 0 missing source links; 1,642 internal links,
+0 broken; 0 broken anchors; 402 external links all in the ledger; privacy sweep 144 files / 0 matches;
+0 template markers. Site suites → **99 passed, 18 subtests passed** (pytest 9.2 in a local `.venv`).
+`python3 scripts/audit_repository.py` → 344 tracked files, 0 parse failures, 0 broken internal links or
+anchors.
+
+**C5 — delivery.** PR [#82](https://github.com/karagemop466-tech/Korea7/pull/82) opened from
+`arena/c2cb969e-korea7` to `main` and **merged without waiting** at 2026-11-10T05:50:37Z as
+`47cc70946dd6b04768a3f420a9167aa9be6c3c9f`. A mid-session rebase was required because PRs #78–#81 merged
+concurrently; the only conflict was this board, resolved by keeping `main`'s two appended session sections
+verbatim and appending this one after them — no other session's entry was dropped or rewritten. GitHub
+Pages built `47cc709` with status **built** (Pages API, error null); its `github-pages` deployment record
+was then marked *inactive* because the next merge (`7225b0a`) superseded it, and that deployment reports
+**success** with `environment_url` <https://karagemop466-tech.github.io/Korea7/>. The live site was fetched
+after the deploy and serves the current dashboard, the 48-item Flagged for Review page and the
+`verification.html` re-read tables. The earlier `81fd0ff` failure was a **deploy-job timeout after a
+successful build** (`gh run view 42735694304`: build ✓ 7s, deploy ✗ 10m27s, “Timeout reached, aborting!”),
+not a content defect.
+
+**Carries (nonblocking).** Owner-supplied amounts remain unverified and blank in verified cells; no provider
+was contacted, so availability, drywall scope, one-contract coverage and tenant-occupied-unit experience
+stay unconfirmed for all sixteen licensees; review-platform values remain third-party snapshots (Yelp
+returns HTTP 403 here); old PRs #2/#15/#18/#20/#32/#42/#62/#65 remain open and untouched.
