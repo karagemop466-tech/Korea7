@@ -1615,3 +1615,17 @@ matches the current source.
 **Rules unchanged.** Privacy rule (no permit-strategy or private rationale anywhere public) stays in
 force. Every table row keeps a source link; values that no official source confirms stay blank and
 flagged. No provider contact, availability or job-specific capability is claimed.
+
+---
+
+## Session `arena/6e7ad993-korea7` — targeted findings-page correction (2026-11-10)
+
+**Branch note.** Arena fixes this session to `arena/6e7ad993-korea7`; no alternate branch or worktree is created. After the initial claim, `main` advanced from `81fd0ff` to `47cc709` while concurrent integration and re-verification sessions were active. The append-only `COORDINATION.md` rebase conflict was resolved by retaining the complete latest upstream board before adding this narrower claim; no other session's entry or work was removed.
+
+**Coordination adjustment.** The current-source / Pages delivery checks are owned by the concurrent integration and independent re-verification sessions recorded immediately above (including PR #82). This session does not duplicate their delivery retry or broad re-check scope. It is limited to a content inconsistency found in the published Findings page: the page's one-license C-36 + building list omits Genteel #1025814, although the official CSLB record, Executive Summary, and computed Route 1 ranking show it as one of the six candidates; its workers'-compensation watch list also omits #632743, which the official re-check identifies as exempt/no employees.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Correct the two omissions in the Findings page, regenerate the canonical dashboard data/page, add a regression test, and record direct official-source checks | in progress | `arena/6e7ad993-korea7` | `COORDINATION.md`; `scripts/dashboard_content.py`; generated `findings.html` and `data/canonical/site_data.json`; `tests/test_findings_consistency.py` |
+
+**Boundaries.** No rank, score, company capability, price, or repair outcome is being changed or inferred. The public cost fields remain blank/UNVERIFIED where an official exact-scope price is unavailable. No contractor outreach or booking is represented.
