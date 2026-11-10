@@ -16,7 +16,7 @@ class FollowupAudit(unittest.TestCase):
         corrected the count rather than leaving a stale number on the page.
         """
         row = next(r for r in content.TABLES["flagged"]["rows"] if r["cells"][0] == "U06")
-        self.assertEqual(set(row["src"]), {"S07", "S09", "S56", "S57", "S68", "S105"})
+        self.assertEqual(set(row["src"]), {"S07", "S09", "S56", "S57", "S68", "S120"})
         for number in ("757796", "959843", "1115649", "841229", "632743"):
             self.assertIn(number, row["cells"][1])
         self.assertIn("five", row["cells"][2].lower())

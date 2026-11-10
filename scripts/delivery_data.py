@@ -45,3 +45,29 @@ def integrate(c):
             for card in block['items']:
                 if card['k'] == 'Flagged for review':
                     card['v'] = str(len(c.TABLES['flagged']['rows']))
+
+    # Independent scope-fit supplement; preserve historical numerical model inputs.
+    c.SOURCES['S111'] = {
+        'label': 'Handyman Heroes — construction services',
+        'publisher': 'Handyman Heroes Inc',
+        'url': 'https://www.handymanhero.es/construction-services/',
+        'tier': 'company', 'status': 'verified', 'checked': '2026-11-10',
+        'supports': 'Advertises bathroom remodels and publishes 1-844-382-4376.',
+        'note': 'Direct selected-field read by arena/fd9508fc-korea7. Company marketing, not confirmation of seized overflow work, a one-contract ceiling restoration commitment, price or availability. Page focuses on South San Francisco; the homepage separately advertises SF County.',
+    }
+    c.TABLES['scope_fit_closeout'] = {
+        'caption': 'Scope-fit analysis, not a replacement for the licensing-model ranking. Independent selected-field reads November 10.',
+        'columns': ['Candidate', 'Official evidence', 'Decision analysis', 'All-in price', 'Source'],
+        'rows': [
+            {'cells': ['Ace Plumbing & Rooter · (415) 824-6444', 'Active #829071; B and C36; company advertises SF residential and HOA/property-manager service.', 'First diagnostic shortlist under the existing license model. Occupied-property marketing is relevant, but safe extraction and ceiling restoration are not confirmed.', c.BLANK + ' ' + c.UNVERIFIED], 'src': ['S105', 'S108']},
+            {'cells': ['Genteel Plumbers · (415) 465-5853', 'Official contact page publishes this office line and San Francisco location.', 'Alternative contact from the existing shortlist. A contact-page read alone does not establish drywall capability or exact repair experience. Retain the different CSLB line in the directory.', c.BLANK + ' ' + c.UNVERIFIED], 'src': ['S109', 'S106']},
+            {'cells': ['Handyman Heroes · (844) 382-4376', 'Homepage advertises plumbing and construction, with a company-hosted drywall-patching testimonial; construction page advertises bathroom remodels.', 'Potential combined-trade fit worth evaluating alongside Ace, not proof of an all-in-one commitment. Existing complaint-notice and license-marketing discrepancies remain on Flagged for Review. No exact overflow project verified.', c.BLANK + ' ' + c.UNVERIFIED], 'src': ['S110', 'S111', 'S107']},
+        ],
+    }
+    c.PAGES['delivery.html']['sections'].append({
+        'type': 'table', 'title': 'Practical scope-fit comparison', 'ref': 'scope_fit_closeout',
+    })
+    c.PAGES['delivery.html']['sections'].append({
+        'type': 'prose', 'title': 'Independent corroboration boundary',
+        'html': '<p>The independent close-out checked five selected source pages, not every historical fact. The Genteel and Handyman Heroes CSLB rows above belong to the earlier dated check, not this independent read. <a href="data/canonical/closeout-2026-11-10.json">Read the exact fields corroborated</a>. No testimonial reviewed establishes the complete combination of seized overflow extraction, occupied-unit work and ceiling restoration. No contractor has been contacted, booked or confirmed for this project.</p>',
+    })

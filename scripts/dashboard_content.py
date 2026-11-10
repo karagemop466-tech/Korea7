@@ -1266,7 +1266,7 @@ _ROOT = _Path(__file__).resolve().parent.parent
 _REVERIFY = _json.loads((_ROOT / "data/canonical/reverification-2026-11-10.json").read_text(encoding="utf-8")) \
     if (_ROOT / "data/canonical/reverification-2026-11-10.json").exists() else {"licenses": []}
 
-SOURCES["S105"] = {
+SOURCES["S120"] = {
     "label": "Re-verification log 2026-11-10 (JSON)",
     "publisher": "This repository — direct CSLB reads",
     "url": "data/canonical/reverification-2026-11-10.json",
@@ -1307,7 +1307,7 @@ for _r in TABLES["flagged"]["rows"]:
         _r["cells"][2] = ("All five CSLB records state the licensee certified 'no employees at this time' "
                           "(corrected 2026-11-10: #632743 was added to the candidate set after this flag "
                           "was first written, when four exemptions were recorded)")
-        _r["src"] = ["S07", "S09", "S56", "S57", "S68", "S105"]
+        _r["src"] = ["S07", "S09", "S56", "S57", "S68", "S120"]
 
 for _page in PAGES.values():
     for _b in _page["sections"]:
@@ -1329,7 +1329,7 @@ TABLES["findings"]["rows"].append({
         + "(" + slink("S08", "#1024971") + "). An exemption is a licensed-status fact, not a finding about crew cover.",
         pill("verified 2026-11-10", "ok"),
     ],
-    "src": ["S07", "S09", "S56", "S57", "S68", "S08", "S105"],
+    "src": ["S07", "S09", "S56", "S57", "S68", "S08", "S120"],
 })
 
 TABLES["flagged"]["rows"].append({
@@ -1342,7 +1342,7 @@ TABLES["flagged"]["rows"].append({
         "No action needed — corrected and re-published; re-check every record on the hire date",
         pill("resolved / documented", "ok"),
     ],
-    "src": ["S68", "S105"],
+    "src": ["S68", "S120"],
 })
 
 for _b in PAGES["index.html"]["sections"]:
@@ -1384,7 +1384,7 @@ PAGES["verification.html"]["sections"].insert(0, {
         "records were fetched and read again; each printed “Data current as of 11/9/2026”. "
         "<strong>No field drift was found</strong> in any record — business name, business phone, status, "
         "classifications, expiry, workers' compensation and any additional status or complaint disclosure are "
-        "unchanged from the 2026-11-08 transcription (" + slink("S105", "re-verification log") + "). The official "
+        "unchanged from the 2026-11-08 transcription (" + slink("S120", "re-verification log") + "). The official "
         "rule pages cited for the decision were re-read the same day and their wording is unchanged.</p>"
         "<div class=\"table-wrap\"><table><thead><tr><th>License</th><th>Business on record</th>"
         "<th>Phone on record</th><th>Status 2026-11-10</th><th>Classes</th><th>Expires</th>"
@@ -1416,7 +1416,7 @@ for _r in TABLES["flagged"]["rows"]:
                           "(prior snapshot); the official CSLB #1024971 record shows 236 W POTRAL AVE #459 "
                           "(the misspelling is CSLB's own); the company's payment FAQ (re-read 2026-11-10) gives "
                           "236 W Portal Ave #259")
-        _r["src"] = ["S08", "S34", "S40", "S105"]
+        _r["src"] = ["S08", "S34", "S40", "S120"]
 SOURCES["S61"]["note"] = (SOURCES["S61"]["note"].rstrip()
                           + " Re-read 2026-11-10: still lists bathtubs (waste & overflow) and (415) 596-6115; "
                             "its payment FAQ gives a mailing suite (#259) that differs from the CSLB record (#459).")
@@ -1435,7 +1435,7 @@ TABLES["repo_review"]["rows"].append({
         "0 parse failures. This is desk verification — no provider was contacted and no quote was confirmed.",
         pill("reviewed 2026-11-10", "ok"),
     ],
-    "src": ["S105", "S01", "S02", "S04", "S13", "S62"],
+    "src": ["S120", "S01", "S02", "S04", "S13", "S62"],
 })
 TABLES["repo_review"]["rows"].append({
     "cells": [
@@ -1447,7 +1447,7 @@ TABLES["repo_review"]["rows"].append({
         "removing them is an owner decision, not something this session changes.",
         pill("flagged for owner decision", "warn"),
     ],
-    "src": ["S49", "S50", "S51", "S60", "S105"],
+    "src": ["S49", "S50", "S51", "S60", "S120"],
 })
 
 # Dated delivery supplement; original model inputs and archived pages preserved.
@@ -1460,6 +1460,11 @@ _delivery.integrate(__import__(__name__))
 import re as _re
 _flag_ids = [r["cells"][0] for r in TABLES["flagged"]["rows"] if _re.fullmatch(r"U\d+", str(r["cells"][0]))]
 _max_flag = max(int(f[1:]) for f in _flag_ids)
+# Publish the flags in ID order even though several modules append them out of sequence.
+TABLES["flagged"]["rows"].sort(
+    key=lambda r: (int(_re.fullmatch(r"U(\d+)", str(r["cells"][0])).group(1))
+                   if _re.fullmatch(r"U\d+", str(r["cells"][0])) else 10 ** 6)
+)
 for _page in PAGES.values():
     for _b in _page["sections"]:
         for _k, _v in list(_b.items()):
