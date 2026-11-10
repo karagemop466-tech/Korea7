@@ -1205,6 +1205,16 @@
       "checked": "2026-11-10",
       "supports": "Company site advertises construction, electrical, plumbing and handyman services; states 'Licensed C-10' and 'Licensed C-36'",
       "note": "Read directly. CSLB #1003394 lists B + C-36 only — the C-10 claim is an irregularity (flagged). Re-read directly on 2026-11-08."
+    },
+    "S111": {
+      "label": "Handyman Heroes — construction services",
+      "publisher": "Handyman Heroes Inc",
+      "url": "https://www.handymanhero.es/construction-services/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Advertises bathroom remodels and publishes 1-844-382-4376.",
+      "note": "Direct selected-field read by arena/fd9508fc-korea7. Company marketing, not confirmation of seized overflow work, a one-contract ceiling restoration commitment, price or availability. Page focuses on South San Francisco; the homepage separately advertises SF County."
     }
   },
   "tables": {
@@ -5120,6 +5130,18 @@
           "src": [
             "S110"
           ]
+        },
+        {
+          "cells": [
+            "<code>S111</code>",
+            "<strong>Handyman Heroes — construction services</strong><br><small><a href=\"https://www.handymanhero.es/construction-services/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.handymanhero.es/construction-services/</a></small>",
+            "Handyman Heroes Inc<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Advertises bathroom remodels and publishes 1-844-382-4376.<br><small>Direct selected-field read by arena/fd9508fc-korea7. Company marketing, not confirmation of seized overflow work, a one-contract ceiling restoration commitment, price or availability. Page focuses on South San Francisco; the homepage separately advertises SF County.</small>"
+          ],
+          "src": [
+            "S111"
+          ]
         }
       ],
       "caption": "Every external URL used on this dashboard is listed here with its publisher, tier, retrieval date and verification status. 'dead' sources are never linked from a table row; their URL is shown as plain text for documentation only."
@@ -6550,7 +6572,7 @@
       "caption": "No access method, opening size or permit exemption is inferred. A licensed site assessment is required."
     },
     "repo_inventory": {
-      "title": "Line-by-line source/artifact inventory (309 files)",
+      "title": "Line-by-line source/artifact inventory (311 files)",
       "columns": [
         "Path",
         "Bytes",
@@ -6793,6 +6815,18 @@
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/ccf3d3c5-korea7/data/bridge/sample_submission.tif\" target=\"_blank\" rel=\"noopener noreferrer\"><code>data/bridge/sample_submission.tif</code></a>",
             "1599597",
             "<code class=\"hash\">2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/ccf3d3c5-korea7/data/canonical/closeout-2026-11-10.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>data/canonical/closeout-2026-11-10.json</code></a>",
+            "1146",
+            "<code class=\"hash\">2c01f3ff4bc61c4fecde386cd7885db11e022efd005842dac415984b3aeb914a</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -9191,8 +9225,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/ccf3d3c5-korea7/scripts/delivery_data.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/delivery_data.py</code></a>",
-            "5387",
-            "<code class=\"hash\">f00b640d8eec2278c83f91d2d2dc3b7529d6d5cc00cf0cc92488aa5ec3c433b8</code>",
+            "8528",
+            "<code class=\"hash\">8c29982e8a54a5afa0400a8ec906276e4031cb69a251c11469b95a013fb8d83e</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -9566,6 +9600,18 @@
             "3370",
             "<code class=\"hash\">3fb8f17e721a793f4c05b2348047eadd3608b755a3206c0fb702219642a1f12e</code>",
             "current-plumbing-source",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/ccf3d3c5-korea7/tests/test_closeout.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>tests/test_closeout.py</code></a>",
+            "1125",
+            "<code class=\"hash\">9094b3c71fbce9d2af62a03a4cecb3a6a08caebe1f6f027d558b47f7a98ff07c</code>",
+            "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
           "src": [
@@ -10352,6 +10398,55 @@
           ],
           "src": [
             "S110",
+            "S107"
+          ]
+        }
+      ]
+    },
+    "scope_fit_closeout": {
+      "caption": "Scope-fit analysis, not a replacement for the licensing-model ranking. Independent selected-field reads November 10.",
+      "columns": [
+        "Candidate",
+        "Official evidence",
+        "Decision analysis",
+        "All-in price",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Ace Plumbing & Rooter · (415) 824-6444",
+            "Active #829071; B and C36; company advertises SF residential and HOA/property-manager service.",
+            "First diagnostic shortlist under the existing license model. Occupied-property marketing is relevant, but safe extraction and ceiling restoration are not confirmed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S105",
+            "S108"
+          ]
+        },
+        {
+          "cells": [
+            "Genteel Plumbers · (415) 465-5853",
+            "Official contact page publishes this office line and San Francisco location.",
+            "Alternative contact from the existing shortlist. A contact-page read alone does not establish drywall capability or exact repair experience. Retain the different CSLB line in the directory.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S109",
+            "S106"
+          ]
+        },
+        {
+          "cells": [
+            "Handyman Heroes · (844) 382-4376",
+            "Homepage advertises plumbing and construction, with a company-hosted drywall-patching testimonial; construction page advertises bathroom remodels.",
+            "Potential combined-trade fit worth evaluating alongside Ace, not proof of an all-in-one commitment. Existing complaint-notice and license-marketing discrepancies remain on Flagged for Review. No exact overflow project verified.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S110",
+            "S111",
             "S107"
           ]
         }

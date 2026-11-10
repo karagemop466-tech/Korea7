@@ -1,33 +1,33 @@
 # Dashboard verification report
 
-Generated: 2026-11-10T00:54:00+00:00
+Generated: 2026-11-10T00:57:30+00:00
 
 | Check | Result | Detail |
 |---|---|---|
 | Build output complete | PASS | 16 pages generated |
-| Every table row has a source link | PASS | 1403 tbody rows checked, 0 missing links |
+| Every table row has a source link | PASS | 1415 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
-| Internal links resolve | PASS | 1500 internal links checked, 0 broken |
+| Internal links resolve | PASS | 1505 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
-| External links are in the source ledger | PASS | 393 unique external links, 0 unknown/dead |
+| External links are in the source ledger | PASS | 396 unique external links, 0 unknown/dead |
 | Navigation consistent | PASS | 0 nav issues |
-| Privacy sweep (internal-only wording) | PASS | 138 files scanned, 0 matches |
+| Privacy sweep (internal-only wording) | PASS | 139 files scanned, 0 matches |
 | No unfilled template markers | PASS | 0 template-marker matches |
 | Dead sources not linked | PASS | 0 dead-source links |
-| Source ledger records prior direct reads | PASS | 36 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 92 sources marked verified overall (metadata only; no network check) |
+| Source ledger records prior direct reads | PASS | 36 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 93 sources marked verified overall (metadata only; no network check) |
 
 ## Counts
 
 - pages: 16
-- tables: 26
-- rows: 688
-- source_ledger_entries: 110
-- verified_sources: 92
+- tables: 27
+- rows: 694
+- source_ledger_entries: 111
+- verified_sources: 93
 - official_or_manufacturer_verified: 36
-- generated_tbody_rows: 1403
-- internal_links_checked: 1500
-- unique_external_links: 393
-- published_text_files_scanned: 138
+- generated_tbody_rows: 1415
+- internal_links_checked: 1505
+- unique_external_links: 396
+- published_text_files_scanned: 139
 
 ## Notes
 

@@ -1230,3 +1230,22 @@ Existing source checks are historical snapshots, not new live verification. No c
 - Actual live [dated verification page](https://karagemop466-tech.github.io/Korea7/delivery.html) fetched after deployment: six rows, November 10 read dates, exact November 9 database timestamps, correct source links and blank UNVERIFIED prices. Live dashboard: https://karagemop466-tech.github.io/Korea7/ . No unqualified claim of exhaustive current source verification is made.
 - Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
 - N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
+
+## Session arena/fd9508fc-korea7 — 2026-11-10 delivery close-out
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| F1 Independent selected-source corroboration and delivery boundary | in progress | arena/fd9508fc-korea7 | data/canonical/closeout-2026-11-10.json; scripts/delivery_data.py; tests/test_closeout.py; generated canonical outputs |
+| F2 Regression, PR and Pages delivery close-out | in progress | arena/fd9508fc-korea7 | COORDINATION.md; GitHub PR/Pages |
+
+Fixed Arena branch takes precedence over requested alternative branch naming. Prior N1 is complete; N2 close-out is taken over after PR #67 merged. No open PR or other owner's unfinished files will be changed. Historical checks will not be relabeled as new verification. External link structural validity is not external reachability.
+
+- Coordination conflict resolved by preserving both the incoming PR #68 close-out and this session claim. Initial shallow-history rebase was aborted safely, full history fetched, then the append-only board conflict resolved without discarding either entry. N2 was already completed in PR #68; this session is an independent corroboration, not a takeover.
+
+### F1 complete — independent corroboration and scope-fit supplement
+
+- Independently read five pages: [Ace CSLB #829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Ace homepage](https://www.aceplumbingandrooter.com/), [Genteel contact](https://www.genteelplumbers.com/contact), [Handyman Heroes homepage](https://www.handymanhero.es/), [Handyman Heroes construction](https://www.handymanhero.es/construction-services/). Selected corroborated fields and exact CSLB timestamp are in `data/canonical/closeout-2026-11-10.json`. Other historical sources are not claimed reverified.
+- Added S111 and a three-row practical scope-fit comparison to Latest verification. Preserved the existing numerical ranking without implying that licensing tenure measures repair skill. All-in prices remain blank/UNVERIFIED; exact repair experience and one-contract restoration are unconfirmed. Company-hosted drywall testimonial is not independent project evidence. Existing U45 and other review flags remain visible.
+- Build: 16 pages, 27 tables, 694 dataset rows, 111 sources; 1,415 rendered rows with zero missing links; 1,505 internal links and zero broken links/anchors; privacy sweep zero matches. Structural external-link ledger checks are not live reachability checks.
+- Full regression in a fresh ignored virtual environment: 165 passed, 18 subtests passed, 34 existing rasterio deprecation warnings. Initial system-Python test attempt had no pytest installed; resolved using the isolated environment. Repository audit: zero parse failures or broken internal links/anchors. No outreach or booking performed.
+- F1 status: done. F2 pending PR/merge/deploy confirmation.
