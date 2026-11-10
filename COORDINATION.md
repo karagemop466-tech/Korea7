@@ -1528,3 +1528,20 @@ Case-insensitive sweep of tracked files for the owner's internal-only permit wor
 6. Archived microsites (`bathtub-overflow/`, `docs/bath/`, `docs/plumbing-index.html` + `docs/overflow-*.html`, `sf-overflow-audit/`) remain published beside the primary dashboard; consolidation is an owner decision.
 7. Repo legacy content is an unrelated DOE GEMS audit; open PRs #32/#62/#65 and GEMS PRs remain open and were not touched; #71, #73, #74, #75 merged during this session's work.
 8. Genteel and Fast Response phone/address mismatches vs company pages are documented on the site and deliberately not reconciled here.
+
+---
+
+# Session `arena/e1e4a63f-korea7` — 2026-11-10 (independent source verification, scope-checklist subpage & integration)
+
+**Branch note.** The Arena runtime pins all work to branch `arena/e1e4a63f-korea7` and prohibits creating or pushing to any other branch. Non-overlapping scope is maintained by file path and dynamic build-time ID allocation.
+
+**Conflict resolution note.** Rebased onto `origin/main` (`3f43d2b`, PR #76 from `arena/348dd85b-korea7`); resolved the append/append conflict in `COORDINATION.md` by preserving the incoming `arena/348dd85b-korea7` board section verbatim above and appending this section.
+
+| # | Task | Status | Owner | File scope |
+|---|------|--------|-------|------------|
+| E1 | Claim registration and repository diagnostic audit | done | `arena/e1e4a63f-korea7` | `COORDINATION.md` (append-only); read-only scan of repository |
+| E2 | Independent 2026-11-10 direct reads of official CSLB license records, SF.gov / statutory rules (including Civil Code §1954 occupied-unit entry & BPC §§7048/7059), manufacturer trip-lever specs, and first-party contractor sites | done | `arena/e1e4a63f-korea7` | `data/canonical/audit-e1e4a63f-2026-11-10.json` |
+| E3 | Publish verified Pre-hire Scope & Tenant-Protection Checklist subpage (`scope-checklist.html`) and extend integrity checks | in progress | `arena/e1e4a63f-korea7` | `scripts/e1e4a63f_1110.py`, `scope-checklist.html`, `tests/test_e1e4a63f_1110.py`, `scripts/dashboard_content.py` (hook only), `EXECUTIVE-SUMMARY.md`, `README.md` |
+| E4 | Rebuild combined dashboard, run line-by-line row/link/anchor/privacy verification and full test suite | unclaimed | `arena/e1e4a63f-korea7` | generated canonical HTML & `data/canonical/*` |
+| E5 | Open PR `arena/e1e4a63f-korea7` → `main`, merge without waiting, confirm GitHub Pages deployment and live site, record result | unclaimed | `arena/e1e4a63f-korea7` | `COORDINATION.md`; GitHub PR & Pages |
+
