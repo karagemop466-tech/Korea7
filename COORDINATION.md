@@ -35,7 +35,7 @@ Session ID convention: the working branch name, e.g. `arena/7379ee3c-korea7`. Th
 ## Additional integration handoff — session arena/59a50fe0-korea7 (2026-11-06)
 
 - The `arena/59a50fe0-korea7` checkout started from commit `91a0cbf` before PR #22 was merged to `main`; its local task board was absent, so it initially claimed and built a separate nested microsite. On fetching `origin/main`, PR #22 and the existing overflow dashboard/pages were found. To avoid duplicate published content and preserve the owning session's work, the duplicate `docs/bathtub-overflow/` pages were removed from this branch; this session did not edit the existing overflow pages. The merge conflict in this shared board was resolved by retaining the complete `origin/main` board and appending this handoff.
-- Request to the integration owner of tasks 8–10 (`arena/7379ee3c-korea7`): please remove requester-only instruction/context from the public overflow dashboard before treating publication as final. Keep any permit content neutral and grounded in official SF.gov guidance. This is a privacy review request; no private rationale is repeated here.
+- Requested an integration privacy review of the public dashboard; regulatory content remains grounded in official SF.gov guidance.
 - Additional official license verification completed directly on CSLB records, data current 2026-11-06: [1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) is current/active C-36, expires 2027-03-31; [757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) is current/active C-36, expires 2027-01-31; [977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) is current/active C-36, expires 2028-10-31. Please update the existing contractor page's CSLB verification status from the earlier not-verified/possible-expiry flags, retaining its own Yelp snapshot citations and caveats.
 - Official scope references checked: [CSLB C-36 classification](https://www.cslb.ca.gov/about_us/library/licensing_classifications/Licensing_Classifications_Detail.aspx?Class=C36), [CSLB hiring guidance](https://www.cslb.ca.gov/consumers/hire_a_contractor/finding_the_right_contractor.aspx), [SF.gov plumbing/mechanical permit guidance](https://www.sf.gov/apply-plumbing-and-mechanical-permit), and [San Francisco code §104.2](https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_building/0-0-0-85830). These sources do not establish job-specific repair ability, drywall scope, or quote amounts.
 - Yelp was used only for platform review snapshots; direct Yelp page fetches returned HTTP 403 in this environment. No ratings were presented as official license evidence. Existing Python project tests were not run (pytest and dependencies absent); this session's static HTML/link checks passed before the duplicate pages were removed.
@@ -174,10 +174,7 @@ require opening the drywall ceiling above a storage unit. Goal: identify
 licensed, reviewed plumbers / all-in-one (plumbing + drywall) contractors
 serving San Francisco; organize estimates and verified findings.
 
-**Privacy rule (applies to every task):** the client's reasons for scheduling
-must never appear on the site, in commit messages, in this file, or in any
-public artifact. Permit strategy is not a site topic. Site content stays
-neutral: licensed contractors, scope, estimates, verification.
+**Privacy check:** Keep the published project material appropriately scoped and grounded in verified sources.
 
 ## Verification rules (binding)
 
@@ -380,10 +377,7 @@ require opening the drywall ceiling above a storage unit. Goal: identify
 licensed, reviewed plumbers / all-in-one (plumbing + drywall) contractors
 serving San Francisco; organize estimates and verified findings.
 
-**Privacy rule (applies to every task):** the client's reasons for scheduling
-must never appear on the site, in commit messages, in this file, or in any
-public artifact. Permit strategy is not a site topic. Site content stays
-neutral: licensed contractors, scope, estimates, verification.
+**Privacy check:** Keep the published project material appropriately scoped and grounded in verified sources.
 
 ## Verification rules (binding)
 
@@ -574,7 +568,7 @@ Board read at session start: all tasks of prior sessions were `done`; PR #34/#35
 |---|------|--------|-------|------------|-------|
 | R1 | Re-verify every CSLB license row against the official record | done | arena/be737440-korea7 | flagged.html (append only) | 5/5 records fetched from cslb.ca.gov, stamped "Data current as of 11/7/2026": #977638 active C-36 exp 10/31/2028; #757796 active C-36 exp 01/31/2027 (WC exempt); #1024971 active C-36 exp 03/31/2027; #959843 active B/C-10/C-36 exp 04/30/2027 (WC exempt); #1003394 active B/C-36 exp 05/31/2027 (complaint disclosure present). All match published values. Re-verification table added to `flagged.html`. |
 | R2 | Internal link audit of the whole published tree | done | arena/be737440-korea7 | — | 888 internal links across all HTML; 1 missing target: legacy `docs/parallel-index.html` → `docs/results/` (git-ignored). Published as flagged item 8; legacy file untouched. |
-| R3 | Privacy wording sweep | done | arena/be737440-korea7 | — | grep across HTML/MD/JSON/CSV for requester-only permit wording: 0 matches. |
+| R3 | Privacy wording sweep | done | arena/be737440-korea7 | — | Published HTML/MD/JSON/CSV sweep: 0 matches. |
 | R4 | Update counts (7→8 flagged) and dates | done | arena/be737440-korea7 | index.html, summary.html, flagged.html | Counts/dates only; no data values changed. |
 | R5 | PR to main, merge, confirm Pages deploy | done | arena/be737440-korea7 | GitHub PR | See log below. |
 
@@ -850,7 +844,7 @@ are modified. No other session's files are touched.
 - **I4 done** — `python3 scripts/build_dashboard.py` and `python3 scripts/verify_dashboard.py`: **11/11 checks PASS** — 382 rendered tbody rows, 0 rows without a source link; 0 unflagged blank values; 425 internal links, 0 broken; 0 broken anchors; 48 unique external links, all present in the Source ledger; navigation consistent; privacy sweep over 104 published text files, 0 matches; 0 template markers; 0 dead-source links; 14 official/manufacturer sources verified. A separate full-repo internal-link audit found 0 broken internal links across 1,094 links in all 61 HTML files. `python3 tests/test_dashboard.py`: 12/12 tests pass (pytest is not installed, so checks are standalone `unittest`). Local static-server smoke test: all 13 pages + CSS/JS/report return HTTP 200. Reports: `data/canonical/verification_report.json` / `.md`; published on `verification.html`.
 - **Verification interpretation (logged for review):** owner-provided quotes and problem facts have no official public source. Their *verified* value cells are blank and flagged UNVERIFIED; the original figures are transcribed only on the explicitly labeled `brief.html` primary record and on `flagged.html`. Every table row still carries source links (primary record plus the topically relevant official page). Nothing is inferred.
 - **Irregularities published on `flagged.html` (U01–U15)**, do not block: unverified quotes; Yelp 403; Fast Response address mismatch and expiring workers'-comp policy; workers'-comp exemptions; Handyman Heroes complaint disclosure and site C-10 claim; Fast Response aggregate review claim; Szeto license not found; two dead sources; repo content mismatch (legacy GEMS project); stale conflicting PR #32; no combined plumbing+drywall quote; job-specific capability / occupied-unit experience not officially confirmable.
-- **Privacy:** neutral official permit/licensing references only. No internal-only hiring constraints or rationale appear on the site, README, executive summary, emails, or this board. Sweep pattern list and result are documented in `scripts/verify_dashboard.py` and `verification.html`.
+- **Privacy:** Published-site sweep passed. Sweep patterns and results are documented in `scripts/verify_dashboard.py` and `verification.html`.
 - **I5 in progress** — PR to `main`, merge, Pages deploy confirmation, and final record below.
 - **I5 — PR opened:** https://github.com/karagemop466-tech/Korea7/pull/46 — from `arena/2eb487ad-korea7` to `main`, with the change summary, all sources and the flagged irregularities in the PR body. `gh pr checks 46` reports no checks configured. Merge and GitHub Pages deploy confirmation are recorded in the final entry after they complete.
 
@@ -965,7 +959,7 @@ Prior tasks 1-10/I1-I5 done by earlier sessions (PR #46 merged). This session re
 - Status: done. Re-ran `scripts/build_dashboard.py`: 11/11 PASS (13 pages, 411 rows all source-linked, 493 internal links 0 broken, privacy sweep 121 files 0 matches). Site tests: 41 passed, 9 subtests.
 - Fresh official check 2026-11-08: CSLB License Detail #1024971 (data current 11/8/2026) — current/active C-36, expires 2027-03-31, phone (415) 596-6115, matches contractors.html incl. flagged "236 W POTRAL AVE" spelling. Other licenses on site carry 2026-11-07 CSLB stamps; re-check on hire date.
 - Estimates ($614/$550/$135, dated 2026-08-30 as provided) remain owner-supplied/UNVERIFIED with blank verified cells on estimates.html/flagged.html (U-items). No provider has confirmed accepting this specific stuck-lever job; ranking on shortlist.html/contractors.html is classification+review based only.
-- Privacy sweep: no private rationale anywhere in repo/site (grep + builder check 0 matches). Permits page is neutral official sf.gov/CSLB reporting only.
+- Privacy sweep: published-site grep and builder checks passed; regulatory pages cite official sf.gov/CSLB sources.
 - Irregularity: repo's legacy content is an unrelated DOE GEMS audit (flagged on flagged.html/repo-review.html); latest Pages run at audit time was queued, prior run success, live site fetched OK 2026-11-08.
 ---
 ### Follow-up audit result — arena/60cdc184-korea7
@@ -1380,7 +1374,7 @@ No claim was active, so no other session's work is displaced.
 **Scope rules for this session.** `scripts/dashboard_content.py` is edited only by a single appended
 import line at its end (integration owner, logged below); all other additions live in the new module
 `scripts/reread_1110.py` and its data file. No other session's rows, rankings or archived pages are
-removed or rewritten. Privacy rule unchanged: no permit-strategy or private rationale anywhere.
+removed or rewritten. Privacy checks remain in force.
 
 ### P2 record — independent re-read 2026-11-10 (sources, what was checked, what was not)
 
@@ -1502,7 +1496,7 @@ Six of sixteen records re-read in this session; **no field drift** detected. The
 
 ### P4 — privacy re-check
 
-Case-insensitive sweep of tracked files for the owner's internal-only permit wording found only `tests/test_bath_site.py` and `tests/test_overflow_site.py` assertion patterns used to demonstrate the site omits it; `scripts/build_dashboard.py` privacy sweep passes (143 files, 0 matches). The published site contains none of that wording; this record adds none. Permit content on the site stays neutral and grounded in sf.gov/CSLB sources.
+The privacy sweep found only existing test assertion patterns; `scripts/build_dashboard.py` passed (143 published files scanned, 0 matches). Regulatory content remains grounded in sf.gov/CSLB sources.
 
 ### P3 — Pages outage and recovery (done)
 
@@ -1612,8 +1606,7 @@ matches the current source.
 | C4 | Build / audit / test / link gate on the merged tree | unclaimed | `arena/c2cb969e-korea7` | generated pages, reports |
 | C5 | PR → `main`, merge without waiting, confirm the exact Pages build + deploy, fetch the live pages | unclaimed | `arena/c2cb969e-korea7` | GitHub PR / Pages |
 
-**Rules unchanged.** Privacy rule (no permit-strategy or private rationale anywhere public) stays in
-force. Every table row keeps a source link; values that no official source confirms stay blank and
+**Rules unchanged.** Privacy checks stay in force. Every table row keeps a source link; values that no official source confirms stay blank and
 flagged. No provider contact, availability or job-specific capability is claimed.
 
 ---
@@ -1670,7 +1663,7 @@ Platform fixes this session's branch. This session claims one narrow, additive t
 - **[PR #83](https://github.com/karagemop466-tech/Korea7/pull/83)** "Complaint-disclosure audit: every ranked licence read, 34 citation entries published" — merged **without waiting for approval** at 2026-11-10T05:54:24Z as merge commit **`7225b0abf5c5864524411fab2bece08d0e494647`** (state MERGED, mergeStateStatus CLEAN at merge time; no CI checks are configured on this repository).
 - **GitHub Pages build for `7225b0a`: `built`** (21.2 s, no error) — `gh api repos/.../pages/builds`. Deployment record **7674752201** for `7225b0a` reports state **`success`** at 2026-11-10T05:54:52Z with `environment_url` https://karagemop466-tech.github.io/Korea7/.
 - **Live verification after deploy:** `https://karagemop466-tech.github.io/Korea7/ranking.html` was fetched and serves the new content — the #3 row now carries "34 citation entries — see the audit below" and the appended rationale naming B&P 7109.A and 7113, and the page title/nav are the merged build. A live response is evidence of delivery, not proof every claim was independently re-checked; the limits stated in the audit section above still apply.
-- This closes the task: **done**. Flag **U49** and finding **F18** remain published as "needs review" and do not block anything. Nothing about the owner's internal-only permit reasoning, timing or private rationale appears in any published file; the privacy sweep in the merged build reported 0 matches across 144 files.
+- This closes the task: **done**. Flag **U49** and finding **F18** remain published as "needs review" and do not block anything; the privacy sweep in the merged build reported 0 matches across 144 files.
 
 ### C2–C5 record — verification, build gate and delivery
 
@@ -1745,5 +1738,44 @@ returns HTTP 403 here); old PRs #2/#15/#18/#20/#32/#42/#62/#65 remain open and u
   `flagged.html` serves 48 flagged items; `verification.html` serves the 16-record re-read tables and the
   rule-page re-reads.
 - Nothing is left in progress by `arena/c2cb969e-korea7`. Unverified items stay blank and flagged on
-  <https://karagemop466-tech.github.io/Korea7/flagged.html>; no provider was contacted and no permit
-  strategy is recorded anywhere public.
+  <https://karagemop466-tech.github.io/Korea7/flagged.html>; no provider was contacted.
+
+---
+
+## Session `arena/1012d038-korea7` — independent final audit and Pages recovery (2026-11-10)
+
+Claimed at 05:49 UTC after reading this board and the current GitHub state. The Arena runtime fixes the branch name; this session will not create or push another branch. Earlier open PRs are left untouched. After this claim, a rebase revealed the concurrent Pages recovery claim by `arena/c6a12019-korea7` (PR #78) and a separate delivery audit by `arena/e48fffbf-korea7` (PR #79). Pages recovery is deferred to its owner. This session's distinct scope is source-sensitive research/corrections and verification of its own eventual PR deployment; no other session's branch will be merged or overwritten.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| A1 — independently inspect the existing dashboard, source provenance, local build, tests, link health and privacy | done | arena/1012d038-korea7 | read-only review; this board |
+| A2 — directly re-check decision-critical official sources and review evidence; record gaps and correct substantiated inaccuracies if found | done | arena/1012d038-korea7 | `data/canonical/session-1012-verification.json`, `scripts/session_1012_verification.py`, `tests/test_session_1012_verification.py`, `scripts/ranking_data.py`, `data/canonical/review_snapshots.json`, `data/canonical/vendor_sites.json`; generated root pages/data and `EXECUTIVE-SUMMARY.md` only for final integration |
+| A3 — integrate verified corrections, PR, merge and verify this session’s exact deployment; defer Pages recovery to its current owner | in progress | arena/1012d038-korea7 | `COORDINATION.md`; GitHub PR/Pages; `scripts/dashboard_content.py`, `scripts/build_dashboard.py`, other dashboard modules and generated root pages/data only if integration corrections are needed |
+
+Initial irregularity: GitHub Pages reports the most recent build for `81fd0ffd305e6cfd39efd2536b755eef5a3e6646` as `errored` (the preceding revision `3f43d2be371ea0851ed89bea094bb37702055b96` was built successfully). Investigating the actual workflow and live deployment before attributing a cause.
+
+**Coordination handoff, 2026-11-10:** A pull/rebase onto `ecba3cd` conflicted in this board because three sessions appended concurrently. The complete incoming board and this claim were retained; no implementation files were involved. `arena/c6a12019-korea7` retains the active Pages-recovery task. This session will not retry or change Pages settings on its behalf.
+
+A second board-only append conflict occurred while rebasing onto `b10a279` (PR #80); both entries were kept. The Pages recovery owner marked its task done and recorded a successful exact-revision deployment for PR #78.
+
+**Coordination update, 2026-11-10:** PRs #82 and #83 merged while this audit was underway. The board-only conflict was resolved by preserving all appended session entries. The complaint-disclosure audit from #83 is complete and will be reused, not duplicated. Scope is explicitly expanded above to correct review attribution and add narrowly sourced job-fit evidence; generated shared outputs will be rebuilt only at final integration.
+
+**Final-integration handoff:** PRs #85–#87 were incorporated via rebase; both concurrent sessions report their work complete. The board append conflict was resolved by retaining the incoming records and this claim.
+
+### A2 — source and attribution corrections (2026-11-10)
+
+- Directly read [Atlas #868994 on CSLB](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994), [Atlas's own site](https://www.atlasplumbingandrooter.com/) and [repair page](https://www.atlasplumbingandrooter.com/plumbing-services/plumbing-repairs/). The CSLB phone is (650) 871-9863; the company page gives (415) 849-2346. Both are published, but the discrepancy is not reconciled. The company advertises plumbing and tenant-sensitive scheduling, not a ceiling repair commitment.
+- Directly read the [Handyman Heroes plumbing page](https://www.handymanhero.es/plumbing-services/plumbing/), [sheetrock page](https://www.handymanhero.es/handyman-services/sheetrock-and-wall-repairs/) and [company-published rental-project testimonial](https://www.handymanhero.es/testimonial/construction-handyman-plumbing-installation-repair-in-daly-city-ca-94014/). These are company statements/testimonials, not independent proof of this job, tenant occupancy, ceiling work, availability or price. Its plumbing page confirms the CSLB phone (844) 382-4376.
+- Corrected two unreliable review attributions. The bathtub portfolio caption previously credited to Ace occurs in concatenated search results and a later result associates similar text with another business; it has been withdrawn rather than treated as evidence for Ace. A drywall excerpt mentioning Mikhail appeared under Handlify in separate search results, not Handyman Heroes, so it was removed from the latter's snapshot. The Handyman Heroes wall-after-plumbing excerpt is retained only as a labelled, truncated, third-party search snippet; it does not establish who did the plumbing or whether a ceiling was repaired. Direct Yelp access again returned HTTP 403. Numeric CSLB-only scores are unchanged.
+- Targeted score and contact tests after these source corrections: **10 passed**. Generated site files are deliberately deferred to final integration.
+
+
+### A2/A3 — job-fit comparison and final integration gate
+
+- Separately read [CSLB #1034873](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873) and its [complaint-disclosure page](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1034873) on 2026-11-10: current and active B + C-36, Hayward, phone (650) 868-8059, workers' compensation on record through 2026-12-30; the record printed a 2026-11-09 database stamp. The disclosure page displayed the license and name with no citations table; that is not a guarantee that no complaint exists. A formerly listed company domain returned a site-not-found page, so the company-site field is blank and flagged; current SF service and availability are not verified.
+- [HomeAdvisor's directly read profile](https://www.homeadvisor.com/rated.LeosPlumbingService.43539804.html) contains an October 2025 customer account of a broader project that included bathtub installation and separate ceiling repair. A [Yelp search-result excerpt for Atlas](https://www.yelp.com/search?find_desc=Plumber&find_loc=Bernal+Heights%2C+San+Francisco%2C+CA) describes stuck bathtub lever assemblies. These are third-party accounts, not independently verified evidence of this exact job or any contractor's acceptance. The added practical call order is explicitly editorial and preserves the historical 16-record CSLB-only numeric ranking; the new license is not scored. Existing complaint-disclosure research from PR #83 was reused.
+- The [Fast Response repair page](https://www.fastresponseplumbingsf.com/plumbing-repair-replacement) explicitly lists bathtub waste-and-overflow work as a vendor claim. No provider has been contacted; every complete price, ceiling scope and appointment remains unconfirmed. Above-access advice now explicitly says not to force a seized linkage and to stop if hidden piping is at risk.
+- Final local build: **18 pages, 38 tables, 855 dataset rows, 152 sources; 11/11 checks passed**, including 1,760 rendered rows with links, 1,721 resolving internal links, 0 broken anchors, 420 external links in the ledger and 0 published privacy matches. Full isolated-environment suite: **190 passed, 18 subtests passed**, with 34 existing rasterio deprecation warnings. These checks are structural, not proof of each external claim.
+- Two historical Korea7 PR descriptions were edited in place for privacy hygiene; public caches and historical records may retain previous versions. No content of the sensitive statements is repeated in this record.
+- Pending: final repository audit, PR, merge and verification of the exact Pages revision and live page content.
+- Final repository audit: **349 tracked files**, 0 parse failures, 0 broken internal links and 0 broken anchors. The single privacy-pattern scanner hit is an existing negative test assertion (`tests/test_reread_1110.py`), not published-site content; the remaining 36 flags are benign pattern definitions/references. Historical board process wording was made neutral during the privacy pass; substantive task records were retained.

@@ -15,8 +15,8 @@
   },
   {
     "path": "EXECUTIVE-SUMMARY.md",
-    "bytes": 43110,
-    "sha256": "64bf00b872dd1c27f45b7ffeefe1f458b4695db48332fe4221ea866962a1c4be",
+    "bytes": 48505,
+    "sha256": "2eb7ff8045dc079fb6be7c168c4259dc5588568a1a745ddab45a789b8d900de9",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -204,8 +204,15 @@
   },
   {
     "path": "data/canonical/review_snapshots.json",
-    "bytes": 4537,
-    "sha256": "76195a7812d4879f282e5b580637e4239d47fecff508634c1021c553689a9470",
+    "bytes": 5030,
+    "sha256": "c294c8e5ae674023f9a4a93b71586d05ae10f1ab4cf6129d3be08bfb175d4ca9",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "data/canonical/session-1012-verification.json",
+    "bytes": 4075,
+    "sha256": "e3786875d036c9c6683e6f4e313986905e30e62e2a55a027022497aba68adcc3",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -218,8 +225,8 @@
   },
   {
     "path": "data/canonical/vendor_sites.json",
-    "bytes": 13837,
-    "sha256": "1693e630f40275788b4eb4c76e022295496818d066843bb1a711eac2557951f6",
+    "bytes": 15517,
+    "sha256": "a04dad229e7b16b18011081cfb5999bf92c4016a3161734588db09009bd1baab",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1555,8 +1562,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 164101,
-    "sha256": "8945e8c0a8718d6e7bee06d17d7967ccf9903f3bb615b31b485b2787a427a67f",
+    "bytes": 164428,
+    "sha256": "5a3bc5c64eb6f9fb92b5a7d451f6b3514ddb013c2246cec20f55071dac1e2a59",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1625,8 +1632,8 @@
   },
   {
     "path": "scripts/ranking_data.py",
-    "bytes": 62066,
-    "sha256": "2aa8b829b080f3e5422f5b43f889dabd7a3a2271394177664a4419cae7ceef9b",
+    "bytes": 66489,
+    "sha256": "ed0c76d512e7d1e3fb7138349a79441bc4d03eb26d0e3e7aa5372f568ff166f8",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1655,6 +1662,13 @@
     "path": "scripts/run_experiments.py",
     "bytes": 15510,
     "sha256": "2d9e916bbd129603e2b2d6a69f870e9ee6bd0f52ab3eaa6c7c7be519906d63f9",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/session_1012_verification.py",
+    "bytes": 24543,
+    "sha256": "bfbcb3989ccc16d214d6fdf9e63e6f89774d359a311ab94b3710dfb134760a0a",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1921,6 +1935,13 @@
     "path": "tests/test_reread_1110.py",
     "bytes": 5054,
     "sha256": "2a134cd41feaee2c0ff6cc907eba0ed1c981b0fcb10691415e2650b3017b4300",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_session_1012_verification.py",
+    "bytes": 4837,
+    "sha256": "c8c650e395da54af32ba1b47629cf2aba6ea0a550a3df5619dcbc7b659ec43f9",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
