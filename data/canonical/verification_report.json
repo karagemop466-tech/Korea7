@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T01:00:59+00:00",
+  "generated_at": "2026-11-10T01:02:20+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -21,15 +21,15 @@
   ],
   "counts": {
     "pages": 17,
-    "tables": 30,
-    "rows": 735,
-    "source_ledger_entries": 132,
-    "verified_sources": 114,
+    "tables": 31,
+    "rows": 747,
+    "source_ledger_entries": 134,
+    "verified_sources": 116,
     "official_or_manufacturer_verified": 55,
-    "generated_tbody_rows": 1497,
-    "internal_links_checked": 1558,
-    "unique_external_links": 395,
-    "published_text_files_scanned": 140
+    "generated_tbody_rows": 1544,
+    "internal_links_checked": 1591,
+    "unique_external_links": 399,
+    "published_text_files_scanned": 142
   },
   "checks": [
     {
@@ -40,7 +40,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1497 tbody rows checked, 0 missing links"
+      "detail": "1544 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -50,7 +50,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1558 internal links checked, 0 broken"
+      "detail": "1591 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -60,7 +60,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "395 unique external links, 0 unknown/dead"
+      "detail": "399 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -70,7 +70,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "140 files scanned, 0 matches"
+      "detail": "142 files scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -85,7 +85,7 @@
     {
       "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "55 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 114 sources marked verified overall (metadata only; no network check)"
+      "detail": "55 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 116 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -126,12 +126,14 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/conftest.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/bridge/existing_faults.tif",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/bridge/sample_submission.tif",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/closeout-2026-11-10.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/cslb_records.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/decision_analysis.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/delivery-2026-11-10.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/evidence-2026-11-08.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/providers-2026-11-08.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/research-history-2026-11-07.json",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/reverification-2026-11-10.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/review_snapshots.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/source_checks.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/vendor_sites.json",
@@ -358,6 +360,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/shortlist.html",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_bath_site.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_canonical_integrity.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_closeout.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_dashboard.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_dashboard_integrity.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_delivery.py",
@@ -444,6 +447,7 @@
     "https://www.fastresponseplumbingsf.com/plumbing-repair-replacement",
     "https://www.genteelplumbers.com/contact",
     "https://www.handymanhero.es/",
+    "https://www.handymanhero.es/construction-services/",
     "https://www.handymanhero.es/handyman-services/",
     "https://www.hunker.com/13417812/the-trip-lever-in-my-bathtub-is-stuck/",
     "https://www.mannysplumbingandremodeling.com/",

@@ -171,12 +171,26 @@
 <td><span class="pill ok">reviewed</span></td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/source_checks.json" title="Field-level source checks (JSON)">S102</a> · <a href="data/canonical/decision_analysis.json" title="Supplemental evidence-strength decision analysis (JSON)">S103</a> · <a href="data/canonical/repo_audit.md" title="Repository line-by-line audit artifact">S104</a></span></td>
 </tr>
+<tr>
+<td>Independent re-verification 2026-11-10</td>
+<td>Session arena/86db387f-korea7 re-read all sixteen CSLB License Detail records, the sf.gov permit pages, the CSLB C-36 / B / C-9 classification pages, BPC §7048 and §7059, and two contractor sites, then re-ran the build, the site tests and the repository audit. It found no licence drift and corrected one stale exemption count (U45).</td>
+<td>16/16 records current and active with unchanged fields (records printed 'Data current as of 11/9/2026'); build 11/11 PASS; full suite 160 passed, 18 subtests; repository audit 0 broken links, 0 broken anchors, 0 parse failures. This is desk verification — no provider was contacted and no quote was confirmed.</td>
+<td><span class="pill ok">reviewed 2026-11-10</span></td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/reverification-2026-11-10.json" title="Re-verification log 2026-11-10 (JSON)">S120</a> · <a href="https://www.sf.gov/apply-plumbing-and-mechanical-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Apply for a plumbing and mechanical permit">S01</a> · <a href="https://www.sf.gov/information--check-if-your-construction-project-needs-permit" target="_blank" rel="noopener noreferrer" title="SF.gov — Check if your construction project needs a permit">S02</a> · <a href="https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener noreferrer" title="CSLB — Check a License">S04</a> · <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&amp;sectionNum=7048" target="_blank" rel="noopener noreferrer" title="California Business &amp; Professions Code §7048">S13</a> · <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&amp;lawCode=BPC" target="_blank" rel="noopener noreferrer" title="California BPC §7059 — specialty contractor incidental work">S62</a></span></td>
+</tr>
+<tr>
+<td>Archived duplicate plumbing sites still in the tree</td>
+<td>Four earlier plumbing microsites remain published alongside the primary dashboard: bathtub-overflow/, docs/bath/, docs/plumbing-index.html (+ docs/overflow-*.html) and sf-overflow-audit/. They are linked from the dashboard as archived material and were not edited.</td>
+<td>Confirmed by path scan of the checkout and by the internal-link audit (0 broken). Consolidating or removing them is an owner decision, not something this session changes.</td>
+<td><span class="pill warn">flagged for owner decision</span></td>
+<td class="src-col"><span class="src-ids"><a href="bathtub-overflow/executive-summary.html" title="Parallel microsite (archived)">S49</a> · <a href="docs/bath/index.html" title="Parallel microsite (archived)">S50</a> · <a href="docs/plumbing-index.html" title="Parallel dashboard (archived)">S51</a> · <a href="sf-overflow-audit/index.html" title="SF overflow audit — parallel session dashboard">S60</a> · <a href="data/canonical/reverification-2026-11-10.json" title="Re-verification log 2026-11-10 (JSON)">S120</a></span></td>
+</tr>
 </tbody>
 <caption>Repo review was performed by reading the files in the checkout and querying the GitHub API. Links point to the repository files and Pages site for manual review. Irregularities are also published on the Flagged for Review page.</caption>
 </table></div></section>
 <section class="section">
-<h2>Line-by-line source/artifact inventory (311 files)</h2>
-<div class="table-wrap" tabindex="0" role="region" aria-label="Line-by-line source/artifact inventory (311 files) table"><table class="data-table">
+<h2>Line-by-line source/artifact inventory (314 files)</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Line-by-line source/artifact inventory (314 files) table"><table class="data-table">
 <thead><tr>
 <th>Path</th>
 <th>Bytes</th>
@@ -211,8 +225,8 @@
 </tr>
 <tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/README.md" target="_blank" rel="noopener noreferrer"><code>README.md</code></a></td>
-<td>30796</td>
-<td><code class="hash">0687c0530856a7523285b5c24fb111d89cf1ddced5242448faac8d8b9ac83f1d</code></td>
+<td>30883</td>
+<td><code class="hash">5b39c6152b4a1b27198641974c1010161b8c23ad0f336743b89ccc021ceb02da</code></td>
 <td>preserved-archive-or-unrelated</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
@@ -346,6 +360,14 @@
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
 </tr>
 <tr>
+<td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/closeout-2026-11-10.json" target="_blank" rel="noopener noreferrer"><code>data/canonical/closeout-2026-11-10.json</code></a></td>
+<td>1146</td>
+<td><code class="hash">2c01f3ff4bc61c4fecde386cd7885db11e022efd005842dac415984b3aeb914a</code></td>
+<td>preserved-archive-or-unrelated</td>
+<td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
+</tr>
+<tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/cslb_records.json" target="_blank" rel="noopener noreferrer"><code>data/canonical/cslb_records.json</code></a></td>
 <td>25868</td>
 <td><code class="hash">53ed81dd21635e7b4d30815b89ef978a687b579f2ea601d5e75a24afc877cc21</code></td>
@@ -389,6 +411,14 @@
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/research-history-2026-11-07.json" target="_blank" rel="noopener noreferrer"><code>data/canonical/research-history-2026-11-07.json</code></a></td>
 <td>160431</td>
 <td><code class="hash">57535181d5dc5791b7ef0f99cf2dc74347f830cf1bd1157258a34e3e8f2f63f0</code></td>
+<td>preserved-archive-or-unrelated</td>
+<td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
+</tr>
+<tr>
+<td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/data/canonical/reverification-2026-11-10.json" target="_blank" rel="noopener noreferrer"><code>data/canonical/reverification-2026-11-10.json</code></a></td>
+<td>11732</td>
+<td><code class="hash">728242a845ac9d1b5d8204805a4838f7f74d72a58ded75be3055eb23f6ff91b6</code></td>
 <td>preserved-archive-or-unrelated</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
@@ -1931,16 +1961,16 @@
 </tr>
 <tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/scripts/dashboard_content.py" target="_blank" rel="noopener noreferrer"><code>scripts/dashboard_content.py</code></a></td>
-<td>149709</td>
-<td><code class="hash">05dce62aedd7987063271642d58152d9810962ce261b54a16c80cc9dc44a8f07</code></td>
+<td>163318</td>
+<td><code class="hash">5b47731611d6ef48ae9a0eb68d6326a76150c3538b2ee1f59265b36031c4e6a9</code></td>
 <td>current-plumbing-source</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
 </tr>
 <tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/scripts/delivery_data.py" target="_blank" rel="noopener noreferrer"><code>scripts/delivery_data.py</code></a></td>
-<td>5387</td>
-<td><code class="hash">f00b640d8eec2278c83f91d2d2dc3b7529d6d5cc00cf0cc92488aa5ec3c433b8</code></td>
+<td>8528</td>
+<td><code class="hash">8c29982e8a54a5afa0400a8ec906276e4031cb69a251c11469b95a013fb8d83e</code></td>
 <td>preserved-archive-or-unrelated</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
@@ -2011,8 +2041,8 @@
 </tr>
 <tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/scripts/recheck_data.py" target="_blank" rel="noopener noreferrer"><code>scripts/recheck_data.py</code></a></td>
-<td>35751</td>
-<td><code class="hash">a8fc8bc176ea3b72b86f04f0f14cc3ba101bfd829d9c33b11383bb9ac04e7e20</code></td>
+<td>36580</td>
+<td><code class="hash">aad33a7dcd90a43c728f17522be57ef40b9cfc08dfaf8225d358437792999a03</code></td>
 <td>current-plumbing-source</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
@@ -2202,6 +2232,14 @@
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
 </tr>
 <tr>
+<td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_closeout.py" target="_blank" rel="noopener noreferrer"><code>tests/test_closeout.py</code></a></td>
+<td>1125</td>
+<td><code class="hash">9094b3c71fbce9d2af62a03a4cecb3a6a08caebe1f6f027d558b47f7a98ff07c</code></td>
+<td>preserved-archive-or-unrelated</td>
+<td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
+<td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
+</tr>
+<tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_dashboard.py" target="_blank" rel="noopener noreferrer"><code>tests/test_dashboard.py</code></a></td>
 <td>6570</td>
 <td><code class="hash">92c32f218e95b86c371e4cb26563048f0265fef11f2180170d495355196e9a84</code></td>
@@ -2243,8 +2281,8 @@
 </tr>
 <tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_followup_audit.py" target="_blank" rel="noopener noreferrer"><code>tests/test_followup_audit.py</code></a></td>
-<td>1106</td>
-<td><code class="hash">34289d6145e01465692dac044263018c92205df384edf3ff957673b1073d2227</code></td>
+<td>1938</td>
+<td><code class="hash">93acb18b59696f397ee0d5fce08d4ae381f08240af8fb429ad552d508e3dcf41</code></td>
 <td>current-plumbing-source</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>
@@ -2316,7 +2354,7 @@
 <tr>
 <td><a href="https://github.com/karagemop466-tech/Korea7/blob/arena/2a57ff73-korea7/tests/test_recheck.py" target="_blank" rel="noopener noreferrer"><code>tests/test_recheck.py</code></a></td>
 <td>3931</td>
-<td><code class="hash">6579f1576718ae87ce1b12de4dba17f7233659c3d427ad332985a6f6db264f74</code></td>
+<td><code class="hash">53476757f65b6819d3b70aedc9b88e356562c85c154f9df58491a397009e08f9</code></td>
 <td>current-plumbing-source</td>
 <td>hashed source/artifact inventory; external factual claims not verified by this hash</td>
 <td class="src-col"><span class="src-ids"><a href="data/canonical/repo_inventory.json" title="Repository source/artifact inventory">S98</a></span></td>

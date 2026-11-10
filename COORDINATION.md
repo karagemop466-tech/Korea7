@@ -1267,3 +1267,65 @@ Irregularities recorded (not blocking):
 - `python3 scripts/build_dashboard.py` → **11/11 PASS**: 17 pages, 30 tables, 735 dataset rows, 132 sources, 1,497 rendered tbody rows with 0 missing source links, 1,558 internal links and 0 broken anchors, 395 unique external links all present in the ledger, privacy sweep 140 files / 0 matches, 0 template markers.
 - `tests/` full suite: **171 passed, 18 subtests passed** (34 pre-existing rasterio `Affine` deprecation warnings, unrelated legacy GEMS tests). New `tests/test_recheck.py` adds 8 checks over the dated transcription, the delta computation, the company-page reads, the flag and the absence of any booking/capability claim.
 - Build and tests were run in a disposable virtualenv (`rasterio`/`scipy` installed from PyPI) because the sandbox ships no third-party packages; the committed site builder itself needs no third-party dependency.
+
+### Merge note — conflict resolution (arena/2a57ff73-korea7, 2026-11-10)
+
+Incoming `main` (PRs #69/#70/#72, sessions `arena/86db387f-korea7` and `arena/fd9508fc-korea7`) appended its own board sections while this session was working. No incoming work was discarded: both new sections are preserved verbatim below. Collisions found and resolved rather than overwritten: the concurrent re-verification had already claimed source ids S111–S120 and flag U46, so this session's new sources were re-allocated to S133+ and its flag renumbered U47; the duplicate page role was resolved by cross-linking (this session's `recheck.html` cites the other session's `reverification-2026-11-10.json` on `verification.html` instead of presenting two competing claims). Generated HTML/data conflicts were resolved by rebuilding from the merged sources.
+
+## Session arena/fd9508fc-korea7 — 2026-11-10 delivery close-out
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| F1 Independent selected-source corroboration and delivery boundary | in progress | arena/fd9508fc-korea7 | data/canonical/closeout-2026-11-10.json; scripts/delivery_data.py; tests/test_closeout.py; generated canonical outputs |
+| F2 Regression, PR and Pages delivery close-out | in progress | arena/fd9508fc-korea7 | COORDINATION.md; GitHub PR/Pages |
+
+Fixed Arena branch takes precedence over requested alternative branch naming. Prior N1 is complete; N2 close-out is taken over after PR #67 merged. No open PR or other owner's unfinished files will be changed. Historical checks will not be relabeled as new verification. External link structural validity is not external reachability.
+
+- Coordination conflict resolved by preserving both the incoming PR #68 close-out and this session claim. Initial shallow-history rebase was aborted safely, full history fetched, then the append-only board conflict resolved without discarding either entry. N2 was already completed in PR #68; this session is an independent corroboration, not a takeover.
+
+### F1 complete — independent corroboration and scope-fit supplement
+
+- Independently read five pages: [Ace CSLB #829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [Ace homepage](https://www.aceplumbingandrooter.com/), [Genteel contact](https://www.genteelplumbers.com/contact), [Handyman Heroes homepage](https://www.handymanhero.es/), [Handyman Heroes construction](https://www.handymanhero.es/construction-services/). Selected corroborated fields and exact CSLB timestamp are in `data/canonical/closeout-2026-11-10.json`. Other historical sources are not claimed reverified.
+- Added S111 and a three-row practical scope-fit comparison to Latest verification. Preserved the existing numerical ranking without implying that licensing tenure measures repair skill. All-in prices remain blank/UNVERIFIED; exact repair experience and one-contract restoration are unconfirmed. Company-hosted drywall testimonial is not independent project evidence. Existing U45 and other review flags remain visible.
+- Build: 16 pages, 27 tables, 694 dataset rows, 111 sources; 1,415 rendered rows with zero missing links; 1,505 internal links and zero broken links/anchors; privacy sweep zero matches. Structural external-link ledger checks are not live reachability checks.
+- Full regression in a fresh ignored virtual environment: 165 passed, 18 subtests passed, 34 existing rasterio deprecation warnings. Initial system-Python test attempt had no pytest installed; resolved using the isolated environment. Repository audit: zero parse failures or broken internal links/anchors. No outreach or booking performed.
+- F1 status: done. F2 pending PR/merge/deploy confirmation.
+
+---
+
+## Session `arena/86db387f-korea7` — independent re-verification + final integration (2026-11-10)
+
+The Arena runtime fixes this session's branch to `arena/86db387f-korea7`; no other branch is created or pushed. The branch was cut from `main` at `f3759a3` (PR #66). The integrated dashboard already exists at the repository root (16 pages, generated by `scripts/build_dashboard.py`); this session does **not** rebuild or replace it and does not touch the archived sets (`docs/bath/**`, `bathtub-overflow/**`, `docs/plumbing-*.html`, `docs/overflow-*.html`, `sf-overflow-audit/**`) or the unrelated legacy GEMS pages.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| V1 — Claim, read the board, confirm the live revision and build baseline | done | arena/86db387f-korea7 | COORDINATION.md |
+| V2 — Re-read all 16 CSLB license records and the official SF.gov permit guidance directly on 2026-11-10; record any drift | done | arena/86db387f-korea7 | data/canonical/reverification-2026-11-10.json |
+| V3 — Line-by-line audit of the published tables (phone, status, expiry, blanks, flags, privacy) | done | arena/86db387f-korea7 | read-only review of generated pages; corrections via scripts/ |
+| V4 — Record the 2026-11-10 re-verification on the site; rebuild, test, link-check | done | arena/86db387f-korea7 | scripts/dashboard_content.py, generated root pages, tests, README.md |
+| V5 — PR to `main`, merge, confirm the exact Pages deployment and live content | in progress | arena/86db387f-korea7 | COORDINATION.md; GitHub PR/Pages |
+
+**Log.**
+- 2026-11-10: Claim registered before substantive edits. Baseline at `f3759a3`: `python3 scripts/build_dashboard.py` → 11/11 PASS (15 pages, 25 tables, 672 rows, 1371 rendered tbody rows with 0 missing source links, 1448 internal links / 0 broken, privacy sweep 136 files / 0 matches); site suite `76 passed, 18 subtests passed`. Pages is `built` on `main` and run 42537482715 for `f3759a3` completed successfully; the live root was fetched and serves the integrated dashboard.
+
+### V2–V4 record — sources, verification performed, irregularities
+
+**Direct official reads on 2026-11-10.** All sixteen CSLB License Detail records were fetched and read again — #977638, #757796, #1024971, #959843, #1003394, #829071, #1115649, #841229, #1025814, #1009195, #995163, #1089561, #632743, #868994, #1140843, #1075566. Every record printed “Data current as of 11/9/2026”; all sixteen remain current and active, and every field compared (business name, business phone, status, classifications, expiry, workers' compensation class and exemption, additional status, complaint disclosure) is **unchanged** from the 2026-11-07/08 transcription. Log: `data/canonical/reverification-2026-11-10.json`.
+Other official pages re-read the same day: [sf.gov plumbing/mechanical permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit) (permit-before-cutting wording and the C4/C16/C20/C36/C54/B/A licence list unchanged), [sf.gov no-permit list](https://www.sf.gov/information--check-if-your-construction-project-needs-permit) (“minor repairs to existing interior plaster or wallboard” still listed), [CSLB C-36](https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36), [CSLB B §7057](https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B), [CSLB C-9](https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9), [BPC §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048) (under $1,000 / casual-minor / no building permit, AB 1170 effective 2026-01-01) and [BPC §7059](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7059.) (incidental-and-supplemental sentence). All wording unchanged.
+Company pages re-read: [Fast Response repair page](https://www.fastresponseplumbingsf.com/plumbing-repair-replacement) (still lists bathtubs — waste & overflow; (415) 596-6115; states CSLB #1024971 · C-36) and [Genteel contact page](https://www.genteelplumbers.com/contact) (415-465-5853; 1181 Revere Avenue). [Angi’s SF bathtub-restoration category](https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm) still shows 17 verified reviews and “Last update on October 14, 2024”; its visible review text contains no tenant-occupied multi-unit plumbing-plus-drywall project, so the earlier, narrower wording on the site was correct and is retained.
+
+**Corrections published (not only logged).**
+1. **U06 / F10 / executive summary — exemption count.** The site said four of the records carry the workers'-compensation “no employees” exemption. Five carry it: #757796, #959843, #1115649, #841229 **and #632743**, which entered the candidate set after the flag was written. Corrected to five with #632743 named and its CSLB record linked; the correction itself is published as **U45** so the change is reviewable.
+2. **U04 — Fast Response address.** Three addresses are now documented: Yelp 4444 Geary Blvd Ste 203 (prior snapshot), CSLB “236 W POTRAL AVE #459” (the misspelling is CSLB's own), and the company's own payment FAQ “236 W Portal Ave #259”. Not reconciled by this site — the owner should ask which is the mailing address.
+
+**Unresolved irregularities carried forward (all published on `flagged.html`, none blocking):** owner-supplied quotes remain UNVERIFIED with blank verified cells; Yelp still blocks automated fetches (403) so platform ratings stay third-party and unscored; no provider has been contacted and no one has confirmed availability, drywall scope or this specific stuck-lever repair; four archived plumbing microsites (`bathtub-overflow/`, `docs/bath/`, `docs/plumbing-index.html` + `docs/overflow-*.html`, `sf-overflow-audit/`) remain published beside the primary dashboard and their consolidation is an owner decision; the repository's legacy content is an unrelated DOE GEMS audit; PR #32 and PR #62/#65 remain open and were not touched.
+
+**Checks run before the PR.** `python3 scripts/build_dashboard.py` → **11/11 PASS** (15 pages, 25 tables, 678 rows, 105 sources, 1,406 rendered tbody rows with 0 missing source links, 1,474 internal links / 0 broken, 0 broken anchors, 391 external links all in the ledger, privacy sweep 137 files / 0 matches). `python3 scripts/audit_repository.py` → 330 tracked files, 81,510 text lines, 0 parse failures, 0 broken internal links, 0 broken anchors. `pytest -q tests/` in a throwaway venv (pytest 9.2.0, numpy 2.4.6, rasterio 1.4.4) → **160 passed, 18 subtests passed**, 34 pre-existing rasterio Affine deprecation warnings. The automated checks are structural and provenance checks: they do not measure a contractor's competence, and they do not prove every external claim.
+### F2 done — actual integration and live delivery
+
+- PR [#70](https://github.com/karagemop466-tech/Korea7/pull/70) merged successfully with explicit `gh pr merge 70 --merge`; merge revision `37c0f118146a29779d970ab889d244528c1be0c9`.
+- GitHub Pages run [42732259300](https://github.com/karagemop466-tech/Korea7/actions/runs/42732259300) completed successfully for that exact revision (build, report and deployment passed).
+- Live [Latest verification](https://karagemop466-tech.github.io/Korea7/delivery.html?revision=37c0f118) fetched after deployment; confirmed new Practical scope-fit comparison, all three source-linked rows, blank UNVERIFIED all-in prices and S111. First unversioned fetch returned cached earlier content; revision-query fetch returned the updated page.
+- Nonblocking platform notices: GitHub-managed upload-artifact action Node 20 deprecation/Node 24 migration and ubuntu-latest image migration. No application check failed. F1 and F2 are done; outstanding contractor evidence gaps remain published on Flagged for Review. No booking or current availability confirmation.
+
+- Final documentation rebase encountered a concurrent append from arena/86db387f-korea7; preserved its complete incoming board section and this delivery record. No concurrent implementation files edited.
