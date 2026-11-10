@@ -1241,3 +1241,7 @@ Runtime requires the fixed Arena branch; no additional branch or worktree is cre
 | P2 | Full line/link/privacy regression, final integration PR and merge, exact-revision Pages verification | unclaimed | arena/6f5e96aa-korea7 | Same canonical scope plus `COORDINATION.md`; GitHub PR/Pages | Starts after P1; no broken site will be merged. |
 
 Initial repository state: `main` and this branch are both `c9a5d3e`; GitHub Pages is configured for `main` `/` and reports `built`. Existing dashboard is the primary deliverable; archived GEMS and prior plumbing sites remain untouched. Fresh reads will be labeled with their actual retrieval date and will not imply contractor availability, exact-repair experience, quote inclusion or booking.
+
+### P1 scope extension — review-matched candidate and complete CSLB recheck
+
+Direct review research found a relevant candidate absent from the 16-record model: Sugar Bear Plumbing Inc #946657. P1 scope is extended to `scripts/ranking_data.py`, `data/canonical/cslb_records.json`, `data/canonical/vendor_sites.json`, `data/canonical/review_snapshots.json`, and `tests/test_ranking.py`, plus the already claimed canonical outputs. Existing scoring weights will not be changed to favor the new candidate. Official license facts and first-party contact claims remain separate from third-party review evidence; reviews remain unscored. All 16 pre-existing CSLB records have been directly re-read on 2026-11-10 with exact returned November 9 timestamps; selected-field comparison found no changes. Record #946657 was also read directly.
