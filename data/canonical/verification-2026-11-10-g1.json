@@ -1,47 +1,306 @@
 {
   "session": "arena/33211fbf-korea7",
   "checked_date": "2026-11-10",
-  "method": "Each page fetched live through the session's page-reader tool and compared field-by-field against the value already stored in this repository. Only the fields listed were compared. Anything not listed was NOT rechecked today and keeps its earlier read date. Database timestamps are reproduced exactly as the official page printed them and are not rewritten to today.",
+  "method": "Each page fetched live through the session's page-reader tool and compared field-by-field against the value already stored in this repository. Only the fields listed were compared. Anything not listed was NOT rechecked today and keeps its earlier read date. Database timestamps are reproduced exactly as the official page printed them and are not rewritten to today. Three further official pages (SF kitchen/bath permit, B&P 7059, and the C-9 definition) were added to this record during the same session.",
   "tooling_note": "Direct outbound HTTP from the sandbox shell (urllib/curl) is blocked in this environment: every TLS connection to www2.cslb.ca.gov was closed before a response. scripts/audit_live_sources.py is committed for reviewers running it with normal network access; it reports unreachable records as errors and never infers a value.",
   "cslb_records": {
     "records_compared": 16,
     "records_matching": 16,
     "records_mismatched": 0,
-    "fields_compared": ["license_number", "business_name", "status", "classifications", "expire_date", "business_phone", "entity", "issue_date", "workers_compensation_kind_and_expiry", "contractor_bond_carrier_and_effective_date", "additional_status", "complaint_disclosure"],
+    "fields_compared": [
+      "license_number",
+      "business_name",
+      "status",
+      "classifications",
+      "expire_date",
+      "business_phone",
+      "entity",
+      "issue_date",
+      "workers_compensation_kind_and_expiry",
+      "contractor_bond_carrier_and_effective_date",
+      "additional_status",
+      "complaint_disclosure"
+    ],
     "database_timestamp_seen": "Data current as of 11/9/2026, between 4:51:26 PM and 4:52:06 PM",
     "note": "All sixteen records printed 11/9/2026 database timestamps during the 11/10 read. The 2026-11-08 dataset is unchanged by this audit; no stored value needed correction.",
     "per_record": [
-      {"license": "977638", "name": "EXPERT PLUMBING SOLUTIONS", "status": "current and active", "classes": "C36", "expire": "2028-10-31", "phone": "(415) 531-5340", "entity": "Corporation", "issue": "10/09/2012", "wc": "insured — EVEREST PREMIER — 07/19/2026 to 07/19/2027", "bond": "ATLANTIC SPECIALTY — effective 09/19/2025", "match": true},
-      {"license": "757796", "name": "BAY AREA PLUMBING", "status": "current and active", "classes": "C36", "expire": "2027-01-31", "phone": "(415) 668-8000", "entity": "Sole Ownership", "issue": "01/07/1999", "wc": "exempt — no employees, effective 12/11/2024", "bond": "ATLANTIC SPECIALTY — effective 09/01/2026", "match": true},
-      {"license": "1024971", "name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER", "status": "current and active", "classes": "C36", "expire": "2027-03-31", "phone": "(415) 596-6115", "entity": "Sole Ownership", "issue": "03/20/2017", "wc": "insured — EMPLOYERS PREFERRED — 12/18/2025 to 12/18/2026", "bond": "ATLANTIC SPECIALTY — effective 09/01/2026", "match": true},
-      {"license": "959843", "name": "GENERALSF", "status": "current and active", "classes": "B, C10, C36", "expire": "2027-04-30", "phone": "(650) 303-1515", "entity": "Sole Ownership", "issue": "04/12/2011", "wc": "exempt — no employees, effective 03/10/2025", "bond": "BUSINESS ALLIANCE — effective 04/30/2025", "match": true},
-      {"license": "1003394", "name": "HANDYMAN HEROES INC", "status": "current and active", "classes": "B, C36", "expire": "2027-05-31", "phone": "(844) 382-4376", "entity": "Corporation", "issue": "05/05/2015", "wc": "insured — OMAHA NATIONAL CASUALTY — 04/25/2026 to 04/25/2027", "bond": "WESTERN SURETY — effective 09/01/2026", "additional_status": "Complaint Disclosure information published for this license", "match": true},
-      {"license": "829071", "name": "ACE PLUMBING & ROOTER", "status": "current and active", "classes": "C36, A, C-4, C16, B, C10", "expire": "2027-06-30", "phone": "(415) 824-6444", "entity": "Corporation", "issue": "12/18/2003", "wc": "insured — FINANCIAL PACIFIC — 07/13/2026 to 07/13/2027", "bond": "MERCHANTS BONDING (MUTUAL) — effective 09/04/2026", "match": true},
-      {"license": "1115649", "name": "RAPID FLOW PLUMBING & ROOTER INC", "status": "current and active", "classes": "B, C36", "expire": "2028-01-31", "phone": "(415) 866-8401", "entity": "Corporation", "issue": "01/29/2024", "wc": "exempt — no employees, effective 02/03/2026", "bond": "MERCHANTS BONDING (MUTUAL) — effective 03/03/2025", "match": true},
-      {"license": "841229", "name": "MANNY'S PLUMBING & ROOTER", "status": "current and active", "classes": "C36, B", "expire": "2028-06-30", "phone": "(650) 207-5733", "entity": "Sole Ownership", "issue": "06/21/2004", "wc": "exempt — no employees, effective 06/28/2026", "bond": "MERCHANTS BONDING (MUTUAL) — effective 05/29/2026", "match": true},
-      {"license": "1025814", "name": "THE GENTEEL PLUMBERS INC", "status": "current and active", "classes": "C36, B", "expire": "2027-04-30", "phone": "(833) 436-8335", "entity": "Corporation", "issue": "04/14/2017", "wc": "insured — TECHNOLOGY INSURANCE — 01/24/2026 to 01/24/2027", "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 01/01/2023", "match": true},
-      {"license": "1009195", "name": "ADVANCED PLUMBING AND DRAIN INC", "status": "current and active", "classes": "C36", "expire": "2027-11-30", "phone": "(415) 744-4944", "entity": "Corporation", "issue": "11/24/2015", "wc": "insured — HARTFORD ACCIDENT AND INDEMNITY — 08/21/2026 to 08/21/2027", "bond": "ATLANTIC SPECIALTY — effective 09/26/2025", "additional_status": "May be suspended at a future date for failure to resolve an outstanding final liability", "match": true},
-      {"license": "995163", "name": "BERNAL HILL DRYWALL INC", "status": "current and active", "classes": "C-9, B", "expire": "2028-07-31", "phone": "(415) 533-8274", "entity": "Corporation", "issue": "07/28/2014", "wc": "insured — ENDURANCE ASSURANCE — 03/10/2026 to 03/10/2027, class 5447 Wallboard Installation", "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 03/29/2023", "match": true},
-      {"license": "1089561", "name": "TARO GROUP INC dba HEISES PLUMBING", "status": "current and active", "classes": "C36, C10, A, C20", "expire": "2028-04-30", "phone": "(415) 333-0704", "entity": "Corporation", "issue": "04/06/2022", "wc": "insured — EMPLOYERS PREFERRED — 01/11/2026 to 01/11/2027", "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 05/27/2025", "match": true},
-      {"license": "632743", "name": "CALPLUMBING CO", "status": "current and active", "classes": "C36", "expire": "2027-12-31", "phone": "(415) 221-4633", "entity": "Sole Ownership", "issue": "12/06/1991", "wc": "exempt — no employees, effective 12/08/2025", "bond": "ATLANTIC SPECIALTY — effective 09/01/2026", "match": true},
-      {"license": "868994", "name": "ATLAS PLUMBING & ROOTER", "status": "current and active", "classes": "C36, A", "expire": "2028-03-31", "phone": "(650) 871-9863", "entity": "Corporation", "issue": "12/08/2005 (reissued 03/25/2008)", "wc": "employee service group holds the policy — 07/01/2026 to 07/01/2027", "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 01/01/2023", "match": true},
-      {"license": "1140843", "name": "DISCOUNT PLUMBING ROOTER SERVICES LLC", "status": "current and active", "classes": "C36, A", "expire": "2027-07-31", "phone": "(650) 991-2100", "entity": "Ltd Liability", "issue": "07/22/2025", "wc": "insured — A I U INSURANCE — 04/01/2025 to 04/01/2027", "bond": "LEXINGTON NATIONAL — effective 06/09/2025; LLC employee/worker bond $100,000", "liability": "NATIONAL UNION FIRE — $2,000,000 — 04/01/2026 to 04/01/2027", "match": true},
-      {"license": "1075566", "name": "BAY AREA PIPE & EQUIPMENT INC dba BAY AREA MECHANICAL", "status": "current and active", "classes": "C36, C20", "expire": "2027-05-31", "phone": "(925) 642-9768", "entity": "Corporation", "issue": "05/07/2021", "wc": "insured — PREFERRED EMPLOYERS — 12/02/2025 to 12/02/2026", "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 01/01/2023", "match": true}
+      {
+        "license": "977638",
+        "name": "EXPERT PLUMBING SOLUTIONS",
+        "status": "current and active",
+        "classes": "C36",
+        "expire": "2028-10-31",
+        "phone": "(415) 531-5340",
+        "entity": "Corporation",
+        "issue": "10/09/2012",
+        "wc": "insured — EVEREST PREMIER — 07/19/2026 to 07/19/2027",
+        "bond": "ATLANTIC SPECIALTY — effective 09/19/2025",
+        "match": true
+      },
+      {
+        "license": "757796",
+        "name": "BAY AREA PLUMBING",
+        "status": "current and active",
+        "classes": "C36",
+        "expire": "2027-01-31",
+        "phone": "(415) 668-8000",
+        "entity": "Sole Ownership",
+        "issue": "01/07/1999",
+        "wc": "exempt — no employees, effective 12/11/2024",
+        "bond": "ATLANTIC SPECIALTY — effective 09/01/2026",
+        "match": true
+      },
+      {
+        "license": "1024971",
+        "name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+        "status": "current and active",
+        "classes": "C36",
+        "expire": "2027-03-31",
+        "phone": "(415) 596-6115",
+        "entity": "Sole Ownership",
+        "issue": "03/20/2017",
+        "wc": "insured — EMPLOYERS PREFERRED — 12/18/2025 to 12/18/2026",
+        "bond": "ATLANTIC SPECIALTY — effective 09/01/2026",
+        "match": true
+      },
+      {
+        "license": "959843",
+        "name": "GENERALSF",
+        "status": "current and active",
+        "classes": "B, C10, C36",
+        "expire": "2027-04-30",
+        "phone": "(650) 303-1515",
+        "entity": "Sole Ownership",
+        "issue": "04/12/2011",
+        "wc": "exempt — no employees, effective 03/10/2025",
+        "bond": "BUSINESS ALLIANCE — effective 04/30/2025",
+        "match": true
+      },
+      {
+        "license": "1003394",
+        "name": "HANDYMAN HEROES INC",
+        "status": "current and active",
+        "classes": "B, C36",
+        "expire": "2027-05-31",
+        "phone": "(844) 382-4376",
+        "entity": "Corporation",
+        "issue": "05/05/2015",
+        "wc": "insured — OMAHA NATIONAL CASUALTY — 04/25/2026 to 04/25/2027",
+        "bond": "WESTERN SURETY — effective 09/01/2026",
+        "additional_status": "Complaint Disclosure information published for this license",
+        "match": true
+      },
+      {
+        "license": "829071",
+        "name": "ACE PLUMBING & ROOTER",
+        "status": "current and active",
+        "classes": "C36, A, C-4, C16, B, C10",
+        "expire": "2027-06-30",
+        "phone": "(415) 824-6444",
+        "entity": "Corporation",
+        "issue": "12/18/2003",
+        "wc": "insured — FINANCIAL PACIFIC — 07/13/2026 to 07/13/2027",
+        "bond": "MERCHANTS BONDING (MUTUAL) — effective 09/04/2026",
+        "match": true
+      },
+      {
+        "license": "1115649",
+        "name": "RAPID FLOW PLUMBING & ROOTER INC",
+        "status": "current and active",
+        "classes": "B, C36",
+        "expire": "2028-01-31",
+        "phone": "(415) 866-8401",
+        "entity": "Corporation",
+        "issue": "01/29/2024",
+        "wc": "exempt — no employees, effective 02/03/2026",
+        "bond": "MERCHANTS BONDING (MUTUAL) — effective 03/03/2025",
+        "match": true
+      },
+      {
+        "license": "841229",
+        "name": "MANNY'S PLUMBING & ROOTER",
+        "status": "current and active",
+        "classes": "C36, B",
+        "expire": "2028-06-30",
+        "phone": "(650) 207-5733",
+        "entity": "Sole Ownership",
+        "issue": "06/21/2004",
+        "wc": "exempt — no employees, effective 06/28/2026",
+        "bond": "MERCHANTS BONDING (MUTUAL) — effective 05/29/2026",
+        "match": true
+      },
+      {
+        "license": "1025814",
+        "name": "THE GENTEEL PLUMBERS INC",
+        "status": "current and active",
+        "classes": "C36, B",
+        "expire": "2027-04-30",
+        "phone": "(833) 436-8335",
+        "entity": "Corporation",
+        "issue": "04/14/2017",
+        "wc": "insured — TECHNOLOGY INSURANCE — 01/24/2026 to 01/24/2027",
+        "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 01/01/2023",
+        "match": true
+      },
+      {
+        "license": "1009195",
+        "name": "ADVANCED PLUMBING AND DRAIN INC",
+        "status": "current and active",
+        "classes": "C36",
+        "expire": "2027-11-30",
+        "phone": "(415) 744-4944",
+        "entity": "Corporation",
+        "issue": "11/24/2015",
+        "wc": "insured — HARTFORD ACCIDENT AND INDEMNITY — 08/21/2026 to 08/21/2027",
+        "bond": "ATLANTIC SPECIALTY — effective 09/26/2025",
+        "additional_status": "May be suspended at a future date for failure to resolve an outstanding final liability",
+        "match": true
+      },
+      {
+        "license": "995163",
+        "name": "BERNAL HILL DRYWALL INC",
+        "status": "current and active",
+        "classes": "C-9, B",
+        "expire": "2028-07-31",
+        "phone": "(415) 533-8274",
+        "entity": "Corporation",
+        "issue": "07/28/2014",
+        "wc": "insured — ENDURANCE ASSURANCE — 03/10/2026 to 03/10/2027, class 5447 Wallboard Installation",
+        "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 03/29/2023",
+        "match": true
+      },
+      {
+        "license": "1089561",
+        "name": "TARO GROUP INC dba HEISES PLUMBING",
+        "status": "current and active",
+        "classes": "C36, C10, A, C20",
+        "expire": "2028-04-30",
+        "phone": "(415) 333-0704",
+        "entity": "Corporation",
+        "issue": "04/06/2022",
+        "wc": "insured — EMPLOYERS PREFERRED — 01/11/2026 to 01/11/2027",
+        "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 05/27/2025",
+        "match": true
+      },
+      {
+        "license": "632743",
+        "name": "CALPLUMBING CO",
+        "status": "current and active",
+        "classes": "C36",
+        "expire": "2027-12-31",
+        "phone": "(415) 221-4633",
+        "entity": "Sole Ownership",
+        "issue": "12/06/1991",
+        "wc": "exempt — no employees, effective 12/08/2025",
+        "bond": "ATLANTIC SPECIALTY — effective 09/01/2026",
+        "match": true
+      },
+      {
+        "license": "868994",
+        "name": "ATLAS PLUMBING & ROOTER",
+        "status": "current and active",
+        "classes": "C36, A",
+        "expire": "2028-03-31",
+        "phone": "(650) 871-9863",
+        "entity": "Corporation",
+        "issue": "12/08/2005 (reissued 03/25/2008)",
+        "wc": "employee service group holds the policy — 07/01/2026 to 07/01/2027",
+        "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 01/01/2023",
+        "match": true
+      },
+      {
+        "license": "1140843",
+        "name": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+        "status": "current and active",
+        "classes": "C36, A",
+        "expire": "2027-07-31",
+        "phone": "(650) 991-2100",
+        "entity": "Ltd Liability",
+        "issue": "07/22/2025",
+        "wc": "insured — A I U INSURANCE — 04/01/2025 to 04/01/2027",
+        "bond": "LEXINGTON NATIONAL — effective 06/09/2025; LLC employee/worker bond $100,000",
+        "liability": "NATIONAL UNION FIRE — $2,000,000 — 04/01/2026 to 04/01/2027",
+        "match": true
+      },
+      {
+        "license": "1075566",
+        "name": "BAY AREA PIPE & EQUIPMENT INC dba BAY AREA MECHANICAL",
+        "status": "current and active",
+        "classes": "C36, C20",
+        "expire": "2027-05-31",
+        "phone": "(925) 642-9768",
+        "entity": "Corporation",
+        "issue": "05/07/2021",
+        "wc": "insured — PREFERRED EMPLOYERS — 12/02/2025 to 12/02/2026",
+        "bond": "AMERICAN CONTRACTORS INDEMNITY — effective 01/01/2023",
+        "match": true
+      }
     ]
   },
   "classification_definitions": [
-    {"class": "C-36 Plumbing", "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36", "confirmed": "Covers means of safe water supply and proper disposal of fluid waste, including complete removal of waste and maintenance/replacement of those items. Authority cited: B&P §§7008, 7059."},
-    {"class": "B General Building", "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B", "confirmed": "B&P §7057(b): a B contractor may not take a prime contract for trades other than framing/carpentry unless the contract requires at least two unrelated trades or the contractor holds the appropriate specialty classification or subcontracts with one. §7057(c): C-16 and C-57 require the specialty license."},
-    {"class": "C-9 Drywall", "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9", "confirmed": "Lays out and installs gypsum wallboard assemblies including nonstructural metal framing, and performs taping and texturing."}
+    {
+      "class": "C-36 Plumbing",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "confirmed": "Covers means of safe water supply and proper disposal of fluid waste, including complete removal of waste and maintenance/replacement of those items. Authority cited: B&P §§7008, 7059."
+    },
+    {
+      "class": "B General Building",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "confirmed": "B&P §7057(b): a B contractor may not take a prime contract for trades other than framing/carpentry unless the contract requires at least two unrelated trades or the contractor holds the appropriate specialty classification or subcontracts with one. §7057(c): C-16 and C-57 require the specialty license."
+    },
+    {
+      "class": "C-9 Drywall",
+      "url": "https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "confirmed": "Lays out and installs gypsum wallboard assemblies including nonstructural metal framing, and performs taping and texturing."
+    }
   ],
   "regulatory": [
-    {"id": "S01", "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit", "confirmed_verbatim": "\"You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.\" Contractor licence types accepted: C4, C16, C20, C36, C54, B, A. Homeowner self-application limited to stand-alone single-family R-3 dwellings. Inspect before covering pipes. Contact: Permit Center help desk 628-652-4900, permitsf@sfgov.org.", "match": true},
-    {"id": "S02", "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit", "confirmed_verbatim": "\"Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection\" is listed among interior work that does not need a permit.", "match": true},
-    {"id": "S13", "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048", "confirmed_verbatim": "§7048(a) exempts work where the aggregate contract price is less than $1,000, the work is casual/minor/inconsequential, and the work does not require a building permit. Amended by Stats. 2025, Ch. 67, Sec. 12 (AB 1170), effective January 1, 2026.", "match": true}
+    {
+      "id": "S01",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "confirmed_verbatim": "\"You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground.\" Contractor licence types accepted: C4, C16, C20, C36, C54, B, A. Homeowner self-application limited to stand-alone single-family R-3 dwellings. Inspect before covering pipes. Contact: Permit Center help desk 628-652-4900, permitsf@sfgov.org.",
+      "match": true
+    },
+    {
+      "id": "S02",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "confirmed_verbatim": "\"Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection\" is listed among interior work that does not need a permit.",
+      "match": true
+    },
+    {
+      "id": "S13",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "confirmed_verbatim": "§7048(a) exempts work where the aggregate contract price is less than $1,000, the work is casual/minor/inconsequential, and the work does not require a building permit. Amended by Stats. 2025, Ch. 67, Sec. 12 (AB 1170), effective January 1, 2026.",
+      "match": true
+    },
+    {
+      "id": "S94",
+      "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+      "confirmed_verbatim": "\"You need a permit before renovating and replacing kitchen or bath fixtures.\" Online eligibility: no wall removal or moving, R-3 or a unit in an R-2 building, and a legally permitted kitchen or bath. Only property owners and licensed B contractors may apply for the kitchen/bath permit; related electrical and plumbing permits are separate and skippable for B-only contractors only when tied to a kitchen/bath permit. Final inspections cannot be scheduled until related plumbing passes.",
+      "match": true,
+      "note": "New read added on 2026-11-10; the earlier ledger entry for S94 summarised only part of this page."
+    },
+    {
+      "id": "S62",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=7059.&lawCode=BPC",
+      "confirmed_verbatim": "B&P 7059(a): \"Nothing contained in this section shall prohibit a specialty contractor from taking and executing a contract involving the use of two or more crafts or trades, if the performance of the work in the crafts or trades, other than in which they are licensed, is incidental and supplemental to the performance of the work in the craft for which the specialty contractor is licensed.\" Amended by Stats. 2024, Ch. 485, Sec. 6 (SB 1455), effective January 1, 2025.",
+      "match": true,
+      "note": "Read again 2026-11-10. The word 'incidental and supplemental' is not defined by the statute; applicability to a ceiling cut-and-patch is therefore left undetermined on the site."
+    }
   ],
   "company_pages": [
-    {"id": "S43", "url": "https://www.aceplumbingandrooter.com/", "confirmed": "Publishes (415) 824-6444; lists Contractors License #829071 with A, B, C4, C10, C16, C36; states over 25 years serving San Francisco; has a dedicated HOAs & Property Managers section describing insurance requirements, purchase orders and NTE limits.", "match": true},
-    {"id": "S72", "url": "https://www.genteelplumbers.com/contact", "confirmed": "Publishes 415-465-5853 and 1181 Revere Avenue, San Francisco, CA 94124; office hours Monday-Friday 8 AM-5 PM with 24/7 answering service; states over 10 years serving San Francisco and San Mateo County.", "match": true}
+    {
+      "id": "S43",
+      "url": "https://www.aceplumbingandrooter.com/",
+      "confirmed": "Publishes (415) 824-6444; lists Contractors License #829071 with A, B, C4, C10, C16, C36; states over 25 years serving San Francisco; has a dedicated HOAs & Property Managers section describing insurance requirements, purchase orders and NTE limits.",
+      "match": true
+    },
+    {
+      "id": "S72",
+      "url": "https://www.genteelplumbers.com/contact",
+      "confirmed": "Publishes 415-465-5853 and 1181 Revere Avenue, San Francisco, CA 94124; office hours Monday-Friday 8 AM-5 PM with 24/7 answering service; states over 10 years serving San Francisco and San Mateo County.",
+      "match": true
+    }
   ],
   "not_rechecked_today": {
     "note": "Left on their historical read dates. Nothing here is presented as newly verified.",

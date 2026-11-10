@@ -167,7 +167,7 @@ def integrate(c):
     c.PAGES['delivery.html']['sections'].append({'type': 'prose',
         'title': 'What this re-verification does and does not establish',
         'html': '<p>Every one of the sixteen license records was fetched again on 2026-11-10 and compared to the stored values field by field: <strong>16 matched, 0 differed, 0 corrections were needed</strong>. The official pages printed 11/9/2026 database timestamps; those are reproduced exactly and not rewritten to today. '
-                'Separately, the SF plumbing-permit page, the SF permit-exemptions page, B&P §7048, and the CSLB C-36, B and C-9 classification definitions were read again and match the text this site already publishes.</p>'
+                'Separately, the SF plumbing-permit page, the SF permit-exemptions page, the SF kitchen/bath permit page, B&amp;P §7048 and §7059, and the CSLB C-36, B and C-9 classification definitions were read again and match the text this site already publishes.</p>'
                 '<p><strong>It does not establish</strong> that any firm can free a seized trip lever without opening the ceiling, has done this exact repair, will take a tenant-occupied unit, will restore the ceiling under one contract, or will do it for any particular price. '
                 '<strong>Yelp still returned HTTP 403</strong> to every automated fetch on 2026-11-10, so no rating, review count or badge was read today and none is restated. Angi, BuildZoom, Thumbtack, BBB, the remaining company websites, the publisher cost benchmarks and the manufacturer literature keep their earlier read dates and are not relabelled as rechecked.</p>'
                 '<p><a href="data/canonical/verification-2026-11-10-g1.json">Download the exact fields compared</a>.</p>',

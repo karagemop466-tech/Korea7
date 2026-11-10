@@ -2746,6 +2746,43 @@
         },
         {
           "cells": [
+            "Kitchen/bath permit route",
+            "DBI: “You need a permit before renovating and replacing kitchen or bath fixtures.” The online route is limited to work that does not remove or move walls, is in an R-2 or R-3 building, and remodels a legally permitted kitchen or bath. Related electrical and plumbing permits are applied for separately. Only property owners and licensed B contractors may apply for the kitchen/bath permit itself.",
+            "Reported as published. A plumbing-only firm would take the plumbing permit route instead; this page draws no conclusion about which route fits this job.",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S94",
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "Specialty contractor and other trades",
+            "B&amp;P §7059(a): a specialty contractor may take and execute a contract involving two or more crafts or trades if the work outside its own trade is “incidental and supplemental” to the licensed craft. A B contractor may not take a prime contract for non-framing trades unless the contract requires two unrelated trades or it holds the specialty licence or subcontracts it out (§7057(b)).",
+            "Reported as published. Whether a ceiling cut-and-patch counts as incidental and supplemental to C-36 plumbing is not determined here and should be confirmed in writing with the contractor and DBI.",
+            "<span class=\"pill ok\">official — leginfo / CSLB</span>"
+          ],
+          "src": [
+            "S62",
+            "S83",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "Covering work before inspection",
+            "DBI: after a permit is issued, have the plumbing or mechanical work “inspected … before covering pipes”. The kitchen/bath route adds that final inspections cannot be scheduled until the related plumbing work has passed final inspection.",
+            "Sequencing note only, for the case in which a ceiling is opened and re-closed.",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01",
+            "S94"
+          ]
+        },
+        {
+          "cells": [
             "Confirm applicability",
             "SF.gov lists the Permit Center help desk and permitsf@sfgov.org as contacts",
             "The hiring party should confirm permit applicability for the exact scope with SF DBI and the contractor",
@@ -6681,8 +6718,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/EXECUTIVE-SUMMARY.md\" target=\"_blank\" rel=\"noopener noreferrer\"><code>EXECUTIVE-SUMMARY.md</code></a>",
-            "32079",
-            "<code class=\"hash\">805d6d6c205b9b55ee740a8cc4947c076da3f32700a64f1124770dd78f68b4dd</code>",
+            "33348",
+            "<code class=\"hash\">4b57a68847bd3be69484613216b31630783dc1653b6af05dbc1379e3b18ab6a3</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -7017,8 +7054,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/data/canonical/verification-2026-11-10-g1.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>data/canonical/verification-2026-11-10-g1.json</code></a>",
-            "11798",
-            "<code class=\"hash\">56c5a5a221960b4849ef7d154bc5a531ae5cd687e4ae82789e4ce07cc27d2b71</code>",
+            "15420",
+            "<code class=\"hash\">cb8cc01591f0265dd09762d4a1e0280cf707f1c54d5e46522862292891061b6f</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -9309,8 +9346,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/scripts/dashboard_content.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dashboard_content.py</code></a>",
-            "150402",
-            "<code class=\"hash\">b152749c71686e7fba45721512b965a82508aba5cc70cf34b8c7ba928526d299</code>",
+            "152512",
+            "<code class=\"hash\">678e0e3e7674a03471d25d8d3a30dfef0d263474b32aeb5c1a3edb2623219e02</code>",
             "current-plumbing-source",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -9321,8 +9358,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/scripts/delivery_data.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/delivery_data.py</code></a>",
-            "17559",
-            "<code class=\"hash\">3d0206793b65a6733a496b20ce380997aaae60720efa622ea185881c2e2e3ed0</code>",
+            "17607",
+            "<code class=\"hash\">6f3f46fa68c0204252673406b4b07133e8b25564202f00097c5824e7bd50e224</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],

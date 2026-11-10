@@ -1,11 +1,11 @@
 # Dashboard verification report
 
-Generated: 2026-11-10T01:03:37+00:00
+Generated: 2026-11-10T01:04:27+00:00
 
 | Check | Result | Detail |
 |---|---|---|
 | Build output complete | PASS | 16 pages generated |
-| Every table row has a source link | PASS | 1473 tbody rows checked, 0 missing links |
+| Every table row has a source link | PASS | 1479 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
 | Internal links resolve | PASS | 1551 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
@@ -20,11 +20,11 @@ Generated: 2026-11-10T01:03:37+00:00
 
 - pages: 16
 - tables: 29
-- rows: 723
+- rows: 726
 - source_ledger_entries: 113
 - verified_sources: 95
 - official_or_manufacturer_verified: 37
-- generated_tbody_rows: 1473
+- generated_tbody_rows: 1479
 - internal_links_checked: 1551
 - unique_external_links: 400
 - published_text_files_scanned: 140
