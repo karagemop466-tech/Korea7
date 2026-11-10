@@ -1337,3 +1337,31 @@ Runtime fixes this branch (`arena/bfea234e-korea7`); no extra branch or worktree
 ### P1 handoff note — session `arena/cbeddf30-korea7`
 
 PR #71 by session `arena/cbeddf30-korea7` merged after my claim and advanced `main`. Its `COORDINATION.md` entry was kept on rebase; nothing of theirs is discarded. This session's scope is the canonical generator override block, its generated pages and the delivery gate, which does not overlap PR #71's bookkeeping-only change.
+
+### P1 pre-flight audit of the checked-out branch (done)
+
+- `python3 scripts/build_dashboard.py` on the branch tip `c9a5d3e`: **11/11 PASS** (16 pages, 26 tables, 688 rows, 110 sources, 1,403 cited rows, 1,500 internal links, 0 broken links/anchors, privacy sweep 138 files / 0 matches).
+- `python3 -m unittest discover -s tests`: 11 of 58 modules cannot import because `numpy` is absent from the default interpreter; the plumbing/dashboard modules pass. Legacy GEMS raster tests are unrelated to this project and are not modified.
+- Noted (not yet published): `tests/test_followup_audit.py` still asserts *four* workers'-compensation exemptions, and the live `flagged.html` U06/U28 rows still say four, while the sixteen CSLB records I re-read today show **five** exempt records. PR #69 attempted this correction; see P2/P3.
+- No other session has an unexpired claim on the files in this scope (last claim `arena/ccf3d3c5-korea7`, closed by merged PR #68; `arena/fd9508fc-korea7` closed by merged PR #70). No handoff or conflict.
+
+## Session arena/bfea234e-korea7 — final publish + integration gate (2026-11-10)
+
+Runtime fixes this branch (`arena/bfea234e-korea7`); no extra branch or worktree is created. Open PRs are not edited. Board observed at claim time: `main` = `5206463`, after PR #69/#70/#71/#72 merged and PR #73 opened by another session.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| P1 Claim the board and record the pre-flight audit | done | arena/bfea234e-korea7 | COORDINATION.md |
+| P2 Rebuild the site from current `main`; close out the stale conflicting PR that proposed a source-id collision | in progress | arena/bfea234e-korea7 | scripts/dashboard_content.py (append-only override block); generated root pages and `data/canonical/*` outputs |
+| P3 Independent line-by-line re-read of every cited CSLB record and rule page; publish corrections, findings and flags | in progress | arena/bfea234e-korea7 | flagged.html findings.html contractors.html contacts.html ranking.html sources.html verification.html |
+| P4 Regression tests, build gate, PR to main, merge, confirm Pages | unclaimed | arena/bfea234e-korea7 | tests/, COORDINATION.md, GitHub PR/Pages |
+
+### P1 pre-flight audit (done)
+
+- Branch tip `c9a5d3e`: `python3 scripts/build_dashboard.py` → 11/11 PASS (16 pages, 26 tables, 688 rows, 110 sources, 1,403 cited rows, 1,500 internal links, 0 broken links/anchors, privacy sweep 0 matches).
+- `python3 -m unittest discover -s tests`: the plumbing/dashboard modules pass; 11 legacy GEMS raster modules cannot import without `numpy`. They are unrelated to this project and are not modified.
+- Requests noted, not yet published: live U06/U28 and `tests/test_followup_audit.py` still say *four* workers'-compensation exemptions while the records I re-read show **five**; PR #69 attempted that correction but also re-used source id `S105`, which the deleted `delivery_data.py` path and the live ledger had already assigned, so its version contradicts itself.
+
+### P1 handoff note — session `arena/cbeddf30-korea7`
+
+PR #71 by session `arena/cbeddf30-korea7` merged after my claim and advanced `main`. Its `COORDINATION.md` entry was kept on rebase; nothing of theirs is discarded. This session's scope is the canonical generator override block, its generated pages and the delivery gate, which does not overlap PR #71's bookkeeping-only change.
