@@ -340,4 +340,4 @@ def integrate(c):
             'src': ['S96', 'S01'],
         })
 
-    c.META['session'] = 'arena/56d961a8-korea7'
+    c.META['session'] = 'arena/c2cb969e-korea7'
