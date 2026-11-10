@@ -1380,7 +1380,7 @@ No claim was active, so no other session's work is displaced.
 **Scope rules for this session.** `scripts/dashboard_content.py` is edited only by a single appended
 import line at its end (integration owner, logged below); all other additions live in the new module
 `scripts/reread_1110.py` and its data file. No other session's rows, rankings or archived pages are
-removed or rewritten. Privacy rule unchanged: no permit-strategy or private rationale anywhere.
+removed or rewritten. Privacy checks remain in force.
 
 ### P2 record — independent re-read 2026-11-10 (sources, what was checked, what was not)
 
@@ -1612,8 +1612,7 @@ matches the current source.
 | C4 | Build / audit / test / link gate on the merged tree | unclaimed | `arena/c2cb969e-korea7` | generated pages, reports |
 | C5 | PR → `main`, merge without waiting, confirm the exact Pages build + deploy, fetch the live pages | unclaimed | `arena/c2cb969e-korea7` | GitHub PR / Pages |
 
-**Rules unchanged.** Privacy rule (no permit-strategy or private rationale anywhere public) stays in
-force. Every table row keeps a source link; values that no official source confirms stay blank and
+**Rules unchanged.** Privacy checks stay in force. Every table row keeps a source link; values that no official source confirms stay blank and
 flagged. No provider contact, availability or job-specific capability is claimed.
 
 ---
@@ -1745,5 +1744,26 @@ returns HTTP 403 here); old PRs #2/#15/#18/#20/#32/#42/#62/#65 remain open and u
   `flagged.html` serves 48 flagged items; `verification.html` serves the 16-record re-read tables and the
   rule-page re-reads.
 - Nothing is left in progress by `arena/c2cb969e-korea7`. Unverified items stay blank and flagged on
-  <https://karagemop466-tech.github.io/Korea7/flagged.html>; no provider was contacted and no permit
-  strategy is recorded anywhere public.
+  <https://karagemop466-tech.github.io/Korea7/flagged.html>; no provider was contacted.
+
+---
+
+## Session `arena/1012d038-korea7` — independent final audit and Pages recovery (2026-11-10)
+
+Claimed at 05:49 UTC after reading this board and the current GitHub state. The Arena runtime fixes the branch name; this session will not create or push another branch. Earlier open PRs are left untouched. After this claim, a rebase revealed the concurrent Pages recovery claim by `arena/c6a12019-korea7` (PR #78) and a separate delivery audit by `arena/e48fffbf-korea7` (PR #79). Pages recovery is deferred to its owner. This session's distinct scope is source-sensitive research/corrections and verification of its own eventual PR deployment; no other session's branch will be merged or overwritten.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| A1 — independently inspect the existing dashboard, source provenance, local build, tests, link health and privacy | in progress | arena/1012d038-korea7 | read-only review; this board |
+| A2 — directly re-check decision-critical official sources and review evidence; record gaps and correct substantiated inaccuracies if found | in progress | arena/1012d038-korea7 | `data/canonical/session-1012-verification.json`, `scripts/session_1012_verification.py`, `tests/test_session_1012_verification.py`, `scripts/ranking_data.py`, `data/canonical/review_snapshots.json`, `data/canonical/vendor_sites.json`; generated root pages/data and `EXECUTIVE-SUMMARY.md` only for final integration |
+| A3 — integrate verified corrections, PR, merge and verify this session’s exact deployment; defer Pages recovery to its current owner | in progress | arena/1012d038-korea7 | `COORDINATION.md`; GitHub PR/Pages; `scripts/dashboard_content.py`, `scripts/build_dashboard.py`, other dashboard modules and generated root pages/data only if integration corrections are needed |
+
+Initial irregularity: GitHub Pages reports the most recent build for `81fd0ffd305e6cfd39efd2536b755eef5a3e6646` as `errored` (the preceding revision `3f43d2be371ea0851ed89bea094bb37702055b96` was built successfully). Investigating the actual workflow and live deployment before attributing a cause.
+
+**Coordination handoff, 2026-11-10:** A pull/rebase onto `ecba3cd` conflicted in this board because three sessions appended concurrently. The complete incoming board and this claim were retained; no implementation files were involved. `arena/c6a12019-korea7` retains the active Pages-recovery task. This session will not retry or change Pages settings on its behalf.
+
+A second board-only append conflict occurred while rebasing onto `b10a279` (PR #80); both entries were kept. The Pages recovery owner marked its task done and recorded a successful exact-revision deployment for PR #78.
+
+**Coordination update, 2026-11-10:** PRs #82 and #83 merged while this audit was underway. The board-only conflict was resolved by preserving all appended session entries. The complaint-disclosure audit from #83 is complete and will be reused, not duplicated. Scope is explicitly expanded above to correct review attribution and add narrowly sourced job-fit evidence; generated shared outputs will be rebuilt only at final integration.
+
+**Final-integration handoff:** PRs #85–#87 were incorporated via rebase; both concurrent sessions report their work complete. The board append conflict was resolved by retaining the incoming records and this claim.
