@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T05:53:35+00:00",
+  "generated_at": "2026-11-10T05:55:24+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -19,30 +19,31 @@
     "delivery.html",
     "recheck.html",
     "exempt-work.html",
-    "reverify.html"
+    "reverify.html",
+    "candidates.html"
   ],
   "counts": {
-    "pages": 19,
-    "tables": 36,
-    "rows": 805,
-    "source_ledger_entries": 144,
-    "verified_sources": 126,
-    "official_or_manufacturer_verified": 65,
-    "generated_tbody_rows": 1661,
-    "internal_links_checked": 1731,
-    "unique_external_links": 406,
-    "published_text_files_scanned": 146
+    "pages": 20,
+    "tables": 37,
+    "rows": 818,
+    "source_ledger_entries": 147,
+    "verified_sources": 129,
+    "official_or_manufacturer_verified": 66,
+    "generated_tbody_rows": 1687,
+    "internal_links_checked": 1784,
+    "unique_external_links": 410,
+    "published_text_files_scanned": 147
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "19 pages generated"
+      "detail": "20 pages generated"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1661 tbody rows checked, 0 missing links"
+      "detail": "1687 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -52,7 +53,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1731 internal links checked, 0 broken"
+      "detail": "1784 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -62,7 +63,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "406 unique external links, 0 unknown/dead"
+      "detail": "410 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -72,7 +73,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "146 files scanned, 0 matches"
+      "detail": "147 files scanned, 0 matches"
     },
     {
       "name": "Archived microsites privacy sweep (scheduling context)",
@@ -92,7 +93,7 @@
     {
       "name": "Source ledger records prior direct reads",
       "status": "PASS",
-      "detail": "65 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 126 sources marked verified overall (metadata only; no network check)"
+      "detail": "66 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-10); 129 sources marked verified overall (metadata only; no network check)"
     }
   ],
   "broken_internal": [],
@@ -343,6 +344,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/make_figure.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/make_report.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/oof_e1.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/pr62_candidate.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/prepare_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/ranking_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/recheck_data.py",
@@ -449,6 +451,7 @@
     "https://www.angi.com/articles/whats-potential-cost-plumbing-leak.htm",
     "https://www.angi.com/companylist/us/ca/san-francisco/bathtub-refinishing.htm",
     "https://www.angi.com/companylist/us/ca/san-francisco/plumbing.htm",
+    "https://www.angi.com/companylist/us/ca/south-san-francisco/sugar-bear-plumbing-inc-reviews-53506127.htm",
     "https://www.bayareaplumbingsf.com/",
     "https://www.bbb.org/us/ca/san-francisco/profile/plumber/expert-plumbing-solutions-1116-458492",
     "https://www.bernalhilldrywall.com/",
@@ -471,6 +474,7 @@
     "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
     "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
     "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+    "https://www.sugarbearhomeservices.com/",
     "https://www.theoverallplumber.com/home-improvement/bathtub-drain-drama-why-you-need-a-licensed-and-insured-plumber-fast/",
     "https://www.thisoldhouse.com/bathrooms/bathtub-installation-cost",
     "https://www.thisoldhouse.com/plumbing/replacing-bath-tub-drain",
@@ -510,6 +514,7 @@
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+    "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=946657",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
     "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163"

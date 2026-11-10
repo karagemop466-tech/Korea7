@@ -1497,3 +1497,8 @@ _reread.integrate(__import__(__name__))
 # Additive only: appends its own page, tables and flag; rewrites nothing.
 import reverify_b as _reverify_b
 _reverify_b.integrate(__import__(__name__))
+
+# --- 2026-11-10 candidate lead carried from unmerged PR #62 — arena/860ca261-korea7 ---
+# Additive: one page, one table, one flag. Not folded into the scored ranking.
+import pr62_candidate as _pr62
+_pr62.integrate(__import__(__name__))

@@ -34,6 +34,10 @@
         [
           "contacts.html",
           "Contacts & licenses"
+        ],
+        [
+          "candidates.html",
+          "Additional candidate lead"
         ]
       ]
     },
@@ -1557,6 +1561,36 @@
       "checked": "2026-11-10",
       "supports": "Read directly at the issuing agency during this session's re-check.",
       "note": "Transcribed during the 2026-11-10 session-B re-read. A source record proves only the words on that page."
+    },
+    "S169": {
+      "label": "CSLB #946657 — SUGAR BEAR PLUMBING INC (read 2026-11-10)",
+      "publisher": "California Contractors State License Board",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=946657",
+      "tier": "official",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Corporation, issued 2010-05-03, expires 2028-05-31, current and active; C36, A, C20, C10; 317 Corey Way, South San Francisco 94080; (650) 583-3399; $25,000 contractor's bond effective 2026-09-01 (American Contractors Indemnity); workers' comp Employers Assurance Company 2026-07-27 to 2027-07-27.",
+      "note": "Page printed “Data current as of 11/9/2026”. No B (General Building) and no C-9 (Drywall) classification appears on this record."
+    },
+    "S170": {
+      "label": "Angi — Sugar Bear Plumbing, Inc. profile (read 2026-11-10)",
+      "publisher": "Angi Inc.",
+      "url": "https://www.angi.com/companylist/us/ca/south-san-francisco/sugar-bear-plumbing-inc-reviews-53506127.htm",
+      "tier": "platform",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Profile states “Trade License Number 946657”, “Trade License Expiration 05/31/2028” and an overall rating of 4.6 from 60 reviews. A July 2026 verified review describes new pipe run inside walls with the walls then patched.",
+      "note": "Third-party customer statements, not official findings. Angi states licence and insurance information is self-reported. The older 2018 tenant-occupied ceiling review cited in PR #62 is not among the 25 reviews rendered on 2026-11-10 and is therefore NOT republished here."
+    },
+    "S171": {
+      "label": "Sugar Bear Home Services, LLC — company site (read 2026-11-10)",
+      "publisher": "Sugar Bear Home Services, LLC",
+      "url": "https://www.sugarbearhomeservices.com/",
+      "tier": "company",
+      "status": "verified",
+      "checked": "2026-11-10",
+      "supports": "Publishes (650) 618-9680 and advertises residential and commercial plumbing, electrical and HVAC in San Francisco and the Bay Area, with 24/7 emergency service.",
+      "note": "The name on the site is the LLC; the CSLB record is the Inc. No CSLB number was displayed on the homepage, and no drywall service is advertised. The entity match is unverified."
     }
   },
   "tables": {
@@ -4029,6 +4063,20 @@
             "S167",
             "S85"
           ]
+        },
+        {
+          "cells": [
+            "U50",
+            "CSLB #946657 lead — carried over from unmerged PR #62, not scored",
+            "The candidate was read from the official CSLB record and its Angi profile on 2026-11-10 and the licence fields match what PR #62 published. It is not inserted into the scored ranking because the scoring model rewards B and C-9 classifications that this record does not carry, and hand-editing a score would break the model's reproducibility. Unresolved: the licensed corporation and the marketing LLC have different names; no drywall trade is licensed on the record; the Angi reviews are customer statements; the 2018 tenant-occupied ceiling review cited in PR #62 was not among the reviews rendered on 2026-11-10, so it is not republished.",
+            "Ask the firm in writing which entity contracts, whether it will take the ceiling opening and its patch under one contract, and for the name and licence of any drywall subcontractor.",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S169",
+            "S170",
+            "S171"
+          ]
         }
       ],
       "caption": "Flagged items do not block the site, the analysis, or the merge. They are published here, with their source links, so they can be reviewed after the site is live. Blank means unconfirmed — nothing was inferred to fill a gap."
@@ -6008,6 +6056,42 @@
           "src": [
             "S168"
           ]
+        },
+        {
+          "cells": [
+            "<code>S169</code>",
+            "<strong>CSLB #946657 — SUGAR BEAR PLUMBING INC (read 2026-11-10)</strong><br><small><a href=\"https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=946657\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=946657</a></small>",
+            "California Contractors State License Board<br><span class=\"pill info\">official</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Corporation, issued 2010-05-03, expires 2028-05-31, current and active; C36, A, C20, C10; 317 Corey Way, South San Francisco 94080; (650) 583-3399; $25,000 contractor&#x27;s bond effective 2026-09-01 (American Contractors Indemnity); workers&#x27; comp Employers Assurance Company 2026-07-27 to 2027-07-27.<br><small>Page printed “Data current as of 11/9/2026”. No B (General Building) and no C-9 (Drywall) classification appears on this record.</small>"
+          ],
+          "src": [
+            "S169"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S170</code>",
+            "<strong>Angi — Sugar Bear Plumbing, Inc. profile (read 2026-11-10)</strong><br><small><a href=\"https://www.angi.com/companylist/us/ca/south-san-francisco/sugar-bear-plumbing-inc-reviews-53506127.htm\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.angi.com/companylist/us/ca/south-san-francisco/sugar-bear-plumbing-inc-reviews-53506127.htm</a></small>",
+            "Angi Inc.<br><span class=\"pill info\">platform</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Profile states “Trade License Number 946657”, “Trade License Expiration 05/31/2028” and an overall rating of 4.6 from 60 reviews. A July 2026 verified review describes new pipe run inside walls with the walls then patched.<br><small>Third-party customer statements, not official findings. Angi states licence and insurance information is self-reported. The older 2018 tenant-occupied ceiling review cited in PR #62 is not among the 25 reviews rendered on 2026-11-10 and is therefore NOT republished here.</small>"
+          ],
+          "src": [
+            "S170"
+          ]
+        },
+        {
+          "cells": [
+            "<code>S171</code>",
+            "<strong>Sugar Bear Home Services, LLC — company site (read 2026-11-10)</strong><br><small><a href=\"https://www.sugarbearhomeservices.com/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"src-url\">https://www.sugarbearhomeservices.com/</a></small>",
+            "Sugar Bear Home Services, LLC<br><span class=\"pill info\">company</span>",
+            "<span class=\"pill ok\">verified 2026-11-10</span>",
+            "Publishes (650) 618-9680 and advertises residential and commercial plumbing, electrical and HVAC in San Francisco and the Bay Area, with 24/7 emergency service.<br><small>The name on the site is the LLC; the CSLB record is the Inc. No CSLB number was displayed on the homepage, and no drywall service is advertised. The entity match is unverified.</small>"
+          ],
+          "src": [
+            "S171"
+          ]
         }
       ],
       "caption": "Every external URL used on this dashboard is listed here with its publisher, tier, retrieval date and verification status. 'dead' sources are never linked from a table row; their URL is shown as plain text for documentation only."
@@ -7438,7 +7522,7 @@
       "caption": "No access method, opening size or permit exemption is inferred. A licensed site assessment is required."
     },
     "repo_inventory": {
-      "title": "Line-by-line source/artifact inventory (320 files)",
+      "title": "Line-by-line source/artifact inventory (321 files)",
       "columns": [
         "Path",
         "Bytes",
@@ -10115,8 +10199,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/dashboard_content.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dashboard_content.py</code></a>",
-            "164011",
-            "<code class=\"hash\">13bbcd00ee09033b1b9ce3b63cd2524fb1c7a16c424211c85f99e89a0f300cb1</code>",
+            "164251",
+            "<code class=\"hash\">5bb00f2e008982264eaa21d5336bd730460672c99d1ce5589f452d0cf5654f5f</code>",
             "current-plumbing-source",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -10201,6 +10285,18 @@
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/oof_e1.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/oof_e1.py</code></a>",
             "1987",
             "<code class=\"hash\">d30a1f4ba7e17d680cabd3d2e7649b9f97e1784f747a4da64547b1f0cf8bbf61</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/c2cb969e-korea7/scripts/pr62_candidate.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/pr62_candidate.py</code></a>",
+            "14451",
+            "<code class=\"hash\">afce8184da1e833e359c7c695bf30a02f31a48c1699a626f84a8830216d00a3a</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -12322,6 +12418,110 @@
           ],
           "src": [
             "S161"
+          ]
+        }
+      ]
+    },
+    "candidate_946": {
+      "title": "Additional candidate — CSLB #946657, re-read 2026-11-10",
+      "caption": "Published as an evidence-fit lead, not as a ranking score. Every official field below was read from the CSLB record during this session. Review-platform statements are customer statements and are never treated as official findings.",
+      "columns": [
+        "Item",
+        "Value",
+        "Official or third-party verification",
+        "Why it matters for this job",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Licence and status",
+            "CSLB #946657 — SUGAR BEAR PLUMBING INC, Corporation, current and active, expires 2028-05-31",
+            "Official CSLB record (printed “Data current as of 11/9/2026”)",
+            "An active licence is the minimum the owner asked for; it says nothing about this repair."
+          ],
+          "src": [
+            "S169"
+          ]
+        },
+        {
+          "cells": [
+            "Classifications",
+            "C36 Plumbing · A General Engineering · C20 Warm-Air HVAC · C10 Electrical",
+            "Official CSLB record",
+            "Plumbing is covered. There is no B (General Building) and no C-9 (Drywall) classification, so a drywall trade is not licensed on this record; patching would rest on §7059 “incidental and supplemental” or a subcontractor."
+          ],
+          "src": [
+            "S169",
+            "S163"
+          ]
+        },
+        {
+          "cells": [
+            "Business address and phone on record",
+            "317 Corey Way, South San Francisco 94080 · (650) 583-3399",
+            "Official CSLB record",
+            "South San Francisco base; San Francisco service is advertised by the company site but the record does not state a service area."
+          ],
+          "src": [
+            "S169"
+          ]
+        },
+        {
+          "cells": [
+            "Bond and workers' compensation",
+            "$25,000 contractor's bond effective 2026-09-01 · workers' comp Employers Assurance Company, 2026-07-27 to 2027-07-27",
+            "Official CSLB record",
+            "Workers' comp on file matters when trades will be inside an occupied unit."
+          ],
+          "src": [
+            "S169"
+          ]
+        },
+        {
+          "cells": [
+            "Company-published contact and trades",
+            "(650) 618-9680 · plumbing, electrical and HVAC; San Francisco and Bay Area; 24/7 emergency service",
+            "Company site (self-published)",
+            "A second published line, different from the CSLB number. It is a marketing page and proves nothing about this repair."
+          ],
+          "src": [
+            "S171"
+          ]
+        },
+        {
+          "cells": [
+            "Review record relevant to the fallback",
+            "4.6 from 60 reviews on Angi; the profile carries licence 946657 and a July 2026 verified review describing pipe run inside walls with the walls then patched",
+            "Angi profile (third-party customer statements; Angi says licence and insurance details are self-reported)",
+            "Wall patching after concealed plumbing is the closest documented analogue in this repository to the ceiling-opening fallback. It is one customer's account, not a capability finding."
+          ],
+          "src": [
+            "S170"
+          ]
+        },
+        {
+          "cells": [
+            "All-in price for this job",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "No official or first-party source publishes a price for this scope",
+            "No figure is inferred. The three owner-provided amounts are not comparable with this firm's work."
+          ],
+          "src": [
+            "S169",
+            "S171"
+          ]
+        },
+        {
+          "cells": [
+            "Entity match between the licensed corporation and the marketing LLC",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "The CSLB record names the Inc; the company site names the LLC and shows no licence number",
+            "Before hiring, confirm in writing which legal entity will contract and that it holds #946657."
+          ],
+          "src": [
+            "S169",
+            "S171"
           ]
         }
       ]
