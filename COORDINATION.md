@@ -1728,3 +1728,22 @@ not a content defect.
 was contacted, so availability, drywall scope, one-contract coverage and tenant-occupied-unit experience
 stay unconfirmed for all sixteen licensees; review-platform values remain third-party snapshots (Yelp
 returns HTTP 403 here); old PRs #2/#15/#18/#20/#32/#42/#62/#65 remain open and untouched.
+
+### C5 close-out — this session's delivery PRs and deployment status
+
+- [PR #82](https://github.com/karagemop466-tech/Korea7/pull/82) (verification record, build-label fix,
+  regenerated site) merged 2026-11-10T05:50:37Z as `47cc70946dd6b04768a3f420a9167aa9be6c3c9f`;
+  GitHub Pages built it (`built`, no error). Its `github-pages` deployment was superseded minutes later
+  by the next concurrent merge; that deployment reported `success`.
+- [PR #86](https://github.com/karagemop466-tech/Korea7/pull/86) (this board record) merged
+  2026-11-10T05:56:43Z as `0154a725dcead4ba3880c1d4bd13e55c50cb8078`. GitHub Pages build for that exact
+  revision reports **`built`** with no error, and its `github-pages` deployment reports **`success`**
+  (2026-11-10T05:59:40Z) with `environment_url` <https://karagemop466-tech.github.io/Korea7/>; `main` head
+  equals that merge commit at the time of this record, so the live site is this revision.
+- Live checks after the deploy: the root dashboard responds and serves the current content; the
+  verification record `data/canonical/verification-2026-11-10-c2cb969e.json` is published and fetchable;
+  `flagged.html` serves 48 flagged items; `verification.html` serves the 16-record re-read tables and the
+  rule-page re-reads.
+- Nothing is left in progress by `arena/c2cb969e-korea7`. Unverified items stay blank and flagged on
+  <https://karagemop466-tech.github.io/Korea7/flagged.html>; no provider was contacted and no permit
+  strategy is recorded anywhere public.
