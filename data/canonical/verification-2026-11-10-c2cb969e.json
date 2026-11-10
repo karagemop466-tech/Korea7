@@ -1,0 +1,237 @@
+{
+ "session": "arena/c2cb969e-korea7",
+ "observed_on": "2026-11-10",
+ "purpose": "Independent re-read of the official records behind the published tables, performed directly by this session (not quoted from an earlier session's notes).",
+ "method": "Each URL below was fetched and read in this session. Published values were compared field by field with data/canonical/recheck-2026-11-10.json and data/canonical/reverification-2026-11-10.json. CSLB database stamps are transcribed exactly as printed; the stamp is the CSLB nightly snapshot date, not the read date.",
+ "cslb_records_read": [
+  {
+   "license": "977638",
+   "business_as_printed": "EXPERT PLUMBING SOLUTIONS, 1465 44TH AVENUE, SAN FRANCISCO, CA 94122; (415) 531-5340",
+   "entity": "Corporation",
+   "issue_date": "10/09/2012",
+   "expire_date": "10/31/2028",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "contractors_bond": "ATLANTIC SPECIALTY INSURANCE COMPANY, $25,000, effective 09/19/2025",
+   "workers_compensation": "EVEREST PREMIER INSURANCE COMPANY, policy 7600025915261, 07/19/2026 to 07/19/2027",
+   "complaint_disclosure": "none shown",
+   "record_stamp": "Data current as of 11/9/2026 9:47:24 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+   "comparison": "matches published record"
+  },
+  {
+   "license": "757796",
+   "business_as_printed": "BAY AREA PLUMBING, 335 14TH AVENUE, SAN FRANCISCO, CA 94118; (415) 668-8000",
+   "entity": "Sole Ownership",
+   "issue_date": "01/07/1999",
+   "expire_date": "01/31/2027",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "contractors_bond": "ATLANTIC SPECIALTY INSURANCE COMPANY, $25,000, effective 09/01/2026",
+   "workers_compensation": "exempt, no employees at this time, effective 12/11/2024",
+   "complaint_disclosure": "none shown",
+   "record_stamp": "Data current as of 11/9/2026 9:47:32 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+   "comparison": "matches published record"
+  },
+  {
+   "license": "1024971",
+   "business_as_printed": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER, 236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127; (415) 596-6115",
+   "entity": "Sole Ownership",
+   "issue_date": "03/20/2017",
+   "expire_date": "03/31/2027",
+   "status": "current and active",
+   "classifications": [
+    "C36"
+   ],
+   "contractors_bond": "ATLANTIC SPECIALTY INSURANCE COMPANY, $25,000, effective 09/01/2026",
+   "workers_compensation": "EMPLOYERS PREFERRED INSURANCE COMPANY, policy EIG576950801, 12/18/2025 to 12/18/2026",
+   "complaint_disclosure": "none shown",
+   "record_stamp": "Data current as of 11/9/2026 9:47:32 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+   "comparison": "matches published record; the published workers'-compensation expiry caution (2026-12-18) stands"
+  },
+  {
+   "license": "829071",
+   "business_as_printed": "ACE PLUMBING & ROOTER, 1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417; (415) 824-6444",
+   "entity": "Corporation",
+   "issue_date": "12/18/2003",
+   "reissue_date": "06/07/2007",
+   "expire_date": "06/30/2027",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "A",
+    "C-4",
+    "C16",
+    "B",
+    "C10"
+   ],
+   "contractors_bond": "MERCHANTS BONDING COMPANY (MUTUAL), $25,000, effective 09/04/2026",
+   "workers_compensation": "FINANCIAL PACIFIC INSURANCE COMPANY, policy 10147545585, 07/13/2026 to 07/13/2027",
+   "complaint_disclosure": "none shown",
+   "record_stamp": "Data current as of 11/9/2026 9:47:06 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+   "comparison": "matches published record and the rank-1 row"
+  },
+  {
+   "license": "1025814",
+   "business_as_printed": "THE GENTEEL PLUMBERS INC, 1181 REVERE AVE, SAN FRANCISCO, CA 94124; (833) 436-8335",
+   "entity": "Corporation",
+   "issue_date": "04/14/2017",
+   "expire_date": "04/30/2027",
+   "status": "current and active",
+   "classifications": [
+    "C36",
+    "B"
+   ],
+   "contractors_bond": "AMERICAN CONTRACTORS INDEMNITY COMPANY, $25,000, effective 01/01/2023",
+   "workers_compensation": "TECHNOLOGY INSURANCE COMPANY INC, policy TES4729399, 01/24/2026 to 01/24/2027",
+   "complaint_disclosure": "none shown",
+   "record_stamp": "Data current as of 11/9/2026 9:47:25 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+   "comparison": "matches published record and the rank-2 row"
+  },
+  {
+   "license": "1003394",
+   "business_as_printed": "HANDYMAN HEROES INC, 912 COLE ST # 202, SAN FRANCISCO, CA 94117; (844) 382-4376",
+   "entity": "Corporation",
+   "issue_date": "05/05/2015",
+   "expire_date": "05/31/2027",
+   "status": "current and active",
+   "classifications": [
+    "B",
+    "C36"
+   ],
+   "contractors_bond": "WESTERN SURETY COMPANY, $25,000, effective 09/01/2026",
+   "workers_compensation": "OMAHA NATIONAL CASUALTY COMPANY, policy ONCC0701424403, 04/25/2026 to 04/25/2027",
+   "complaint_disclosure": "present — citation 2 2020 001045, date 07/12/2020, status FOR DISCLOSURE ONLY PER B&P CODE 7124.6",
+   "record_stamp": "Data current as of 11/9/2026 9:47:25 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+   "complaint_disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+   "comparison": "matches published record, including the complaint-disclosure notice and the rank-3 row"
+  },
+  {
+   "license": "995163",
+   "business_as_printed": "BERNAL HILL DRYWALL INC, 720 ANDERSON ST, SAN FRANCISCO, CA 94110; (415) 533-8274",
+   "entity": "Corporation",
+   "issue_date": "07/28/2014",
+   "expire_date": "07/31/2028",
+   "status": "current and active",
+   "classifications": [
+    "C-9",
+    "B"
+   ],
+   "contractors_bond": "AMERICAN CONTRACTORS INDEMNITY COMPANY, $25,000, effective 03/29/2023",
+   "workers_compensation": "ENDURANCE ASSURANCE CORPORATION, policy EAW0000274901, 03/10/2026 to 03/10/2027",
+   "complaint_disclosure": "none shown",
+   "record_stamp": "Data current as of 11/9/2026 9:48:09 PM",
+   "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+   "comparison": "matches published record; C-9 is drywall, so this firm cannot itself perform the plumbing portion"
+  }
+ ],
+ "official_rule_pages_read": [
+  {
+   "title": "SF.gov — Apply for a plumbing and mechanical permit",
+   "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+   "verbatim_points": [
+    "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground. See exemptions in San Francisco Plumbing Code Section 104.2.",
+    "Contractors must hold a C4, C16, C20, C36, C54, B, or A license to apply for a plumbing or mechanical permit in general. Your permit scope may be further limited depending on your license type.",
+    "B license, after approval based on the scope of work (plumbing work related to a kitchen or bath permit on PermitSF can be approved immediately for B contractors)"
+   ],
+   "permits_table_comparison": "matches the published permits-table summaries and the listed license types"
+  },
+  {
+   "title": "2025 San Francisco Plumbing Code (official City PDF), §104.2 and §104.5",
+   "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+   "verbatim_points": [
+    "104.2 Replace Section 104.2(1) and the first paragraph of Section 104.2(2) as follows:",
+    "104.2 Exempt Work. A permit shall not be required for the following:",
+    "(1) Repair of leaks not requiring cutting into or removing piping.",
+    "(2) Unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping.",
+    "(3) Replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping.",
+    "(4) Replacement of toilets except in structures with alternate water piping.",
+    "(5) Replacement of furnace filters.",
+    "(6) Removal of drainage, water or gas piping from a building when the water supply, gas and drainage lines have been disconnected in an approved manner under a permit.",
+    "(7) Work involved in setting up for display of plumbing fixtures or appliances, when not connected to any supply or drainage lines, in a sales establishment.",
+    "(8) Replacement of water conservation devices not requiring cutting into or removal of piping.",
+    "(9) Work performed in buildings or structures owned and occupied by the State and Federal governments."
+   ],
+   "exempt_work_page_comparison": "all nine items on exempt-work.html are identical to the official text; the amendment scope printed on the page is identical to the sentence above"
+  },
+  {
+   "title": "California Business & Professions Code §7048",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+   "verbatim_points": [
+    "aggregate contract price for labor, materials, and all other items is less than one thousand dollars ($1,000)",
+    "the work or operation does not require a building permit",
+    "Amended by Stats. 2025, Ch. 67, Sec. 12. (AB 1170) Effective January 1, 2026."
+   ],
+   "permits_table_comparison": "matches the published §7048 row, including the $1,000 threshold and the AB 1170 effective date"
+  },
+  {
+   "title": "CSLB — C-36 Plumbing Contractor classification",
+   "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+   "verbatim_points": [
+    "A plumbing contractor provides a means for a supply of safe water ... and the proper disposal of fluid waste from the premises in all structures and fixed works.",
+    "(f) The maintenance and replacement of all items described above"
+   ],
+   "comparison": "supports the site's use of C-36 as the plumbing classification; says nothing about this specific repair"
+  },
+  {
+   "title": "CSLB — B General Building Contractor classification (§7057)",
+   "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+   "verbatim_points": [
+    "requiring in its construction the use of at least two unrelated building trades or crafts",
+    "a general building contractor shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification"
+   ],
+   "comparison": "supports the one-provider finding (a B + C-36 holder can contract plumbing and drywall together); it is a licensing rule, not evidence of any firm's willingness or ability on this job"
+  },
+  {
+   "title": "CSLB — Complaint Disclosure for license #1003394",
+   "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+   "verbatim_points": [
+    "Citation # 2 2020 001045",
+    "Date 07/12/2020",
+    "Status FOR DISCLOSURE ONLY PER B&P CODE 7124.6"
+   ],
+   "comparison": "matches data/canonical/recheck-2026-11-10.json exactly"
+  },
+  {
+   "title": "Ace Plumbing & Rooter — company site",
+   "url": "https://www.aceplumbingandrooter.com/",
+   "verbatim_points": [
+    "Contractors License #829071",
+    "(415) 824-6444",
+    "A – General Engineering; B – General Contractor; C4; C10; C16; C36 – Plumbing"
+   ],
+   "comparison": "company-published license number, classes and phone match the CSLB record read today"
+  },
+  {
+   "title": "GENTEEL Plumbers — contact page",
+   "url": "https://www.genteelplumbers.com/contact",
+   "verbatim_points": [
+    "1181 Revere Avenue, San Francisco, CA 94124",
+    "Phone: 415-465-5853"
+   ],
+   "comparison": "address matches the CSLB record; the published phone differs from the (833) 436-8335 on CSLB — the existing flag (U23) stands and is not reconciled here"
+  }
+ ],
+ "result": "no drift detected in the seven CSLB records read today; every official rule quotation on the site that was re-read matches its source",
+ "not_verified_in_this_session": [
+  "The other nine CSLB records (959843, 1115649, 841229, 1009195, 1089561, 632743, 868994, 1140843, 1075566) were not re-fetched here; their published values rest on the 2026-11-08 read and the 2026-11-10 re-check recorded in data/canonical/reverification-2026-11-10.json.",
+  "No review-platform rating (Yelp, Angi, Thumbtack, BuildZoom, BBB) was fetched or scored; direct Yelp fetches return HTTP 403 in this environment.",
+  "No provider was contacted. Availability, willingness, drywall scope, price, insurance certificates for this job and the ability to work in a tenant-occupied unit are unconfirmed for every listed firm.",
+  "Owner-supplied estimate amounts ($614 / $550 / $135, 2026-08-30) remain unverified; no public source publishes them."
+ ],
+ "irregularities_carried": [
+  "The published sidebar/footer named session arena/56d961a8-korea7 as the current build even though later sessions had rebuilt the site; corrected to this session's id (metadata only, no content change).",
+  "The GitHub Pages deploy job for commit 81fd0ff timed out after a successful build (run 42735694304); the site was still served from the previous successful deployment. A new merge on main re-triggers the build.",
+  "Genteel and Fast Response publish phone numbers that differ from the CSLB record; both are shown and neither is reconciled.",
+  "Archived microsites (bathtub-overflow/, docs/bath/, docs/plumbing-index.html + docs/overflow-*.html, sf-overflow-audit/) are still published beside the primary dashboard; consolidation remains an owner decision."
+ ]
+}
