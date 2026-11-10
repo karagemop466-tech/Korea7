@@ -1,0 +1,486 @@
+{
+  "generated": "2026-11-10",
+  "session": "arena/4c075a93-korea7",
+  "scope": "CSLB complaint-disclosure page for every one of the sixteen license numbers published in this project's ranking.",
+  "method": "Each numbered licence's official CSLB complaint-disclosure page was fetched and read directly on 2026-11-10. A page that prints only the licence number and contractor name, with no Citations table, is recorded here as 'no citation disclosure published'. Values are transcribed verbatim; nothing is inferred. The disclosure pages do not print a 'Data current as of' timestamp; the linked License Detail pages printed 11/9/2026 on the same day.",
+  "disclosure_page_pattern": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum={license}",
+  "records": [
+    {
+      "license": "829071",
+      "name_on_record": "ACE PLUMBING & ROOTER",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=829071",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1025814",
+      "name_on_record": "GENTEEL PLUMBERS INC THE",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1025814",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "995163",
+      "name_on_record": "BERNAL HILL DRYWALL INC",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=995163",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "959843",
+      "name_on_record": "GENERALSF",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=959843",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1003394",
+      "name_on_record": "HANDYMAN HEROES INC",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "result": "citation disclosure published",
+      "citations": [
+        {
+          "citation_number": "2 2020 001045",
+          "citation_number_on_detail_page": "2 2020 1045",
+          "date": "07/12/2020",
+          "status": "FOR DISCLOSURE ONLY PER B&P CODE 7124.6",
+          "detail_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=LIC&LicNum=1003394&LmfPre=&Class=2&FiscalYear=2020&SeqNbr=1045&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=HANDYMAN+HEROES+INC&StatusDt=07/12/2020",
+          "violation_count": 34,
+          "violations": [
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7109.A",
+              "description": "Departed from trade standards"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7113",
+              "description": "Exceeded contract amount"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7154.D",
+              "description": "Employed non-registered salesperson"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159",
+              "description": "Violated provisions of the home improvement contract"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.C4",
+              "description": "No unconditional lien release provided as work progresses"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.C5",
+              "description": "Change order not incorporated in the contract"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.C6",
+              "description": "No notice re: obtaining a performance and pymnt bond"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D2",
+              "description": "No name or registration no. of salesperson"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D3",
+              "description": "No home improvement label on the contract"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D4",
+              "description": "Notice that docs are to be complete before work is started"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D7",
+              "description": "No description of project, materials or equip to be used"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D8A",
+              "description": "No heading for a down payment"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D8C",
+              "description": "No statement about excessive down payment."
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D9A",
+              "description": "No payment schedule heading"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D10A",
+              "description": "No notice describing substantial commencement of work"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D10B",
+              "description": "No approximate start date heading"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D10C",
+              "description": "No date as to the beginning of work"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D11A",
+              "description": "No approximate completion date heading"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D11B",
+              "description": "No approximate completion date"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D12",
+              "description": "No heading re: list of documents being part of the contract"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.D13",
+              "description": "No notice as to the impact of work and change orders"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E1",
+              "description": "No notice regarding general liability insurance"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E1B",
+              "description": "No notice re: name & phone of liability insurance carrier"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E1C",
+              "description": "No notice re: contractor is self insured w/liability ins."
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E2A",
+              "description": "No notice as to not having employees and exemption from WC"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E2B",
+              "description": "No notice as to the name of the Work Comp carrier"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E3A",
+              "description": "No notice RE: addtnl/changes in writing prior to work begin"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E3B",
+              "description": "No ntc: un-enforceability of chnge orders not complying"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E3C",
+              "description": "No notice as to limitation of unjust enrichment"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E4",
+              "description": "No heading or notice as to the mechanic's lien"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E5",
+              "description": "No notice regarding the CSLB"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E6A",
+              "description": "HIC No notice title \"three\" or \"five\" \"Day Right to Cancel\""
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.E6B",
+              "description": "HIC No three day right to cancel language"
+            },
+            {
+              "code_family": "Business & Professions Code",
+              "violation": "7159.5A3",
+              "description": "Exceeded down pymnt of $1000 or 10% whichever is least"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "license": "841229",
+      "name_on_record": "MANNY'S PLUMBING & ROOTER",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=841229",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1115649",
+      "name_on_record": "RAPID FLOW PLUMBING & ROOTER INC",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1115649",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "868994",
+      "name_on_record": "ATLAS PLUMBING & ROOTER",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=868994",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "977638",
+      "name_on_record": "EXPERT PLUMBING SOLUTIONS",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=977638",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1089561",
+      "name_on_record": "HEISES PLUMBING",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1089561",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1024971",
+      "name_on_record": "FAST RESPONSE PLUMBING AND ROOTER",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1024971",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "757796",
+      "name_on_record": "BAY AREA PLUMBING",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=757796",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "632743",
+      "name_on_record": "CALPLUMBING CO",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=632743",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1075566",
+      "name_on_record": "BAY AREA MECHANICAL",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1075566",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1140843",
+      "name_on_record": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1140843",
+      "result": "no citation disclosure published",
+      "citations": []
+    },
+    {
+      "license": "1009195",
+      "name_on_record": "ADVANCED PLUMBING AND DRAIN INC",
+      "disclosure_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1009195",
+      "result": "no citation disclosure published",
+      "citations": []
+    }
+  ],
+  "citations": [
+    {
+      "citation_number": "2 2020 001045",
+      "citation_number_on_detail_page": "2 2020 1045",
+      "date": "07/12/2020",
+      "status": "FOR DISCLOSURE ONLY PER B&P CODE 7124.6",
+      "detail_url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=LIC&LicNum=1003394&LmfPre=&Class=2&FiscalYear=2020&SeqNbr=1045&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=HANDYMAN+HEROES+INC&StatusDt=07/12/2020",
+      "violation_count": 34,
+      "violations": [
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7109.A",
+          "description": "Departed from trade standards"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7113",
+          "description": "Exceeded contract amount"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7154.D",
+          "description": "Employed non-registered salesperson"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159",
+          "description": "Violated provisions of the home improvement contract"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.C4",
+          "description": "No unconditional lien release provided as work progresses"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.C5",
+          "description": "Change order not incorporated in the contract"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.C6",
+          "description": "No notice re: obtaining a performance and pymnt bond"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D2",
+          "description": "No name or registration no. of salesperson"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D3",
+          "description": "No home improvement label on the contract"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D4",
+          "description": "Notice that docs are to be complete before work is started"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D7",
+          "description": "No description of project, materials or equip to be used"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D8A",
+          "description": "No heading for a down payment"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D8C",
+          "description": "No statement about excessive down payment."
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D9A",
+          "description": "No payment schedule heading"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D10A",
+          "description": "No notice describing substantial commencement of work"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D10B",
+          "description": "No approximate start date heading"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D10C",
+          "description": "No date as to the beginning of work"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D11A",
+          "description": "No approximate completion date heading"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D11B",
+          "description": "No approximate completion date"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D12",
+          "description": "No heading re: list of documents being part of the contract"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.D13",
+          "description": "No notice as to the impact of work and change orders"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E1",
+          "description": "No notice regarding general liability insurance"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E1B",
+          "description": "No notice re: name & phone of liability insurance carrier"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E1C",
+          "description": "No notice re: contractor is self insured w/liability ins."
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E2A",
+          "description": "No notice as to not having employees and exemption from WC"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E2B",
+          "description": "No notice as to the name of the Work Comp carrier"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E3A",
+          "description": "No notice RE: addtnl/changes in writing prior to work begin"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E3B",
+          "description": "No ntc: un-enforceability of chnge orders not complying"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E3C",
+          "description": "No notice as to limitation of unjust enrichment"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E4",
+          "description": "No heading or notice as to the mechanic's lien"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E5",
+          "description": "No notice regarding the CSLB"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E6A",
+          "description": "HIC No notice title \"three\" or \"five\" \"Day Right to Cancel\""
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.E6B",
+          "description": "HIC No three day right to cancel language"
+        },
+        {
+          "code_family": "Business & Professions Code",
+          "violation": "7159.5A3",
+          "description": "Exceeded down pymnt of $1000 or 10% whichever is least"
+        }
+      ],
+      "license": "1003394",
+      "name_on_record": "HANDYMAN HEROES INC"
+    }
+  ]
+}

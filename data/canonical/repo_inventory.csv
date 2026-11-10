@@ -1,7 +1,7 @@
 path,bytes,sha256,category,review
 .gitignore,366,9dd54dd3c21c4fc0c7035a1c843ee333c30b64c457bd3f1c7c5878751701b0f7,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 .nojekyll,0,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
-EXECUTIVE-SUMMARY.md,35933,0431958378966fcba963946da6ff26b05c4754f50522382ef7effcc479e3e50e,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
+EXECUTIVE-SUMMARY.md,43110,64bf00b872dd1c27f45b7ffeefe1f458b4695db48332fe4221ea866962a1c4be,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 README.md,30883,5b39c6152b4a1b27198641974c1010161b8c23ad0f336743b89ccc021ceb02da,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 assets/dashboard.css,9663,095b67314133eaea9cf601cde4251685ccb1b09e7ec0ae8e3ee5de5fab44b3f9,current-plumbing-source,hashed source/artifact inventory; external factual claims not verified by this hash
 assets/dashboard.js,1929,f7432873690398085c0b3c355dbb04b0a4f30c142189f02769ec4dee618ab122,current-plumbing-source,hashed source/artifact inventory; external factual claims not verified by this hash
@@ -20,6 +20,7 @@ conftest.py,105,af32daac1142227466a6bf542d9f193780568d5adacb7dbe515154539939a98a
 data/bridge/existing_faults.tif,425830,7ba308ccdc4418b31a178f4f1ef21aaa6e152e4028f2f6f64b01f7eb25ae4093,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 data/bridge/sample_submission.tif,1599597,2176d08e485aa2cd2860ce8df539db4faf4d76163b38a4dd8c30a40454d35cbc,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 data/canonical/closeout-2026-11-10.json,1146,2c01f3ff4bc61c4fecde386cd7885db11e022efd005842dac415984b3aeb914a,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
+data/canonical/complaint-disclosures-2026-11-10.json,20099,6e1ad513ad931e07085711c273d379fba9417a1a9efab12ca794ccd62bc31203,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 data/canonical/cslb_records.json,25868,53ed81dd21635e7b4d30815b89ef978a687b579f2ea601d5e75a24afc877cc21,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 data/canonical/decision_analysis.json,10268,8cd35e53ca82105672b8ec9eca0cc927be9ed4c19cc28c3d41023ef39eaaecce,current-plumbing-source,hashed source/artifact inventory; external factual claims not verified by this hash
 data/canonical/delivery-2026-11-10.json,2709,1797f7b8f181af22ad1b79cda1669d799e5641da31a53863d4b0a19bcc14b5a1,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
@@ -220,8 +221,9 @@ scripts/build_submission.py,12353,691bc14307385220d9cd26d72e91e6f513282b2437e246
 scripts/calibrate.py,3044,7e118357ab97a9f92f8456a0b08862f456347170c8ae8538035654a18a642ef1,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 scripts/canary.py,3067,afc63a22e5dfb885047566426e2eee36b1412a0c6eda7e778db8ff514aa40a30,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 scripts/check_candidate.py,671,b9af6b6417d02b1e7cc3e931df4ea51d4dffb0cacd4edf3fc63eaed4d10696ae,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
-scripts/dashboard_content.py,163702,7e23111584df14a3a0409f87a7aa738639ac2da3d4bc67cd96ab81941539cd0a,current-plumbing-source,hashed source/artifact inventory; external factual claims not verified by this hash
+scripts/dashboard_content.py,164101,8945e8c0a8718d6e7bee06d17d7967ccf9903f3bb615b31b485b2787a427a67f,current-plumbing-source,hashed source/artifact inventory; external factual claims not verified by this hash
 scripts/delivery_data.py,8528,8c29982e8a54a5afa0400a8ec906276e4031cb69a251c11469b95a013fb8d83e,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
+scripts/disclosure_1110.py,23694,25432245e47e4072f4a441431d04d01b51f23b970df805c0de254b6d7085a7eb,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 scripts/fleet_stats.py,2760,1cd06beb0d3681bed5b61c99aa9982757234a617104f3e574bbd45ed483f6166,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 scripts/generate_submission.py,12227,afde6f5b5ff493daa04cb3f4c4ea707f0275af60b5c3afe3028adfe36d038125,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash
 scripts/make_demo_data.py,2606,96feee1505905635e013eadae11ce14dd4627d79cbe3bd8a3dba3be8c83a38ae,preserved-archive-or-unrelated,hashed source/artifact inventory; external factual claims not verified by this hash

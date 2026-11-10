@@ -1491,3 +1491,10 @@ META["session"] = "arena/86db387f-korea7"
 # module appends its own rows/flags and does not rewrite existing content.
 import reread_1110 as _reread
 _reread.integrate(__import__(__name__))
+
+# --- 2026-11-10 complaint-disclosure audit — arena/4c075a93-korea7 -------------
+# Reads CSLB's complaint-disclosure page for every published licence and publishes
+# the citation detail verbatim. Additive only: no existing row, score or page is
+# rewritten; it appends tables, a finding, a flag and two sections.
+import disclosure_1110 as _disclosure
+_disclosure.integrate(__import__(__name__))
