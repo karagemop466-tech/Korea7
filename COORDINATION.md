@@ -1629,3 +1629,9 @@ flagged. No provider contact, availability or job-specific capability is claimed
 | Correct the two omissions in the Findings page, regenerate the canonical dashboard data/page, add a regression test, and record direct official-source checks | in progress | `arena/6e7ad993-korea7` | `COORDINATION.md`; `scripts/dashboard_content.py`; generated `findings.html` and `data/canonical/site_data.json`; `tests/test_findings_consistency.py` |
 
 **Boundaries.** No rank, score, company capability, price, or repair outcome is being changed or inferred. The public cost fields remain blank/UNVERIFIED where an official exact-scope price is unavailable. No contractor outreach or booking is represented.
+
+### Scope extension — exemption wording consistency
+
+A direct 2026-11-10 read of the official [CSLB #1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) record confirms Genteel is current/active with B + C-36; [CSLB #632743](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743) confirms Calplumbing is current/active C-36 and certifies “no employees at this time”. The existing U46/F10 correction records five exemption holders, but the current F06 summary row and `EXECUTIVE-SUMMARY.md` still contain the old four-record list; the generated summary's count was mechanically changed to five while its link list still includes the separate policy-expiry record #1024971 instead of #632743. Extend the same correction scope to those current executive-summary copies and add regression coverage. No rank or license record changes.
+
+Updated file scope: `scripts/dashboard_content.py`; generated `findings.html`, `summary.html`, and `data/canonical/site_data.json`; `EXECUTIVE-SUMMARY.md`; `tests/test_findings_consistency.py`; `COORDINATION.md` (append-only).
