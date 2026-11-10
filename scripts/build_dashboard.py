@@ -35,6 +35,7 @@ GENERATED_OUTPUTS = {
     "data/canonical/repo_inventory.csv",
     "data/canonical/repo_audit.json",
     "data/canonical/repo_audit.md",
+    "data/canonical/recheck-2026-11-10.json",
     "COORDINATION.md",
 }
 INVENTORY_SKIP_DIRS = {".git", "__pycache__", ".pytest_cache", ".mypy_cache", ".ruff_cache", "node_modules", ".venv"}
@@ -60,7 +61,8 @@ def refresh_repo_inventory():
             "assets/dashboard", "tests/test_dashboard", "tests/test_dashboard_integrity.py",
             "tests/test_followup_audit.py", "tests/test_canonical_integrity.py", "scripts/audit_repository.py",
             "data/canonical/evidence-", "data/canonical/providers-", "data/canonical/source_checks.json",
-            "data/canonical/decision_analysis.json",
+            "data/canonical/decision_analysis.json", "data/canonical/recheck-",
+            "scripts/recheck_data.py", "tests/test_recheck.py",
         ))
         rows.append({
             "path": rel,

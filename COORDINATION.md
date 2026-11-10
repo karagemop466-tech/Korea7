@@ -1231,6 +1231,47 @@ Existing source checks are historical snapshots, not new live verification. No c
 - Final build after including new tracked artifacts: 16 pages / 26 tables / 688 dataset rows / 110 sources; 1,403 rendered rows, 1,500 internal links, zero broken links/anchors or missing row citations. Full test suite 163 passed / 18 subtests; post-build targeted suite 24 passed / 16 subtests. Repository audit: 333 tracked files, 81,473 text lines, zero parse failures, zero broken internal links/anchors; benign scanner/code references only.
 - N1 and N2 status: done. Other open PRs were not touched. All outstanding evidence gaps remain published and nonblocking on Flagged for Review (including U45); no contractor is booked.
 
+---
+
+## Session arena/2a57ff73-korea7 — 2026-11-10 (delivery verification + dated re-read)
+
+Runtime requires the fixed Arena branch `arena/2a57ff73-korea7`; no additional branch is created. Prior integration (PR #67/#68, sessions `arena/ccf3d3c5-korea7`, `arena/6696a17e-korea7`) is merged and its claims are closed. This session does not modify other open PRs (#65, #62, #42, #32) and does not touch archived sites (`docs/`, `bathtub-overflow/`, `sf-overflow-audit/`, `trip-lever/`, `vendor/`, `gems/`).
+
+| # | Task | Status | Owner | File scope | Notes |
+|---|---|---|---|---|---|
+| M1 | Claim board and record scope | in progress | arena/2a57ff73-korea7 | COORDINATION.md | Claim committed and pushed before any other edit. |
+| M2 | Dated official re-read of every CSLB record in the ranking plus the SF permit and state-law rule pages; record exact returned timestamps and any delta | done | arena/2a57ff73-korea7 | data/canonical/recheck-2026-11-10.json; scripts/recheck_data.py; recheck.html; scripts/dashboard_content.py (new page/source rows only) | Re-reads supplement, never replace, the 2026-11-07/08/09 snapshots. |
+| M3 | Rebuild, line-by-line audit, full test suite, link/anchor/privacy gates | done | arena/2a57ff73-korea7 | generated HTML/data outputs; verification reports | No claim is relabelled as newly checked without a direct read. |
+| M4 | Integration PR to `main`, merge, confirm exact Pages run and live content | in progress | arena/2a57ff73-korea7 | GitHub PR/Pages | Merge only if the site builds clean. |
+
+### M2 done — sources, verification and irregularities
+
+Direct official reads on 2026-11-10 (all sixteen CSLB records used by the ranking, plus the cited rule pages):
+
+- CSLB License Detail, 2026-11-10, every record printing a 11/9/2026 database stamp: [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) 4:51:38 PM, [#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) 4:51:41 PM, [#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) 4:51:26 PM, [#959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843) 4:51:38 PM, [#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) 4:51:42 PM, [#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) 4:51:45 PM, [#1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649) 4:51:45 PM, [#841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229) 4:51:49 PM, [#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) 4:51:49 PM, [#1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195) 4:51:52 PM, [#995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163) 4:51:53 PM, [#1089561](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561) 4:51:58 PM, [#632743](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743) 4:51:57 PM, [#868994](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994) 4:52:02 PM, [#1140843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843) 4:52:02 PM, [#1075566](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566) 4:52:06 PM.
+- Rule pages: [sf.gov — apply for a plumbing and mechanical permit](https://www.sf.gov/apply-plumbing-and-mechanical-permit), [B&P Code §7048](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048) (amended by AB 1170, effective 2026-01-01), [CSLB complaint disclosure #1003394](https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394).
+- First-party pages: [Ace homepage](https://www.aceplumbingandrooter.com/), [Genteel contact page](https://www.genteelplumbers.com/contact).
+
+Verification performed: every transcribed field was diffed by `scripts/recheck_data.py` against `data/canonical/cslb_records.json` (13 identity/status fields, contractor's bond, workers' compensation, complaint-disclosure and additional-status presence). Result: **16/16 current and active; zero field-level differences.** The published sf.gov, §7048 and complaint-disclosure wording was re-compared to the text already on the site and matches. New page `recheck.html`, sources S111–S132 and machine-readable transcription `data/canonical/recheck-2026-11-10.json`.
+
+Irregularities recorded (not blocking):
+
+- **U46 — the CSLB database stamp lags the read date.** Every record read on 2026-11-10 printed "Data current as of 11/9/2026", so the site cannot claim same-minute freshness; stamps are preserved as returned rather than rewritten to the read date.
+- Genteel publishes two different phone numbers: (833) 436-8335 on CSLB #1025814 and (415) 465-5853 on its own contact page (both re-read 2026-11-10). Neither is replaced; both remain published.
+- Advanced Plumbing and Drain #1009195 remains current and active but still carries the future-suspension additional-status warning; the previously recorded New Jersey website mismatch (U44) is unchanged.
+- Handyman Heroes #1003394 still carries complaint-disclosure citation 2 2020 001045 (07/12/2020, "for disclosure only"), and its own site's C-10 claim is still not on the licence record.
+- No licence record speaks to the actual difficulty: seizing in concealed linkage, a no-demolition access route, one-contract ceiling restoration, price or availability. No provider was contacted; nothing was booked; no job-specific price or experience is claimed.
+
+### M3 done — build and test gate
+
+- `python3 scripts/build_dashboard.py` → **11/11 PASS**: 17 pages, 30 tables, 735 dataset rows, 132 sources, 1,497 rendered tbody rows with 0 missing source links, 1,558 internal links and 0 broken anchors, 395 unique external links all present in the ledger, privacy sweep 140 files / 0 matches, 0 template markers.
+- `tests/` full suite: **171 passed, 18 subtests passed** (34 pre-existing rasterio `Affine` deprecation warnings, unrelated legacy GEMS tests). New `tests/test_recheck.py` adds 8 checks over the dated transcription, the delta computation, the company-page reads, the flag and the absence of any booking/capability claim.
+- Build and tests were run in a disposable virtualenv (`rasterio`/`scipy` installed from PyPI) because the sandbox ships no third-party packages; the committed site builder itself needs no third-party dependency.
+
+### Merge note — conflict resolution (arena/2a57ff73-korea7, 2026-11-10)
+
+Incoming `main` (PRs #69/#70/#72, sessions `arena/86db387f-korea7` and `arena/fd9508fc-korea7`) appended its own board sections while this session was working. No incoming work was discarded: both new sections are preserved verbatim below. Collisions found and resolved rather than overwritten: the concurrent re-verification had already claimed source ids S111–S120 and flag U46, so this session's new sources were re-allocated to S133+ and its flag renumbered U47; the duplicate page role was resolved by cross-linking (this session's `recheck.html` cites the other session's `reverification-2026-11-10.json` on `verification.html` instead of presenting two competing claims). Generated HTML/data conflicts were resolved by rebuilding from the merged sources.
+
 ## Session arena/fd9508fc-korea7 — 2026-11-10 delivery close-out
 
 | Task | Status | Owner | File scope |

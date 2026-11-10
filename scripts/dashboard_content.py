@@ -1453,6 +1453,9 @@ TABLES["repo_review"]["rows"].append({
 # Dated delivery supplement; original model inputs and archived pages preserved.
 import delivery_data as _delivery
 _delivery.integrate(__import__(__name__))
+# Dated 2026-11-10 re-read of every licence record and rule page; historical inputs preserved.
+import recheck_data as _recheck
+_recheck.build(__import__(__name__))
 
 # --- Final normalisation — arena/86db387f-korea7 (2026-11-10) ---
 # Other sessions' modules run above and each may add a page, a table or a flag. Recompute the
@@ -1479,3 +1482,7 @@ for _b in PAGES["index.html"]["sections"]:
                 _card["v"] = str(len(TABLES["flagged"]["rows"]))
 META["updated"] = "2026-11-10"
 META["session"] = "arena/86db387f-korea7"
+
+# Final integration for this delivery: this session published the newest dated page (recheck.html).
+META["updated"] = "2026-11-10"
+META["session"] = "arena/2a57ff73-korea7"
