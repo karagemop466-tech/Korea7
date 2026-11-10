@@ -1,0 +1,16 @@
+{
+  "session": "arena/fd9508fc-korea7",
+  "checked_date": "2026-11-10",
+  "method": "Independent fetch_page selected-field reads; not a comprehensive recheck of all historical facts or external URLs.",
+  "reads": [
+    {"source": "S105", "confirmed": "Ace #829071 current and active; B and C36 among classifications; (415) 824-6444; expiration 2027-06-30", "timestamp": "11/9/2026 4:51:45 PM"},
+    {"source": "S108", "confirmed": "Ace homepage publishes (415) 824-6444, residential SF service and HOA/property-manager service", "timestamp": null},
+    {"source": "S109", "confirmed": "Genteel contact page publishes (415) 465-5853 and San Francisco office", "timestamp": null},
+    {"source": "S110", "confirmed": "Handyman Heroes homepage advertises construction and plumbing, and displays a drywall-patching testimonial", "timestamp": null},
+    {"source": "S111", "confirmed": "Handyman Heroes construction page publishes 1-844-382-4376 and advertises bathroom remodels", "timestamp": null}
+  ],
+  "job_price": null,
+  "one_contract_restoration_confirmed": false,
+  "exact_repair_experience_confirmed": false,
+  "provider_contacted": false
+}
