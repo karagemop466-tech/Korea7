@@ -1464,3 +1464,10 @@ Final gate on the merged tree:
 ### P5 — delivery record
 
 Pending: PR, merge, Pages run, and a fetch of the live `exempt-work.html`.
+
+### M2/M3 follow-up — a concurrent merge had orphaned this supplement (found and fixed)
+
+- After PR #73 merged, session `arena/56d961a8-korea7` (PR #74) merged on top. Its resolution of `scripts/dashboard_content.py` kept its own copy of the file and **dropped this session's import**, so `recheck.html` and its three tables stopped being generated while the previously committed HTML file stayed on disk. The published page was therefore stale and would have been orphaned by the next rebuild.
+- Fix in this branch: the supplement now runs **last** in `dashboard_content.py` and allocates its source ids and its flag id at build time above every other module's (`max(id)+1`), so it can no longer collide with, or be dropped by, another session's numbering. Flags are re-sorted and the dashboard counter is refreshed after the append. Current allocation: sources S121–S142, flag U48.
+- Irregularity logged for review: concurrent sessions allocating fixed source/flag numbers in the same file is the root cause of both collisions seen today (S111–S120/U46, then the dropped import). Fixed here without changing other sessions' files; their pages, tables and flags are untouched and still published.
+- Re-verified after the fix: `build_dashboard.py` **11/11 PASS** — 18 pages, 34 tables, 768 dataset rows, 136 sources, 1,586 rendered rows with 0 missing source links, 1,640 internal links / 0 broken, 401 external links all in the ledger, privacy sweep 143 files / 0 matches. `audit_repository.py`: 343 tracked files, 0 parse failures, 0 broken links/anchors; its single non-benign privacy flag is a **negative assertion inside another session's test** (`tests/test_reread_1110.py:85` lists phrases the page must not contain), not published page text — the page-level privacy sweep is clean. Tests: **183 passed, 18 subtests passed**.
