@@ -1379,13 +1379,6 @@
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
-    "path": "recheck.html",
-    "bytes": 21790,
-    "sha256": "5257a8dc4e1cdc00612ab9dcfec22fe3780855d99df55fc8d19c1e3ddd473fcb",
-    "category": "preserved-archive-or-unrelated",
-    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
-  },
-  {
     "path": "registry/focus9_manifest.json",
     "bytes": 3509,
     "sha256": "1ac25e722a39471ed9ca405fa4c8f247f1a95a09b2473d4b54f6db9a35b87fe2",
@@ -1548,8 +1541,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 163287,
-    "sha256": "995eeb3e0767b73fa7ea2d85941e8f7c5ed6722f1f0e001cc57fe026d09246ba",
+    "bytes": 163702,
+    "sha256": "7e23111584df14a3a0409f87a7aa738639ac2da3d4bc67cd96ab81941539cd0a",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

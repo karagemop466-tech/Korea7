@@ -1464,3 +1464,67 @@ Final gate on the merged tree:
 ### P5 — delivery record
 
 Pending: PR, merge, Pages run, and a fetch of the live `exempt-work.html`.
+
+---
+
+# Session `arena/348dd85b-korea7` — 2026-11-10 (post-merge delivery verification, build/test re-check, Pages recovery)
+
+Runtime requires the fixed Arena branch; no additional branch is created. Prior to substantive work this session read this board, `README.md`, `EXECUTIVE-SUMMARY.md` and `index.html`, and enumerated open PRs (#71 was open at session start and has since merged; #65, #62, #42, #32, #20, #18, #15, #2 remain open and were not touched; their scopes are respected).
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| P1 — Sync branch to `main` and re-verify build, audit, full test suite on merged state | done | arena/348dd85b-korea7 | read-only + report |
+| P2 — Independent spot re-verification of official CSLB records for the three estimate providers and the route-1 top three / restoration partner | done | arena/348dd85b-korea7 | read-only |
+| P3 — Pages recovery: last two `main` builds failed instantly; identify cause and restore a live site | in progress → done pending final merge build | arena/348dd85b-korea7 | COORDINATION.md; GitHub PR/Pages |
+| P4 — Privacy sweep re-check of the published site | done | arena/348dd85b-korea7 | read-only |
+| P6 — Restore recheck integration dropped by PR #74's merge; rebuild, fix the red test suite on `main` | done | arena/348dd85b-korea7 | scripts/dashboard_content.py (2 lines), generated pages/data, this board |
+
+### P1 — build, audit, tests (on `main` = `e566899`, ~01:03 UTC; re-run after rebase onto `a6c74a7` and after the P6 restoration, ~01:17 UTC)
+
+- `git reset --hard origin/main` (branch had zero commits not on `main`; shallow clone; merge-base empty by shallow boundary); later rebased onto `a6c74a7` (PRs #71–#75 merged concurrently).
+- `python3 scripts/build_dashboard.py` (final tree, with P6 restoration) → **11/11 PASS**: 18 pages, 34 tables, 768 rows, 136 source-ledger entries; 1,586 rendered tbody rows, 0 missing source links; 0 unflagged blanks; 1,640 internal links, 0 broken; 0 broken anchors; 401 unique external links all in the ledger; privacy sweep 143 files / 0 matches; 0 template markers; 57 official/manufacturer sources with read dates.
+- `python3 scripts/audit_repository.py` → 343 tracked files, 86,779 text lines; 0 parse failures; 0 broken internal links; 0 broken anchors; flags: 35 pre-existing benign pattern-reference entries, 1 benign privacy-pattern definition (test), and 1 non-benign-graded privacy-pattern match at `tests/test_reread_1110.py:85` — a tuple of forbidden strings the test asserts the rendered page omits (same benign-intent family as the downgraded cases; flagged here for completeness, file unmodified). Note: the audit committed on `main` was stale (it did not cover this file); the refreshed artifacts are committed in this session's PR.
+- `python3 -m pytest tests/ -q` (throwaway venv `/home/user/venv7`: pytest 9.2.0, numpy 2.4.6, scipy, rasterio 1.4.4, per `requirements.txt`) → **183 passed, 18 subtests passed** (the 6 `tests/test_recheck.py` failures present on `a6c74a7` are fixed by P6), 34 pre-existing rasterio `Affine` PendingDeprecationWarnings.
+- Full-built-site spot reads: `EXECUTIVE-SUMMARY.md`, `ranking.html`, `index.html` reviewed; published figures consistent with the 2026-11-10 re-verification corrections (16 records, 2026-11-09 database timestamps).
+
+### P2 — independent CSLB re-reads performed directly in this session (all printed “Data current as of 11/9/2026”)
+
+| License | Business (as printed) | Result |
+|---|---|---|
+| [#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071) | ACE PLUMBING & ROOTER, 1090 Bryant St, SF 94103; (415) 824-6444; corp; issued 2003-12-18; exp 2027-06-30; C36·A·C-4·C16·B·C10; bond $25,000 (Merchants 09/04/2026); WC Financial Pacific 2026-07-13 → 2027-07-13 | current and active — matches published |
+| [#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) | THE GENTEEL PLUMBERS INC, 1181 Revere Ave, SF 94124; (833) 436-8335; corp; issued 2017-04-14; exp 2027-04-30; C36·B; WC Technology Ins 2026-01-24 → 2027-01-24 | current and active — matches published |
+| [#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) | HANDYMAN HEROES INC, 912 Cole St #202, SF 94117; (844) 382-4376; corp; issued 2015-05-05; exp 2027-05-31; B·C36; complaint-disclosure additional status present; WC Omaha National Casualty 2026-04-25 → 2027-04-25 | current and active — matches published (incl. complaint-disclosure flag) |
+| [#977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638) | EXPERT PLUMBING SOLUTIONS, 1465 44th Ave, SF 94122; (415) 531-5340; corp; issued 2012-10-09; exp 2028-10-31; C36; WC Everest Premier 2026-07-19 → 2027-07-19 | current and active — matches published |
+| [#757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796) | BAY AREA PLUMBING, 335 14th Ave, SF 94118; (415) 668-8000; sole ownership; issued 1999-01-07; exp 2027-01-31; C36; WC-exempt “no employees” (eff. 2024-12-11) | current and active — matches published |
+| [#1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971) | JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER, 236 W Potral Ave #459, SF 94127; (415) 596-6115; sole ownership; issued 2017-03-20; exp 2027-03-31; C36; WC Employers Preferred 2025-12-18 → 2026-12-18 | current and active — matches published (WC expiry 2026-12-18 caution stands) |
+
+Six of sixteen records re-read in this session; **no field drift** detected. The remaining ten were re-read in session `arena/86db387f-korea7` (2026-11-10, `data/canonical/reverification-2026-11-10.json`) and at 2026-11-08/09 by prior integrations; they were not individually re-fetched here. Nothing in this session re-verified review-platform ratings (Yelp direct fetches return HTTP 403 in this environment); they remain labelled third-party and unscored.
+
+### P4 — privacy re-check
+
+Case-insensitive sweep of tracked files for the owner's internal-only permit wording found only `tests/test_bath_site.py` and `tests/test_overflow_site.py` assertion patterns used to demonstrate the site omits it; `scripts/build_dashboard.py` privacy sweep passes (143 files, 0 matches). The published site contains none of that wording; this record adds none. Permit content on the site stays neutral and grounded in sf.gov/CSLB sources.
+
+### P3 — Pages outage and recovery (in progress)
+
+- `github-pages` builds for `85f83ab` (PR #69 merge, build created 2026-11-10T00:59:19Z) and `e566899` (PR #72 merge, build created 2026-11-10T00:59:35Z) both failed with duration 0 and error “Page build failed.” The immediately preceding build for `37c0f118` succeeded in ~51 s (deployed 00:58:53Z), and the site built successfully at every earlier revision this week. Nothing in the `37c0f11..e566899` diff is build-hostile (HTML/JSON/MD/PY only; no symlinks; `.nojekyll` present; repo ≈22 MB). The two failures landed within ~20 s of one another — consistent with a transient platform-side error rather than content. `POST /pages/builds` is not permitted for this integration (HTTP 403 “Resource not accessible by integration”), so a fresh build can only be triggered by a push to `main`.
+- This session’s recovery PR is the retry trigger (it carries the P6 restoration plus the regenerated canonical artifacts, deliberately grouped into one merge). Concurrent session `arena/cbeddf30-korea7` documented the same instant-failure flake on the same revisions (its close-out, merged in #71/#75) and likewise recorded that a manual rebuild returns HTTP 403 for this integration; its board notes the site remains served from the last successful build. Exact-deployment confirmation for the recovery merge is recorded below after it actually occurs; if the build errors again with duration 0, this entry is updated and the retry continues until the site is live.
+- Until the recovery merge builds, the live root may serve an older successful build that predates the 2026-11-10 re-verification corrections and the P6 restoration; the source on this branch is correct and locally verified (11/11 PASS, 183 tests green).
+
+### P6 — restore the recheck integration dropped by PR #74's merge (done)
+
+**Finding.** `main` at `a6c74a7` fails its own suite: 6 of 184 tests fail (`tests/test_recheck.py::RecheckChecks::…` — `KeyError: 'recheck_licenses'` and NAV absence of the published `recheck.html`). Root cause traced: PR #73 (`arena/2a57ff73-korea7`, merged as `36b3adf`) appended two lines to `scripts/dashboard_content.py` (`import recheck_data as _recheck` / `_recheck.build(...)`) registering the recheck page, its tables, sources S133+ and the NAV entry. PR #74 (`arena/56d961a8-korea7`, merged as `0dbe481`) had branched before that import landed; its merge resolution took the branch side of the conflict and deleted PR #73's lines (verified: `git diff 36b3adf 0dbe481 -- scripts/dashboard_content.py` shows the exact removal). `recheck.html` and `data/canonical/recheck-2026-11-10.json` remained on disk and committed, so the published page looked fine but was orphaned from the dataset, the row audit and the navigation.
+
+**Fix (minimal, additive only).** Restored exactly the two dropped lines in their original position (after the `delivery_data` import, before the `Final normalisation` block). No other session's rows, rankings, pages or modules are altered. Rebuilt: **11/11 PASS** — 18 pages, 34 tables, 768 rows, **136** ledger sources (57 official/manufacturer with read dates; recheck adds S133+ dynamically and flag U47, allocated above concurrent sessions' ranges). `pytest` → **183 passed** (+18 subtests); the 6 recheck tests now pass. Privacy sweep 143 files / 0 matches. Generated artifacts regenerated deterministically; `data/canonical/recheck-2026-11-10.json` reproduced byte-identically (unchanged).
+
+**Scope note.** `scripts/dashboard_content.py` is the shared integration file; this edit is limited to restoring another merged PR's lines, not changing any session's content. The recheck module's own header requires only that historical inputs be preserved — they are. If any owner disputes this restoration, reverting the two lines restores the exact `a6c74a7` behaviour (with the red suite and the orphaned page).
+
+### Irregularities / carries (nonblocking; published on `flagged.html` where applicable)
+
+1. Pages outage as described above (this entry).
+2. PR #74's merge (`0dbe481`) dropped PR #73's `import recheck_data` wiring from `scripts/dashboard_content.py`, orphaning `recheck.html` (page not generated, missing from dataset/nav) and leaving 6 `tests/test_recheck.py` tests red on `main`; restored in this session (P6).
+3. Estimates remain owner-supplied (Expert Plumbing Solutions $614 / Bay Area Plumbing $550 / Fast Response $135, 2026-08-30) — no official source publishes them; verified cells stay blank/UNVERIFIED.
+4. No provider has been contacted; availability, drywall scope and this repair are unconfirmed for every listed firm.
+5. Yelp/Angi/Thumbtack/BuildZoom/BBB values are third-party snapshots and are never scored; direct Yelp fetches are blocked (403) here.
+6. Archived microsites (`bathtub-overflow/`, `docs/bath/`, `docs/plumbing-index.html` + `docs/overflow-*.html`, `sf-overflow-audit/`) remain published beside the primary dashboard; consolidation is an owner decision.
+7. Repo legacy content is an unrelated DOE GEMS audit; open PRs #32/#62/#65 and GEMS PRs remain open and were not touched; #71, #73, #74, #75 merged during this session's work.
+8. Genteel and Fast Response phone/address mismatches vs company pages are documented on the site and deliberately not reconciled here.
