@@ -1,0 +1,72 @@
+{
+  "checked_date": "2026-11-10",
+  "method": "Direct fetch_page reads; exact returned database timestamps preserved. Selected fields transcribed only. Not a comprehensive current re-verification of historical repository evidence.",
+  "source_ids": [
+    "S11",
+    "S64",
+    "S10",
+    "S43",
+    "S72",
+    "S42"
+  ],
+  "checks": [
+    {
+      "business": "Ace Plumbing & Rooter \u2014 CSLB #829071",
+      "facts": "Current and active; C36, A, C-4, C16, B, C10; (415) 824-6444; license expires 2027-06-30.",
+      "record_timestamp": "11/9/2026 4:51:45 PM",
+      "limits": "License record only; no job acceptance.",
+      "sources": [
+        "S11"
+      ]
+    },
+    {
+      "business": "The Genteel Plumbers Inc \u2014 CSLB #1025814",
+      "facts": "Current and active; C36 and B; (833) 436-8335; license expires 2027-04-30.",
+      "record_timestamp": "11/9/2026 4:51:49 PM",
+      "limits": "License record only; no drywall commitment.",
+      "sources": [
+        "S64"
+      ]
+    },
+    {
+      "business": "Handyman Heroes Inc \u2014 CSLB #1003394",
+      "facts": "Current and active; B and C36; (844) 382-4376; license expires 2027-05-31; complaint-disclosure link present.",
+      "record_timestamp": "11/9/2026 4:51:42 PM",
+      "limits": "Complaint detail not re-read; no inference about this job.",
+      "sources": [
+        "S10"
+      ]
+    },
+    {
+      "business": "Ace \u2014 company homepage",
+      "facts": "Publishes (415) 824-6444, license #829071, residential SF services and HOA/property-manager service.",
+      "record_timestamp": "No page update timestamp supplied",
+      "limits": "Company description, not independent proof of performance.",
+      "sources": [
+        "S43"
+      ]
+    },
+    {
+      "business": "Genteel \u2014 company contact page",
+      "facts": "Publishes (415) 465-5853; 1181 Revere Avenue, San Francisco; office Monday\u2013Friday 8 AM\u20135 PM; 24/7 answering service.",
+      "record_timestamp": "No page update timestamp supplied",
+      "limits": "Website phone differs from CSLB phone; neither is silently replaced.",
+      "sources": [
+        "S72"
+      ]
+    },
+    {
+      "business": "Handyman Heroes \u2014 company homepage",
+      "facts": "Advertises plumbing, construction and interior/exterior painting; displays a drywall-patching testimonial and a Licensed C-10 claim.",
+      "record_timestamp": "No page update timestamp supplied",
+      "limits": "C-10 is not on the re-read #1003394 record; testimonial is company-hosted, not independently verified.",
+      "sources": [
+        "S42",
+        "S10"
+      ]
+    }
+  ],
+  "provider_contacted": false,
+  "booking_confirmed": false,
+  "job_specific_verified_price": null
+}
