@@ -1548,8 +1548,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 149545,
-    "sha256": "fce3cf8a3a47f85b60ea9d274e0e0f568c194e3207763256431ffbda46354a6d",
+    "bytes": 150402,
+    "sha256": "b152749c71686e7fba45721512b965a82508aba5cc70cf34b8c7ba928526d299",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1824,6 +1824,13 @@
     "bytes": 1106,
     "sha256": "34289d6145e01465692dac044263018c92205df384edf3ff957673b1073d2227",
     "category": "current-plumbing-source",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_full_recheck.py",
+    "bytes": 4794,
+    "sha256": "ed5b5da79d9b8cce3a00b23cb1e6d34c8afe80c1e564a27a1e72b9bbd69dfff2",
+    "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {

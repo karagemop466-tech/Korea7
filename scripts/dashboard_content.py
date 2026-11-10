@@ -117,6 +117,22 @@ SOURCES = {
 }
 
 
+def _dual_classified_sentence():
+    """Build the B + C-36 sentence from the dataset so the count cannot drift."""
+    import json as _json
+    from pathlib import Path as _Path
+    recs = _json.loads((_Path(__file__).resolve().parents[1] / "data/canonical/cslb_records.json").read_text())["records"]
+    dual = [r for r in recs if "C36" in r["classifications"] and "B" in r["classifications"]]
+    words = {1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven",
+             8: "Eight", 9: "Nine", 10: "Ten"}
+    word = words.get(len(dual), str(len(dual)))
+    source_for = {"829071": "S11", "959843": "S09", "1003394": "S10", "1115649": "S56",
+                  "841229": "S57", "1025814": "S64"}
+    links = ", ".join(slink(source_for[r["license"]], "#" + r["license"])
+                      for r in dual if r["license"] in source_for)
+    return "%s verified licences list both B and C-36 on one record: %s. Count and list are read from the committed CSLB dataset." % (word, links)
+
+
 def pill(text, tone="info"):
     return '<span class="pill %s">%s</span>' % (tone, text)
 
@@ -321,7 +337,7 @@ TABLES = {
             {"cells": ["F08", "Occupied-unit / property-manager experience is only partially documented", "Fast Response site (apartments, HOAs, property managers), Ace site (HOAs/property managers), Angi SF review mentions a tenant-occupied multi-unit project", pill("company/review statements only", "warn")], "src": ["S40", "S43", "S24"]},
             {"cells": ["F09", "Two previously cited sources are dead and were removed from all active claims", "SFGate redirect to empty page; InspectAndTest HTTP 500 — both re-checked 2026-11-07", pill("irregularity — flagged", "warn")], "src": ["S55", "S45"]},
             {"cells": ["F10", "The repository's root content belongs to an unrelated legacy project", "README describes a DOE GEMS fault-prospectivity audit; legacy site remains under docs/", pill("irregularity — flagged", "warn")], "src": ["S47", "S48"]},
-            {"cells": ["F11", "Recommended shortlist order: firms whose verified classes cover both building and plumbing first", "Five verified B + C-36 licenses: " + slink("S11", "#829071") + ", " + slink("S09", "#959843") + ", " + slink("S10", "#1003394") + ", " + slink("S56", "#1115649") + ", " + slink("S57", "#841229"), pill("recommendation", "info")], "src": ["S11", "S09", "S10", "S56", "S57", "S58"]},
+            {"cells": ["F11", "Recommended shortlist order: firms whose verified classes cover both building and plumbing first", _dual_classified_sentence(), pill("recommendation", "info")], "src": ["S11", "S09", "S10", "S56", "S57", "S64", "S58"]},
         ],
         "caption": "Findings marked 'analysis' are this site's reasoning from the cited verified sources; they are not vendor claims, quotes, or official determinations. Values that could not be confirmed from an official source remain blank on the data pages and are listed on the Flagged for Review page.",
     },
@@ -862,7 +878,7 @@ TABLES["requirements"] = {'title': 'Requirements register — line by line',
           {'cells': ['R09',
                      'Find someone who can perform the needed work',
                      'Objective',
-                     'Eight licensed candidates researched; no provider acceptance confirmed',
+                     'Sixteen CSLB-verified candidates researched; no provider acceptance confirmed',
                      '<span class="pill warn">research done / acceptance unverified</span>'],
            'src': ['S44', 'S04']},
           {'cells': ['R10',
@@ -889,7 +905,7 @@ TABLES["requirements"] = {'title': 'Requirements register — line by line',
           {'cells': ['R13',
                      'One all-in-one service for drywall and plumbing',
                      'Service requirement',
-                     'Five B+C-36 licenses verified; combined execution and drywall scope unconfirmed',
+                     'Six B+C-36 licenses verified; combined execution and drywall scope unconfirmed',
                      '<span class="pill warn">license verified / execution unverified</span>'],
            'src': ['S44', 'S09', 'S10', 'S11', 'S56', 'S57', 'S83']},
           {'cells': ['R14',
@@ -901,7 +917,7 @@ TABLES["requirements"] = {'title': 'Requirements register — line by line',
           {'cells': ['R15',
                      'Provider should be a licensed plumber or contractor',
                      'Provider',
-                     'CSLB records checked for eight candidates',
+                     'CSLB records checked for sixteen candidates',
                      '<span class="pill ok">license records verified</span>'],
            'src': ['S44', 'S04', 'S05']},
           {'cells': ['R16',

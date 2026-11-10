@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T01:02:28+00:00",
+  "generated_at": "2026-11-10T01:03:37+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -21,13 +21,13 @@
   "counts": {
     "pages": 16,
     "tables": 29,
-    "rows": 722,
+    "rows": 723,
     "source_ledger_entries": 113,
     "verified_sources": 95,
     "official_or_manufacturer_verified": 37,
-    "generated_tbody_rows": 1471,
-    "internal_links_checked": 1549,
-    "unique_external_links": 399,
+    "generated_tbody_rows": 1473,
+    "internal_links_checked": 1551,
+    "unique_external_links": 400,
     "published_text_files_scanned": 140
   },
   "checks": [
@@ -39,7 +39,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1471 tbody rows checked, 0 missing links"
+      "detail": "1473 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -49,7 +49,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1549 internal links checked, 0 broken"
+      "detail": "1551 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -59,7 +59,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "399 unique external links, 0 unknown/dead"
+      "detail": "400 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -366,6 +366,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_emission.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_evaluate_holdout.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_followup_audit.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_full_recheck.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_holdout_registry.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_license_scope_followup.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/33211fbf-korea7/tests/test_metric.py",
