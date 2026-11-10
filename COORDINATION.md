@@ -1651,7 +1651,7 @@ Platform fixes this session's branch. This session claims one narrow, additive t
 **Verification performed.**
 - `python3 scripts/build_dashboard.py` → **11/11 PASS**: 18 pages, 36 tables, 826 dataset rows, 1,702 rendered rows with source links (0 missing), 1,696 internal links (0 broken), 0 broken anchors, 404 unique external links all in the ledger, privacy sweep 144 files / 0 matches.
 - `python3 -m pytest tests/ -q` (isolated venv, pytest only) → **103 passed, 18 subtests passed** for every site/data test. Ten legacy scientific test modules were not run because numpy/scipy/rasterio are not installed in this sandbox (same limitation recorded by earlier sessions); they do not touch the dashboard.
-- `python3 scripts/audit_repository.py` → 345 tracked files, 88,997 text lines, 0 broken internal links, 0 broken anchors, 0 parse failures; the single "privacy-pattern" hit is the pre-existing test assertion in `tests/test_reread_1110.py`.
+- `python3 scripts/audit_repository.py` → 346 tracked files, 89,358 text lines, 0 broken internal links, 0 broken anchors, 0 parse failures; the single "privacy-pattern" hit is the pre-existing test assertion in `tests/test_reread_1110.py`.
 - Row-level integrity: the counts in the published text ("34 entries", "31 entries citing §7159", "fifteen with no citation") were computed from the transcribed list, not estimated. A first draft said "27" and was corrected against the data before publishing.
 
 **Findings / irregularities (non-blocking, published on the site).**
@@ -1660,3 +1660,7 @@ Platform fixes this session's branch. This session claims one narrow, additive t
 3. Yelp/Angi/BuildZoom/Thumbtack/BBB values were not re-checked this session (Yelp returns HTTP 403 to automated fetches); nothing new is claimed from them.
 4. No provider was contacted; job-specific capability, drywall scope, availability and price remain unconfirmed for every candidate.
 5. Direct `curl` from this sandbox reaches only an allowlist of hosts, so external pages were read through the fetch tool rather than shell HTTP; CSLB pages are reachable that way and each disclosure page was read line by line.
+
+**Merge-conflict log (required by the board protocol).** While this session worked, other sessions merged PR #79/#80/#82 to `main` (current tip at the time of this note: `47cc709`). `git pull --rebase` conflicted in `COORDINATION.md` and in the generated pages/data. Resolved without discarding any work: the board keeps **every** session section (this one appended last, no other section edited), the generated pages were restored to the incoming `main` version and then regenerated from the merged sources, and `data/canonical/repo_audit.{json,md}` were restored to `main` and regenerated. Post-rebase: build 11/11 PASS, 103 site tests + 18 subtests pass, audit 0 broken links / 0 parse failures. No content of another session was removed.
+
+**Pages delivery is outside this session's claim.** Concurrent sessions report intermittent Pages failures (zero-duration build errors, a deploy-step timeout). This session's PR is a further build trigger; the result is recorded below once GitHub reports it.
