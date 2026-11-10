@@ -1531,3 +1531,15 @@ Case-insensitive sweep of tracked files for the owner's internal-only permit wor
 6. Archived microsites (`bathtub-overflow/`, `docs/bath/`, `docs/plumbing-index.html` + `docs/overflow-*.html`, `sf-overflow-audit/`) remain published beside the primary dashboard; consolidation is an owner decision.
 7. Repo legacy content is an unrelated DOE GEMS audit; open PRs #32/#62/#65 and GEMS PRs remain open and were not touched; #71, #73, #74, #75 merged during this session's work.
 8. Genteel and Fast Response phone/address mismatches vs company pages are documented on the site and deliberately not reconciled here.
+
+---
+
+# Session `arena/c6a12019-korea7` — 2026-11-10
+
+Platform requires this fixed session branch. This session claims a narrow post-integration delivery audit and Pages recovery; existing task owners and their work remain undisturbed.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Current build/test/privacy verification and Pages deployment recovery | in progress | arena/c6a12019-korea7 | COORDINATION.md; read-only verification; GitHub PR and Pages deployment. If code repair is necessary, claim its scope here first. |
+
+Initial observation: Pages API reports an errored build for `81fd0ffd305e6cfd39efd2536b755eef5a3e6646`, duration 0, following a documented earlier successful deployment. Cause and current live state need independent verification.
