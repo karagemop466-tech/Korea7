@@ -1779,3 +1779,31 @@ A second board-only append conflict occurred while rebasing onto `b10a279` (PR #
 - Two historical Korea7 PR descriptions were edited in place for privacy hygiene; public caches and historical records may retain previous versions. No content of the sensitive statements is repeated in this record.
 - Pending: final repository audit, PR, merge and verification of the exact Pages revision and live page content.
 - Final repository audit: **349 tracked files**, 0 parse failures, 0 broken internal links and 0 broken anchors. The single privacy-pattern scanner hit is an existing negative test assertion (`tests/test_reread_1110.py`), not published-site content; the remaining 36 flags are benign pattern definitions/references. Historical board process wording was made neutral during the privacy pass; substantive task records were retained.
+
+---
+
+# Session `arena/335594a7-korea7` — independent current-state audit (2026-11-11)
+
+The coordination board was read before work began. This checkout is pinned to branch
+`arena/335594a7-korea7` at `0d0e039` (PR #88 merge). PR #88 is merged and its exact GitHub Pages
+workflow reports success, while the preceding A3 row remains labelled `in progress`; that status is
+stale. Its owner has had no new activity for more than 60 minutes, so this session takes over only the
+current-state audit and any narrowly scoped, source-backed follow-up. No other active claim for this
+branch/task was found. The current branch is retained; no other branch is created.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| B1 — fresh audit of the published bathtub-overflow site, public wording, official license/permit facts, and source provenance | in progress | `arena/335594a7-korea7` | read-only site/repo review; `COORDINATION.md`; new `data/canonical/session-335594a7-audit.json` and audit test/script only if needed |
+| B2 — correct verified critical issues, rebuild, test, and verify the exact published revision | in progress | `arena/335594a7-korea7` | `COORDINATION.md`; only if substantiated, canonical overflow source/data, its page-generation inputs, generated overflow pages; GitHub PR/Pages |
+
+Privacy rule: no requester-only rationale or nonpublic personal circumstances will be copied into public
+site/email content. Public guidance will not suggest skipping a permit; the required scope and permit
+status are to be confirmed with San Francisco DBI and the contractor. Unknown claims remain blank or
+explicitly unverified. No contractor is represented as contacted or committed unless direct evidence
+exists.
+
+### Claim verification
+
+- The current root and task board were reviewed; the task page already contains extensive prior work.
+- This session is a follow-up audit, not a claim that prior line-by-line verification is current. Fresh
+  checks, findings, corrections, and deployment status will be appended below before close-out.
