@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T02:20:00+00:00",
+  "generated_at": "2026-11-11T02:20:53+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -19,30 +19,31 @@
     "delivery.html",
     "recheck.html",
     "exempt-work.html",
-    "questions.html"
+    "questions.html",
+    "decision-checklist.html"
   ],
   "counts": {
-    "pages": 19,
-    "tables": 41,
-    "rows": 883,
+    "pages": 20,
+    "tables": 42,
+    "rows": 897,
     "source_ledger_entries": 152,
     "verified_sources": 129,
     "official_or_manufacturer_verified": 60,
-    "generated_tbody_rows": 1816,
-    "internal_links_checked": 1794,
-    "unique_external_links": 422,
-    "published_text_files_scanned": 148
+    "generated_tbody_rows": 1844,
+    "internal_links_checked": 1863,
+    "unique_external_links": 424,
+    "published_text_files_scanned": 149
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "19 pages generated"
+      "detail": "20 pages generated"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1816 tbody rows checked, 0 missing links"
+      "detail": "1844 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -52,7 +53,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1794 internal links checked, 0 broken"
+      "detail": "1863 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -62,7 +63,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "422 unique external links, 0 unknown/dead"
+      "detail": "424 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -72,7 +73,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "148 files scanned, 0 matches"
+      "detail": "149 files scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -334,6 +335,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/canary.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/check_candidate.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/dashboard_content.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/decision_checklist.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/delivery_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/disclosure_1110.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/fleet_stats.py",
@@ -374,6 +376,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_closeout.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_dashboard.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_dashboard_integrity.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_decision_checklist.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_delivery.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_emission.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_evaluate_holdout.py",

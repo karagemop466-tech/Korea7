@@ -1511,3 +1511,6 @@ _job_fit.integrate(__import__(__name__))
 # page is rewritten; every new row cites existing verified sources.
 import questions_data as _questions
 _questions.integrate(__import__(__name__))
+# Decision-readiness synthesis; preserves all external-source check dates.
+import decision_checklist as _decision_checklist
+_decision_checklist.integrate(__import__(__name__))
