@@ -1527,3 +1527,10 @@ _reread_1111.integrate(__import__(__name__))
 # questions_data.py, plus two findings. No existing row or page is rewritten.
 import questions_1111 as _questions_1111
 _questions_1111.integrate(__import__(__name__))
+
+# --- 2026-11-11 known-vs-missing information inventory — arena/a4fcce50-korea7 -
+# Adds info-inventory.html (I01–I10, SC01–SC05, P01–P06), R31 on requirements.html,
+# F22–F23 on findings.html, and the storage-ceiling fire-rating flag. Additive only.
+import info_inventory_1111 as _info_inventory_1111
+_info_inventory_1111.integrate(__import__(__name__))
+

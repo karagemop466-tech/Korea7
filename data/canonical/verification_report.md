@@ -1,33 +1,33 @@
 # Dashboard verification report
 
-Generated: 2026-11-11T02:29:08+00:00
+Generated: 2026-11-11T02:43:35+00:00
 
 | Check | Result | Detail |
 |---|---|---|
-| Build output complete | PASS | 21 pages generated |
-| Every table row has a source link | PASS | 1970 tbody rows checked, 0 missing links |
+| Build output complete | PASS | 22 pages generated |
+| Every table row has a source link | PASS | 2054 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
-| Internal links resolve | PASS | 1939 internal links checked, 0 broken |
+| Internal links resolve | PASS | 2029 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
-| External links are in the source ledger | PASS | 432 unique external links, 0 unknown/dead |
+| External links are in the source ledger | PASS | 437 unique external links, 0 unknown/dead |
 | Navigation consistent | PASS | 0 nav issues |
-| Privacy sweep (internal-only wording) | PASS | 151 files scanned, 0 matches |
+| Privacy sweep (internal-only wording) | PASS | 153 files scanned, 0 matches |
 | No unfilled template markers | PASS | 0 template-marker matches |
 | Dead sources not linked | PASS | 0 dead-source links |
-| Source ledger records prior direct reads | PASS | 86 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-11); 156 sources marked verified overall (metadata only; no network check) |
+| Source ledger records prior direct reads | PASS | 99 official/manufacturer sources marked verified (read dates 2026-11-07 to 2026-11-11); 170 sources marked verified overall (metadata only; no network check) |
 
 ## Counts
 
-- pages: 21
-- tables: 45
-- rows: 960
-- source_ledger_entries: 179
-- verified_sources: 156
-- official_or_manufacturer_verified: 86
-- generated_tbody_rows: 1970
-- internal_links_checked: 1939
-- unique_external_links: 432
-- published_text_files_scanned: 151
+- pages: 22
+- tables: 48
+- rows: 1002
+- source_ledger_entries: 193
+- verified_sources: 170
+- official_or_manufacturer_verified: 99
+- generated_tbody_rows: 2054
+- internal_links_checked: 2029
+- unique_external_links: 437
+- published_text_files_scanned: 153
 
 ## Notes
 
