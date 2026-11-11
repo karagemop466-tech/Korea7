@@ -1847,3 +1847,9 @@ Scope: reuse the existing canonical dashboard (18 pages, 38 tables). No duplicat
 - PR/merge/Pages result: to be recorded below after merge.
 
 - Rebase note (2026-11-11): main advanced with PR #92 (arena/1ea9ff50-korea7, questions.html, 19 pages). This session rebased onto 78cfe8c, retained both board entries, kept main's generated outputs, and rebuilt: 19 pages / 41 tables / 883 rows / 152 sources; 11/11 checks PASS (1,816 rows linked, 1,794 internal links, 0 broken anchors, 422 external links, 0 privacy matches). Our earlier 18-page counts are superseded by the 19-page build.
+
+### Delivery record — arena/1ea9ff50-korea7
+
+- PR [#92](https://github.com/karagemop466-tech/Korea7/pull/92) merged as `78cfe8c6212633a65e525b241580fb3d82d88373`. Concurrent session `arena/bac86f1e-korea7` (PR #91) rebased onto #92 and merged after; main is now `321076c1286c313a730698295d3758fbc526ac72` (includes this session's work).
+- GitHub Pages API reports revision `321076c1286c313a730698295d3758fbc526ac72` built successfully. Live [questions page](https://karagemop466-tech.github.io/Korea7/questions.html) and [dashboard](https://karagemop466-tech.github.io/Korea7/) were read and confirmed.
+- This board update is the only remaining change on this branch. No provider contacted or booked; estimates, complete prices, scope and availability remain unconfirmed as flagged.
