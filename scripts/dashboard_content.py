@@ -558,7 +558,8 @@ PAGES = {
 }
 
 
-# ====================================================================# Integration merge — session arena/0e9ee506-korea7, 2026-11-08.
+# ===========================================================================
+# Integration merge — session arena/0e9ee506-korea7, 2026-11-08.
 #
 # Adds the ranked hiring decision and the verified contact directory built by
 # scripts/ranking_data.py from three committed, source-traceable datasets:
@@ -568,7 +569,8 @@ PAGES = {
 # Existing rows from prior sessions are preserved; new rows are appended.
 # Source ids S64-S88 and flag ids U23-U34 were allocated after the concurrent
 # session's S61-S63 / U21-U22 so nothing already published is renumbered.
-# ====================================================================TABLES.update(R.TABLES)
+# ===========================================================================
+TABLES.update(R.TABLES)
 PAGES.update(R.PAGES)
 
 # Sources re-read directly during this session: refresh the retrieval date and
