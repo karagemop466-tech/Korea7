@@ -1799,3 +1799,10 @@ This session read the shared board and existing implementation before working. U
 | Independent structural verification and deployment closeout | in progress | arena/b3df1cfd-korea7 | COORDINATION.md; docs/delivery-audit-2026-11-11.md |
 
 Scope: reuse the existing extensive dashboard rather than create duplicate research. Check build, tests and current GitHub Pages state. Record limitations honestly: no fresh external-source verification is assumed from previous sessions' records. No contractor outreach or booking capability is available through the supplied tools.
+
+### November 11 audit results
+
+- Build: 18 pages / 38 tables / 855 dataset rows / 152 sources; 11 structural checks passed. 1,760 rendered rows have links; 1,721 internal links resolve; no broken anchors. These are structural checks, not fresh external-source reads.
+- Full suite: 190 passed, 18 subtests passed, 34 existing rasterio deprecation warnings. Generated timestamps from this verification-only rebuild were restored to avoid unnecessary shared-output edits.
+- GitHub Pages baseline revision `0d0e0396839ef3823ea543c80573ab4df6d00266` reports built with no error. External claims retain their prior read dates; no new contractor capability, price, availability or review claims were introduced.
+- Audit and executive decision limits: `docs/delivery-audit-2026-11-11.md`. Existing `flagged.html` continues to publish the unresolved items. No provider contacted or booked.
