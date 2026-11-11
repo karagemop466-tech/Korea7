@@ -10,7 +10,7 @@ import re
 
 
 NEW_SOURCES = {
-    "S220": {
+    "S500": {
         "label": "EPA — Lead Renovation, Repair and Painting Program",
         "publisher": "U.S. Environmental Protection Agency",
         "url": "https://www.epa.gov/lead/lead-renovation-repair-and-painting-program",
@@ -18,7 +18,7 @@ NEW_SOURCES = {
         "supports": "EPA describes lead-safe requirements for covered paid renovations disturbing painted surfaces in pre-1978 housing and child-occupied facilities.",
         "note": "Direct read 2026-11-11. Building age, paint and applicability to this job are unknown; exceptions and the complete rule must be checked.",
     },
-    "S221": {
+    "S501": {
         "label": "EPA — Protect Your Family from Exposures to Asbestos",
         "publisher": "U.S. Environmental Protection Agency",
         "url": "https://www.epa.gov/asbestos/protect-your-family-exposures-asbestos",
@@ -26,7 +26,7 @@ NEW_SOURCES = {
         "supports": "EPA advises leaving suspected asbestos material undisturbed and using trained and accredited professionals for assessment or work that could disturb it.",
         "note": "Direct read 2026-11-11. No asbestos has been identified at this property.",
     },
-    "S222": {
+    "S502": {
         "label": "San Francisco Rent Board — Landlord Access to a Unit",
         "publisher": "San Francisco Rent Board",
         "url": "https://www.sf.gov/information--landlord-access-unit",
@@ -222,11 +222,11 @@ def integrate(c) -> None:
             {"cells": ["Is the ceiling required for fire protection?", blank,
                        "SF's wallboard listing excludes work required for fire protection. Ask the building manager, contractor and SF DBI to establish the existing assembly and an appropriate repair before cutting."], "src": ["S02"]},
             {"cells": ["Could painted surfaces trigger lead-safe requirements?", blank,
-                       "EPA describes requirements for covered paid renovations disturbing paint in pre-1978 housing. Determine building age, surfaces, exceptions and applicable certification; no lead condition is assumed."], "src": ["S220"]},
+                       "EPA describes requirements for covered paid renovations disturbing paint in pre-1978 housing. Determine building age, surfaces, exceptions and applicable certification; no lead condition is assumed."], "src": ["S500"]},
             {"cells": ["Could materials contain asbestos?", blank,
-                       "EPA advises leaving suspected material undisturbed and involving trained, accredited professionals when disturbance is possible. No asbestos is diagnosed here."], "src": ["S221"]},
+                       "EPA advises leaving suspected material undisturbed and involving trained, accredited professionals when disturbance is possible. No asbestos is diagnosed here."], "src": ["S501"]},
             {"cells": ["How should tenant and storage access be arranged?", blank,
-                       "The Rent Board describes generally at least 24-hour written notice for covered entry, six days if mailed, and exceptions or consent. Confirm the rule and access arrangements for the particular spaces."], "src": ["S222"]},
+                       "The Rent Board describes generally at least 24-hour written notice for covered entry, six days if mailed, and exceptions or consent. Confirm the rule and access arrangements for the particular spaces."], "src": ["S502"]},
         ],
         "caption": "The official sources describe general rules or precautions, not this property's age, materials, fire rating, legal access or actual work. Confirm applicability with the relevant authority and qualified provider.",
     }
@@ -240,15 +240,17 @@ def integrate(c) -> None:
     })
 
     extra_flags = [
-        ("U54", "Ceiling fire-protection status and wallboard repair", "SF's wallboard listing contains an exception for work required for fire protection; this ceiling's assembly is unknown.", "Identify the existing assembly and confirm the restoration and any applicable approvals before opening.", ["S02"]),
-        ("U55", "Building age, paint and possible asbestos", "No property-specific material or lead assessment was supplied; official guidance describes conditional precautions, not a diagnosis.", "Determine building age and the proposed disturbance; use appropriate qualified assessors if needed.", ["S220", "S221"]),
-        ("U56", "Tenant and storage access", "The relevant access arrangements and applicability of entry-notice rules to these spaces are unknown.", "Confirm notice, consent where applicable, access windows, contents protection and responsible contact.", ["S222"]),
-        ("U57", "Legacy project-specific technical and scope conclusions", "Earlier published pages inferred drywall exclusions, exact concealed parts or access outcomes without inspection or complete written quotes.", "Use the corrected current dashboard; obtain written bids and a qualified on-site assessment before authorizing work.", ["S02", "S14", "S44"]),
+        ("Ceiling fire-protection status and wallboard repair", "SF's wallboard listing contains an exception for work required for fire protection; this ceiling's assembly is unknown.", "Identify the existing assembly and confirm the restoration and any applicable approvals before opening.", ["S02"]),
+        ("Building age, paint and possible asbestos", "No property-specific material or lead assessment was supplied; official guidance describes conditional precautions, not a diagnosis.", "Determine building age and the proposed disturbance; use appropriate qualified assessors if needed.", ["S500", "S501"]),
+        ("Tenant and storage access", "The relevant access arrangements and applicability of entry-notice rules to these spaces are unknown.", "Confirm notice, consent where applicable, access windows, contents protection and responsible contact.", ["S502"]),
+        ("Legacy project-specific technical and scope conclusions", "Earlier published pages inferred drywall exclusions, exact concealed parts or access outcomes without inspection or complete written quotes.", "Use the corrected current dashboard; obtain written bids and a qualified on-site assessment before authorizing work.", ["S02", "S14", "S44"]),
     ]
-    existing = {row["cells"][0] for row in c.TABLES["flagged"]["rows"]}
-    for fid, item, why, action, src in extra_flags:
-        if fid in existing:
-            raise ValueError("November 11 flag ID collision: " + fid)
+    existing = [int(str(row["cells"][0])[1:]) for row in c.TABLES["flagged"]["rows"]
+                if re.fullmatch(r"U\d+", str(row["cells"][0]))]
+    next_flag = max(existing, default=0) + 1
+    for item, why, action, src in extra_flags:
+        fid = "U%d" % next_flag
+        next_flag += 1
         c.TABLES["flagged"]["rows"].append({"cells": [fid, item, why, action, c.UNVERIFIED], "src": src})
     import session_1012_verification
     session_1012_verification._normalise_flags(c)
