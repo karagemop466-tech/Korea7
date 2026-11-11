@@ -1514,3 +1514,10 @@ _questions.integrate(__import__(__name__))
 # Decision-readiness synthesis; preserves all external-source check dates.
 import decision_checklist as _decision_checklist
 _decision_checklist.integrate(__import__(__name__))
+
+# --- 2026-11-11 dated licence re-read — arena/12cacfe5-korea7 -------------------
+# Re-reads all 17 CSLB records on this site and compares them field by field with the
+# 2026-11-10 direct reads. Additive only: adds one Audit page, three tables, sources
+# S300+, a nav link, a dated callout and (if any) one workers'-comp watch flag.
+import reread_1111 as _reread_1111
+_reread_1111.integrate(__import__(__name__))
