@@ -1,0 +1,704 @@
+{
+  "checked_date": "2026-11-11",
+  "session": "arena/12cacfe5-korea7",
+  "method": "Direct fetch and read of each official CSLB License Detail page on 2026-11-11 (UTC). Fields transcribed verbatim; the database stamp printed on each page (11/10/2026) is preserved exactly.",
+  "baselines": {
+    "scored_16": "scripts/recheck_data.py READS (direct reads 2026-11-10)",
+    "1034873": "data/canonical/session-1012-verification.json additional_candidate (direct read 2026-11-10)"
+  },
+  "records": [
+    {
+      "license": "977638",
+      "name_on_record": "EXPERT PLUMBING SOLUTIONS",
+      "dba": null,
+      "street": "1465 44TH AVENUE",
+      "city": "SAN FRANCISCO",
+      "zip": "94122",
+      "phone_on_record": "(415) 531-5340",
+      "entity": "Corporation",
+      "issue_date": "2012-10-09",
+      "reissue_date": null,
+      "expire_date": "2028-10-31",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2025-09-19",
+        "carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "EVEREST PREMIER INSURANCE COMPANY",
+        "policy": "7600025915261",
+        "effective": "2026-07-19",
+        "expires": "2027-07-19"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:16:51 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "source_id": "S300",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 250
+    },
+    {
+      "license": "757796",
+      "name_on_record": "BAY AREA PLUMBING",
+      "dba": null,
+      "street": "335 14TH AVENUE",
+      "city": "SAN FRANCISCO",
+      "zip": "94118",
+      "phone_on_record": "(415) 668-8000",
+      "entity": "Sole Ownership",
+      "issue_date": "1999-01-07",
+      "reissue_date": null,
+      "expire_date": "2027-01-31",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2026-09-01",
+        "carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "exempt",
+        "carrier": null,
+        "policy": null,
+        "effective": "2024-12-11",
+        "expires": null
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:17:53 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "source_id": "S301",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": null
+    },
+    {
+      "license": "1024971",
+      "name_on_record": "JOSEPH TINSLEY",
+      "dba": "FAST RESPONSE PLUMBING AND ROOTER",
+      "street": "236 W POTRAL AVE #459",
+      "city": "SAN FRANCISCO",
+      "zip": "94127",
+      "phone_on_record": "(415) 596-6115",
+      "entity": "Sole Ownership",
+      "issue_date": "2017-03-20",
+      "reissue_date": null,
+      "expire_date": "2027-03-31",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2026-09-01",
+        "carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "EMPLOYERS PREFERRED INSURANCE COMPANY",
+        "policy": "EIG576950801",
+        "effective": "2025-12-18",
+        "expires": "2026-12-18"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:17:36 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "source_id": "S302",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 37
+    },
+    {
+      "license": "959843",
+      "name_on_record": "GENERALSF",
+      "dba": null,
+      "street": "3624 IRVING STREET STE A",
+      "city": "SAN FRANCISCO",
+      "zip": "94122",
+      "phone_on_record": "(650) 303-1515",
+      "entity": "Sole Ownership",
+      "issue_date": "2011-04-12",
+      "reissue_date": null,
+      "expire_date": "2027-04-30",
+      "status": "current and active",
+      "classifications": [
+        "B",
+        "C10",
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2025-04-30",
+        "carrier": "BUSINESS ALLIANCE INSURANCE COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "exempt",
+        "carrier": null,
+        "policy": null,
+        "effective": "2025-03-10",
+        "expires": null
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:01 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843",
+      "source_id": "S303",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": null
+    },
+    {
+      "license": "1003394",
+      "name_on_record": "HANDYMAN HEROES INC",
+      "dba": null,
+      "street": "912 COLE ST # 202",
+      "city": "SAN FRANCISCO",
+      "zip": "94117",
+      "phone_on_record": "(844) 382-4376",
+      "entity": "Corporation",
+      "issue_date": "2015-05-05",
+      "reissue_date": null,
+      "expire_date": "2027-05-31",
+      "status": "current and active",
+      "classifications": [
+        "B",
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": "There is Complaint Disclosure information for this license.",
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2026-09-01",
+        "carrier": "WESTERN SURETY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "OMAHA NATIONAL CASUALTY COMPANY",
+        "policy": "ONCC0701424403",
+        "effective": "2026-04-25",
+        "expires": "2027-04-25"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:16:14 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "source_id": "S304",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 165
+    },
+    {
+      "license": "829071",
+      "name_on_record": "ACE PLUMBING & ROOTER",
+      "dba": null,
+      "street": "1090 BRYANT STREET",
+      "city": "SAN FRANCISCO",
+      "zip": "94103-4417",
+      "phone_on_record": "(415) 824-6444",
+      "entity": "Corporation",
+      "issue_date": "2003-12-18",
+      "reissue_date": "2007-06-07",
+      "expire_date": "2027-06-30",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "A",
+        "C-4",
+        "C16",
+        "B",
+        "C10"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2026-09-04",
+        "carrier": "MERCHANTS BONDING COMPANY (MUTUAL)"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "FINANCIAL PACIFIC INSURANCE COMPANY",
+        "policy": "10147545585",
+        "effective": "2026-07-13",
+        "expires": "2027-07-13"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:17:57 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "source_id": "S305",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 244
+    },
+    {
+      "license": "1115649",
+      "name_on_record": "RAPID FLOW PLUMBING & ROOTER INC",
+      "dba": null,
+      "street": "230 EDINBURGH ST",
+      "city": "SAN FRANCISCO",
+      "zip": "94112",
+      "phone_on_record": "(415) 866-8401",
+      "entity": "Corporation",
+      "issue_date": "2024-01-29",
+      "reissue_date": null,
+      "expire_date": "2028-01-31",
+      "status": "current and active",
+      "classifications": [
+        "B",
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2025-03-03",
+        "carrier": "MERCHANTS BONDING COMPANY (MUTUAL)"
+      },
+      "workers_compensation": {
+        "kind": "exempt",
+        "carrier": null,
+        "policy": null,
+        "effective": "2026-02-03",
+        "expires": null
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:01 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649",
+      "source_id": "S306",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": null
+    },
+    {
+      "license": "841229",
+      "name_on_record": "MANNY'S PLUMBING & ROOTER",
+      "dba": null,
+      "street": "41 MIDVALE DRIVE",
+      "city": "DALY CITY",
+      "zip": "94015",
+      "phone_on_record": "(650) 207-5733",
+      "entity": "Sole Ownership",
+      "issue_date": "2004-06-21",
+      "reissue_date": null,
+      "expire_date": "2028-06-30",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "B"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2026-05-29",
+        "carrier": "MERCHANTS BONDING COMPANY (MUTUAL)"
+      },
+      "workers_compensation": {
+        "kind": "exempt",
+        "carrier": null,
+        "policy": null,
+        "effective": "2026-06-28",
+        "expires": null
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:01 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229",
+      "source_id": "S307",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": null
+    },
+    {
+      "license": "1025814",
+      "name_on_record": "THE GENTEEL PLUMBERS INC",
+      "dba": null,
+      "street": "1181 REVERE AVE",
+      "city": "SAN FRANCISCO",
+      "zip": "94124",
+      "phone_on_record": "(833) 436-8335",
+      "entity": "Corporation",
+      "issue_date": "2017-04-14",
+      "reissue_date": null,
+      "expire_date": "2027-04-30",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "B"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2023-01-01",
+        "carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "TECHNOLOGY INSURANCE COMPANY INC",
+        "policy": "TES4729399",
+        "effective": "2026-01-24",
+        "expires": "2027-01-24"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:06 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "source_id": "S308",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 74
+    },
+    {
+      "license": "1009195",
+      "name_on_record": "ADVANCED PLUMBING AND DRAIN INC",
+      "dba": null,
+      "street": "3450 SACRAMENTO ST 204",
+      "city": "SAN FRANCISCO",
+      "zip": "94118",
+      "phone_on_record": "(415) 744-4944",
+      "entity": "Corporation",
+      "issue_date": "2015-11-24",
+      "reissue_date": null,
+      "expire_date": "2027-11-30",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "additional_status": [
+        "The license may be suspended at a future date for failure to resolve an outstanding final liability from the Franchise Tax Board, Department of Industrial Relations, Employment Development Department, or the Contractors State License Board."
+      ],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2025-09-26",
+        "carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "HARTFORD ACCIDENT AND INDEMNITY COMPANY",
+        "policy": "57WECBA5ARZ",
+        "effective": "2026-08-21",
+        "expires": "2027-08-21"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:16 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195",
+      "source_id": "S309",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 283
+    },
+    {
+      "license": "995163",
+      "name_on_record": "BERNAL HILL DRYWALL INC",
+      "dba": null,
+      "street": "720 ANDERSON ST",
+      "city": "SAN FRANCISCO",
+      "zip": "94110",
+      "phone_on_record": "(415) 533-8274",
+      "entity": "Corporation",
+      "issue_date": "2014-07-28",
+      "reissue_date": null,
+      "expire_date": "2028-07-31",
+      "status": "current and active",
+      "classifications": [
+        "C-9",
+        "B"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2023-03-29",
+        "carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "ENDURANCE ASSURANCE CORPORATION",
+        "policy": "EAW0000274901",
+        "effective": "2026-03-10",
+        "expires": "2027-03-10"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:06 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "source_id": "S310",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 119
+    },
+    {
+      "license": "1089561",
+      "name_on_record": "TARO GROUP INC",
+      "dba": "HEISES PLUMBING",
+      "street": "1610 EVANS AVE",
+      "city": "SAN FRANCISCO",
+      "zip": "94124",
+      "phone_on_record": "(415) 333-0704",
+      "entity": "Corporation",
+      "issue_date": "2022-04-06",
+      "reissue_date": null,
+      "expire_date": "2028-04-30",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "C10",
+        "A",
+        "C20"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2025-05-27",
+        "carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "EMPLOYERS PREFERRED INSURANCE COMPANY",
+        "policy": "EIG6235466",
+        "effective": "2026-01-11",
+        "expires": "2027-01-11"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:16 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561",
+      "source_id": "S311",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 61
+    },
+    {
+      "license": "632743",
+      "name_on_record": "CALPLUMBING CO",
+      "dba": null,
+      "street": "P O BOX 31042",
+      "city": "SAN FRANCISCO",
+      "zip": "94131",
+      "phone_on_record": "(415) 221-4633",
+      "entity": "Sole Ownership",
+      "issue_date": "1991-12-06",
+      "reissue_date": null,
+      "expire_date": "2027-12-31",
+      "status": "current and active",
+      "classifications": [
+        "C36"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2026-09-01",
+        "carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "exempt",
+        "carrier": null,
+        "policy": null,
+        "effective": "2025-12-08",
+        "expires": null
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:10 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743",
+      "source_id": "S312",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": null
+    },
+    {
+      "license": "868994",
+      "name_on_record": "ATLAS PLUMBING & ROOTER",
+      "dba": null,
+      "street": "3311 MISSION STREET UNIT 165",
+      "city": "SAN FRANCISCO",
+      "zip": "94110",
+      "phone_on_record": "(650) 871-9863",
+      "entity": "Corporation",
+      "issue_date": "2005-12-08",
+      "reissue_date": "2008-03-25",
+      "expire_date": "2028-03-31",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "A"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2023-01-01",
+        "carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "employee_service_group",
+        "carrier": null,
+        "policy": "WC051666394CA",
+        "effective": "2026-07-01",
+        "expires": "2027-07-01"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:06 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994",
+      "source_id": "S313",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 232
+    },
+    {
+      "license": "1140843",
+      "name_on_record": "DISCOUNT PLUMBING ROOTER SERVICES LLC",
+      "dba": null,
+      "street": "1325 HOWARD AVE BLDG 710",
+      "city": "BURLINGAME",
+      "zip": "94010",
+      "phone_on_record": "(650) 991-2100",
+      "entity": "Ltd Liability",
+      "issue_date": "2025-07-22",
+      "reissue_date": null,
+      "expire_date": "2027-07-31",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "A"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2025-06-09",
+        "carrier": "LEXINGTON NATIONAL INSURANCE CORPORATION"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "A I U INSURANCE COMPANY",
+        "policy": "020396018",
+        "effective": "2025-04-01",
+        "expires": "2027-04-01"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:16 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843",
+      "source_id": "S314",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 141
+    },
+    {
+      "license": "1075566",
+      "name_on_record": "BAY AREA PIPE & EQUIPMENT INC",
+      "dba": "BAY AREA MECHANICAL",
+      "street": "1320 UNDERWOOD AVE",
+      "city": "SAN FRANCISCO",
+      "zip": "94124",
+      "phone_on_record": "(925) 642-9768",
+      "entity": "Corporation",
+      "issue_date": "2021-05-07",
+      "reissue_date": null,
+      "expire_date": "2027-05-31",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "C20"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2023-01-01",
+        "carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "PREFERRED EMPLOYERS INSURANCE COMPANY",
+        "policy": "PEG324521720",
+        "effective": "2025-12-02",
+        "expires": "2026-12-02"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:10 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566",
+      "source_id": "S315",
+      "in_historical_score": true,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 21
+    },
+    {
+      "license": "1034873",
+      "name_on_record": "PLUMBING 1 BUILDER'S INC",
+      "dba": null,
+      "street": "25125 SANTA CLARA STREET E106",
+      "city": "HAYWARD",
+      "zip": "94544",
+      "phone_on_record": "(650) 868-8059",
+      "entity": "Corporation",
+      "issue_date": "2018-01-16",
+      "reissue_date": "2021-12-14",
+      "expire_date": "2027-12-31",
+      "status": "current and active",
+      "classifications": [
+        "C36",
+        "B"
+      ],
+      "additional_status": [],
+      "complaint_disclosure": null,
+      "contractors_bond": {
+        "amount_usd": 25000,
+        "effective": "2024-12-14",
+        "carrier": "WESTERN SURETY COMPANY"
+      },
+      "workers_compensation": {
+        "kind": "insured",
+        "carrier": "PACIFIC COMPENSATION INSURANCE COMPANY",
+        "policy": "WC1062363",
+        "effective": "2025-12-30",
+        "expires": "2026-12-30"
+      },
+      "record_stamp": "Data current as of 11/10/2026 6:18:32 PM",
+      "source_url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873",
+      "source_id": "S316",
+      "in_historical_score": false,
+      "deltas": [],
+      "delta_summary": "No change in any compared identity, status, classification, bond or workers'-compensation field",
+      "wc_days_to_expiry": 49
+    }
+  ],
+  "wc_watch_window_days": 60,
+  "wc_watch": [
+    {
+      "license": "1075566",
+      "expires": "2026-12-02",
+      "days": 21
+    },
+    {
+      "license": "1024971",
+      "expires": "2026-12-18",
+      "days": 37
+    },
+    {
+      "license": "1034873",
+      "expires": "2026-12-30",
+      "days": 49
+    }
+  ],
+  "flag_id": "U53",
+  "limits": {
+    "provider_contacted": false,
+    "booking_confirmed": false,
+    "job_specific_verified_price": null,
+    "job_specific_experience_verified": false,
+    "availability_confirmed": false
+  }
+}

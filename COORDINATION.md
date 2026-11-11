@@ -1886,3 +1886,42 @@ Implementation detail: isolated content module `scripts/decision_checklist.py` i
 - Combined build after PR #92 integration: 20 pages, 1,844 linked rendered rows, 1,863 internal links, 0 broken anchors, 11/11 structural checks passed. Full combined suite rerun: 192 passed, 18 subtests passed (34 existing warnings). No source claims were upgraded by these structural checks.
 - D1 implementation and verification: done. GitHub Pages exact-revision deployment is checked separately below. Concurrent board append conflicts were all resolved retaining incoming records; generated conflicts were rebuilt from the combined sources.
 - Deployment confirmed: GitHub Pages run [42945523807](https://github.com/karagemop466-tech/Korea7/actions/runs/42945523807) completed successfully for main revision `634858d06bd9d5c7779ca168766c464d646619b4` (descendant containing PR #93). Pages API reports built, no error. Earlier run 42945473345 was superseded/cancelled during concurrent publication, not a source-build failure. Live URL: https://karagemop466-tech.github.io/Korea7/ . Closeout PR: https://github.com/karagemop466-tech/Korea7/pull/96 . All D1 tasks done; external-source freshness limits remain published.
+## Session `arena/12cacfe5-korea7` — 2026-11-11 dated CSLB re-read + integration (claimed 02:18 UTC)
+
+Read this board in full before starting. The Arena runtime pins this session to branch `arena/12cacfe5-korea7`; the `session-<id>/<task>` naming convention cannot be followed (same platform constraint recorded by earlier sessions). Prior claims are all done or older than 60 minutes with no commits; old open PRs (#2, #15, #18, #20, #32, #42, #62, #65) are left untouched. No other session's file is edited outside the integration step below.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| D1 — re-read every ranked CSLB License Detail record (17 licences) directly on 2026-11-11 and record field deltas vs the 2026-11-10 re-check | done | arena/12cacfe5-korea7 | `data/canonical/reread-2026-11-11.json` (new), `scripts/reread_1111.py` (new), `tests/test_reread_1111.py` (new) |
+| D2 — publish the dated re-read as a dashboard subpage; flag any drift/irregularities on Flagged for Review | done | arena/12cacfe5-korea7 | `reread-1111.html` (new, generated); dashboard builder modules only for nav/flag wiring at integration |
+| D3 — final integration: rebuild, structural verify, tests, PR to `main`, merge, confirm Pages deploy of the exact revision, record result here | in progress | arena/12cacfe5-korea7 | this board; generated root pages/data |
+
+Handoff: first push of this claim rebased onto `ca107a1` (PR #90, `arena/b3df1cfd-korea7`, merged 02:18 UTC) and conflicted only in this board; both records were kept in full. PR #90 states it did **not** freshly re-read licence records — task D1 above is that missing fresh read, not a duplicate.
+
+### D1/D2 record — sources, verification performed, irregularities (arena/12cacfe5-korea7, 2026-11-11)
+
+- **Sources (official, each read directly 2026-11-11 UTC; every page printed "Data current as of 11/10/2026 6:16–6:18 PM"):** CSLB License Detail for
+  [977638](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638),
+  [757796](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796),
+  [1024971](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971),
+  [959843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=959843),
+  [1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394),
+  [829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071),
+  [1115649](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1115649),
+  [841229](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=841229),
+  [1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814),
+  [1009195](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1009195),
+  [995163](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163),
+  [1089561](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1089561),
+  [632743](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=632743),
+  [868994](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=868994),
+  [1140843](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1140843),
+  [1075566](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1075566),
+  [1034873](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1034873).
+- **Verification performed:** fields transcribed verbatim into `scripts/reread_1111.py`; deltas computed (not asserted) against `scripts/recheck_data.py` READS (2026-11-10) for the 16 scored licences and against `data/canonical/session-1012-verification.json` for #1034873. Result: **17/17 current and active, 0 field changes** across identity, status, classifications, bond and workers'-compensation fields. A planted-change unit test confirms the comparator detects drift. New page `reread-1111.html` (Audit nav), sources S300–S318, artifact `data/canonical/reread-2026-11-11.json`.
+- **Build / tests after rebasing onto `4d8d50f` (PRs #91–#96):** 21 pages, 45 tables, 940 dataset rows, 171 sources; 11/11 structural checks PASS (1,930 rendered rows with links, 1,929 internal links resolve, 0 broken anchors, 0 privacy matches). Full suite **200 passed**, 18 subtests passed, 34 existing rasterio deprecation warnings.
+- **Irregularities (nonblocking; published on `flagged.html`):**
+  1. **U53 (new)** — workers'-comp policies printed on CSLB expire soon after the read date: #1075566 on 2026-12-02 (21 days), **#1024971 Fast Response — one of the three quoted companies — on 2026-12-18 (37 days)**, #1034873 on 2026-12-30 (49 days). Renewal after those dates cannot be known today; re-check on the hire date and ask for a certificate.
+  2. Carried, unchanged on the official record: #1009195 still prints the possible-future-suspension notice; #1003394 still prints the complaint-disclosure notice; #1024971 address still reads "236 W POTRAL AVE #459" on CSLB (transcribed verbatim, not corrected).
+  3. Process: PRs #91–#96 from four concurrent sessions merged while this work was in progress. Each rebase conflict (board and generated files) was resolved by keeping every incoming record and module, re-wiring this session's module after theirs, and regenerating outputs — no other session's work discarded.
+- **Not verified (unchanged limits):** no contractor contacted or booked; quote amounts remain owner-supplied; job-specific skill, ceiling restoration, availability and price remain UNVERIFIED.
