@@ -15,8 +15,8 @@
   },
   {
     "path": "EXECUTIVE-SUMMARY.md",
-    "bytes": 48505,
-    "sha256": "2eb7ff8045dc079fb6be7c168c4259dc5588568a1a745ddab45a789b8d900de9",
+    "bytes": 52592,
+    "sha256": "75457bf50e9838e444eb03cddd499b161780865d0b532912ff69cc57451a8a7f",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -50,8 +50,8 @@
   },
   {
     "path": "bathtub-overflow/analysis.html",
-    "bytes": 9452,
-    "sha256": "b356510b65e901185ed8d06ceb604ae56b88b25764c674541b51506d38106104",
+    "bytes": 9708,
+    "sha256": "73638de8416f67e2854d5f70c8898f074b55cf50b8d4b13934dbb25319874323",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -64,36 +64,36 @@
   },
   {
     "path": "bathtub-overflow/estimates.html",
-    "bytes": 7802,
-    "sha256": "28de40cd65deb9de59ae2f3cc292faa75fc20a1156e053e7dc1977944a88d60e",
+    "bytes": 7866,
+    "sha256": "06ec56f0b74c899c1be4aa264de2a79326153b5e78fb7504628a1cb213d96731",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
     "path": "bathtub-overflow/executive-summary.html",
-    "bytes": 9444,
-    "sha256": "32c6958fb613da89f5321bb0667a001f357c2b4ab5df7bac90f839b86d2272c0",
+    "bytes": 9367,
+    "sha256": "3042d8b3dddc01b0b62a458255a0ded4e007b4dd50f77a5bf12917dda6240f5b",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
     "path": "bathtub-overflow/flagged-for-review.html",
-    "bytes": 12024,
-    "sha256": "17b35d07d0457fbf2b01825f0c57aef0069a772fb289798544c1d15f781e0c09",
+    "bytes": 12192,
+    "sha256": "276c54afb0c2fac2a96146e9bae6be5a434d886f6b85b030e3c0915a7a5dbb08",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
     "path": "bathtub-overflow/methodology.html",
-    "bytes": 6399,
-    "sha256": "e79c3332b13b81e8114073897f4da046a141c7c8b92a4501058f6ebc0b54d318",
+    "bytes": 6635,
+    "sha256": "90875a5fcae0dc6e72de71ed15553e4845016a5ffe5f889eb5bf263f5a93940a",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
     "path": "bathtub-overflow/permits-compliance.html",
-    "bytes": 9617,
-    "sha256": "2808ffe9c4eb96e28c4ed35203db55576f90715405bddc36291dd72eea49f5f4",
+    "bytes": 11292,
+    "sha256": "ba62e920eff43d0e889d2a339aee543810c1e2458d2af43f60607e18cc762218",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -113,8 +113,8 @@
   },
   {
     "path": "bathtub-overflow/sources.html",
-    "bytes": 11839,
-    "sha256": "57a28d9ad93b769a0416bc0438b350ac33bcfe2181e72efd9adb782f85aa1aad",
+    "bytes": 12410,
+    "sha256": "6a801a15719461e8f2f46cf2a6a02d2c4d664e68c7c87cd64bc039a9535ee2c6",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1569,8 +1569,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 165405,
-    "sha256": "c021d1e6a0d51eb3bacd52b2b61c2f8315b3d76e24a325dad4f5276ecf606bf4",
+    "bytes": 165737,
+    "sha256": "b3c4c0c04c9cc4a0c3b9e4911a9c025c951d38a122a5f46733c20f39bc12e465",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1641,6 +1641,13 @@
     "path": "scripts/prepare_data.py",
     "bytes": 9029,
     "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/questions_1111.py",
+    "bytes": 18486,
+    "sha256": "89b678c222c14f2a43bfcf2406bdd4f1ba468d570fbe5db489a1cb2e5afe3554",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1911,6 +1918,13 @@
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
+    "path": "tests/test_legacy_permit_guidance.py",
+    "bytes": 2827,
+    "sha256": "892756eeef549838cd7f9e90845c0f48464494ed8587b3a562578d75c2c06ee5",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
     "path": "tests/test_license_scope_followup.py",
     "bytes": 1111,
     "sha256": "971030d10670ae18bd140afcbabfcb77dc66c310d997c5d236892426d26c3f6a",
@@ -1949,6 +1963,13 @@
     "path": "tests/test_project.py",
     "bytes": 6986,
     "sha256": "84da7f2b2a9cb9b4732e8d491f284f91742ee1746b6a8836b06663198097e54b",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_questions_1111.py",
+    "bytes": 6235,
+    "sha256": "93521ec5cb59c143c43af7d62dbb8ac142356e372bb1696799c5bf93cb63cfc4",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
