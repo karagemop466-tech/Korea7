@@ -15,8 +15,8 @@
   },
   {
     "path": "EXECUTIVE-SUMMARY.md",
-    "bytes": 48505,
-    "sha256": "2eb7ff8045dc079fb6be7c168c4259dc5588568a1a745ddab45a789b8d900de9",
+    "bytes": 52592,
+    "sha256": "75457bf50e9838e444eb03cddd499b161780865d0b532912ff69cc57451a8a7f",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1569,8 +1569,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 165405,
-    "sha256": "c021d1e6a0d51eb3bacd52b2b61c2f8315b3d76e24a325dad4f5276ecf606bf4",
+    "bytes": 165737,
+    "sha256": "b3c4c0c04c9cc4a0c3b9e4911a9c025c951d38a122a5f46733c20f39bc12e465",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1641,6 +1641,13 @@
     "path": "scripts/prepare_data.py",
     "bytes": 9029,
     "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/questions_1111.py",
+    "bytes": 18486,
+    "sha256": "89b678c222c14f2a43bfcf2406bdd4f1ba468d570fbe5db489a1cb2e5afe3554",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1949,6 +1956,13 @@
     "path": "tests/test_project.py",
     "bytes": 6986,
     "sha256": "84da7f2b2a9cb9b4732e8d491f284f91742ee1746b6a8836b06663198097e54b",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_questions_1111.py",
+    "bytes": 6235,
+    "sha256": "93521ec5cb59c143c43af7d62dbb8ac142356e372bb1696799c5bf93cb63cfc4",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
