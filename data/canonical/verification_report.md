@@ -1,15 +1,15 @@
 # Dashboard verification report
 
-Generated: 2026-11-11T02:27:27+00:00
+Generated: 2026-11-11T02:28:23+00:00
 
 | Check | Result | Detail |
 |---|---|---|
 | Build output complete | PASS | 21 pages generated |
-| Every table row has a source link | PASS | 1968 tbody rows checked, 0 missing links |
+| Every table row has a source link | PASS | 1970 tbody rows checked, 0 missing links |
 | Blank values are flagged UNVERIFIED | PASS | 0 unflagged blank rows |
-| Internal links resolve | PASS | 1937 internal links checked, 0 broken |
+| Internal links resolve | PASS | 1939 internal links checked, 0 broken |
 | Anchor targets resolve | PASS | 0 broken anchors |
-| External links are in the source ledger | PASS | 431 unique external links, 0 unknown/dead |
+| External links are in the source ledger | PASS | 432 unique external links, 0 unknown/dead |
 | Navigation consistent | PASS | 0 nav issues |
 | Privacy sweep (internal-only wording) | PASS | 151 files scanned, 0 matches |
 | No unfilled template markers | PASS | 0 template-marker matches |
@@ -20,13 +20,13 @@ Generated: 2026-11-11T02:27:27+00:00
 
 - pages: 21
 - tables: 45
-- rows: 959
+- rows: 960
 - source_ledger_entries: 179
 - verified_sources: 156
 - official_or_manufacturer_verified: 86
-- generated_tbody_rows: 1968
-- internal_links_checked: 1937
-- unique_external_links: 431
+- generated_tbody_rows: 1970
+- internal_links_checked: 1939
+- unique_external_links: 432
 - published_text_files_scanned: 151
 
 ## Notes
