@@ -1932,3 +1932,16 @@ Handoff: first push of this claim rebased onto `ca107a1` (PR #90, `arena/b3df1cf
 - GitHub Pages API: latest build for commit `520f81e2126ec5f782d7153e0bb5ed16fd21e593` status **built**, no error (02:24:47 → 02:25:13 UTC).
 - Live check: <https://karagemop466-tech.github.io/Korea7/reread-1111.html> served the new page with all 17 rows and per-row CSLB source links; U53 published on the Flagged for Review page.
 - All D1–D3 tasks for this session are done. This board update is delivered by a follow-up PR from the same branch.
+
+---
+
+
+## Session `arena/13148cf8-korea7` — legacy permit-guidance correction (2026-11-11)
+
+Read the shared task board and current merged site before starting. Current branch is fixed by Arena; no other session's branch or files are being changed. The canonical root dashboard and Q&A page are preserved. New bounded task: correct outdated/overstated permit-exemption analysis in the older `bathtub-overflow/` microsite against San Francisco's own current official code and guidance; do not reproduce or expose any private project rationale.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Audit and correct legacy microsite permit claims; preserve uncertainty and add direct official citations | in progress | arena/13148cf8-korea7 | `bathtub-overflow/permits-compliance.html`, `executive-summary.html`, `analysis.html`, `estimates.html`, `flagged-for-review.html`, `methodology.html`, `sources.html`; this coordination entry |
+
+Claimed after reading current `COORDINATION.md` (latest task was merged on 2026-11-11). Official sources to inspect: SF.gov plumbing permit guidance and the current SF Plumbing Code §104.2 text. No provider outreach, legal determination, or claim about a job-specific permit decision is in scope. Existing code-exemption page on the root dashboard is not being rewritten; its exact job-specific determination remains flagged for DBI.
