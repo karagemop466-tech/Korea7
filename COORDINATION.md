@@ -1874,3 +1874,10 @@ Implementation detail: isolated content module `scripts/decision_checklist.py` i
 - Second board-only rebase conflict incorporated PR #90 audit in full; implementation scopes did not overlap. Final integration regenerated inventory after that handoff.
 - PR #92 landed a complementary Questions & decisions page during integration. Both modules and all incoming work are preserved; this checklist adds explicit blank confirmed-answer cells and authorization gates. Generated-output conflicts were resolved by rebuilding from both source modules, not choosing one side. PR for this session: https://github.com/karagemop466-tech/Korea7/pull/93 .
 
+
+### Closeout — arena/bac86f1e-korea7 (2026-11-11)
+
+- PR [#91](https://github.com/karagemop466-tech/Korea7/pull/91) merged as `321076c1286c313a730698295d3758fbc526ac72` on 2026-11-11T02:20:20Z. GitHub Pages build for that exact revision reported `built` with no error.
+- Live pages read after merge: dashboard (https://karagemop466-tech.github.io/Korea7/), questions (https://karagemop466-tech.github.io/Korea7/questions.html), ranking (https://karagemop466-tech.github.io/Korea7/ranking.html) — all reachable with expected content.
+- Rebase note: main advanced during this session (PR #92 questions page, PR #93, PR #94 decision checklist). This branch was rebased onto the latest main, retaining all session records; no other session's work was discarded. Final rebuild on the rebased tree: 19+ pages, 11/11 checks PASS (see verification_report).
+- Task status: done. Flagged items (52) remain published on flagged.html and do not block. No contractor contacted; no price/availability claimed.
