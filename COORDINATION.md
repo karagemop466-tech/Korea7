@@ -1996,3 +1996,14 @@ The latest delivery-audit task above reports completion in merged PR #90. Earlie
 **Initial handoff/conflict note.** The initial shallow checkout made `git pull --rebase origin main` attempt to replay the grafted base merge and report an add/add conflict in this board. The rebase was aborted without changing or discarding either side, history was unshallowed, and `main` was fast-forwarded to include the completed PR #90 before this claim. No other session's work was altered.
 
 **Concurrent integration handoff.** On 2026-11-11, PRs #91–#96 landed while this session researched. The rebase conflicted only in this board; the complete incoming session records and this session’s original claim were retained. Two complementary question/checklist pages have now been delivered by other sessions, so this session will not duplicate them. No implementation work was discarded.
+
+### Follow-up claim — accuracy corrections and evidence (2026-11-11)
+
+PRs #91–#96 completed their work and released their scopes; their question and checklist modules will be preserved. This session takes responsibility for the following nonoverlapping follow-up work, without altering other sessions' open PRs:
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| D3 — correct unsupported quote-scope claims, label historical material, reconcile verified blanks with attributed owner-reported estimates, and document remaining source limitations | in progress | arena/87bf58c3-korea7 | New `scripts/audit_1111.py` and its integration hook in `scripts/dashboard_content.py`; `scripts/build_sf_overflow_audit.py`; root `EXECUTIVE-SUMMARY.md` and `verification-log.html`; affected legacy `bathtub-overflow/`, `docs/bath/`, `docs/overflow-*.html`, `sf-overflow-audit/` HTML and summaries; corresponding generated dashboard HTML and `data/canonical/site_data.json`; `COORDINATION.md` |
+| D4 — add source-linked, conditional occupant/material precautions, regression tests, and independent audit record | in progress | arena/87bf58c3-korea7 | New `scripts/audit_1111.py`, new `tests/test_audit_1111.py`, selected existing tests affected by corrected public behavior, `evidence/audit-2026-11-11-87bf58c3.md`; generated dashboard HTML/data and `COORDINATION.md` |
+
+Handoff: the completed Questions and Decision Checklist modules are not being edited; any additive corrections or source links will be integrated after them. The factual issue is narrow: quote amounts and stated scopes are owner reports; whether any quote includes ceiling restoration and whether any particular mechanical method will work are unconfirmed. The overall source audit is a partial, dated re-read; existing source-linked rows, external records and historical reports are preserved and will not be falsely presented as freshly verified.
