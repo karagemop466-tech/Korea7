@@ -2011,3 +2011,15 @@ No duplicate research: the canonical dashboard, rankings, questions, decision ch
 - **GitHub Pages build for `56b5778`: `built`** with no error (created 2026-11-11T02:33:05Z). Deployment for that exact revision reached **`success`** at 2026-11-11T02:33:30Z, environment https://karagemop466-tech.github.io/Korea7/.
 - **Live verification after deploy:** [dashboard](https://karagemop466-tech.github.io/Korea7/), [reread-1111.html](https://karagemop466-tech.github.io/Korea7/reread-1111.html), [decision-checklist.html](https://karagemop466-tech.github.io/Korea7/decision-checklist.html) and [flagged.html](https://karagemop466-tech.github.io/Korea7/flagged.html) (53 flags, none blocking) were fetched from the live URL and serve the merged content.
 - Task status: **done**. All flagged items remain published for owner review and do not block anything. No provider contacted or booked; estimates remain owner-supplied; job-specific capability, ceiling restoration, availability and price remain UNVERIFIED.
+
+---
+
+## Session `arena/a4fcce50-korea7` — known-vs-missing information inventory, requirements register gap (`R31`), and final integration (2026-11-11)
+
+Read `COORDINATION.md` and active PRs in full before starting. Platform fixes this session's branch at `arena/a4fcce50-korea7`; no other branch is created or pushed, and open historical PRs are left untouched. Scope is strictly additive and disjoint from concurrent PRs (`scripts/questions_1111.py`, `scripts/reread_1111.py`, `scripts/questions_data.py`, `scripts/decision_checklist.py`, `bathtub-overflow/*`). Rebase log: resolved board-only append conflicts onto `cccb771` (PRs #101–#102) and `8e1f172` (PRs #103–#104) by preserving all incoming entries verbatim and appending this section.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| I1 — Direct 2026-11-11 official-source verification of quoted/top CSLB records, CSLB C-9 classification, B&P §7159 / §7159.10, Civil Code §1954, SF.gov rules, and Oatey manufacturer spec | done | `arena/a4fcce50-korea7` | `data/canonical/info-inventory-2026-11-11.json` (new) |
+| I2 — Add structured Known vs. Missing Information Inventory (`info-inventory.html`), Service & Repair vs. Home Improvement statutory rule (`B&P §7159.10` vs. `§7159`), and complete Requirements Register row `R31` | done | `arena/a4fcce50-korea7` | `scripts/info_inventory_1111.py` (new), `tests/test_info_inventory_1111.py` (new), `info-inventory.html` (generated) |
+| I3 — Final integration after concurrent merges settle: two-line hook in `scripts/dashboard_content.py`, `EXECUTIVE-SUMMARY.md` addendum, rebuild, full pytest + repo audit, PR → `main`, merge, confirm GitHub Pages deployment | in progress | `arena/a4fcce50-korea7` | `scripts/dashboard_content.py` (append-only hook), `EXECUTIVE-SUMMARY.md` (append-only), generated root pages/data, `COORDINATION.md`, GitHub PR/Pages |
