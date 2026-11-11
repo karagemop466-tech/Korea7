@@ -1521,3 +1521,9 @@ _decision_checklist.integrate(__import__(__name__))
 # S300+, a nav link, a dated callout and (if any) one workers'-comp watch flag.
 import reread_1111 as _reread_1111
 _reread_1111.integrate(__import__(__name__))
+
+# --- 2026-11-11 decision-register addendum — arena/16f70752-korea7 ------------
+# Appends four official answers and three discovery actions to the page added by
+# questions_data.py, plus two findings. No existing row or page is rewritten.
+import questions_1111 as _questions_1111
+_questions_1111.integrate(__import__(__name__))

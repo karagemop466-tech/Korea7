@@ -233,3 +233,22 @@ The published ranking previously told the reader to "read the disclosure before 
 *This audit is desk verification of official CSLB records only. No provider was contacted; a disclosure record does not establish job capability, availability, drywall scope or price, and the absence of a disclosure is not an endorsement.*
 
 *Informational only — not legal advice. Nothing on this page should be read as tax, insurance, permit or contracting advice for a specific job.*
+
+## Decision register: questions, official answers and access to missing information — 2026-11-11
+
+The [Questions & decisions](questions.html) page lists, question by question, what must be answered before any hiring decision, what an official source already answers, and how each gap is closed. It now has **14 questions (Q01–Q14), 10 official answers (A01–A10) and 9 discovery actions (D01–D09)**. The base page (Q01–Q14, A01–A06, D01–D06) was published the same day by a concurrent session and is preserved unchanged; this session appended four official answers and three actions for requirements it did not yet cite.
+
+**What the four appended answers establish (all read directly on 2026-11-11).**
+
+| Added answer | Official requirement | Source |
+|---|---|---|
+| A07 — contract | A written contract is required for home improvement work over $500 in combined labour and materials; it should state the work, price, payment schedule, who obtains permits and the completion date, identify the contractor with address and licence number; changes must be written change orders; there is a three-day right to cancel; the down payment should never exceed 10% of the price or $1,000, whichever is less. | [CSLB contracts page](https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Contracts_And_Binding_Agreements.aspx) |
+| A08 — bids and verification | Get at least three written bids compared on identical plans, specifications and scope; the licence number must appear on bids and contracts; check the licence at CSLB or (800) 321-CSLB (2752) and verify the business address and phone on record. | [CSLB finding the right contractor](https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx) |
+| A09 — insurance and bond | Ask for a Certificate of Insurance or the carrier's name; workers' compensation is required for employers; commercial general liability is not required but covers property damage and both types must be described in the contract; the $25,000 licence bond may not cover a project worth more than the bond and does not assure integrity or competency. | [CSLB finding the right contractor](https://www.cslb.ca.gov/Consumers/Hire_A_Contractor/Finding_The_Right_Contractor.aspx) |
+| A10 — entering the occupied unit | Civil Code §1954 allows entry to make necessary or agreed repairs, requires reasonable written notice stating the date, approximate time and purpose (24 hours presumed reasonable; six days if mailed), and permits an oral agreement for an agreed repair within one week. | [Civil Code §1954](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954) |
+
+**Three appended actions.** D07 obtain a current certificate of insurance for workers' compensation and general liability; D08 ask the firm carrying the 2020 citation for a written explanation before treating it as a finalist; D09 record the tenant-entry arrangement in writing under §1954 and give the schedule to the contractor.
+
+**Drift check performed the same day (finding F20).** The CSLB records for [#829071](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071), [#1025814](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814) and [#1003394](https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394) were re-read: all current and active, with the classes, phones and addresses this dashboard already publishes, workers' compensation and $25,000 bond fields present, each page printing a 11/10/2026 data stamp. The [sf.gov permit page](https://www.sf.gov/apply-plumbing-and-mechanical-permit) carried the same wording and contacts. No field changed.
+
+**Limits.** No contractor was contacted, no bid requested, no permit question put to SF DBI and no assessment booked. The three 2026-08-30 figures remain owner-provided and blank in every verified value cell; acceptance, availability, price, service area and workmanship remain unconfirmed. Nothing here is legal, insurance or contracting advice.
