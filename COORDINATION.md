@@ -1886,3 +1886,15 @@ Implementation detail: isolated content module `scripts/decision_checklist.py` i
 - Combined build after PR #92 integration: 20 pages, 1,844 linked rendered rows, 1,863 internal links, 0 broken anchors, 11/11 structural checks passed. Full combined suite rerun: 192 passed, 18 subtests passed (34 existing warnings). No source claims were upgraded by these structural checks.
 - D1 implementation and verification: done. GitHub Pages exact-revision deployment is checked separately below. Concurrent board append conflicts were all resolved retaining incoming records; generated conflicts were rebuilt from the combined sources.
 - Deployment confirmed: GitHub Pages run [42945523807](https://github.com/karagemop466-tech/Korea7/actions/runs/42945523807) completed successfully for main revision `634858d06bd9d5c7779ca168766c464d646619b4` (descendant containing PR #93). Pages API reports built, no error. Earlier run 42945473345 was superseded/cancelled during concurrent publication, not a source-build failure. Live URL: https://karagemop466-tech.github.io/Korea7/ . Closeout PR: https://github.com/karagemop466-tech/Korea7/pull/96 . All D1 tasks done; external-source freshness limits remain published.
+
+## Session arena/e257cbbe-korea7 — final integration closeout (2026-11-11)
+
+This session read the full board and the current canonical implementation before claiming. Runs on the platform-fixed branch `arena/e257cbbe-korea7` (fast-forwarded to origin/main `4d8d50f`; it has no unique commits, so nothing was lost). Earlier claims are complete or superseded; their implementation is preserved untouched.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Final integration verification of combined tree (build gate, targeted tests, repo audit) | in progress | arena/e257cbbe-korea7 | generated root pages + data/canonical/* via scripts/build_dashboard.py only |
+| Fresh official re-reads dated 2026-11-11 (CSLB records, sf.gov) and live-site confirmation | in progress | arena/e257cbbe-korea7 | COORDINATION.md (this record) |
+| PR to main, merge without waiting, confirm Pages deploy, record result | unclaimed | arena/e257cbbe-korea7 | GitHub PR + COORDINATION.md follow-up record |
+
+No duplicate research: the canonical dashboard, rankings, questions, decision checklist and flagged register are reused as published. This session adds an independent verification pass on the merged tree and records results here. No provider contacted; no new price, availability or acceptance claims.
