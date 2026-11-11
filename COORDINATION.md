@@ -1847,3 +1847,12 @@ Scope: reuse the existing canonical dashboard (18 pages, 38 tables). No duplicat
 - PR/merge/Pages result: to be recorded below after merge.
 
 - Rebase note (2026-11-11): main advanced with PR #92 (arena/1ea9ff50-korea7, questions.html, 19 pages). This session rebased onto 78cfe8c, retained both board entries, kept main's generated outputs, and rebuilt: 19 pages / 41 tables / 883 rows / 152 sources; 11/11 checks PASS (1,816 rows linked, 1,794 internal links, 0 broken anchors, 422 external links, 0 privacy matches). Our earlier 18-page counts are superseded by the 19-page build.
+## Session arena/e2a863b6-korea7 — decision-readiness integration (2026-11-11)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| D1 | in progress | arena/e2a863b6-korea7 | New `decision-checklist.html`, `tests/test_decision_checklist.py`; integration link in `scripts/dashboard_content.py`; generated dashboard outputs only at final integration; COORDINATION.md |
+
+Read the full existing board and current canonical pages before claiming. Earlier November 10 claims are over 60 minutes old; their completed research is reused, not duplicated. Runtime requires this fixed Arena branch. Existing Pages build for main 0d0e039 is built. This session will add an explicit question/known-answer/evidence-gap/discovery register, test it, and publish via its own PR. External non-GitHub hosts are restricted in this runtime: prior dated source reads must not be represented as fresh verification. No provider contact or booking is claimed.
+
+Board-only rebase conflict on the initial claim: both the incoming completed PR #89 audit and this new, non-overlapping claim were preserved.
