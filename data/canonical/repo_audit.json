@@ -1,25 +1,25 @@
 {
   "generated_by": "scripts/audit_repository.py",
-  "tracked_files": 349,
-  "total_bytes": 22357689,
-  "text_lines": 91084,
+  "tracked_files": 361,
+  "total_bytes": 22804204,
+  "text_lines": 96628,
   "extension_counts": {
     "(none)": 3,
     ".css": 9,
     ".csv": 3,
-    ".html": 83,
+    ".html": 86,
     ".js": 4,
-    ".json": 84,
-    ".md": 25,
+    ".json": 85,
+    ".md": 26,
     ".png": 1,
-    ".py": 106,
+    ".py": 113,
     ".sha256": 1,
     ".tif": 26,
     ".txt": 2,
     ".zip": 2
   },
-  "json_files": 84,
-  "python_files": 106,
+  "json_files": 85,
+  "python_files": 113,
   "parse_failures": [],
   "broken_internal_links": [],
   "broken_internal_anchors": [],
@@ -273,19 +273,19 @@
     },
     {
       "path": "COORDINATION.md",
-      "bytes": 257196,
-      "sha256": "acc7792499b310537ccfde6f8824194c2d309761f04a7a650583df55cbac419d",
+      "bytes": 285443,
+      "sha256": "be41e1aa54cc58f05c3d39dfc76eac4be139a9efed474a90388cc03db8561fa4",
       "text": true,
-      "lines": 1781,
+      "lines": 1954,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "EXECUTIVE-SUMMARY.md",
-      "bytes": 48505,
-      "sha256": "2eb7ff8045dc079fb6be7c168c4259dc5588568a1a745ddab45a789b8d900de9",
+      "bytes": 52592,
+      "sha256": "75457bf50e9838e444eb03cddd499b161780865d0b532912ff69cc57451a8a7f",
       "text": true,
-      "lines": 235,
+      "lines": 254,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -417,10 +417,10 @@
     },
     {
       "path": "brief.html",
-      "bytes": 13209,
-      "sha256": "0ece4c04d7030e9a11873e61b9435ee89d38f095934e00fd8a8e0b2850789b12",
+      "bytes": 13371,
+      "sha256": "a0ee0980853b01bcd94410ebe557e516777c66196034b27c4b553f9073768e99",
       "text": true,
-      "lines": 171,
+      "lines": 174,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -435,19 +435,19 @@
     },
     {
       "path": "contacts.html",
-      "bytes": 50099,
-      "sha256": "8cf947fe04cf756e869aae23f9df551d1a76f85ba0260383a9b6a9bcfcc096d4",
+      "bytes": 50261,
+      "sha256": "1c612f84ceaea0d2e7de39f17ebe0940033bd7f765823699551269b24a84a2ad",
       "text": true,
-      "lines": 503,
+      "lines": 506,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "contractors.html",
-      "bytes": 46752,
-      "sha256": "1505df1cd42bb09b8bbc73ed389add565a5e5f2cbec2f73a4cf0aef01948ae71",
+      "bytes": 46914,
+      "sha256": "3ac511d9444be45e708fd9f9d55b414e56234614b31b13059ac0f28007bb3408",
       "text": true,
-      "lines": 410,
+      "lines": 413,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -539,39 +539,48 @@
     },
     {
       "path": "data/canonical/repo_audit.json",
-      "bytes": 95397,
+      "bytes": 96911,
       "sha256": null,
       "text": true,
-      "lines": 3343,
+      "lines": 3397,
       "parse": "pass",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
     },
     {
       "path": "data/canonical/repo_audit.md",
-      "bytes": 26922,
+      "bytes": 27284,
       "sha256": null,
       "text": true,
-      "lines": 408,
+      "lines": 414,
       "parse": "not-applicable",
       "generated": true,
       "note": "Generated audit output; final bytes are written after this scan."
     },
     {
       "path": "data/canonical/repo_inventory.csv",
-      "bytes": 69405,
-      "sha256": "b530bb272095acde9405edd6df12e11c9d49a6528688395929aff5c78fae4491",
+      "bytes": 71101,
+      "sha256": "14662420d16a118f79adc22be780f4f7ba768ec92a06fdf3d966e778e1bbc8e7",
       "text": true,
-      "lines": 323,
+      "lines": 331,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "data/canonical/repo_inventory.json",
-      "bytes": 98354,
-      "sha256": "1e86de117832abf33d6ae6cbdaadbda37bf7b2dd1f0b9fe121abfdfef205d4e8",
+      "bytes": 100770,
+      "sha256": "f0cd8a5063978e2d097743529bf7bc0b800c8ba6622ef607324186d326d1bc12",
       "text": true,
-      "lines": 2256,
+      "lines": 2312,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "data/canonical/reread-2026-11-11.json",
+      "bytes": 23949,
+      "sha256": "321302bd60fe127eaf73382fea19e1b239cc63bd140a451de67e542617561814",
+      "text": true,
+      "lines": 704,
       "parse": "pass",
       "line_flags": 0
     },
@@ -613,10 +622,10 @@
     },
     {
       "path": "data/canonical/site_data.json",
-      "bytes": 693468,
-      "sha256": "477cf5bd586aaddcd4c336c54b7f2ce087442153149ec0cde877a18d139ae408",
+      "bytes": 790661,
+      "sha256": "98ad091de4ef824899131dcc986822c422f1a4c7f1a195bc23cf5f204c8c3734",
       "text": true,
-      "lines": 13079,
+      "lines": 14836,
       "parse": "pass",
       "line_flags": 0
     },
@@ -649,17 +658,17 @@
     },
     {
       "path": "data/canonical/verification_report.json",
-      "bytes": 45720,
-      "sha256": "e60596f9c50642aecb71ab00e09c9de8ecaf6320540843ae6d28eb9057ecefa6",
+      "bytes": 46941,
+      "sha256": "51edaa4523c007ef5d92c7f8ad5b734a7e2c8060cd2d1946b5799b13a8a08420",
       "text": true,
-      "lines": 526,
+      "lines": 540,
       "parse": "pass",
       "line_flags": 0
     },
     {
       "path": "data/canonical/verification_report.md",
       "bytes": 2010,
-      "sha256": "53606e313ca1dbb285d9d8e251937ca0fc41384763d3373fd24cd83b3f81038e",
+      "sha256": "aa6cf71709e9165dae2d66811700b0cbdcbc705f41c1089b550de343bc7d904d",
       "text": true,
       "lines": 40,
       "parse": "not-applicable",
@@ -792,11 +801,20 @@
       "lines": null
     },
     {
-      "path": "delivery.html",
-      "bytes": 15122,
-      "sha256": "8683e25287f8b27cd1eb87ed11a72363685753e9fc843ff739a190336f551958",
+      "path": "decision-checklist.html",
+      "bytes": 17509,
+      "sha256": "ded8fff7e4f47d4d1b0c01e5cd74167ef2440db86a431bdf73a2d4e35c89865f",
       "text": true,
-      "lines": 162,
+      "lines": 189,
+      "parse": "not-applicable",
+      "line_flags": 0
+    },
+    {
+      "path": "delivery.html",
+      "bytes": 15284,
+      "sha256": "88cf8595610a4887a268d892d004de8e367c8ee42748f7e147c76912141f8de2",
+      "text": true,
+      "lines": 165,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1111,6 +1129,15 @@
       "text": true,
       "lines": 49,
       "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "docs/delivery-audit-2026-11-11.md",
+      "bytes": 3650,
+      "sha256": "afef7ea5518ebc40cf12f4d04d7cbb9c0aa112f0ca1e764fa8745f3273506720",
+      "text": true,
+      "lines": 39,
+      "parse": "not-applicable",
       "line_flags": 0
     },
     {
@@ -1657,10 +1684,10 @@
     },
     {
       "path": "estimates.html",
-      "bytes": 18950,
-      "sha256": "3b6cab00dbd300fe40db798d971d5925be55dfb0d6d25641bed2da2763f2507b",
+      "bytes": 19112,
+      "sha256": "8e9b66d1c70cb27e515f979801a2a35cca7b60fe4b40c8c789393024541d13b2",
       "text": true,
-      "lines": 265,
+      "lines": 268,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -1999,28 +2026,28 @@
     },
     {
       "path": "exempt-work.html",
-      "bytes": 14712,
-      "sha256": "eb27ef82a8f50542e816088a9d3d246d29631f28fb0679c95b10da65fb64260c",
+      "bytes": 14874,
+      "sha256": "b46fe5a163730f96ff0c1d6659af794769048105407fde519a672b4b8386a156",
       "text": true,
-      "lines": 194,
+      "lines": 197,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "findings.html",
-      "bytes": 39061,
-      "sha256": "e597be48925e2026fe537b5996496f353c45bbed8acd9ae8e20786f9a5c7c536",
+      "bytes": 42278,
+      "sha256": "d3dd495e58f50b63433d7da724e109beb1cbf77a5659e19e651eef8a5037ab1b",
       "text": true,
-      "lines": 216,
+      "lines": 233,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "flagged.html",
-      "bytes": 55298,
-      "sha256": "07067e7b39794c8e5903723a70376eff5f291b023f65945ad98a39b63ed8c079",
+      "bytes": 57367,
+      "sha256": "333d281b92d780bbfb93093ca5a7816403f4a2e093f67d7e196fbfce1685002a",
       "text": true,
-      "lines": 492,
+      "lines": 504,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2152,37 +2179,46 @@
     },
     {
       "path": "index.html",
-      "bytes": 14942,
-      "sha256": "c00a6c5f64795adb3c4b6111f0c61846db774f1eeb7cedb4b5cdb071684843c4",
+      "bytes": 15951,
+      "sha256": "842c3ce00b5e9091dc9f5f6f98327f01383a50a74c456d28f188cb6efbf2c579",
       "text": true,
-      "lines": 131,
+      "lines": 136,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "permits.html",
-      "bytes": 9932,
-      "sha256": "51ca1112929729028d46650164fcaa8bdb3e2e89d502a9b90c09f419e006be8c",
+      "bytes": 10094,
+      "sha256": "d6f35a5e3dc9982991cc0fbe74aa44fa58ba6fe63c1b20723d8a58a395456dd8",
       "text": true,
-      "lines": 138,
+      "lines": 141,
+      "parse": "not-applicable",
+      "line_flags": 0
+    },
+    {
+      "path": "questions.html",
+      "bytes": 43631,
+      "sha256": "65041df8714a18a1f5bc3d824c7bb3a37bf9667966a55986b9f3b74bace51489",
+      "text": true,
+      "lines": 368,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "ranking.html",
-      "bytes": 150230,
-      "sha256": "f930ce90fdd8a00c4a87491f7377ad49cf945d4465155485e6a8f09dbc20a783",
+      "bytes": 150392,
+      "sha256": "d3b90f069042cac3c743c5614f487a54796a3f8c12ace553317d0ee789f55fe3",
       "text": true,
-      "lines": 950,
+      "lines": 953,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "recheck.html",
-      "bytes": 25683,
-      "sha256": "b68ec0de55a82da5451bc27e5cb4042f76dd91b81354ac13aa2a00a17f79a9a9",
+      "bytes": 25845,
+      "sha256": "b851093e2657d7403574ea86433a0f0f63320f736ef6b434e0a2a56ce3079916",
       "text": true,
-      "lines": 317,
+      "lines": 320,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2206,19 +2242,19 @@
     },
     {
       "path": "repo-review.html",
-      "bytes": 221526,
-      "sha256": "7fe19a56415d56e1576f5c830fece4caba04bdc2c8d24a4573c3c0cf5db27841",
+      "bytes": 226603,
+      "sha256": "2299d6a6eff9c94ad6c88bf0310db662f07db256f9e06106c6688568146750e4",
       "text": true,
-      "lines": 2799,
+      "lines": 2866,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "requirements.html",
-      "bytes": 25185,
-      "sha256": "a7e5f981259a288d7ec569be695f46a157e2873a1bc1ae14c8cba2943ed54936",
+      "bytes": 25347,
+      "sha256": "510dbc881745452d910ac43fdc2cbcbc780ae0fd093b1d43d800c03a14fab157",
       "text": true,
-      "lines": 316,
+      "lines": 319,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2228,6 +2264,15 @@
       "sha256": "40c19e251a42f7a5f39abfcfe4795a46a84640aae0898b8630e276129a3a1a21",
       "text": true,
       "lines": 5,
+      "parse": "not-applicable",
+      "line_flags": 0
+    },
+    {
+      "path": "reread-1111.html",
+      "bytes": 21242,
+      "sha256": "7573d985ec02653f432af6f2eef4a1c9be2483a9a949756879530b7e608ac104",
+      "text": true,
+      "lines": 327,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2323,10 +2368,10 @@
     },
     {
       "path": "scripts/build_dashboard.py",
-      "bytes": 19225,
-      "sha256": "673d4c79da99fb3452d321317cb09f32a24447070f4907f80e6f6378aa95cbc7",
+      "bytes": 19337,
+      "sha256": "4de34b10f5706b1bc68a1643a30492d51485ed934523b9061dcae018e2062a95",
       "text": true,
-      "lines": 402,
+      "lines": 404,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2413,10 +2458,19 @@
     },
     {
       "path": "scripts/dashboard_content.py",
-      "bytes": 164428,
-      "sha256": "5a3bc5c64eb6f9fb92b5a7d451f6b3514ddb013c2246cec20f55071dac1e2a59",
+      "bytes": 165737,
+      "sha256": "b3c4c0c04c9cc4a0c3b9e4911a9c025c951d38a122a5f46733c20f39bc12e465",
       "text": true,
-      "lines": 1506,
+      "lines": 1529,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "scripts/decision_checklist.py",
+      "bytes": 8778,
+      "sha256": "bf2c3757774857a1aba01e72f223bc2e95a5bdc0e76e9ea7cdce3491dc4131cf",
+      "text": true,
+      "lines": 36,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2502,6 +2556,24 @@
       "line_flags": 0
     },
     {
+      "path": "scripts/questions_1111.py",
+      "bytes": 18486,
+      "sha256": "89b678c222c14f2a43bfcf2406bdd4f1ba468d570fbe5db489a1cb2e5afe3554",
+      "text": true,
+      "lines": 270,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "scripts/questions_data.py",
+      "bytes": 22942,
+      "sha256": "55f6d67834a780104401eb75cdf7c995b56e35a1374826d49a44b853799421df",
+      "text": true,
+      "lines": 349,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
       "path": "scripts/ranking_data.py",
       "bytes": 66489,
       "sha256": "ed0c76d512e7d1e3fb7138349a79441bc4d03eb26d0e3e7aa5372f568ff166f8",
@@ -2525,6 +2597,15 @@
       "sha256": "aa7f57037251fb7ae64f9e4564d6d556928a3cbe7c5ac3b2b4ede672eeb06b56",
       "text": true,
       "lines": 343,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "scripts/reread_1111.py",
+      "bytes": 34202,
+      "sha256": "c277cf1a9cf874884398c2f035873115804e136d4bc6d524fefcb6ea60397752",
+      "text": true,
+      "lines": 549,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2728,28 +2809,28 @@
     },
     {
       "path": "sources.html",
-      "bytes": 158112,
-      "sha256": "8aca23c7472d964558e54e22fd2b5d5a4999a8b91c4a8a31401a01972d571d53",
+      "bytes": 188283,
+      "sha256": "f22e29042e36fa7b3fe99715ae47d4b8cac02226e35a3a18428c7e2681eec163",
       "text": true,
-      "lines": 1293,
+      "lines": 1512,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "summary.html",
-      "bytes": 22516,
-      "sha256": "c58c44e83a215a083d3da0736247b5cf84270a86b058032ec0bb7b00daf909a1",
+      "bytes": 23326,
+      "sha256": "2f78cd95735b99a154d4627e4ec3c16593c73be8e65955b0a78542465f0ebb18",
       "text": true,
-      "lines": 118,
+      "lines": 123,
       "parse": "not-applicable",
       "line_flags": 0
     },
     {
       "path": "technical.html",
-      "bytes": 11905,
-      "sha256": "39f953a810ad0af01d1860887334864ba2f0116abb83be29dc19569aba9cea9f",
+      "bytes": 12067,
+      "sha256": "6ba7f7b92f0a56e0972912c5c533a359e929b24b76e9430ba5147dfc96b0fd8b",
       "text": true,
-      "lines": 161,
+      "lines": 164,
       "parse": "not-applicable",
       "line_flags": 0
     },
@@ -2795,6 +2876,15 @@
       "sha256": "4571159b6e9228c27221caab22951272563a12af93f8d1bdde1379982bca20c3",
       "text": true,
       "lines": 128,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
+      "path": "tests/test_decision_checklist.py",
+      "bytes": 1295,
+      "sha256": "fe1c1c09829deadf08b92ed5e06dc8c6ff4dc1d6211ffab5ec896d0a68110b23",
+      "text": true,
+      "lines": 28,
       "parse": "pass",
       "line_flags": 0
     },
@@ -2898,6 +2988,15 @@
       "line_flags": 0
     },
     {
+      "path": "tests/test_questions_1111.py",
+      "bytes": 6235,
+      "sha256": "93521ec5cb59c143c43af7d62dbb8ac142356e372bb1696799c5bf93cb63cfc4",
+      "text": true,
+      "lines": 128,
+      "parse": "pass",
+      "line_flags": 0
+    },
+    {
       "path": "tests/test_ranking.py",
       "bytes": 9351,
       "sha256": "bbfc34953d767439fff4e2e70aa1d309a7ae60025be74ebc5ccd80a9f6da321a",
@@ -2923,6 +3022,15 @@
       "lines": 110,
       "parse": "pass",
       "line_flags": 1
+    },
+    {
+      "path": "tests/test_reread_1111.py",
+      "bytes": 4013,
+      "sha256": "1cc4e2c85256987b73a0a420144948fb3ee01b9f560cdf58358b26e3e0d25979",
+      "text": true,
+      "lines": 84,
+      "parse": "pass",
+      "line_flags": 0
     },
     {
       "path": "tests/test_session_1012_verification.py",
@@ -3331,10 +3439,10 @@
     },
     {
       "path": "verification.html",
-      "bytes": 481389,
-      "sha256": "3dffb0346f9b3802e97fb2d0b1aac47a2c2a7d3c364afe445bb9e57f934f91e4",
+      "bytes": 539680,
+      "sha256": "182dfcd3c4ab5022dde31451b96b73fa38ad43faceee5a9f0c43b51800d5f1c3",
       "text": true,
-      "lines": 67,
+      "lines": 70,
       "parse": "not-applicable",
       "line_flags": 0
     }
