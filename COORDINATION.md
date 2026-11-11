@@ -1807,3 +1807,18 @@ Scope: reuse the existing extensive dashboard rather than create duplicate resea
 - GitHub Pages baseline revision `0d0e0396839ef3823ea543c80573ab4df6d00266` reports built with no error. External claims retain their prior read dates; no new contractor capability, price, availability or review claims were introduced.
 - Audit and executive decision limits: `docs/delivery-audit-2026-11-11.md`. Existing `flagged.html` continues to publish the unresolved items. No provider contacted or booked.
 - Concurrent PR #89 appended a delivery audit while this session worked. Rebase conflicted only in this board; retained both session records in full. No implementation changes were lost. This session's audit is complete; delivery PR [#90](https://github.com/karagemop466-tech/Korea7/pull/90) records the merge and final revision authoritatively.
+
+---
+
+## Session `arena/e919fdc0-korea7` — 2026-11-11 independent verification + open-questions deliverable
+
+Read the whole board and the current implementation before working. Prior sessions' work is preserved; this session is additive only. The Arena runtime fixes this branch name, so the requested `session-<id>/<task>` branch naming cannot be used; no other branch is created or pushed. Earlier open PRs (#2, #15, #18, #20, #32, #42, #62, #65) are left untouched.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Q1 — claim this board and push before any content edit | in progress | arena/e919fdc0-korea7 | `COORDINATION.md` (append-only) |
+| Q2 — line-by-line re-verification of decision-critical official sources, 2026-11-11, with links | in progress | arena/e919fdc0-korea7 | `data/canonical/session-e919-verification.json`, `scripts/session_e919_verification.py`, `tests/test_session_e919.py` |
+| Q3 — new deliverable: open questions / information-gap register with a discovery method per gap | in progress | arena/e919fdc0-korea7 | `scripts/session_e919_verification.py` (page module), generated root pages |
+| Q4 — integration build, test, link/privacy gate, PR, merge, Pages confirmation | in progress | arena/e919fdc0-korea7 | `COORDINATION.md`, GitHub PR/Pages |
+
+Scope note: the generator `scripts/dashboard_content.py` is owned by earlier sessions. This session does **not** rewrite it; it appends one additive module imported at the end of the existing import chain, the same pattern used by `reread_1110.py`, `disclosure_1110.py` and `session_1012_verification.py`. Shared generated outputs (root `*.html`, `data/canonical/site_data.json`, verification reports) are rebuilt only at this session's integration step.
