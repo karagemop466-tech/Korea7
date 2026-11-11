@@ -609,6 +609,13 @@
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
+    "path": "docs/delivery-audit-2026-11-11.md",
+    "bytes": 3650,
+    "sha256": "afef7ea5518ebc40cf12f4d04d7cbb9c0aa112f0ca1e764fa8745f3273506720",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
     "path": "docs/downloads/SHA256SUMS.txt",
     "bytes": 425,
     "sha256": "ec4859936935bf15c3ae4f879525ce0d76bdc4499ff7dc6d8535ede316e3b598",
@@ -1562,8 +1569,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 164428,
-    "sha256": "5a3bc5c64eb6f9fb92b5a7d451f6b3514ddb013c2246cec20f55071dac1e2a59",
+    "bytes": 164812,
+    "sha256": "e40a485abee573aafb76d7ba18fb035af2a22da64b1b80e8c97d994367a2f35a",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1627,6 +1634,13 @@
     "path": "scripts/prepare_data.py",
     "bytes": 9029,
     "sha256": "73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/questions_data.py",
+    "bytes": 22942,
+    "sha256": "55f6d67834a780104401eb75cdf7c995b56e35a1374826d49a44b853799421df",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },

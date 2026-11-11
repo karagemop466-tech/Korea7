@@ -1504,3 +1504,10 @@ _disclosure.integrate(__import__(__name__))
 # retaining the historical 16-record, CSLB-only scores and disclosure audit.
 import session_1012_verification as _job_fit
 _job_fit.integrate(__import__(__name__))
+
+# --- 2026-11-11 questions & decisions page — arena/1ea9ff50-korea7 ------------
+# Adds the dedicated Q&A page (questions/answers/discovery tables) and its
+# navigation + dashboard quick link. Additive only: no existing row, score or
+# page is rewritten; every new row cites existing verified sources.
+import questions_data as _questions
+_questions.integrate(__import__(__name__))

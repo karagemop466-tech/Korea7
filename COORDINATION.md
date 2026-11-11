@@ -1820,3 +1820,11 @@ This session works on the fixed Arena branch `arena/1ea9ff50-korea7` (only activ
 | PR to main, merge, confirm Pages deploy | unclaimed | arena/1ea9ff50-korea7 | GitHub PR |
 
 Privacy note: this session publishes no internal hiring-constraint wording. Permit content is neutral official reporting only (sf.gov / CSLB / state law), consistent with the build's privacy sweep.
+
+### Results — arena/1ea9ff50-korea7 (2026-11-11)
+
+- Q&A page added: `questions.html` (19 pages total) with three tables — 14 open questions (Q01–Q14: known / missing / how to discover), 6 official answers (A01–A06: sf.gov, CSLB, BPC §7048/§7059), 6 discovery suggestions (D01–D06). Every row cites existing verified sources; owner facts flagged UNVERIFIED; no value inferred. NAV + dashboard quick link added. Content module: `scripts/questions_data.py`; hook: one import in `scripts/dashboard_content.py`.
+- Fresh official re-reads 2026-11-11 (this session): CSLB #829071 (Ace, current/active, C-36+B, (415) 824-6444, expires 2027-06-30), #1003394 (Handyman Heroes, current/active, B+C-36, (844) 382-4376, complaint disclosure present, expires 2027-05-31), #1025814 (Genteel, current/active, C-36+B, (833) 436-8335, expires 2027-04-30) — all match published values, zero drift. SF.gov plumbing-permit page re-read: permit-before-cutting rule, §104.2 exemptions, allowed license classes — matches published neutral reporting. Live dashboard fetched successfully.
+- Build: 19 pages / 41 tables / 883 rows / 152 sources; 11/11 checks PASS (1,816 rows linked, 1,794 internal links resolve, 0 broken anchors, 422 external links in ledger, 0 privacy matches). Dashboard tests: 63 passed (unittest). 11 GEMS test modules error on import in this sandbox (no pytest/numpy/rasterio installed) — pre-existing environment gap, unrelated to this change; prior sessions recorded 190 passed with full deps.
+- Irregularities: none new. Existing flagged items unchanged. Privacy sweep clean; no internal hiring-constraint wording published.
+- Status: Q&A page done; fresh re-reads done; rebuild/tests done; PR/merge pending (next step).
