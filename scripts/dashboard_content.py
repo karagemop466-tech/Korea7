@@ -1504,3 +1504,10 @@ _disclosure.integrate(__import__(__name__))
 # retaining the historical 16-record, CSLB-only scores and disclosure audit.
 import session_1012_verification as _job_fit
 _job_fit.integrate(__import__(__name__))
+
+# --- 2026-11-11 open questions register + dated re-read — arena/e919fdc0-korea7
+# Additive only: appends a question register, gap table, discovery sequence,
+# two findings, one flag, two re-read tables and one page. No existing row,
+# score or flag is rewritten.
+import session_e919_verification as _e919
+_e919.integrate(__import__(__name__))

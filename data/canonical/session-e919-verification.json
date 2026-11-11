@@ -1,0 +1,240 @@
+{
+  "session": "arena/e919fdc0-korea7",
+  "read_date": "2026-11-11",
+  "method": "Official pages fetched directly through the agent's page reader on 2026-11-11 (UTC). Values below are transcribed from those reads; nothing is inferred. Direct scripted HTTP from the build sandbox is blocked by TLS egress filtering, so the reads were made with the page reader and recorded here by hand. A machine-checkable drift comparison against data/canonical/cslb_records.json is performed by tests/test_session_e919.py.",
+  "records": [
+    {
+      "id": "AC08",
+      "name": "ACE PLUMBING & ROOTER",
+      "license": "829071",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "record_stamp": "Data current as of 11/10/2026 6:17:57 PM",
+      "fields": {
+        "address": "1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417",
+        "phone": "(415) 824-6444",
+        "entity": "Corporation",
+        "issue_date": "2003-12-18",
+        "reissue_date": "2007-06-07",
+        "expire_date": "2027-06-30",
+        "status": "current and active",
+        "classifications": [
+          "C36",
+          "A",
+          "C-4",
+          "C16",
+          "B",
+          "C10"
+        ],
+        "bond_carrier": "MERCHANTS BONDING COMPANY (MUTUAL)",
+        "bond_amount_usd": 25000,
+        "bond_effective": "2026-09-04",
+        "wc_carrier": "FINANCIAL PACIFIC INSURANCE COMPANY",
+        "wc_policy": "10147545585",
+        "wc_effective": "2026-07-13",
+        "wc_expires": "2027-07-13"
+      },
+      "drift": "none",
+      "note": "Every field matches data/canonical/cslb_records.json for licence 829071."
+    },
+    {
+      "id": "AC09",
+      "name": "HANDYMAN HEROES INC",
+      "license": "1003394",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "record_stamp": "Data current as of 11/10/2026 6:16:14 PM",
+      "fields": {
+        "address": "912 COLE ST # 202, SAN FRANCISCO, CA 94117",
+        "phone": "(844) 382-4376",
+        "entity": "Corporation",
+        "issue_date": "2015-05-05",
+        "reissue_date": null,
+        "expire_date": "2027-05-31",
+        "status": "current and active",
+        "classifications": [
+          "B",
+          "C36"
+        ],
+        "bond_carrier": "WESTERN SURETY COMPANY",
+        "bond_amount_usd": 25000,
+        "bond_effective": "2026-09-01",
+        "wc_carrier": "OMAHA NATIONAL CASUALTY COMPANY",
+        "wc_policy": "ONCC0701424403",
+        "wc_effective": "2026-04-25",
+        "wc_expires": "2027-04-25",
+        "complaint_disclosure": "There is Complaint Disclosure information for this license."
+      },
+      "drift": "none",
+      "note": "Matches data/canonical/cslb_records.json; the record itself now displays a link headed 'There is Complaint Disclosure information for this license.'"
+    },
+    {
+      "id": "AC10",
+      "name": "HANDYMAN HEROES INC — complaint disclosure",
+      "license": "1003394",
+      "url": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/ComplaintDisclosure.aspx?LicType=LIC&LicNum=1003394",
+      "fields": {
+        "citation_number": "2 2020 001045",
+        "citation_date": "07/12/2020",
+        "citation_status": "FOR DISCLOSURE ONLY PER B&P CODE 7124.6",
+        "citation_violation_page": "https://www2.cslb.ca.gov/OnlineServices/CheckLicenseII/CitationViolationDisclosure.aspx?LicType=LIC&LicNum=1003394&LmfPre=&Class=2&FiscalYear=2020&SeqNbr=1045&ActionCde=K&Status=FOR+DISCLOSURE+ONLY+PER+B%26P+CODE+7124.6&LicName=HANDYMAN+HEROES+INC&StatusDt=07/12/2020"
+      },
+      "drift": "none",
+      "note": "Same single citation, date and status published in data/canonical/complaint-disclosures-2026-11-10.json."
+    },
+    {
+      "id": "AC11",
+      "name": "THE GENTEEL PLUMBERS INC",
+      "license": "1025814",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1025814",
+      "record_stamp": "Data current as of 11/10/2026 6:18:06 PM",
+      "fields": {
+        "address": "1181 REVERE AVE, SAN FRANCISCO, CA 94124",
+        "phone": "(833) 436-8335",
+        "entity": "Corporation",
+        "issue_date": "2017-04-14",
+        "expire_date": "2027-04-30",
+        "status": "current and active",
+        "classifications": [
+          "C36",
+          "B"
+        ],
+        "bond_carrier": "AMERICAN CONTRACTORS INDEMNITY COMPANY",
+        "bond_amount_usd": 25000,
+        "wc_carrier": "TECHNOLOGY INSURANCE COMPANY INC",
+        "wc_effective": "2026-01-24",
+        "wc_expires": "2027-01-24",
+        "bond_effective": "2023-01-01",
+        "reissue_date": null
+      },
+      "drift": "none",
+      "note": "Phone on the CSLB record remains (833) 436-8335, which still differs from the company site's 415-465-5853 — flag U23 unchanged."
+    },
+    {
+      "id": "AC12",
+      "name": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "license": "1024971",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "record_stamp": "Data current as of 11/10/2026 6:17:36 PM",
+      "fields": {
+        "address": "236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127",
+        "phone": "(415) 596-6115",
+        "entity": "Sole Ownership",
+        "issue_date": "2017-03-20",
+        "expire_date": "2027-03-31",
+        "status": "current and active",
+        "classifications": [
+          "C36"
+        ],
+        "bond_carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY",
+        "bond_amount_usd": 25000,
+        "wc_carrier": "EMPLOYERS PREFERRED INSURANCE COMPANY",
+        "wc_effective": "2025-12-18",
+        "wc_expires": "2026-12-18",
+        "bond_effective": "2026-09-01",
+        "reissue_date": null
+      },
+      "drift": "none",
+      "note": "Workers' compensation expiry 2026-12-18 still inside 60 days of 2026-11-11 — flag U27 unchanged."
+    },
+    {
+      "id": "AC13",
+      "name": "BAY AREA PLUMBING",
+      "license": "757796",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "record_stamp": "Data current as of 11/10/2026 6:17:53 PM",
+      "fields": {
+        "address": "335 14TH AVENUE, SAN FRANCISCO, CA 94118",
+        "phone": "(415) 668-8000",
+        "entity": "Sole Ownership",
+        "issue_date": "1999-01-07",
+        "expire_date": "2027-01-31",
+        "status": "current and active",
+        "classifications": [
+          "C36"
+        ],
+        "bond_carrier": "ATLANTIC SPECIALTY INSURANCE COMPANY",
+        "bond_amount_usd": 25000,
+        "wc_status": "exempt — certified no employees at this time",
+        "wc_effective": "2024-12-11",
+        "bond_effective": "2026-09-01",
+        "reissue_date": null,
+        "wc_policy": null
+      },
+      "drift": "none",
+      "note": "Workers' compensation exemption unchanged — flag U06/U28 unchanged."
+    }
+  ],
+  "rules": [
+    {
+      "id": "AR01",
+      "title": "B&P Code §7048 — contractor-licence exemption",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7048",
+      "quote": "(a) This chapter does not apply to a work or operation on one undertaking or project by one or more contracts if the aggregate contract price for labor, materials, and all other items is less than one thousand dollars ($1,000), that work or operation being considered of casual, minor, or inconsequential nature, and the work or operation does not require a building permit.",
+      "amendment": "Amended by Stats. 2025, Ch. 67, Sec. 12. (AB 1170) Effective January 1, 2026.",
+      "verdict": "CONFIRMED — the $1,000 threshold and all three conditions (price under $1,000; casual/minor/inconsequential; no building permit required) are in the current text. Subsection (c) removes the exemption for anyone who advertises as a contractor or employs others.",
+      "affects": "permits.html row 'Small-job licensing exemption' and flag U18 — both correct as published."
+    },
+    {
+      "id": "AR02",
+      "title": "SF Plumbing Code §104.2 — exempt work (nine items)",
+      "url": "https://media.api.sf.gov/documents/2025_SF_Plumbing_Code.pdf",
+      "quote": "104.2 Exempt Work. A permit shall not be required for the following: (1) Repair of leaks not requiring cutting into or removing piping. (2) Unstopping of traps, sewers, vents or waste pipes not requiring cutting into or removal of traps or piping. (3) Replacement, repair or maintenance of faucets, angle stops, hose bibbs or roof drain not requiring cutting into or removal of piping. (4) Replacement of toilets except in structures with alternate water piping. (5) Replacement of furnace filters. (6) Removal of drainage, water or gas piping from a building when the water supply, gas and drainage lines have been disconnected in an approved manner under a permit. (7) Work involved in setting up for display of plumbing fixtures or appliances, when not connected to any supply or drainage lines, in a sales establishment. (8) Replacement of water conservation devices not requiring cutting into or removal of piping. (9) Work performed in buildings or structures owned and occupied by the State and Federal governments.",
+      "amendment": "The City replaced §104.2(1) and the first paragraph of §104.2(2). Items (3)–(9) are the unamended State text.",
+      "verdict": "CONFIRMED verbatim against the published PDF. No item covers replacement of a waste-and-overflow assembly that requires cutting into piping. Items (1) and (2) both stop at work 'not requiring cutting into or removal of piping'.",
+      "affects": "exempt-work.html quotes all nine items; text matches. Flag U48 (permit exemption for this exact repair not determined) stands."
+    },
+    {
+      "id": "AR03",
+      "title": "sf.gov — permit needed before cutting into or replacing pipes",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "quote": "You need a permit before cutting into or replacing pipes, particularly pipes that will be covered by a wall or buried in the ground. See exemptions in San Francisco Plumbing Code Section 104.2.",
+      "verdict": "CONFIRMED word for word. The same page lists the licence classes that may apply for a plumbing permit (C-4, C-16, C-20, C-36, C-54, B, A) and states 'After your permit is issued, have your plumbing or mechanical work inspected before covering pipes'.",
+      "affects": "permits.html rows 1, 5 and 6 — correct as published."
+    },
+    {
+      "id": "AR04",
+      "title": "sf.gov — work that does not need a building permit",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "quote": "Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection.",
+      "verdict": "CONFIRMED. Listed under 'Interior projects' with six other items. The page does not decide whether any particular opening is 'minor'.",
+      "affects": "permits.html row 4 — correct as published; it does not establish that this ceiling patch is exempt."
+    },
+    {
+      "id": "AR05",
+      "title": "CSLB — C-36 Plumbing Contractor classification",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C36",
+      "quote": "A plumbing contractor provides a means for a supply of safe water ... and the proper disposal of fluid waste from the premises in all structures and fixed works. This classification includes but is not limited to ... (f) The maintenance and replacement of all items described above",
+      "verdict": "CONFIRMED. The C-36 text covers waste disposal and maintenance/replacement of the listed items; it says nothing about wallboard, taping or texture.",
+      "affects": "The rubric's 40/15 split on trade coverage; flag U22 and U30 remain correctly cautionary."
+    },
+    {
+      "id": "AR06",
+      "title": "CSLB — B General Building Contractor classification (B&P §7057)",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=B",
+      "quote": "a general building contractor shall not take a prime contract for any project involving trades other than framing or carpentry unless the prime contract requires at least two unrelated building trades or crafts other than framing or carpentry, or unless the general building contractor holds the appropriate license classification or subcontracts with an appropriately licensed specialty contractor to perform the work.",
+      "verdict": "CONFIRMED. A B licensee may subcontract the plumbing to a C-36 holder, which is why 'B + C-36 on one licence' is a screening signal rather than a requirement.",
+      "affects": "ranking.html criterion A wording and flag U22 — consistent with the official text."
+    },
+    {
+      "id": "AR07",
+      "title": "CSLB — C-9 Drywall Contractor classification",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "quote": "A drywall contractor lays out and installs gypsum wall board and gypsum wall board assemblies including nonstructural metal framing members, and performs the taping and texturing operations including the application of compounds that adhere to wall board to produce a continuous smooth or textured surface.",
+      "verdict": "CONFIRMED. C-9 is the classification that names taping and texturing explicitly.",
+      "affects": "The ceiling-restoration partner column on ranking.html."
+    },
+    {
+      "id": "AR08",
+      "title": "sf.gov — kitchen or bath remodel permit scope",
+      "url": "https://www.sf.gov/apply-kitchen-or-bath-remodel-permit",
+      "quote": "You can only apply for a kitchen or bath permit online if the work: Will not involve removing or moving walls (does not require plans); Is for an R-3 residential building, or a unit in an R-2 apartment building; Is for remodeling a legally-permitted kitchen or bath",
+      "verdict": "CONFIRMED. The online kitchen/bath route is limited to in-kind fixture work without structural change. Nothing on the page says a ceiling opening is covered by this permit.",
+      "affects": "Addresses the earlier flag A18 request: the ceiling-opening question is NOT settled by the kitchen/bath permit route, and the site must not imply that it is."
+    }
+  ],
+  "not_rechecked": [
+    "All business websites and review platforms (Yelp returns HTTP 403 in this environment).",
+    "The remaining eleven CSLB records in the original scored pool (#977638, #959843, #1115649, #841229, #1009195, #995163, #1089561, #632743, #868994, #1140843, #1075566) and the separately checked #1034873.",
+    "Provider availability, willingness to accept this job, prices, drywall scope and tenant-occupied-unit experience — no provider was contacted.",
+    "Whether any exemption applies to this exact repair — only SF DBI can determine that."
+  ]
+}
