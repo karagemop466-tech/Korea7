@@ -1932,3 +1932,20 @@ Handoff: first push of this claim rebased onto `ca107a1` (PR #90, `arena/b3df1cf
 - GitHub Pages API: latest build for commit `520f81e2126ec5f782d7153e0bb5ed16fd21e593` status **built**, no error (02:24:47 → 02:25:13 UTC).
 - Live check: <https://karagemop466-tech.github.io/Korea7/reread-1111.html> served the new page with all 17 rows and per-row CSLB source links; U53 published on the Flagged for Review page.
 - All D1–D3 tasks for this session are done. This board update is delivered by a follow-up PR from the same branch.
+
+---
+
+## Session `arena/f1cb4044-korea7` — RFI register, question set and ranked decision analysis (2026-11-11)
+
+**Claim.** Working branch is fixed by the platform to `arena/f1cb4044-korea7`; the requested `session-<id>/<task>` branch naming cannot be used here (documented, not changed). This session touched no file before writing this claim and pushing it.
+
+| # | Task | Status | Owner | File scope (non-overlapping) | Notes |
+|---|------|--------|-------|------------------------------|-------|
+| T1 | Request-for-information register: every open question blocking a decision, with what we have / do not have, how to obtain it, and its effect on the decision | in progress | arena/f1cb4044-korea7 | `scripts/rfi_content.py`, `rfi.html` (new) | Does not rewrite any existing page. |
+| T2 | Independent ranked decision analysis with reasoning and cost position per candidate, official business link and phone number | in progress | arena/f1cb4044-korea7 | `scripts/rfi_decision.py`, `decision.html` (new) | Re-reads official records itself; does not re-score or overwrite `ranking.html` / `data/canonical/decision_analysis.json` (owned by earlier sessions; cross-referenced only). |
+| T3 | Wire the two new pages into navigation and the generated build without changing existing page content | in progress | arena/f1cb4044-korea7 | `scripts/dashboard_content.py` (NAV + PAGES entries only), `scripts/build_dashboard.py` (only if the new page type needs it) | Additive edits: append page specs and nav links; no existing table, row, source id or score is edited. |
+| T4 | Verify line by line, rebuild, run the full suite, open PR, merge, confirm the exact Pages revision, record the result | in progress | arena/f1cb4044-korea7 | `COORDINATION.md`, `scripts/rfi_*.py`, new pages, GitHub PR/Pages | Records the result here when done. |
+
+**Background check performed before this claim (2026-11-11).** `origin/main` at claim time was `ca107a1` (PR #90); Pages API reports that exact commit **built** and its `github-pages` deployment **success** at 2026-11-11T02:18:33Z. The `main` working tree on this branch was clean at `30bc54e`. No other session claim was active or younger than 60 minutes, so no handoff was required. Existing open PRs (#2, #15, #18, #20, #32, #42, #62, #65) were inspected by title/date only and left untouched.
+
+**Scope note.** The two new pages are additive. `ranking.html` remains the historical, reproducible CSLB-only score owned by earlier sessions; `decision.html` is a separately labelled decision-support view that cites the same official records and states its own weights. Neither replaces the other, and no score from `ranking.html` is renumbered here.>>>>>>> d14504c (Claim: RFI register and independent ranked decision analysis (arena/f1cb4044-korea7))
