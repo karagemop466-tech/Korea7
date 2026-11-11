@@ -1807,3 +1807,16 @@ Scope: reuse the existing extensive dashboard rather than create duplicate resea
 - GitHub Pages baseline revision `0d0e0396839ef3823ea543c80573ab4df6d00266` reports built with no error. External claims retain their prior read dates; no new contractor capability, price, availability or review claims were introduced.
 - Audit and executive decision limits: `docs/delivery-audit-2026-11-11.md`. Existing `flagged.html` continues to publish the unresolved items. No provider contacted or booked.
 - Concurrent PR #89 appended a delivery audit while this session worked. Rebase conflicted only in this board; retained both session records in full. No implementation changes were lost. This session's audit is complete; delivery PR [#90](https://github.com/karagemop466-tech/Korea7/pull/90) records the merge and final revision authoritatively.
+
+## Session arena/1ea9ff50-korea7 — 2026-11-11 questions & decisions page + delivery closeout
+
+This session works on the fixed Arena branch `arena/1ea9ff50-korea7` (only active session; prior claims are from 2026-11-10/11 and their implementation is preserved). Scope: COORDINATION.md (this record); scripts/questions_data.py (new); scripts/dashboard_content.py (one import line); generated site pages + data/canonical/* via scripts/build_dashboard.py; EXECUTIVE-SUMMARY.md (one link addition). No other session scopes are edited.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Q&A page: questions, information & answers before decision + how to discover missing info | in progress | arena/1ea9ff50-korea7 | scripts/questions_data.py; scripts/dashboard_content.py; questions.html (generated) |
+| Fresh official re-reads (CSLB + sf.gov) and live-site check | in progress | arena/1ea9ff50-korea7 | COORDINATION.md (this record) |
+| Rebuild, full test suite, privacy sweep | unclaimed | arena/1ea9ff50-korea7 | generated outputs; tests (read-only) |
+| PR to main, merge, confirm Pages deploy | unclaimed | arena/1ea9ff50-korea7 | GitHub PR |
+
+Privacy note: this session publishes no internal hiring-constraint wording. Permit content is neutral official reporting only (sf.gov / CSLB / state law), consistent with the build's privacy sweep.
