@@ -1,0 +1,167 @@
+{
+  "meta": {
+    "artifact": "data/canonical/info-inventory-2026-11-11.json",
+    "session": "arena/a4fcce50-korea7",
+    "checked_date": "2026-11-11",
+    "purpose": "Structured inventory of information already verified from official sources, information reported by owner/third-party sources (unverified), missing information blocking a reasonable hiring decision, statutory two-stage contracting rules (BPC §7159.10 and §7159), fire-protection wallboard caveat, and concrete discovery suggestions.",
+    "provider_contacted": false,
+    "booking_confirmed": false,
+    "verified_all_in_price": null
+  },
+  "direct_official_reads_2026_11_11": [
+    {
+      "source_id": "S400",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=829071",
+      "publisher": "Contractors State License Board",
+      "entity": "ACE PLUMBING & ROOTER",
+      "license": "829071",
+      "record_stamp": "Data current as of 11/10/2026 6:17:57 PM",
+      "status": "current and active",
+      "classifications": ["C36", "A", "C-4", "C16", "B", "C10"],
+      "phone_on_record": "(415) 824-6444",
+      "address_on_record": "1090 BRYANT STREET, SAN FRANCISCO, CA 94103-4417",
+      "license_expires": "2027-06-30",
+      "bond": "$25,000 (#101993376, Merchants Bonding Company, effective 2026-09-04)",
+      "workers_compensation": "Insured (Financial Pacific Insurance Co., policy #10147545585, expires 2027-07-13)",
+      "complaint_disclosure": false
+    },
+    {
+      "source_id": "S401",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=977638",
+      "publisher": "Contractors State License Board",
+      "entity": "EXPERT PLUMBING SOLUTIONS",
+      "license": "977638",
+      "record_stamp": "Data current as of 11/10/2026 6:16:51 PM",
+      "status": "current and active",
+      "classifications": ["C36"],
+      "phone_on_record": "(415) 531-5340",
+      "address_on_record": "1465 44TH AVENUE, SAN FRANCISCO, CA 94122",
+      "license_expires": "2028-10-31",
+      "bond": "$25,000 (#800209947, Atlantic Specialty Insurance Co., effective 2025-09-19)",
+      "workers_compensation": "Insured (Everest Premier Insurance Co., policy #7600025915261, expires 2027-07-19)",
+      "complaint_disclosure": false
+    },
+    {
+      "source_id": "S402",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=757796",
+      "publisher": "Contractors State License Board",
+      "entity": "BAY AREA PLUMBING",
+      "license": "757796",
+      "record_stamp": "Data current as of 11/10/2026 6:17:53 PM",
+      "status": "current and active",
+      "classifications": ["C36"],
+      "phone_on_record": "(415) 668-8000",
+      "address_on_record": "335 14TH AVENUE, SAN FRANCISCO, CA 94118",
+      "license_expires": "2027-01-31",
+      "bond": "$25,000 (#800268354, Atlantic Specialty Insurance Co., effective 2026-09-01)",
+      "workers_compensation": "Exempt — certified no employees at this time (effective 2024-12-11)",
+      "complaint_disclosure": false
+    },
+    {
+      "source_id": "S403",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1024971",
+      "publisher": "Contractors State License Board",
+      "entity": "JOSEPH TINSLEY dba FAST RESPONSE PLUMBING AND ROOTER",
+      "license": "1024971",
+      "record_stamp": "Data current as of 11/10/2026 6:17:36 PM",
+      "status": "current and active",
+      "classifications": ["C36"],
+      "phone_on_record": "(415) 596-6115",
+      "address_on_record": "236 W POTRAL AVE #459, SAN FRANCISCO, CA 94127",
+      "license_expires": "2027-03-31",
+      "bond": "$25,000 (#800273981, Atlantic Specialty Insurance Co., effective 2026-09-01)",
+      "workers_compensation": "Insured (Employers Preferred Insurance Co., policy #EIG576950801, expires 2026-12-18 — 37 days from read date)",
+      "complaint_disclosure": false
+    },
+    {
+      "source_id": "S404",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=1003394",
+      "publisher": "Contractors State License Board",
+      "entity": "HANDYMAN HEROES INC",
+      "license": "1003394",
+      "record_stamp": "Data current as of 11/10/2026 6:16:14 PM",
+      "status": "current and active",
+      "classifications": ["B", "C36"],
+      "phone_on_record": "(844) 382-4376",
+      "address_on_record": "912 COLE ST # 202, SAN FRANCISCO, CA 94117",
+      "license_expires": "2027-05-31",
+      "bond": "$25,000 (#89021781, Western Surety Company, effective 2026-09-01)",
+      "workers_compensation": "Insured (Omaha National Casualty Co., policy #ONCC0701424403, expires 2027-04-25)",
+      "complaint_disclosure": true
+    },
+    {
+      "source_id": "S405",
+      "url": "https://www2.cslb.ca.gov/onlineservices/CheckLicenseII/LicenseDetail.aspx?LicNum=995163",
+      "publisher": "Contractors State License Board",
+      "entity": "BERNAL HILL DRYWALL INC",
+      "license": "995163",
+      "record_stamp": "Data current as of 11/10/2026 6:18:06 PM",
+      "status": "current and active",
+      "classifications": ["C-9", "B"],
+      "phone_on_record": "(415) 533-8274",
+      "address_on_record": "720 ANDERSON ST, SAN FRANCISCO, CA 94110",
+      "license_expires": "2028-07-31",
+      "bond": "$25,000 (#100728251, American Contractors Indemnity Co., effective 2023-03-29)",
+      "workers_compensation": "Insured (Endurance Assurance Corp., policy #EAW0000274901, expires 2027-03-10)",
+      "complaint_disclosure": false
+    }
+  ],
+  "statutory_and_code_reads_2026_11_11": [
+    {
+      "source_id": "S406",
+      "url": "https://www.sf.gov/apply-plumbing-and-mechanical-permit",
+      "key_facts": [
+        "Permit required before cutting into or replacing pipes, particularly pipes covered by a wall or buried in the ground (exemptions in SF Plumbing Code §104.2).",
+        "Allowed contractor classes: C4, C16, C20, C36, C54, B (after approval based on scope), or A.",
+        "Homeowner self-application restricted to property owners of stand-alone single-family dwellings (R-3 occupancy).",
+        "Permit Center help desk: 628-652-4900 and permitsf@sfgov.org."
+      ]
+    },
+    {
+      "source_id": "S407",
+      "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+      "key_facts": [
+        "Lists 'Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection' among work not needing a building permit.",
+        "Lists 'Painting, papering and similar finish work' among work not needing a building permit."
+      ]
+    },
+    {
+      "source_id": "S408",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7159.",
+      "key_facts": [
+        "Applies to home improvement contracts where aggregate contract price for labor, services, and materials exceeds $500 (§7159(b)), unless governed by a conforming §7159.10 service and repair contract (§7159(a)(2)).",
+        "Prime or direct contractor is administratively responsible for completion of the project in accordance with the contract, plans, and specifications (§7159(a)(5)(B))."
+      ]
+    },
+    {
+      "source_id": "S409",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7159.10.",
+      "key_facts": [
+        "Governs buyer-initiated service and repair contracts of $750 or less where no payment is due or accepted until the work is completed (§7159.10(a)(1)(A)–(D)).",
+        "Requires signed, dated written contract before any work starts, stating contractor name, address, license number, and Commercial General Liability (CGL) insurance notice (§7159.10(d)(4)–(7))."
+      ]
+    },
+    {
+      "source_id": "S410",
+      "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1954",
+      "key_facts": [
+        "Permits landlord entry during normal business hours to make necessary or agreed repairs (§1954(a)(2), (b)).",
+        "Requires written notice (24 hours presumed reasonable; 6 days if mailed) stating date, approximate time, and purpose, or oral agreement with tenant for agreed repairs within one week (§1954(d)(1), (3))."
+      ]
+    },
+    {
+      "source_id": "S411",
+      "url": "https://www2.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=C-9",
+      "key_facts": [
+        "Defines C-9 Drywall Contractor as laying out and installing gypsum wallboard and assemblies, nonstructural metal framing, and taping and texturing operations to produce a continuous smooth or textured surface."
+      ]
+    },
+    {
+      "source_id": "S412",
+      "url": "https://www.oatey.com/products/P_041193058379/dearborn-plastic-tubular-triplever-bath-waste",
+      "key_facts": [
+        "Confirms standard Dearborn Plastic Tubular Trip-Lever Bath Waste Full Kit (polypropylene, chrome-finish stopper, variants Part# A9226 UPC 041193058379 and Part# P9226 UPC 041193057099)."
+      ]
+    }
+  ]
+}

@@ -15,8 +15,8 @@
   },
   {
     "path": "EXECUTIVE-SUMMARY.md",
-    "bytes": 52592,
-    "sha256": "75457bf50e9838e444eb03cddd499b161780865d0b532912ff69cc57451a8a7f",
+    "bytes": 58509,
+    "sha256": "437daa9f90e2a977d3bb85e4a03e0b3d2976841049bb5023941e9ce5b586f7db",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -179,6 +179,13 @@
     "bytes": 16132,
     "sha256": "94796d030041cdd48629952cf93ef246fe514173f19751e82b2be7c87a248677",
     "category": "current-plumbing-source",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "data/canonical/info-inventory-2026-11-11.json",
+    "bytes": 9107,
+    "sha256": "57db8a774bb1d092cabd6a3139b25027e30c96bf56f74be99f9574ba999ef387",
+    "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
@@ -1569,8 +1576,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 165737,
-    "sha256": "b3c4c0c04c9cc4a0c3b9e4911a9c025c951d38a122a5f46733c20f39bc12e465",
+    "bytes": 166104,
+    "sha256": "9502cbfda7be09e267fdfd4739ad386c036ee7e11d00e6218823616720c72935",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1606,6 +1613,13 @@
     "path": "scripts/generate_submission.py",
     "bytes": 12227,
     "sha256": "afde6f5b5ff493daa04cb3f4c4ea707f0275af60b5c3afe3028adfe36d038125",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/info_inventory_1111.py",
+    "bytes": 42950,
+    "sha256": "482d072691631f048156dd493e14f9424bbc33816cc90a5bee716d0a3f4da933",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1914,6 +1928,13 @@
     "path": "tests/test_holdout_registry.py",
     "bytes": 2927,
     "sha256": "51dd4ab95c10031215676d40bd81957540237e7458f94b998abe5582c40c3e23",
+    "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_info_inventory_1111.py",
+    "bytes": 5578,
+    "sha256": "18948bfbb514b297094d47dfe397f27436f9660e5eb765f0d1f03bc8588d67c9",
     "category": "preserved-archive-or-unrelated",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
