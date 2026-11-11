@@ -79,7 +79,9 @@ def refresh_repo_inventory():
         writer = csv.DictWriter(fh, fieldnames=["path", "bytes", "sha256", "category", "review"], lineterminator="\n")
         writer.writeheader(); writer.writerows(rows)
     table_rows = []
-    branch = quote(C.META["session"], safe="/")
+    # Pages is deployed from main. A historical session branch can be missing
+    # files integrated by later sessions, even though they are in this build.
+    branch = "main"
     for item in rows:
         url = C.META["repo_url"] + "/blob/" + branch + "/" + quote(item["path"], safe="/")
         table_rows.append({"cells": [
