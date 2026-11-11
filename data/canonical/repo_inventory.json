@@ -1499,8 +1499,8 @@
   },
   {
     "path": "scripts/build_dashboard.py",
-    "bytes": 19225,
-    "sha256": "673d4c79da99fb3452d321317cb09f32a24447070f4907f80e6f6378aa95cbc7",
+    "bytes": 19337,
+    "sha256": "4de34b10f5706b1bc68a1643a30492d51485ed934523b9061dcae018e2062a95",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1569,8 +1569,8 @@
   },
   {
     "path": "scripts/dashboard_content.py",
-    "bytes": 164988,
-    "sha256": "d4e46a3004dde54144f9e7434f482a2ff66553b2e76ae6efe768338febe4d712",
+    "bytes": 165405,
+    "sha256": "c021d1e6a0d51eb3bacd52b2b61c2f8315b3d76e24a325dad4f5276ecf606bf4",
     "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
@@ -1670,6 +1670,13 @@
     "bytes": 17249,
     "sha256": "aa7f57037251fb7ae64f9e4564d6d556928a3cbe7c5ac3b2b4ede672eeb06b56",
     "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "scripts/reread_1111.py",
+    "bytes": 34202,
+    "sha256": "c277cf1a9cf874884398c2f035873115804e136d4bc6d524fefcb6ea60397752",
+    "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
@@ -1964,6 +1971,13 @@
     "bytes": 5054,
     "sha256": "2a134cd41feaee2c0ff6cc907eba0ed1c981b0fcb10691415e2650b3017b4300",
     "category": "preserved-archive-or-unrelated",
+    "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
+  },
+  {
+    "path": "tests/test_reread_1111.py",
+    "bytes": 4013,
+    "sha256": "1cc4e2c85256987b73a0a420144948fb3ee01b9f560cdf58358b26e3e0d25979",
+    "category": "current-plumbing-source",
     "review": "hashed source/artifact inventory; external factual claims not verified by this hash"
   },
   {
