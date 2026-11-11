@@ -1828,3 +1828,22 @@ Privacy note: this session publishes no internal hiring-constraint wording. Perm
 - Build: 19 pages / 41 tables / 883 rows / 152 sources; 11/11 checks PASS (1,816 rows linked, 1,794 internal links resolve, 0 broken anchors, 422 external links in ledger, 0 privacy matches). Dashboard tests: 63 passed (unittest). 11 GEMS test modules error on import in this sandbox (no pytest/numpy/rasterio installed) — pre-existing environment gap, unrelated to this change; prior sessions recorded 190 passed with full deps.
 - Irregularities: none new. Existing flagged items unchanged. Privacy sweep clean; no internal hiring-constraint wording published.
 - Status: Q&A page done; fresh re-reads done; rebuild/tests done; PR/merge pending (next step).
+## Session arena/bac86f1e-korea7 — 2026-11-11 final verification, rebuild and publish
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| Independent line-by-line verification, rebuild, tests, PR/merge and Pages confirmation | in progress | arena/bac86f1e-korea7 | COORDINATION.md; generated root pages/data from scripts/build_dashboard.py only |
+
+Scope: reuse the existing canonical dashboard (18 pages, 38 tables). No duplicate research. Fresh external spot-checks on 2026-11-11: CSLB #1003394, #829071, #1024971 read directly; Handyman Heroes sheetrock page and Fast Response repair page read directly; live dashboard read. No contractor contacted; no price/availability claimed.
+
+### 2026-11-11 verification results (this session)
+
+- Fresh CSLB reads: #1003394 (Handyman Heroes, B+C-36, (844) 382-4376, active, Data current as of 11/10/2026), #829071 (Ace, B+C-36+A+C-4+C16+C10, (415) 824-6444, active, 11/10/2026), #1024971 (Fast Response, C-36, (415) 596-6115, active, 11/10/2026). All match stored 2026-11-08/11-10 transcriptions except the database stamp advanced one day (11/9 → 11/10); no field drift.
+- Fresh company reads: Handyman Heroes sheetrock page advertises SF sheetrock/wall repair and lists 1-844-382-4376; Fast Response repair page lists "Bathtubs (waste & overflow)" and (415) 596-6115 with CSLB #1024971. Company claims only; not proof of acceptance, price or ceiling scope.
+- Yelp web search 2026-11-11 confirms Atlas stuck-lever review excerpt and Ace/Fast Response bathtub-repair listings exist as third-party snapshots; direct Yelp fetch remains blocked (403 pattern from prior sessions). Ratings never enter the CSLB-only numeric score.
+- Local rebuild: 18 pages, 38 tables, 856 rows, 152 sources; 11/11 checks PASS (1,762 rows with links, 1,723 internal links resolve, 0 broken anchors, 421 external links in ledger, 0 privacy matches, 0 dead-source links). Targeted suite: 110 passed, 18 subtests passed. Full suite requires numpy/rasterio (GEMS legacy) and was not run in this sandbox; dashboard-relevant tests all pass.
+- Live site https://karagemop466-tech.github.io/Korea7/ read successfully; Pages API reports revision ca107a1 built with no error.
+- Irregularities: none new. All 52 flagged items remain on flagged.html and do not block merge. Estimates ($614/$550/$135) remain owner-provided/unverified with blank verified cells.
+- PR/merge/Pages result: to be recorded below after merge.
+
+- Rebase note (2026-11-11): main advanced with PR #92 (arena/1ea9ff50-korea7, questions.html, 19 pages). This session rebased onto 78cfe8c, retained both board entries, kept main's generated outputs, and rebuilt: 19 pages / 41 tables / 883 rows / 152 sources; 11/11 checks PASS (1,816 rows linked, 1,794 internal links, 0 broken anchors, 422 external links, 0 privacy matches). Our earlier 18-page counts are superseded by the 19-page build.
