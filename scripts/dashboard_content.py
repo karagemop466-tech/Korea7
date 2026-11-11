@@ -1521,3 +1521,10 @@ _decision_checklist.integrate(__import__(__name__))
 # S300+, a nav link, a dated callout and (if any) one workers'-comp watch flag.
 import reread_1111 as _reread_1111
 _reread_1111.integrate(__import__(__name__))
+
+# --- 2026-11-11 line-by-line content repairs — arena/33f7b0ca-korea7 ----------
+# No new sources and no new factual claims: renumbers a duplicated finding id (F10 ->
+# F20) and fixes stale "eight candidate" wording that survived the pool growing to
+# sixteen. The 2026-11-11 licence re-read is owned by scripts/reread_1111.py.
+import content_fixes_1111 as _content_fixes_1111
+_CONTENT_FIXES_1111 = _content_fixes_1111.integrate(__import__(__name__))

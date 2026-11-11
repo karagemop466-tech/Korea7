@@ -1925,3 +1925,42 @@ Handoff: first push of this claim rebased onto `ca107a1` (PR #90, `arena/b3df1cf
   2. Carried, unchanged on the official record: #1009195 still prints the possible-future-suspension notice; #1003394 still prints the complaint-disclosure notice; #1024971 address still reads "236 W POTRAL AVE #459" on CSLB (transcribed verbatim, not corrected).
   3. Process: PRs #91–#96 from four concurrent sessions merged while this work was in progress. Each rebase conflict (board and generated files) was resolved by keeping every incoming record and module, re-wiring this session's module after theirs, and regenerating outputs — no other session's work discarded.
 - **Not verified (unchanged limits):** no contractor contacted or booked; quote amounts remain owner-supplied; job-specific skill, ceiling restoration, availability and price remain UNVERIFIED.
+
+---
+
+## Session `arena/33f7b0ca-korea7` — line-by-line content repair and delivery (2026-11-11)
+
+Read this board and the live GitHub state before starting (then `main` = `0d0e039`, Pages source `main` `/`, last build `success`). The Arena runtime fixes this branch name; no other branch was created or pushed. Stale open PRs #2, #15, #18, #20, #32, #42, #62 and #65 belong to earlier sessions and were left untouched.
+
+| Task | Status | Owner | File scope |
+|---|---|---|---|
+| B1 — line-by-line defect sweep of the published pages | done | arena/33f7b0ca-korea7 | read-only review; this board |
+| B2 — dated 2026-11-11 official re-read of the CSLB records and cited rule pages | done by `arena/12cacfe5-korea7` (PR #97); adopted, not duplicated | arena/33f7b0ca-korea7 | `scripts/reread_1111.py`, `reread-1111.html`, `data/canonical/reread-2026-11-11.json` |
+| B3 — repair the substantiated content defects found in B1 | done | arena/33f7b0ca-korea7 | `scripts/content_fixes_1111.py`, `scripts/dashboard_content.py` (hook only), `shortlist.html`, `tests/test_content_fixes_1111.py` |
+| B4 — third-party review-platform read attempt | done | arena/33f7b0ca-korea7 | result recorded below; no source changed |
+| B5 — build/link/test gate, PR, merge, Pages verification | in progress | arena/33f7b0ca-korea7 | `COORDINATION.md`, GitHub PR/Pages |
+
+### B1 result — what the sweep found (and what it did not)
+
+Three substantiated defects, all internal to the published pages (no factual claim was wrong, and no source value changed):
+
+1. **Duplicated finding identifier.** `findings` carried two rows identified `F10`: the repo-legacy finding and a workers'-compensation finding appended by a later module. The appended row is now **F20**, and the U46 cross-reference that pointed at it was updated.
+2. **Stale candidate counts.** The Contractors page lede, requirement **R09** ("Eight licensed candidates researched") and requirement **R15** ("CSLB records checked for eight candidates") still described an eight-record pool after it grew to sixteen. A fourth occurrence in finding **F04** was corrected in the same pass. All now read sixteen.
+3. **`shortlist.html`** — a static page still linked from the navigation but no longer produced by the generator — published "Eight named candidates … verified for 8 of 9" beside the current sixteen-record dataset, with no date banner. It now carries a dated snapshot note pointing to `ranking.html`, `contacts.html` and `reread-1111.html`, and its requirement matrix states sixteen records with the newly named #1025814 linked to its official CSLB record.
+
+Published as flag **U54** ("resolved / documented"), which cites CSLB Check a License (S04) and the re-verification record (S120).
+
+### B2 — concurrency reconciliation (no duplicate published content)
+
+This session independently fetched all sixteen CSLB License Detail pages and both rule pages on 2026-11-11 and reproduced every field, then discovered on rebasing that `arena/12cacfe5-korea7` had **already merged the same dated read to `main`** in PR #97 (`scripts/reread_1111.py`, page `reread-1111.html`, artifact `data/canonical/reread-2026-11-11.json`, three tables, flag U53). Publishing a second read of the same date would have duplicated a page, an artifact, a table set and a flag, so **this session's duplicate module, tests and artifact were dropped before pushing** and the merged implementation was adopted and re-read line by line: it covers 17 records (the sixteen scored plus the separately checked #1034873), compares against the 2026-11-10 direct reads rather than asserting equality, preserves each record's `11/10/2026` database stamp, and keeps `limits.provider_contacted = false`. Its workers'-compensation watch window (60 days) lists #1075566 (2026-12-02, 21 days), #1024971 (2026-12-18, 37 days) and #1034873 (2026-12-30, 49 days), which matches this session's own reads. No other session's branch, PR or file was modified, and nothing was force-pushed to any shared branch — only this session's own branch was rewritten.
+
+### B4 result — Yelp
+
+Direct fetch of a Yelp search page was attempted again on 2026-11-11 and returned **HTTP 403**, the same result as 2026-11-07 to 2026-11-10. No Yelp rating, count or badge was created or refreshed. The existing flag U03 already records this limitation; it was **not** edited, because the concurrent #97 merge rewrote the shared content module and the statement remains accurate.
+
+### Verification performed (this session, on the rebased tree)
+
+- Build: **21 pages, 45 tables, 942 dataset rows, 171 sources, 11/11 checks PASS** — 1,934 rendered rows each carrying a link, 0 broken internal links, 0 broken anchors, 0 privacy-sweep matches.
+- Independent link audit across every published root page and the 54 archived `docs/`/`bathtub-overflow/` pages: **0 broken links, 0 broken anchors**.
+- Full suite in an isolated virtual environment outside the repository: **209 passed, 18 subtests passed** (34 pre-existing rasterio deprecation warnings). New `tests/test_content_fixes_1111.py` locks the repairs: unique finding/flag identifiers, no stale "eight" strings, the shortlist snapshot note, and a CSLB link for every licence number quoted there.
+- Still unverified and unchanged: job-specific experience with a seized trip lever, a safe non-demolition access route, one-contract ceiling restoration, a total price and availability. No provider was contacted and nothing was booked.

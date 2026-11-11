@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T02:23:34+00:00",
+  "generated_at": "2026-11-11T02:26:28+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -26,13 +26,13 @@
   "counts": {
     "pages": 21,
     "tables": 45,
-    "rows": 940,
+    "rows": 943,
     "source_ledger_entries": 171,
     "verified_sources": 148,
     "official_or_manufacturer_verified": 78,
-    "generated_tbody_rows": 1930,
-    "internal_links_checked": 1929,
-    "unique_external_links": 426,
+    "generated_tbody_rows": 1936,
+    "internal_links_checked": 1935,
+    "unique_external_links": 428,
     "published_text_files_scanned": 151
   },
   "checks": [
@@ -44,7 +44,7 @@
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1930 tbody rows checked, 0 missing links"
+      "detail": "1936 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -54,7 +54,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1929 internal links checked, 0 broken"
+      "detail": "1935 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -64,7 +64,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "426 unique external links, 0 unknown/dead"
+      "detail": "428 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -335,6 +335,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/calibrate.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/canary.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/check_candidate.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/content_fixes_1111.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/dashboard_content.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/decision_checklist.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/scripts/delivery_data.py",
@@ -376,6 +377,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_bath_site.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_canonical_integrity.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_closeout.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_content_fixes_1111.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_dashboard.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_dashboard_integrity.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/12cacfe5-korea7/tests/test_decision_checklist.py",
