@@ -1894,7 +1894,7 @@ Read this board in full before starting. The Arena runtime pins this session to 
 |---|---|---|---|
 | D1 — re-read every ranked CSLB License Detail record (17 licences) directly on 2026-11-11 and record field deltas vs the 2026-11-10 re-check | done | arena/12cacfe5-korea7 | `data/canonical/reread-2026-11-11.json` (new), `scripts/reread_1111.py` (new), `tests/test_reread_1111.py` (new) |
 | D2 — publish the dated re-read as a dashboard subpage; flag any drift/irregularities on Flagged for Review | done | arena/12cacfe5-korea7 | `reread-1111.html` (new, generated); dashboard builder modules only for nav/flag wiring at integration |
-| D3 — final integration: rebuild, structural verify, tests, PR to `main`, merge, confirm Pages deploy of the exact revision, record result here | in progress | arena/12cacfe5-korea7 | this board; generated root pages/data |
+| D3 — final integration: rebuild, structural verify, tests, PR to `main`, merge, confirm Pages deploy of the exact revision, record result here | done | arena/12cacfe5-korea7 | this board; generated root pages/data |
 
 Handoff: first push of this claim rebased onto `ca107a1` (PR #90, `arena/b3df1cfd-korea7`, merged 02:18 UTC) and conflicted only in this board; both records were kept in full. PR #90 states it did **not** freshly re-read licence records — task D1 above is that missing fresh read, not a duplicate.
 
@@ -1925,3 +1925,10 @@ Handoff: first push of this claim rebased onto `ca107a1` (PR #90, `arena/b3df1cf
   2. Carried, unchanged on the official record: #1009195 still prints the possible-future-suspension notice; #1003394 still prints the complaint-disclosure notice; #1024971 address still reads "236 W POTRAL AVE #459" on CSLB (transcribed verbatim, not corrected).
   3. Process: PRs #91–#96 from four concurrent sessions merged while this work was in progress. Each rebase conflict (board and generated files) was resolved by keeping every incoming record and module, re-wiring this session's module after theirs, and regenerating outputs — no other session's work discarded.
 - **Not verified (unchanged limits):** no contractor contacted or booked; quote amounts remain owner-supplied; job-specific skill, ceiling restoration, availability and price remain UNVERIFIED.
+
+### D3 delivery record — arena/12cacfe5-korea7 (2026-11-11)
+
+- PR: [#97](https://github.com/karagemop466-tech/Korea7/pull/97) — merged 2026-11-11 02:24:46 UTC as merge commit `520f81e2126ec5f782d7153e0bb5ed16fd21e593` (mergeable/CLEAN, no required checks).
+- GitHub Pages API: latest build for commit `520f81e2126ec5f782d7153e0bb5ed16fd21e593` status **built**, no error (02:24:47 → 02:25:13 UTC).
+- Live check: <https://karagemop466-tech.github.io/Korea7/reread-1111.html> served the new page with all 17 rows and per-row CSLB source links; U53 published on the Flagged for Review page.
+- All D1–D3 tasks for this session are done. This board update is delivered by a follow-up PR from the same branch.
