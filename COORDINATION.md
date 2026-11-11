@@ -1847,3 +1847,21 @@ Scope: reuse the existing canonical dashboard (18 pages, 38 tables). No duplicat
 - PR/merge/Pages result: to be recorded below after merge.
 
 - Rebase note (2026-11-11): main advanced with PR #92 (arena/1ea9ff50-korea7, questions.html, 19 pages). This session rebased onto 78cfe8c, retained both board entries, kept main's generated outputs, and rebuilt: 19 pages / 41 tables / 883 rows / 152 sources; 11/11 checks PASS (1,816 rows linked, 1,794 internal links, 0 broken anchors, 422 external links, 0 privacy matches). Our earlier 18-page counts are superseded by the 19-page build.
+## Session arena/e2a863b6-korea7 — decision-readiness integration (2026-11-11)
+
+| Task | Status | Owner | Scope |
+|---|---|---|---|
+| D1 | in progress | arena/e2a863b6-korea7 | New `decision-checklist.html`, `tests/test_decision_checklist.py`; integration link in `scripts/dashboard_content.py`; generated dashboard outputs only at final integration; COORDINATION.md |
+
+Read the full existing board and current canonical pages before claiming. Earlier November 10 claims are over 60 minutes old; their completed research is reused, not duplicated. Runtime requires this fixed Arena branch. Existing Pages build for main 0d0e039 is built. This session will add an explicit question/known-answer/evidence-gap/discovery register, test it, and publish via its own PR. External non-GitHub hosts are restricted in this runtime: prior dated source reads must not be represented as fresh verification. No provider contact or booking is claimed.
+
+Board-only rebase conflict on the initial claim: both the incoming completed PR #89 audit and this new, non-overlapping claim were preserved.
+Implementation detail: isolated content module `scripts/decision_checklist.py` is also in this session's scope; shared content file receives only its integration hook. Existing source dates and ranking remain unchanged.
+
+### D1 integration verification
+- Added 12 source-linked questions with known information, blank/UNVERIFIED project answers, discovery actions and decision gates; linked from navigation, dashboard and executive-summary page. Source freshness limitation is also published on Flagged for Review.
+- No newly verified external facts, numeric ratings, project diagnosis, prices, contractor acceptance or booking are asserted. Official links provide context, not proof of private site conditions. Existing rankings and dates preserved.
+- Build: 19 pages; every rendered table row linked; 11 structural checks passed, no broken internal links/anchors, no privacy matches. Full suite: 192 passed, 18 subtests passed; 34 existing rasterio warnings. Initial test run picked up third-party HTML templates inside local .venv; moved the environment outside the repo and reran successfully (no test bypass or source change).
+- Earlier repository has unrelated GEMS content and archived duplicate dashboards; preserved and already flagged. External link reachability and full line-by-line factual re-verification cannot be claimed from this runtime. Current prices/availability and job acceptance still require provider evidence.
+- Second board-only rebase conflict incorporated PR #90 audit in full; implementation scopes did not overlap. Final integration regenerated inventory after that handoff.
+- PR #92 landed a complementary Questions & decisions page during integration. Both modules and all incoming work are preserved; this checklist adds explicit blank confirmed-answer cells and authorization gates. Generated-output conflicts were resolved by rebuilding from both source modules, not choosing one side. PR for this session: https://github.com/karagemop466-tech/Korea7/pull/93 .

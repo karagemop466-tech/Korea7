@@ -32,6 +32,10 @@
       "group": "Decision",
       "links": [
         [
+          "decision-checklist.html",
+          "Decision checklist"
+        ],
+        [
           "ranking.html",
           "Ranked hiring decision"
         ],
@@ -7793,7 +7797,7 @@
       "caption": "No access method, opening size or permit exemption is inferred. A licensed site assessment is required."
     },
     "repo_inventory": {
-      "title": "Line-by-line source/artifact inventory (324 files)",
+      "title": "Line-by-line source/artifact inventory (326 files)",
       "columns": [
         "Path",
         "Bytes",
@@ -10494,9 +10498,21 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/dashboard_content.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dashboard_content.py</code></a>",
-            "164812",
-            "<code class=\"hash\">e40a485abee573aafb76d7ba18fb035af2a22da64b1b80e8c97d994367a2f35a</code>",
+            "164988",
+            "<code class=\"hash\">d4e46a3004dde54144f9e7434f482a2ff66553b2e76ae6efe768338febe4d712</code>",
             "current-plumbing-source",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/decision_checklist.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/decision_checklist.py</code></a>",
+            "8778",
+            "<code class=\"hash\">bf2c3757774857a1aba01e72f223bc2e95a5bdc0e76e9ea7cdce3491dc4131cf</code>",
+            "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
           "src": [
@@ -10977,6 +10993,18 @@
             "5854",
             "<code class=\"hash\">4571159b6e9228c27221caab22951272563a12af93f8d1bdde1379982bca20c3</code>",
             "current-plumbing-source",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/tests/test_decision_checklist.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>tests/test_decision_checklist.py</code></a>",
+            "1295",
+            "<code class=\"hash\">fe1c1c09829deadf08b92ed5e06dc8c6ff4dc1d6211ffab5ec896d0a68110b23</code>",
+            "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
           "src": [
@@ -13495,6 +13523,195 @@
         }
       ],
       "caption": "Suggestions only — no provider has been contacted and no answer has been obtained through these steps in this session. Each suggestion names the source to use."
+    },
+    "decision_questions": {
+      "title": "Questions that must be resolved before authorizing work",
+      "columns": [
+        "ID",
+        "Question",
+        "What we already know / limit",
+        "Confirmed project answer",
+        "How to obtain the missing information",
+        "Decision gate (recommended)",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Q01",
+            "What is actually seized or broken?",
+            "Owner reports a stuck trip lever; the exact failed part is not independently established.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Arrange a licensed diagnostic visit; record linkage, overflow, drain and visible piping condition before choosing repair versus replacement.",
+            "Written diagnosis and photographs; no destructive work authorized by this checklist."
+          ],
+          "src": [
+            "S04",
+            "S05",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Q02",
+            "Can it safely be removed from above?",
+            "Owner reports more than five plumbers expressed concern about damaging hidden piping. No safe route is confirmed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Ask the diagnosing plumber for a non-forcing assessment, a stop condition and an alternative access plan.",
+            "Written method and stop point; do not force seized parts."
+          ],
+          "src": [
+            "S04",
+            "S05",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Q03",
+            "Where should any access opening be made?",
+            "Storage space below is reported; ceiling layout, obstructions and required opening size are unknown.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Have the provider inspect both spaces and propose the smallest suitable access location before cutting.",
+            "Documented opening location, protection plan and approval for storage-space access."
+          ],
+          "src": [
+            "S01",
+            "S02",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Q04",
+            "Who takes responsibility for plumbing AND ceiling restoration?",
+            "Some candidates have building and plumbing classifications; classification is not a signed ceiling-restoration commitment.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Request one accountable contract naming self-performed and subcontracted tasks, patching, texture, primer, paint and cleanup.",
+            "Named responsible contractor and written inclusions/exclusions."
+          ],
+          "src": [
+            "S04",
+            "S05",
+            "S10",
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "Q05",
+            "Has the provider handled this specific delicate repair?",
+            "Company claims and limited review excerpts exist; comparable occupied-unit seized-linkage experience is unconfirmed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Request recent comparable project descriptions and references, with access route and restoration outcome. Obtain permission before contacting references.",
+            "Relevant references and a job-specific method; online ratings alone are insufficient."
+          ],
+          "src": [
+            "S04",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "Q06",
+            "What is the complete, comparable price?",
+            "Three owner-reported amounts cover different scopes. No ceiling-inclusive total is confirmed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Request separately priced diagnosis, safe above-attempt, below-access fallback, parts, ceiling finish, protection, disposal and testing; state diagnostic credit and change-order cap.",
+            "Itemized written alternatives, validity date and payment schedule."
+          ],
+          "src": [
+            "S04",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Q07",
+            "Are the license, disclosures and crew coverage acceptable at hiring?",
+            "Dated official records and disclosures are on the site. They are not a present-day guarantee or proof of liability coverage.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Recheck CSLB on the hire date; review disclosures and obtain applicable insurance documentation for the actual business and crew.",
+            "Current identity/status match and documented review of coverage/disclosures."
+          ],
+          "src": [
+            "S04",
+            "S10",
+            "S12"
+          ]
+        },
+        {
+          "cells": [
+            "Q08",
+            "Does the provider serve this address and have an appointment?",
+            "San Francisco service claims are documented for some firms; exact-address acceptance and appointments are unconfirmed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Request written confirmation of service address, diagnostic slot, work duration and return visit for ceiling finish.",
+            "Accepted scope and appointment; no availability is inferred from advertising."
+          ],
+          "src": [
+            "S04",
+            "S11"
+          ]
+        },
+        {
+          "cells": [
+            "Q09",
+            "How will tenants and stored contents be protected?",
+            "The brief reports an occupied unit and storage below; access arrangements and protection are not confirmed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Require a provider plan for access windows, water interruption, dust containment, contents protection, daily cleanup and safe shutdown.",
+            "Agreed access/protection plan and named on-site contact."
+          ],
+          "src": [
+            "S04",
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Q10",
+            "What approvals and inspections apply to the final scope?",
+            "Official city guidance is linked; the exact repair scope has not been determined.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Have the selected contractor establish the final scope and confirm applicable requirements with SF DBI before work.",
+            "Documented scope-specific compliance and inspection plan; no project exemption is assumed."
+          ],
+          "src": [
+            "S01",
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "Q11",
+            "How will completion and leak-free operation be accepted?",
+            "No project-specific test or warranty has been agreed.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Ask for drain, stopper and overflow checks appropriate to the repair, visible inspection before closure, photographs, written warranty and callback terms.",
+            "Agreed test/acceptance record before concealment and final payment."
+          ],
+          "src": [
+            "S01",
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "Q12",
+            "Are unexpected conditions or hazardous materials possible?",
+            "Building age, ceiling assembly, material condition and concealed damage are unknown; none is diagnosed here.",
+            "<span class=\"blank\" aria-label=\"blank — unverified\">—</span> <span class=\"pill warn\">UNVERIFIED</span>",
+            "Ask the provider to assess whether further specialist evaluation is needed before disturbing materials and to define stop/change-order procedures.",
+            "Documented assessment and agreed contingency before demolition."
+          ],
+          "src": [
+            "S04",
+            "S02"
+          ]
+        }
+      ],
+      "caption": "Official links establish regulatory or licensing context, not private property facts or contractor acceptance. Discovery actions and decision gates are project recommendations, not quotations from the sources. All confirmed project answers remain blank until evidence is obtained. See Flagged for Review for the existing unresolved scope, cost, access and availability flags."
     }
   }
 }
