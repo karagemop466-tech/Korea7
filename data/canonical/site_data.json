@@ -21,6 +21,10 @@
         [
           "requirements.html",
           "Requirements"
+        ],
+        [
+          "questions.html",
+          "Questions & decisions"
         ]
       ]
     },
@@ -7789,7 +7793,7 @@
       "caption": "No access method, opening size or permit exemption is inferred. A licensed site assessment is required."
     },
     "repo_inventory": {
-      "title": "Line-by-line source/artifact inventory (322 files)",
+      "title": "Line-by-line source/artifact inventory (324 files)",
       "columns": [
         "Path",
         "Bytes",
@@ -8836,6 +8840,18 @@
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/data/site_manifest.json\" target=\"_blank\" rel=\"noopener noreferrer\"><code>docs/data/site_manifest.json</code></a>",
             "1446",
             "<code class=\"hash\">8f1a7bb7d92ab1bb21e654c0dd6768fb4cb7ba6022d918854549a690cd3457f5</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/delivery-audit-2026-11-11.md\" target=\"_blank\" rel=\"noopener noreferrer\"><code>docs/delivery-audit-2026-11-11.md</code></a>",
+            "3650",
+            "<code class=\"hash\">afef7ea5518ebc40cf12f4d04d7cbb9c0aa112f0ca1e764fa8745f3273506720</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -10478,8 +10494,8 @@
         {
           "cells": [
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/dashboard_content.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/dashboard_content.py</code></a>",
-            "164428",
-            "<code class=\"hash\">5a3bc5c64eb6f9fb92b5a7d451f6b3514ddb013c2246cec20f55071dac1e2a59</code>",
+            "164812",
+            "<code class=\"hash\">e40a485abee573aafb76d7ba18fb035af2a22da64b1b80e8c97d994367a2f35a</code>",
             "current-plumbing-source",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -10588,6 +10604,18 @@
             "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/prepare_data.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/prepare_data.py</code></a>",
             "9029",
             "<code class=\"hash\">73c743e8ab7238b44ce82b9a8d4f9c7a17312fc023ee894ebd0e3788a456d7d6</code>",
+            "preserved-archive-or-unrelated",
+            "hashed source/artifact inventory; external factual claims not verified by this hash"
+          ],
+          "src": [
+            "S98"
+          ]
+        },
+        {
+          "cells": [
+            "<a href=\"https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/questions_data.py\" target=\"_blank\" rel=\"noopener noreferrer\"><code>scripts/questions_data.py</code></a>",
+            "22942",
+            "<code class=\"hash\">55f6d67834a780104401eb75cdf7c995b56e35a1374826d49a44b853799421df</code>",
             "preserved-archive-or-unrelated",
             "hashed source/artifact inventory; external factual claims not verified by this hash"
           ],
@@ -13074,6 +13102,399 @@
         }
       ],
       "caption": "Phone and license from CSLB on 2026-11-10. A company site is left blank because no current business page was confirmed."
+    },
+    "questions": {
+      "title": "Open questions — what must be answered before a hiring decision",
+      "columns": [
+        "#",
+        "Question",
+        "What we know (verified)",
+        "What is still missing",
+        "How to discover it",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Q01",
+            "Can the overflow be removed from above without damaging the hidden plumbing?",
+            "The from-above procedure is documented (remove overflow-plate screws, withdraw the upper linkage; cleaning/adjusting the link can free a stuck mechanism). The owner reports 5+ licensed plumbers declined from-above removal for this tub.",
+            "Whether this tub's seized assembly can be freed from above safely; the exact stuck point (linkage, stopper, or waste body).",
+            "Ask each shortlisted plumber for a cautious, non-forcing above-first assessment with a stated diagnostic fee and a written stop-and-price point before any opening. Do not force a seized linkage.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">procedure documented; outcome unverified</span>"
+          ],
+          "src": [
+            "S44",
+            "S18",
+            "S20",
+            "S21"
+          ]
+        },
+        {
+          "cells": [
+            "Q02",
+            "What exactly is stuck, and what parts will be needed?",
+            "A trip-lever bath waste-and-overflow assembly is a standard manufacturer product (Oatey Dearborn tubular trip-lever waste).",
+            "Photos, measurements, assembly material and part numbers for this tub; whether repair or full replacement is needed.",
+            "Supply reference photos of the overflow plate, lever and tub shoe; ask the assessing plumber to identify parts in writing before ordering.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">component exists; this tub unverified</span>"
+          ],
+          "src": [
+            "S44",
+            "S14"
+          ]
+        },
+        {
+          "cells": [
+            "Q03",
+            "Will the drywall ceiling from below need to be opened, and how large an opening?",
+            "SF.gov lists minor repairs to existing interior plaster or wallboard among work that does not need a building permit; the plumbing scope is governed by the plumbing-permit rule. The owner reports a storage unit below.",
+            "This tub's layout, the size of any ceiling opening, and whether patch, texture and paint are included in any quote.",
+            "Ask the contractor to state the opening size, patch/texture/paint finish and dust/contents protection in the written scope before authorizing any cut.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">rules cited; layout unverified</span>"
+          ],
+          "src": [
+            "S44",
+            "S01",
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "Q04",
+            "Who will do both the plumbing and the drywall under one contract?",
+            "Six licenses in the scored pool list both a building classification and C-36 Plumbing (Ace #829071, Genteel #1025814, Handyman Heroes #1003394, GENERALSF #959843, Rapid Flow #1115649, Manny's #841229). BPC §7059 allows specialty contractors incidental and supplemental work in other trades.",
+            "Whether any firm will actually perform the combined scope under one contract, and how the ceiling make-good is covered in writing.",
+            "Request one written scope naming the responsible trades for plumbing, ceiling cut, patch, texture and paint; or pair a plumbing-only firm with the verified C-9 restoration partner (Bernal Hill Drywall #995163).",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">licenses verified; execution unverified</span>"
+          ],
+          "src": [
+            "S11",
+            "S64",
+            "S10",
+            "S09",
+            "S56",
+            "S57",
+            "S62",
+            "S66"
+          ]
+        },
+        {
+          "cells": [
+            "Q05",
+            "What is the total all-in price for this scope?",
+            "Three owner-reported estimates dated 2026-08-30 describe three different scopes (full waste-and-overflow replacement; lever/plug/spout with diverter; handle repair/adjustment). Independent 2026 benchmarks: drain replacement $500–$1,020 (avg $700); leak repair $150–$600 plus $300–$930 drywall/tile follow-up.",
+            "A single comparable all-in price covering the above-attempt, below access, ceiling restoration, testing and tenant coordination. No published price exists for this scope.",
+            "Ask each shortlisted firm for one fixed written price with inclusions/exclusions itemized. Compare only like-for-like written scopes; treat the three owner figures as different scopes, not competing all-in bids.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">no verified price exists</span>"
+          ],
+          "src": [
+            "S44",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "Q06",
+            "Is the chosen license current, active and correctly classified on the hire date?",
+            "All sixteen scored-pool CSLB records printed 'current and active' on their read dates (2026-11-07/08, re-read 2026-11-10). CSLB is the official lookup authority.",
+            "The hire-date status of the chosen license, bond and workers' compensation.",
+            "Re-check the license number on CSLB Check a License on the hire date and keep the printed record with the contract.",
+            "<span class=\"pill warn\">verified at read date; re-check required</span>"
+          ],
+          "src": [
+            "S04",
+            "S11",
+            "S64",
+            "S10"
+          ]
+        },
+        {
+          "cells": [
+            "Q07",
+            "What do review platforms (Yelp and others) say about this specific work in San Francisco?",
+            "Yelp profiles/searches for the candidates were located as dated snapshots; direct Yelp fetching returned HTTP 403, so numeric ratings are not presented as verified. Review badges are not license verification.",
+            "Current ratings and job-specific reviews for concealed waste-and-overflow work in occupied units.",
+            "Open the linked Yelp/Angi/BuildZoom/Thumbtack/BBB pages manually on the decision date and read reviews for bathtub waste-and-overflow and occupied-unit work specifically.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">snapshots only; open manually</span>"
+          ],
+          "src": [
+            "S44",
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "Q08",
+            "How will the tenant-occupied unit be protected and coordinated?",
+            "Two shortlisted firms publish HOA/property-manager experience (Ace; Fast Response). No official source confirms occupied-unit precautions for this job.",
+            "Access windows, dust/contents protection, water shut-off notice, and who coordinates with tenants.",
+            "Ask for the occupied-unit plan in writing: access windows, protection measures, shut-off notice and a single point of contact.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">company statements only</span>"
+          ],
+          "src": [
+            "S44",
+            "S43",
+            "S40"
+          ]
+        },
+        {
+          "cells": [
+            "Q09",
+            "Which official requirements apply to the exact scope (plumbing, ceiling, licensing)?",
+            "SF.gov: a permit is needed before cutting into or replacing pipes, particularly pipes covered by a wall; minor interior plaster/wallboard repair is listed among work that does not need a building permit; plumbing-permit applicants must hold C-4, C-16, C-20, C-36, C-54, B or A. BPC §7048 sets the small-job licensing exemption at under $1,000 for casual/minor work that does not require a building permit.",
+            "The determination for this exact scope, which only SF DBI and the selected licensed contractor can make.",
+            "Confirm the final scope and applicable requirements with SF DBI (Permit Center help desk) and the selected licensed contractor before work begins. Nothing on this page is legal advice.",
+            "<span class=\"pill warn\">official rules cited; applicability to be confirmed</span>"
+          ],
+          "src": [
+            "S01",
+            "S02",
+            "S13"
+          ]
+        },
+        {
+          "cells": [
+            "Q10",
+            "What workers'-compensation and bond coverage will apply to the crew on site?",
+            "CSLB records show the bond and workers'-compensation fields for each licensee; five of the sixteen records carry a 'no employees' exemption and one policy expires 2026-12-18.",
+            "Current certificates covering the actual crew and dates of work.",
+            "Request a current certificate of insurance naming the job and dates; confirm in writing who will be on site and what coverage applies.",
+            "<span class=\"pill warn\">CSLB fields verified; current COI unverified</span>"
+          ],
+          "src": [
+            "S04",
+            "S07",
+            "S08"
+          ]
+        },
+        {
+          "cells": [
+            "Q11",
+            "Is there any complaint disclosure the hiring party should review?",
+            "CSLB publishes complaint disclosures per license; the audit read the disclosure page for all sixteen scored-pool licenses and found a published citation on #1003394 (2020, reported verbatim).",
+            "The hire-date disclosure status of the chosen license.",
+            "Open the CSLB complaint-disclosure page for the chosen license number and read it before signing.",
+            "<span class=\"pill warn\">audit read 2026-11-10; re-check required</span>"
+          ],
+          "src": [
+            "S04",
+            "S10",
+            "S12"
+          ]
+        },
+        {
+          "cells": [
+            "Q12",
+            "Will the firm service San Francisco and is it available?",
+            "CSLB addresses and company service claims are recorded for each candidate; exact address-level availability is not confirmed by any official source.",
+            "San Francisco service confirmation, earliest availability, and any travel charges.",
+            "Call the official phone on the Contacts page and confirm service area, availability and travel charges in writing.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">service claims recorded; availability unverified</span>"
+          ],
+          "src": [
+            "S04",
+            "S43",
+            "S40"
+          ]
+        },
+        {
+          "cells": [
+            "Q13",
+            "What reference information (photos, measurements) is needed before quoting?",
+            "The owner noted reference pictures might be provided; none were supplied to the research sessions.",
+            "Photos of the overflow plate, lever, tub shoe and below-ceiling area; tub dimensions and access notes.",
+            "Photograph the overflow plate and lever, the tub shoe, and the storage-unit ceiling below; send them with the written scope request so quotes cover the same scope.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">no photos on file</span>"
+          ],
+          "src": [
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "Q14",
+            "What must be answered before any hiring decision is reasonable?",
+            "This page lists the questions; the Ranked hiring decision page orders the calls; the Flagged for Review page lists every unverified item.",
+            "Written answers to Q01–Q13 for the chosen firm: above-first assessment, below-access option, ceiling restoration, all-in price, license/COI re-check, occupied-unit plan, and applicable-requirements confirmation.",
+            "Do not sign until the chosen firm has answered in writing and the license has been re-checked on CSLB. Record the answers with the contract.",
+            "<span class=\"pill warn\">UNVERIFIED</span> <span class=\"pill warn\">decision gate — not yet met</span>"
+          ],
+          "src": [
+            "S44",
+            "S04",
+            "S01"
+          ]
+        }
+      ],
+      "caption": "Each question is answered only to the extent a cited source supports. Owner-provided facts are flagged UNVERIFIED; official rules are cited for manual confirmation with SF DBI and the selected licensed contractor. Nothing here is legal advice."
+    },
+    "answers": {
+      "title": "Answers the official sources do give",
+      "columns": [
+        "#",
+        "Question with an official answer",
+        "Answer (official source)",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "A01",
+            "Which license classes may apply for a San Francisco plumbing permit?",
+            "C-4, C-16, C-20, C-36, C-54, B or A (B after approval based on scope).",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S01"
+          ]
+        },
+        {
+          "cells": [
+            "A02",
+            "What does a C-36 license cover?",
+            "The official C-36 Plumbing classification definition (16 CCR, Div. 8, Art. 3).",
+            "<span class=\"pill ok\">official — CSLB</span>"
+          ],
+          "src": [
+            "S05"
+          ]
+        },
+        {
+          "cells": [
+            "A03",
+            "What does a B license cover, and can a specialty contractor do incidental work in another trade?",
+            "B is the General Building classification (B&P §7057). BPC §7059 allows specialty contractors incidental and supplemental work in other trades; applicability to this ceiling is not established.",
+            "<span class=\"pill ok\">official — CSLB / leginfo</span>"
+          ],
+          "src": [
+            "S83",
+            "S62"
+          ]
+        },
+        {
+          "cells": [
+            "A04",
+            "What is the current small-job licensing exemption?",
+            "BPC §7048 (AB 1170, effective 2026-01-01): aggregate price under $1,000, casual/minor/inconsequential, and no building permit required.",
+            "<span class=\"pill ok\">official — leginfo</span>"
+          ],
+          "src": [
+            "S13"
+          ]
+        },
+        {
+          "cells": [
+            "A05",
+            "How should a license be checked before hiring?",
+            "CSLB Check a License is the official lookup by number or business name; CSLB advises checking status and complaint disclosure before hiring.",
+            "<span class=\"pill ok\">official — CSLB</span>"
+          ],
+          "src": [
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "A06",
+            "Is minor interior wallboard repair listed among work that does not need a building permit?",
+            "Yes — SF.gov lists minor repairs to existing interior plaster or wallboard among work that does not need a permit. The plumbing scope is governed by the plumbing-permit rule.",
+            "<span class=\"pill ok\">official — sf.gov</span>"
+          ],
+          "src": [
+            "S02",
+            "S01"
+          ]
+        }
+      ],
+      "caption": "These answers are quoted or closely paraphrased from the cited official pages. They describe general rules; whether they apply to this exact repair is for SF DBI and the selected licensed contractor to confirm."
+    },
+    "discovery": {
+      "title": "How to discover the missing information",
+      "columns": [
+        "#",
+        "Missing information",
+        "Suggestion to discover it",
+        "Status",
+        "Source"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "D01",
+            "Original written quotes and photos for the three 2026-08-30 estimates",
+            "Attach the original quote documents and reference photos as project documents, then re-verify the transcribed figures against them.",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S44"
+          ]
+        },
+        {
+          "cells": [
+            "D02",
+            "One comparable all-in written price (plumbing + ceiling + testing)",
+            "Send every shortlisted firm the same written scope (above-attempt, below-access option, ceiling cut/patch/texture/paint, fill-and-drain test, tenant coordination) and request one fixed price with inclusions/exclusions itemized.",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S44",
+            "S15",
+            "S16"
+          ]
+        },
+        {
+          "cells": [
+            "D03",
+            "Hire-date license, bond and workers'-compensation status",
+            "Re-check the license number on CSLB Check a License and request a current certificate of insurance before signing.",
+            "<span class=\"pill ok\">official lookup available</span>"
+          ],
+          "src": [
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "D04",
+            "Current review-platform ratings for this specific work",
+            "Open the Yelp/Angi/BuildZoom/Thumbtack/BBB pages manually on the decision date; automated fetching of Yelp returned HTTP 403.",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S04"
+          ]
+        },
+        {
+          "cells": [
+            "D05",
+            "Applicable-requirements determination for the exact scope",
+            "Ask SF DBI (Permit Center help desk) and the selected licensed contractor to confirm applicability for the final written scope.",
+            "<span class=\"pill ok\">official contact available</span>"
+          ],
+          "src": [
+            "S01",
+            "S02"
+          ]
+        },
+        {
+          "cells": [
+            "D06",
+            "Job-specific experience with a seized trip lever in an occupied unit",
+            "Ask each firm for references on concealed waste-and-overflow work in occupied units and confirm the above-first, non-forcing approach in writing.",
+            "<span class=\"pill warn\">UNVERIFIED</span>"
+          ],
+          "src": [
+            "S04",
+            "S43",
+            "S40"
+          ]
+        }
+      ],
+      "caption": "Suggestions only — no provider has been contacted and no answer has been obtained through these steps in this session. Each suggestion names the source to use."
     }
   }
 }

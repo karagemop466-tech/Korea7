@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T06:05:46+00:00",
+  "generated_at": "2026-11-11T02:19:16+00:00",
   "pages": [
     "index.html",
     "summary.html",
@@ -18,30 +18,31 @@
     "contacts.html",
     "delivery.html",
     "recheck.html",
-    "exempt-work.html"
+    "exempt-work.html",
+    "questions.html"
   ],
   "counts": {
-    "pages": 18,
-    "tables": 38,
-    "rows": 855,
+    "pages": 19,
+    "tables": 41,
+    "rows": 883,
     "source_ledger_entries": 152,
     "verified_sources": 129,
     "official_or_manufacturer_verified": 60,
-    "generated_tbody_rows": 1760,
-    "internal_links_checked": 1721,
-    "unique_external_links": 420,
-    "published_text_files_scanned": 146
+    "generated_tbody_rows": 1816,
+    "internal_links_checked": 1794,
+    "unique_external_links": 422,
+    "published_text_files_scanned": 148
   },
   "checks": [
     {
       "name": "Build output complete",
       "status": "PASS",
-      "detail": "18 pages generated"
+      "detail": "19 pages generated"
     },
     {
       "name": "Every table row has a source link",
       "status": "PASS",
-      "detail": "1760 tbody rows checked, 0 missing links"
+      "detail": "1816 tbody rows checked, 0 missing links"
     },
     {
       "name": "Blank values are flagged UNVERIFIED",
@@ -51,7 +52,7 @@
     {
       "name": "Internal links resolve",
       "status": "PASS",
-      "detail": "1721 internal links checked, 0 broken"
+      "detail": "1794 internal links checked, 0 broken"
     },
     {
       "name": "Anchor targets resolve",
@@ -61,7 +62,7 @@
     {
       "name": "External links are in the source ledger",
       "status": "PASS",
-      "detail": "420 unique external links, 0 unknown/dead"
+      "detail": "422 unique external links, 0 unknown/dead"
     },
     {
       "name": "Navigation consistent",
@@ -71,7 +72,7 @@
     {
       "name": "Privacy sweep (internal-only wording)",
       "status": "PASS",
-      "detail": "146 files scanned, 0 matches"
+      "detail": "148 files scanned, 0 matches"
     },
     {
       "name": "No unfilled template markers",
@@ -195,6 +196,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/data/site_analysis.json",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/data/site_analysis.md",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/data/site_manifest.json",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/delivery-audit-2026-11-11.md",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/downloads/SHA256SUMS.txt",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/downloads/format_probe_score_0.0000_do_not_submit.tif",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/docs/downloads/gemsdoe32-korea7-scarprad-b2cov-r100-20261104T201931Z-7dcabf26-audit.json",
@@ -341,6 +343,7 @@
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/make_report.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/oof_e1.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/prepare_data.py",
+    "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/questions_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/ranking_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/recheck_data.py",
     "https://github.com/karagemop466-tech/Korea7/blob/arena/1012d038-korea7/scripts/reread_1110.py",
