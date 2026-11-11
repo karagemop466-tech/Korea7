@@ -1881,3 +1881,7 @@ Implementation detail: isolated content module `scripts/decision_checklist.py` i
 - Live pages read after merge: dashboard (https://karagemop466-tech.github.io/Korea7/), questions (https://karagemop466-tech.github.io/Korea7/questions.html), ranking (https://karagemop466-tech.github.io/Korea7/ranking.html) — all reachable with expected content.
 - Rebase note: main advanced during this session (PR #92 questions page, PR #93, PR #94 decision checklist). This branch was rebased onto the latest main, retaining all session records; no other session's work was discarded. Final rebuild on the rebased tree: 19+ pages, 11/11 checks PASS (see verification_report).
 - Task status: done. Flagged items (52) remain published on flagged.html and do not block. No contractor contacted; no price/availability claimed.
+### D1 merge and final gate
+- Implementation merged: [PR #93](https://github.com/karagemop466-tech/Korea7/pull/93), merge `fcc2fa23477869bee1bad121207ee4903347f445`, 2026-11-11T02:21:02Z.
+- Combined build after PR #92 integration: 20 pages, 1,844 linked rendered rows, 1,863 internal links, 0 broken anchors, 11/11 structural checks passed. Full combined suite rerun: 192 passed, 18 subtests passed (34 existing warnings). No source claims were upgraded by these structural checks.
+- D1 implementation and verification: done. GitHub Pages exact-revision deployment is checked separately below. Concurrent board append conflicts were all resolved retaining incoming records; generated conflicts were rebuilt from the combined sources.
